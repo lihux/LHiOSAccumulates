@@ -490,6 +490,7 @@
 				9C37343A1C3E455D009391CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C37343B1C3E455D009391CD /* Build configuration list for PBXNativeTarget "LHiOSAccumulatesInSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +499,7 @@
 				9C37343D1C3E455D009391CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C37343E1C3E455D009391CD /* Build configuration list for PBXNativeTarget "LHiOSAccumulatesInSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +508,7 @@
 				9C3734401C3E455D009391CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
