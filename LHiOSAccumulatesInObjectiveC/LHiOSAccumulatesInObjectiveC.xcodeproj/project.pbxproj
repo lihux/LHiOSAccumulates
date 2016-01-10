@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1350851C42619100A4CAB8 /* LCLightBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1350841C42619100A4CAB8 /* LCLightBorderButton.m */; settings = {ASSET_TAGS = (); }; };
+		9C1350891C42637F00A4CAB8 /* LCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4781C3E3E43003877BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4771C3E3E43003877BC /* AppDelegate.m */; };
-		9C61C47B1C3E3E43003877BC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C47A1C3E3E43003877BC /* MasterViewController.m */; };
-		9C61C47E1C3E3E43003877BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C47D1C3E3E43003877BC /* DetailViewController.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
 		9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4821C3E3E43003877BC /* Assets.xcassets */; };
 		9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4841C3E3E43003877BC /* LaunchScreen.storyboard */; };
@@ -36,14 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C1350831C42619100A4CAB8 /* LCLightBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCLightBorderButton.h; path = LCGenerealBorderButton/LCLightBorderButton.h; sourceTree = "<group>"; };
+		9C1350841C42619100A4CAB8 /* LCLightBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCLightBorderButton.m; path = LCGenerealBorderButton/LCLightBorderButton.m; sourceTree = "<group>"; };
+		9C1350871C42637F00A4CAB8 /* LCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCHomeViewController.h; path = LCHome/LCHomeViewController.h; sourceTree = "<group>"; };
+		9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCHomeViewController.m; path = LCHome/LCHomeViewController.m; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4741C3E3E43003877BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C61C4761C3E3E43003877BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C61C4771C3E3E43003877BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9C61C4791C3E3E43003877BC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		9C61C47A1C3E3E43003877BC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		9C61C47C1C3E3E43003877BC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		9C61C47D1C3E3E43003877BC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9C61C4801C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C61C4821C3E3E43003877BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C61C4851C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C1350821C42613F00A4CAB8 /* LCGeneralUI */ = {
+			isa = PBXGroup;
+			children = (
+				9C1350831C42619100A4CAB8 /* LCLightBorderButton.h */,
+				9C1350841C42619100A4CAB8 /* LCLightBorderButton.m */,
+			);
+			name = LCGeneralUI;
+			sourceTree = "<group>";
+		};
+		9C1350861C42634100A4CAB8 /* LCHome */ = {
+			isa = PBXGroup;
+			children = (
+				9C1350871C42637F00A4CAB8 /* LCHomeViewController.h */,
+				9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */,
+			);
+			name = LCHome;
+			sourceTree = "<group>";
+		};
 		9C61C4671C3E3E43003877BC = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +122,10 @@
 		9C61C4721C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				9C1350861C42634100A4CAB8 /* LCHome */,
+				9C1350821C42613F00A4CAB8 /* LCGeneralUI */,
 				9C61C4761C3E3E43003877BC /* AppDelegate.h */,
 				9C61C4771C3E3E43003877BC /* AppDelegate.m */,
-				9C61C4791C3E3E43003877BC /* MasterViewController.h */,
-				9C61C47A1C3E3E43003877BC /* MasterViewController.m */,
-				9C61C47C1C3E3E43003877BC /* DetailViewController.h */,
-				9C61C47D1C3E3E43003877BC /* DetailViewController.m */,
 				9C61C47F1C3E3E43003877BC /* Main.storyboard */,
 				9C61C4821C3E3E43003877BC /* Assets.xcassets */,
 				9C61C4841C3E3E43003877BC /* LaunchScreen.storyboard */,
@@ -276,10 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1350891C42637F00A4CAB8 /* LCHomeViewController.m in Sources */,
+				9C1350851C42619100A4CAB8 /* LCLightBorderButton.m in Sources */,
 				9C61C4781C3E3E43003877BC /* AppDelegate.m in Sources */,
-				9C61C47B1C3E3E43003877BC /* MasterViewController.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
-				9C61C47E1C3E3E43003877BC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
