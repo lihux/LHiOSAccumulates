@@ -17,13 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ZsG-59-1kA">
-                                <rect key="frame" x="214.5" y="210.5" width="161" height="179"/>
+                                <rect key="frame" x="214" y="210" width="161" height="179"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.lihux.me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqh-f0-duo">
+                                <rect key="frame" x="264" y="405" width="72.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="0.70000000000000007" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.50980392156862742" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZsG-59-1kA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-5" id="4fe-wR-Uvs"/>
+                            <constraint firstItem="Hqh-f0-duo" firstAttribute="top" secondItem="ZsG-59-1kA" secondAttribute="bottom" constant="16" id="NSb-fE-gtI"/>
+                            <constraint firstItem="Hqh-f0-duo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Tmc-Mu-Rmj"/>
                             <constraint firstItem="ZsG-59-1kA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="guD-tc-yAV"/>
                         </constraints>
                     </view>

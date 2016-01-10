@@ -17,13 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vlD-FJ-Mv4">
-                                <rect key="frame" x="214.5" y="210.5" width="161" height="179"/>
+                                <rect key="frame" x="214" y="210" width="161" height="179"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.lihux.me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="679-cg-Qne">
+                                <rect key="frame" x="264" y="405.5" width="72.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.094117647060000004" green="0.50980392159999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vlD-FJ-Mv4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-5" id="6fB-Dj-OPr"/>
+                            <constraint firstItem="679-cg-Qne" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="c55-ew-zeE"/>
+                            <constraint firstItem="679-cg-Qne" firstAttribute="top" secondItem="vlD-FJ-Mv4" secondAttribute="bottom" constant="16" id="mDs-i8-ihx"/>
                             <constraint firstItem="vlD-FJ-Mv4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ruH-Bc-alE"/>
                         </constraints>
                     </view>
