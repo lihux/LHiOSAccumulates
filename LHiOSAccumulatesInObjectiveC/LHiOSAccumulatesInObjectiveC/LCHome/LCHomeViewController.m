@@ -8,7 +8,15 @@
 
 #import "LCHomeViewController.h"
 
+#import "LCLightBorderButton.h"
+
 @interface LCHomeViewController ()
+
+@property (strong, nonatomic) IBOutletCollection(LCLightBorderButton) NSArray *homeButtons;
+
+
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *homeButtonACVerticalSpaceConstraints;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *god;
 
 @end
 
@@ -16,22 +24,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self adjustLayoutConstraints];
+}
+
+#pragma mark - AutoLayout Concerns
+- (void)adjustLayoutConstraints
+{
+    CGFloat buttonWidth = [(UIButton *)self.homeButtons[0] bounds].size.width;
+    CGFloat borderGap = 22;
+    NSInteger buttonCount = self.homeButtons.count;
+    CGFloat widthConstant = ([UIScreen mainScreen].bounds.size.width  - borderGap - (buttonWidth * buttonCount))/ (buttonCount - 1);
+    for (NSLayoutConstraint *constraint in self.homeButtonACVerticalSpaceConstraints) {
+        constraint.constant = widthConstant;
+    }
+    [self.view layoutIfNeeded];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
