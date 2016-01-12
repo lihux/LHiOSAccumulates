@@ -16,6 +16,8 @@
 
 
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *homeButtonACVerticalSpaceConstraints;
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *homeButtonCRHorizontalSpaceConstraints;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *god;
 
 @end
@@ -35,6 +37,9 @@
     NSInteger buttonCount = self.homeButtons.count;
     CGFloat widthConstant = ([UIScreen mainScreen].bounds.size.width  - borderGap - (buttonWidth * buttonCount))/ (buttonCount - 1);
     for (NSLayoutConstraint *constraint in self.homeButtonACVerticalSpaceConstraints) {
+        constraint.constant = widthConstant;
+    }
+    for (NSLayoutConstraint *constraint in self.homeButtonCRHorizontalSpaceConstraints) {
         constraint.constant = widthConstant;
     }
     [self.view layoutIfNeeded];
