@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C1350851C42619100A4CAB8 /* LCLightBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1350841C42619100A4CAB8 /* LCLightBorderButton.m */; settings = {ASSET_TAGS = (); }; };
 		9C1350891C42637F00A4CAB8 /* LCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C29F9711C44CDDC00E8F310 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29F9701C44CDDC00E8F310 /* UIImage+Color.m */; settings = {ASSET_TAGS = (); }; };
+		9C29F9771C44D23700E8F310 /* UIColor+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29F9761C44D23700E8F310 /* UIColor+helper.m */; settings = {ASSET_TAGS = (); }; };
+		9C29F97E1C44E62F00E8F310 /* LCLightBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29F97D1C44E62F00E8F310 /* LCLightBorderButton.m */; settings = {ASSET_TAGS = (); }; };
+		9C29F9811C44E64F00E8F310 /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29F9801C44E64F00E8F310 /* LCButton.m */; settings = {ASSET_TAGS = (); }; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4781C3E3E43003877BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4771C3E3E43003877BC /* AppDelegate.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
@@ -36,10 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C1350831C42619100A4CAB8 /* LCLightBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCLightBorderButton.h; path = LCGenerealBorderButton/LCLightBorderButton.h; sourceTree = "<group>"; };
-		9C1350841C42619100A4CAB8 /* LCLightBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCLightBorderButton.m; path = LCGenerealBorderButton/LCLightBorderButton.m; sourceTree = "<group>"; };
 		9C1350871C42637F00A4CAB8 /* LCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCHomeViewController.h; path = LCHome/LCHomeViewController.h; sourceTree = "<group>"; };
 		9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCHomeViewController.m; path = LCHome/LCHomeViewController.m; sourceTree = "<group>"; };
+		9C29F96F1C44CDDC00E8F310 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "LHHelpers/UIImage+Color.h"; sourceTree = "<group>"; };
+		9C29F9701C44CDDC00E8F310 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "LHHelpers/UIImage+Color.m"; sourceTree = "<group>"; };
+		9C29F9751C44D23700E8F310 /* UIColor+helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+helper.h"; path = "LHHelpers/UIColor+helper.h"; sourceTree = "<group>"; };
+		9C29F9761C44D23700E8F310 /* UIColor+helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+helper.m"; path = "LHHelpers/UIColor+helper.m"; sourceTree = "<group>"; };
+		9C29F97C1C44E62F00E8F310 /* LCLightBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCLightBorderButton.h; path = LCGeneralUI/LCLightBorderButton.h; sourceTree = "<group>"; };
+		9C29F97D1C44E62F00E8F310 /* LCLightBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCLightBorderButton.m; path = LCGeneralUI/LCLightBorderButton.m; sourceTree = "<group>"; };
+		9C29F97F1C44E64F00E8F310 /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCButton.h; path = LCGeneralUI/LCButton.h; sourceTree = "<group>"; };
+		9C29F9801C44E64F00E8F310 /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCButton.m; path = LCGeneralUI/LCButton.m; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4741C3E3E43003877BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C61C4761C3E3E43003877BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,8 +93,10 @@
 		9C1350821C42613F00A4CAB8 /* LCGeneralUI */ = {
 			isa = PBXGroup;
 			children = (
-				9C1350831C42619100A4CAB8 /* LCLightBorderButton.h */,
-				9C1350841C42619100A4CAB8 /* LCLightBorderButton.m */,
+				9C29F97C1C44E62F00E8F310 /* LCLightBorderButton.h */,
+				9C29F97D1C44E62F00E8F310 /* LCLightBorderButton.m */,
+				9C29F97F1C44E64F00E8F310 /* LCButton.h */,
+				9C29F9801C44E64F00E8F310 /* LCButton.m */,
 			);
 			name = LCGeneralUI;
 			sourceTree = "<group>";
@@ -97,6 +108,17 @@
 				9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */,
 			);
 			name = LCHome;
+			sourceTree = "<group>";
+		};
+		9C29F96E1C44CD9100E8F310 /* LHHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C29F96F1C44CDDC00E8F310 /* UIImage+Color.h */,
+				9C29F9701C44CDDC00E8F310 /* UIImage+Color.m */,
+				9C29F9751C44D23700E8F310 /* UIColor+helper.h */,
+				9C29F9761C44D23700E8F310 /* UIColor+helper.m */,
+			);
+			name = LHHelpers;
 			sourceTree = "<group>";
 		};
 		9C61C4671C3E3E43003877BC = {
@@ -122,6 +144,7 @@
 		9C61C4721C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				9C29F96E1C44CD9100E8F310 /* LHHelpers */,
 				9C1350861C42634100A4CAB8 /* LCHome */,
 				9C1350821C42613F00A4CAB8 /* LCGeneralUI */,
 				9C61C4761C3E3E43003877BC /* AppDelegate.h */,
@@ -292,8 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C29F9811C44E64F00E8F310 /* LCButton.m in Sources */,
 				9C1350891C42637F00A4CAB8 /* LCHomeViewController.m in Sources */,
-				9C1350851C42619100A4CAB8 /* LCLightBorderButton.m in Sources */,
+				9C29F9711C44CDDC00E8F310 /* UIImage+Color.m in Sources */,
+				9C29F9771C44D23700E8F310 /* UIColor+helper.m in Sources */,
+				9C29F97E1C44E62F00E8F310 /* LCLightBorderButton.m in Sources */,
 				9C61C4781C3E3E43003877BC /* AppDelegate.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
 			);

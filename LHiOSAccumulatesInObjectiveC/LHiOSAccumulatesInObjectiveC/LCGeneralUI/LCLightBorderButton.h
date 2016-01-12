@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LCLightBorderButton : UIButton
+#import "LCButton.h"
+
+@interface LCLightBorderButton : LCButton
 
 @end
