@@ -71,7 +71,7 @@
                                     <constraint firstAttribute="width" constant="50" id="mGr-GS-j4z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <state key="normal" title="目录">
+                                <state key="normal" title="好玩">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -92,6 +92,108 @@
                                         <exclude reference="c65-B6-SUS"/>
                                         <exclude reference="euQ-x9-wg8"/>
                                         <include reference="mGr-GS-j4z"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIb-YJ-8P6" customClass="LCLightBorderButton">
+                                <rect key="frame" x="107" y="542" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Hw2-YD-q87"/>
+                                    <constraint firstAttribute="height" constant="50" id="Nu6-qr-jz3"/>
+                                    <constraint firstAttribute="height" constant="50" id="S5m-De-lg8"/>
+                                    <constraint firstAttribute="width" constant="50" id="bJz-y4-RTm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="好看">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Nu6-qr-jz3"/>
+                                        <exclude reference="bJz-y4-RTm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="200" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="Nu6-qr-jz3"/>
+                                        <exclude reference="Hw2-YD-q87"/>
+                                        <exclude reference="S5m-De-lg8"/>
+                                        <include reference="bJz-y4-RTm"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My6-Yg-bQR" customClass="LCLightBorderButton">
+                                <rect key="frame" x="195" y="548" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6Rs-0B-Idb"/>
+                                    <constraint firstAttribute="height" constant="50" id="Lap-hQ-uwY"/>
+                                    <constraint firstAttribute="width" constant="50" id="tzv-sE-z9p"/>
+                                    <constraint firstAttribute="width" constant="50" id="uYK-88-fU4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="你猜">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lap-hQ-uwY"/>
+                                        <exclude reference="uYK-88-fU4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="300" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="Lap-hQ-uwY"/>
+                                        <exclude reference="tzv-sE-z9p"/>
+                                        <exclude reference="6Rs-0B-Idb"/>
+                                        <include reference="uYK-88-fU4"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyM-08-wRd" customClass="LCLightBorderButton">
+                                <rect key="frame" x="343" y="542" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="EuS-gp-QtK"/>
+                                    <constraint firstAttribute="height" constant="50" id="EyN-ck-P8a"/>
+                                    <constraint firstAttribute="width" constant="50" id="ZCf-nb-9el"/>
+                                    <constraint firstAttribute="height" constant="50" id="vD3-4H-gMp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="设置">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EyN-ck-P8a"/>
+                                        <exclude reference="ZCf-nb-9el"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="300" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="EyN-ck-P8a"/>
+                                        <exclude reference="EuS-gp-QtK"/>
+                                        <exclude reference="vD3-4H-gMp"/>
+                                        <include reference="ZCf-nb-9el"/>
                                     </mask>
                                 </variation>
                             </button>
