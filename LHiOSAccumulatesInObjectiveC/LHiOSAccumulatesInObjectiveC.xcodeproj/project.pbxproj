@@ -20,6 +20,8 @@
 		9C61C4911C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4901C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests.m */; };
 		9C61C49C1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C49B1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m */; };
 		9CF428711C4642B9003E9659 /* LHBorderLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF428701C4642B9003E9659 /* LHBorderLineView.m */; settings = {ASSET_TAGS = (); }; };
+		9CF4288F1C47E79B003E9659 /* LCAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4288E1C47E79B003E9659 /* LCAnimationLayer.m */; settings = {ASSET_TAGS = (); }; };
+		9CF428921C47E920003E9659 /* LCAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF428911C47E920003E9659 /* LCAnimationView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		9C61C49D1C3E3E43003877BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF4286F1C4642B9003E9659 /* LHBorderLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHBorderLineView.h; path = LCGeneralUI/LHBorderLineView.h; sourceTree = "<group>"; };
 		9CF428701C4642B9003E9659 /* LHBorderLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LHBorderLineView.m; path = LCGeneralUI/LHBorderLineView.m; sourceTree = "<group>"; };
+		9CF4288D1C47E79B003E9659 /* LCAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAnimationLayer.h; path = LCHome/LCAnimationLayer.h; sourceTree = "<group>"; };
+		9CF4288E1C47E79B003E9659 /* LCAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAnimationLayer.m; path = LCHome/LCAnimationLayer.m; sourceTree = "<group>"; };
+		9CF428901C47E920003E9659 /* LCAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAnimationView.h; path = LCHome/LCAnimationView.h; sourceTree = "<group>"; };
+		9CF428911C47E920003E9659 /* LCAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAnimationView.m; path = LCHome/LCAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,10 @@
 			children = (
 				9C1350871C42637F00A4CAB8 /* LCHomeViewController.h */,
 				9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */,
+				9CF4288D1C47E79B003E9659 /* LCAnimationLayer.h */,
+				9CF4288E1C47E79B003E9659 /* LCAnimationLayer.m */,
+				9CF428901C47E920003E9659 /* LCAnimationView.h */,
+				9CF428911C47E920003E9659 /* LCAnimationView.m */,
 			);
 			name = LCHome;
 			sourceTree = "<group>";
@@ -322,11 +332,13 @@
 			files = (
 				9C29F9811C44E64F00E8F310 /* LCButton.m in Sources */,
 				9C1350891C42637F00A4CAB8 /* LCHomeViewController.m in Sources */,
+				9CF4288F1C47E79B003E9659 /* LCAnimationLayer.m in Sources */,
 				9CF428711C4642B9003E9659 /* LHBorderLineView.m in Sources */,
 				9C29F9711C44CDDC00E8F310 /* UIImage+Color.m in Sources */,
 				9C29F9771C44D23700E8F310 /* UIColor+helper.m in Sources */,
 				9C29F97E1C44E62F00E8F310 /* LCLightBorderButton.m in Sources */,
 				9C61C4781C3E3E43003877BC /* AppDelegate.m in Sources */,
+				9CF428921C47E920003E9659 /* LCAnimationView.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

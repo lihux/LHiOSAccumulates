@@ -120,6 +120,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.5;
     for (NSLayoutConstraint *constraint in constraints) {
         constraint.active = stopHomeButtonFlyAwayConstraintActive;
     }
+//    CGFloat animationTime = isFlyingAway ? 0.6 : 1.0;
     [UIView animateWithDuration:kDefaultFlyingAnimationDuration animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {

@@ -105,7 +105,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-mC-bHD" userLabel="m0">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-mC-bHD" userLabel="m0" customClass="LCAnimationView">
                                 <rect key="frame" x="12" y="538" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-4V-z7A" userLabel="mask View">
@@ -178,7 +178,7 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="JNw-af-NAa"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-te-2Nk" userLabel="m1">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-te-2Nk" userLabel="m1" customClass="LCAnimationView">
                                 <rect key="frame" x="107" y="542" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yz-hS-SqR" userLabel="mask View">
@@ -251,7 +251,7 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="bmC-oz-BFo"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-wE-lgF" userLabel="m2">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-wE-lgF" userLabel="m2" customClass="LCAnimationView">
                                 <rect key="frame" x="195" y="548" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6go-I3-NIu" userLabel="mask View">
@@ -324,7 +324,7 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="lJC-Wr-WWD"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-HP-ZfE" userLabel="m3">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-HP-ZfE" userLabel="m3" customClass="LCAnimationView">
                                 <rect key="frame" x="343" y="542" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5q8-gC-sXO" userLabel="mask View">
