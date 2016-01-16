@@ -9,9 +9,10 @@
 #import "LCHomeViewController.h"
 
 #import "LCLightBorderButton.h"
+#import "UIColor+helper.h"
 
-static const CGFloat kDefaultFlyingAnimationDuration = 1.0;
-static const CGFloat kDefaultZoomingAnimationDuration = 0.5;
+static const CGFloat kDefaultFlyingAnimationDuration = 0.6;
+static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
 
 @interface LCHomeViewController ()
 
@@ -66,6 +67,8 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.5;
     [super viewDidAppear:animated];
     if (!self.firstLaunch) {
         self.firstLaunch = YES;
+        self.flyingViewIndex = 0;
+        [(UIButton *)self.homeButtons[0] setSelected:YES];
         [self homeButtonAnimateWithButtonIndex:0 isFlyingAway:YES completion:^{
             self.maskLabel.text = self.homeButtonTitles[0];
             [self centerCircleAnimateWithIsZooming:YES completion:^{
@@ -95,9 +98,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.5;
 {
     self.maskLabel.hidden = NO;
     self.maskView.hidden = NO;
-    if (!isZooming) {
-        self.maskLabel.text = self.homeButtonTitles[self.flyingViewIndex];
-    }
+    self.maskLabel.text = self.homeButtonTitles[self.flyingViewIndex];
     CGFloat scale = isZooming ? self.view.bounds.size.width * 2 / 50 : 1;
     CGFloat labelAlpha = isZooming ? 0 : 1;
     [UIView animateWithDuration:kDefaultZoomingAnimationDuration animations:^{
@@ -114,14 +115,15 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.5;
 
 - (void)homeButtonAnimateWithButtonIndex:(NSInteger)index isFlyingAway:(BOOL)isFlyingAway completion:(void(^)())completion
 {
-    [(UIView *)self.flyingViews[index] setHidden:NO];
+    UIView *flyingView = self.flyingViews[index];
+    flyingView.hidden = NO;
     BOOL stopHomeButtonFlyAwayConstraintActive = !isFlyingAway;
     NSArray *constraints = self.flyConstraintArray[index];
     for (NSLayoutConstraint *constraint in constraints) {
         constraint.active = stopHomeButtonFlyAwayConstraintActive;
     }
-//    CGFloat animationTime = isFlyingAway ? 0.6 : 1.0;
     [UIView animateWithDuration:kDefaultFlyingAnimationDuration animations:^{
+        flyingView.alpha = isFlyingAway ? 1.0 : 0.4;
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
         if (finished && completion) {
@@ -136,16 +138,17 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.5;
     if (index == self.flyingViewIndex || self.isFlying) {
         return;
     }
-    
     NSInteger currentIndex = self.flyingViewIndex;
+    sender.selected = YES;
+    [(UIButton *)self.homeButtons[currentIndex] setSelected:NO];
     self.isFlying = YES;
     [self centerCircleAnimateWithIsZooming:NO completion:^{
         [self homeButtonAnimateWithButtonIndex:currentIndex isFlyingAway:NO completion:^{
         }];
     }];
     [self homeButtonAnimateWithButtonIndex:index isFlyingAway:YES completion:^{
+        self.flyingViewIndex = index;
         [self centerCircleAnimateWithIsZooming:YES completion:^{
-            self.flyingViewIndex = index;
             self.isFlying = NO;
         }];
     }];

@@ -15,15 +15,6 @@
 - (void)awakeFromNib
 {
     [self configButton];
-    [self addObserver:self forKeyPath:@"bounds" options:NSKeyValueObservingOptionNew context:nil];
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
-{
-    if ([keyPath isEqualToString:@"bounds"]) {
-        NSLog(@"我擦：%lf", self.bounds.size.width);
-        self.layer.cornerRadius = self.bounds.size.width / 2;
-    }
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -37,15 +28,16 @@
 - (void)configButton
 {
     self.layer.borderWidth = 2.0 / [UIScreen mainScreen].scale;
-    [self setBackgroundColor:[UIColor colorWithHex:0xFFFFFF alpha:0.1] forState:UIControlStateNormal];
-    [self setBackgroundColor:[UIColor colorWithHex:0x000000 alpha:0.2] forState:UIControlStateHighlighted];
-    [self setBorderCorder:[UIColor colorWithHex:0xFFFFFF alpha:0.8] forState:UIControlStateNormal];
-    [self setBorderCorder:[UIColor colorWithHex:0x000000 alpha:0.1] forState:UIControlStateHighlighted];
-}
+    [self setBackgroundColor:[UIColor clearColor] forState:UIControlStateNormal];
+    [self setBackgroundColor:[UIColor colorWithHex:0xFFFFFF alpha:0.2] forState:UIControlStateSelected];
 
-- (void)dealloc
-{
-    [self removeObserver:self forKeyPath:@"bounds"];
+    [self setBorderCorder:[UIColor colorWithHex:0xFFFFFF alpha:0.4] forState:UIControlStateNormal];
+    [self setBorderCorder:[UIColor clearColor] forState:UIControlStateSelected];
+    [self setBorderCorder:[UIColor clearColor] forState:UIControlStateHighlighted];
+
+    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    [self setTitleColor:[UIColor colorWithHex:0xFFFFFF alpha:0.4] forState:UIControlStateNormal];
 }
 
 @end

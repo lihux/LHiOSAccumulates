@@ -105,7 +105,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-mC-bHD" userLabel="m0" customClass="LCAnimationView">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-mC-bHD" userLabel="m0" customClass="LCFlyingView">
                                 <rect key="frame" x="12" y="538" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-4V-z7A" userLabel="mask View">
@@ -151,7 +151,11 @@
                                     <constraint firstAttribute="width" constant="50" id="mGr-GS-j4z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="好玩">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -178,7 +182,7 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="JNw-af-NAa"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-te-2Nk" userLabel="m1" customClass="LCAnimationView">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-te-2Nk" userLabel="m1" customClass="LCFlyingView">
                                 <rect key="frame" x="107" y="542" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yz-hS-SqR" userLabel="mask View">
@@ -224,6 +228,7 @@
                                     <constraint firstAttribute="width" constant="50" id="bJz-y4-RTm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="好看">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -251,7 +256,7 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="bmC-oz-BFo"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-wE-lgF" userLabel="m2" customClass="LCAnimationView">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-wE-lgF" userLabel="m2" customClass="LCFlyingView">
                                 <rect key="frame" x="195" y="548" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6go-I3-NIu" userLabel="mask View">
@@ -297,6 +302,7 @@
                                     <constraint firstAttribute="width" constant="50" id="uYK-88-fU4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="你猜">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -324,7 +330,7 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="lJC-Wr-WWD"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-HP-ZfE" userLabel="m3" customClass="LCAnimationView">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-HP-ZfE" userLabel="m3" customClass="LCFlyingView">
                                 <rect key="frame" x="343" y="542" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5q8-gC-sXO" userLabel="mask View">
@@ -370,6 +376,7 @@
                                     <constraint firstAttribute="height" constant="50" id="vD3-4H-gMp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="设置">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
