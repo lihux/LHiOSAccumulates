@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>高三日记大全</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>大学那些年</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>小学的学霸们</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>大哥的故事</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+</array>
+</plist>

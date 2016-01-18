@@ -7,22 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C1350891C42637F00A4CAB8 /* LCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		9C19C50C1C4A010600545434 /* LCFlyingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C19C50B1C4A010600545434 /* LCFlyingView.m */; settings = {ASSET_TAGS = (); }; };
-		9C29F9711C44CDDC00E8F310 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29F9701C44CDDC00E8F310 /* UIImage+Color.m */; settings = {ASSET_TAGS = (); }; };
-		9C29F9771C44D23700E8F310 /* UIColor+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29F9761C44D23700E8F310 /* UIColor+helper.m */; settings = {ASSET_TAGS = (); }; };
-		9C29F97E1C44E62F00E8F310 /* LCLightBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29F97D1C44E62F00E8F310 /* LCLightBorderButton.m */; settings = {ASSET_TAGS = (); }; };
-		9C29F9811C44E64F00E8F310 /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C29F9801C44E64F00E8F310 /* LCButton.m */; settings = {ASSET_TAGS = (); }; };
+		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; settings = {ASSET_TAGS = (); }; };
+		9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */; settings = {ASSET_TAGS = (); }; };
+		9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365571C4CF9F900E04D7B /* LCUtilities.m */; settings = {ASSET_TAGS = (); }; };
+		9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03655A1C4CF9F900E04D7B /* LCButton.m */; settings = {ASSET_TAGS = (); }; };
+		9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03655C1C4CF9F900E04D7B /* LCLightBorderButton.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365701C4CF9F900E04D7B /* LCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03655E1C4CF9F900E04D7B /* LCTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365601C4CF9F900E04D7B /* LHBorderLineView.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365631C4CF9F900E04D7B /* LCTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365661C4CF9F900E04D7B /* UIColor+helper.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365681C4CF9F900E04D7B /* UIImage+Color.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365881C4CFA3700E04D7B /* LCDemoAccumulates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0365761C4CFA3700E04D7B /* LCDemoAccumulates.plist */; settings = {ASSET_TAGS = (); }; };
+		9C0365891C4CFA3700E04D7B /* LCDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365781C4CFA3700E04D7B /* LCDemoTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C03658A1C4CFA3700E04D7B /* LCDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03657B1C4CFA3700E04D7B /* LCDocumentViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C03657E1C4CFA3700E04D7B /* LCHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365811C4CFA3700E04D7B /* LCAnimationLayer.m */; settings = {ASSET_TAGS = (); }; };
+		9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365831C4CFA3700E04D7B /* LCAnimationView.m */; settings = {ASSET_TAGS = (); }; };
+		9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365851C4CFA3700E04D7B /* LCFlyingView.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365901C4CFBED00E04D7B /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365931C4CFBFD00E04D7B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0365921C4CFBFD00E04D7B /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		9C0365961C4CFCD800E04D7B /* LCSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365951C4CFCD800E04D7B /* LCSettingTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C0365991C4CFD4A00E04D7B /* LCSupriseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365981C4CFD4A00E04D7B /* LCSupriseTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C03659B1C4CFD6E00E04D7B /* LCSupriseAccumulates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C03659A1C4CFD6E00E04D7B /* LCSupriseAccumulates.plist */; settings = {ASSET_TAGS = (); }; };
+		9C03659D1C4CFD7A00E04D7B /* LCSettingAccumulates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C03659C1C4CFD7A00E04D7B /* LCSettingAccumulates.plist */; settings = {ASSET_TAGS = (); }; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
-		9C61C4781C3E3E43003877BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4771C3E3E43003877BC /* AppDelegate.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
 		9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4821C3E3E43003877BC /* Assets.xcassets */; };
 		9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4841C3E3E43003877BC /* LaunchScreen.storyboard */; };
 		9C61C4911C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4901C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests.m */; };
 		9C61C49C1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C49B1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m */; };
-		9CF428711C4642B9003E9659 /* LHBorderLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF428701C4642B9003E9659 /* LHBorderLineView.m */; settings = {ASSET_TAGS = (); }; };
-		9CF4288F1C47E79B003E9659 /* LCAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4288E1C47E79B003E9659 /* LCAnimationLayer.m */; settings = {ASSET_TAGS = (); }; };
-		9CF428921C47E920003E9659 /* LCAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF428911C47E920003E9659 /* LCAnimationView.m */; settings = {ASSET_TAGS = (); }; };
+		9CB170411C4D25FC00AA2624 /* LCDocumentAccumulates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CB170401C4D25FC00AA2624 /* LCDocumentAccumulates.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,38 +57,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C1350871C42637F00A4CAB8 /* LCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCHomeViewController.h; path = LCHome/LCHomeViewController.h; sourceTree = "<group>"; };
-		9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCHomeViewController.m; path = LCHome/LCHomeViewController.m; sourceTree = "<group>"; };
-		9C19C50A1C4A010600545434 /* LCFlyingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCFlyingView.h; path = LCHome/LCFlyingView.h; sourceTree = "<group>"; };
-		9C19C50B1C4A010600545434 /* LCFlyingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCFlyingView.m; path = LCHome/LCFlyingView.m; sourceTree = "<group>"; };
-		9C29F96F1C44CDDC00E8F310 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "LHHelpers/UIImage+Color.h"; sourceTree = "<group>"; };
-		9C29F9701C44CDDC00E8F310 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "LHHelpers/UIImage+Color.m"; sourceTree = "<group>"; };
-		9C29F9751C44D23700E8F310 /* UIColor+helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+helper.h"; path = "LHHelpers/UIColor+helper.h"; sourceTree = "<group>"; };
-		9C29F9761C44D23700E8F310 /* UIColor+helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+helper.m"; path = "LHHelpers/UIColor+helper.m"; sourceTree = "<group>"; };
-		9C29F97C1C44E62F00E8F310 /* LCLightBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCLightBorderButton.h; path = LCGeneralUI/LCLightBorderButton.h; sourceTree = "<group>"; };
-		9C29F97D1C44E62F00E8F310 /* LCLightBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCLightBorderButton.m; path = LCGeneralUI/LCLightBorderButton.m; sourceTree = "<group>"; };
-		9C29F97F1C44E64F00E8F310 /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCButton.h; path = LCGeneralUI/LCButton.h; sourceTree = "<group>"; };
-		9C29F9801C44E64F00E8F310 /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCButton.m; path = LCGeneralUI/LCButton.m; sourceTree = "<group>"; };
+		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
+		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
+		9C0365541C4CF9F900E04D7B /* LCAccumulateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulateManager.h; sourceTree = "<group>"; };
+		9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulateManager.m; sourceTree = "<group>"; };
+		9C0365561C4CF9F900E04D7B /* LCUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUtilities.h; sourceTree = "<group>"; };
+		9C0365571C4CF9F900E04D7B /* LCUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUtilities.m; sourceTree = "<group>"; };
+		9C0365591C4CF9F900E04D7B /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButton.h; sourceTree = "<group>"; };
+		9C03655A1C4CF9F900E04D7B /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButton.m; sourceTree = "<group>"; };
+		9C03655B1C4CF9F900E04D7B /* LCLightBorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLightBorderButton.h; sourceTree = "<group>"; };
+		9C03655C1C4CF9F900E04D7B /* LCLightBorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLightBorderButton.m; sourceTree = "<group>"; };
+		9C03655D1C4CF9F900E04D7B /* LCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewCell.h; sourceTree = "<group>"; };
+		9C03655E1C4CF9F900E04D7B /* LCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewCell.m; sourceTree = "<group>"; };
+		9C03655F1C4CF9F900E04D7B /* LHBorderLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBorderLineView.h; sourceTree = "<group>"; };
+		9C0365601C4CF9F900E04D7B /* LHBorderLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHBorderLineView.m; sourceTree = "<group>"; };
+		9C0365621C4CF9F900E04D7B /* LCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewController.h; sourceTree = "<group>"; };
+		9C0365631C4CF9F900E04D7B /* LCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewController.m; sourceTree = "<group>"; };
+		9C0365651C4CF9F900E04D7B /* UIColor+helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+helper.h"; sourceTree = "<group>"; };
+		9C0365661C4CF9F900E04D7B /* UIColor+helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+helper.m"; sourceTree = "<group>"; };
+		9C0365671C4CF9F900E04D7B /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		9C0365681C4CF9F900E04D7B /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		9C0365761C4CFA3700E04D7B /* LCDemoAccumulates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCDemoAccumulates.plist; sourceTree = "<group>"; };
+		9C0365771C4CFA3700E04D7B /* LCDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDemoTableViewController.h; sourceTree = "<group>"; };
+		9C0365781C4CFA3700E04D7B /* LCDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDemoTableViewController.m; sourceTree = "<group>"; };
+		9C03657A1C4CFA3700E04D7B /* LCDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDocumentViewController.h; sourceTree = "<group>"; };
+		9C03657B1C4CFA3700E04D7B /* LCDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDocumentViewController.m; sourceTree = "<group>"; };
+		9C03657D1C4CFA3700E04D7B /* LCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHomeViewController.h; sourceTree = "<group>"; };
+		9C03657E1C4CFA3700E04D7B /* LCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHomeViewController.m; sourceTree = "<group>"; };
+		9C0365801C4CFA3700E04D7B /* LCAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAnimationLayer.h; sourceTree = "<group>"; };
+		9C0365811C4CFA3700E04D7B /* LCAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAnimationLayer.m; sourceTree = "<group>"; };
+		9C0365821C4CFA3700E04D7B /* LCAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAnimationView.h; sourceTree = "<group>"; };
+		9C0365831C4CFA3700E04D7B /* LCAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAnimationView.m; sourceTree = "<group>"; };
+		9C0365841C4CFA3700E04D7B /* LCFlyingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFlyingView.h; sourceTree = "<group>"; };
+		9C0365851C4CFA3700E04D7B /* LCFlyingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFlyingView.m; sourceTree = "<group>"; };
+		9C03658F1C4CFBED00E04D7B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C0365901C4CFBED00E04D7B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C0365921C4CFBFD00E04D7B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0365941C4CFCD800E04D7B /* LCSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSettingTableViewController.h; sourceTree = "<group>"; };
+		9C0365951C4CFCD800E04D7B /* LCSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSettingTableViewController.m; sourceTree = "<group>"; };
+		9C0365971C4CFD4A00E04D7B /* LCSupriseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSupriseTableViewController.h; sourceTree = "<group>"; };
+		9C0365981C4CFD4A00E04D7B /* LCSupriseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSupriseTableViewController.m; sourceTree = "<group>"; };
+		9C03659A1C4CFD6E00E04D7B /* LCSupriseAccumulates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSupriseAccumulates.plist; sourceTree = "<group>"; };
+		9C03659C1C4CFD7A00E04D7B /* LCSettingAccumulates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSettingAccumulates.plist; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4741C3E3E43003877BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C61C4761C3E3E43003877BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9C61C4771C3E3E43003877BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C61C4801C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C61C4821C3E3E43003877BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C61C4851C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9C61C4871C3E3E43003877BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C61C48C1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4901C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHiOSAccumulatesInObjectiveCTests.m; sourceTree = "<group>"; };
 		9C61C4921C3E3E43003877BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C61C4971C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C49B1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHiOSAccumulatesInObjectiveCUITests.m; sourceTree = "<group>"; };
 		9C61C49D1C3E3E43003877BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CF4286F1C4642B9003E9659 /* LHBorderLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LHBorderLineView.h; path = LCGeneralUI/LHBorderLineView.h; sourceTree = "<group>"; };
-		9CF428701C4642B9003E9659 /* LHBorderLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LHBorderLineView.m; path = LCGeneralUI/LHBorderLineView.m; sourceTree = "<group>"; };
-		9CF4288D1C47E79B003E9659 /* LCAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAnimationLayer.h; path = LCHome/LCAnimationLayer.h; sourceTree = "<group>"; };
-		9CF4288E1C47E79B003E9659 /* LCAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAnimationLayer.m; path = LCHome/LCAnimationLayer.m; sourceTree = "<group>"; };
-		9CF428901C47E920003E9659 /* LCAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAnimationView.h; path = LCHome/LCAnimationView.h; sourceTree = "<group>"; };
-		9CF428911C47E920003E9659 /* LCAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAnimationView.m; path = LCHome/LCAnimationView.m; sourceTree = "<group>"; };
+		9CB170401C4D25FC00AA2624 /* LCDocumentAccumulates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCDocumentAccumulates.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,43 +138,134 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C1350821C42613F00A4CAB8 /* LCGeneralUI */ = {
+		9C03654C1C4CF9F900E04D7B /* General */ = {
 			isa = PBXGroup;
 			children = (
-				9C29F97C1C44E62F00E8F310 /* LCLightBorderButton.h */,
-				9C29F97D1C44E62F00E8F310 /* LCLightBorderButton.m */,
-				9C29F97F1C44E64F00E8F310 /* LCButton.h */,
-				9C29F9801C44E64F00E8F310 /* LCButton.m */,
-				9CF4286F1C4642B9003E9659 /* LHBorderLineView.h */,
-				9CF428701C4642B9003E9659 /* LHBorderLineView.m */,
+				9C0365501C4CF9F900E04D7B /* LCGeneralUI */,
+				9C0365641C4CF9F900E04D7B /* LHHelpers */,
 			);
-			name = LCGeneralUI;
+			path = General;
 			sourceTree = "<group>";
 		};
-		9C1350861C42634100A4CAB8 /* LCHome */ = {
+		9C0365501C4CF9F900E04D7B /* LCGeneralUI */ = {
 			isa = PBXGroup;
 			children = (
-				9C1350871C42637F00A4CAB8 /* LCHomeViewController.h */,
-				9C1350881C42637F00A4CAB8 /* LCHomeViewController.m */,
-				9CF4288D1C47E79B003E9659 /* LCAnimationLayer.h */,
-				9CF4288E1C47E79B003E9659 /* LCAnimationLayer.m */,
-				9CF428901C47E920003E9659 /* LCAnimationView.h */,
-				9CF428911C47E920003E9659 /* LCAnimationView.m */,
-				9C19C50A1C4A010600545434 /* LCFlyingView.h */,
-				9C19C50B1C4A010600545434 /* LCFlyingView.m */,
+				9C0365511C4CF9F900E04D7B /* data */,
+				9C0365581C4CF9F900E04D7B /* view */,
+				9C0365611C4CF9F900E04D7B /* viewController */,
 			);
-			name = LCHome;
+			path = LCGeneralUI;
 			sourceTree = "<group>";
 		};
-		9C29F96E1C44CD9100E8F310 /* LHHelpers */ = {
+		9C0365511C4CF9F900E04D7B /* data */ = {
 			isa = PBXGroup;
 			children = (
-				9C29F96F1C44CDDC00E8F310 /* UIImage+Color.h */,
-				9C29F9701C44CDDC00E8F310 /* UIImage+Color.m */,
-				9C29F9751C44D23700E8F310 /* UIColor+helper.h */,
-				9C29F9761C44D23700E8F310 /* UIColor+helper.m */,
+				9C0365521C4CF9F900E04D7B /* LCAccumulate.h */,
+				9C0365531C4CF9F900E04D7B /* LCAccumulate.m */,
+				9C0365541C4CF9F900E04D7B /* LCAccumulateManager.h */,
+				9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */,
+				9C0365561C4CF9F900E04D7B /* LCUtilities.h */,
+				9C0365571C4CF9F900E04D7B /* LCUtilities.m */,
 			);
-			name = LHHelpers;
+			path = data;
+			sourceTree = "<group>";
+		};
+		9C0365581C4CF9F900E04D7B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C0365591C4CF9F900E04D7B /* LCButton.h */,
+				9C03655A1C4CF9F900E04D7B /* LCButton.m */,
+				9C03655B1C4CF9F900E04D7B /* LCLightBorderButton.h */,
+				9C03655C1C4CF9F900E04D7B /* LCLightBorderButton.m */,
+				9C03655D1C4CF9F900E04D7B /* LCTableViewCell.h */,
+				9C03655E1C4CF9F900E04D7B /* LCTableViewCell.m */,
+				9C03655F1C4CF9F900E04D7B /* LHBorderLineView.h */,
+				9C0365601C4CF9F900E04D7B /* LHBorderLineView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C0365611C4CF9F900E04D7B /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				9C0365621C4CF9F900E04D7B /* LCTableViewController.h */,
+				9C0365631C4CF9F900E04D7B /* LCTableViewController.m */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		9C0365641C4CF9F900E04D7B /* LHHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C0365651C4CF9F900E04D7B /* UIColor+helper.h */,
+				9C0365661C4CF9F900E04D7B /* UIColor+helper.m */,
+				9C0365671C4CF9F900E04D7B /* UIImage+Color.h */,
+				9C0365681C4CF9F900E04D7B /* UIImage+Color.m */,
+			);
+			path = LHHelpers;
+			sourceTree = "<group>";
+		};
+		9C0365751C4CFA3700E04D7B /* LCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9C0365761C4CFA3700E04D7B /* LCDemoAccumulates.plist */,
+				9C0365771C4CFA3700E04D7B /* LCDemoTableViewController.h */,
+				9C0365781C4CFA3700E04D7B /* LCDemoTableViewController.m */,
+			);
+			path = LCDemo;
+			sourceTree = "<group>";
+		};
+		9C0365791C4CFA3700E04D7B /* LCDocument */ = {
+			isa = PBXGroup;
+			children = (
+				9CB170401C4D25FC00AA2624 /* LCDocumentAccumulates.plist */,
+				9C03657A1C4CFA3700E04D7B /* LCDocumentViewController.h */,
+				9C03657B1C4CFA3700E04D7B /* LCDocumentViewController.m */,
+			);
+			path = LCDocument;
+			sourceTree = "<group>";
+		};
+		9C03657C1C4CFA3700E04D7B /* LCHome */ = {
+			isa = PBXGroup;
+			children = (
+				9C03657D1C4CFA3700E04D7B /* LCHomeViewController.h */,
+				9C03657E1C4CFA3700E04D7B /* LCHomeViewController.m */,
+				9C03657F1C4CFA3700E04D7B /* view */,
+			);
+			path = LCHome;
+			sourceTree = "<group>";
+		};
+		9C03657F1C4CFA3700E04D7B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C0365801C4CFA3700E04D7B /* LCAnimationLayer.h */,
+				9C0365811C4CFA3700E04D7B /* LCAnimationLayer.m */,
+				9C0365821C4CFA3700E04D7B /* LCAnimationView.h */,
+				9C0365831C4CFA3700E04D7B /* LCAnimationView.m */,
+				9C0365841C4CFA3700E04D7B /* LCFlyingView.h */,
+				9C0365851C4CFA3700E04D7B /* LCFlyingView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C0365861C4CFA3700E04D7B /* LCSetting */ = {
+			isa = PBXGroup;
+			children = (
+				9C03659C1C4CFD7A00E04D7B /* LCSettingAccumulates.plist */,
+				9C0365941C4CFCD800E04D7B /* LCSettingTableViewController.h */,
+				9C0365951C4CFCD800E04D7B /* LCSettingTableViewController.m */,
+			);
+			path = LCSetting;
+			sourceTree = "<group>";
+		};
+		9C0365871C4CFA3700E04D7B /* LCSuprise */ = {
+			isa = PBXGroup;
+			children = (
+				9C03659A1C4CFD6E00E04D7B /* LCSupriseAccumulates.plist */,
+				9C0365971C4CFD4A00E04D7B /* LCSupriseTableViewController.h */,
+				9C0365981C4CFD4A00E04D7B /* LCSupriseTableViewController.m */,
+			);
+			path = LCSuprise;
 			sourceTree = "<group>";
 		};
 		9C61C4671C3E3E43003877BC = {
@@ -164,15 +291,18 @@
 		9C61C4721C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
-				9C29F96E1C44CD9100E8F310 /* LHHelpers */,
-				9C1350861C42634100A4CAB8 /* LCHome */,
-				9C1350821C42613F00A4CAB8 /* LCGeneralUI */,
-				9C61C4761C3E3E43003877BC /* AppDelegate.h */,
-				9C61C4771C3E3E43003877BC /* AppDelegate.m */,
+				9C0365921C4CFBFD00E04D7B /* Info.plist */,
+				9C03658F1C4CFBED00E04D7B /* AppDelegate.h */,
+				9C0365901C4CFBED00E04D7B /* AppDelegate.m */,
+				9C0365751C4CFA3700E04D7B /* LCDemo */,
+				9C0365791C4CFA3700E04D7B /* LCDocument */,
+				9C03657C1C4CFA3700E04D7B /* LCHome */,
+				9C0365861C4CFA3700E04D7B /* LCSetting */,
+				9C0365871C4CFA3700E04D7B /* LCSuprise */,
+				9C03654C1C4CF9F900E04D7B /* General */,
 				9C61C47F1C3E3E43003877BC /* Main.storyboard */,
-				9C61C4821C3E3E43003877BC /* Assets.xcassets */,
 				9C61C4841C3E3E43003877BC /* LaunchScreen.storyboard */,
-				9C61C4871C3E3E43003877BC /* Info.plist */,
+				9C61C4821C3E3E43003877BC /* Assets.xcassets */,
 				9C61C4731C3E3E43003877BC /* Supporting Files */,
 			);
 			path = LHiOSAccumulatesInObjectiveC;
@@ -308,9 +438,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0365881C4CFA3700E04D7B /* LCDemoAccumulates.plist in Resources */,
 				9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */,
+				9CB170411C4D25FC00AA2624 /* LCDocumentAccumulates.plist in Resources */,
 				9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */,
+				9C0365931C4CFBFD00E04D7B /* Info.plist in Resources */,
+				9C03659D1C4CFD7A00E04D7B /* LCSettingAccumulates.plist in Resources */,
 				9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */,
+				9C03659B1C4CFD6E00E04D7B /* LCSupriseAccumulates.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,16 +470,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C29F9811C44E64F00E8F310 /* LCButton.m in Sources */,
-				9C1350891C42637F00A4CAB8 /* LCHomeViewController.m in Sources */,
-				9CF4288F1C47E79B003E9659 /* LCAnimationLayer.m in Sources */,
-				9C19C50C1C4A010600545434 /* LCFlyingView.m in Sources */,
-				9CF428711C4642B9003E9659 /* LHBorderLineView.m in Sources */,
-				9C29F9711C44CDDC00E8F310 /* UIImage+Color.m in Sources */,
-				9C29F9771C44D23700E8F310 /* UIColor+helper.m in Sources */,
-				9C29F97E1C44E62F00E8F310 /* LCLightBorderButton.m in Sources */,
-				9C61C4781C3E3E43003877BC /* AppDelegate.m in Sources */,
-				9CF428921C47E920003E9659 /* LCAnimationView.m in Sources */,
+				9C0365891C4CFA3700E04D7B /* LCDemoTableViewController.m in Sources */,
+				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
+				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
+				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
+				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
+				9C03658A1C4CFA3700E04D7B /* LCDocumentViewController.m in Sources */,
+				9C0365991C4CFD4A00E04D7B /* LCSupriseTableViewController.m in Sources */,
+				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
+				9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */,
+				9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */,
+				9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */,
+				9C0365961C4CFCD800E04D7B /* LCSettingTableViewController.m in Sources */,
+				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
+				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,
+				9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */,
+				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
+				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
+				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
+				9C0365701C4CF9F900E04D7B /* LCTableViewCell.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

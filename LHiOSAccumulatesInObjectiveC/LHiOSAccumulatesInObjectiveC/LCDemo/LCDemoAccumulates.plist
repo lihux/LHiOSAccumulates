@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>001账号密码各种输入限制的实现</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>天下第一拉鸡八倒</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>恩雪雪看</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+</array>
+</plist>

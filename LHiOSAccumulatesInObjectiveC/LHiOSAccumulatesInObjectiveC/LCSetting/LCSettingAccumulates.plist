@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>停止动画</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>清除缓存</string>
+		<key>content</key>
+		<string>第三方输入法带来了新的麻烦</string>
+		<key>storyboardID</key>
+		<string>A01InputConstraintViewController</string>
+	</dict>
+</array>
+</plist>

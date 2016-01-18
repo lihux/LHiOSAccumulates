@@ -23,13 +23,14 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *homeButtonCRHorizontalSpaceConstraints;
 @property (weak, nonatomic) IBOutlet UIView *maskView;
 @property (weak, nonatomic) IBOutlet UILabel *maskLabel;
-
+@property (weak, nonatomic) IBOutlet UIView *controllerContrainerView;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *flyView1SizeConstraints;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *flyView2SizeConstraints;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *flyView3SizeConstraints;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *flyView4SizeConstraints;
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *flyingViews;
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *subViewControllerContainerViews;
 
 
 @property (nonatomic, strong) NSArray *flyConstraintArray;
@@ -37,6 +38,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
 @property (nonatomic, assign) BOOL firstLaunch;
 @property (nonatomic, strong) NSArray *homeButtonTitles;
 @property (nonatomic, assign) BOOL isFlying;
+@property (nonatomic, assign) CGFloat controllerContainerViewZoomingMin;
 
 @end
 
@@ -46,12 +48,12 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     [super viewDidLoad];
     [self adjustLayoutConstraints];
     [self prepareDatas];
-    self.flyingViewIndex = -1;
-    self.homeButtonTitles = @[@"好玩", @"好看", @"你猜", @"设置"];
 }
 
 - (void)prepareDatas
 {
+    self.flyingViewIndex = -1;
+    self.homeButtonTitles = @[@"好玩", @"好看", @"你猜", @"设置"];
     self.flyConstraintArray = @[self.flyView1SizeConstraints, self.flyView2SizeConstraints, self.flyView3SizeConstraints, self.flyView4SizeConstraints];
     self.flyingViews = [self.flyingViews sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         NSComparisonResult result = NSOrderedAscending;
@@ -60,6 +62,12 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
         }
         return result;
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self updateControllerControllerContrainerViewWithZoomingState:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -72,13 +80,21 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
         [self homeButtonAnimateWithButtonIndex:0 isFlyingAway:YES completion:^{
             self.maskLabel.text = self.homeButtonTitles[0];
             [self centerCircleAnimateWithIsZooming:YES completion:^{
-                self.flyingViewIndex = 0;
             }];
         }];
     }
 }
 
-#pragma mark - AutoLayout Concerns
+- (void)setFlyingViewIndex:(NSInteger)flyingViewIndex
+{
+    if (flyingViewIndex >= 0) {
+        for (UIView *view in self.subViewControllerContainerViews) {
+            view.hidden = flyingViewIndex == view.tag ? NO : YES;
+        }
+    }
+    _flyingViewIndex = flyingViewIndex;
+}
+
 - (void)adjustLayoutConstraints
 {
     CGFloat buttonWidth = [(UIButton *)self.homeButtons[0] bounds].size.width;
@@ -94,6 +110,14 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     [self.view layoutIfNeeded];
 }
 
+- (void)updateControllerControllerContrainerViewWithZoomingState:(BOOL)isZooming
+{
+    CGFloat controllerContainerViewScale = isZooming ? 1 : self.controllerContainerViewZoomingMin;
+    CGFloat controllerContainerViewAlpha = isZooming ? 1 : 0;
+    self.controllerContrainerView.transform = CGAffineTransformMakeScale(controllerContainerViewScale, controllerContainerViewScale);
+    self.controllerContrainerView.alpha = controllerContainerViewAlpha;
+}
+
 - (void)centerCircleAnimateWithIsZooming:(BOOL)isZooming completion:(void(^)())completion
 {
     self.maskLabel.hidden = NO;
@@ -104,6 +128,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     [UIView animateWithDuration:kDefaultZoomingAnimationDuration animations:^{
         self.maskView.transform = CGAffineTransformMakeScale(scale, scale);
         self.maskLabel.alpha = labelAlpha;
+        [self updateControllerControllerContrainerViewWithZoomingState:isZooming];
     } completion:^(BOOL finished) {
         if (finished && completion) {
             self.maskLabel.hidden = YES;
@@ -156,6 +181,15 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (CGFloat)controllerContainerViewZoomingMin
+{
+    if (_controllerContainerViewZoomingMin == 0) {
+        CGFloat length = self.controllerContrainerView.frame.size.height > self.controllerContrainerView.frame.size.width ? self.controllerContrainerView.frame.size.height : self.controllerContrainerView.frame.size.width;
+        _controllerContainerViewZoomingMin = 50 / length;
+    }
+    return _controllerContainerViewZoomingMin;
 }
 
 @end
