@@ -681,7 +681,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCTableViewCellFullSize" rowHeight="90" id="F0L-9R-ShX" customClass="LCTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LCTableViewCellFullSize" rowHeight="90" id="F0L-9R-ShX" customClass="LCTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="0.0" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F0L-9R-ShX" id="1bo-fm-74h">
@@ -746,7 +746,7 @@
                                     <outlet property="titleLabel" destination="abN-CS-1t4" id="5Vx-9N-l25"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCTableViewCellSmallSize" rowHeight="44" id="d7C-fm-Xif" customClass="LCTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LCTableViewCellSmallSize" rowHeight="44" id="d7C-fm-Xif" customClass="LCTableViewCell">
                                 <rect key="frame" x="0.0" y="118" width="0.0" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d7C-fm-Xif" id="Wtg-lZ-0hG">

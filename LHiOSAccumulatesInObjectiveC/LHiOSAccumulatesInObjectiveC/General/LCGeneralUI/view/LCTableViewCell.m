@@ -9,6 +9,7 @@
 #import "LCTableViewCell.h"
 
 #import "LCAccumulate.h"
+#import "UIColor+helper.h"
 
 @interface LCTableViewCell ()
 
@@ -31,8 +32,9 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    UIView *backgroundView = [[UIView alloc] init];
+    backgroundView.backgroundColor = [UIColor colorWithHex:0x000000 alpha:0.1];
+    [self setSelectedBackgroundView:backgroundView];
 }
 
 @end
