@@ -17,5 +17,9 @@
 
 - (void)configTableViewWithPlistFileName:(NSString *)plistName storyBoardName:(NSString *)storyBoardName;
 - (NSString *)cellReuseIdentifier;
+- (NSString *)leftNavigatorItemText;
+- (NSString *)rightNavigatorItemText;
+- (void)didTapOnLeftNavigatorButton:(UIButton *)leftButton;
+- (void)didTapOnRightNavigatorButton:(UIButton *)rightButton;
 
 @end

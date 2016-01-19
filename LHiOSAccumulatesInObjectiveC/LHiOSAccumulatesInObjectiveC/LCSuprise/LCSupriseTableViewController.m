@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"你猜";
     self.tableView.tableFooterView = [UIView new];
     [self configTableViewWithPlistFileName:@"LCSupriseAccumulates" storyBoardName:@"Main"];
 }

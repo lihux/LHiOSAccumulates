@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"好看";
     self.tableView.tableFooterView = [UIView new];
     [self configTableViewWithPlistFileName:@"LCDocumentAccumulates" storyBoardName:@"Main"];
 }

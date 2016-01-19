@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.tableFooterView = [UIView new];
+    self.title = @"好玩";
     [self configTableViewWithPlistFileName:@"LCDemoAccumulates" storyBoardName:@"Main"];
 }
 
@@ -37,6 +38,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 44;
+}
+
+- (NSString *)leftNavigatorItemText
+{
+    return @"千万别点我";
 }
 
 #pragma mark - LCTableViewCellDelegate
