@@ -9,9 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @class LCAccumulate;
+@class LCTableViewCell;
+@protocol LCTableViewCellDelegate <NSObject>
+
+- (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath;
+
+@end
 
 @interface LCTableViewCell : UITableViewCell
 
-- (void)configCellWithAccumulate:(LCAccumulate *)accumulate;
+@property (nonatomic, weak) id<LCTableViewCellDelegate> delegate;
+
+- (void)configCellWithAccumulate:(LCAccumulate *)accumulate withIndexPatch:(NSIndexPath *)indexPath;
 
 @end

@@ -29,7 +29,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LCTableViewCellSmallSize" forIndexPath:indexPath];
     LCAccumulate *accumulate = self.accumulatesManager.accumulates[indexPath.row];
-    [cell configCellWithAccumulate:accumulate];
+    [cell configCellWithAccumulate:accumulate withIndexPatch:indexPath];
+    cell.delegate = self;
     return cell;
 }
 
@@ -38,8 +39,9 @@
     return 44;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - LCTableViewCellDelegate
+- (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
 {
+    
 }
-
 @end

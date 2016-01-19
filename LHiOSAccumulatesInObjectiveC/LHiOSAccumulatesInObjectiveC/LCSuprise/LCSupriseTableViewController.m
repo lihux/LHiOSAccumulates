@@ -26,20 +26,14 @@
     [super didReceiveMemoryWarning];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LCTableViewCellSmallSize" forIndexPath:indexPath];
-    LCAccumulate *accumulate = self.accumulatesManager.accumulates[indexPath.row];
-    [cell configCellWithAccumulate:accumulate];
-    return cell;
+- (NSString *)cellReuseIdentifier
+{
+    return @"LCTableViewCellSmallSize";
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
 {
-    return 44;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+    
 }
 
 @end

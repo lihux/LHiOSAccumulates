@@ -53,9 +53,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LCAccumulateTableViewCell" forIndexPath:indexPath];
+    LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self cellReuseIdentifier] forIndexPath:indexPath];
     LCAccumulate *accumulate = self.accumulatesManager.accumulates[indexPath.row];
-    [cell configCellWithAccumulate:accumulate];
+    [cell configCellWithAccumulate:accumulate withIndexPatch:indexPath];
+    cell.delegate = self;
     return cell;
 }
 
@@ -63,6 +64,17 @@
 {
     LCAccumulate *accumulate = self.accumulatesManager.accumulates[indexPath.row];
     [self.navigationController pushViewController:[LCUtilities viewControllerForAccumulate:accumulate storyboardName:self.storyBoardName] animated:YES];
+}
+
+#pragma mark - LCTableViewCellDelegate
+- (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
+{
+}
+
+#pragma mark - method that may be override
+- (NSString *)cellReuseIdentifier
+{
+    return @"LCAccumulateTableViewCell";
 }
 
 @end

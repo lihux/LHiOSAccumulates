@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import "LCAccumulateManager.h"
+#import "LCTableViewCell.h"
 
-@interface LCTableViewController : UITableViewController
+@interface LCTableViewController : UITableViewController  <LCTableViewCellDelegate>
 
 @property (nonatomic, strong) LCAccumulateManager *accumulatesManager;
 
 - (void)configTableViewWithPlistFileName:(NSString *)plistName storyBoardName:(NSString *)storyBoardName;
+- (NSString *)cellReuseIdentifier;
 
 @end
