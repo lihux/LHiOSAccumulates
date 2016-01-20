@@ -36,6 +36,8 @@
 		9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4841C3E3E43003877BC /* LaunchScreen.storyboard */; };
 		9C61C4911C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4901C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests.m */; };
 		9C61C49C1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C49B1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m */; };
+		9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
 		9CB170411C4D25FC00AA2624 /* LCDocumentAccumulates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CB170401C4D25FC00AA2624 /* LCDocumentAccumulates.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -110,6 +112,9 @@
 		9C61C4971C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C49B1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHiOSAccumulatesInObjectiveCUITests.m; sourceTree = "<group>"; };
 		9C61C49D1C3E3E43003877BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9124331C4FA06E007AB00D /* LCSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSectionHeaderView.h; sourceTree = "<group>"; };
+		9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSectionHeaderView.m; sourceTree = "<group>"; };
+		9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCSectionHeaderView.xib; sourceTree = "<group>"; };
 		9CB170401C4D25FC00AA2624 /* LCDocumentAccumulates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCDocumentAccumulates.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +186,9 @@
 				9C03655E1C4CF9F900E04D7B /* LCTableViewCell.m */,
 				9C03655F1C4CF9F900E04D7B /* LHBorderLineView.h */,
 				9C0365601C4CF9F900E04D7B /* LHBorderLineView.m */,
+				9C9124331C4FA06E007AB00D /* LCSectionHeaderView.h */,
+				9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */,
+				9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -438,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */,
 				9C0365881C4CFA3700E04D7B /* LCDemoAccumulates.plist in Resources */,
 				9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */,
 				9CB170411C4D25FC00AA2624 /* LCDocumentAccumulates.plist in Resources */,
@@ -488,6 +497,7 @@
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
+				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
 				9C0365701C4CF9F900E04D7B /* LCTableViewCell.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
 			);

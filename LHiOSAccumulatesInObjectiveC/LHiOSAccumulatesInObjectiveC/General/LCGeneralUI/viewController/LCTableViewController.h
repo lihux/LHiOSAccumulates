@@ -10,8 +10,9 @@
 
 #import "LCAccumulateManager.h"
 #import "LCTableViewCell.h"
+#import "LCSectionHeaderView.h"
 
-@interface LCTableViewController : UITableViewController  <LCTableViewCellDelegate>
+@interface LCTableViewController : UITableViewController  <LCTableViewCellDelegate, LCSectionHeaderViewDelegate>
 
 @property (nonatomic, strong) LCAccumulateManager *accumulatesManager;
 
@@ -19,7 +20,5 @@
 - (NSString *)cellReuseIdentifier;
 - (NSString *)leftNavigatorItemText;
 - (NSString *)rightNavigatorItemText;
-- (void)didTapOnLeftNavigatorButton:(UIButton *)leftButton;
-- (void)didTapOnRightNavigatorButton:(UIButton *)rightButton;
 
 @end

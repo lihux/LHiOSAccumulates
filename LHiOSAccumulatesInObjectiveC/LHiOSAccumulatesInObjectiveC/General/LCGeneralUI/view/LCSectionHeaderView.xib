@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-Ck-hQj" userLabel="mask View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqi-M7-vcr" userLabel="title Label">
+                    <rect key="frame" x="75" y="0.0" width="450" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv7-gI-2Tq" userLabel="left Button">
+                    <rect key="frame" x="5" y="0.0" width="70" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="u3K-XP-LJj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapOnLeftButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="UaK-Ir-e8u"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4t-c0-0Kg" userLabel="right Button">
+                    <rect key="frame" x="525" y="0.0" width="70" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="NkT-9B-9nt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapOnRightButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="FOx-eI-QeY"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5R-jl-vAV">
+                    <rect key="frame" x="0.0" y="43" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.094117647060000004" green="0.50980392159999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BTr-rU-dUa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.50980392159999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="A5R-jl-vAV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6V6-aW-Gm7"/>
+                <constraint firstItem="v4t-c0-0Kg" firstAttribute="leading" secondItem="Vqi-M7-vcr" secondAttribute="trailing" id="Aas-Iq-gF4"/>
+                <constraint firstAttribute="trailing" secondItem="3Zg-Ck-hQj" secondAttribute="trailing" id="Bdi-Kx-wEw"/>
+                <constraint firstItem="cv7-gI-2Tq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="GbG-8B-IdJ"/>
+                <constraint firstAttribute="bottom" secondItem="v4t-c0-0Kg" secondAttribute="bottom" id="JzU-bD-dAJ"/>
+                <constraint firstItem="3Zg-Ck-hQj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PPp-YO-v1z"/>
+                <constraint firstItem="Vqi-M7-vcr" firstAttribute="leading" secondItem="cv7-gI-2Tq" secondAttribute="trailing" id="RRI-Wr-6el"/>
+                <constraint firstItem="cv7-gI-2Tq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Sl6-l8-NtQ"/>
+                <constraint firstAttribute="bottom" secondItem="Vqi-M7-vcr" secondAttribute="bottom" id="TGI-ch-uwa"/>
+                <constraint firstItem="Vqi-M7-vcr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ViH-9T-gwC"/>
+                <constraint firstAttribute="bottom" secondItem="cv7-gI-2Tq" secondAttribute="bottom" id="c4G-zn-jfO"/>
+                <constraint firstAttribute="bottom" secondItem="A5R-jl-vAV" secondAttribute="bottom" id="dlA-YG-ohQ"/>
+                <constraint firstItem="3Zg-Ck-hQj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eD5-na-hT5"/>
+                <constraint firstItem="v4t-c0-0Kg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="geS-te-8fQ"/>
+                <constraint firstAttribute="trailing" secondItem="A5R-jl-vAV" secondAttribute="trailing" id="hRi-Pg-mX8"/>
+                <constraint firstAttribute="trailing" secondItem="v4t-c0-0Kg" secondAttribute="trailing" constant="5" id="rCg-He-rQ5"/>
+                <constraint firstAttribute="bottom" secondItem="3Zg-Ck-hQj" secondAttribute="bottom" id="yW7-Vg-d4t"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftButton" destination="cv7-gI-2Tq" id="UzC-wR-mL2"/>
+                <outlet property="rightButton" destination="v4t-c0-0Kg" id="geI-uS-4NT"/>
+                <outlet property="titleLabel" destination="Vqi-M7-vcr" id="HXZ-yP-1SL"/>
+            </connections>
+        </view>
+    </objects>
+</document>

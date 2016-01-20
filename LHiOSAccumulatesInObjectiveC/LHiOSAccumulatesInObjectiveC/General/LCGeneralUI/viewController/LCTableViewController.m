@@ -12,7 +12,7 @@
 #import "LCUtilities.h"
 #import "LCTableViewCell.h"
 
-@interface LCTableViewController ()
+@interface LCTableViewController () <LCSectionHeaderViewDelegate>
 
 @property (nonatomic, strong) NSString *plistFileName;
 @property (nonatomic, strong) NSString *storyBoardName;
@@ -67,17 +67,12 @@
 {
     UIView *headerView = [[UIView alloc] init];
     if (section == 0) {
-        headerView.backgroundColor = [UIColor clearColor];
-        [headerView addSubview:self.leftNavigatorButton];
-        [headerView addSubview:self.rightNavigatorButton];
-        [headerView addSubview:self.titleLabel];
-        NSDictionary *dic = @{@"leftButton": self.leftNavigatorButton, @"rightButton": self.rightNavigatorButton, @"titleLabel": self.titleLabel};
-        [headerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-80-[titleLabel]-80-|" options:0 metrics:nil views:dic]];
-        [headerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-10-[leftButton]" options:0 metrics:nil views:dic]];
-        [headerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"[rightButton]-10-|" options:0 metrics:nil views:dic]];
-        [headerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-14-[titleLabel]" options:0 metrics:nil views:dic]];
-        [headerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[leftButton]-0-|" options:0 metrics:nil views:dic]];
-        [headerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[rightButton]-0-|" options:0 metrics:nil views:dic]];
+        LCSectionHeaderView *sectionHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"LCSectionHeaderView" owner:nil options:nil] objectAtIndex:0];
+        sectionHeaderView.delegate = self;
+        NSString *leftText = [self leftNavigatorItemText];
+        NSString *rightText = [self rightNavigatorItemText];
+        [sectionHeaderView configSectionHeaderViewWithTitle:self.title leftText:leftText rightText:rightText];
+        return sectionHeaderView;
     }
     return headerView;
 }
@@ -89,6 +84,15 @@
 
 #pragma mark - LCTableViewCellDelegate
 - (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
+{
+}
+
+#pragma mark - LCSectionHeaderViewDelegate
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton
+{
+}
+
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton
 {
 }
 
@@ -115,54 +119,5 @@
 - (void)didTapOnRightNavigatorButton:(UIButton *)rightButton
 {
 }
-
-- (UIButton *)leftNavigatorButton
-{
-    if (!_leftNavigatorButton) {
-        _leftNavigatorButton = [self customNavigatorButton];
-        _leftNavigatorButton.titleLabel.text = [self leftNavigatorItemText];
-        _leftNavigatorButton.hidden = _leftNavigatorButton.titleLabel.text.length > 0 ? NO : YES;
-    }
-    return _leftNavigatorButton;
-}
-
-- (UIButton *)rightNavigatorButton
-{
-    if (!_rightNavigatorButton) {
-        _rightNavigatorButton = [self customNavigatorButton];
-        _rightNavigatorButton.titleLabel.text = [self rightNavigatorItemText];
-        _rightNavigatorButton.hidden = _rightNavigatorButton.titleLabel.text.length > 0 ? NO : YES;
-    }
-    return _rightNavigatorButton;
-}
-
-- (UILabel *)titleLabel
-{
-    if (!_titleLabel) {
-        UILabel *label = [[UILabel alloc] init];
-        label.translatesAutoresizingMaskIntoConstraints = NO;
-        label.textAlignment = NSTextAlignmentCenter;
-        label.font = [UIFont fontWithName:@" STHeitiSC-Medium" size:14];
-        label.textColor = [UIColor whiteColor];
-        [label addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[label(==16)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(label)]];
-        label.text = self.title;
-        _titleLabel = label;
-    }
-    return _titleLabel;
-}
-
-- (UIButton *)customNavigatorButton
-{
-    UIButton *button = [[UIButton alloc] init];
-    button.translatesAutoresizingMaskIntoConstraints = NO;
-    button.titleLabel.font = [UIFont fontWithName:@" STHeitiSC-Medium" size:14];
-    button.titleLabel.textColor = [UIColor whiteColor];
-    [button addConstraint:[NSLayoutConstraint constraintWithItem:button attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:70]];
-
-    button.hidden = YES;
-    return button;
-}
-
-
 
 @end
