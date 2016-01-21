@@ -4,11 +4,13 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>展示Demo，需要替换</string>
+		<string>1. UI可视化编程技巧（xib、storyboard及代码混用）</string>
 		<key>content</key>
-		<string>第三方输入法带来了新的麻烦</string>
+		<string>苹果力推的可视化编程，主要指通过xib和storyboard来实现UI的构建，减少代码量的同时提高开发速度。真正优秀的iOS开发工程师，应当抛去“纯代码至上”的执念，看清纯代码和storyboard的各自优势和劣势，在不同的应用场景中采用不同的技术，做到融会贯通，新旧技术皆能为我所用的境界。</string>
 		<key>storyboardID</key>
-		<string>A01InputConstraintViewController</string>
+		<string>LCDemo01UIViewController</string>
+		<key>storyboardName</key>
+		<string>Demo</string>
 	</dict>
 </array>
 </plist>
