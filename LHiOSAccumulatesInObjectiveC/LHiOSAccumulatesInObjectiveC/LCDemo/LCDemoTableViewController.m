@@ -40,11 +40,6 @@
     return 44;
 }
 
-- (NSString *)leftNavigatorItemText
-{
-    return @"千万别点我";
-}
-
 #pragma mark - LCTableViewCellDelegate
 - (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
 {

@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"你猜";
+    self.title = @"设置";
     self.tableView.tableFooterView = [UIView new];
     [self configTableViewWithPlistFileName:@"LCSettingAccumulates" storyBoardName:@"Main"];
 }
@@ -34,8 +34,6 @@
 
 - (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
 {
-    
 }
-
 
 @end

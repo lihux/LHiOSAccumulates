@@ -21,10 +21,11 @@
 - (void)configSectionHeaderViewWithTitle:(NSString *)title leftText:(NSString *)leftText rightText:(NSString *)rightText
 {
     self.titleLabel.text = title;
+    [self.leftButton setTitle:leftText forState:UIControlStateNormal];
     self.leftButton.titleLabel.text = leftText;
-    self.leftButton.hidden = leftText ? NO : YES;
-    self.rightButton.titleLabel.text = rightText;
-    self.rightButton.hidden = rightText ? NO : YES;
+    self.leftButton.hidden = leftText.length > 0 ? NO : YES;
+    [self.rightButton setTitle:rightText forState:UIControlStateNormal];
+    self.rightButton.hidden = rightText.length > 0 ? NO : YES;
 }
 
 #pragma mark - LCSectionHeaderViewDelegate
