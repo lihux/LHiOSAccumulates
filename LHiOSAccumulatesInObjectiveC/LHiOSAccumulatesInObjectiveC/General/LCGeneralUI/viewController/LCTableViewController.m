@@ -93,6 +93,8 @@
             [weakSelf dismissViewControllerAnimated:weakAlertController completion:nil];
         }]];
         [self presentViewController:alertController animated:YES completion:nil];
+    } else {
+        [self presentViewController:detailViewController animated:YES completion:nil];
     }
 }
 

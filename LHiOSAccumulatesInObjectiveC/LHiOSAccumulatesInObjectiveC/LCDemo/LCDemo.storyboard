@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="558" y="-392"/>
         </scene>
-        <!--Demo01UI View Controller-->
+        <!--Demo1 Table View Controller-->
         <scene sceneID="9UR-kt-hb7">
             <objects>
-                <tableViewController storyboardIdentifier="LCDemo01UIViewController" id="hAK-dF-wZc" customClass="LCDemo01UIViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LCDemo1TableViewController" id="hAK-dF-wZc" customClass="LCDemo1TableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="tNa-iD-Spy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,7 +8,7 @@
 		<key>content</key>
 		<string>不要认为唯有纯代码才能体现出自己的水平，也不要以为MRC才是你能力的体现；更不要以为自动挡的车都是垃圾，放开你的执念，让xib、storyboard带你提速吧，要相信苹果不会无缘无故的推出一个使你生活变得更糟的东西的^_^！！</string>
 		<key>storyboardID</key>
-		<string>LCDemo1UIViewController</string>
+		<string>LCDemo1TableViewController</string>
 		<key>storyboardName</key>
 		<string>LCDemo</string>
 	</dict>
