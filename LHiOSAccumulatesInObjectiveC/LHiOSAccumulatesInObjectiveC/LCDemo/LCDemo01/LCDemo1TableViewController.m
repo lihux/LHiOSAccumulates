@@ -14,11 +14,14 @@
 
 @implementation LCDemo1TableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidLoad
+{
+        [super viewDidLoad];
+    [self configTableViewWithPlistFileName:@"LCDemo1"];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
 }
 
