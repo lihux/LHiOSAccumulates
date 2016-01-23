@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Lihux. All rights reserved.
 //
 
-#import "LCTableViewController.h"
+#import "LCDetailTableViewController.h"
 
-@interface LCDemo1TableViewController : LCTableViewController
+@interface LCDemo1TableViewController : LCDetailTableViewController
 
 @end

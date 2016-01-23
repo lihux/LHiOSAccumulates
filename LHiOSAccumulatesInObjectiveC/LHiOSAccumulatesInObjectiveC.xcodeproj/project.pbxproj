@@ -30,6 +30,8 @@
 		9C0365991C4CFD4A00E04D7B /* LCSupriseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365981C4CFD4A00E04D7B /* LCSupriseTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9C03659B1C4CFD6E00E04D7B /* LCSupriseAccumulates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C03659A1C4CFD6E00E04D7B /* LCSupriseAccumulates.plist */; settings = {ASSET_TAGS = (); }; };
 		9C03659D1C4CFD7A00E04D7B /* LCSettingAccumulates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C03659C1C4CFD7A00E04D7B /* LCSettingAccumulates.plist */; settings = {ASSET_TAGS = (); }; };
+		9C21C5951C53C65900EB942D /* LCDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C21C5941C53C65900EB942D /* LCDetailTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C21C5981C53C6BA00EB942D /* LCDemo1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C21C5971C53C6BA00EB942D /* LCDemo1TableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
 		9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4821C3E3E43003877BC /* Assets.xcassets */; };
@@ -43,7 +45,6 @@
 		9CC70E651C534AA500E182F9 /* LCDocument.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC70E641C534AA500E182F9 /* LCDocument.storyboard */; settings = {ASSET_TAGS = (); }; };
 		9CC70E671C534AB900E182F9 /* LCSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC70E661C534AB900E182F9 /* LCSetting.storyboard */; settings = {ASSET_TAGS = (); }; };
 		9CC70E691C534AE000E182F9 /* LCSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC70E681C534AE000E182F9 /* LCSuprise.storyboard */; settings = {ASSET_TAGS = (); }; };
-		9CC70E6C1C53931700E182F9 /* LCDemo1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC70E6B1C53931700E182F9 /* LCDemo1TableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,10 @@
 		9C0365981C4CFD4A00E04D7B /* LCSupriseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSupriseTableViewController.m; sourceTree = "<group>"; };
 		9C03659A1C4CFD6E00E04D7B /* LCSupriseAccumulates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSupriseAccumulates.plist; sourceTree = "<group>"; };
 		9C03659C1C4CFD7A00E04D7B /* LCSettingAccumulates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSettingAccumulates.plist; sourceTree = "<group>"; };
+		9C21C5931C53C65900EB942D /* LCDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDetailTableViewController.h; sourceTree = "<group>"; };
+		9C21C5941C53C65900EB942D /* LCDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDetailTableViewController.m; sourceTree = "<group>"; };
+		9C21C5961C53C6BA00EB942D /* LCDemo1TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDemo1TableViewController.h; path = LCDemo01/LCDemo1TableViewController.h; sourceTree = "<group>"; };
+		9C21C5971C53C6BA00EB942D /* LCDemo1TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDemo1TableViewController.m; path = LCDemo01/LCDemo1TableViewController.m; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4741C3E3E43003877BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C61C4801C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,8 +130,6 @@
 		9CC70E641C534AA500E182F9 /* LCDocument.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCDocument.storyboard; sourceTree = "<group>"; };
 		9CC70E661C534AB900E182F9 /* LCSetting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCSetting.storyboard; sourceTree = "<group>"; };
 		9CC70E681C534AE000E182F9 /* LCSuprise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCSuprise.storyboard; sourceTree = "<group>"; };
-		9CC70E6A1C53931700E182F9 /* LCDemo1TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDemo1TableViewController.h; path = LCDemo01/LCDemo1TableViewController.h; sourceTree = "<group>"; };
-		9CC70E6B1C53931700E182F9 /* LCDemo1TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDemo1TableViewController.m; path = LCDemo01/LCDemo1TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,8 @@
 			children = (
 				9C0365621C4CF9F900E04D7B /* LCTableViewController.h */,
 				9C0365631C4CF9F900E04D7B /* LCTableViewController.m */,
+				9C21C5931C53C65900EB942D /* LCDetailTableViewController.h */,
+				9C21C5941C53C65900EB942D /* LCDetailTableViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -295,8 +300,8 @@
 		9C6126E71C512A9300ECFE01 /* LCDemo01 */ = {
 			isa = PBXGroup;
 			children = (
-				9CC70E6A1C53931700E182F9 /* LCDemo1TableViewController.h */,
-				9CC70E6B1C53931700E182F9 /* LCDemo1TableViewController.m */,
+				9C21C5961C53C6BA00EB942D /* LCDemo1TableViewController.h */,
+				9C21C5971C53C6BA00EB942D /* LCDemo1TableViewController.m */,
 			);
 			name = LCDemo01;
 			sourceTree = "<group>";
@@ -510,6 +515,7 @@
 			files = (
 				9C0365891C4CFA3700E04D7B /* LCDemoTableViewController.m in Sources */,
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
+				9C21C5951C53C65900EB942D /* LCDetailTableViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
@@ -519,7 +525,7 @@
 				9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */,
 				9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */,
 				9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */,
-				9CC70E6C1C53931700E182F9 /* LCDemo1TableViewController.m in Sources */,
+				9C21C5981C53C6BA00EB942D /* LCDemo1TableViewController.m in Sources */,
 				9C0365961C4CFCD800E04D7B /* LCSettingTableViewController.m in Sources */,
 				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
 				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,

@@ -11,6 +11,7 @@
 @interface LCAccumulate : NSObject
 
 @property (nonatomic, strong) NSString* title;
+@property (nonatomic, strong) NSString* viewControllerTitle;
 @property (nonatomic, strong) NSString* content;
 @property (nonatomic, strong) NSString* storyboardID;
 @property (nonatomic, strong) NSString* storyboardName;

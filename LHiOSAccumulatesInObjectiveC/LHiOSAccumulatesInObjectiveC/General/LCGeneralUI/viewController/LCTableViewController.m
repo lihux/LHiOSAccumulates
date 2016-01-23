@@ -86,7 +86,8 @@
     LCAccumulate *accumulate = cell.accumulate;
     UIViewController *detailViewController = [LCUtilities viewControllerForAccumulate:accumulate];
     if (!detailViewController) {
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"该子项尚未完成，请再等等" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        NSString *message = [NSString stringWithFormat:@"%@ \n暂时还未开发完成，稍安勿躁，静候佳音", accumulate.title];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"该子项尚未完成，请再等等" message:message preferredStyle:UIAlertControllerStyleAlert];
         __weak typeof(self) weakSelf = self;
         __weak typeof(alertController) weakAlertController = alertController;
         [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -94,7 +95,10 @@
         }]];
         [self presentViewController:alertController animated:YES completion:nil];
     } else {
-        [self presentViewController:detailViewController animated:YES completion:nil];
+        if (accumulate.viewControllerTitle && accumulate.viewControllerTitle.length > 0) {
+            detailViewController.title = accumulate.viewControllerTitle;
+        }
+        [self.navigationController pushViewController:detailViewController animated:YES];
     }
 }
 
@@ -116,14 +120,6 @@
 - (NSString *)rightNavigatorItemText
 {
     return @"";
-}
-
-- (void)didTapOnLeftNavigatorButton:(UIButton *)leftButton
-{
-}
-
-- (void)didTapOnRightNavigatorButton:(UIButton *)rightButton
-{
 }
 
 - (NSString *) tableViewCellResueIdentifier

@@ -14,6 +14,7 @@
 {
     if (self = [super init]) {
         self.title = dic[@"title"];
+        self.viewControllerTitle = dic[@"viewControllerTitle"];
         self.content = dic[@"content"];
         self.storyboardID = dic[@"storyboardID"];
         self.storyboardName = dic[@"storyboardName"];

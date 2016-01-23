@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfZ-64-UJQ" userLabel="container View">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfZ-64-UJQ" userLabel="container View">
                                 <rect key="frame" x="25" y="25" width="0.0" height="0.0"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxu-oU-FZE" userLabel="content View">
@@ -673,34 +673,34 @@
             </objects>
             <point key="canvasLocation" x="-121" y="-392"/>
         </scene>
-        <!--LCDemoTableViewController-->
+        <!--LCDemo-->
         <scene sceneID="lTP-ep-REt">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCDemo" referencedIdentifier="LCDemoTableViewController" id="mZv-1q-4w1" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LCDemo" id="mZv-1q-4w1" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKN-Na-ALS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="422" y="-495"/>
         </scene>
-        <!--LCDocumentViewController-->
+        <!--LCDocument-->
         <scene sceneID="6S9-ow-obt">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCDocument" referencedIdentifier="LCDocumentViewController" id="5GK-30-YgU" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LCDocument" id="5GK-30-YgU" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0p0-Xr-BwD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="422.5" y="-445"/>
         </scene>
-        <!--LCSupriseTableViewController-->
+        <!--LCSuprise-->
         <scene sceneID="KiB-TM-h3n">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCSuprise" referencedIdentifier="LCSupriseTableViewController" id="Wf7-dN-xVm" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LCSuprise" id="Wf7-dN-xVm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p43-VB-1n6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="429.5" y="-330"/>
         </scene>
-        <!--LCSettingTableViewController-->
+        <!--LCSetting-->
         <scene sceneID="MeR-D5-geR">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCSetting" referencedIdentifier="LCSettingTableViewController" id="W8F-jK-7cb" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LCSetting" id="W8F-jK-7cb" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRE-46-mT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="428" y="-392"/>
