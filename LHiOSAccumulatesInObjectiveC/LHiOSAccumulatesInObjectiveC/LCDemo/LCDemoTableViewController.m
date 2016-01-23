@@ -42,9 +42,4 @@
     return [[[UIDevice currentDevice].model substringToIndex:4] isEqualToString:@"iPad"];
 }
 
-#pragma mark - LCTableViewCellDelegate
-- (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
-{
-    
-}
 @end

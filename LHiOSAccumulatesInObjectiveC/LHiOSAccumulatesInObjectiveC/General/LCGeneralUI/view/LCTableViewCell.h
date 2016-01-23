@@ -19,6 +19,7 @@
 @interface LCTableViewCell : UITableViewCell
 
 @property (nonatomic, weak) id<LCTableViewCellDelegate> delegate;
+@property (nonatomic, strong) LCAccumulate *accumulate;
 
 - (void)configCellWithAccumulate:(LCAccumulate *)accumulate withIndexPatch:(NSIndexPath *)indexPath;
 

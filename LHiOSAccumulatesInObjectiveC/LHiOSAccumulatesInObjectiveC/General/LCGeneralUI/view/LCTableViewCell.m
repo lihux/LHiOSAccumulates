@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (nonatomic, strong) NSIndexPath *indexPath;
+
 @end
 
 @implementation LCTableViewCell
@@ -27,6 +28,7 @@
     self.titleLabel.text = accumulate.title;
     self.contentLabel.text = accumulate.content;
     self.indexPath = indexPath;
+    self.accumulate = accumulate;
 }
 
 - (void)awakeFromNib

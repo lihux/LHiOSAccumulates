@@ -10,7 +10,7 @@
 		<key>storyboardID</key>
 		<string>LCDemo1UIViewController</string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -18,9 +18,9 @@
 		<key>content</key>
 		<string>动画，是一个APP变得更灵巧、可人的魔法棒，适量、适当的使用动画，有时能够带给你的APP画龙点睛的妙效（但也不可滥用，滥用很容易成为用户的累赘）；使用动画技术的原则是尽可能使用简单的技术去实现动画，只有当简单的技术不能满足的时候，才会考虑更高阶的技术</string>
 		<key>storyboardID</key>
-		<string>LCDemo2UIViewController</string>
+		<string></string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -28,7 +28,7 @@
 		<key>content</key>
 		<string>多线程的应用，在iOS的开发中并不是多么罕见的一件事情，事实上，对于一个稍微复杂一点的APP，有网络请求、较为费时的数据加工、图像处理等功能的时候，往往直接或者间接的应用到了多线程技术了</string>
 		<key>storyboardID</key>
-		<string>LCDemo3UIViewController</string>
+		<string></string>
 		<key>storyboardName</key>
 		<string>LCDemo</string>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>content</key>
 		<string> 运行时系统（runtime）和runloop是一个看似高大上的技术，但应用起来却是很平民化的，能够帮你解决实际的问题，很多时候我们对一种技术的掌握往往不仅仅再于对它的理解有多透彻，还在于遇到实际问题时能够能够很自然的想起来用它来解决问题，做到了这一点方能算是真正的掌握</string>
 		<key>storyboardID</key>
-		<string>LCDemo4UIViewController</string>
+		<string></string>
 		<key>storyboardName</key>
 		<string>LCDemo</string>
 	</dict>
@@ -48,7 +48,7 @@
 		<key>content</key>
 		<string>数据存储基本上是所有APP都会拥有的功能，从最简单的NSUserDefaults的使用，到读写文件、到SQLite、FMDB、Realm等第三方数据库、再到苹果自家的CoreData，留给开发者的选择是相当的丰富的，根据实际的业务需求选用合适的数据存储系统，也是开发者能力的一种体现</string>
 		<key>storyboardID</key>
-		<string>LCDemo5UIViewController</string>
+		<string></string>
 		<key>storyboardName</key>
 		<string>LCDemo</string>
 	</dict>
@@ -58,7 +58,7 @@
 		<key>content</key>
 		<string>网络功能已经是一个成熟APP的基础功能了，很少有不具有联网功能的APP了。网络请求需要对苹果SDK熟悉的同时，还要对http请求有基本的了解。</string>
 		<key>storyboardID</key>
-		<string>LCDemo6UIViewController</string>
+		<string></string>
 		<key>storyboardName</key>
 		<string>LCDemo</string>
 	</dict>
@@ -69,7 +69,7 @@
 		<string> APP的性能优化包括对页面流畅性、内存使用率、CPU使用率以及抗奔溃能力的优化。
 </string>
 		<key>storyboardID</key>
-		<string>LCDemo7UIViewController</string>
+		<string></string>
 		<key>storyboardName</key>
 		<string>LCDemo</string>
 	</dict>
@@ -79,7 +79,7 @@
 		<key>content</key>
 		<string>APP上线以后发现有致命性的崩溃或者严重缺陷的时候，是不是有种想吃后悔药的感觉，很多开发者心里会想着，要是有后悔药可以吃就好了，那么好消息是，有，确实有后悔药的！^_^</string>
 		<key>storyboardID</key>
-		<string>LCDemo8UIViewController</string>
+		<string></string>
 		<key>storyboardName</key>
 		<string>LCDemo</string>
 	</dict>
@@ -89,7 +89,7 @@
 		<key>content</key>
 		<string>Objective-C和C/C++/Lua/Swift都是可以结合使用的，下面将对各种语言的混用进行探索。</string>
 		<key>storyboardID</key>
-		<string>LCDemo9UIViewController</string>
+		<string></string>
 		<key>storyboardName</key>
 		<string>LCDemo</string>
 	</dict>

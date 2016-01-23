@@ -27,16 +27,6 @@
     [super didReceiveMemoryWarning];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 44;
-}
-
-- (NSString *)tableViewCellResueIdentifier
-{
-    return @"LCTableViewCellSmallSize";
-}
-
 - (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
 {
     

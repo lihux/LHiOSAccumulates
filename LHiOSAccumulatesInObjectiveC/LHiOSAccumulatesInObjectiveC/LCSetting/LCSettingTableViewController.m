@@ -27,11 +27,6 @@
     [super didReceiveMemoryWarning];
 }
 
-- (NSString *)tableViewCellResueIdentifier
-{
-    return @"LCTableViewCellSmallSize";
-}
-
 - (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
 {
 }

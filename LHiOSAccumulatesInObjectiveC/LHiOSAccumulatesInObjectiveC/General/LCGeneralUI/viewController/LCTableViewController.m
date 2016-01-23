@@ -12,7 +12,7 @@
 #import "LCUtilities.h"
 #import "LCTableViewCell.h"
 
-@interface LCTableViewController () <LCSectionHeaderViewDelegate>
+@interface LCTableViewController () <LCSectionHeaderViewDelegate, LCTableViewCellDelegate>
 
 @property (nonatomic, strong) NSString *plistFileName;
 @property (nonatomic, strong) UIButton *leftNavigatorButton;
@@ -83,6 +83,17 @@
 #pragma mark - LCTableViewCellDelegate
 - (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
 {
+    LCAccumulate *accumulate = cell.accumulate;
+    UIViewController *detailViewController = [LCUtilities viewControllerForAccumulate:accumulate];
+    if (!detailViewController) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"该子项尚未完成，请再等等" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        __weak typeof(self) weakSelf = self;
+        __weak typeof(alertController) weakAlertController = alertController;
+        [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [weakSelf dismissViewControllerAnimated:weakAlertController completion:nil];
+        }]];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
 }
 
 #pragma mark - LCSectionHeaderViewDelegate
@@ -115,7 +126,7 @@
 
 - (NSString *) tableViewCellResueIdentifier
 {
-    return @"LCAccumulateTableViewCell";
+    return @"LCTableViewCellSmallSize";
 }
 
 @end

@@ -28,11 +28,12 @@
     return accumulates;
 }
 
-+ (UIViewController *)viewControllerForAccumulate:(LCAccumulate *)accumulate storyboardName:(NSString *)storyboardName
++ (UIViewController *)viewControllerForAccumulate:(LCAccumulate *)accumulate
 {
-    UIViewController *accumulateViewController = [[UIStoryboard storyboardWithName:storyboardName bundle: nil] instantiateViewControllerWithIdentifier:accumulate.storyboardID];
-    accumulateViewController.title = accumulate.title;
-    return accumulateViewController;
+    if (accumulate.storyboardID.length > 0) {
+        return [[UIStoryboard storyboardWithName:accumulate.storyboardName bundle:nil] instantiateViewControllerWithIdentifier:accumulate.storyboardID];
+    }
+    return nil;
 }
 
 @end

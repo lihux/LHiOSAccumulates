@@ -14,6 +14,6 @@
 @interface LCUtilities : NSObject
 
 + (NSArray *)loadAccumulatesFromPlistWithPlistFileName:(NSString *)fileName;
-+ (UIViewController *)viewControllerForAccumulate:(LCAccumulate *)accumulate storyboardName:(NSString *)storyboardName;
++ (UIViewController *)viewControllerForAccumulate:(LCAccumulate *)accumulate;
 
 @end
