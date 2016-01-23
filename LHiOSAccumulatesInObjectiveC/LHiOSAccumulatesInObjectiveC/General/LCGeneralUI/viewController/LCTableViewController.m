@@ -15,7 +15,6 @@
 @interface LCTableViewController () <LCSectionHeaderViewDelegate>
 
 @property (nonatomic, strong) NSString *plistFileName;
-@property (nonatomic, strong) NSString *storyBoardName;
 @property (nonatomic, strong) UIButton *leftNavigatorButton;
 @property (nonatomic, strong) UIButton *rightNavigatorButton;
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -24,10 +23,9 @@
 
 @implementation LCTableViewController
 
-- (void)configTableViewWithPlistFileName:(NSString *)plistName storyBoardName:(NSString *)storyBoardName
+- (void)configTableViewWithPlistFileName:(NSString *)plistName
 {
     self.plistFileName = plistName;
-    self.storyBoardName = storyBoardName;
     [self loadAccumulatesFromPlist];
 }
 

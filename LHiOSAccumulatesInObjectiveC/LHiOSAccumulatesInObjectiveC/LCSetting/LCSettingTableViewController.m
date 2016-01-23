@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.title = @"设置";
     self.tableView.tableFooterView = [UIView new];
-    [self configTableViewWithPlistFileName:@"LCSettingAccumulates" storyBoardName:@"Main"];
+    [self configTableViewWithPlistFileName:@"LCSettingAccumulates"];
 }
 
 - (void)didReceiveMemoryWarning {

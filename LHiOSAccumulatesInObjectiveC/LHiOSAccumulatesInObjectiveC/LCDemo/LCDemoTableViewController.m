@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.tableView.tableFooterView = [UIView new];
     self.title = @"好玩";
-    [self configTableViewWithPlistFileName:@"LCDemoAccumulates" storyBoardName:@"Main"];
+    [self configTableViewWithPlistFileName:@"LCDemoAccumulates"];
 }
 
 - (void)didReceiveMemoryWarning {
