@@ -30,7 +30,7 @@
 		<key>storyboardID</key>
 		<string>LCDemo3UIViewController</string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -40,7 +40,7 @@
 		<key>storyboardID</key>
 		<string>LCDemo4UIViewController</string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -50,7 +50,7 @@
 		<key>storyboardID</key>
 		<string>LCDemo5UIViewController</string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -60,7 +60,7 @@
 		<key>storyboardID</key>
 		<string>LCDemo6UIViewController</string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -71,7 +71,7 @@
 		<key>storyboardID</key>
 		<string>LCDemo7UIViewController</string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -81,7 +81,7 @@
 		<key>storyboardID</key>
 		<string>LCDemo8UIViewController</string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -91,7 +91,7 @@
 		<key>storyboardID</key>
 		<string>LCDemo9UIViewController</string>
 		<key>storyboardName</key>
-		<string>Demo</string>
+		<string>LCDemo</string>
 	</dict>
 </array>
 </plist>

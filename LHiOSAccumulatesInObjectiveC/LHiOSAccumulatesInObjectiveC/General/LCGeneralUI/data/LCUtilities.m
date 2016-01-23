@@ -21,10 +21,7 @@
     if (tempArray.count > 0) {
         NSMutableArray *tempAccumulates = [NSMutableArray array];
         for (NSDictionary* dic in tempArray) {
-            NSString *title = dic[@"title"];
-            NSString *content = dic[@"content"];
-            NSString *storyboardID = dic[@"storyboardID"];
-            [tempAccumulates addObject:[[LCAccumulate alloc] initWith:title content:content storyboardID:storyboardID]];
+            [tempAccumulates addObject:[[LCAccumulate alloc] initWithDictionary:dic]];
         }
         accumulates = [NSArray arrayWithArray:tempAccumulates];
     }

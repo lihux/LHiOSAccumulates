@@ -7,30 +7,40 @@
 		<string>1. 初中的幼稚</string>
 		<key>storyboardID</key>
 		<string>LCDocument1ViewController</string>
+		<key>storyboardName</key>
+		<string>LCDocument</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>2.高中的懵懂</string>
 		<key>storyboardID</key>
 		<string>LCDocument2ViewController</string>
+		<key>storyboardName</key>
+		<string>LCDocument</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>3. 大学的成熟</string>
 		<key>storyboardID</key>
 		<string>LCDocument3ViewController</string>
+		<key>storyboardName</key>
+		<string>LCDocument</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>4. 工作之后</string>
 		<key>storyboardID</key>
 		<string>LCDocument4ViewController</string>
+		<key>storyboardName</key>
+		<string>LCDocument</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>5. 技术篇</string>
 		<key>storyboardID</key>
 		<string>LCDocument5ViewController</string>
+		<key>storyboardName</key>
+		<string>LCDocument</string>
 	</dict>
 </array>
 </plist>

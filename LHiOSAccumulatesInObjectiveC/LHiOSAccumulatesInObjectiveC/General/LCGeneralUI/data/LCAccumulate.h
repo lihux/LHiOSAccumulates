@@ -13,7 +13,8 @@
 @property (nonatomic, strong) NSString* title;
 @property (nonatomic, strong) NSString* content;
 @property (nonatomic, strong) NSString* storyboardID;
+@property (nonatomic, strong) NSString* storyboardName;
 
-- (instancetype)initWith:(NSString *)title content:(NSString *)content storyboardID:(NSString *)storyboardID;
+- (instancetype)initWithDictionary:(NSDictionary *)dic;
 
 @end

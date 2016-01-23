@@ -10,11 +10,14 @@
 
 @implementation LCAccumulate
 
-- (instancetype)initWith:(NSString *)title content:(NSString *)content storyboardID:(NSString *)storyboardID
+- (instancetype)initWithDictionary:(NSDictionary *)dic
 {
-    self.title = title;
-    self.content = content;
-    self.storyboardID = storyboardID;
+    if (self = [super init]) {
+        self.title = dic[@"title"];
+        self.content = dic[@"title"];
+        self.storyboardID = dic[@"storyboardID"];
+        self.storyboardName = dic[@"storyboardName"];
+    }
     return self;
 }
 

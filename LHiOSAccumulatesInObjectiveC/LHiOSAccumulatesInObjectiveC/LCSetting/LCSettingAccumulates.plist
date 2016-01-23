@@ -9,6 +9,8 @@
 		<string>第三方输入法带来了新的麻烦</string>
 		<key>storyboardID</key>
 		<string>A01InputConstraintViewController</string>
+		<key>storyboardName</key>
+		<string>LCSetting</string>
 	</dict>
 </array>
 </plist>
