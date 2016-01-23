@@ -14,7 +14,7 @@
 {
     if (self = [super init]) {
         self.title = dic[@"title"];
-        self.content = dic[@"title"];
+        self.content = dic[@"content"];
         self.storyboardID = dic[@"storyboardID"];
         self.storyboardName = dic[@"storyboardName"];
     }

@@ -31,6 +31,7 @@
 
 - (void)awakeFromNib
 {
+    self.backgroundColor = [UIColor clearColor];
     LCButton *button = [[LCButton alloc] init];
     button.translatesAutoresizingMaskIntoConstraints = NO;
     [button setBackgroundColor:[UIColor clearColor] forState:UIControlStateNormal];

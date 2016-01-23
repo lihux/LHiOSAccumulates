@@ -32,7 +32,7 @@
     return 44;
 }
 
-- (NSString *)cellReuseIdentifier
+- (NSString *)tableViewCellResueIdentifier
 {
     return @"LCTableViewCellSmallSize";
 }

@@ -56,7 +56,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self cellReuseIdentifier] forIndexPath:indexPath];
+    LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self tableViewCellResueIdentifier] forIndexPath:indexPath];
     LCAccumulate *accumulate = self.accumulatesManager.accumulates[indexPath.row];
     [cell configCellWithAccumulate:accumulate withIndexPatch:indexPath];
     cell.delegate = self;
@@ -97,11 +97,6 @@
 }
 
 #pragma mark - method that may be override
-- (NSString *)cellReuseIdentifier
-{
-    return @"LCAccumulateTableViewCell";
-}
-
 - (NSString *)leftNavigatorItemText
 {
     return @"";
@@ -118,6 +113,11 @@
 
 - (void)didTapOnRightNavigatorButton:(UIButton *)rightButton
 {
+}
+
+- (NSString *) tableViewCellResueIdentifier
+{
+    return @"LCAccumulateTableViewCell";
 }
 
 @end

@@ -21,13 +21,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试测试测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qY4-yZ-Ydx" userLabel="title Label">
-                                            <rect key="frame" x="25" y="19" width="560" height="14"/>
+                                            <rect key="frame" x="25" y="10" width="560" height="14"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="14" id="m8p-Jd-KTl"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -38,15 +38,20 @@
                                                 <constraint firstAttribute="height" id="SYu-Wn-ipA"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试是一个体力活，我们要体谅体谅他们，混口饭吃，都不容易" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j83-y8-pJA" userLabel="content Label">
-                                            <rect key="frame" x="25" y="41" width="560" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="是一个体力活，我们要体谅体谅他们，混口饭吃，都不容易" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j83-y8-pJA" userLabel="content Label">
+                                            <rect key="frame" x="25" y="32" width="560" height="13"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="KTx-Ne-P2R"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="KTx-Ne-P2R"/>
+                                                </mask>
+                                            </variation>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jx-Ay-oBI" userLabel="border line View">
                                             <rect key="frame" x="0.0" y="89" width="600" height="1"/>
@@ -65,7 +70,8 @@
                                         <constraint firstItem="eCS-7l-nKz" firstAttribute="top" secondItem="Wfd-oj-rLa" secondAttribute="top" constant="10" id="Gm1-UV-syn"/>
                                         <constraint firstItem="eCS-7l-nKz" firstAttribute="leading" secondItem="Wfd-oj-rLa" secondAttribute="leading" constant="10" id="Q30-kn-YG7"/>
                                         <constraint firstAttribute="trailing" secondItem="qY4-yZ-Ydx" secondAttribute="trailing" constant="15" id="Q9p-da-Owf"/>
-                                        <constraint firstItem="qY4-yZ-Ydx" firstAttribute="top" secondItem="Wfd-oj-rLa" secondAttribute="top" constant="19" id="RJc-Aa-KvC"/>
+                                        <constraint firstItem="qY4-yZ-Ydx" firstAttribute="top" secondItem="Wfd-oj-rLa" secondAttribute="top" constant="10" id="RJc-Aa-KvC"/>
+                                        <constraint firstItem="4jx-Ay-oBI" firstAttribute="top" secondItem="j83-y8-pJA" secondAttribute="bottom" priority="250" constant="5" id="Zlb-5K-uoR"/>
                                         <constraint firstItem="j83-y8-pJA" firstAttribute="leading" secondItem="eCS-7l-nKz" secondAttribute="trailing" constant="15" id="a7q-3K-Mto"/>
                                         <constraint firstAttribute="trailing" secondItem="j83-y8-pJA" secondAttribute="trailing" constant="15" id="mV4-TN-xef"/>
                                         <constraint firstItem="qY4-yZ-Ydx" firstAttribute="leading" secondItem="eCS-7l-nKz" secondAttribute="trailing" constant="15" id="oBx-IR-FJ2"/>

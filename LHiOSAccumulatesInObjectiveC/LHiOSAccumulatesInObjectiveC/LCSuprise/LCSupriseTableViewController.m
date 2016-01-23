@@ -27,7 +27,7 @@
     [super didReceiveMemoryWarning];
 }
 
-- (NSString *)cellReuseIdentifier
+- (NSString *)tableViewCellResueIdentifier
 {
     return @"LCTableViewCellSmallSize";
 }

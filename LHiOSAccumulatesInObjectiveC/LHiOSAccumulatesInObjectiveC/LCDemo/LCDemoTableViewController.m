@@ -27,17 +27,19 @@
     [super didReceiveMemoryWarning];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LCTableViewCellSmallSize" forIndexPath:indexPath];
-    LCAccumulate *accumulate = self.accumulatesManager.accumulates[indexPath.row];
-    [cell configCellWithAccumulate:accumulate withIndexPatch:indexPath];
-    cell.delegate = self;
-    return cell;
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 44;
+    return [self currentDeviceIsIpad] ? 90 : 44;
+}
+
+- (NSString *)tableViewCellResueIdentifier
+{
+    return [self currentDeviceIsIpad] ? @"LCTableViewCellFullSize" : @"LCTableViewCellSmallSize";
+}
+
+- (BOOL)currentDeviceIsIpad
+{
+    return [[[UIDevice currentDevice].model substringToIndex:4] isEqualToString:@"iPad"];
 }
 
 #pragma mark - LCTableViewCellDelegate
