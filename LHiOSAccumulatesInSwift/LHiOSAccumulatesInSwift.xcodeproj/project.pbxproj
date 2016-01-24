@@ -71,6 +71,7 @@
 		9C0C23C31C546EFB00185C45 /* LSDocumulate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LSDocumulate.plist; path = LSDocument/LSDocumulate.plist; sourceTree = "<group>"; };
 		9C0C23C51C546F1100185C45 /* LSDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LSDemo.plist; path = LSDemo/LSDemo.plist; sourceTree = "<group>"; };
 		9C0C23CA1C54774A00185C45 /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		9C0C23CE1C548BCD00185C45 /* LSSwiftBasicLearning.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = LSSwiftBasicLearning.playground; path = LSGenreal/LSSwiftBasicLearning.playground; sourceTree = "<group>"; };
 		9C37340E1C3E455D009391CD /* LHiOSAccumulatesInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3734111C3E455D009391CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C3734181C3E455D009391CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 				9C0C23A01C54683C00185C45 /* LSViewController */,
 				9C0C239F1C54683000185C45 /* LSView */,
 				9C0C239E1C54681700185C45 /* LSData */,
+				9C0C23CE1C548BCD00185C45 /* LSSwiftBasicLearning.playground */,
 			);
 			name = LSGeneral;
 			sourceTree = "<group>";
