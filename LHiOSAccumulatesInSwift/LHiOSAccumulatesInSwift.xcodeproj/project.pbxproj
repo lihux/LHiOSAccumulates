@@ -21,6 +21,11 @@
 		9C0C23BA1C546DE400185C45 /* LSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B91C546DE400185C45 /* LSButton.swift */; settings = {ASSET_TAGS = (); }; };
 		9C0C23BC1C546E1900185C45 /* LSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23BB1C546E1900185C45 /* LSTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9C0C23BE1C546E5400185C45 /* LSDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23BD1C546E5400185C45 /* LSDetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23C01C546EDC00185C45 /* LSSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23BF1C546EDC00185C45 /* LSSetting.plist */; settings = {ASSET_TAGS = (); }; };
+		9C0C23C21C546EED00185C45 /* LSSuprise.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C11C546EED00185C45 /* LSSuprise.plist */; settings = {ASSET_TAGS = (); }; };
+		9C0C23C41C546EFB00185C45 /* LSDocumulate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C31C546EFB00185C45 /* LSDocumulate.plist */; settings = {ASSET_TAGS = (); }; };
+		9C0C23C61C546F1100185C45 /* LSDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C51C546F1100185C45 /* LSDemo.plist */; settings = {ASSET_TAGS = (); }; };
+		9C0C23CB1C54774A00185C45 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23CA1C54774A00185C45 /* UIColor+Utilities.swift */; settings = {ASSET_TAGS = (); }; };
 		9C3734121C3E455D009391CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734111C3E455D009391CD /* AppDelegate.swift */; };
 		9C3734191C3E455D009391CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3734171C3E455D009391CD /* Main.storyboard */; };
 		9C37341B1C3E455D009391CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341A1C3E455D009391CD /* Assets.xcassets */; };
@@ -61,6 +66,11 @@
 		9C0C23B91C546DE400185C45 /* LSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSButton.swift; path = LSGenreal/LSView/LSButton.swift; sourceTree = "<group>"; };
 		9C0C23BB1C546E1900185C45 /* LSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSTableViewController.swift; path = LSGenreal/LSViewController/LSTableViewController.swift; sourceTree = "<group>"; };
 		9C0C23BD1C546E5400185C45 /* LSDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSDetailTableViewController.swift; path = LSGenreal/LSViewController/LSDetailTableViewController.swift; sourceTree = "<group>"; };
+		9C0C23BF1C546EDC00185C45 /* LSSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LSSetting.plist; path = LSSetting/LSSetting.plist; sourceTree = "<group>"; };
+		9C0C23C11C546EED00185C45 /* LSSuprise.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LSSuprise.plist; path = LSSuprise/LSSuprise.plist; sourceTree = "<group>"; };
+		9C0C23C31C546EFB00185C45 /* LSDocumulate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LSDocumulate.plist; path = LSDocument/LSDocumulate.plist; sourceTree = "<group>"; };
+		9C0C23C51C546F1100185C45 /* LSDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LSDemo.plist; path = LSDemo/LSDemo.plist; sourceTree = "<group>"; };
+		9C0C23CA1C54774A00185C45 /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
 		9C37340E1C3E455D009391CD /* LHiOSAccumulatesInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3734111C3E455D009391CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C3734181C3E455D009391CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +120,7 @@
 		9C0C23991C54673800185C45 /* LSGeneral */ = {
 			isa = PBXGroup;
 			children = (
+				9C0C23C91C54774A00185C45 /* LSHelper */,
 				9C0C23A01C54683C00185C45 /* LSViewController */,
 				9C0C239F1C54683000185C45 /* LSView */,
 				9C0C239E1C54681700185C45 /* LSData */,
@@ -121,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0C23A11C5468E000185C45 /* LSDemo.storyboard */,
+				9C0C23C51C546F1100185C45 /* LSDemo.plist */,
 			);
 			name = LSDemo;
 			sourceTree = "<group>";
@@ -129,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0C23A31C54690D00185C45 /* LSDocument.storyboard */,
+				9C0C23C31C546EFB00185C45 /* LSDocumulate.plist */,
 			);
 			name = LSDocument;
 			sourceTree = "<group>";
@@ -137,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0C23A71C54695400185C45 /* LSSuprise.storyboard */,
+				9C0C23C11C546EED00185C45 /* LSSuprise.plist */,
 			);
 			name = LSSuprise;
 			sourceTree = "<group>";
@@ -145,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0C23A91C54698000185C45 /* LSSetting.storyboard */,
+				9C0C23BF1C546EDC00185C45 /* LSSetting.plist */,
 			);
 			name = LSSetting;
 			sourceTree = "<group>";
@@ -178,6 +193,15 @@
 				9C0C23BD1C546E5400185C45 /* LSDetailTableViewController.swift */,
 			);
 			name = LSViewController;
+			sourceTree = "<group>";
+		};
+		9C0C23C91C54774A00185C45 /* LSHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23CA1C54774A00185C45 /* UIColor+Utilities.swift */,
+			);
+			name = LSHelper;
+			path = LSGenreal/LSHelper;
 			sourceTree = "<group>";
 		};
 		9C3734051C3E455D009391CD = {
@@ -343,10 +367,14 @@
 				9C0C23B21C546D0F00185C45 /* LSSectionHeaderView.xib in Resources */,
 				9C0C23AA1C54698000185C45 /* LSSetting.storyboard in Resources */,
 				9C0C23A21C5468E000185C45 /* LSDemo.storyboard in Resources */,
+				9C0C23C21C546EED00185C45 /* LSSuprise.plist in Resources */,
+				9C0C23C41C546EFB00185C45 /* LSDocumulate.plist in Resources */,
 				9C37341E1C3E455D009391CD /* LaunchScreen.storyboard in Resources */,
+				9C0C23C01C546EDC00185C45 /* LSSetting.plist in Resources */,
 				9C37341B1C3E455D009391CD /* Assets.xcassets in Resources */,
 				9C0C23A81C54695400185C45 /* LSSuprise.storyboard in Resources */,
 				9C3734191C3E455D009391CD /* Main.storyboard in Resources */,
+				9C0C23C61C546F1100185C45 /* LSDemo.plist in Resources */,
 				9C0C23A41C54690D00185C45 /* LSDocument.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +405,7 @@
 				9C3734121C3E455D009391CD /* AppDelegate.swift in Sources */,
 				9C0C23BC1C546E1900185C45 /* LSTableViewController.swift in Sources */,
 				9C0C23AE1C546C6600185C45 /* LSAccumulateManager.swift in Sources */,
+				9C0C23CB1C54774A00185C45 /* UIColor+Utilities.swift in Sources */,
 				9C0C23BA1C546DE400185C45 /* LSButton.swift in Sources */,
 				9C0C23B61C546D6100185C45 /* LSTableViewCell.swift in Sources */,
 				9C0C23BE1C546E5400185C45 /* LSDetailTableViewController.swift in Sources */,
