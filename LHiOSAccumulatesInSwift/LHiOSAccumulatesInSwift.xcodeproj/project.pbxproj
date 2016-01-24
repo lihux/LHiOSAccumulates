@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0C23A21C5468E000185C45 /* LSDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A11C5468E000185C45 /* LSDemo.storyboard */; settings = {ASSET_TAGS = (); }; };
+		9C0C23A41C54690D00185C45 /* LSDocument.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A31C54690D00185C45 /* LSDocument.storyboard */; settings = {ASSET_TAGS = (); }; };
+		9C0C23A81C54695400185C45 /* LSSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A71C54695400185C45 /* LSSuprise.storyboard */; settings = {ASSET_TAGS = (); }; };
+		9C0C23AA1C54698000185C45 /* LSSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A91C54698000185C45 /* LSSetting.storyboard */; settings = {ASSET_TAGS = (); }; };
+		9C0C23AC1C546C3200185C45 /* LSAccumulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AB1C546C3200185C45 /* LSAccumulate.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23AE1C546C6600185C45 /* LSAccumulateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AD1C546C6600185C45 /* LSAccumulateManager.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23B01C546CEA00185C45 /* LSSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AF1C546CEA00185C45 /* LSSectionHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23B21C546D0F00185C45 /* LSSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23B11C546D0F00185C45 /* LSSectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
+		9C0C23B41C546D3100185C45 /* LSBorderLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B31C546D3100185C45 /* LSBorderLineView.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23B61C546D6100185C45 /* LSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B51C546D6100185C45 /* LSTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23B81C546D9100185C45 /* LSLightBorderLineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B71C546D9100185C45 /* LSLightBorderLineButton.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23BA1C546DE400185C45 /* LSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B91C546DE400185C45 /* LSButton.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23BC1C546E1900185C45 /* LSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23BB1C546E1900185C45 /* LSTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23BE1C546E5400185C45 /* LSDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23BD1C546E5400185C45 /* LSDetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9C3734121C3E455D009391CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734111C3E455D009391CD /* AppDelegate.swift */; };
-		9C3734141C3E455D009391CD /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734131C3E455D009391CD /* MasterViewController.swift */; };
-		9C3734161C3E455D009391CD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734151C3E455D009391CD /* DetailViewController.swift */; };
 		9C3734191C3E455D009391CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3734171C3E455D009391CD /* Main.storyboard */; };
 		9C37341B1C3E455D009391CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341A1C3E455D009391CD /* Assets.xcassets */; };
 		9C37341E1C3E455D009391CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341C1C3E455D009391CD /* LaunchScreen.storyboard */; };
@@ -35,10 +47,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C0C23A11C5468E000185C45 /* LSDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSDemo.storyboard; path = LSDemo/LSDemo.storyboard; sourceTree = "<group>"; };
+		9C0C23A31C54690D00185C45 /* LSDocument.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSDocument.storyboard; path = LSDocument/LSDocument.storyboard; sourceTree = "<group>"; };
+		9C0C23A71C54695400185C45 /* LSSuprise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSSuprise.storyboard; path = LSSuprise/LSSuprise.storyboard; sourceTree = "<group>"; };
+		9C0C23A91C54698000185C45 /* LSSetting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSSetting.storyboard; path = LSSetting/LSSetting.storyboard; sourceTree = "<group>"; };
+		9C0C23AB1C546C3200185C45 /* LSAccumulate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSAccumulate.swift; path = LSGenreal/LSData/LSAccumulate.swift; sourceTree = "<group>"; };
+		9C0C23AD1C546C6600185C45 /* LSAccumulateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSAccumulateManager.swift; path = LSGenreal/LSData/LSAccumulateManager.swift; sourceTree = "<group>"; };
+		9C0C23AF1C546CEA00185C45 /* LSSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSSectionHeaderView.swift; path = LSGenreal/LSView/LSSectionHeaderView.swift; sourceTree = "<group>"; };
+		9C0C23B11C546D0F00185C45 /* LSSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LSSectionHeaderView.xib; path = LSGenreal/LSView/LSSectionHeaderView.xib; sourceTree = "<group>"; };
+		9C0C23B31C546D3100185C45 /* LSBorderLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSBorderLineView.swift; path = LSGenreal/LSView/LSBorderLineView.swift; sourceTree = "<group>"; };
+		9C0C23B51C546D6100185C45 /* LSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSTableViewCell.swift; path = LSGenreal/LSView/LSTableViewCell.swift; sourceTree = "<group>"; };
+		9C0C23B71C546D9100185C45 /* LSLightBorderLineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSLightBorderLineButton.swift; path = LSGenreal/LSView/LSLightBorderLineButton.swift; sourceTree = "<group>"; };
+		9C0C23B91C546DE400185C45 /* LSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSButton.swift; path = LSGenreal/LSView/LSButton.swift; sourceTree = "<group>"; };
+		9C0C23BB1C546E1900185C45 /* LSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSTableViewController.swift; path = LSGenreal/LSViewController/LSTableViewController.swift; sourceTree = "<group>"; };
+		9C0C23BD1C546E5400185C45 /* LSDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSDetailTableViewController.swift; path = LSGenreal/LSViewController/LSDetailTableViewController.swift; sourceTree = "<group>"; };
 		9C37340E1C3E455D009391CD /* LHiOSAccumulatesInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3734111C3E455D009391CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C3734131C3E455D009391CD /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		9C3734151C3E455D009391CD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9C3734181C3E455D009391CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C37341A1C3E455D009391CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C37341D1C3E455D009391CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +100,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C0C23981C54672100185C45 /* LSHome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LSHome;
+			sourceTree = "<group>";
+		};
+		9C0C23991C54673800185C45 /* LSGeneral */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23A01C54683C00185C45 /* LSViewController */,
+				9C0C239F1C54683000185C45 /* LSView */,
+				9C0C239E1C54681700185C45 /* LSData */,
+			);
+			name = LSGeneral;
+			sourceTree = "<group>";
+		};
+		9C0C239A1C54674C00185C45 /* LSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23A11C5468E000185C45 /* LSDemo.storyboard */,
+			);
+			name = LSDemo;
+			sourceTree = "<group>";
+		};
+		9C0C239B1C54675900185C45 /* LSDocument */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23A31C54690D00185C45 /* LSDocument.storyboard */,
+			);
+			name = LSDocument;
+			sourceTree = "<group>";
+		};
+		9C0C239C1C54676A00185C45 /* LSSuprise */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23A71C54695400185C45 /* LSSuprise.storyboard */,
+			);
+			name = LSSuprise;
+			sourceTree = "<group>";
+		};
+		9C0C239D1C54677400185C45 /* LSSetting */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23A91C54698000185C45 /* LSSetting.storyboard */,
+			);
+			name = LSSetting;
+			sourceTree = "<group>";
+		};
+		9C0C239E1C54681700185C45 /* LSData */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23AB1C546C3200185C45 /* LSAccumulate.swift */,
+				9C0C23AD1C546C6600185C45 /* LSAccumulateManager.swift */,
+			);
+			name = LSData;
+			sourceTree = "<group>";
+		};
+		9C0C239F1C54683000185C45 /* LSView */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23AF1C546CEA00185C45 /* LSSectionHeaderView.swift */,
+				9C0C23B11C546D0F00185C45 /* LSSectionHeaderView.xib */,
+				9C0C23B31C546D3100185C45 /* LSBorderLineView.swift */,
+				9C0C23B51C546D6100185C45 /* LSTableViewCell.swift */,
+				9C0C23B71C546D9100185C45 /* LSLightBorderLineButton.swift */,
+				9C0C23B91C546DE400185C45 /* LSButton.swift */,
+			);
+			name = LSView;
+			sourceTree = "<group>";
+		};
+		9C0C23A01C54683C00185C45 /* LSViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C23BB1C546E1900185C45 /* LSTableViewController.swift */,
+				9C0C23BD1C546E5400185C45 /* LSDetailTableViewController.swift */,
+			);
+			name = LSViewController;
+			sourceTree = "<group>";
+		};
 		9C3734051C3E455D009391CD = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +203,13 @@
 		9C3734101C3E455D009391CD /* LHiOSAccumulatesInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				9C0C23991C54673800185C45 /* LSGeneral */,
+				9C0C23981C54672100185C45 /* LSHome */,
+				9C0C239D1C54677400185C45 /* LSSetting */,
+				9C0C239C1C54676A00185C45 /* LSSuprise */,
+				9C0C239B1C54675900185C45 /* LSDocument */,
+				9C0C239A1C54674C00185C45 /* LSDemo */,
 				9C3734111C3E455D009391CD /* AppDelegate.swift */,
-				9C3734131C3E455D009391CD /* MasterViewController.swift */,
-				9C3734151C3E455D009391CD /* DetailViewController.swift */,
 				9C3734171C3E455D009391CD /* Main.storyboard */,
 				9C37341A1C3E455D009391CD /* Assets.xcassets */,
 				9C37341C1C3E455D009391CD /* LaunchScreen.storyboard */,
@@ -232,9 +340,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0C23B21C546D0F00185C45 /* LSSectionHeaderView.xib in Resources */,
+				9C0C23AA1C54698000185C45 /* LSSetting.storyboard in Resources */,
+				9C0C23A21C5468E000185C45 /* LSDemo.storyboard in Resources */,
 				9C37341E1C3E455D009391CD /* LaunchScreen.storyboard in Resources */,
 				9C37341B1C3E455D009391CD /* Assets.xcassets in Resources */,
+				9C0C23A81C54695400185C45 /* LSSuprise.storyboard in Resources */,
 				9C3734191C3E455D009391CD /* Main.storyboard in Resources */,
+				9C0C23A41C54690D00185C45 /* LSDocument.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +372,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C3734161C3E455D009391CD /* DetailViewController.swift in Sources */,
-				9C3734141C3E455D009391CD /* MasterViewController.swift in Sources */,
+				9C0C23B01C546CEA00185C45 /* LSSectionHeaderView.swift in Sources */,
+				9C0C23AC1C546C3200185C45 /* LSAccumulate.swift in Sources */,
 				9C3734121C3E455D009391CD /* AppDelegate.swift in Sources */,
+				9C0C23BC1C546E1900185C45 /* LSTableViewController.swift in Sources */,
+				9C0C23AE1C546C6600185C45 /* LSAccumulateManager.swift in Sources */,
+				9C0C23BA1C546DE400185C45 /* LSButton.swift in Sources */,
+				9C0C23B61C546D6100185C45 /* LSTableViewCell.swift in Sources */,
+				9C0C23BE1C546E5400185C45 /* LSDetailTableViewController.swift in Sources */,
+				9C0C23B41C546D3100185C45 /* LSBorderLineView.swift in Sources */,
+				9C0C23B81C546D9100185C45 /* LSLightBorderLineButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
