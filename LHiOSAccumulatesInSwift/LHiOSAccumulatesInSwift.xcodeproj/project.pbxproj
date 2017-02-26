@@ -35,6 +35,7 @@
 		9C37341E1C3E455D009391CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341C1C3E455D009391CD /* LaunchScreen.storyboard */; };
 		9C3734291C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734281C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.swift */; };
 		9C3734341C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734331C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift */; };
+		9C9648791E630490005620F7 /* LCSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9648781E630490005620F7 /* LCSUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		9C37342F1C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHiOSAccumulatesInSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3734331C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHiOSAccumulatesInSwiftUITests.swift; sourceTree = "<group>"; };
 		9C3734351C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9648781E630490005620F7 /* LCSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCSUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0C23CA1C54774A00185C45 /* UIColor+Utilities.swift */,
+				9C9648781E630490005620F7 /* LCSUtils.swift */,
 			);
 			name = LSHelper;
 			path = LSGenreal/LSHelper;
@@ -426,6 +429,7 @@
 				9C0C23AC1C546C3200185C45 /* LSAccumulate.swift in Sources */,
 				9C3734121C3E455D009391CD /* AppDelegate.swift in Sources */,
 				9C0C23BC1C546E1900185C45 /* LSTableViewController.swift in Sources */,
+				9C9648791E630490005620F7 /* LCSUtils.swift in Sources */,
 				9C0C23AE1C546C6600185C45 /* LSAccumulateManager.swift in Sources */,
 				9C0C23CB1C54774A00185C45 /* UIColor+Utilities.swift in Sources */,
 				9C0C23BA1C546DE400185C45 /* LSButton.swift in Sources */,

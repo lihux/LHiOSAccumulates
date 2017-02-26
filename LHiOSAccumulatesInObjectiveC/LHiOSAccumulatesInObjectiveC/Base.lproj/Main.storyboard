@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GDz-Uf-psU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GDz-Uf-psU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,16 +20,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfZ-64-UJQ" userLabel="container View">
-                                <rect key="frame" x="25" y="25" width="0.0" height="0.0"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfZ-64-UJQ" userLabel="container View">
+                                <rect key="frame" x="12" y="20" width="351" height="575"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxu-oU-FZE" userLabel="content View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxu-oU-FZE" userLabel="content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                         <subviews>
-                                            <view tag="4" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3X-su-qkm" userLabel="m5">
-                                                <rect key="frame" x="224" y="190" width="128" height="128"/>
+                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3X-su-qkm" userLabel="m5">
+                                                <rect key="frame" x="150.5" y="262.5" width="50" height="50"/>
                                                 <subviews>
-                                                    <view hidden="YES" alpha="0.14999999999999999" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UpI-u4-Kyh" userLabel="mask View">
-                                                        <rect key="frame" x="39" y="39" width="50" height="50"/>
+                                                    <view hidden="YES" alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpI-u4-Kyh" userLabel="mask View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="687-Vt-2sz"/>
@@ -41,8 +42,8 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="好玩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUb-MH-wSu">
-                                                        <rect key="frame" x="39" y="39" width="50" height="50"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好玩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUb-MH-wSu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="CLV-Vz-cBd"/>
                                                             <constraint firstAttribute="height" constant="50" id="Pw3-fv-YLy"/>
@@ -62,27 +63,32 @@
                                                     <constraint firstItem="UpI-u4-Kyh" firstAttribute="centerY" secondItem="B3X-su-qkm" secondAttribute="centerY" id="hHG-p1-o7W"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-co-1MX" userLabel="controller Container View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-co-1MX" userLabel="controller Container View">
+                                                <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                 <subviews>
-                                                    <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-a8-kUA" userLabel="Container View0">
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-a8-kUA" userLabel="Container View0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <segue destination="mZv-1q-4w1" kind="embed" id="KMJ-dd-fmZ"/>
                                                         </connections>
                                                     </containerView>
-                                                    <containerView opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbh-rX-w2X" userLabel="Container View1">
+                                                    <containerView opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbh-rX-w2X" userLabel="Container View1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <segue destination="5GK-30-YgU" kind="embed" id="hjN-hv-PYb"/>
                                                         </connections>
                                                     </containerView>
-                                                    <containerView opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-zO-bEg" userLabel="Container View2">
+                                                    <containerView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-zO-bEg" userLabel="Container View2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <segue destination="Wf7-dN-xVm" kind="embed" id="GGw-ag-Wgr"/>
                                                         </connections>
                                                     </containerView>
-                                                    <containerView opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gE3-r8-DWf" userLabel="Container View3">
+                                                    <containerView opaque="NO" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gE3-r8-DWf" userLabel="Container View3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <segue destination="W8F-jK-7cb" kind="embed" id="4So-cp-igy"/>
@@ -159,8 +165,8 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-mC-bHD" userLabel="m0" customClass="LCFlyingView">
-                                <rect key="frame" x="12" y="538" width="50" height="50"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-mC-bHD" userLabel="m0" customClass="LCFlyingView">
+                                <rect key="frame" x="12" y="605" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-4V-z7A" userLabel="mask View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -196,8 +202,8 @@
                                     <constraint firstAttribute="height" constant="50" id="pty-dZ-Rt8"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmy-Uu-LVZ" customClass="LCLightBorderButton">
-                                <rect key="frame" x="12" y="538" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmy-Uu-LVZ" customClass="LCLightBorderButton">
+                                <rect key="frame" x="12" y="605" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HYb-UI-Jth"/>
                                     <constraint firstAttribute="width" constant="50" id="c65-B6-SUS"/>
@@ -236,8 +242,8 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="JNw-af-NAa"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-te-2Nk" userLabel="m1" customClass="LCFlyingView">
-                                <rect key="frame" x="107" y="542" width="50" height="50"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-te-2Nk" userLabel="m1" customClass="LCFlyingView">
+                                <rect key="frame" x="79" y="605" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yz-hS-SqR" userLabel="mask View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -273,8 +279,8 @@
                                     <constraint firstAttribute="width" constant="50" id="vnK-v8-giE"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIb-YJ-8P6" customClass="LCLightBorderButton">
-                                <rect key="frame" x="107" y="542" width="50" height="50"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIb-YJ-8P6" customClass="LCLightBorderButton">
+                                <rect key="frame" x="79" y="605" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Hw2-YD-q87"/>
                                     <constraint firstAttribute="height" constant="50" id="Nu6-qr-jz3"/>
@@ -310,8 +316,8 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="bmC-oz-BFo"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-wE-lgF" userLabel="m2" customClass="LCFlyingView">
-                                <rect key="frame" x="195" y="548" width="50" height="50"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-wE-lgF" userLabel="m2" customClass="LCFlyingView">
+                                <rect key="frame" x="150" y="605" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6go-I3-NIu" userLabel="mask View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -347,8 +353,8 @@
                                     <constraint firstItem="oDS-2B-yQA" firstAttribute="centerX" secondItem="6go-I3-NIu" secondAttribute="centerX" id="zb4-Yx-mJA"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My6-Yg-bQR" customClass="LCLightBorderButton">
-                                <rect key="frame" x="195" y="548" width="50" height="50"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My6-Yg-bQR" customClass="LCLightBorderButton">
+                                <rect key="frame" x="150" y="605" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6Rs-0B-Idb"/>
                                     <constraint firstAttribute="height" constant="50" id="Lap-hQ-uwY"/>
@@ -384,8 +390,8 @@
                                     <action selector="didTapOnHomeButton:" destination="GDz-Uf-psU" eventType="touchUpInside" id="lJC-Wr-WWD"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-HP-ZfE" userLabel="m3" customClass="LCFlyingView">
-                                <rect key="frame" x="343" y="542" width="50" height="50"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-HP-ZfE" userLabel="m3" customClass="LCFlyingView">
+                                <rect key="frame" x="313" y="605" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q8-gC-sXO" userLabel="mask View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -421,8 +427,8 @@
                                     <constraint firstItem="e3d-Zw-JXH" firstAttribute="centerY" secondItem="5q8-gC-sXO" secondAttribute="centerY" id="WSS-1h-J4d"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyM-08-wRd" customClass="LCLightBorderButton">
-                                <rect key="frame" x="343" y="542" width="50" height="50"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyM-08-wRd" customClass="LCLightBorderButton">
+                                <rect key="frame" x="313" y="605" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="EuS-gp-QtK"/>
                                     <constraint firstAttribute="height" constant="50" id="EyN-ck-P8a"/>
@@ -555,6 +561,14 @@
                                 <exclude reference="HiE-Hj-CwV"/>
                                 <exclude reference="coK-2g-vHR"/>
                                 <exclude reference="d2l-tx-hle"/>
+                                <exclude reference="05K-fk-xn9"/>
+                                <exclude reference="9H4-23-aFa"/>
+                                <exclude reference="HUa-GI-fxE"/>
+                                <exclude reference="MaV-Kh-uiQ"/>
+                                <exclude reference="fyD-Hc-egU"/>
+                                <exclude reference="kkg-n6-pPr"/>
+                                <exclude reference="v30-dA-SPS"/>
+                                <exclude reference="zdm-FA-yxu"/>
                                 <exclude reference="DIY-VW-YIq"/>
                                 <exclude reference="Gvq-M4-r42"/>
                                 <exclude reference="Twg-r2-QZe"/>
@@ -564,14 +578,6 @@
                                 <exclude reference="m0q-Xe-Bz3"/>
                                 <exclude reference="qy0-Aj-Y08"/>
                                 <exclude reference="zkf-8f-6VH"/>
-                                <exclude reference="05K-fk-xn9"/>
-                                <exclude reference="9H4-23-aFa"/>
-                                <exclude reference="HUa-GI-fxE"/>
-                                <exclude reference="MaV-Kh-uiQ"/>
-                                <exclude reference="fyD-Hc-egU"/>
-                                <exclude reference="kkg-n6-pPr"/>
-                                <exclude reference="v30-dA-SPS"/>
-                                <exclude reference="zdm-FA-yxu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -587,11 +593,11 @@
                                 <include reference="QRK-o6-ddW"/>
                                 <include reference="gc2-6g-g1O"/>
                                 <include reference="7GK-nu-Hwe"/>
+                                <include reference="05K-fk-xn9"/>
+                                <include reference="9H4-23-aFa"/>
                                 <include reference="Twg-r2-QZe"/>
                                 <include reference="Zne-fy-V6P"/>
                                 <include reference="zkf-8f-6VH"/>
-                                <include reference="05K-fk-xn9"/>
-                                <include reference="9H4-23-aFa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -613,14 +619,14 @@
                                 <include reference="1Fn-xF-rcJ"/>
                                 <include reference="8Ev-nb-zh0"/>
                                 <include reference="d2l-tx-hle"/>
+                                <include reference="MaV-Kh-uiQ"/>
+                                <include reference="fyD-Hc-egU"/>
+                                <include reference="zdm-FA-yxu"/>
                                 <include reference="DIY-VW-YIq"/>
                                 <exclude reference="Gvq-M4-r42"/>
                                 <exclude reference="XY5-k2-kwz"/>
                                 <include reference="m0q-Xe-Bz3"/>
                                 <exclude reference="qy0-Aj-Y08"/>
-                                <include reference="MaV-Kh-uiQ"/>
-                                <include reference="fyD-Hc-egU"/>
-                                <include reference="zdm-FA-yxu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -634,9 +640,9 @@
                                 <include reference="sAw-P5-dMd"/>
                                 <include reference="9LW-Gh-wQ8"/>
                                 <include reference="HiE-Hj-CwV"/>
-                                <include reference="b6P-AH-uXb"/>
                                 <include reference="HUa-GI-fxE"/>
                                 <include reference="kkg-n6-pPr"/>
+                                <include reference="b6P-AH-uXb"/>
                             </mask>
                         </variation>
                     </view>
