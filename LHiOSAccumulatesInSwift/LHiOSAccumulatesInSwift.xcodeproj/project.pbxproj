@@ -28,6 +28,7 @@
 		9C2311071E62B07800629270 /* LSBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2311061E62B07800629270 /* LSBasicViewController.swift */; };
 		9C2311091E62B0C500629270 /* LSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2311081E62B0C500629270 /* LSHomeViewController.swift */; };
 		9C23110B1E62B30100629270 /* LSLightBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23110A1E62B30100629270 /* LSLightBorderButton.swift */; };
+		9C23110E1E62C4E400629270 /* LSFlyingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23110D1E62C4E400629270 /* LSFlyingView.swift */; };
 		9C3734121C3E455D009391CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734111C3E455D009391CD /* AppDelegate.swift */; };
 		9C3734191C3E455D009391CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3734171C3E455D009391CD /* Main.storyboard */; };
 		9C37341B1C3E455D009391CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341A1C3E455D009391CD /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		9C2311061E62B07800629270 /* LSBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSBasicViewController.swift; path = LSGenreal/LSViewController/LSBasicViewController.swift; sourceTree = "<group>"; };
 		9C2311081E62B0C500629270 /* LSHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSHomeViewController.swift; path = LSHome/LSHomeViewController.swift; sourceTree = "<group>"; };
 		9C23110A1E62B30100629270 /* LSLightBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSLightBorderButton.swift; path = LSGenreal/LSView/LSLightBorderButton.swift; sourceTree = "<group>"; };
+		9C23110D1E62C4E400629270 /* LSFlyingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSFlyingView.swift; path = LSHome/view/LSFlyingView.swift; sourceTree = "<group>"; };
 		9C37340E1C3E455D009391CD /* LHiOSAccumulatesInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3734111C3E455D009391CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C3734181C3E455D009391CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		9C0C23981C54672100185C45 /* LSHome */ = {
 			isa = PBXGroup;
 			children = (
+				9C23110C1E62C4C700629270 /* view */,
 				9C2311081E62B0C500629270 /* LSHomeViewController.swift */,
 			);
 			name = LSHome;
@@ -210,6 +213,14 @@
 			);
 			name = LSHelper;
 			path = LSGenreal/LSHelper;
+			sourceTree = "<group>";
+		};
+		9C23110C1E62C4C700629270 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C23110D1E62C4E400629270 /* LSFlyingView.swift */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		9C3734051C3E455D009391CD = {
@@ -421,6 +432,7 @@
 				9C0C23B61C546D6100185C45 /* LSTableViewCell.swift in Sources */,
 				9C2311091E62B0C500629270 /* LSHomeViewController.swift in Sources */,
 				9C23110B1E62B30100629270 /* LSLightBorderButton.swift in Sources */,
+				9C23110E1E62C4E400629270 /* LSFlyingView.swift in Sources */,
 				9C0C23BE1C546E5400185C45 /* LSDetailTableViewController.swift in Sources */,
 				9C0C23B41C546D3100185C45 /* LSBorderLineView.swift in Sources */,
 				9C2311071E62B07800629270 /* LSBasicViewController.swift in Sources */,

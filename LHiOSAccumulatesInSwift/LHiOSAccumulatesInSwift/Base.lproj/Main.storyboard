@@ -59,7 +59,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                         <subviews>
                                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ax7-P0-xFR" userLabel="m5">
-                                                <rect key="frame" x="150.5" y="262.5" width="50" height="50"/>
+                                                <rect key="frame" x="151" y="263" width="50" height="50"/>
                                                 <subviews>
                                                     <view hidden="YES" alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdC-hK-CxP" userLabel="mask View">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -185,7 +185,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUU-Wf-Hj3" userLabel="m0" customClass="LCFlyingView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUU-Wf-Hj3" userLabel="m0" customClass="LSFlyingView" customModule="LHiOSAccumulatesInSwift">
                                 <rect key="frame" x="12" y="605" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnG-IG-LrD" userLabel="mask View">
@@ -222,7 +222,7 @@
                                     <constraint firstAttribute="width" constant="50" id="zL1-mR-egr"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyW-g9-N4j" customClass="LSLightBorderButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyW-g9-N4j" customClass="LSLightBorderButton" customModule="LHiOSAccumulatesInSwift">
                                 <rect key="frame" x="12" y="605" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="E8q-qu-AS6"/>
@@ -262,7 +262,7 @@
                                     <action selector="didTapOnHomeButton:" destination="fMc-AU-amz" eventType="touchUpInside" id="2ue-Cj-Sa6"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEg-WN-GIT" userLabel="m1" customClass="LCFlyingView">
+                            <view hidden="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEg-WN-GIT" userLabel="m1" customClass="LSFlyingView" customModule="LHiOSAccumulatesInSwift">
                                 <rect key="frame" x="79" y="605" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rIG-Vz-bnI" userLabel="mask View">
@@ -299,7 +299,7 @@
                                     <constraint firstItem="rIG-Vz-bnI" firstAttribute="centerY" secondItem="JEg-WN-GIT" secondAttribute="centerY" id="xfE-Dc-7IX"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYB-85-G93" customClass="LSLightBorderButton">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYB-85-G93" customClass="LSLightBorderButton" customModule="LHiOSAccumulatesInSwift">
                                 <rect key="frame" x="79" y="605" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="E8J-AH-cuS"/>
@@ -336,7 +336,7 @@
                                     <action selector="didTapOnHomeButton:" destination="fMc-AU-amz" eventType="touchUpInside" id="KK8-Yy-NT0"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnj-no-DrR" userLabel="m2" customClass="LCFlyingView">
+                            <view hidden="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnj-no-DrR" userLabel="m2" customClass="LSFlyingView" customModule="LHiOSAccumulatesInSwift">
                                 <rect key="frame" x="150" y="605" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iA8-lG-cZZ" userLabel="mask View">
@@ -373,7 +373,7 @@
                                     <constraint firstItem="iA8-lG-cZZ" firstAttribute="centerX" secondItem="cnj-no-DrR" secondAttribute="centerX" id="uJg-OP-O9s"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcL-iL-eOn" customClass="LSLightBorderButton">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcL-iL-eOn" customClass="LSLightBorderButton" customModule="LHiOSAccumulatesInSwift">
                                 <rect key="frame" x="150" y="605" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BIT-7z-XSL"/>
@@ -410,7 +410,7 @@
                                     <action selector="didTapOnHomeButton:" destination="fMc-AU-amz" eventType="touchUpInside" id="ZUl-WG-hoe"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-X2-sBC" userLabel="m3" customClass="LCFlyingView">
+                            <view hidden="YES" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-X2-sBC" userLabel="m3" customClass="LSFlyingView" customModule="LHiOSAccumulatesInSwift">
                                 <rect key="frame" x="313" y="605" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-i9-zGm" userLabel="mask View">
@@ -447,7 +447,7 @@
                                     <constraint firstItem="Y7q-i9-zGm" firstAttribute="centerX" secondItem="hUa-X2-sBC" secondAttribute="centerX" id="rNl-bW-BXl"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FG-f2-BEC" customClass="LSLightBorderButton">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FG-f2-BEC" customClass="LSLightBorderButton" customModule="LHiOSAccumulatesInSwift">
                                 <rect key="frame" x="313" y="605" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4N8-54-fgc"/>
