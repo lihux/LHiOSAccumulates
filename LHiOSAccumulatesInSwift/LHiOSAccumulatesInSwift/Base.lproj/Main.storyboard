@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fMc-AU-amz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fMc-AU-amz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LCDemo-->
+        <!--LSDemo-->
         <scene sceneID="Q2Y-2K-7Jx">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCDemo" id="zA4-x7-V0h" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LSDemo" id="zA4-x7-V0h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsA-h2-2iG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="978.5" y="-731"/>
@@ -101,6 +101,9 @@
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7T-yg-RHu" userLabel="Container View0">
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <segue destination="zA4-x7-V0h" kind="embed" id="KSa-Gu-RQ3"/>
+                                                        </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdq-Yq-JHm" userLabel="Container View1">
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>

@@ -9,16 +9,19 @@
 import UIKit
 
 class LSTableViewCell: UITableViewCell {
-
+    @IBOutlet var titleLabel:UILabel!
+    @IBOutlet var contentLabel:UILabel!
+    @IBOutlet var headImageView:UIImageView!
+    func configCell(accumulate: LSAccumulate) {
+        self.titleLabel.text = accumulate.title
+//        self.contentLabel.text = accumulate.content
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

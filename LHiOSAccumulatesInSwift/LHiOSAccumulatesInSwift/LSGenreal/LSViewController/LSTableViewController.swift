@@ -30,20 +30,17 @@ class LSTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.accumulatesManager.accumulates.count
     }
-//    LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self tableViewCellResueIdentifier] forIndexPath:indexPath];
-//    LCAccumulate *accumulate = self.accumulatesManager.accumulates[indexPath.row];
-//    [cell configCellWithAccumulate:accumulate withIndexPatch:indexPath];
-//    cell.delegate = self;
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(self.tableViewCellResueIdentifier(), forIndexPath: indexPath)
-        return cell
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.tableViewCellResueIdentifier(), for: indexPath) as! LSTableViewCell
+        cell.configCell(accumulate: self.accumulatesManager.accumulates[indexPath.row])
+                return cell
     }
-    
+
     // MARK: - 子类需继承
     func tableViewCellResueIdentifier() -> String! {
         return "LSTableViewCellSmallSize"
