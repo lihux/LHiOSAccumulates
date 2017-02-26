@@ -11,6 +11,6 @@ import UIKit
 class LSAccumulateManager: NSObject {
     var accumulates :[LSAccumulate]!
     init(plistFileName fileName: String) {
-        self.accumulates = LCSUtils.loadAccumulatesFromPlist(plistFileName: fileName)
+        self.accumulates = LSUtils.loadAccumulatesFromPlist(plistFileName: fileName)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  LCSUtils.swift
+//  LSUtils.swift
 //  LHiOSAccumulatesInSwift
 //
 //  Created by lihui on 2017/2/26.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LCSUtils: NSObject {
+class LSUtils: NSObject {
     class func loadAccumulatesFromPlist(plistFileName fileName: String!) -> [LSAccumulate]! {
         
         let plistPath = Bundle.main.path(forResource: fileName, ofType: "plist")
