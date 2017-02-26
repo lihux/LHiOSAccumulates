@@ -8,6 +8,8 @@
 
 import UIKit
 
-class LSButton: LSLightBorderLineButton {
+class LSButton: UIButton {
 
+    var stateBackgroundColorDic = [Int: UIColor]()
+    
 }
