@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C0C23A21C5468E000185C45 /* LSDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A11C5468E000185C45 /* LSDemo.storyboard */; settings = {ASSET_TAGS = (); }; };
-		9C0C23A41C54690D00185C45 /* LSDocument.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A31C54690D00185C45 /* LSDocument.storyboard */; settings = {ASSET_TAGS = (); }; };
-		9C0C23A81C54695400185C45 /* LSSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A71C54695400185C45 /* LSSuprise.storyboard */; settings = {ASSET_TAGS = (); }; };
-		9C0C23AA1C54698000185C45 /* LSSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A91C54698000185C45 /* LSSetting.storyboard */; settings = {ASSET_TAGS = (); }; };
-		9C0C23AC1C546C3200185C45 /* LSAccumulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AB1C546C3200185C45 /* LSAccumulate.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23AE1C546C6600185C45 /* LSAccumulateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AD1C546C6600185C45 /* LSAccumulateManager.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23B01C546CEA00185C45 /* LSSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AF1C546CEA00185C45 /* LSSectionHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23B21C546D0F00185C45 /* LSSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23B11C546D0F00185C45 /* LSSectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
-		9C0C23B41C546D3100185C45 /* LSBorderLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B31C546D3100185C45 /* LSBorderLineView.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23B61C546D6100185C45 /* LSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B51C546D6100185C45 /* LSTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23B81C546D9100185C45 /* LSLightBorderLineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B71C546D9100185C45 /* LSLightBorderLineButton.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23BA1C546DE400185C45 /* LSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B91C546DE400185C45 /* LSButton.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23BC1C546E1900185C45 /* LSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23BB1C546E1900185C45 /* LSTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23BE1C546E5400185C45 /* LSDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23BD1C546E5400185C45 /* LSDetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9C0C23C01C546EDC00185C45 /* LSSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23BF1C546EDC00185C45 /* LSSetting.plist */; settings = {ASSET_TAGS = (); }; };
-		9C0C23C21C546EED00185C45 /* LSSuprise.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C11C546EED00185C45 /* LSSuprise.plist */; settings = {ASSET_TAGS = (); }; };
-		9C0C23C41C546EFB00185C45 /* LSDocumulate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C31C546EFB00185C45 /* LSDocumulate.plist */; settings = {ASSET_TAGS = (); }; };
-		9C0C23C61C546F1100185C45 /* LSDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C51C546F1100185C45 /* LSDemo.plist */; settings = {ASSET_TAGS = (); }; };
-		9C0C23CB1C54774A00185C45 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23CA1C54774A00185C45 /* UIColor+Utilities.swift */; settings = {ASSET_TAGS = (); }; };
+		9C0C23A21C5468E000185C45 /* LSDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A11C5468E000185C45 /* LSDemo.storyboard */; };
+		9C0C23A41C54690D00185C45 /* LSDocument.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A31C54690D00185C45 /* LSDocument.storyboard */; };
+		9C0C23A81C54695400185C45 /* LSSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A71C54695400185C45 /* LSSuprise.storyboard */; };
+		9C0C23AA1C54698000185C45 /* LSSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A91C54698000185C45 /* LSSetting.storyboard */; };
+		9C0C23AC1C546C3200185C45 /* LSAccumulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AB1C546C3200185C45 /* LSAccumulate.swift */; };
+		9C0C23AE1C546C6600185C45 /* LSAccumulateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AD1C546C6600185C45 /* LSAccumulateManager.swift */; };
+		9C0C23B01C546CEA00185C45 /* LSSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23AF1C546CEA00185C45 /* LSSectionHeaderView.swift */; };
+		9C0C23B21C546D0F00185C45 /* LSSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23B11C546D0F00185C45 /* LSSectionHeaderView.xib */; };
+		9C0C23B41C546D3100185C45 /* LSBorderLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B31C546D3100185C45 /* LSBorderLineView.swift */; };
+		9C0C23B61C546D6100185C45 /* LSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B51C546D6100185C45 /* LSTableViewCell.swift */; };
+		9C0C23B81C546D9100185C45 /* LSLightBorderLineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B71C546D9100185C45 /* LSLightBorderLineButton.swift */; };
+		9C0C23BA1C546DE400185C45 /* LSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23B91C546DE400185C45 /* LSButton.swift */; };
+		9C0C23BC1C546E1900185C45 /* LSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23BB1C546E1900185C45 /* LSTableViewController.swift */; };
+		9C0C23BE1C546E5400185C45 /* LSDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23BD1C546E5400185C45 /* LSDetailTableViewController.swift */; };
+		9C0C23C01C546EDC00185C45 /* LSSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23BF1C546EDC00185C45 /* LSSetting.plist */; };
+		9C0C23C21C546EED00185C45 /* LSSuprise.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C11C546EED00185C45 /* LSSuprise.plist */; };
+		9C0C23C41C546EFB00185C45 /* LSDocumulate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C31C546EFB00185C45 /* LSDocumulate.plist */; };
+		9C0C23C61C546F1100185C45 /* LSDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23C51C546F1100185C45 /* LSDemo.plist */; };
+		9C0C23CB1C54774A00185C45 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C23CA1C54774A00185C45 /* UIColor+Utilities.swift */; };
 		9C3734121C3E455D009391CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734111C3E455D009391CD /* AppDelegate.swift */; };
 		9C3734191C3E455D009391CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3734171C3E455D009391CD /* Main.storyboard */; };
 		9C37341B1C3E455D009391CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341A1C3E455D009391CD /* Assets.xcassets */; };
@@ -330,13 +330,16 @@
 					9C37340D1C3E455D009391CD = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = 6Z988AT8PK;
+						LastSwiftMigration = 0810;
 					};
 					9C3734231C3E455D009391CD = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 9C37340D1C3E455D009391CD;
 					};
 					9C37342E1C3E455D009391CD = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 9C37340D1C3E455D009391CD;
 					};
 				};
@@ -559,6 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -571,6 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -582,6 +587,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHiOSAccumulatesInSwift.app/LHiOSAccumulatesInSwift";
 			};
 			name = Debug;
@@ -594,6 +600,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHiOSAccumulatesInSwift.app/LHiOSAccumulatesInSwift";
 			};
 			name = Release;
@@ -605,6 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LHiOSAccumulatesInSwift;
 				USES_XCTRUNNER = YES;
 			};
@@ -617,6 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LHiOSAccumulatesInSwift;
 				USES_XCTRUNNER = YES;
 			};
