@@ -16,6 +16,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
     for (UIView *view in self.subviews) {
         if ([view isKindOfClass:[UILabel class]]) {
