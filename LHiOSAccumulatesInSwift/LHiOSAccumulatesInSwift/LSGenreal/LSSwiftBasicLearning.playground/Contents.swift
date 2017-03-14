@@ -45,8 +45,6 @@ func greeting(name: String, day: String) -> String
     return "Hello \(name), today is \(day)"
 }
 
-greeting("GLC", day: "提车的日子")
-
 //Use tuple to make a compound for function return value
 func tupleExample() -> (a:Int, b:Int, c: Int, d: Int)
 {
