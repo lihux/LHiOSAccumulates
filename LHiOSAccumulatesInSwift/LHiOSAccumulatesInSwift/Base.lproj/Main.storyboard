@@ -14,31 +14,31 @@
                 <viewControllerPlaceholder storyboardName="LSDemo" id="zA4-x7-V0h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsA-h2-2iG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978.5" y="-731"/>
+            <point key="canvasLocation" x="1058" y="-639"/>
         </scene>
-        <!--LCDocument-->
+        <!--LSDocument-->
         <scene sceneID="PEx-83-yeQ">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCDocument" id="fEF-2x-w9q" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LSDocument" id="fEF-2x-w9q" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vs-Qm-qLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="-691"/>
+            <point key="canvasLocation" x="1035" y="-596"/>
         </scene>
-        <!--LCSuprise-->
+        <!--LSSuprise-->
         <scene sceneID="Ved-D4-BvK">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCSuprise" id="Pqx-he-6qe" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LSSuprise" id="Pqx-he-6qe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9c-2v-VXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="984" y="-650"/>
+            <point key="canvasLocation" x="1022" y="-552"/>
         </scene>
-        <!--LCSetting-->
+        <!--LSSetting-->
         <scene sceneID="MWC-pw-yYJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCSetting" id="Wsa-zi-oR9" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LSSetting" id="Wsa-zi-oR9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozA-VG-ZrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="982.5" y="-605"/>
+            <point key="canvasLocation" x="1021" y="-508"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="dhV-5b-N4m">
@@ -108,14 +108,23 @@
                                                     <containerView opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdq-Yq-JHm" userLabel="Container View1">
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <segue destination="fEF-2x-w9q" kind="embed" id="Qu2-A1-ojU"/>
+                                                        </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1Q-YF-XKD" userLabel="Container View2">
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <segue destination="Pqx-he-6qe" kind="embed" id="JMg-tR-Usa"/>
+                                                        </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VN4-BJ-20p" userLabel="Container View3">
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <segue destination="Wsa-zi-oR9" kind="embed" id="qWh-EQ-SwQ"/>
+                                                        </connections>
                                                     </containerView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

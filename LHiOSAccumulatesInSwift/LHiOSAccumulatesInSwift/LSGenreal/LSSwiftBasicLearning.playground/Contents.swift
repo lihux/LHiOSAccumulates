@@ -17,7 +17,7 @@ let sayWhat = "还可以这样组装string：\(label),width is \(width)"
 //Create Array & Dictionary : all are structure which is not the same as OC
 var carList = ["Benz GLC", "BMW", "Audi"]
 var myDreamCarDic = ["myFirstCar": "Benz GLC", "myFavoriteCar": "BMW 3"]
-print(carList[0], myDreamCarDic["myFavoriteCar"])
+print(carList[0], myDreamCarDic["myFavoriteCar"]!)
 
 switch label {
     case "the width is ":
