@@ -4,11 +4,11 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>1. UI可视化编程技巧（xib、storyboard及代码混用）</string>
+		<string>1. libdispatch深入学习</string>
 		<key>viewControllerTitle</key>
-		<string>UI可视化编程技巧</string>
+		<string>libdispatch深入学习</string>
 		<key>content</key>
-		<string>不要认为唯有纯代码才能体现出自己的水平，也不要以为MRC才是你能力的体现；更不要以为自动挡的车都是垃圾，放开你的执念，让xib、storyboard带你提速吧，要相信苹果不会无缘无故的推出一个使你生活变得更糟的东西的^_^！！</string>
+		<string>libdispatch对于iOS开发者而言是一个非常好用的工具，它能让开发者傻瓜式的利用多核多线程进行并发编程（cocurrent）</string>
 		<key>storyboardID</key>
 		<string>LCDemo1TableViewController</string>
 		<key>storyboardName</key>
