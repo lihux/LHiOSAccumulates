@@ -56,6 +56,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self tableViewCellResueIdentifier] forIndexPath:indexPath];
+    cell.tag = indexPath.row + 1;
     LCAccumulate *accumulate = self.accumulatesManager.accumulates[indexPath.row];
     [cell configCellWithAccumulate:accumulate withIndexPatch:indexPath];
     cell.delegate = self;

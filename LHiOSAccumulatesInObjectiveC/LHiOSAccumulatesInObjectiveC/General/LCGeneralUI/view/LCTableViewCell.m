@@ -25,7 +25,7 @@
 
 - (void)configCellWithAccumulate:(LCAccumulate *)accumulate withIndexPatch:(NSIndexPath *)indexPath
 {
-    self.titleLabel.text = accumulate.title;
+    self.titleLabel.text = [NSString stringWithFormat:@"%zd. %@", self.tag, accumulate.title];
     self.contentLabel.text = accumulate.content;
     self.indexPath = indexPath;
     self.accumulate = accumulate;
