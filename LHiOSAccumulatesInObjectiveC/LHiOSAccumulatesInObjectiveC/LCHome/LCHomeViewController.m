@@ -48,6 +48,11 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     [super viewDidLoad];
     [self adjustLayoutConstraints];
     [self prepareDatas];
+    [self performSelector:@selector(test) withObject:nil afterDelay:3.0];
+}
+
+- (void)test {
+    NSLog(@"我勒个去啊，哈哈哈哈哈哈哈");
 }
 
 - (void)prepareDatas
