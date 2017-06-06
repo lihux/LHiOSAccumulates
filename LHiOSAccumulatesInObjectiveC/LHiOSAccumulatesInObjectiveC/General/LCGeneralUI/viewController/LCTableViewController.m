@@ -26,6 +26,8 @@
 - (void)configTableViewWithPlistFileName:(NSString *)plistName
 {
     self.plistFileName = plistName;
+    NSString *reuseID = [self tableViewCellResueIdentifier];
+    [self.tableView registerNib:[UINib nibWithNibName:reuseID bundle:nil] forCellReuseIdentifier:reuseID];
     [self loadAccumulatesFromPlist];
 }
 
@@ -126,7 +128,7 @@
 
 - (NSString *) tableViewCellResueIdentifier
 {
-    return @"LCTableViewCellSmallSize";
+    return NSStringFromClass([LCTableViewCell class]);
 }
 
 @end

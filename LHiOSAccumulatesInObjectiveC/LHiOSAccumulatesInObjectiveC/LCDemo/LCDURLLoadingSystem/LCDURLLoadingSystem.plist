@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>URLSessionTaskMetrics探索网络质量</string>
+		<key>viewControllerTitle</key>
+		<string>URLSessionTaskMetrics探索网络质量</string>
+		<key>content</key>
+		<string>在NSURLSessionDelegate中可以通过代理方法- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didFinishCollectingMetrics:(NSURLSessionTaskMetrics *)metrics来获知当前回话的网络通信各个阶段使用时长</string>
+		<key>storyboardID</key>
+		<string>LCDURLMetricsViewController</string>
+		<key>storyboardName</key>
+		<string>LCDURLLoadingSystem</string>
+	</dict>
+</array>
+</plist>

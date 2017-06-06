@@ -1,26 +1,26 @@
 //
-//  LCViewController.m
+//  LCDURLMetricsViewController.m
 //  LHiOSAccumulatesInObjectiveC
 //
-//  Created by lihui on 2017/4/26.
+//  Created by lihui on 2017/6/6.
 //  Copyright © 2017年 Lihux. All rights reserved.
 //
 
-#import "LCViewController.h"
+#import "LCDURLMetricsViewController.h"
 
-@interface LCViewController ()
+@interface LCDURLMetricsViewController ()
 
 @end
 
-@implementation LCViewController
+@implementation LCDURLMetricsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

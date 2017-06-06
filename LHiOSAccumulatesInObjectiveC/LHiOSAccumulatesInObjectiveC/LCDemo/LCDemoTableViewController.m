@@ -31,11 +31,6 @@
     return [self currentDeviceIsIpad] ? 90 : 44;
 }
 
-- (NSString *)tableViewCellResueIdentifier
-{
-    return [self currentDeviceIsIpad] ? @"LCTableViewCellFullSize" : @"LCTableViewCellSmallSize";
-}
-
 - (BOOL)currentDeviceIsIpad
 {
     return [[[UIDevice currentDevice].model substringToIndex:4] isEqualToString:@"iPad"];

@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UtP-z2-tfb">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UtP-z2-tfb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Document View Controller-->
@@ -9,53 +13,9 @@
             <objects>
                 <tableViewController storyboardIdentifier="LCDocumentViewController" id="YiV-AL-fh9" customClass="LCDocumentViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="by1-Xw-XNh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCTableViewCellSmallSize" rowHeight="44" id="NHS-IL-Cbd" customClass="LCTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NHS-IL-Cbd" id="JyJ-Sv-b0K">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="测试测试测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjG-cl-i4T" userLabel="title Label">
-                                            <rect key="frame" x="20" y="15" width="285" height="14"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="14" id="UE0-Ka-ZyI"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="YDQ-Pt-R0T"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdN-lU-af4" userLabel="border line View">
-                                            <rect key="frame" x="0.0" y="43" width="320" height="1"/>
-                                            <color key="backgroundColor" red="0.094117647060000004" green="0.50980392159999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="1" id="1Mj-Qz-9QZ"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstItem="kdN-lU-af4" firstAttribute="leading" secondItem="JyJ-Sv-b0K" secondAttribute="leading" id="F9r-sq-fnf"/>
-                                        <constraint firstAttribute="trailing" secondItem="kdN-lU-af4" secondAttribute="trailing" id="PGF-Of-TUk"/>
-                                        <constraint firstItem="XjG-cl-i4T" firstAttribute="centerY" secondItem="JyJ-Sv-b0K" secondAttribute="centerY" id="dOZ-UZ-0jX"/>
-                                        <constraint firstAttribute="bottom" secondItem="kdN-lU-af4" secondAttribute="bottom" id="dU1-vq-HJy"/>
-                                        <constraint firstItem="XjG-cl-i4T" firstAttribute="leading" secondItem="JyJ-Sv-b0K" secondAttribute="leading" constant="20" id="eDH-CS-kyh"/>
-                                        <constraint firstAttribute="trailing" secondItem="XjG-cl-i4T" secondAttribute="trailing" constant="15" id="ni0-Ow-8mU"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="titleLabel" destination="XjG-cl-i4T" id="6tl-t8-WSJ"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <outlet property="dataSource" destination="YiV-AL-fh9" id="wjs-c3-dL8"/>
                             <outlet property="delegate" destination="YiV-AL-fh9" id="zh2-01-RWk"/>

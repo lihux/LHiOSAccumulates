@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tIW-OT-IEr">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Suprise Table View Controller-->
@@ -9,53 +13,9 @@
             <objects>
                 <tableViewController storyboardIdentifier="LCSupriseTableViewController" id="x0B-m2-TaN" customClass="LCSupriseTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KW0-ZV-cFi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCTableViewCellSmallSize" rowHeight="44" id="lJz-sp-6pF" customClass="LCTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJz-sp-6pF" id="ltV-mD-5tj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="测试测试测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5x-f6-dZm" userLabel="title Label">
-                                            <rect key="frame" x="20" y="15" width="285" height="14"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="NPi-HZ-7Zl"/>
-                                                <constraint firstAttribute="height" constant="14" id="vnx-ZD-dyd"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-dc-3pH" userLabel="border line View">
-                                            <rect key="frame" x="0.0" y="43" width="320" height="1"/>
-                                            <color key="backgroundColor" red="0.094117647060000004" green="0.50980392159999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="1" id="KYT-9r-d0r"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstItem="e5x-f6-dZm" firstAttribute="leading" secondItem="ltV-mD-5tj" secondAttribute="leading" constant="20" id="ZnS-3M-ZKP"/>
-                                        <constraint firstAttribute="trailing" secondItem="4cd-dc-3pH" secondAttribute="trailing" id="bEH-x2-lsR"/>
-                                        <constraint firstItem="e5x-f6-dZm" firstAttribute="centerY" secondItem="ltV-mD-5tj" secondAttribute="centerY" id="fu6-qm-rio"/>
-                                        <constraint firstItem="4cd-dc-3pH" firstAttribute="leading" secondItem="ltV-mD-5tj" secondAttribute="leading" id="nXc-4C-g5d"/>
-                                        <constraint firstAttribute="bottom" secondItem="4cd-dc-3pH" secondAttribute="bottom" id="p9E-T0-0sF"/>
-                                        <constraint firstAttribute="trailing" secondItem="e5x-f6-dZm" secondAttribute="trailing" constant="15" id="zJI-1h-9Bc"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="titleLabel" destination="e5x-f6-dZm" id="5Iz-8T-SKt"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <outlet property="dataSource" destination="x0B-m2-TaN" id="CZl-gv-HNO"/>
                             <outlet property="delegate" destination="x0B-m2-TaN" id="dsc-3B-eCY"/>

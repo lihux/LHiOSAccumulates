@@ -10,8 +10,8 @@
 
 @implementation LHBorderLineView
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
+    [super awakeFromNib];
     for (NSLayoutConstraint *constraint in self.constraints) {
         NSLog(@"%@", constraint);
         if (constraint.firstItem == self && (constraint.firstAttribute == NSLayoutAttributeWidth || constraint.firstAttribute == NSLayoutAttributeHeight)) {

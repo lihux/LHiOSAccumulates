@@ -2,8 +2,8 @@
 //  LCTableViewCell.h
 //  LHiOSAccumulatesInObjectiveC
 //
-//  Created by lihui on 16/1/18.
-//  Copyright © 2016年 Lihux. All rights reserved.
+//  Created by lihui on 2017/6/6.
+//  Copyright © 2017年 Lihux. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -24,3 +24,4 @@
 - (void)configCellWithAccumulate:(LCAccumulate *)accumulate withIndexPatch:(NSIndexPath *)indexPath;
 
 @end
+

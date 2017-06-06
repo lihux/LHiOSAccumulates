@@ -2,8 +2,8 @@
 //  LCTableViewCell.m
 //  LHiOSAccumulatesInObjectiveC
 //
-//  Created by lihui on 16/1/18.
-//  Copyright © 2016年 Lihux. All rights reserved.
+//  Created by lihui on 2017/6/6.
+//  Copyright © 2017年 Lihux. All rights reserved.
 //
 
 #import "LCTableViewCell.h"
@@ -16,7 +16,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (nonatomic, strong) NSIndexPath *indexPath;
 
 @end
@@ -31,8 +30,7 @@
     self.accumulate = accumulate;
 }
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
     [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
     LCButton *button = [[LCButton alloc] init];
@@ -46,8 +44,7 @@
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[button]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(button)]];
 }
 
-- (void)didTapOnButton:(UIButton *)button
-{
+- (void)didTapOnButton:(UIButton *)button{
     if (self.delegate && [self.delegate respondsToSelector:@selector(tableViewCell:tappedWithIndex:)]) {
         [self.delegate tableViewCell:self tappedWithIndex:self.indexPath];
     }
