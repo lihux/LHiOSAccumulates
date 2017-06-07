@@ -13,13 +13,23 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *leftButton;
 @property (weak, nonatomic) IBOutlet UIButton *rightButton;
+@property (nonatomic, weak) id<LCSectionHeaderViewDelegate> delegate;
 
 @end
 
 @implementation LCSectionHeaderView
 
-- (void)configSectionHeaderViewWithTitle:(NSString *)title leftText:(NSString *)leftText rightText:(NSString *)rightText
-{
++ (LCSectionHeaderView *)sectionHeaderViewWithDelegate:(id<LCSectionHeaderViewDelegate>)delegate
+                                                 title:(NSString *)title
+                                              leftText:(NSString *)leftText
+                                             rightText:(NSString *)rightText {
+    LCSectionHeaderView *sectionHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"LCSectionHeaderView" owner:nil options:nil] objectAtIndex:0];
+    sectionHeaderView.delegate = delegate;
+    [sectionHeaderView configSectionHeaderViewWithTitle:title leftText:leftText rightText:rightText];
+    return sectionHeaderView;
+}
+
+- (void)configSectionHeaderViewWithTitle:(NSString *)title leftText:(NSString *)leftText rightText:(NSString *)rightText {
     self.titleLabel.text = title;
     [self.leftButton setTitle:leftText forState:UIControlStateNormal];
     self.leftButton.titleLabel.text = leftText;
@@ -29,15 +39,13 @@
 }
 
 #pragma mark - LCSectionHeaderViewDelegate
-- (IBAction)didTapOnLeftButton:(id)sender
-{
+- (IBAction)didTapOnLeftButton:(id)sender {
     if (self.delegate && [self.delegate respondsToSelector:@selector(sectionHeaderView:tappedOnLeftButton:)]) {
         [self.delegate sectionHeaderView:self tappedOnLeftButton:self.leftButton];
     }
 }
 
-- (IBAction)didTapOnRightButton:(id)sender
-{
+- (IBAction)didTapOnRightButton:(id)sender {
     if (self.delegate && [self.delegate respondsToSelector:@selector(sectionHeaderView:tappedOnRightButton:)]) {
         [self.delegate sectionHeaderView:self tappedOnRightButton:self.rightButton];
     }

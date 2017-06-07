@@ -9,6 +9,8 @@
 #import "LCUtilities.h"
 
 #import "LCAccumulate.h"
+#import "LCTableViewController.h"
+
 #import <UIKit/UIKit.h>
 
 @implementation LCUtilities
@@ -30,7 +32,11 @@
 
 + (UIViewController *)viewControllerForAccumulate:(LCAccumulate *)accumulate
 {
-    if (accumulate.storyboardID.length > 0) {
+    if (accumulate.plistName.length > 0) {
+        LCTableViewController *vc = [[LCTableViewController alloc] init];
+        [vc configWithTitle:accumulate.viewControllerTitle plistFileName:accumulate.plistName];
+        return vc;
+    } else if (accumulate.storyboardID.length > 0) {
         return [[UIStoryboard storyboardWithName:accumulate.storyboardName bundle:nil] instantiateViewControllerWithIdentifier:accumulate.storyboardID];
     }
     return nil;

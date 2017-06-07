@@ -11,6 +11,7 @@
 #import "LCAccumulate.h"
 #import "LCUtilities.h"
 #import "LCTableViewCell.h"
+#import "UIColor+helper.h"
 
 @interface LCTableViewController () <LCSectionHeaderViewDelegate, LCTableViewCellDelegate>
 
@@ -26,7 +27,7 @@
 - (void)configWithTitle:(NSString *)title plistFileName:(NSString *)plistName {
     self.title = title;
     self.plistFileName = plistName;
-    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.backgroundColor = [UIColor colorWithHex:0x3b955e];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     NSString *reuseID = [self tableViewCellResueIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:reuseID bundle:nil] forCellReuseIdentifier:reuseID];
@@ -75,12 +76,9 @@
 {
     UIView *headerView = [[UIView alloc] init];
     if (section == 0) {
-        LCSectionHeaderView *sectionHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"LCSectionHeaderView" owner:nil options:nil] objectAtIndex:0];
-        sectionHeaderView.delegate = self;
         NSString *leftText = [self leftNavigatorItemText];
         NSString *rightText = [self rightNavigatorItemText];
-        [sectionHeaderView configSectionHeaderViewWithTitle:self.title leftText:leftText rightText:rightText];
-        return sectionHeaderView;
+        return [LCSectionHeaderView sectionHeaderViewWithDelegate:self title:self.title leftText:leftText rightText:rightText];
     }
     return headerView;
 }
@@ -113,18 +111,18 @@
 }
 
 #pragma mark - LCSectionHeaderViewDelegate
-- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton
-{
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton
-{
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
 }
 
 #pragma mark - method that may be override
 - (NSString *)leftNavigatorItemText
 {
-    return @"";
+    BOOL isRoot = [self.navigationController.viewControllers objectAtIndex:0] == self;
+    return isRoot ? @"" : @"返回";
 }
 
 - (NSString *)rightNavigatorItemText

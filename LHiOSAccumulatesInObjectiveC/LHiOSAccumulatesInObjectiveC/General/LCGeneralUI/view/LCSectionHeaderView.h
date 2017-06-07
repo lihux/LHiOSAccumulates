@@ -19,8 +19,9 @@
 
 @interface LCSectionHeaderView : UIView
 
-@property (nonatomic, weak) id<LCSectionHeaderViewDelegate> delegate;
-
-- (void)configSectionHeaderViewWithTitle:(NSString *)title leftText:(NSString *)leftText rightText:(NSString *)rightText;
++ (LCSectionHeaderView *)sectionHeaderViewWithDelegate:(id<LCSectionHeaderViewDelegate>)delegate
+                                                 title:(NSString *)title
+                                              leftText:(NSString *)leftText
+                                             rightText:(NSString *)rightText;
 
 @end
