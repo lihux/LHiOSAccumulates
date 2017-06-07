@@ -14,10 +14,4 @@
 
 @implementation LCDURLLoadingController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self configTableViewWithPlistFileName:@"LCDURLLoadingSystem"];
-}
-
-
 @end

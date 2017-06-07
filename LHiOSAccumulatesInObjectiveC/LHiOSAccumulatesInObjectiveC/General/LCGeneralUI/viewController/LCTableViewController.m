@@ -23,9 +23,11 @@
 
 @implementation LCTableViewController
 
-- (void)configTableViewWithPlistFileName:(NSString *)plistName
-{
+- (void)configWithTitle:(NSString *)title plistFileName:(NSString *)plistName {
+    self.title = title;
     self.plistFileName = plistName;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     NSString *reuseID = [self tableViewCellResueIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:reuseID bundle:nil] forCellReuseIdentifier:reuseID];
     [self loadAccumulatesFromPlist];
@@ -63,6 +65,10 @@
     [cell configCellWithAccumulate:accumulate withIndexPatch:indexPath];
     cell.delegate = self;
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section

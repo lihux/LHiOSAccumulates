@@ -10,6 +10,7 @@
 
 #import "LCLightBorderButton.h"
 #import "UIColor+helper.h"
+#import "LCTableViewController.h"
 
 static const CGFloat kDefaultFlyingAnimationDuration = 0.6;
 static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
@@ -195,6 +196,40 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
         _controllerContainerViewZoomingMin = 50 / length;
     }
     return _controllerContainerViewZoomingMin;
+}
+
+#pragma mark - handle segues
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSInteger tag = [segue.identifier integerValue];
+    NSString *title = [self.homeButtonTitles objectAtIndex:tag];
+    NSString *plistName;
+    switch (tag) {
+        case 0: {
+            title = @"好玩";
+            plistName = @"LCDemo";
+        }
+            break;
+        case 1: {
+            title = @"好看";
+            plistName = @"LCDocument";
+        }
+            break;
+        case 2: {
+            title = @"你猜";
+            plistName = @"LCSuprise";
+        }
+            break;
+        case 3: {
+            title = @"设置";
+            plistName = @"LCSetting";
+        }
+            break;
+
+        default:
+            break;
+    }
+    LCTableViewController *vc = (LCTableViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+    [vc configWithTitle:title plistFileName:plistName];
 }
 
 @end

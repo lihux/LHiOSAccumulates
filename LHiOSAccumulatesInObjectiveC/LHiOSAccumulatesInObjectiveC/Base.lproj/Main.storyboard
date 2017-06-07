@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GDz-Uf-psU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GDz-Uf-psU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -70,28 +70,28 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
-                                                            <segue destination="mZv-1q-4w1" kind="embed" id="KMJ-dd-fmZ"/>
+                                                            <segue destination="cKI-M1-1vM" kind="embed" identifier="0" id="ZS1-oj-V2Q"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbh-rX-w2X" userLabel="Container View1">
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
-                                                            <segue destination="5GK-30-YgU" kind="embed" id="hjN-hv-PYb"/>
+                                                            <segue destination="d7L-tp-P5T" kind="embed" identifier="1" id="AyG-gC-Xdn"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-zO-bEg" userLabel="Container View2">
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
-                                                            <segue destination="Wf7-dN-xVm" kind="embed" id="GGw-ag-Wgr"/>
+                                                            <segue destination="2EX-HO-XfD" kind="embed" identifier="2" id="mis-94-yxY"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gE3-r8-DWf" userLabel="Container View3">
                                                         <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
-                                                            <segue destination="W8F-jK-7cb" kind="embed" id="4So-cp-igy"/>
+                                                            <segue destination="1xu-gT-IFz" kind="embed" identifier="3" id="miA-kZ-PLD"/>
                                                         </connections>
                                                     </containerView>
                                                 </subviews>
@@ -561,14 +561,6 @@
                                 <exclude reference="HiE-Hj-CwV"/>
                                 <exclude reference="coK-2g-vHR"/>
                                 <exclude reference="d2l-tx-hle"/>
-                                <exclude reference="05K-fk-xn9"/>
-                                <exclude reference="9H4-23-aFa"/>
-                                <exclude reference="HUa-GI-fxE"/>
-                                <exclude reference="MaV-Kh-uiQ"/>
-                                <exclude reference="fyD-Hc-egU"/>
-                                <exclude reference="kkg-n6-pPr"/>
-                                <exclude reference="v30-dA-SPS"/>
-                                <exclude reference="zdm-FA-yxu"/>
                                 <exclude reference="DIY-VW-YIq"/>
                                 <exclude reference="Gvq-M4-r42"/>
                                 <exclude reference="Twg-r2-QZe"/>
@@ -578,6 +570,14 @@
                                 <exclude reference="m0q-Xe-Bz3"/>
                                 <exclude reference="qy0-Aj-Y08"/>
                                 <exclude reference="zkf-8f-6VH"/>
+                                <exclude reference="05K-fk-xn9"/>
+                                <exclude reference="9H4-23-aFa"/>
+                                <exclude reference="HUa-GI-fxE"/>
+                                <exclude reference="MaV-Kh-uiQ"/>
+                                <exclude reference="fyD-Hc-egU"/>
+                                <exclude reference="kkg-n6-pPr"/>
+                                <exclude reference="v30-dA-SPS"/>
+                                <exclude reference="zdm-FA-yxu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -593,11 +593,11 @@
                                 <include reference="QRK-o6-ddW"/>
                                 <include reference="gc2-6g-g1O"/>
                                 <include reference="7GK-nu-Hwe"/>
-                                <include reference="05K-fk-xn9"/>
-                                <include reference="9H4-23-aFa"/>
                                 <include reference="Twg-r2-QZe"/>
                                 <include reference="Zne-fy-V6P"/>
                                 <include reference="zkf-8f-6VH"/>
+                                <include reference="05K-fk-xn9"/>
+                                <include reference="9H4-23-aFa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -619,14 +619,14 @@
                                 <include reference="1Fn-xF-rcJ"/>
                                 <include reference="8Ev-nb-zh0"/>
                                 <include reference="d2l-tx-hle"/>
-                                <include reference="MaV-Kh-uiQ"/>
-                                <include reference="fyD-Hc-egU"/>
-                                <include reference="zdm-FA-yxu"/>
                                 <include reference="DIY-VW-YIq"/>
                                 <exclude reference="Gvq-M4-r42"/>
                                 <exclude reference="XY5-k2-kwz"/>
                                 <include reference="m0q-Xe-Bz3"/>
                                 <exclude reference="qy0-Aj-Y08"/>
+                                <include reference="MaV-Kh-uiQ"/>
+                                <include reference="fyD-Hc-egU"/>
+                                <include reference="zdm-FA-yxu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -640,9 +640,9 @@
                                 <include reference="sAw-P5-dMd"/>
                                 <include reference="9LW-Gh-wQ8"/>
                                 <include reference="HiE-Hj-CwV"/>
+                                <include reference="b6P-AH-uXb"/>
                                 <include reference="HUa-GI-fxE"/>
                                 <include reference="kkg-n6-pPr"/>
-                                <include reference="b6P-AH-uXb"/>
                             </mask>
                         </variation>
                     </view>
@@ -681,36 +681,36 @@
             <point key="canvasLocation" x="-121" y="-392"/>
         </scene>
         <!--LCDemo-->
-        <scene sceneID="lTP-ep-REt">
+        <scene sceneID="BMF-XX-Koh">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCDemo" id="mZv-1q-4w1" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hKN-Na-ALS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="LCDemo" id="cKI-M1-1vM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTP-aA-CMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422" y="-495"/>
+            <point key="canvasLocation" x="650" y="-503"/>
         </scene>
         <!--LCDocument-->
-        <scene sceneID="6S9-ow-obt">
+        <scene sceneID="pa5-M3-zjH">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCDocument" id="5GK-30-YgU" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0p0-Xr-BwD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="LCDocument" id="d7L-tp-P5T" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MtO-Dy-2cR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422.5" y="-445"/>
-        </scene>
-        <!--LCSuprise-->
-        <scene sceneID="KiB-TM-h3n">
-            <objects>
-                <viewControllerPlaceholder storyboardName="LCSuprise" id="Wf7-dN-xVm" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p43-VB-1n6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="429.5" y="-330"/>
+            <point key="canvasLocation" x="649" y="-448"/>
         </scene>
         <!--LCSetting-->
-        <scene sceneID="MeR-D5-geR">
+        <scene sceneID="Opw-16-nez">
             <objects>
-                <viewControllerPlaceholder storyboardName="LCSetting" id="W8F-jK-7cb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRE-46-mT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="LCSetting" id="1xu-gT-IFz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6iZ-2k-amT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="428" y="-392"/>
+            <point key="canvasLocation" x="650" y="-351"/>
+        </scene>
+        <!--LCSuprise-->
+        <scene sceneID="bAQ-Da-SnV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LCSuprise" id="2EX-HO-XfD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVW-2Z-9Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="-404"/>
         </scene>
     </scenes>
 </document>

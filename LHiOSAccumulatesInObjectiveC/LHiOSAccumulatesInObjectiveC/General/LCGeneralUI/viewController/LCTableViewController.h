@@ -16,7 +16,8 @@
 
 @property (nonatomic, strong) LCAccumulateManager *accumulatesManager;
 
-- (void)configTableViewWithPlistFileName:(NSString *)plistName;
+- (void)configWithTitle:(NSString *)title plistFileName:(NSString *)plistName;
+
 - (NSString *) tableViewCellResueIdentifier;
 - (NSString *)leftNavigatorItemText;
 - (NSString *)rightNavigatorItemText;
