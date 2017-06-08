@@ -11,9 +11,8 @@
 
 @interface LCDispatchApplyViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextView *outputTextView;
-
 @property (nonatomic, strong) NSMutableString *outputString;
+@property (weak, nonatomic) IBOutlet UIButton *trigglerButton;
 
 @end
 
@@ -25,10 +24,6 @@
     [self makeLihuxStyleOfSubviewsFromParent:self.view];
 }
 
-- (IBAction)didTapOnGoBackButton:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 - (IBAction)didTapOnButton:(id)sender {
     UIButton *button = (UIButton *)sender;
     NSInteger tag = button.tag;
@@ -37,9 +32,14 @@
     [button setTitle:[NSString stringWithFormat:@"点击触发dispatch_apply(%zd)次", tag + 1] forState:UIControlStateNormal];
 }
 
+#pragma mark - override
+- (UIView *)logAnchorView {
+    return self.trigglerButton;
+}
+
 - (void)updateOutPutStringWithTag:(NSInteger)tag {
     [self.outputString appendString:[NSString stringWithFormat:@"\n\n\n点击触发dispatch_apply(%zd)次", tag]];
-    self.outputTextView.text = self.outputString;
+    [self log:self.outputString];
     @weakify(self);
     dispatch_apply(tag, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t index) {
         @strongify(self);

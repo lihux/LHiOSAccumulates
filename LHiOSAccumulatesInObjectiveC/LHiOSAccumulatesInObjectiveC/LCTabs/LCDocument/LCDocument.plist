@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>1. 初中的幼稚</string>
+		<string>初中的幼稚</string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>
@@ -12,7 +12,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>2.高中的懵懂</string>
+		<string>高中的懵懂</string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>
@@ -20,7 +20,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>3. 大学的成熟</string>
+		<string>大学的成熟</string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>
@@ -28,7 +28,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>4. 工作之后</string>
+		<string>工作之后</string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>
@@ -36,7 +36,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>5. 技术篇</string>
+		<string>技术篇</string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>

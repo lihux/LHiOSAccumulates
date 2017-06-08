@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="L7O-P9-Q61"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fL3-vV-fyZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xq-iO-gPf">
-                                <rect key="frame" x="0.0" y="70" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="70" width="667" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="aGp-cO-mGp"/>
@@ -33,32 +33,21 @@
                                     <action selector="didTapOnButton:" destination="VRt-sX-Qpg" eventType="touchUpInside" id="Ktz-dS-VZp"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NSe-Qe-FDL">
-                                <rect key="frame" x="12" y="164" width="351" height="491"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="NSe-Qe-FDL" secondAttribute="trailing" constant="12" id="JNd-gM-XRA"/>
-                            <constraint firstItem="NSe-Qe-FDL" firstAttribute="top" secondItem="6xq-iO-gPf" secondAttribute="bottom" constant="50" id="LYm-kz-4ai"/>
-                            <constraint firstItem="L7O-P9-Q61" firstAttribute="top" secondItem="NSe-Qe-FDL" secondAttribute="bottom" constant="12" id="VgW-Yh-u8N"/>
                             <constraint firstItem="6xq-iO-gPf" firstAttribute="top" secondItem="QD3-4c-KKu" secondAttribute="bottom" constant="50" id="bKc-bZ-2KA"/>
-                            <constraint firstItem="NSe-Qe-FDL" firstAttribute="leading" secondItem="fL3-vV-fyZ" secondAttribute="leading" constant="12" id="fPJ-bz-Omk"/>
                             <constraint firstItem="6xq-iO-gPf" firstAttribute="leading" secondItem="fL3-vV-fyZ" secondAttribute="leading" id="myZ-Nx-75z"/>
                             <constraint firstAttribute="trailing" secondItem="6xq-iO-gPf" secondAttribute="trailing" id="sNT-cK-ip9"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="outputTextView" destination="NSe-Qe-FDL" id="86D-uz-rdt"/>
+                        <outlet property="trigglerButton" destination="6xq-iO-gPf" id="khN-4W-e5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koh-on-3Sx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="464.80000000000001" y="-803.74812593703155"/>
+            <point key="canvasLocation" x="279" y="-780"/>
         </scene>
     </scenes>
 </document>

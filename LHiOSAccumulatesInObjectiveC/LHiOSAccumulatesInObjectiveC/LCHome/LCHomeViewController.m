@@ -49,15 +49,9 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     [super viewDidLoad];
     [self adjustLayoutConstraints];
     [self prepareDatas];
-    [self performSelector:@selector(test) withObject:nil afterDelay:3.0];
 }
 
-- (void)test {
-    NSLog(@"我勒个去啊，哈哈哈哈哈哈哈");
-}
-
-- (void)prepareDatas
-{
+- (void)prepareDatas {
     self.flyingViewIndex = -1;
     self.homeButtonTitles = @[@"好玩", @"好看", @"你猜", @"设置"];
     self.flyConstraintArray = @[self.flyView1SizeConstraints, self.flyView2SizeConstraints, self.flyView3SizeConstraints, self.flyView4SizeConstraints];
@@ -70,14 +64,12 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     }];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self updateControllerControllerContrainerViewWithZoomingState:NO];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     if (!self.firstLaunch) {
         self.firstLaunch = YES;
@@ -85,14 +77,12 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
         [(UIButton *)self.homeButtons[0] setSelected:YES];
         [self homeButtonAnimateWithButtonIndex:0 isFlyingAway:YES completion:^{
             self.maskLabel.text = self.homeButtonTitles[0];
-            [self centerCircleAnimateWithIsZooming:YES completion:^{
-            }];
+            [self centerCircleAnimateWithIsZooming:YES completion:nil];
         }];
     }
 }
 
-- (void)setFlyingViewIndex:(NSInteger)flyingViewIndex
-{
+- (void)setFlyingViewIndex:(NSInteger)flyingViewIndex {
     if (flyingViewIndex >= 0) {
         for (UIView *view in self.subViewControllerContainerViews) {
             view.hidden = flyingViewIndex == view.tag ? NO : YES;
@@ -101,8 +91,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     _flyingViewIndex = flyingViewIndex;
 }
 
-- (void)adjustLayoutConstraints
-{
+- (void)adjustLayoutConstraints {
     CGFloat buttonWidth = [(UIButton *)self.homeButtons[0] bounds].size.width;
     CGFloat borderGap = 22;
     NSInteger buttonCount = self.homeButtons.count;
@@ -116,16 +105,14 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     [self.view layoutIfNeeded];
 }
 
-- (void)updateControllerControllerContrainerViewWithZoomingState:(BOOL)isZooming
-{
+- (void)updateControllerControllerContrainerViewWithZoomingState:(BOOL)isZooming {
     CGFloat controllerContainerViewScale = isZooming ? 1 : self.controllerContainerViewZoomingMin;
     CGFloat controllerContainerViewAlpha = isZooming ? 1 : 0;
     self.controllerContrainerView.transform = CGAffineTransformMakeScale(controllerContainerViewScale, controllerContainerViewScale);
     self.controllerContrainerView.alpha = controllerContainerViewAlpha;
 }
 
-- (void)centerCircleAnimateWithIsZooming:(BOOL)isZooming completion:(void(^)())completion
-{
+- (void)centerCircleAnimateWithIsZooming:(BOOL)isZooming completion:(void(^)())completion {
     self.maskLabel.hidden = NO;
     self.maskView.hidden = NO;
     self.maskLabel.text = self.homeButtonTitles[self.flyingViewIndex];
@@ -144,8 +131,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     }];
 }
 
-- (void)homeButtonAnimateWithButtonIndex:(NSInteger)index isFlyingAway:(BOOL)isFlyingAway completion:(void(^)())completion
-{
+- (void)homeButtonAnimateWithButtonIndex:(NSInteger)index isFlyingAway:(BOOL)isFlyingAway completion:(void(^)())completion {
     UIView *flyingView = self.flyingViews[index];
     flyingView.hidden = NO;
     BOOL stopHomeButtonFlyAwayConstraintActive = !isFlyingAway;
@@ -185,12 +171,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-- (CGFloat)controllerContainerViewZoomingMin
-{
+- (CGFloat)controllerContainerViewZoomingMin {
     if (_controllerContainerViewZoomingMin == 0) {
         CGFloat length = self.controllerContrainerView.frame.size.height > self.controllerContrainerView.frame.size.width ? self.controllerContrainerView.frame.size.height : self.controllerContrainerView.frame.size.width;
         _controllerContainerViewZoomingMin = 50 / length;
