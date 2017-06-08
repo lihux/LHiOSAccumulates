@@ -10,16 +10,9 @@
 
 #import "LCAccumulateManager.h"
 #import "LCTableViewCell.h"
-#import "LCSectionHeaderView.h"
 
-@interface LCTableViewController : UITableViewController  <LCTableViewCellDelegate, LCSectionHeaderViewDelegate>
-
-@property (nonatomic, strong) LCAccumulateManager *accumulatesManager;
+@interface LCTableViewController : UITableViewController
 
 - (void)configWithTitle:(NSString *)title plistFileName:(NSString *)plistName;
-
-- (NSString *) tableViewCellResueIdentifier;
-- (NSString *)leftNavigatorItemText;
-- (NSString *)rightNavigatorItemText;
 
 @end

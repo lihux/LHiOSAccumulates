@@ -12,6 +12,7 @@
 #import "LCUtilities.h"
 #import "LCTableViewCell.h"
 #import "UIColor+helper.h"
+#import "LCSectionHeaderView.h"
 
 @interface LCTableViewController () <LCSectionHeaderViewDelegate, LCTableViewCellDelegate>
 
@@ -19,6 +20,7 @@
 @property (nonatomic, strong) UIButton *leftNavigatorButton;
 @property (nonatomic, strong) UIButton *rightNavigatorButton;
 @property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) LCAccumulateManager *accumulatesManager;
 
 @end
 
@@ -113,9 +115,6 @@
 #pragma mark - LCSectionHeaderViewDelegate
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton {
     [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
 }
 
 #pragma mark - method that may be override

@@ -11,22 +11,16 @@
 		<string>libdispatch深入学习</string>
 		<key>content</key>
 		<string>libdispatch对于iOS开发者而言是一个非常好用的工具，它能让开发者傻瓜式的利用多核多线程进行并发编程（cocurrent）</string>
-		<key>storyboardID</key>
-		<string>LCDemo1TableViewController</string>
-		<key>storyboardName</key>
-		<string>LCDemo</string>
 	</dict>
 	<dict>
+		<key>plistName</key>
+		<string>LCDURLLoadingSystem</string>
 		<key>title</key>
 		<string>URL Loading System的深入学习</string>
 		<key>viewControllerTitle</key>
 		<string>URL Loading System的深入学习</string>
 		<key>content</key>
 		<string>URL Loading System是网络基础，理解其使用方式，可以对APP的网络请求的使用做到游刃有余</string>
-		<key>storyboardID</key>
-		<string>LCDURLLoadingController</string>
-		<key>storyboardName</key>
-		<string>LCDemo</string>
 	</dict>
 	<dict>
 		<key>title</key>

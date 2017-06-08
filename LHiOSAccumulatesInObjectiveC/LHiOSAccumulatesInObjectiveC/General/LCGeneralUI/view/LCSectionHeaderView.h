@@ -12,6 +12,8 @@
 
 @protocol LCSectionHeaderViewDelegate <NSObject>
 
+@optional
+
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton;
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton;
 

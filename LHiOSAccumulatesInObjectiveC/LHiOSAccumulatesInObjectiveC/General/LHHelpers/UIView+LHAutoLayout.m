@@ -15,12 +15,14 @@
         return;
     }
     [self addSubview:view];
+    view.translatesAutoresizingMaskIntoConstraints = NO;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(view)]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[view]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(view)]];
 }
 
 - (void)addSubview:(UIView *)view withLayoutInfo:(LHLayoutInfo)info {
     [self addSubview:view];
+    view.translatesAutoresizingMaskIntoConstraints = NO;
     [self layoutView:view constant:info.top name:NSLayoutAttributeTop];
     [self layoutView:view constant:info.left name:NSLayoutAttributeLeft];
     [self layoutView:view constant:info.bottom name:NSLayoutAttributeBottom];
