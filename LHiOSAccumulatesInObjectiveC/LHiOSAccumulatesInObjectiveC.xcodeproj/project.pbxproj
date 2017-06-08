@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		522485141EE7BB60001A1429 /* LCDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522484F21EE7BB60001A1429 /* LCDemo.storyboard */; };
-		522485151EE7BB60001A1429 /* LCDDispatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522484F41EE7BB60001A1429 /* LCDDispatch.plist */; };
-		522485161EE7BB60001A1429 /* LCDemo1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522484F61EE7BB60001A1429 /* LCDemo1TableViewController.m */; };
-		522485171EE7BB60001A1429 /* LCDispatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522484F81EE7BB60001A1429 /* LCDispatch.storyboard */; };
-		522485181EE7BB60001A1429 /* LCDispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522484FA1EE7BB60001A1429 /* LCDispatchApplyViewController.m */; };
 		522485191EE7BB60001A1429 /* LCDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522484FB1EE7BB60001A1429 /* LCDemo.plist */; };
 		5224851B1EE7BB60001A1429 /* LCDURLLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522485001EE7BB60001A1429 /* LCDURLLoadingController.m */; };
 		5224851C1EE7BB60001A1429 /* LCDURLLoadingSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522485011EE7BB60001A1429 /* LCDURLLoadingSystem.plist */; };
@@ -23,6 +19,9 @@
 		522485231EE7BB60001A1429 /* LCSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5224850C1EE7BB60001A1429 /* LCSetting.plist */; };
 		522485251EE7BB60001A1429 /* LCSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522485101EE7BB60001A1429 /* LCSuprise.storyboard */; };
 		522485261EE7BB60001A1429 /* LCSuprise.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522485111EE7BB60001A1429 /* LCSuprise.plist */; };
+		5224852C1EE8EA68001A1429 /* LCDDispatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522485281EE8EA68001A1429 /* LCDDispatch.plist */; };
+		5224852D1EE8EA68001A1429 /* LCDispatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522485291EE8EA68001A1429 /* LCDispatch.storyboard */; };
+		5224852E1EE8EA68001A1429 /* LCDispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5224852B1EE8EA68001A1429 /* LCDispatchApplyViewController.m */; };
 		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; };
 		9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */; };
 		9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365571C4CF9F900E04D7B /* LCUtilities.m */; };
@@ -71,12 +70,6 @@
 
 /* Begin PBXFileReference section */
 		522484F21EE7BB60001A1429 /* LCDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCDemo.storyboard; sourceTree = "<group>"; };
-		522484F41EE7BB60001A1429 /* LCDDispatch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCDDispatch.plist; sourceTree = "<group>"; };
-		522484F51EE7BB60001A1429 /* LCDemo1TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDemo1TableViewController.h; sourceTree = "<group>"; };
-		522484F61EE7BB60001A1429 /* LCDemo1TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDemo1TableViewController.m; sourceTree = "<group>"; };
-		522484F81EE7BB60001A1429 /* LCDispatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
-		522484F91EE7BB60001A1429 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
-		522484FA1EE7BB60001A1429 /* LCDispatchApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDispatchApplyViewController.m; sourceTree = "<group>"; };
 		522484FB1EE7BB60001A1429 /* LCDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCDemo.plist; sourceTree = "<group>"; };
 		522484FF1EE7BB60001A1429 /* LCDURLLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDURLLoadingController.h; sourceTree = "<group>"; };
 		522485001EE7BB60001A1429 /* LCDURLLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDURLLoadingController.m; sourceTree = "<group>"; };
@@ -90,6 +83,10 @@
 		5224850C1EE7BB60001A1429 /* LCSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSetting.plist; sourceTree = "<group>"; };
 		522485101EE7BB60001A1429 /* LCSuprise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCSuprise.storyboard; sourceTree = "<group>"; };
 		522485111EE7BB60001A1429 /* LCSuprise.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSuprise.plist; sourceTree = "<group>"; };
+		522485281EE8EA68001A1429 /* LCDDispatch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LCDDispatch.plist; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDDispatch.plist; sourceTree = SOURCE_ROOT; };
+		522485291EE8EA68001A1429 /* LCDispatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LCDispatch.storyboard; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatch.storyboard; sourceTree = SOURCE_ROOT; };
+		5224852A1EE8EA68001A1429 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDispatchApplyViewController.h; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatchApplyViewController.h; sourceTree = SOURCE_ROOT; };
+		5224852B1EE8EA68001A1429 /* LCDispatchApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDispatchApplyViewController.m; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatchApplyViewController.m; sourceTree = SOURCE_ROOT; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
 		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
 		9C0365541C4CF9F900E04D7B /* LCAccumulateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulateManager.h; sourceTree = "<group>"; };
@@ -182,32 +179,23 @@
 			isa = PBXGroup;
 			children = (
 				522484F21EE7BB60001A1429 /* LCDemo.storyboard */,
-				522484F31EE7BB60001A1429 /* LCDemo01 */,
+				522484F31EE7BB60001A1429 /* LCDDispatch */,
 				522484FB1EE7BB60001A1429 /* LCDemo.plist */,
 				522484FE1EE7BB60001A1429 /* LCDURLLoadingSystem */,
 			);
 			path = LCDemo;
 			sourceTree = "<group>";
 		};
-		522484F31EE7BB60001A1429 /* LCDemo01 */ = {
+		522484F31EE7BB60001A1429 /* LCDDispatch */ = {
 			isa = PBXGroup;
 			children = (
-				522484F41EE7BB60001A1429 /* LCDDispatch.plist */,
-				522484F51EE7BB60001A1429 /* LCDemo1TableViewController.h */,
-				522484F61EE7BB60001A1429 /* LCDemo1TableViewController.m */,
-				522484F71EE7BB60001A1429 /* libdispatch */,
+				522485281EE8EA68001A1429 /* LCDDispatch.plist */,
+				522485291EE8EA68001A1429 /* LCDispatch.storyboard */,
+				5224852A1EE8EA68001A1429 /* LCDispatchApplyViewController.h */,
+				5224852B1EE8EA68001A1429 /* LCDispatchApplyViewController.m */,
 			);
+			name = LCDDispatch;
 			path = LCDemo01;
-			sourceTree = "<group>";
-		};
-		522484F71EE7BB60001A1429 /* libdispatch */ = {
-			isa = PBXGroup;
-			children = (
-				522484F81EE7BB60001A1429 /* LCDispatch.storyboard */,
-				522484F91EE7BB60001A1429 /* LCDispatchApplyViewController.h */,
-				522484FA1EE7BB60001A1429 /* LCDispatchApplyViewController.m */,
-			);
-			path = libdispatch;
 			sourceTree = "<group>";
 		};
 		522484FE1EE7BB60001A1429 /* LCDURLLoadingSystem */ = {
@@ -518,7 +506,6 @@
 				522485141EE7BB60001A1429 /* LCDemo.storyboard in Resources */,
 				522485231EE7BB60001A1429 /* LCSetting.plist in Resources */,
 				522485201EE7BB60001A1429 /* LCDocument.plist in Resources */,
-				522485151EE7BB60001A1429 /* LCDDispatch.plist in Resources */,
 				9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */,
 				9C678A431EE6F49000746CEF /* LCTableViewCell.xib in Resources */,
 				9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */,
@@ -530,9 +517,10 @@
 				5224851F1EE7BB60001A1429 /* LCDocument.storyboard in Resources */,
 				5224851C1EE7BB60001A1429 /* LCDURLLoadingSystem.plist in Resources */,
 				522485191EE7BB60001A1429 /* LCDemo.plist in Resources */,
+				5224852D1EE8EA68001A1429 /* LCDispatch.storyboard in Resources */,
 				522485251EE7BB60001A1429 /* LCSuprise.storyboard in Resources */,
-				522485171EE7BB60001A1429 /* LCDispatch.storyboard in Resources */,
 				522485261EE7BB60001A1429 /* LCSuprise.plist in Resources */,
+				5224852C1EE8EA68001A1429 /* LCDDispatch.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,12 +546,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
+				5224852E1EE8EA68001A1429 /* LCDispatchApplyViewController.m in Sources */,
 				9C21C5951C53C65900EB942D /* LCDetailTableViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
-				522485181EE7BB60001A1429 /* LCDispatchApplyViewController.m in Sources */,
-				522485161EE7BB60001A1429 /* LCDemo1TableViewController.m in Sources */,
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
 				9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */,
