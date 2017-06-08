@@ -22,6 +22,7 @@
 		5224852C1EE8EA68001A1429 /* LCDDispatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522485281EE8EA68001A1429 /* LCDDispatch.plist */; };
 		5224852D1EE8EA68001A1429 /* LCDispatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522485291EE8EA68001A1429 /* LCDispatch.storyboard */; };
 		5224852E1EE8EA68001A1429 /* LCDispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5224852B1EE8EA68001A1429 /* LCDispatchApplyViewController.m */; };
+		522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */; };
 		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; };
 		9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */; };
 		9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365571C4CF9F900E04D7B /* LCUtilities.m */; };
@@ -87,6 +88,8 @@
 		522485291EE8EA68001A1429 /* LCDispatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LCDispatch.storyboard; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatch.storyboard; sourceTree = SOURCE_ROOT; };
 		5224852A1EE8EA68001A1429 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDispatchApplyViewController.h; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatchApplyViewController.h; sourceTree = SOURCE_ROOT; };
 		5224852B1EE8EA68001A1429 /* LCDispatchApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDispatchApplyViewController.m; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatchApplyViewController.m; sourceTree = SOURCE_ROOT; };
+		5224852F1EE8EBD0001A1429 /* UIView+LHAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LHAutoLayout.h"; sourceTree = "<group>"; };
+		522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHAutoLayout.m"; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
 		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
 		9C0365541C4CF9F900E04D7B /* LCAccumulateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulateManager.h; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 		9C0365641C4CF9F900E04D7B /* LHHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				5224852F1EE8EBD0001A1429 /* UIView+LHAutoLayout.h */,
+				522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */,
 				9C0365651C4CF9F900E04D7B /* UIColor+helper.h */,
 				9C0365661C4CF9F900E04D7B /* UIColor+helper.m */,
 				9C0365671C4CF9F900E04D7B /* UIImage+Color.h */,
@@ -548,6 +553,7 @@
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
 				5224852E1EE8EA68001A1429 /* LCDispatchApplyViewController.m in Sources */,
 				9C21C5951C53C65900EB942D /* LCDetailTableViewController.m in Sources */,
+				522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
