@@ -6,7 +6,7 @@
 		<key>title</key>
 		<string>dispatch apply的学习</string>
 		<key>viewControllerTitle</key>
-		<string>dispatch_apply</string>
+		<string>dispatch apply的学习</string>
 		<key>content</key>
 		<string>libdispatch_apply可以讲若干个任务同时分发到多个线程上去执行，威力巨大</string>
 		<key>storyboardID</key>
