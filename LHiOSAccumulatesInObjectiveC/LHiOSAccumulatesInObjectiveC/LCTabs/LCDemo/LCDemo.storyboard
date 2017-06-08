@@ -27,42 +27,6 @@
             </objects>
             <point key="canvasLocation" x="1223" y="-393"/>
         </scene>
-        <!--Demo1 Table View Controller-->
-        <scene sceneID="9UR-kt-hb7">
-            <objects>
-                <tableViewController storyboardIdentifier="LCDemo1TableViewController" id="hAK-dF-wZc" customClass="LCDemo1TableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="tNa-iD-Spy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <connections>
-                            <outlet property="dataSource" destination="hAK-dF-wZc" id="dJR-Pb-WKr"/>
-                            <outlet property="delegate" destination="hAK-dF-wZc" id="ay0-DJ-PaN"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iP2-dY-37T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1889" y="-393"/>
-        </scene>
-        <!--URL Loading Controller-->
-        <scene sceneID="skx-ae-ZZq">
-            <objects>
-                <tableViewController storyboardIdentifier="LCDURLLoadingController" id="cGE-DB-Ouk" customClass="LCDURLLoadingController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rqc-GW-TyH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="cGE-DB-Ouk" id="pHg-kZ-EMB"/>
-                            <outlet property="delegate" destination="cGE-DB-Ouk" id="ZZC-HJ-W1D"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pd7-jC-cJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2524" y="-394"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lqG-Uy-VBi">
             <objects>

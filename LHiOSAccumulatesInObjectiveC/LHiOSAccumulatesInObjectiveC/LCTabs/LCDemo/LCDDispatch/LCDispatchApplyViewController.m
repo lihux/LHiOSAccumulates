@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.outputString = [NSMutableString string];
+    [self makeLihuxStyleOfSubviewsFromParent:self.view];
 }
 
 - (IBAction)didTapOnGoBackButton:(id)sender {

@@ -30,4 +30,25 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)makeLihuxStyleOfSubviewsFromParent:(UIView *)parentView {
+    for (UIView *subView in parentView.subviews) {
+        subView.backgroundColor = [UIColor clearColor];
+        UIColor *textColor = [UIColor whiteColor];
+        UIFont *font = [UIFont systemFontOfSize:14];
+        if ([subView isKindOfClass:[UILabel class]]) {
+            [(UILabel *)subView setTextColor:textColor];
+            [(UILabel *)subView setFont:font];
+        } else if ([subView isKindOfClass:[UIButton class]]) {
+            [(UIButton *)subView setTitleColor:textColor forState:UIControlStateNormal];
+        } else if ([subView isKindOfClass:[UITextField class]]) {
+            [(UITextField *)subView setTextColor:textColor];
+            [(UITextField *)subView setFont:font];
+        } else if ([subView isKindOfClass:[UITextView class]]) {
+            [(UITextView *)subView setTextColor:textColor];
+            [(UITextView *)subView setFont:font];
+        }
+        [self makeLihuxStyleOfSubviewsFromParent:subView];
+    }
+}
+
 @end
