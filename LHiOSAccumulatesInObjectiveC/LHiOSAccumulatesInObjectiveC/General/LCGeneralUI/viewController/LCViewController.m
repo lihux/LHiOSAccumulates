@@ -76,6 +76,7 @@
     self.logTextView.text = [NSString stringWithFormat:@"%@\n%@", log, oldLog];
 }
 
+#pragma mark - 高蛋白
 #pragma mark - UITraitEnvironment
 - (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
     UIView *anchorView = [self logAnchorView];
