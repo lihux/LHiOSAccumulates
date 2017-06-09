@@ -10,7 +10,7 @@
 
 @implementation UIView (LHAutoLayout)
 
-- (void)addSubviewUsingDeaultLayoutConstraints:(UIView *)view {
+- (void)addSubviewUsingDefaultLayoutConstraints:(UIView *)view {
     if (!view) {
         return;
     }

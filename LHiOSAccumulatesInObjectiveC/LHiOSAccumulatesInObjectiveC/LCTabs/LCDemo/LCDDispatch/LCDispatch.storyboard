@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,51 +20,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xq-iO-gPf">
-                                <rect key="frame" x="0.0" y="70" width="375" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBG-yv-Gmb" userLabel="container View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xq-iO-gPf">
+                                        <rect key="frame" x="0.0" y="301.5" width="375" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="9iD-Nb-ifg"/>
+                                        </constraints>
+                                        <state key="normal" title="点击触发dispatch_apply(0)次">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapOnButton:" destination="VRt-sX-Qpg" eventType="touchUpInside" id="Ktz-dS-VZp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="aGp-cO-mGp"/>
+                                    <constraint firstAttribute="trailing" secondItem="6xq-iO-gPf" secondAttribute="trailing" id="TV6-KQ-NSg"/>
+                                    <constraint firstItem="6xq-iO-gPf" firstAttribute="centerY" secondItem="LBG-yv-Gmb" secondAttribute="centerY" id="dgD-0S-HCC"/>
+                                    <constraint firstItem="6xq-iO-gPf" firstAttribute="leading" secondItem="LBG-yv-Gmb" secondAttribute="leading" id="kMN-A2-djj"/>
                                 </constraints>
-                                <state key="normal" title="点击触发dispatch_apply(0)次">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapOnButton:" destination="VRt-sX-Qpg" eventType="touchUpInside" id="Ktz-dS-VZp"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="6xq-iO-gPf" secondAttribute="trailing" id="HBh-nd-UVX"/>
-                            <constraint firstItem="6xq-iO-gPf" firstAttribute="top" secondItem="QD3-4c-KKu" secondAttribute="bottom" constant="50" id="bKc-bZ-2KA"/>
-                            <constraint firstItem="6xq-iO-gPf" firstAttribute="leading" secondItem="fL3-vV-fyZ" secondAttribute="leading" id="myZ-Nx-75z"/>
-                            <constraint firstItem="6xq-iO-gPf" firstAttribute="width" secondItem="fL3-vV-fyZ" secondAttribute="width" multiplier="0.5" id="vyK-9Y-yLW"/>
+                            <constraint firstItem="LBG-yv-Gmb" firstAttribute="leading" secondItem="fL3-vV-fyZ" secondAttribute="leading" id="1hg-VC-ama"/>
+                            <constraint firstAttribute="trailing" secondItem="LBG-yv-Gmb" secondAttribute="trailing" id="3Df-bc-8Uc"/>
+                            <constraint firstItem="LBG-yv-Gmb" firstAttribute="top" secondItem="QD3-4c-KKu" secondAttribute="bottom" id="56E-7u-9tA"/>
+                            <constraint firstItem="L7O-P9-Q61" firstAttribute="top" secondItem="LBG-yv-Gmb" secondAttribute="bottom" id="kpy-lZ-Qhr"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="HBh-nd-UVX"/>
-                                <exclude reference="vyK-9Y-yLW"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <include reference="vyK-9Y-yLW"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="constraints">
-                                <include reference="HBh-nd-UVX"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="LBG-yv-Gmb" id="010-wh-eol"/>
                         <outlet property="trigglerButton" destination="6xq-iO-gPf" id="khN-4W-e5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koh-on-3Sx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279" y="-780"/>
+            <point key="canvasLocation" x="30" y="-903"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSMutableString *outputString;
 @property (weak, nonatomic) IBOutlet UIButton *trigglerButton;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 
 @end
 
@@ -34,7 +35,7 @@
 
 #pragma mark - override
 - (UIView *)logAnchorView {
-    return self.trigglerButton;
+    return self.containerView;
 }
 
 - (void)updateOutPutStringWithTag:(NSInteger)tag {

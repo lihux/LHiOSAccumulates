@@ -32,6 +32,63 @@
  */
 - (UIView *)logAnchorView;
 
+
+/**
+ 因为logView的添加，会依赖于一个锚点view，通常这个anchor view会是工作区所有子内容的container view，（这样便于掌控全局），理想状态下的锚点view和log view
+ 的布局关系应该是各占一半空间，横屏时左右布局、竖屏时上下布局，如下所示：
+ 
+ 竖屏时：                       横屏时：
+ **********************        ***********************************
+ *                    *        *                *                *
+ *                    *        *                *                *
+ *    anchor view     *        *                *                *
+ *                    *        *                *                *
+ *                    *        *  anchor view   *    log view    *
+ *                    *        *                *                *
+ **********************        *                *                *
+ *                    *        *                *                *
+ *                    *        *                *                *
+ *      log view      *        ***********************************
+ *                    *
+ *                    *
+ *                    *
+ **********************
+
+ 通常你可以让基类来为你的anchor view添加适配横竖屏时候的布局信息，那么你就可以重写此方法，返回YES，来告知基类为你提供的anchor view重写设置相对于父view（通常是
+ viewController的顶级view）的布局约束，当然如果你自己已经处理了横竖屏这种情况，那么就可以不重写此方法（默认返回NO）
+ 
+ @return 是否对anchor view进行布局，默认为YES。
+ */
+- (BOOL)needReLayoutAnchorView;
+
+
+/**
+ 将新的log信息append到textView中显示出来
+
+ @param log 新增的log信息
+ */
 - (void)log:(NSString *)log;
+
+
+/**
+ 清理textView显示的log信息
+ */
+- (void)cleanLog;
+
+
+/**
+ 子类重载用于提供log输出的新旧log的显示顺序，一般而言，正序输出是酱紫的：越新的log就在越下面
+ old old old log
+ old old log
+ old log
+ log
+ 而逆序输出则刚好想法：越新的log会显示在越上方
+ log
+ old log
+ old old log
+ old old old log
+ @return YES 则表示逆序，NO表示要顺序展示，默认为NO
+ */
+- (BOOL)isShowLogReverse;
 
 @end

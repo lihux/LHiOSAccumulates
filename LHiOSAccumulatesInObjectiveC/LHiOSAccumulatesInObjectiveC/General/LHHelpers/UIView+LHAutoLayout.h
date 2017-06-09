@@ -31,7 +31,7 @@ static const CGFloat LHLayoutNone = CGFLOAT_MAX;
  
  @param view subview that will be added using default constraints:@"H:|-0-[_tableView]-0-|" @"V:|-0-[_tableView]-0-|"
  */
-- (void)addSubviewUsingDeaultLayoutConstraints:(UIView *)view;
+- (void)addSubviewUsingDefaultLayoutConstraints:(UIView *)view;
 
 
 /**
