@@ -39,12 +39,12 @@
 }
 
 - (void)updateOutPutStringWithTag:(NSInteger)tag {
-    [self.outputString appendString:[NSString stringWithFormat:@"\n\n\n点击触发dispatch_apply(%zd)次", tag]];
+    [self.outputString appendString:[NSString stringWithFormat:@"\n点击触发dispatch_apply(%zd)次", tag]];
     [self log:self.outputString];
     @weakify(self);
     dispatch_apply(tag, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t index) {
         @strongify(self);
-        NSString *content = [NSString stringWithFormat:@"\n并发%zd个中的第%zd此计算在线程%@上进行\n", tag, index, [NSThread currentThread]];
+        NSString *content = [NSString stringWithFormat:@"\n并发%zd个中的第%zd个：\n此计算在线程%@上进行\n", tag, index, [NSThread currentThread]];
         [self.outputString appendString:content];//多线程同时写，可能会有问题
         NSLog(@"%@", content);
     });
