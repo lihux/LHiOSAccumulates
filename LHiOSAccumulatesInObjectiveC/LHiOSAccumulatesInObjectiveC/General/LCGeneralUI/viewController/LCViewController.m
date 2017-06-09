@@ -86,7 +86,8 @@
     BOOL isVerticalSizeCompact = self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact;
     UITextView *textView = self.logTextView;
     [textView removeFromSuperview];
-    LHLayoutInfo layoutInfo = isVerticalSizeCompact ? LHLayoutInfoMake(44, LHLayoutNone, 0, 0, LHLayoutNone, LHLayoutNone) : LHLayoutInfoMake(LHLayoutNone, 0, 0, 0, LHLayoutNone, LHLayoutNone);
+    CGFloat defaultGap = 10;
+    LHLayoutInfo layoutInfo = isVerticalSizeCompact ? LHLayoutInfoMake(49, LHLayoutNone, defaultGap, defaultGap, LHLayoutNone, LHLayoutNone) : LHLayoutInfoMake(LHLayoutNone, defaultGap, defaultGap, defaultGap, LHLayoutNone, LHLayoutNone);
     NSLayoutAttribute anchorViewAttribute = isVerticalSizeCompact ? NSLayoutAttributeRight : NSLayoutAttributeBottom;
     NSLayoutAttribute textViewAttribute = isVerticalSizeCompact ? NSLayoutAttributeLeft : NSLayoutAttributeTop;
     [self.view addSubview:textView withLayoutInfo:layoutInfo];
