@@ -58,11 +58,6 @@
     }
 }
 
-- (void)appendLogTextFieldWith:(NSString *)log {
-    NSString *oldLog = self.logTextView.text;
-    self.logTextView.text = [NSString stringWithFormat:@"%@\n%@", log, oldLog];
-}
-
 - (void)log:(NSString *)log {
     if ([NSThread isMainThread]) {
         [self appendLogTextFieldWith:log];
@@ -72,6 +67,20 @@
             __strong typeof(weakSelf) strongSelf = weakSelf;
             [strongSelf appendLogTextFieldWith:log];
         });
+    }
+}
+
+- (void)appendLogTextFieldWith:(NSString *)log {
+    NSString *oldLog = self.logTextView.text;
+    if ([self isShowLogReverse]) {
+        self.logTextView.text = [NSString stringWithFormat:@"%@\n%@", log, oldLog];
+        [self.logTextView scrollsToTop];
+    } else {
+        self.logTextView.text = [NSString stringWithFormat:@"%@\n%@", oldLog, log];
+        NSInteger textLength = self.logTextView.text.length;
+        if (textLength > 5) {
+            [self.logTextView scrollRangeToVisible:NSMakeRange(textLength - 2, 1)];
+        }
     }
 }
 
