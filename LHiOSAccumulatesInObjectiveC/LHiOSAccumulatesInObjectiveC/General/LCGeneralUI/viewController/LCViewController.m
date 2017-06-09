@@ -72,11 +72,13 @@
 
 - (void)appendLogTextFieldWith:(NSString *)log {
     NSString *oldLog = self.logTextView.text;
+    
+    NSString *gapString = (oldLog.length > 0 && log.length > 0) ? @"\n==========lihux.me==========\n" : @"";
     if ([self isShowLogReverse]) {
-        self.logTextView.text = [NSString stringWithFormat:@"%@\n%@", log, oldLog];
+        self.logTextView.text = [NSString stringWithFormat:@"%@\n%@\n%@", log, gapString, oldLog];
         [self.logTextView scrollsToTop];
     } else {
-        self.logTextView.text = [NSString stringWithFormat:@"%@\n%@", oldLog, log];
+        self.logTextView.text = [NSString stringWithFormat:@"%@\n%@\n%@", oldLog, gapString, log];
         NSInteger textLength = self.logTextView.text.length;
         if (textLength > 5) {
             [self.logTextView scrollRangeToVisible:NSMakeRange(textLength - 2, 1)];
@@ -98,7 +100,7 @@
 }
 
 - (BOOL)isShowLogReverse {
-    return NO;
+    return YES;
 }
 
 #pragma mark - 高蛋白
