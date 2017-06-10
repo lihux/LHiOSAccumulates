@@ -18,9 +18,6 @@
 		522485231EE7BB60001A1429 /* LCSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5224850C1EE7BB60001A1429 /* LCSetting.plist */; };
 		522485251EE7BB60001A1429 /* LCSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522485101EE7BB60001A1429 /* LCSuprise.storyboard */; };
 		522485261EE7BB60001A1429 /* LCSuprise.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522485111EE7BB60001A1429 /* LCSuprise.plist */; };
-		5224852C1EE8EA68001A1429 /* LCDDispatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522485281EE8EA68001A1429 /* LCDDispatch.plist */; };
-		5224852D1EE8EA68001A1429 /* LCDispatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522485291EE8EA68001A1429 /* LCDispatch.storyboard */; };
-		5224852E1EE8EA68001A1429 /* LCDispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5224852B1EE8EA68001A1429 /* LCDispatchApplyViewController.m */; };
 		522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */; };
 		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; };
 		9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */; };
@@ -36,7 +33,6 @@
 		9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365831C4CFA3700E04D7B /* LCAnimationView.m */; };
 		9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365851C4CFA3700E04D7B /* LCFlyingView.m */; };
 		9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365901C4CFBED00E04D7B /* AppDelegate.m */; };
-		9C0365931C4CFBFD00E04D7B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0365921C4CFBFD00E04D7B /* Info.plist */; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
 		9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4821C3E3E43003877BC /* Assets.xcassets */; };
@@ -80,10 +76,6 @@
 		5224850C1EE7BB60001A1429 /* LCSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSetting.plist; sourceTree = "<group>"; };
 		522485101EE7BB60001A1429 /* LCSuprise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCSuprise.storyboard; sourceTree = "<group>"; };
 		522485111EE7BB60001A1429 /* LCSuprise.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSuprise.plist; sourceTree = "<group>"; };
-		522485281EE8EA68001A1429 /* LCDDispatch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LCDDispatch.plist; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDDispatch.plist; sourceTree = SOURCE_ROOT; };
-		522485291EE8EA68001A1429 /* LCDispatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LCDispatch.storyboard; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatch.storyboard; sourceTree = SOURCE_ROOT; };
-		5224852A1EE8EA68001A1429 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDispatchApplyViewController.h; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatchApplyViewController.h; sourceTree = SOURCE_ROOT; };
-		5224852B1EE8EA68001A1429 /* LCDispatchApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDispatchApplyViewController.m; path = LHiOSAccumulatesInObjectiveC/LCTabs/LCDemo/LCDDispatch/LCDispatchApplyViewController.m; sourceTree = SOURCE_ROOT; };
 		5224852F1EE8EBD0001A1429 /* UIView+LHAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LHAutoLayout.h"; sourceTree = "<group>"; };
 		522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHAutoLayout.m"; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
@@ -115,6 +107,10 @@
 		9C03658F1C4CFBED00E04D7B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C0365901C4CFBED00E04D7B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C0365921C4CFBFD00E04D7B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDDispatch.plist; sourceTree = "<group>"; };
+		9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
+		9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
+		9C1A048C1EEB8B6E00161D69 /* LCDispatchApplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDispatchApplyViewController.m; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4741C3E3E43003877BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C61C4801C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -175,24 +171,12 @@
 		522484F11EE7BB60001A1429 /* LCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9C1A04881EEB8B6E00161D69 /* LCDDispatch */,
 				522484F21EE7BB60001A1429 /* LCDemo.storyboard */,
-				522484F31EE7BB60001A1429 /* LCDDispatch */,
 				522484FB1EE7BB60001A1429 /* LCDemo.plist */,
 				522484FE1EE7BB60001A1429 /* LCDURLLoadingSystem */,
 			);
 			path = LCDemo;
-			sourceTree = "<group>";
-		};
-		522484F31EE7BB60001A1429 /* LCDDispatch */ = {
-			isa = PBXGroup;
-			children = (
-				522485281EE8EA68001A1429 /* LCDDispatch.plist */,
-				522485291EE8EA68001A1429 /* LCDispatch.storyboard */,
-				5224852A1EE8EA68001A1429 /* LCDispatchApplyViewController.h */,
-				5224852B1EE8EA68001A1429 /* LCDispatchApplyViewController.m */,
-			);
-			name = LCDDispatch;
-			path = LCDemo01;
 			sourceTree = "<group>";
 		};
 		522484FE1EE7BB60001A1429 /* LCDURLLoadingSystem */ = {
@@ -331,6 +315,17 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		9C1A04881EEB8B6E00161D69 /* LCDDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */,
+				9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */,
+				9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */,
+				9C1A048C1EEB8B6E00161D69 /* LCDispatchApplyViewController.m */,
+			);
+			path = LCDDispatch;
+			sourceTree = "<group>";
+		};
 		9C61C4671C3E3E43003877BC = {
 			isa = PBXGroup;
 			children = (
@@ -456,7 +451,7 @@
 		9C61C4681C3E3E43003877BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Lihux;
 				TargetAttributes = {
 					9C61C46F1C3E3E43003877BC = {
@@ -506,17 +501,14 @@
 				9C678A431EE6F49000746CEF /* LCTableViewCell.xib in Resources */,
 				9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */,
 				9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */,
-				9C0365931C4CFBFD00E04D7B /* Info.plist in Resources */,
 				5224851D1EE7BB60001A1429 /* LCDURLLoadingSystem.storyboard in Resources */,
 				9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */,
 				522485221EE7BB60001A1429 /* LCSetting.storyboard in Resources */,
 				5224851F1EE7BB60001A1429 /* LCDocument.storyboard in Resources */,
 				5224851C1EE7BB60001A1429 /* LCDURLLoadingSystem.plist in Resources */,
 				522485191EE7BB60001A1429 /* LCDemo.plist in Resources */,
-				5224852D1EE8EA68001A1429 /* LCDispatch.storyboard in Resources */,
 				522485251EE7BB60001A1429 /* LCSuprise.storyboard in Resources */,
 				522485261EE7BB60001A1429 /* LCSuprise.plist in Resources */,
-				5224852C1EE8EA68001A1429 /* LCDDispatch.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +534,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
-				5224852E1EE8EA68001A1429 /* LCDispatchApplyViewController.m in Sources */,
 				522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
@@ -624,13 +615,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -667,13 +666,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

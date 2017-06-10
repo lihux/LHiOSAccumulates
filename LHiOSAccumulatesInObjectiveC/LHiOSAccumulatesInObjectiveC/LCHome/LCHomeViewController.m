@@ -112,7 +112,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     self.controllerContrainerView.alpha = controllerContainerViewAlpha;
 }
 
-- (void)centerCircleAnimateWithIsZooming:(BOOL)isZooming completion:(void(^)())completion {
+- (void)centerCircleAnimateWithIsZooming:(BOOL)isZooming completion:(void(^)(void))completion {
     self.maskLabel.hidden = NO;
     self.maskView.hidden = NO;
     self.maskLabel.text = self.homeButtonTitles[self.flyingViewIndex];
@@ -131,7 +131,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     }];
 }
 
-- (void)homeButtonAnimateWithButtonIndex:(NSInteger)index isFlyingAway:(BOOL)isFlyingAway completion:(void(^)())completion {
+- (void)homeButtonAnimateWithButtonIndex:(NSInteger)index isFlyingAway:(BOOL)isFlyingAway completion:(void(^)(void))completion {
     UIView *flyingView = self.flyingViews[index];
     flyingView.hidden = NO;
     BOOL stopHomeButtonFlyAwayConstraintActive = !isFlyingAway;

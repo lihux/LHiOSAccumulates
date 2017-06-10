@@ -12,8 +12,8 @@
 
 @implementation LCLightBorderButton
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
+    [super awakeFromNib];
     [self configButton];
 }
 
