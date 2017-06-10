@@ -16,10 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+    NSString *url = @"http://13.58.220.233:8080/hello/roy";
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    [[session dataTaskWithURL:[NSURL URLWithString:url] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSLog(@"收到网络请求：%@, %@, %@", data, response, error);
+    }] resume];
 }
 
 @end
