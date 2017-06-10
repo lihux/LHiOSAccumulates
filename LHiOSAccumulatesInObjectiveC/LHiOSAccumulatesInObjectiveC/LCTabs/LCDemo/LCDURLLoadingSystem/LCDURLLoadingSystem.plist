@@ -4,6 +4,18 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>URLSession基本用法</string>
+		<key>viewControllerTitle</key>
+		<string>URLSession基本用法</string>
+		<key>content</key>
+		<string></string>
+		<key>storyboardID</key>
+		<string>LCDURLSessionViewController</string>
+		<key>storyboardName</key>
+		<string>LCDURLLoadingSystem</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>URLSessionTaskMetrics探索网络质量</string>
 		<key>viewControllerTitle</key>
 		<string>URLSessionTaskMetrics探索网络质量</string>
@@ -21,18 +33,6 @@
 		<string>URLSession后台下载</string>
 		<key>content</key>
 		<string>尝试创建一个background session，进行请求操作，APP切到后台，等到下载结束，系统唤起APP，做相应的操作</string>
-		<key>storyboardID</key>
-		<string></string>
-		<key>storyboardName</key>
-		<string>LCDURLLoadingSystem</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>URLSession基本用法</string>
-		<key>viewControllerTitle</key>
-		<string>URLSession基本用法</string>
-		<key>content</key>
-		<string></string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>

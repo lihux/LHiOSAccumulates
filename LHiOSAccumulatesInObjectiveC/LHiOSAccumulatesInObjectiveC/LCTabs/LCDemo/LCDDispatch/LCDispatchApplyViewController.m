@@ -22,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.outputString = [NSMutableString string];
-    [self makeLihuxStyleOfSubviewsFromParent:self.view];
 }
 
 - (IBAction)didTapOnButton:(id)sender {

@@ -33,6 +33,8 @@
 		9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365831C4CFA3700E04D7B /* LCAnimationView.m */; };
 		9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365851C4CFA3700E04D7B /* LCFlyingView.m */; };
 		9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365901C4CFBED00E04D7B /* AppDelegate.m */; };
+		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
+		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
 		9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4821C3E3E43003877BC /* Assets.xcassets */; };
@@ -111,6 +113,10 @@
 		9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
 		9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
 		9C1A048C1EEB8B6E00161D69 /* LCDispatchApplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDispatchApplyViewController.m; sourceTree = "<group>"; };
+		9C26C4FE1EEBE1F800CE608A /* LCDURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDURLSessionViewController.h; sourceTree = "<group>"; };
+		9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDURLSessionViewController.m; sourceTree = "<group>"; };
+		9C26C5011EEC0A0B00CE608A /* LCDURLHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDURLHelper.h; sourceTree = "<group>"; };
+		9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDURLHelper.m; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4741C3E3E43003877BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C61C4801C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,6 +192,10 @@
 				522485021EE7BB60001A1429 /* LCDURLLoadingSystem.storyboard */,
 				522485031EE7BB60001A1429 /* LCDURLMetricsViewController.h */,
 				522485041EE7BB60001A1429 /* LCDURLMetricsViewController.m */,
+				9C26C4FE1EEBE1F800CE608A /* LCDURLSessionViewController.h */,
+				9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */,
+				9C26C5011EEC0A0B00CE608A /* LCDURLHelper.h */,
+				9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */,
 			);
 			path = LCDURLLoadingSystem;
 			sourceTree = "<group>";
@@ -536,6 +546,7 @@
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
 				522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
+				9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
@@ -543,6 +554,7 @@
 				9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */,
 				9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */,
 				9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */,
+				9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */,
 				9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */,
 				5224851E1EE7BB60001A1429 /* LCDURLMetricsViewController.m in Sources */,
 				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
@@ -709,6 +721,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z988AT8PK;
 				INFOPLIST_FILE = LHiOSAccumulatesInObjectiveC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -726,6 +739,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z988AT8PK;
 				INFOPLIST_FILE = LHiOSAccumulatesInObjectiveC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

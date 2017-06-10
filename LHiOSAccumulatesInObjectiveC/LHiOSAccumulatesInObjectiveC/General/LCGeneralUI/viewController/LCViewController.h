@@ -8,18 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LCViewController : UIViewController
+static const NSInteger kLCSpecialViewTag = -9999;
 
+@interface LCViewController : UIViewController
 
 /**
  让码农变得更懒散的便利方法：
- 让页面保持和APP统一的风格，具体而言就是：对parentView（但不包括parentView）的所有subViews（递归到所有叶节点），设置其背景色透明，（如果控件含有文字）设置字体颜色为白色
-
- NOTICE:如果subView中有你不想被修改为默认风格的view，请将其tag设置为小于0的数值（比如-1），这样这个view及其所有的子view都不会被修改背景色和字体颜色
- @param parentView 需要设置lihuxStyle的子view的父view
+ 让页面保持和APP统一的风格，具体而言就是：对view及其所有的subViews（递归到所有叶节点），设置其背景色透明，（如果控件含有文字）设置字体颜色为白色
+ 
+ NOTICE:如果view(及其subViews)中有你不想被修改为默认风格的view，请将其tag设置为`kLCSpecialViewTag`，这样这个view及其所有的子view都不会被修改背景色和字体颜色
+ @param view 需要设置lihuxStyle的子view的父view
  */
-- (void)makeLihuxStyleOfSubviewsFromParent:(UIView *)parentView;
-
+- (void)makeLihuxStyleOfView:(UIView *)view;
 
 /**
  如果子类想添加一个通用的显示log输出的textView，需要重写此方法，返回一个作为锚点的view供textView布局使用。

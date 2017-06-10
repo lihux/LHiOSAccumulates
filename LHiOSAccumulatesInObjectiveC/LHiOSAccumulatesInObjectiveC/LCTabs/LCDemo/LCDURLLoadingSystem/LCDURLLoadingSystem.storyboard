@@ -1,13 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--URL Session View Controller-->
+        <scene sceneID="Dyd-rh-6og">
+            <objects>
+                <viewController storyboardIdentifier="LCDURLSessionViewController" id="4qO-dD-tam" customClass="LCDURLSessionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vt7-Nx-mJs"/>
+                        <viewControllerLayoutGuide type="bottom" id="MAO-q1-gX8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yRm-o3-Agw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-Hj-dMt">
+                                <rect key="frame" x="16" y="13" width="343" height="221"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-7L-wFe">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="LCo-oP-tgK"/>
+                                        </constraints>
+                                        <state key="normal" title="创建一个简单的不使用delegate的session(GET)"/>
+                                        <connections>
+                                            <action selector="testDefaultDelegateSession:" destination="4qO-dD-tam" eventType="touchUpInside" id="sZx-lZ-lEX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3A-QM-VyP">
+                                        <rect key="frame" x="0.0" y="44" width="343" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CDw-wY-AZn"/>
+                                        </constraints>
+                                        <state key="normal" title="创建一个简单的使用delegate的session(GET)"/>
+                                        <connections>
+                                            <action selector="testCustomizedDelegateSession:" destination="4qO-dD-tam" eventType="touchUpInside" id="kfv-hF-Vki"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3u-uJ-VR2">
+                                        <rect key="frame" x="0.0" y="88" width="343" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="qKl-Tu-TUB"/>
+                                        </constraints>
+                                        <state key="normal" title="使用session发起一个post请求"/>
+                                        <connections>
+                                            <action selector="testPostRequest:" destination="4qO-dD-tam" eventType="touchUpInside" id="ImR-KU-Obr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9o-sB-NAl">
+                                        <rect key="frame" x="0.0" y="132" width="343" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Y7H-SY-2QW"/>
+                                        </constraints>
+                                        <state key="normal" title="使用session代理处理一个302重定位请求"/>
+                                        <connections>
+                                            <action selector="test302Redirect:" destination="4qO-dD-tam" eventType="touchUpInside" id="LQ9-QD-8Lh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="T3u-uJ-VR2" firstAttribute="leading" secondItem="0h5-Hj-dMt" secondAttribute="leading" id="9N3-gF-arm"/>
+                                    <constraint firstItem="y3A-QM-VyP" firstAttribute="top" secondItem="qkJ-7L-wFe" secondAttribute="bottom" id="9Oc-n9-8MJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="X9o-sB-NAl" secondAttribute="trailing" id="E0O-71-E0U"/>
+                                    <constraint firstAttribute="trailing" secondItem="qkJ-7L-wFe" secondAttribute="trailing" id="I5I-CA-XXG"/>
+                                    <constraint firstItem="y3A-QM-VyP" firstAttribute="leading" secondItem="0h5-Hj-dMt" secondAttribute="leading" id="KLx-sq-c4o"/>
+                                    <constraint firstItem="X9o-sB-NAl" firstAttribute="top" secondItem="T3u-uJ-VR2" secondAttribute="bottom" id="QH8-6L-V1X"/>
+                                    <constraint firstItem="qkJ-7L-wFe" firstAttribute="leading" secondItem="0h5-Hj-dMt" secondAttribute="leading" id="ReF-I3-hAs"/>
+                                    <constraint firstAttribute="trailing" secondItem="y3A-QM-VyP" secondAttribute="trailing" id="UtG-I0-ea9"/>
+                                    <constraint firstItem="X9o-sB-NAl" firstAttribute="leading" secondItem="0h5-Hj-dMt" secondAttribute="leading" id="bzM-gD-3LF"/>
+                                    <constraint firstAttribute="trailing" secondItem="T3u-uJ-VR2" secondAttribute="trailing" id="c6a-mz-24e"/>
+                                    <constraint firstItem="qkJ-7L-wFe" firstAttribute="top" secondItem="0h5-Hj-dMt" secondAttribute="top" id="cr0-cM-MJH"/>
+                                    <constraint firstItem="T3u-uJ-VR2" firstAttribute="top" secondItem="y3A-QM-VyP" secondAttribute="bottom" id="pYW-h1-gbw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0h5-Hj-dMt" firstAttribute="top" secondItem="yRm-o3-Agw" secondAttribute="topMargin" constant="-7" id="NZq-lk-XUm"/>
+                            <constraint firstItem="0h5-Hj-dMt" firstAttribute="leading" secondItem="yRm-o3-Agw" secondAttribute="leadingMargin" id="X0W-v6-JTf"/>
+                            <constraint firstItem="0h5-Hj-dMt" firstAttribute="trailing" secondItem="yRm-o3-Agw" secondAttribute="trailingMargin" id="jBY-gW-bYx"/>
+                            <constraint firstItem="MAO-q1-gX8" firstAttribute="top" secondItem="0h5-Hj-dMt" secondAttribute="bottom" constant="433" id="s9n-Wu-Ubd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentContainerView" destination="0h5-Hj-dMt" id="RF8-y1-dFa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1N-kg-wDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-615.20000000000005" y="153.37331334332833"/>
+        </scene>
         <!--URL Metrics View Controller-->
         <scene sceneID="N6u-mB-yn7">
             <objects>

@@ -29,32 +29,26 @@
     NSString *rightText = [self logAnchorView] ? @"清理日志" : @"";
     LCSectionHeaderView *headerView = [LCSectionHeaderView sectionHeaderViewWithDelegate:self title:self.title leftText:@"返回" rightText:rightText];
     [self.view addSubview:headerView withLayoutInfo:LHLayoutInfoMake(0, 0, LHLayoutNone, 0, LHLayoutNone, 44)];
-}
-
-- (void)makeLihuxStyleOfSubviewsFromParent:(UIView *)parentView {
-    if (parentView.tag < 0) {
-        return;
-    }
-    for (UIView *subView in parentView.subviews) {
-        if (subView.tag < 0) {
-            continue;
-        }
-        [self makeLihuxStyleOfView:subView];
-        [self makeLihuxStyleOfSubviewsFromParent:subView];
-    }
+    [self makeLihuxStyleOfView:[self logAnchorView]];
 }
 
 - (void)makeLihuxStyleOfView:(UIView *)view {
-    view.backgroundColor = [UIColor clearColor];
-    UIColor *textColor = [UIColor whiteColor];
-    if ([view isKindOfClass:[UILabel class]]) {
-        [(UILabel *)view setTextColor:textColor];
-    } else if ([view isKindOfClass:[UIButton class]]) {
-        [(UIButton *)view setTitleColor:textColor forState:UIControlStateNormal];
-    } else if ([view isKindOfClass:[UITextField class]]) {
-        [(UITextField *)view setTextColor:textColor];
-    } else if ([view isKindOfClass:[UITextView class]]) {
-        [(UITextView *)view setTextColor:textColor];
+    if (view && view.tag != -9999) {
+        view.backgroundColor = [UIColor clearColor];
+        UIColor *textColor = [UIColor whiteColor];
+        if ([view isKindOfClass:[UILabel class]]) {
+            [(UILabel *)view setTextColor:textColor];
+        } else if ([view isKindOfClass:[UIButton class]]) {
+            [(UIButton *)view setTitleColor:textColor forState:UIControlStateNormal];
+        } else if ([view isKindOfClass:[UITextField class]]) {
+            [(UITextField *)view setTextColor:textColor];
+        } else if ([view isKindOfClass:[UITextView class]]) {
+            [(UITextView *)view setTextColor:textColor];
+        }
+    }
+    
+    for (UIView *subView in view.subviews) {
+        [self makeLihuxStyleOfView:subView];
     }
 }
 
@@ -100,7 +94,7 @@
 }
 
 - (BOOL)isShowLogReverse {
-    return YES;
+    return NO;
 }
 
 #pragma mark - 高蛋白
@@ -122,7 +116,7 @@
         [anchorView removeFromSuperview];
         CGFloat defaultGap = 8;
         CGFloat headerHeight = 44;
-        LHLayoutInfo layoutInfo = isVerticalSizeCompact ? LHLayoutInfoMake(defaultGap, defaultGap, defaultGap, LHLayoutNone, LHLayoutNone, LHLayoutNone) : LHLayoutInfoMake(headerHeight + defaultGap, defaultGap, LHLayoutNone, defaultGap, LHLayoutNone, LHLayoutNone);
+        LHLayoutInfo layoutInfo = isVerticalSizeCompact ? LHLayoutInfoMake(headerHeight + defaultGap, defaultGap, defaultGap, LHLayoutNone, LHLayoutNone, LHLayoutNone) : LHLayoutInfoMake(headerHeight + defaultGap, defaultGap, LHLayoutNone, defaultGap, LHLayoutNone, LHLayoutNone);
         [self.view addSubview:anchorView withLayoutInfo:layoutInfo];
         NSLayoutAttribute attribute = isVerticalSizeCompact ? NSLayoutAttributeWidth : NSLayoutAttributeHeight;
         [[NSLayoutConstraint constraintWithItem:anchorView
