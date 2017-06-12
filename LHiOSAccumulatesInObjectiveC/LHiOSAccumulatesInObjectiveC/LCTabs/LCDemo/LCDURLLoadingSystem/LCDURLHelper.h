@@ -12,4 +12,13 @@ extern NSString * const kLCDURLHost;
 
 @interface LCDURLHelper : NSObject
 
+
+/**
+ 拼接URL辅助函数
+
+ @param path url路径，必须要以'/'开头，比如：/hello/lihux
+ @return 使用默认host拼接完成的NSURL实例
+ */
++ (NSURL *)urlWithPath:(NSString *)path;
+
 @end

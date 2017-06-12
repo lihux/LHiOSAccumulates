@@ -52,4 +52,14 @@
 - (IBAction)test302Redirect:(id)sender {
 }
 
+- (IBAction)didTapOnUpdateServerButton:(id)sender {
+    [[[NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]] dataTaskWithURL:[LCDURLHelper urlWithPath:@"/updateServer"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSString *threadInfo = [NSString stringWithFormat:@"请求完毕，当前的completionHandler执行的具体线程信息是\n%@", [NSThread currentThread]];
+        NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSString *responseInfo = [NSString stringWithFormat:@"请求回来的数据是：\ndata:\n%@\nresponse:\n%@\nerror:\n%@", dataString, response, error];
+        [self log:threadInfo];
+        [self log:responseInfo];
+    }] resume];
+}
+
 @end

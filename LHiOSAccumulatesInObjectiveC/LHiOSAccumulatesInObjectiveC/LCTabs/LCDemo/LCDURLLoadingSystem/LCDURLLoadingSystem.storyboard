@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-Hj-dMt">
-                                <rect key="frame" x="16" y="13" width="343" height="221"/>
+                                <rect key="frame" x="16" y="-7" width="343" height="241"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-7L-wFe">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
@@ -65,6 +64,17 @@
                                             <action selector="test302Redirect:" destination="4qO-dD-tam" eventType="touchUpInside" id="LQ9-QD-8Lh"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndW-QK-PEj">
+                                        <rect key="frame" x="0.0" y="176" width="343" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="PT8-AC-dnV"/>
+                                        </constraints>
+                                        <state key="normal" title="更新aws ec2 服务器代码"/>
+                                        <connections>
+                                            <action selector="didTapOnUpdateServerButton:" destination="4qO-dD-tam" eventType="touchUpInside" id="0Sh-sX-uvM"/>
+                                            <action selector="test302Redirect:" destination="4qO-dD-tam" eventType="touchUpInside" id="zlb-G2-TVS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -73,13 +83,16 @@
                                     <constraint firstAttribute="trailing" secondItem="X9o-sB-NAl" secondAttribute="trailing" id="E0O-71-E0U"/>
                                     <constraint firstAttribute="trailing" secondItem="qkJ-7L-wFe" secondAttribute="trailing" id="I5I-CA-XXG"/>
                                     <constraint firstItem="y3A-QM-VyP" firstAttribute="leading" secondItem="0h5-Hj-dMt" secondAttribute="leading" id="KLx-sq-c4o"/>
+                                    <constraint firstItem="ndW-QK-PEj" firstAttribute="top" secondItem="X9o-sB-NAl" secondAttribute="bottom" id="MXe-co-rbg"/>
                                     <constraint firstItem="X9o-sB-NAl" firstAttribute="top" secondItem="T3u-uJ-VR2" secondAttribute="bottom" id="QH8-6L-V1X"/>
                                     <constraint firstItem="qkJ-7L-wFe" firstAttribute="leading" secondItem="0h5-Hj-dMt" secondAttribute="leading" id="ReF-I3-hAs"/>
                                     <constraint firstAttribute="trailing" secondItem="y3A-QM-VyP" secondAttribute="trailing" id="UtG-I0-ea9"/>
                                     <constraint firstItem="X9o-sB-NAl" firstAttribute="leading" secondItem="0h5-Hj-dMt" secondAttribute="leading" id="bzM-gD-3LF"/>
                                     <constraint firstAttribute="trailing" secondItem="T3u-uJ-VR2" secondAttribute="trailing" id="c6a-mz-24e"/>
                                     <constraint firstItem="qkJ-7L-wFe" firstAttribute="top" secondItem="0h5-Hj-dMt" secondAttribute="top" id="cr0-cM-MJH"/>
+                                    <constraint firstItem="ndW-QK-PEj" firstAttribute="leading" secondItem="0h5-Hj-dMt" secondAttribute="leading" id="l67-Ph-IU8"/>
                                     <constraint firstItem="T3u-uJ-VR2" firstAttribute="top" secondItem="y3A-QM-VyP" secondAttribute="bottom" id="pYW-h1-gbw"/>
+                                    <constraint firstAttribute="trailing" secondItem="ndW-QK-PEj" secondAttribute="trailing" id="xcC-MJ-sR4"/>
                                 </constraints>
                             </view>
                         </subviews>
