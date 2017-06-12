@@ -152,7 +152,7 @@
                                   relatedBy:NSLayoutRelationEqual
                                      toItem:textView
                                   attribute:textViewAttribute
-                                 multiplier:1 constant:10] setActive:YES];
+                                 multiplier:1 constant:-12] setActive:YES];
 }
 
 #pragma mark - LCSectionHeaderViewDelegate
