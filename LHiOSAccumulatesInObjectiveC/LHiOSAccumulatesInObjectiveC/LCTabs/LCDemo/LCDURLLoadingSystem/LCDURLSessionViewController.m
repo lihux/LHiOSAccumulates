@@ -10,9 +10,10 @@
 
 #import "LCDURLHelper.h"
 
-@interface LCDURLSessionViewController ()
+@interface LCDURLSessionViewController () <NSURLSessionDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *contentContainerView;
+@property (nonatomic, strong) NSURLSession *defaultSeesion;
 
 @end
 
@@ -62,4 +63,22 @@
     }] resume];
 }
 
+#pragma mark - NSURLSessionDelegate
+- (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(nullable NSError *)error {
+    [self log:[NSString stringWithFormat:@"会话：%@:\n状态变为了无效，错误原因是：%@", session, error]];
+}
+
+-(void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler {
+    [self log:[NSString stringWithFormat:@"会话：%@收到了challenge:\n%@", session, challenge]]
+}
+
+
+
+#pragma mark - lazy loads
+-(NSURLSession *)defaultSeesion {
+    if (!_defaultSeesion) {
+        _defaultSeesion = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
+    }
+    return _defaultSeesion;
+}
 @end
