@@ -106,7 +106,7 @@
     }
     [self relayoutAnchorView];
     [self relayoutLogTextView];
-    NSLog(@"\n影响布局的环境发生了变化，变化前是酱紫的：\n%@\n\n变化后是酱紫的：%@\n\n\n", previousTraitCollection, self.traitCollection);
+//    NSLog(@"\n影响布局的环境发生了变化，变化前是酱紫的：\n%@\n\n变化后是酱紫的：%@\n\n\n", previousTraitCollection, self.traitCollection);
 }
 
 - (void)relayoutAnchorView {
