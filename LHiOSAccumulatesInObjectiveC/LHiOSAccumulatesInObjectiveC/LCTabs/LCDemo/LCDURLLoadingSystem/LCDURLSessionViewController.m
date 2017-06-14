@@ -48,6 +48,12 @@
 - (IBAction)testCustomizedDelegateSession:(id)sender {
 }
 - (IBAction)testPostRequest:(id)sender {
+    NSMutableURLRequest *postRequest = [NSMutableURLRequest requestWithURL:[LCDURLHelper urlWithPath:@"/create/topic"]];
+    postRequest.HTTPMethod = @"POST";
+    postRequest.HTTPBody = [@"来自星星✨的你，来自月亮🌛的我" dataUsingEncoding:NSUTF8StringEncoding];
+    NSURLSessionDataTask *dataTask = [self.defaultSeesion dataTaskWithRequest:postRequest];
+    [dataTask resume];
+    [self.defaultSeesion finishTasksAndInvalidate];
 }
 
 - (IBAction)test302Redirect:(id)sender {
@@ -69,10 +75,38 @@
 }
 
 -(void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler {
-    [self log:[NSString stringWithFormat:@"会话：%@收到了challenge:\n%@", session, challenge]]
+    [self log:[NSString stringWithFormat:@"会话：%@收到了challenge:\n%@", session, challenge]];
 }
 
+#pragma mark - NSURLSessionDataDelegate
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+didReceiveResponse:(NSURLResponse *)response
+ completionHandler:(void (^)(NSURLSessionResponseDisposition disposition))completionHandler {
+    [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didReceiveResponse\n收到响应%@", response]];
+}
 
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask {
+    [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didBecomeDownloadTask\n收到响应%@", downloadTask]];
+}
+
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+    didReceiveData:(NSData *)data {
+    [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didReceiveData\n收到响应%@", data]];
+}
+
+#pragma mark - NSURLSessionTaskDelegate
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didFinishCollectingMetrics:(NSURLSessionTaskMetrics *)metrics {
+    for (NSURLSessionTaskTransactionMetrics *TaskMetric in metrics.transactionMetrics) {
+        [self log:@""];
+        [self log:[NSString stringWithFormat:@"路由信息：%@", TaskMetric]];
+    }
+}
+
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+didCompleteWithError:(nullable NSError *)error {
+    [self log:[NSString stringWithFormat:@"NSURLSessionTaskDelegate-didCompleteWithError\n%@%@%@", session, task, error]];
+}
 
 #pragma mark - lazy loads
 -(NSURLSession *)defaultSeesion {
