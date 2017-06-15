@@ -47,8 +47,9 @@
 
 - (IBAction)testCustomizedDelegateSession:(id)sender {
 }
+
 - (IBAction)testPostRequest:(id)sender {
-    NSMutableURLRequest *postRequest = [NSMutableURLRequest requestWithURL:[LCDURLHelper urlWithPath:@"/create/topic"]];
+    NSMutableURLRequest *postRequest = [NSMutableURLRequest requestWithURL:[LCDURLHelper urlWithPath:@"/hello/lihux1"]];
     postRequest.HTTPMethod = @"POST";
     postRequest.HTTPBody = [@"来自星星✨的你，来自月亮🌛的我" dataUsingEncoding:NSUTF8StringEncoding];
     NSURLSessionDataTask *dataTask = [self.defaultSeesion dataTaskWithRequest:postRequest];
@@ -111,7 +112,10 @@ didCompleteWithError:(nullable NSError *)error {
 #pragma mark - lazy loads
 -(NSURLSession *)defaultSeesion {
     if (!_defaultSeesion) {
-        _defaultSeesion = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        configuration.timeoutIntervalForRequest = 10;
+        configuration.timeoutIntervalForResource = 10;
+        _defaultSeesion = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
     }
     return _defaultSeesion;
 }
