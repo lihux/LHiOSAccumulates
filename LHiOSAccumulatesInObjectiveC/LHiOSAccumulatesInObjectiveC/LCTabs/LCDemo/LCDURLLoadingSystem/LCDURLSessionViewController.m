@@ -10,6 +10,26 @@
 
 #import "LCDURLHelper.h"
 
+typedef enum : NSUInteger {
+    Dog1,
+    Dog2,
+    Dog3,
+} Dog;
+
+typedef NS_ENUM(NSUInteger, Cat) {
+    Cat1,
+    Cat2,
+    Cat3,
+};
+
+typedef NS_OPTIONS(NSUInteger, Cow) {
+    Cow1 = 1 << 0,
+    Cow2 = 1 << 1,
+    Cow3 = 1 << 2,
+};
+
+static NSString *const kDog = @"dog";
+
 @interface LCDURLSessionViewController () <NSURLSessionDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *contentContainerView;
@@ -21,6 +41,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Dog dog;
+    Cat cat;
+    Cow cow;
+    switch (dog) {
+        case Dog1:
+            ;
+            break;
+            
+        default:
+            break;
+    }
+    switch (cat) {
+        case Cat1:
+            ;
+            break;
+            
+        default:
+            break;
+    }
+    switch (cow) {
+        case Cow1:
+            ;
+            break;
+            
+        default:
+            break;
+    }
 }
 
 #pragma mark - override
