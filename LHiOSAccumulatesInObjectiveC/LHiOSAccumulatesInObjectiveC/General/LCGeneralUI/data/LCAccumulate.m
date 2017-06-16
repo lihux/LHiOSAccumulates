@@ -23,4 +23,8 @@
     return self;
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"LCAccumulate:\ntitle = %@\nviewControllerTitle = %@\ncontent = %@\nplistName = %@\nstoryboardID = %@\nstoryboardName = %@", self.title, self.viewControllerTitle, self.content, self.plistName, self.storyboardID, self.storyboardName];
+}
+
 @end

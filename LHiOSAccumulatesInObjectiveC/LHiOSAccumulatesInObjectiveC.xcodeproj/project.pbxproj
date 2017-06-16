@@ -36,6 +36,8 @@
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
 		9C476D8F1EF42C1D004AC758 /* LCDispatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */; };
+		9C476D901EF42DC1004AC758 /* LCDispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A048C1EEB8B6E00161D69 /* LCDispatchApplyViewController.m */; };
+		9C476D911EF430C6004AC758 /* LCDDispatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
 		9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4821C3E3E43003877BC /* Assets.xcassets */; };
@@ -506,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				522485141EE7BB60001A1429 /* LCDemo.storyboard in Resources */,
+				9C476D911EF430C6004AC758 /* LCDDispatch.plist in Resources */,
 				522485231EE7BB60001A1429 /* LCSetting.plist in Resources */,
 				522485201EE7BB60001A1429 /* LCDocument.plist in Resources */,
 				9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */,
@@ -546,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
+				9C476D901EF42DC1004AC758 /* LCDispatchApplyViewController.m in Sources */,
 				522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
 				9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */,
