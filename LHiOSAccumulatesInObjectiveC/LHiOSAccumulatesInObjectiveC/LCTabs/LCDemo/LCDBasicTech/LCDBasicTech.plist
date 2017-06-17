@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>ENUM枚举深入探索</string>
+		<key>viewControllerTitle</key>
+		<string>ENUM枚举深入探索</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+		<key>storyboardID</key>
+		<string>LCDBENUMExploreViewController</string>
+		<key>storyboardName</key>
+		<string>LCDBasicTech</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>block闭包深入探索</string>
+		<key>viewControllerTitle</key>
+		<string>block闭包深入探索</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+		<key>storyboardID</key>
+		<string>LCDBBlockExploreViewController</string>
+		<key>storyboardName</key>
+		<string>LCDBasicTech</string>
+	</dict>
+</array>
+</plist>

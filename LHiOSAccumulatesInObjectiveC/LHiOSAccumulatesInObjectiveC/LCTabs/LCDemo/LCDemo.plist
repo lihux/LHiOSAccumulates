@@ -4,6 +4,16 @@
 <array>
 	<dict>
 		<key>plistName</key>
+		<string>LCDBasicTech</string>
+		<key>title</key>
+		<string>探索一些基本的技术点</string>
+		<key>viewControllerTitle</key>
+		<string>探索一些基本的技术点</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+	</dict>
+	<dict>
+		<key>plistName</key>
 		<string>LCDDispatch</string>
 		<key>title</key>
 		<string> libdispatch深入学习</string>

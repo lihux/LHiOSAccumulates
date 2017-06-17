@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Explore View Controller-->
+        <scene sceneID="eN0-YN-e1R">
+            <objects>
+                <viewController storyboardIdentifier="LCDBENUMExploreViewController" id="ohO-ms-g2H" customClass="LCDBENUMExploreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ovD-Dg-RJm"/>
+                        <viewControllerLayoutGuide type="bottom" id="3aZ-YT-V1W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ieu-Zk-RfK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mN2-KL-rGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-809" y="179"/>
+        </scene>
+        <!--Block Explore View Controller-->
+        <scene sceneID="1tH-Ew-aDH">
+            <objects>
+                <viewController storyboardIdentifier="LCDBBlockExploreViewController" id="GOk-2G-0wE" customClass="LCDBBlockExploreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jbL-oA-tPO"/>
+                        <viewControllerLayoutGuide type="bottom" id="fmO-KD-TuR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jsl-Qs-4n9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wst-W6-Vqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="179"/>
+        </scene>
+    </scenes>
+</document>
