@@ -83,6 +83,8 @@ DISPATCH_ENUM(JJ, NSUInteger, JJ1, JJ2);
 }
 
 - (void)testEnum {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
     NSUInteger a = AA1;//enum
     BB b = BB1;//typedef enum
     enum CC c = CC1;//OBJC_ENUM
@@ -91,8 +93,9 @@ DISPATCH_ENUM(JJ, NSUInteger, JJ1, JJ2);
     FF f = FF1;//CF_ENUM
     GG g = GG1;//NS_OPTIONS
     HH h = HH1;//CF_OPTIONS
-    II;//enum + typedef
+    II i = II1;//enum + typedef
     JJ_t j = JJ1;//DISPATCH_ENUM
+#pragma clang diagnostic pop
 }
 
 #pragma mrk - Debug
