@@ -41,33 +41,6 @@ static NSString *const kDog = @"dog";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Dog dog;
-    Cat cat;
-    Cow cow;
-    switch (dog) {
-        case Dog1:
-            ;
-            break;
-            
-        default:
-            break;
-    }
-    switch (cat) {
-        case Cat1:
-            ;
-            break;
-            
-        default:
-            break;
-    }
-    switch (cow) {
-        case Cow1:
-            ;
-            break;
-            
-        default:
-            break;
-    }
 }
 
 #pragma mark - override
