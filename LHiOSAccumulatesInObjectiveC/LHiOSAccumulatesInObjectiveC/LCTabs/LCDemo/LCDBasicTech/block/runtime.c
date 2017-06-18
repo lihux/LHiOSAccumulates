@@ -364,7 +364,7 @@ static void *_Block_copy_internal(const void *arg, const int flags) {
  * Otherwise we need to copy it and update the stack forwarding pointer
  * XXX We need to account for weak/nonretained read-write barriers.
  */
-
+//Lihux@2017-06-18 23:12 对于一个block，判断其是否已经在堆上面了，如果在，那么对其的引用+1，否则，进行一次栈到对的拷贝
 static void _Block_byref_assign_copy(void *dest, const void *arg, const int flags) {
     struct Block_byref **destp = (struct Block_byref **)dest;
     struct Block_byref *src = (struct Block_byref *)arg;
@@ -519,6 +519,7 @@ unsigned long int Block_size(void *arg) {
 #pragma mark Compiler SPI entry points
 #endif /* if 0 */
 
+//Lihux@2017-06-18 23:25 下面这段代码及注释应该是说清楚了block的核心内容了，后面仔细研读一下
     
 /*******************************************************
 
@@ -541,7 +542,7 @@ If the __block variable is marked weak the compiler also or's in BLOCK_FIELD_IS_
 
 So the Block copy/dispose helpers should only ever generate the four flag values of 3, 7, 8, and 24.
 
-When  a __block variable is either a C++ object, an Objective-C object, or another Block then the compiler also generates copy/dispose helper functions.  Similarly to the Block copy helper, the "__block" copy helper (formerly and still a.k.a. "byref" copy helper) will do a C++ copy constructor (not a const one though!) and the dispose helper will do the destructor.  And similarly the helpers will call into the same two support functions with the same values for objects and Blocks with the additional BLOCK_BYREF_CALLER (128) bit of information supplied.
+When  a __block variable is either a C++ object, an Objective-C object, or another Block then the compiler also generates copy/dispose helper functions.  Similarly to the Block copy helper, the "__block" copy helper (formerly and still a.k.a.(又名，亦称(=as known as) added by lihux) "byref" copy helper) will do a C++ copy constructor (not a const one though!) and the dispose helper will do the destructor.  And similarly the helpers will call into the same two support functions with the same values for objects and Blocks with the additional BLOCK_BYREF_CALLER (128) bit of information supplied.
 
 So the __block copy/dispose helpers will generate flag values of 3 or 7 for objects and Blocks respectively, with BLOCK_FIELD_IS_WEAK (16) or'ed as appropriate and always 128 or'd in, for the following set of possibilities:
 	__block id                   128+3
