@@ -506,7 +506,8 @@ FILE *funopen(const void *,
 struct __lihux_block_impl_0 {
   struct __block_impl impl;
   struct __lihux_block_desc_0* Desc;
-  __lihux_block_impl_0(void *fp, struct __lihux_block_desc_0 *desc, int flags=0) {
+  int a;
+  __lihux_block_impl_0(void *fp, struct __lihux_block_desc_0 *desc, int _a, int flags=0) : a(_a) {
     impl.isa = &_NSConcreteStackBlock;
     impl.Flags = flags;
     impl.FuncPtr = fp;
@@ -514,14 +515,16 @@ struct __lihux_block_impl_0 {
   }
 };
 static int __lihux_block_func_0(struct __lihux_block_impl_0 *__cself) {
-int a = 1; int b = a + 1; return b;}
+  int a = __cself->a; // bound by copy
+ int b = a + 1; return b;}
 
 static struct __lihux_block_desc_0 {
   size_t reserved;
   size_t Block_size;
 } __lihux_block_desc_0_DATA = { 0, sizeof(struct __lihux_block_impl_0)};
 int lihux () {
- return (int)((int (*)())&__lihux_block_impl_0((void *)__lihux_block_func_0, &__lihux_block_desc_0_DATA))();
+ int a = 1;
+ return (int)((int (*)())&__lihux_block_impl_0((void *)__lihux_block_func_0, &__lihux_block_desc_0_DATA, a))();
 }
 
 
