@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 int lihux () {
-	int a = 1;
-	return (int)^{ int b = a + 1;  return b;}();
+	__block int a = 1;
+	return (int)^{ int b = a + 1; a += b;  return b;}();
 }
 
 int main() {

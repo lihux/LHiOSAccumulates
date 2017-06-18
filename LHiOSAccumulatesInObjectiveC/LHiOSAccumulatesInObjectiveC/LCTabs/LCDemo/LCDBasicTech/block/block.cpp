@@ -502,12 +502,19 @@ FILE *funopen(const void *,
                  int (* _Nullable)(void *));
 }
 
+struct __Block_byref_a_0 {
+  void *__isa;
+__Block_byref_a_0 *__forwarding;
+ int __flags;
+ int __size;
+ int a;
+};
 
 struct __lihux_block_impl_0 {
   struct __block_impl impl;
   struct __lihux_block_desc_0* Desc;
-  int a;
-  __lihux_block_impl_0(void *fp, struct __lihux_block_desc_0 *desc, int _a, int flags=0) : a(_a) {
+  __Block_byref_a_0 *a; // by ref
+  __lihux_block_impl_0(void *fp, struct __lihux_block_desc_0 *desc, __Block_byref_a_0 *_a, int flags=0) : a(_a->__forwarding) {
     impl.isa = &_NSConcreteStackBlock;
     impl.Flags = flags;
     impl.FuncPtr = fp;
@@ -515,16 +522,21 @@ struct __lihux_block_impl_0 {
   }
 };
 static int __lihux_block_func_0(struct __lihux_block_impl_0 *__cself) {
-  int a = __cself->a; // bound by copy
- int b = a + 1; return b;}
+  __Block_byref_a_0 *a = __cself->a; // bound by ref
+ int b = (a->__forwarding->a) + 1; (a->__forwarding->a) += b; return b;}
+static void __lihux_block_copy_0(struct __lihux_block_impl_0*dst, struct __lihux_block_impl_0*src) {_Block_object_assign((void*)&dst->a, (void*)src->a, 8/*BLOCK_FIELD_IS_BYREF*/);}
+
+static void __lihux_block_dispose_0(struct __lihux_block_impl_0*src) {_Block_object_dispose((void*)src->a, 8/*BLOCK_FIELD_IS_BYREF*/);}
 
 static struct __lihux_block_desc_0 {
   size_t reserved;
   size_t Block_size;
-} __lihux_block_desc_0_DATA = { 0, sizeof(struct __lihux_block_impl_0)};
+  void (*copy)(struct __lihux_block_impl_0*, struct __lihux_block_impl_0*);
+  void (*dispose)(struct __lihux_block_impl_0*);
+} __lihux_block_desc_0_DATA = { 0, sizeof(struct __lihux_block_impl_0), __lihux_block_copy_0, __lihux_block_dispose_0};
 int lihux () {
- int a = 1;
- return (int)((int (*)())&__lihux_block_impl_0((void *)__lihux_block_func_0, &__lihux_block_desc_0_DATA, a))();
+ __attribute__((__blocks__(byref))) __Block_byref_a_0 a = {(void*)0,(__Block_byref_a_0 *)&a, 0, sizeof(__Block_byref_a_0), 1};
+ return (int)((int (*)())&__lihux_block_impl_0((void *)__lihux_block_func_0, &__lihux_block_desc_0_DATA, (__Block_byref_a_0 *)&a, 570425344))();
 }
 
 
