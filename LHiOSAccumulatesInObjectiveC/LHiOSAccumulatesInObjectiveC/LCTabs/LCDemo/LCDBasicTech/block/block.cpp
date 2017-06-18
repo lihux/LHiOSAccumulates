@@ -503,6 +503,28 @@ FILE *funopen(const void *,
 }
 
 
+struct __lihux_block_impl_0 {
+  struct __block_impl impl;
+  struct __lihux_block_desc_0* Desc;
+  __lihux_block_impl_0(void *fp, struct __lihux_block_desc_0 *desc, int flags=0) {
+    impl.isa = &_NSConcreteStackBlock;
+    impl.Flags = flags;
+    impl.FuncPtr = fp;
+    Desc = desc;
+  }
+};
+static int __lihux_block_func_0(struct __lihux_block_impl_0 *__cself) {
+int a = 1; int b = a + 1; return b;}
+
+static struct __lihux_block_desc_0 {
+  size_t reserved;
+  size_t Block_size;
+} __lihux_block_desc_0_DATA = { 0, sizeof(struct __lihux_block_impl_0)};
+int lihux () {
+ return (int)((int (*)())&__lihux_block_impl_0((void *)__lihux_block_func_0, &__lihux_block_desc_0_DATA))();
+}
+
+
 struct __main_block_impl_0 {
   struct __block_impl impl;
   struct __main_block_desc_0* Desc;
@@ -522,6 +544,6 @@ static struct __main_block_desc_0 {
 } __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0)};
 int main() {
  ((void (*)())&__main_block_impl_0((void *)__main_block_func_0, &__main_block_desc_0_DATA))();
- return 0;
+ return lihux();
 }
 static struct IMAGE_INFO { unsigned version; unsigned flag; } _OBJC_IMAGE_INFO = { 0, 2 };
