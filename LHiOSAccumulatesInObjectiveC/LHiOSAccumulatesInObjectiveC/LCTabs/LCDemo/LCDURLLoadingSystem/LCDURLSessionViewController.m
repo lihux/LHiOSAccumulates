@@ -78,6 +78,7 @@ static NSString *const kDog = @"dog";
 }
 
 - (IBAction)test302Redirect:(id)sender {
+    [[self.defaultSeesion dataTaskWithURL:[NSURL URLWithString:@"https://tiaoma.cnaidc.com/jbestd.asp?ean=9787111128069"]] resume];
 }
 
 - (IBAction)didTapOnUpdateServerButton:(id)sender {
