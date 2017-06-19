@@ -98,6 +98,13 @@ static NSString *const kDog = @"dog";
 
 -(void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler {
     [self log:[NSString stringWithFormat:@"会话：%@收到了challenge:\n%@", session, challenge]];
+    if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
+        NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
+        if (completionHandler) {
+            completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
+        }
+    }
+    NSLog(@"....completionHandler---:%@",challenge.protectionSpace.authenticationMethod);
 }
 
 #pragma mark - NSURLSessionDataDelegate
