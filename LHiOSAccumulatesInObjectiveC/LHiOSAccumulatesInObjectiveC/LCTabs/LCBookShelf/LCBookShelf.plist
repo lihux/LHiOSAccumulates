@@ -8,7 +8,7 @@
 		<key>content</key>
 		<string></string>
 		<key>storyboardID</key>
-		<string></string>
+		<string>LCBShelfViewController</string>
 		<key>storyboardName</key>
 		<string>LCBookShelf</string>
 	</dict>
@@ -18,7 +18,7 @@
 		<key>content</key>
 		<string></string>
 		<key>storyboardID</key>
-		<string></string>
+		<string>LCBReadingPlanViewController</string>
 		<key>storyboardName</key>
 		<string>LCBookShelf</string>
 	</dict>
@@ -28,7 +28,7 @@
 		<key>content</key>
 		<string></string>
 		<key>storyboardID</key>
-		<string></string>
+		<string>LCBCurrentReadingViewController</string>
 		<key>storyboardName</key>
 		<string>LCBookShelf</string>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>content</key>
 		<string></string>
 		<key>storyboardID</key>
-		<string></string>
+		<string>LCBHowNBIamViewController</string>
 		<key>storyboardName</key>
 		<string>LCBookShelf</string>
 	</dict>

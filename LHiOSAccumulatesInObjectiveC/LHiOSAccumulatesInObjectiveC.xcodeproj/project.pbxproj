@@ -17,6 +17,10 @@
 		522485221EE7BB60001A1429 /* LCSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5224850B1EE7BB60001A1429 /* LCSetting.storyboard */; };
 		522485231EE7BB60001A1429 /* LCSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5224850C1EE7BB60001A1429 /* LCSetting.plist */; };
 		522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */; };
+		523438DD1EF9274700D0099E /* LCBShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523438DC1EF9274700D0099E /* LCBShelfViewController.m */; };
+		523438E01EF9276400D0099E /* LCBReadingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523438DF1EF9276400D0099E /* LCBReadingPlanViewController.m */; };
+		523438E31EF9278000D0099E /* LCBCurrentReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523438E21EF9278000D0099E /* LCBCurrentReadingViewController.m */; };
+		523438E61EF927A100D0099E /* LCBHowNBIamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523438E51EF927A100D0099E /* LCBHowNBIamViewController.m */; };
 		5236A6531EF915D80011B09B /* LCBookShelf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5236A6511EF915D10011B09B /* LCBookShelf.plist */; };
 		5236A6541EF915D80011B09B /* LCBookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5236A6521EF915D10011B09B /* LCBookShelf.storyboard */; };
 		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; };
@@ -85,6 +89,14 @@
 		5224850C1EE7BB60001A1429 /* LCSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSetting.plist; sourceTree = "<group>"; };
 		5224852F1EE8EBD0001A1429 /* UIView+LHAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LHAutoLayout.h"; sourceTree = "<group>"; };
 		522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHAutoLayout.m"; sourceTree = "<group>"; };
+		523438DB1EF9274700D0099E /* LCBShelfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBShelfViewController.h; sourceTree = "<group>"; };
+		523438DC1EF9274700D0099E /* LCBShelfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBShelfViewController.m; sourceTree = "<group>"; };
+		523438DE1EF9276400D0099E /* LCBReadingPlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBReadingPlanViewController.h; sourceTree = "<group>"; };
+		523438DF1EF9276400D0099E /* LCBReadingPlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBReadingPlanViewController.m; sourceTree = "<group>"; };
+		523438E11EF9278000D0099E /* LCBCurrentReadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBCurrentReadingViewController.h; sourceTree = "<group>"; };
+		523438E21EF9278000D0099E /* LCBCurrentReadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBCurrentReadingViewController.m; sourceTree = "<group>"; };
+		523438E41EF927A100D0099E /* LCBHowNBIamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBHowNBIamViewController.h; sourceTree = "<group>"; };
+		523438E51EF927A100D0099E /* LCBHowNBIamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBHowNBIamViewController.m; sourceTree = "<group>"; };
 		5236A6511EF915D10011B09B /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
 		5236A6521EF915D10011B09B /* LCBookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCBookShelf.storyboard; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
@@ -237,6 +249,14 @@
 			children = (
 				5236A6511EF915D10011B09B /* LCBookShelf.plist */,
 				5236A6521EF915D10011B09B /* LCBookShelf.storyboard */,
+				523438DB1EF9274700D0099E /* LCBShelfViewController.h */,
+				523438DC1EF9274700D0099E /* LCBShelfViewController.m */,
+				523438DE1EF9276400D0099E /* LCBReadingPlanViewController.h */,
+				523438DF1EF9276400D0099E /* LCBReadingPlanViewController.m */,
+				523438E11EF9278000D0099E /* LCBCurrentReadingViewController.h */,
+				523438E21EF9278000D0099E /* LCBCurrentReadingViewController.m */,
+				523438E41EF927A100D0099E /* LCBHowNBIamViewController.h */,
+				523438E51EF927A100D0099E /* LCBHowNBIamViewController.m */,
 			);
 			path = LCBookShelf;
 			sourceTree = "<group>";
@@ -575,8 +595,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
+				523438E01EF9276400D0099E /* LCBReadingPlanViewController.m in Sources */,
 				9C476D901EF42DC1004AC758 /* LCDispatchApplyViewController.m in Sources */,
 				522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */,
+				523438DD1EF9274700D0099E /* LCBShelfViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
 				9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
@@ -591,9 +613,11 @@
 				5224851E1EE7BB60001A1429 /* LCDURLMetricsViewController.m in Sources */,
 				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
 				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,
+				523438E31EF9278000D0099E /* LCBCurrentReadingViewController.m in Sources */,
 				9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */,
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
+				523438E61EF927A100D0099E /* LCBHowNBIamViewController.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,

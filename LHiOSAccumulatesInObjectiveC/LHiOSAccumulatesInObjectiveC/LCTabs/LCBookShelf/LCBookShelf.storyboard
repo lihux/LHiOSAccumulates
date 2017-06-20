@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,6 +28,42 @@
             </objects>
             <point key="canvasLocation" x="1370" y="259"/>
         </scene>
+        <!--我的书架-->
+        <scene sceneID="8Oa-yj-dxz">
+            <objects>
+                <viewController storyboardIdentifier="LCBShelfViewController" title="我的书架" id="gCF-Xj-u9Y" customClass="LCBShelfViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Vr-6G-FbI"/>
+                        <viewControllerLayoutGuide type="bottom" id="V1h-0m-Ezp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1OG-wN-d9P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFR-sH-W1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="261"/>
+        </scene>
+        <!--阅读计划-->
+        <scene sceneID="g9y-L1-oxd">
+            <objects>
+                <viewController storyboardIdentifier="LCBReadingPlanViewController" title="阅读计划" id="c8a-rH-Pox" customClass="LCBReadingPlanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HCH-vP-k47"/>
+                        <viewControllerLayoutGuide type="bottom" id="VkE-Ru-zxw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PlI-y1-qaw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFC-p7-nKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2617" y="260"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mxu-Xw-0sv">
             <objects>
@@ -44,6 +81,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHK-uf-1ej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="558" y="259"/>
+        </scene>
+        <!--正在阅读-->
+        <scene sceneID="gWG-JC-aLR">
+            <objects>
+                <viewController storyboardIdentifier="LCBCurrentReadingViewController" title="正在阅读" id="Trf-8D-SO7" customClass="LCBCurrentReadingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KFi-Tf-uWL"/>
+                        <viewControllerLayoutGuide type="bottom" id="wpc-XC-A3x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xky-Vc-Nxs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8RH-I6-lmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3230" y="259"/>
+        </scene>
+        <!--我的成就-->
+        <scene sceneID="yLM-VX-RU0">
+            <objects>
+                <viewController storyboardIdentifier="LCBHowNBIamViewController" title="我的成就" id="mcp-ep-WMG" customClass="LCBHowNBIamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="viu-Wk-AAH"/>
+                        <viewControllerLayoutGuide type="bottom" id="anQ-BR-srv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kkb-U5-UjE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SY5-Gd-3SP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3846" y="259"/>
         </scene>
     </scenes>
 </document>
