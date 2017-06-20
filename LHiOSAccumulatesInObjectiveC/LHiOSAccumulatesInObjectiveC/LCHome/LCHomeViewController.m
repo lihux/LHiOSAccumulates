@@ -53,7 +53,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
 
 - (void)prepareDatas {
     self.flyingViewIndex = -1;
-    self.homeButtonTitles = @[@"好玩", @"好看", @"你猜", @"设置"];
+    self.homeButtonTitles = @[@"好玩", @"好看", @"书架", @"设置"];
     self.flyConstraintArray = @[self.flyView1SizeConstraints, self.flyView2SizeConstraints, self.flyView3SizeConstraints, self.flyView4SizeConstraints];
     self.flyingViews = [self.flyingViews sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         NSComparisonResult result = NSOrderedAscending;
@@ -196,8 +196,8 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
         }
             break;
         case 2: {
-            title = @"你猜";
-            plistName = @"LCSuprise";
+            title = @"书架";
+            plistName = @"LCBookShelf";
         }
             break;
         case 3: {
