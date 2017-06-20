@@ -4,9 +4,39 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>001账号密码各种输入限制的实现</string>
+		<string>我的书架</string>
 		<key>content</key>
-		<string>第三方输入法带来了新的麻烦</string>
+		<string></string>
+		<key>storyboardID</key>
+		<string></string>
+		<key>storyboardName</key>
+		<string>LCBookShelf</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>我的阅读计划</string>
+		<key>content</key>
+		<string></string>
+		<key>storyboardID</key>
+		<string></string>
+		<key>storyboardName</key>
+		<string>LCBookShelf</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>正在阅读</string>
+		<key>content</key>
+		<string></string>
+		<key>storyboardID</key>
+		<string></string>
+		<key>storyboardName</key>
+		<string>LCBookShelf</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>我的成就</string>
+		<key>content</key>
+		<string></string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>
