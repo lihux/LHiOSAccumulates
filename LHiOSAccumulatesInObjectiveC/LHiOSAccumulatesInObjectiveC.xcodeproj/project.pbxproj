@@ -24,6 +24,7 @@
 		5236A6531EF915D80011B09B /* LCBookShelf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5236A6511EF915D10011B09B /* LCBookShelf.plist */; };
 		5236A6541EF915D80011B09B /* LCBookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5236A6521EF915D10011B09B /* LCBookShelf.storyboard */; };
 		528203421EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 528203401EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodeld */; };
+		528203441EFA2CC500C9FA1E /* LCBookShelf.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 528203431EFA2CC500C9FA1E /* LCBookShelf.xcmappingmodel */; };
 		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; };
 		9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */; };
 		9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365571C4CF9F900E04D7B /* LCUtilities.m */; };
@@ -101,6 +102,7 @@
 		5236A6511EF915D10011B09B /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
 		5236A6521EF915D10011B09B /* LCBookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCBookShelf.storyboard; sourceTree = "<group>"; };
 		528203411EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
+		528203431EFA2CC500C9FA1E /* LCBookShelf.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = LCBookShelf.xcmappingmodel; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
 		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
 		9C0365541C4CF9F900E04D7B /* LCAccumulateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulateManager.h; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				528203401EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodeld */,
+				528203431EFA2CC500C9FA1E /* LCBookShelf.xcmappingmodel */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
+				528203441EFA2CC500C9FA1E /* LCBookShelf.xcmappingmodel in Sources */,
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
 				9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */,
