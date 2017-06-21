@@ -23,6 +23,7 @@
 		523438E61EF927A100D0099E /* LCBHowNBIamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523438E51EF927A100D0099E /* LCBHowNBIamViewController.m */; };
 		5236A6531EF915D80011B09B /* LCBookShelf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5236A6511EF915D10011B09B /* LCBookShelf.plist */; };
 		5236A6541EF915D80011B09B /* LCBookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5236A6521EF915D10011B09B /* LCBookShelf.storyboard */; };
+		528203421EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 528203401EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodeld */; };
 		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; };
 		9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */; };
 		9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365571C4CF9F900E04D7B /* LCUtilities.m */; };
@@ -99,6 +100,7 @@
 		523438E51EF927A100D0099E /* LCBHowNBIamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBHowNBIamViewController.m; sourceTree = "<group>"; };
 		5236A6511EF915D10011B09B /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
 		5236A6521EF915D10011B09B /* LCBookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCBookShelf.storyboard; sourceTree = "<group>"; };
+		528203411EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
 		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
 		9C0365541C4CF9F900E04D7B /* LCAccumulateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulateManager.h; sourceTree = "<group>"; };
@@ -261,9 +263,18 @@
 			path = LCBookShelf;
 			sourceTree = "<group>";
 		};
+		5282033C1EFA1C1500C9FA1E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				528203401EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		9C03654C1C4CF9F900E04D7B /* General */ = {
 			isa = PBXGroup;
 			children = (
+				5282033C1EFA1C1500C9FA1E /* CoreData */,
 				9C0365501C4CF9F900E04D7B /* LCGeneralUI */,
 				9C0365641C4CF9F900E04D7B /* LHHelpers */,
 			);
@@ -610,6 +621,7 @@
 				9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */,
 				9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */,
 				9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */,
+				528203421EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodeld in Sources */,
 				5224851E1EE7BB60001A1429 /* LCDURLMetricsViewController.m in Sources */,
 				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
 				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,
@@ -897,6 +909,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		528203401EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				528203411EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodel */,
+			);
+			currentVersion = 528203411EFA1E3B00C9FA1E /* LCBookShelf.xcdatamodel */;
+			path = LCBookShelf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9C61C4681C3E3E43003877BC /* Project object */;
 }
