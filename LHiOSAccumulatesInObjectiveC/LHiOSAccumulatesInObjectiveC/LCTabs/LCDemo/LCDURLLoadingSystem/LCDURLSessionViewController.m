@@ -77,8 +77,8 @@ static NSString *const kDog = @"dog";
     [self.defaultSeesion finishTasksAndInvalidate];
 }
 
-- (IBAction)test302Redirect:(id)sender {
-    [[self.defaultSeesion dataTaskWithURL:[NSURL URLWithString:@"https://tiaoma.cnaidc.com/jbestd.asp?ean=9787111128069"]] resume];
+- (IBAction)testHttpRequest:(id)sender {
+    [[self.defaultSeesion dataTaskWithURL:[NSURL URLWithString:@"https://api.douban.com/v2/book/isbn/9787111128069"]] resume];
 }
 
 - (IBAction)didTapOnUpdateServerButton:(id)sender {
@@ -112,6 +112,7 @@ static NSString *const kDog = @"dog";
 didReceiveResponse:(NSURLResponse *)response
  completionHandler:(void (^)(NSURLSessionResponseDisposition disposition))completionHandler {
     [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didReceiveResponse\n收到响应%@", response]];
+    completionHandler(NSURLSessionResponseAllow);
 }
 
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
@@ -121,13 +122,25 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask {
 
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
     didReceiveData:(NSData *)data {
-    [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didReceiveData\n收到响应%@", data]];
+    NSError *error;
+    id jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    if (error) {
+        [self log:[NSString stringWithFormat:@"解析数据发生问题：%@", error]];
+    } else {
+        if ([jsonData isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *dic = (NSDictionary *)jsonData;
+            NSMutableString *string = [NSMutableString string];
+            for (NSString *key in dic.allKeys) {
+                [string appendFormat:@"\n%@ = %@", key, dic[key]];
+            }
+            [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didReceiveData\n收到响应%@", string]];
+        }
+    }
 }
 
 #pragma mark - NSURLSessionTaskDelegate
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didFinishCollectingMetrics:(NSURLSessionTaskMetrics *)metrics {
     for (NSURLSessionTaskTransactionMetrics *TaskMetric in metrics.transactionMetrics) {
-        [self log:@""];
         [self log:[NSString stringWithFormat:@"路由信息：%@", TaskMetric]];
     }
 }
