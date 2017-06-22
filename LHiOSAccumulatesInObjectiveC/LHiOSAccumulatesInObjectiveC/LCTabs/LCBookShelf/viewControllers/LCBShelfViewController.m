@@ -2,13 +2,19 @@
 //  LCBShelfViewController.m
 //  LHiOSAccumulatesInObjectiveC
 //
-//  Created by 李辉 on 2017/6/20.
+//  Created by 李辉 on 2017/6/22.
 //  Copyright © 2017年 Lihux. All rights reserved.
 //
 
 #import "LCBShelfViewController.h"
 
-@interface LCBShelfViewController ()
+#import "LCBookCoreDataManager.h"
+#import "LCBShelfTableViewCell.h"
+
+@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) LCBookCoreDataManager *manager;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 
 @end
 
@@ -16,22 +22,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDelegate
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.manager numberOfBooksInSection:section];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LCBShelfTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LCBShelfTableViewCell class])];
+    cell.book = [self.manager bookForRowAtIndexPath:indexPath];
+    return cell;
 }
-*/
+
+#pragma mark - lazy load
+- (LCBookCoreDataManager *)manager {
+    if (_manager) {
+        return _manager;
+    }
+    _manager = [[LCBookCoreDataManager alloc] init];
+    return _manager;
+}
 
 @end

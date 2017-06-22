@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class NSFetchedResultsController;
+@class LCBook;
 @interface LCBookCoreDataManager : NSObject
+
+- (NSFetchedResultsController *)fetchBookController;
+
+- (NSInteger)numberOfBooksInSection:(NSInteger)section;
+- (LCBook *)bookForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

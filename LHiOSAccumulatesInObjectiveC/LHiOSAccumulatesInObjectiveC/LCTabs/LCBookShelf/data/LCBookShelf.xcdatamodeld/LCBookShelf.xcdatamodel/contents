@@ -16,6 +16,10 @@
         <attribute name="totalPageCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCBook" inverseName="readingPlan" inverseEntity="LCBook" syncable="YES"/>
     </entity>
+    <entity name="LCDog" representedClassName="LCDog" syncable="YES" codeGenerationType="class">
+        <attribute name="dog" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="LCShelf" representedClassName="LCShelf" syncable="YES" codeGenerationType="class">
         <attribute name="bookCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBook" syncable="YES"/>
@@ -24,5 +28,6 @@
         <element name="LCBook" positionX="-63" positionY="-18" width="128" height="150"/>
         <element name="LCBookReadingPlan" positionX="-54" positionY="36" width="128" height="120"/>
         <element name="LCShelf" positionX="-36" positionY="63" width="128" height="75"/>
+        <element name="LCDog" positionX="-54" positionY="54" width="128" height="75"/>
     </elements>
 </model>
