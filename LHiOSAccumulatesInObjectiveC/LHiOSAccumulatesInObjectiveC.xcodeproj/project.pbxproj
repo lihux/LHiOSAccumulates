@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5224634E1EFBDDBF00E90EB6 /* LCLihuxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5224634D1EFBDDBF00E90EB6 /* LCLihuxHelper.m */; };
 		522485141EE7BB60001A1429 /* LCDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522484F21EE7BB60001A1429 /* LCDemo.storyboard */; };
 		522485191EE7BB60001A1429 /* LCDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522484FB1EE7BB60001A1429 /* LCDemo.plist */; };
 		5224851C1EE7BB60001A1429 /* LCDURLLoadingSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522485011EE7BB60001A1429 /* LCDURLLoadingSystem.plist */; };
@@ -81,6 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5224634C1EFBDDBF00E90EB6 /* LCLihuxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLihuxHelper.h; sourceTree = "<group>"; };
+		5224634D1EFBDDBF00E90EB6 /* LCLihuxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLihuxHelper.m; sourceTree = "<group>"; };
 		522484F21EE7BB60001A1429 /* LCDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCDemo.storyboard; sourceTree = "<group>"; };
 		522484FB1EE7BB60001A1429 /* LCDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCDemo.plist; sourceTree = "<group>"; };
 		522485011EE7BB60001A1429 /* LCDURLLoadingSystem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCDURLLoadingSystem.plist; sourceTree = "<group>"; };
@@ -380,6 +383,8 @@
 				9C0365661C4CF9F900E04D7B /* UIColor+helper.m */,
 				9C0365671C4CF9F900E04D7B /* UIImage+Color.h */,
 				9C0365681C4CF9F900E04D7B /* UIImage+Color.m */,
+				5224634C1EFBDDBF00E90EB6 /* LCLihuxHelper.h */,
+				5224634D1EFBDDBF00E90EB6 /* LCLihuxHelper.m */,
 			);
 			path = LHHelpers;
 			sourceTree = "<group>";
@@ -647,6 +652,7 @@
 				522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */,
 				5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
+				5224634E1EFBDDBF00E90EB6 /* LCLihuxHelper.m in Sources */,
 				9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				5296F2AF1EFB9ED100A08022 /* LCBCurrentReadingViewController.m in Sources */,
