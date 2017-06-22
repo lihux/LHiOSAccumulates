@@ -13,11 +13,12 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, AVCaptureMetadataOutputObjectsDelegate>
+@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, AVCaptureMetadataOutputObjectsDelegate, NSURLSessionDelegate, NSURLSessionDataDelegate>
 
 @property (nonatomic, strong) LCBookCoreDataManager *manager;
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property(nonatomic, strong)AVCaptureSession *session;//输入输出的中间桥梁
+@property (nonatomic, strong) NSURLSession *urlSession;
 
 @end
 
@@ -92,10 +93,54 @@
         //输出扫描字符串:
         NSLog(@"%@", metaDataObject.stringValue);
         [self log:[NSString stringWithFormat:@"扫描成功，条形码为：%@", metaDataObject.stringValue]];
+        [self log:@"下面开始用扫描出来的ISBN条形码数据去获取这本书的详细信息："];
+        [self fetchBookInfoWithISBN:metaDataObject.stringValue];
         //移除扫描视图:
         AVCaptureVideoPreviewLayer *layer = (AVCaptureVideoPreviewLayer *)[[self.view.layer sublayers] objectAtIndex:0];
         [layer removeFromSuperlayer];
     }
+}
+
+- (void)fetchBookInfoWithISBN:(NSString *)ISBNString {
+    NSString *temp = [NSString stringWithFormat:@"https://api.douban.com/v2/book/isbn/%@", ISBNString];
+    NSURL *url = [NSURL URLWithString:temp];
+    [[self.urlSession dataTaskWithURL:url] resume];
+}
+
+-(void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler {
+    [self log:[NSString stringWithFormat:@"会话：%@收到了HTTPS 的challenge:\n%@，予以了正确处理，请求正确执行", session, challenge]];
+    if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
+        NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
+        if (completionHandler) {
+            completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
+        }
+    }
+}
+
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+    didReceiveData:(NSData *)data {
+    NSError *error;
+    id jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    if (error) {
+        [self log:[NSString stringWithFormat:@"解析数据发生问题：%@", error]];
+    } else {
+        if ([jsonData isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *dic = (NSDictionary *)jsonData;
+            NSMutableString *string = [NSMutableString string];
+            for (NSString *key in dic.allKeys) {
+                [string appendFormat:@"\n%@ = %@", key, dic[key]];
+            }
+            [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didReceiveData\n收到响应%@", string]];
+        }
+    }
+}
+
+#pragma mark - NSURLSessionDataDelegate
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+didReceiveResponse:(NSURLResponse *)response
+ completionHandler:(void (^)(NSURLSessionResponseDisposition disposition))completionHandler {
+    [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didReceiveResponse\n收到响应%@", response]];
+    completionHandler(NSURLSessionResponseAllow);
 }
 
 #pragma mark - lazy load
@@ -105,6 +150,15 @@
     }
     _manager = [[LCBookCoreDataManager alloc] init];
     return _manager;
+}
+
+- (NSURLSession *)urlSession {
+    if (_urlSession) {
+        return _urlSession;
+    }
+    NSURLSessionConfiguration *configuration  = [NSURLSessionConfiguration defaultSessionConfiguration];
+    _urlSession = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    return _urlSession;
 }
 
 @end
