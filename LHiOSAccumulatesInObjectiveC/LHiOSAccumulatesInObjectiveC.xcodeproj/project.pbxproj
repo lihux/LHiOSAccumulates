@@ -20,7 +20,6 @@
 		52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */; };
 		52E4C8991EFA434A00CB8F4D /* LCBookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */; };
 		52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528FD9591EFA377E00DF92BA /* LCBookShelf.plist */; };
-		52E4C89B1EFA435400CB8F4D /* LCBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52E4C8941EFA42D100CB8F4D /* LCBookShelf.xcdatamodeld */; };
 		52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */; };
 		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; };
 		9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */; };
@@ -88,7 +87,7 @@
 		5224850C1EE7BB60001A1429 /* LCSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSetting.plist; sourceTree = "<group>"; };
 		5224852F1EE8EBD0001A1429 /* UIView+LHAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LHAutoLayout.h"; sourceTree = "<group>"; };
 		522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHAutoLayout.m"; sourceTree = "<group>"; };
-		5237BE651EFB83C800180A04 /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
+		5237BE701EFB84C800180A04 /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
 		528FD9591EFA377E00DF92BA /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
 		528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCBookShelf.storyboard; sourceTree = "<group>"; };
 		528FD95C1EFA377E00DF92BA /* LCBCurrentReadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBCurrentReadingViewController.h; sourceTree = "<group>"; };
@@ -101,7 +100,6 @@
 		528FD9631EFA377E00DF92BA /* LCBShelfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBShelfViewController.m; sourceTree = "<group>"; };
 		52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCoreDataManager.h; sourceTree = "<group>"; };
 		52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCoreDataManager.m; sourceTree = "<group>"; };
-		52E4C8951EFA42D100CB8F4D /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
 		52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = LCBookShelf.xcmappingmodel; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
 		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
@@ -261,8 +259,7 @@
 		528FD9571EFA377E00DF92BA /* data */ = {
 			isa = PBXGroup;
 			children = (
-				52E4C8941EFA42D100CB8F4D /* LCBookShelf.xcdatamodeld */,
-				5237BE641EFB83C800180A04 /* LCBookShelf.xcdatamodeld */,
+				5237BE6F1EFB84C800180A04 /* LCBookShelf.xcdatamodeld */,
 				52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */,
 				52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */,
 				52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */,
@@ -648,7 +645,6 @@
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
 				52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */,
-				52E4C89B1EFA435400CB8F4D /* LCBookShelf.xcdatamodeld in Sources */,
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
@@ -931,22 +927,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5237BE641EFB83C800180A04 /* LCBookShelf.xcdatamodeld */ = {
+		5237BE6F1EFB84C800180A04 /* LCBookShelf.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5237BE651EFB83C800180A04 /* LCBookShelf.xcdatamodel */,
+				5237BE701EFB84C800180A04 /* LCBookShelf.xcdatamodel */,
 			);
-			currentVersion = 5237BE651EFB83C800180A04 /* LCBookShelf.xcdatamodel */;
-			path = LCBookShelf.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		52E4C8941EFA42D100CB8F4D /* LCBookShelf.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				52E4C8951EFA42D100CB8F4D /* LCBookShelf.xcdatamodel */,
-			);
-			currentVersion = 52E4C8951EFA42D100CB8F4D /* LCBookShelf.xcdatamodel */;
+			currentVersion = 5237BE701EFB84C800180A04 /* LCBookShelf.xcdatamodel */;
 			path = LCBookShelf.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
