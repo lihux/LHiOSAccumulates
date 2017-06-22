@@ -18,11 +18,11 @@
 
 @implementation LCBookCoreDataManager
 
-- (NSPersistentContainer *)persistentContainer {
-    if (!_persistentContainer) {
-        _persistentContainer = [NSPersistentContainer persistentContainerWithName:@"LCBookShelf"];
+- (instancetype)init {
+    if (self = [super init]) {
+        self.persistentContainer = [NSPersistentContainer persistentContainerWithName:@"LCBookShelf"];
     }
-    return _persistentContainer;
+    return self;
 }
 
 @end

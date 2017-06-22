@@ -88,6 +88,7 @@
 		5224850C1EE7BB60001A1429 /* LCSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCSetting.plist; sourceTree = "<group>"; };
 		5224852F1EE8EBD0001A1429 /* UIView+LHAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LHAutoLayout.h"; sourceTree = "<group>"; };
 		522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHAutoLayout.m"; sourceTree = "<group>"; };
+		5237BE651EFB83C800180A04 /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
 		528FD9591EFA377E00DF92BA /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
 		528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCBookShelf.storyboard; sourceTree = "<group>"; };
 		528FD95C1EFA377E00DF92BA /* LCBCurrentReadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBCurrentReadingViewController.h; sourceTree = "<group>"; };
@@ -261,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				52E4C8941EFA42D100CB8F4D /* LCBookShelf.xcdatamodeld */,
+				5237BE641EFB83C800180A04 /* LCBookShelf.xcdatamodeld */,
 				52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */,
 				52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */,
 				52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */,
@@ -929,6 +931,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		5237BE641EFB83C800180A04 /* LCBookShelf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5237BE651EFB83C800180A04 /* LCBookShelf.xcdatamodel */,
+			);
+			currentVersion = 5237BE651EFB83C800180A04 /* LCBookShelf.xcdatamodel */;
+			path = LCBookShelf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		52E4C8941EFA42D100CB8F4D /* LCBookShelf.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
