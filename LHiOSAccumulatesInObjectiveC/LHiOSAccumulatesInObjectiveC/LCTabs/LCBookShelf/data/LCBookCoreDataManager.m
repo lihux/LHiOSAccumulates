@@ -40,6 +40,8 @@
     }
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"LCBook"];
     fetchRequest.fetchBatchSize = 20;
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"pageCount" ascending:NO];
+    [fetchRequest setSortDescriptors:@[sortDescriptor]];
     _fetchBookController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.persistentContainer.viewContext sectionNameKeyPath:nil cacheName:@"LCBookCoreDataManager"];
     return _fetchBookController;
 }
@@ -49,6 +51,9 @@
         return _persistentContainer;
     }
     _persistentContainer = [NSPersistentContainer persistentContainerWithName:@"LCBookShelf"];
+    [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription * _Nonnull storeDescription, NSError * _Nullable error) {
+        NSAssert(!error, ([NSString stringWithFormat:@"从CoreData中加载我的书架书籍失败，错误信息：\n%@", error]), nil);
+    }];
     return _persistentContainer;
 }
 
