@@ -28,14 +28,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self makeLihuxStyleOfView:self.containerView];
-    //300为正方形扫描区域边长
+    self.manager = [[LCBookCoreDataManager alloc] init];
+    self.manager.delegate = self;
 #if TARGET_OS_SIMULATOR
     [self fetchBookInfoWithISBN:@"9787111453833"];
 #else
     [self startScanWithSize:300];
 #endif
-    self.manager = [[LCBookCoreDataManager alloc] init];
-    self.manager.delegate = self;
     [self.tableView reloadData];
 }
 
