@@ -12,7 +12,7 @@
 
 #import "LCBookCreater.h"
 
-@interface LCBookCoreDataManager ()
+@interface LCBookCoreDataManager () <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSPersistentContainer *persistentContainer;
 @property (nonatomic, strong) NSFetchedResultsController *fetchBookController;
@@ -23,7 +23,8 @@
 @implementation LCBookCoreDataManager
 
 - (NSInteger)numberOfBooksInSection:(NSInteger)section {
-    return [self.fetchBookController sections].count;
+    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchBookController sections][section];
+    return [sectionInfo numberOfObjects];
 }
 
 - (LCBook *)bookForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -32,6 +33,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
+        NSLog(@"%@", self.fetchBookController);
     }
     return self;
 }
@@ -55,6 +57,13 @@
     return nil;
 }
 
+#pragma mark - NSFetchedResultsControllerDelegate
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    if ([self.delegate respondsToSelector:@selector(dataHasChanged)]) {
+        [self.delegate dataHasChanged];
+    }
+}
+
 #pragma mark - lazy load
 - (NSFetchedResultsController *)fetchBookController {
     if (_fetchBookController) {
@@ -62,9 +71,14 @@
     }
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"LCBook"];
     fetchRequest.fetchBatchSize = 20;
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"pageCount" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:NO];
     [fetchRequest setSortDescriptors:@[sortDescriptor]];
     _fetchBookController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.persistentContainer.viewContext sectionNameKeyPath:nil cacheName:@"LCBookCoreDataManager"];
+    NSError *error;
+    [_fetchBookController performFetch:&error];
+    if (error) {
+        NSLog(@"从数据库获取失败：%@", error);
+    }
     return _fetchBookController;
 }
 

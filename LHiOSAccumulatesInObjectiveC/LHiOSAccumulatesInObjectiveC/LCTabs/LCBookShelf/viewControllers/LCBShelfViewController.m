@@ -13,12 +13,13 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, AVCaptureMetadataOutputObjectsDelegate, NSURLSessionDelegate, NSURLSessionDataDelegate>
+@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, AVCaptureMetadataOutputObjectsDelegate, NSURLSessionDelegate, NSURLSessionDataDelegate, LCBookCoreDataManagerDelegate>
 
 @property (nonatomic, strong) LCBookCoreDataManager *manager;
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property(nonatomic, strong)AVCaptureSession *session;//输入输出的中间桥梁
 @property (nonatomic, strong) NSURLSession *urlSession;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -33,11 +34,13 @@
 #else
     [self startScanWithSize:300];
 #endif
+    self.manager = [[LCBookCoreDataManager alloc] init];
+    self.manager.delegate = self;
+    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self fetchBookInfoWithISBN:@"9787111453833"];
 }
 
 -(UIView *)logAnchorView {
@@ -135,6 +138,7 @@
     } else {
         if ([jsonData isKindOfClass:[NSDictionary class]]) {
             [self.manager inserNewBookFromJsonData:jsonData];
+            [self.tableView reloadData];
             NSDictionary *dic = (NSDictionary *)jsonData;
             NSMutableString *string = [NSMutableString string];
             for (NSString *key in dic.allKeys) {
@@ -158,15 +162,11 @@ didReceiveResponse:(NSURLResponse *)response
     completionHandler(NSURLSessionResponseAllow);
 }
 
-#pragma mark - lazy load
-- (LCBookCoreDataManager *)manager {
-    if (_manager) {
-        return _manager;
-    }
-    _manager = [[LCBookCoreDataManager alloc] init];
-    return _manager;
+#pragma mark - LCBookCoreDataManagerDelegate
+-(void)dataHasChanged {
+    [self.tableView reloadData];
 }
-
+#pragma mark - lazy load
 - (NSURLSession *)urlSession {
     if (_urlSession) {
         return _urlSession;

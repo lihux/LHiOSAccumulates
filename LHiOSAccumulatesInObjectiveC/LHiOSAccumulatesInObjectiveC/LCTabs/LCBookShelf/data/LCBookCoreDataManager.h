@@ -10,10 +10,18 @@
 
 @class NSFetchedResultsController;
 @class LCBook;
+
+@protocol LCBookCoreDataManagerDelegate <NSObject>
+
+- (void)dataHasChanged;
+
+@end
+
 @interface LCBookCoreDataManager : NSObject
 
-- (NSFetchedResultsController *)fetchBookController;
+@property (nonatomic, weak) id<LCBookCoreDataManagerDelegate> delegate;
 
+- (NSFetchedResultsController *)fetchBookController;
 - (NSInteger)numberOfBooksInSection:(NSInteger)section;
 - (LCBook *)bookForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (LCBook *)bookForISBN:(NSString *)ISBN;

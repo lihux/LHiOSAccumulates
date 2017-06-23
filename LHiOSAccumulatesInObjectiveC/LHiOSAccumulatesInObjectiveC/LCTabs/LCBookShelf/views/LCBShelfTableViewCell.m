@@ -8,7 +8,17 @@
 
 #import "LCBShelfTableViewCell.h"
 
-#import "LCBook+CoreDataClass.h"
+#import "LCBookShelf+CoreDataModel.h"
+
+@interface LCBShelfTableViewCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *bookImageView;
+@property (weak, nonatomic) IBOutlet UILabel *bookTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *publisherLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+
+@end
 
 @implementation LCBShelfTableViewCell
 
@@ -18,5 +28,10 @@
 
 -(void)setBook:(LCBook *)book {
     _book = book;
+    self.bookTitleLabel.text = book.title;
+    self.authorLabel.text = [(LCBookAuthor *)[book.authors anyObject] name];
+    self.publisherLabel.text = book.publisher;
+    self.priceLabel.text = book.price;
 }
+
 @end

@@ -47,7 +47,6 @@
         <attribute name="currentReadingCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="totalPageCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCBook" inverseName="readingPlan" inverseEntity="LCBook" syncable="YES"/>
     </entity>
     <entity name="LCBookSeries" representedClassName="LCBookSeries" syncable="YES" codeGenerationType="class">
@@ -70,14 +69,14 @@
         <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBook" inverseName="bookShelf" inverseEntity="LCBook" syncable="YES"/>
     </entity>
     <elements>
-        <element name="LCBook" positionX="-1188" positionY="171" width="128" height="403"/>
-        <element name="LCBookReadingPlan" positionX="-693" positionY="522" width="128" height="120"/>
-        <element name="LCShelf" positionX="-767" positionY="170" width="128" height="73"/>
-        <element name="LCBookDouBanRating" positionX="-693" positionY="396" width="128" height="118"/>
+        <element name="LCBook" positionX="-1188" positionY="171" width="128" height="405"/>
         <element name="LCBookAuthor" positionX="-848" positionY="72" width="128" height="73"/>
+        <element name="LCBookDouBanRating" positionX="-693" positionY="396" width="128" height="118"/>
+        <element name="LCBookImage" positionX="-695" positionY="261" width="128" height="103"/>
+        <element name="LCBookReadingPlan" positionX="-693" positionY="522" width="128" height="105"/>
+        <element name="LCBookSeries" positionX="-740" positionY="650" width="128" height="88"/>
         <element name="LCBookTag" positionX="-783" positionY="752" width="128" height="103"/>
         <element name="LCBookTranslator" positionX="-864" positionY="864" width="128" height="73"/>
-        <element name="LCBookImage" positionX="-695" positionY="261" width="128" height="103"/>
-        <element name="LCBookSeries" positionX="-740" positionY="650" width="128" height="88"/>
+        <element name="LCShelf" positionX="-767" positionY="170" width="128" height="73"/>
     </elements>
 </model>
