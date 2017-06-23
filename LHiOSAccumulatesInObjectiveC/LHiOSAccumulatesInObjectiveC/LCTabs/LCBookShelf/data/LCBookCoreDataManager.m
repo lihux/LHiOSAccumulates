@@ -10,6 +10,8 @@
 
 #import <CoreData/CoreData.h>
 
+#import "LCBookCreater.h"
+
 @interface LCBookCoreDataManager ()
 
 @property (nonatomic, strong) NSPersistentContainer *persistentContainer;
@@ -31,6 +33,10 @@
     if (self = [super init]) {
     }
     return self;
+}
+
+- (BOOL)inserNewBookFromJsonData:(id)jsonData {
+    return [LCBookCreater createBookFromJsonData:jsonData managedObjectContext:self.persistentContainer.viewContext];
 }
 
 #pragma mark - lazy load

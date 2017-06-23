@@ -16,5 +16,6 @@
 
 - (NSInteger)numberOfBooksInSection:(NSInteger)section;
 - (LCBook *)bookForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (BOOL)inserNewBookFromJsonData:(id)jsonData;
 
 @end

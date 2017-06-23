@@ -25,6 +25,7 @@
 		5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2B71EFBAAFF00A08022 /* LCBShelfViewController.m */; };
 		5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */; };
 		52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */; };
+		52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */; };
 		52E4C8991EFA434A00CB8F4D /* LCBookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */; };
 		52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528FD9591EFA377E00DF92BA /* LCBookShelf.plist */; };
 		52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */; };
@@ -111,6 +112,8 @@
 		5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBShelfTableViewCell.m; sourceTree = "<group>"; };
 		52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCoreDataManager.h; sourceTree = "<group>"; };
 		52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCoreDataManager.m; sourceTree = "<group>"; };
+		52CAEED11EFCF45D00A7EB16 /* LCBookCreater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCreater.h; sourceTree = "<group>"; };
+		52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCreater.m; sourceTree = "<group>"; };
 		52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = LCBookShelf.xcmappingmodel; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
 		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
@@ -275,6 +278,8 @@
 				52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */,
 				52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */,
 				52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */,
+				52CAEED11EFCF45D00A7EB16 /* LCBookCreater.h */,
+				52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -669,6 +674,7 @@
 				5224851E1EE7BB60001A1429 /* LCDURLMetricsViewController.m in Sources */,
 				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
 				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,
+				52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */,
 				9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */,
 				5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */,
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
