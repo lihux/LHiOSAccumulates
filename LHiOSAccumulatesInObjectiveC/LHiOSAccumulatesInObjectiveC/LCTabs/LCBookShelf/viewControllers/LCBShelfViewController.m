@@ -28,11 +28,16 @@
     [super viewDidLoad];
     [self makeLihuxStyleOfView:self.containerView];
     //300为正方形扫描区域边长
+#if TARGET_OS_SIMULATOR
     [self startScanWithSize:300];
+#else
+    [self fetchBookInfoWithISBN:@"9787111453833"];
+#endif
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [self fetchBookInfoWithISBN:@"9787111453833"];
 }
 
 -(UIView *)logAnchorView {
@@ -52,8 +57,7 @@
 }
 
 #pragma mark -- 开始扫描
-- (void)startScanWithSize:(CGFloat)sizeValue
-{
+- (void)startScanWithSize:(CGFloat)sizeValue {
     //获取摄像设备
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     //创建输入流
@@ -61,11 +65,11 @@
     //判断输入流是否可用
     if (input) {
         //创建输出流
-        AVCaptureMetadataOutput * output = [[AVCaptureMetadataOutput alloc]init];
+        AVCaptureMetadataOutput * output = [[AVCaptureMetadataOutput alloc] init];
         //设置代理,在主线程里刷新,注意此时self需要签AVCaptureMetadataOutputObjectsDelegate协议
         [output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
         //初始化连接对象
-        self.session = [[AVCaptureSession alloc]init];
+        self.session = [[AVCaptureSession alloc] init];
         //高质量采集率
         [_session setSessionPreset:AVCaptureSessionPresetHigh];
         [_session addInput:input];
@@ -85,7 +89,7 @@
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate
 #pragma mark - 扫面结果在这个代理方法里获取到
--(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
+-(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
     if (metadataObjects.count>0) {
         //获取到信息后停止扫描:
         [_session stopRunning];
@@ -130,11 +134,16 @@
             for (NSString *key in dic.allKeys) {
                 [string appendFormat:@"\n%@ = %@", key, dic[key]];
             }
+            NSLog(@"\n\n收到图书信息：%@", string);
             [self log:[NSString stringWithFormat:@"NSURLSessionDataDelegate-didReceiveData\n收到响应%@", string]];
         }
     }
 }
 
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+didCompleteWithError:(nullable NSError *)error {
+    [self log:[NSString stringWithFormat:@"NSURLSessionTaskDelegate-didCompleteWithError\n%@%@%@", session, task, error]];
+}
 #pragma mark - NSURLSessionDataDelegate
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
 didReceiveResponse:(NSURLResponse *)response
