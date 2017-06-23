@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import <UIKit/UIKit.h>
+
 @interface LCLihuxHelper : NSObject
 
++ (void)makeLihuxStyleOfView:(UIView *)view;
+    
 @end

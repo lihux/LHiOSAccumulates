@@ -28,7 +28,8 @@
 - (LCBook *)createBookFromJsonData:(id)jsonData {
     NSDictionary *dic = [self dicFromJsonData:jsonData];
     NSManagedObjectContext *moc = self.moc;
-    if (dic && moc) {
+    LCBook *localBook = (LCBook *)[self fetchUniqueModelInCoreDataWithClass:[LCBook class] key:@"isbn13" value:[self stringFromJsonData:dic[@"isbn13"]]];
+    if (!(localBook) && dic && moc) {
         LCBook *book = [[LCBook alloc] initWithContext:moc];
         book.subtitle = [self stringFromJsonData:dic[@"subtitle"]];
         book.publishDate = [self stringFromJsonData:dic[@"pubdate"]];
@@ -171,7 +172,7 @@
 }
 
 - (NSManagedObjectModel *)fetchUniqueModelInCoreDataWithClass:(Class)cls key:(NSString *)key value:(NSString *)value {
-    if ([cls isKindOfClass:[NSManagedObjectModel class]] && self.moc) {
+    if (self.moc) {
         NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass(cls)];
         fetchRequest.predicate = [NSPredicate predicateWithFormat:@"%@ = %@", key, value];
         fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:key ascending:YES]];

@@ -138,7 +138,9 @@
     } else {
         if ([jsonData isKindOfClass:[NSDictionary class]]) {
             [self.manager inserNewBookFromJsonData:jsonData];
-            [self.tableView reloadData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
             NSDictionary *dic = (NSDictionary *)jsonData;
             NSMutableString *string = [NSMutableString string];
             for (NSString *key in dic.allKeys) {

@@ -12,7 +12,7 @@
 
 @implementation LCLihuxHelper
 
-- (void)makeLihuxStyleOfView:(UIView *)view {
++ (void)makeLihuxStyleOfView:(UIView *)view {
     if (view && view.tag != -9999) {
         view.backgroundColor = [UIColor clearColor];
         UIColor *textColor = [UIColor whiteColor];
