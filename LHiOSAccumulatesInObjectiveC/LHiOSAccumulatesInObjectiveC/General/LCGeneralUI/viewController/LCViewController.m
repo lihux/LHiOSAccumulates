@@ -80,6 +80,12 @@
     }
 }
 
++ (instancetype)loadViewControllerFromStoryboard:(NSString *)storyboardName {
+    Class cls = [self class];
+    LCViewController *vc = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass(cls)];
+    return vc;
+}
+
 #pragma mark - 子类按需继承
 - (UIView *)logAnchorView {
     return nil;

@@ -91,4 +91,13 @@ static const NSInteger kLCSpecialViewTag = -9999;
  */
 - (BOOL)isShowLogReverse;
 
+
+/**
+ 便利方法，从storyboard中加载当前VC，要求的条件是当前VC的Identifier必须和类名完全一致才行
+ 
+ @param storyboardName 从哪个storyboard加载这个VC
+ @return 返回一个加载出来的VC，or nil if failed
+ */
++ (instancetype)loadViewControllerFromStoryboard:(NSString *)storyboardName;
+
 @end

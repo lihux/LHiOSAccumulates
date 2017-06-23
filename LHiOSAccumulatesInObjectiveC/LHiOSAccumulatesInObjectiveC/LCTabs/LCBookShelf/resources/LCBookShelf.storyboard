@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,6 +32,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3z-eh-2jU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1370" y="259"/>
+        </scene>
+        <!--录入图书-->
+        <scene sceneID="pzJ-T0-mPJ">
+            <objects>
+                <viewController storyboardIdentifier="LCBookScanViewController" title="录入图书" id="JN0-bw-c9r" customClass="LCBookScanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a4d-ax-Ehq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ggy-tg-HV5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xay-hn-yEq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YI-sf-0Mg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BYI-w6-SPy">
+                                        <rect key="frame" x="119" y="599" width="137" height="29"/>
+                                        <segments>
+                                            <segment title="扫描单本"/>
+                                            <segment title="连续扫描"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BYI-w6-SPy" secondAttribute="bottom" constant="20" id="7uY-Dc-oJI"/>
+                                    <constraint firstItem="BYI-w6-SPy" firstAttribute="centerX" secondItem="7YI-sf-0Mg" secondAttribute="centerX" id="QSc-u9-JjQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ggy-tg-HV5" firstAttribute="top" secondItem="7YI-sf-0Mg" secondAttribute="bottom" id="2E4-Cz-c9Z"/>
+                            <constraint firstAttribute="trailing" secondItem="7YI-sf-0Mg" secondAttribute="trailing" id="LNW-MS-MDj"/>
+                            <constraint firstItem="7YI-sf-0Mg" firstAttribute="top" secondItem="a4d-ax-Ehq" secondAttribute="bottom" id="pXa-tj-G84"/>
+                            <constraint firstItem="7YI-sf-0Mg" firstAttribute="leading" secondItem="Xay-hn-yEq" secondAttribute="leading" id="vDh-ZK-q3R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="7YI-sf-0Mg" id="dgE-t5-Tnu"/>
+                        <outlet property="scanModelSegmentControl" destination="BYI-w6-SPy" id="wkd-pA-Jmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOd-3q-pff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="-378"/>
         </scene>
         <!--我的书架-->
         <scene sceneID="KJu-g0-BgI">

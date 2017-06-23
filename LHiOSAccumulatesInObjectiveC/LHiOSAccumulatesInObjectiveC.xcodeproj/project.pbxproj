@@ -63,6 +63,7 @@
 		9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */; };
 		9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */; };
 		9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */; };
+		9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAC41B1EFDCA68006964F2 /* LCBookScanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,8 @@
 		9C9124331C4FA06E007AB00D /* LCSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSectionHeaderView.h; sourceTree = "<group>"; };
 		9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSectionHeaderView.m; sourceTree = "<group>"; };
 		9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCSectionHeaderView.xib; sourceTree = "<group>"; };
+		9CFAC41A1EFDCA68006964F2 /* LCBookScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookScanViewController.h; sourceTree = "<group>"; };
+		9CFAC41B1EFDCA68006964F2 /* LCBookScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookScanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +307,8 @@
 				528FD9611EFA377E00DF92BA /* LCBReadingPlanViewController.m */,
 				5296F2B61EFBAAFF00A08022 /* LCBShelfViewController.h */,
 				5296F2B71EFBAAFF00A08022 /* LCBShelfViewController.m */,
+				9CFAC41A1EFDCA68006964F2 /* LCBookScanViewController.h */,
+				9CFAC41B1EFDCA68006964F2 /* LCBookScanViewController.m */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -683,6 +688,7 @@
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,
+				9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
