@@ -29,9 +29,9 @@
     [self makeLihuxStyleOfView:self.containerView];
     //300为正方形扫描区域边长
 #if TARGET_OS_SIMULATOR
-    [self startScanWithSize:300];
-#else
     [self fetchBookInfoWithISBN:@"9787111453833"];
+#else
+    [self startScanWithSize:300];
 #endif
 }
 
@@ -106,9 +106,14 @@
 }
 
 - (void)fetchBookInfoWithISBN:(NSString *)ISBNString {
-    NSString *temp = [NSString stringWithFormat:@"https://api.douban.com/v2/book/isbn/%@", ISBNString];
-    NSURL *url = [NSURL URLWithString:temp];
-    [[self.urlSession dataTaskWithURL:url] resume];
+    LCBook *book = [self.manager bookForISBN:ISBNString];
+    if ([self.manager bookForISBN:ISBNString]) {
+        [self log:[NSString stringWithFormat:@"从本地数据库拿到了书籍信息：%@", book]];
+    } else {
+        NSString *temp = [NSString stringWithFormat:@"https://api.douban.com/v2/book/isbn/%@", ISBNString];
+        NSURL *url = [NSURL URLWithString:temp];
+        [[self.urlSession dataTaskWithURL:url] resume];
+    }
 }
 
 -(void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler {
@@ -129,6 +134,7 @@
         [self log:[NSString stringWithFormat:@"解析数据发生问题：%@", error]];
     } else {
         if ([jsonData isKindOfClass:[NSDictionary class]]) {
+            [self.manager inserNewBookFromJsonData:jsonData];
             NSDictionary *dic = (NSDictionary *)jsonData;
             NSMutableString *string = [NSMutableString string];
             for (NSString *key in dic.allKeys) {

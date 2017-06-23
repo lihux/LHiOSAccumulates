@@ -52,6 +52,13 @@
         book.translators = [self translatorsFromJsonData:dic[@"translator"]];
         book.detailImage = [self bookImageFromJsonData:dic[@"images"]];
         book.series = [self bookSeriesFromJsonData:dic[@"series"]];
+        if ([self.moc hasChanges]) {
+            NSError *error = nil;
+            [self.moc save:&error];
+            if (error) {
+                NSLog(@"存储CoreData数据失败：%@", error);
+            }
+        }
         return book;
     }
     return nil;
@@ -111,8 +118,6 @@
     }
     return nil;
 }
-
-
 
 - (LCBookImage *)bookImageFromJsonData:(id)jsonData {
     NSDictionary *dic = [self dicFromJsonData:jsonData];
