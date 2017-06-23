@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) NSPersistentContainer *persistentContainer;
 @property (nonatomic, strong) NSFetchedResultsController *fetchBookController;
+@property (nonatomic, strong) LCBookCreater *bookCreater;
 
 @end
 
@@ -36,7 +37,22 @@
 }
 
 - (BOOL)inserNewBookFromJsonData:(id)jsonData {
-    return [LCBookCreater createBookFromJsonData:jsonData managedObjectContext:self.persistentContainer.viewContext];
+    return [self.bookCreater createBookFromJsonData:jsonData];
+}
+
+- (LCBook *)bookForISBN:(NSString *)ISBN {
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"LCBook"];
+    fetchRequest.predicate = [NSPredicate predicateWithFormat:@"isbn13 = %@", ISBN];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]];
+    NSError *error = nil;
+    NSArray *result = [self.persistentContainer.viewContext executeFetchRequest:fetchRequest error:&error];
+    if (error) {
+        NSLog(@"读取图书:%@发生错误：%@", ISBN, error);
+    }
+    if (result.count > 0) {
+        return result[0];
+    }
+    return nil;
 }
 
 #pragma mark - lazy load
@@ -61,6 +77,14 @@
         NSAssert(!error, ([NSString stringWithFormat:@"从CoreData中加载我的书架书籍失败，错误信息：\n%@", error]), nil);
     }];
     return _persistentContainer;
+}
+
+- (LCBookCreater *)bookCreater {
+    if (_bookCreater) {
+        return _bookCreater;
+    }
+    _bookCreater = [[LCBookCreater alloc] initWithMOC:self.persistentContainer.viewContext];
+    return _bookCreater;
 }
 
 @end

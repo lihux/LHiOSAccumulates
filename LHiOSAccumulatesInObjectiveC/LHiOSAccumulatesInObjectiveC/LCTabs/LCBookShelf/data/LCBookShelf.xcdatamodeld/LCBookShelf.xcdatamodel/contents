@@ -24,7 +24,7 @@
         <relationship name="readingPlan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCBookReadingPlan" inverseName="book" inverseEntity="LCBookReadingPlan" syncable="YES"/>
         <relationship name="series" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCBookSeries" inverseName="books" inverseEntity="LCBookSeries" syncable="YES"/>
         <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBookTag" inverseName="books" inverseEntity="LCBookTag" syncable="YES"/>
-        <relationship name="translator" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBookTranslator" inverseName="books" inverseEntity="LCBookTranslator" syncable="YES"/>
+        <relationship name="translators" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBookTranslator" inverseName="books" inverseEntity="LCBookTranslator" syncable="YES"/>
     </entity>
     <entity name="LCBookAuthor" representedClassName="LCBookAuthor" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -63,21 +63,21 @@
     </entity>
     <entity name="LCBookTranslator" representedClassName="LCBookTranslator" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBook" inverseName="translator" inverseEntity="LCBook" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBook" inverseName="translators" inverseEntity="LCBook" syncable="YES"/>
     </entity>
     <entity name="LCShelf" representedClassName="LCShelf" syncable="YES" codeGenerationType="class">
         <attribute name="bookCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBook" inverseName="bookShelf" inverseEntity="LCBook" syncable="YES"/>
     </entity>
     <elements>
-        <element name="LCBook" positionX="-63" positionY="-18" width="128" height="405"/>
-        <element name="LCBookReadingPlan" positionX="-54" positionY="36" width="128" height="120"/>
-        <element name="LCShelf" positionX="-36" positionY="63" width="128" height="75"/>
-        <element name="LCBookDouBanRating" positionX="-54" positionY="54" width="128" height="120"/>
-        <element name="LCBookAuthor" positionX="-45" positionY="63" width="128" height="75"/>
-        <element name="LCBookTag" positionX="-36" positionY="72" width="128" height="105"/>
-        <element name="LCBookTranslator" positionX="-27" positionY="81" width="128" height="75"/>
-        <element name="LCBookImage" positionX="-18" positionY="90" width="128" height="105"/>
-        <element name="LCBookSeries" positionX="0" positionY="99" width="128" height="90"/>
+        <element name="LCBook" positionX="-1188" positionY="171" width="128" height="403"/>
+        <element name="LCBookReadingPlan" positionX="-693" positionY="522" width="128" height="120"/>
+        <element name="LCShelf" positionX="-767" positionY="170" width="128" height="73"/>
+        <element name="LCBookDouBanRating" positionX="-693" positionY="396" width="128" height="118"/>
+        <element name="LCBookAuthor" positionX="-848" positionY="72" width="128" height="73"/>
+        <element name="LCBookTag" positionX="-783" positionY="752" width="128" height="103"/>
+        <element name="LCBookTranslator" positionX="-864" positionY="864" width="128" height="73"/>
+        <element name="LCBookImage" positionX="-695" positionY="261" width="128" height="103"/>
+        <element name="LCBookSeries" positionX="-740" positionY="650" width="128" height="88"/>
     </elements>
 </model>

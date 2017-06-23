@@ -13,6 +13,8 @@
 
 @interface LCBookCreater : NSObject
 
-+ (LCBook *)createBookFromJsonData:(id)jsonData managedObjectContext:(NSManagedObjectContext *)context;
+- (instancetype)initWithMOC:(NSManagedObjectContext *)moc;
+
+- (LCBook *)createBookFromJsonData:(id)jsonData;
 
 @end
