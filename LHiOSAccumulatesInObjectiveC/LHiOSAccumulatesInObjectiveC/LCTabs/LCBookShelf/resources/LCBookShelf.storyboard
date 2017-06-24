@@ -371,8 +371,8 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fhb-68-1jC">
                                                         <rect key="frame" x="127.33333333333333" y="10" width="119.99999999999999" height="180"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="160" id="5Yo-pv-nvX"/>
-                                                            <constraint firstAttribute="width" constant="120" id="NMB-Dy-wYc"/>
+                                                            <constraint firstAttribute="height" constant="240" id="5Yo-pv-nvX"/>
+                                                            <constraint firstAttribute="width" constant="180" id="NMB-Dy-wYc"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-98-8r9">
@@ -472,7 +472,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="s3o-BX-nup" secondAttribute="trailing" id="Ftg-io-I8q"/>
-                            <constraint firstItem="s3o-BX-nup" firstAttribute="top" secondItem="aUY-zi-U36" secondAttribute="bottom" id="OAx-0A-UNe"/>
+                            <constraint firstItem="s3o-BX-nup" firstAttribute="top" secondItem="aUY-zi-U36" secondAttribute="bottom" constant="54" id="OAx-0A-UNe"/>
                             <constraint firstItem="2d7-zb-TTR" firstAttribute="top" secondItem="s3o-BX-nup" secondAttribute="bottom" id="YLI-AN-DVw"/>
                             <constraint firstItem="s3o-BX-nup" firstAttribute="leading" secondItem="BQP-mH-0dz" secondAttribute="leadingMargin" id="x0o-mC-Ld3"/>
                         </constraints>

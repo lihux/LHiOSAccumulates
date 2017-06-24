@@ -48,6 +48,10 @@ static NSString *const kDog = @"dog";
     return self.contentContainerView;
 }
 
+- (UIView *)lihuxStyleView {
+    return self.contentContainerView;
+}
+
 #pragma mark - test cases
 - (IBAction)testDefaultDelegateSession:(id)sender {
     [self log:@"下面开始测试使用default delegate的session进行简单的网络请求"];
