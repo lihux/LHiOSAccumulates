@@ -11,6 +11,7 @@
 #import "LCBookCoreDataManager.h"
 #import "LCBShelfTableViewCell.h"
 #import "LCBookScanViewController.h"
+#import "LCBookViewController.h"
 
 #import <CoreData/CoreData.h>
 
@@ -32,6 +33,11 @@
     self.fetchBookController = [self.manager fetchBookController];
     self.fetchBookController.delegate = self;
     [self.tableView reloadData];
+}
+
+#pragma mark - 子类继承设置
+- (UIView *)lihuxStyleView {
+    return self.containerView;
 }
 
 - (UIView *)logAnchorView {
@@ -196,6 +202,17 @@ didReceiveResponse:(NSURLResponse *)response
     [self log:@"controllerDidChangeContent forChangeType"];
     [self.tableView endUpdates];
 }
+
+#pragma mark -
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showBookDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        LCBook *book = [self.fetchBookController objectAtIndexPath:indexPath];
+        LCBookViewController *bookViewController = (LCBookViewController *)segue.destinationViewController;
+        bookViewController.book = book;
+    }
+}
+
 #pragma mark - lazy load
 - (NSURLSession *)urlSession {
     if (_urlSession) {

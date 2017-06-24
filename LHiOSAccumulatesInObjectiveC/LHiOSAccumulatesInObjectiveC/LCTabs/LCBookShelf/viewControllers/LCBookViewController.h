@@ -8,6 +8,10 @@
 
 #import "LCViewController.h"
 
+@class LCBook;
+
 @interface LCBookViewController : LCViewController
+
+@property (nonatomic, strong) LCBook *book;
 
 @end

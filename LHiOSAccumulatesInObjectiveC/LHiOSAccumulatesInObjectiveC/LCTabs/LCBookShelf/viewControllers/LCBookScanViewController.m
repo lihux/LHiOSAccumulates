@@ -44,6 +44,11 @@
 #endif
 }
 
+#pragma mark - 子类继承设置
+- (UIView *)lihuxStyleView {
+    return self.containerView;
+}
+
 #pragma mark -
 - (void)finishScanWithISBN:(NSString *)ISBN{
     if (self.completionBlock) {

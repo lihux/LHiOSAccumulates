@@ -8,9 +8,16 @@
 
 #import "LCBookViewController.h"
 
+#import "LCBookShelf+CoreDataModel.h"
+
 @interface LCBookViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *publisherLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *indroductionLabel;
 
 @end
 
@@ -18,21 +25,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self updateUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)updateUI {
+    LCBook *book = self.book;
+    if (book) {
+        self.title = book.title;
+        self.titleLabel.text = book.title;
+        self.authorLabel.text = [[book.authors anyObject] name];
+        self.publisherLabel.text = book.publisher;
+        self.priceLabel.text = book.price;
+        self.indroductionLabel.text = book.catalog;
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setBook:(LCBook *)book {
+    _book = book;
+    self.title = book.title;
 }
-*/
+
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton {
+    [super sectionHeaderView:sectionHeaderView tappedOnLeftButton:leftButton];
+}
+
+#pragma mark - 子类继承设置
+- (UIView *)lihuxStyleView {
+    return self.containerView;
+}
 
 @end
