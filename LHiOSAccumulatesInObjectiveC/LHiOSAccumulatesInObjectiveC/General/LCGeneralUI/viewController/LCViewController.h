@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "LCSectionHeaderView.h"
+
 static const NSInteger kLCSpecialViewTag = -9999;
 
-@interface LCViewController : UIViewController
+@interface LCViewController : UIViewController <LCSectionHeaderViewDelegate>
 
 /**
  让码农变得更懒散的便利方法：
@@ -99,5 +101,7 @@ static const NSInteger kLCSpecialViewTag = -9999;
  @return 返回一个加载出来的VC，or nil if failed
  */
 + (instancetype)loadViewControllerFromStoryboard:(NSString *)storyboardName;
+
+- (NSString *)rightItemText;
 
 @end

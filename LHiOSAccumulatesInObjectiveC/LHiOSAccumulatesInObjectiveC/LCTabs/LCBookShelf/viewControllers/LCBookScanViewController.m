@@ -15,7 +15,15 @@
 @property (nonatomic, copy) LCBookScanCompletionBlock completionBlock;
 @property(nonatomic, strong)AVCaptureSession *session;//输入输出的中间桥梁
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIView *scanLayerBackedView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *scanModelSegmentControl;
+@property (weak, nonatomic) IBOutlet UILabel *flyingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *flyingViewStartConstraints;
+@property (weak, nonatomic) IBOutlet UIImageView *shoppingImageView;
+
+
+@property (nonatomic, strong) NSMutableSet <NSString *> * results;
 
 @end
 
@@ -29,29 +37,56 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.results = [NSMutableSet set];
+    [self makeLihuxStyleOfView:self.containerView];
 #if TARGET_OS_SIMULATOR
-    [self finishScanWithResults:@[@"9787111453833"] error:nil];
+    [self finishScanWithResults:@[@"9787111453833"]];
 #else
-    [self startScanWithSize:300];
+    [self startScan];
 #endif
 }
 
-- (UIView *)logAnchorView {
-    return self.containerView;
-}
-
-- (IBAction)segmentControlValueChange:(UISegmentedControl *)sender {
-}
-
 #pragma mark -
-- (void)finishScanWithResults:(NSArray <NSString *> *)results error:(NSError *)error{
+- (void)finishScanWithResults:(NSArray <NSString *> *)results{
     if (self.completionBlock) {
-        self.completionBlock(results, error);
+        self.completionBlock(results);
     }
 }
 
+-(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
+}
+
+- (void)addISBN:(NSString *)ISBNString {
+    if (![self.results containsObject:ISBNString]) {
+        [self.results addObject:ISBNString];
+        NSString *count = [NSString stringWithFormat:@"%zd", self.results.count];
+        self.flyingLabel.text = count;
+        [NSLayoutConstraint deactivateConstraints:self.flyingViewStartConstraints];
+        [UIView animateWithDuration:0.8 animations:^{
+            [self.view layoutIfNeeded];
+            self.flyingLabel.alpha = 0.8;
+        } completion:^(BOOL finished) {
+            [NSLayoutConstraint activateConstraints:self.flyingViewStartConstraints];
+            [self.view layoutIfNeeded];
+            self.flyingLabel.alpha = 0;
+            self.countLabel.text = count;
+            [self.session startRunning];
+        }];
+    } else {
+        [self.session startRunning];
+    }
+}
+
+- (void)goBack {
+    if (self.results.count > 0) {
+        [self finishScanWithResults:[self.results allObjects]];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark -- 开始扫描
-- (void)startScanWithSize:(CGFloat)sizeValue {
+- (void)startScan {
     //获取摄像设备
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     //创建输入流
@@ -74,8 +109,8 @@
         AVCaptureVideoPreviewLayer *layer = [AVCaptureVideoPreviewLayer layerWithSession:_session];
         layer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         //设置为宽高为200的正方形区域相对于屏幕居中
-        layer.frame = CGRectMake((self.view.bounds.size.width - sizeValue) / 2.0, (self.view.bounds.size.height - sizeValue) / 2.0, sizeValue, sizeValue);
-        [self.view.layer insertSublayer:layer atIndex:0];
+        layer.frame = self.scanLayerBackedView.bounds;
+        [self.scanLayerBackedView.layer insertSublayer:layer atIndex:0];
         //开始捕获图像:
         [_session startRunning];
     }
@@ -93,12 +128,18 @@
         //输出扫描字符串:
         if (self.scanModelSegmentControl.selectedSegmentIndex == 0) {
             //移除扫描视图:
-            AVCaptureVideoPreviewLayer *layer = (AVCaptureVideoPreviewLayer *)[[self.view.layer sublayers] objectAtIndex:0];
-            [layer removeFromSuperlayer];
             return;
         }
-        [self.session startRunning];
+        [self addISBN:isbnString];
     }
+}
+
+#pragma mark - LCSectionHeaderViewDelegate
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton {
+}
+
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
+    [self cleanLog];
 }
 
 @end

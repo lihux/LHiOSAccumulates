@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GDz-Uf-psU">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GDz-Uf-psU">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,17 +23,17 @@
                         <viewControllerLayoutGuide type="bottom" id="F8B-cN-7pQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DhY-Dd-k9n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfZ-64-UJQ" userLabel="container View">
-                                <rect key="frame" x="12" y="20" width="351" height="575"/>
+                                <rect key="frame" x="12" y="20" width="296" height="476"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxu-oU-FZE" userLabel="content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="476"/>
                                         <subviews>
                                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3X-su-qkm" userLabel="m5">
-                                                <rect key="frame" x="150.5" y="262.5" width="50" height="50"/>
+                                                <rect key="frame" x="123" y="213" width="50" height="50"/>
                                                 <subviews>
                                                     <view hidden="YES" alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpI-u4-Kyh" userLabel="mask View">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -70,31 +70,31 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-co-1MX" userLabel="controller Container View">
-                                                <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="296" height="476"/>
                                                 <subviews>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-a8-kUA" userLabel="Container View0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="296" height="476"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <segue destination="cKI-M1-1vM" kind="embed" identifier="0" id="ZS1-oj-V2Q"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbh-rX-w2X" userLabel="Container View1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="296" height="476"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <segue destination="d7L-tp-P5T" kind="embed" identifier="1" id="AyG-gC-Xdn"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-zO-bEg" userLabel="Container View2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="296" height="476"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <segue destination="2EX-HO-XfD" kind="embed" identifier="2" id="mis-94-yxY"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gE3-r8-DWf" userLabel="Container View3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="575"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="296" height="476"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <segue destination="1xu-gT-IFz" kind="embed" identifier="3" id="miA-kZ-PLD"/>
@@ -172,7 +172,7 @@
                                 </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-mC-bHD" userLabel="m0" customClass="LCFlyingView">
-                                <rect key="frame" x="12" y="605" width="50" height="50"/>
+                                <rect key="frame" x="12" y="506" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-4V-z7A" userLabel="mask View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -209,7 +209,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmy-Uu-LVZ" customClass="LCLightBorderButton">
-                                <rect key="frame" x="12" y="605" width="50" height="50"/>
+                                <rect key="frame" x="12" y="506" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HYb-UI-Jth"/>
                                     <constraint firstAttribute="width" constant="50" id="c65-B6-SUS"/>
@@ -249,7 +249,7 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-te-2Nk" userLabel="m1" customClass="LCFlyingView">
-                                <rect key="frame" x="79" y="605" width="50" height="50"/>
+                                <rect key="frame" x="79" y="506" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yz-hS-SqR" userLabel="mask View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -286,7 +286,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIb-YJ-8P6" customClass="LCLightBorderButton">
-                                <rect key="frame" x="79" y="605" width="50" height="50"/>
+                                <rect key="frame" x="79" y="506" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Hw2-YD-q87"/>
                                     <constraint firstAttribute="height" constant="50" id="Nu6-qr-jz3"/>
@@ -323,7 +323,7 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNA-wE-lgF" userLabel="m2" customClass="LCFlyingView">
-                                <rect key="frame" x="150" y="605" width="50" height="50"/>
+                                <rect key="frame" x="95" y="506" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6go-I3-NIu" userLabel="mask View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -360,7 +360,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My6-Yg-bQR" customClass="LCLightBorderButton">
-                                <rect key="frame" x="150" y="605" width="50" height="50"/>
+                                <rect key="frame" x="95" y="506" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6Rs-0B-Idb"/>
                                     <constraint firstAttribute="height" constant="50" id="Lap-hQ-uwY"/>
@@ -397,7 +397,7 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-HP-ZfE" userLabel="m3" customClass="LCFlyingView">
-                                <rect key="frame" x="313" y="605" width="50" height="50"/>
+                                <rect key="frame" x="258" y="506" width="50" height="50"/>
                                 <subviews>
                                     <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q8-gC-sXO" userLabel="mask View">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -434,7 +434,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyM-08-wRd" customClass="LCLightBorderButton">
-                                <rect key="frame" x="313" y="605" width="50" height="50"/>
+                                <rect key="frame" x="258" y="506" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="EuS-gp-QtK"/>
                                     <constraint firstAttribute="height" constant="50" id="EyN-ck-P8a"/>

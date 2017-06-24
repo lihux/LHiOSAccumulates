@@ -48,19 +48,130 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YI-sf-0Mg">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BYI-w6-SPy">
-                                        <rect key="frame" x="119" y="599" width="137" height="29"/>
+                                    <segmentedControl opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BYI-w6-SPy">
+                                        <rect key="frame" x="119" y="609" width="137" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="137" id="8RW-Cg-4GA"/>
+                                            <constraint firstAttribute="height" constant="28" id="hKN-QO-GSF"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="扫描单本"/>
                                             <segment title="连续扫描"/>
                                         </segments>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </segmentedControl>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bbo-Ke-Jy4">
+                                        <rect key="frame" x="38" y="198.5" width="300" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="gI9-Q4-fcA"/>
+                                            <constraint firstAttribute="height" constant="250" id="ut3-KO-v42"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lh_shoppingCar" translatesAutoresizingMaskIntoConstraints="NO" id="aMh-Sn-Kcl">
+                                        <rect key="frame" x="167.5" y="565" width="40" height="34"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="5Si-AP-vOF"/>
+                                            <constraint firstAttribute="width" constant="60" id="NPK-pt-IZn"/>
+                                            <constraint firstAttribute="width" constant="40" id="OZj-eT-ZHr"/>
+                                            <constraint firstAttribute="height" constant="34" id="xvG-Ys-tz8"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="OZj-eT-ZHr"/>
+                                                <exclude reference="xvG-Ys-tz8"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <exclude reference="5Si-AP-vOF"/>
+                                                <exclude reference="NPK-pt-IZn"/>
+                                                <include reference="OZj-eT-ZHr"/>
+                                                <include reference="xvG-Ys-tz8"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.0" tag="-9999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkd-3j-yVh" userLabel="flyingLabel">
+                                        <rect key="frame" x="178" y="313" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="gO0-xP-qgs"/>
+                                            <constraint firstAttribute="height" constant="20" id="jKw-it-9Ic"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="10"/>
+                                        <color key="textColor" red="0.094117647060000004" green="0.50980392159999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" tag="-9999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DND-oS-CvQ">
+                                        <rect key="frame" x="200" y="557" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="461-Eb-Ua6"/>
+                                            <constraint firstAttribute="width" constant="20" id="4WR-Wf-D5H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="10"/>
+                                        <color key="textColor" red="0.094117647060000004" green="0.50980392159999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="BYI-w6-SPy" secondAttribute="bottom" constant="20" id="7uY-Dc-oJI"/>
+                                    <constraint firstItem="tkd-3j-yVh" firstAttribute="centerY" secondItem="Bbo-Ke-Jy4" secondAttribute="centerY" id="0pb-Qh-5rQ"/>
+                                    <constraint firstItem="aMh-Sn-Kcl" firstAttribute="centerX" secondItem="7YI-sf-0Mg" secondAttribute="centerX" id="4hZ-Ez-Cy3"/>
+                                    <constraint firstItem="aMh-Sn-Kcl" firstAttribute="centerY" secondItem="7YI-sf-0Mg" secondAttribute="centerY" id="7xR-m1-e9m"/>
+                                    <constraint firstItem="Bbo-Ke-Jy4" firstAttribute="centerY" secondItem="7YI-sf-0Mg" secondAttribute="centerY" id="8LN-gL-9qs"/>
+                                    <constraint firstItem="DND-oS-CvQ" firstAttribute="leading" secondItem="aMh-Sn-Kcl" secondAttribute="trailing" constant="-7.5" id="9Ah-yX-0Qf"/>
+                                    <constraint firstItem="Bbo-Ke-Jy4" firstAttribute="centerX" secondItem="7YI-sf-0Mg" secondAttribute="centerX" id="AJB-uk-qvL"/>
+                                    <constraint firstAttribute="trailing" secondItem="aMh-Sn-Kcl" secondAttribute="trailing" constant="20" id="FoT-zT-5tM"/>
+                                    <constraint firstItem="aMh-Sn-Kcl" firstAttribute="centerX" secondItem="7YI-sf-0Mg" secondAttribute="centerX" id="Iu4-Ij-7MV"/>
+                                    <constraint firstItem="tkd-3j-yVh" firstAttribute="centerY" secondItem="DND-oS-CvQ" secondAttribute="centerY" priority="800" id="K2o-hd-PWC"/>
+                                    <constraint firstItem="aMh-Sn-Kcl" firstAttribute="top" secondItem="DND-oS-CvQ" secondAttribute="bottom" constant="-12" id="NOX-ws-fqS"/>
                                     <constraint firstItem="BYI-w6-SPy" firstAttribute="centerX" secondItem="7YI-sf-0Mg" secondAttribute="centerX" id="QSc-u9-JjQ"/>
+                                    <constraint firstItem="tkd-3j-yVh" firstAttribute="centerX" secondItem="Bbo-Ke-Jy4" secondAttribute="centerX" id="RZw-Rx-ODh"/>
+                                    <constraint firstItem="tkd-3j-yVh" firstAttribute="centerX" secondItem="DND-oS-CvQ" secondAttribute="centerX" priority="800" id="lFW-Cg-oi4"/>
+                                    <constraint firstItem="BYI-w6-SPy" firstAttribute="top" secondItem="aMh-Sn-Kcl" secondAttribute="bottom" constant="10" id="tIA-3q-RZc"/>
+                                    <constraint firstItem="BYI-w6-SPy" firstAttribute="top" secondItem="aMh-Sn-Kcl" secondAttribute="bottom" constant="10" id="ws5-pu-8oJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="BYI-w6-SPy" secondAttribute="bottom" constant="10" id="xD5-MR-Vgq"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4hZ-Ez-Cy3"/>
+                                        <exclude reference="7xR-m1-e9m"/>
+                                        <exclude reference="FoT-zT-5tM"/>
+                                        <exclude reference="ws5-pu-8oJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7xR-m1-e9m"/>
+                                        <include reference="FoT-zT-5tM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="4hZ-Ez-Cy3"/>
+                                        <include reference="ws5-pu-8oJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Iu4-Ij-7MV"/>
+                                        <exclude reference="tIA-3q-RZc"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,12 +184,18 @@
                     </view>
                     <connections>
                         <outlet property="containerView" destination="7YI-sf-0Mg" id="dgE-t5-Tnu"/>
+                        <outlet property="countLabel" destination="DND-oS-CvQ" id="3oC-5a-480"/>
+                        <outlet property="flyingLabel" destination="tkd-3j-yVh" id="AaT-ei-4ug"/>
+                        <outlet property="scanLayerBackedView" destination="Bbo-Ke-Jy4" id="ugz-VG-QHv"/>
                         <outlet property="scanModelSegmentControl" destination="BYI-w6-SPy" id="wkd-pA-Jmb"/>
+                        <outlet property="shoppingImageView" destination="aMh-Sn-Kcl" id="LeJ-Re-P2o"/>
+                        <outletCollection property="flyingViewStartConstraints" destination="0pb-Qh-5rQ" id="vyc-yR-rtr"/>
+                        <outletCollection property="flyingViewStartConstraints" destination="RZw-Rx-ODh" id="uPo-1T-WOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOd-3q-pff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="-378"/>
+            <point key="canvasLocation" x="1915" y="-558"/>
         </scene>
         <!--我的书架-->
         <scene sceneID="KJu-g0-BgI">
@@ -120,7 +237,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="15" id="qhr-Ts-2YH"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -295,4 +412,7 @@
             <point key="canvasLocation" x="3846" y="259"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lh_shoppingCar" width="40" height="34"/>
+    </resources>
 </document>

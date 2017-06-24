@@ -8,7 +8,7 @@
 
 #import "LCViewController.h"
 
-typedef void(^LCBookScanCompletionBlock)(NSArray <NSString *> *result, NSError *error);
+typedef void(^LCBookScanCompletionBlock)(NSArray <NSString *> *result);
 
 @interface LCBookScanViewController : LCViewController
 

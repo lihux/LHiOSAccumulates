@@ -10,6 +10,7 @@
 
 #import "LCBookCoreDataManager.h"
 #import "LCBShelfTableViewCell.h"
+#import "LCBookScanViewController.h"
 
 @interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate, NSURLSessionDataDelegate, LCBookCoreDataManagerDelegate>
 
@@ -30,14 +31,13 @@
     [self.tableView reloadData];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-
--(UIView *)logAnchorView {
+- (UIView *)logAnchorView {
     return self.containerView;
 }
 
+- (NSString *)rightItemText {
+    return @"录入图书";
+}
 #pragma mark - UITableViewDelegate
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -106,10 +106,20 @@ didReceiveResponse:(NSURLResponse *)response
     completionHandler(NSURLSessionResponseAllow);
 }
 
+#pragma mark - LCSectionHeaderViewDelegate
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
+    LCBookScanViewController *scanViewController = [LCBookScanViewController scanWithCompletionBlock:^(NSArray<NSString *> *result) {
+        [self log:[NSString stringWithFormat:@"扫描获取的图书ISBN码为：%@", result]];
+    }];
+    [self.navigationController pushViewController:scanViewController animated:YES];
+    [self cleanLog];
+}
+
 #pragma mark - LCBookCoreDataManagerDelegate
 -(void)dataHasChanged {
     [self.tableView reloadData];
 }
+
 #pragma mark - lazy load
 - (NSURLSession *)urlSession {
     if (_urlSession) {

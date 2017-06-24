@@ -11,9 +11,8 @@
 #import "UIColor+helper.h"
 #import "UIView+LHAutoLayout.h"
 #import "UIColor+helper.h"
-#import "LCSectionHeaderView.h"
 
-@interface LCViewController () <LCSectionHeaderViewDelegate>
+@interface LCViewController ()
 
 @property (nonatomic, strong) UITextView *logTextView;
 @property (nonatomic, strong) UIView *logBorderLineView;
@@ -26,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithHex:0x3b955e];
-    NSString *rightText = [self logAnchorView] ? @"清理日志" : @"";
+    NSString *rightText = [self rightItemText];
     LCSectionHeaderView *headerView = [LCSectionHeaderView sectionHeaderViewWithDelegate:self title:self.title leftText:@"返回" rightText:rightText];
     [self.view addSubview:headerView withLayoutInfo:LHLayoutInfoMake(0, 0, LHLayoutNone, 0, LHLayoutNone, 44)];
     [self makeLihuxStyleOfView:[self logAnchorView]];
@@ -53,15 +52,19 @@
 }
 
 - (void)log:(NSString *)log {
-    if ([NSThread isMainThread]) {
-        [self appendLogTextFieldWith:log];
-    } else {
-        __weak typeof(self) weakSelf = self;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            __strong typeof(weakSelf) strongSelf = weakSelf;
-            [strongSelf appendLogTextFieldWith:log];
-        });
+    if ([self logAnchorView]) {
+        if ([NSThread isMainThread]) {
+            [self appendLogTextFieldWith:log];
+        } else {
+            __weak typeof(self) weakSelf = self;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                __strong typeof(weakSelf) strongSelf = weakSelf;
+                [strongSelf appendLogTextFieldWith:log];
+            });
+        }
+        return;
     }
+    NSLog(@"%@", log);
 }
 
 - (void)appendLogTextFieldWith:(NSString *)log {
@@ -101,6 +104,10 @@
 
 - (BOOL)isShowLogReverse {
     return NO;
+}
+
+- (NSString *)rightItemText {
+    return [self logAnchorView] ? @"清理日志" : @"";
 }
 
 #pragma mark - 高蛋白
