@@ -11,6 +11,7 @@
 #import "UIColor+helper.h"
 #import "UIView+LHAutoLayout.h"
 #import "UIColor+helper.h"
+#import "LCLihuxHelper.h"
 
 @interface LCViewController ()
 

@@ -64,6 +64,7 @@
 		9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */; };
 		9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */; };
 		9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAC41B1EFDCA68006964F2 /* LCBookScanViewController.m */; };
+		9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAC4621EFE8D55006964F2 /* LCBookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,8 @@
 		9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCSectionHeaderView.xib; sourceTree = "<group>"; };
 		9CFAC41A1EFDCA68006964F2 /* LCBookScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookScanViewController.h; sourceTree = "<group>"; };
 		9CFAC41B1EFDCA68006964F2 /* LCBookScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookScanViewController.m; sourceTree = "<group>"; };
+		9CFAC4611EFE8D55006964F2 /* LCBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookViewController.h; sourceTree = "<group>"; };
+		9CFAC4621EFE8D55006964F2 /* LCBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +312,8 @@
 				5296F2B71EFBAAFF00A08022 /* LCBShelfViewController.m */,
 				9CFAC41A1EFDCA68006964F2 /* LCBookScanViewController.h */,
 				9CFAC41B1EFDCA68006964F2 /* LCBookScanViewController.m */,
+				9CFAC4611EFE8D55006964F2 /* LCBookViewController.h */,
+				9CFAC4621EFE8D55006964F2 /* LCBookViewController.m */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -692,6 +697,7 @@
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
+				9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
