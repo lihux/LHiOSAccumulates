@@ -33,7 +33,6 @@
     self.fetchBookController = [self.manager fetchBookController];
     self.fetchBookController.delegate = self;
     [self.tableView reloadData];
-    
 }
 
 - (UIView *)logAnchorView {
@@ -43,8 +42,8 @@
 - (NSString *)rightItemText {
     return @"录入图书";
 }
-#pragma mark - UITableViewDelegate
-#pragma mark - UITableViewDataSource
+
+#pragma mark - UITableViewDelegate && UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [[self.fetchBookController sections] count];
 }
@@ -120,8 +119,7 @@
     }
 }
 
-- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
-didCompleteWithError:(nullable NSError *)error {
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)error {
     [self log:[NSString stringWithFormat:@"NSURLSessionTaskDelegate-didCompleteWithError\n%@%@%@", session, task, error]];
 }
 #pragma mark - NSURLSessionDataDelegate
