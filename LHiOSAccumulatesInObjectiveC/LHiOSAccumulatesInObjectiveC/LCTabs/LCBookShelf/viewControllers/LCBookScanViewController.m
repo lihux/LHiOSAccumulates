@@ -58,6 +58,12 @@
 }
 
 - (void)addISBN:(NSString *)ISBNString {
+    if (self.scanModelSegmentControl.selectedSegmentIndex == 0) {
+        [self.results removeAllObjects];
+        [self.results addObject:ISBNString];
+        [self goBack];
+        return;
+    }
     if (![self.results containsObject:ISBNString]) {
         [self.results addObject:ISBNString];
         NSString *count = [NSString stringWithFormat:@"%zd", self.results.count];
@@ -83,6 +89,16 @@
         [self finishScanWithResults:[self.results allObjects]];
     }
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)segmentControllerValueChanged:(UISegmentedControl *)sender {
+    BOOL hidden = sender.selectedSegmentIndex == 0;
+    self.shoppingImageView.hidden = hidden;
+    self.countLabel.hidden = hidden;
+    self.flyingLabel.hidden = hidden;
+    NSInteger count = self.results.count;
+    self.countLabel.text = [NSString stringWithFormat:@"%zd", count];
+    self.flyingLabel.text = [NSString stringWithFormat:@"%zd", count];
 }
 
 #pragma mark -- 开始扫描
@@ -125,11 +141,6 @@
         AVMetadataMachineReadableCodeObject *metaDataObject = [metadataObjects objectAtIndex:0];
         NSString *isbnString = metaDataObject.stringValue;
         [self log:[NSString stringWithFormat:@"扫描成功，条形码为：%@", isbnString]];
-        //输出扫描字符串:
-        if (self.scanModelSegmentControl.selectedSegmentIndex == 0) {
-            //移除扫描视图:
-            return;
-        }
         [self addISBN:isbnString];
     }
 }
