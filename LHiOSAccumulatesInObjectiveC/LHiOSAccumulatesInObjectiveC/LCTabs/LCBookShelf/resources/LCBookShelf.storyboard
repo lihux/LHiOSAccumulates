@@ -371,7 +371,7 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fhb-68-1jC">
                                                         <rect key="frame" x="127.33333333333333" y="10" width="119.99999999999999" height="180"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="180" id="5Yo-pv-nvX"/>
+                                                            <constraint firstAttribute="height" constant="160" id="5Yo-pv-nvX"/>
                                                             <constraint firstAttribute="width" constant="120" id="NMB-Dy-wYc"/>
                                                         </constraints>
                                                     </imageView>
@@ -479,8 +479,9 @@
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="x9L-mj-3j2" id="jo4-Ne-bzB"/>
+                        <outlet property="bookImageView" destination="fhb-68-1jC" id="FEp-Ca-IZT"/>
                         <outlet property="containerView" destination="s3o-BX-nup" id="QCQ-G3-Egs"/>
-                        <outlet property="indroductionLabel" destination="qsa-Xj-HKe" id="YxH-X9-zKk"/>
+                        <outlet property="introductionLabel" destination="qsa-Xj-HKe" id="ocn-Cp-umf"/>
                         <outlet property="priceLabel" destination="sfU-w8-Zr7" id="WNI-un-a3F"/>
                         <outlet property="publisherLabel" destination="vcO-Lx-tS0" id="109-Dh-YgW"/>
                         <outlet property="titleLabel" destination="f2U-98-8r9" id="wWd-dJ-XqR"/>

@@ -63,6 +63,8 @@
 		9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */; };
 		9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */; };
 		9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */; };
+		9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */; };
+		9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */; };
 		9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAC41B1EFDCA68006964F2 /* LCBookScanViewController.m */; };
 		9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFAC4621EFE8D55006964F2 /* LCBookViewController.m */; };
 /* End PBXBuildFile section */
@@ -179,6 +181,10 @@
 		9C9124331C4FA06E007AB00D /* LCSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSectionHeaderView.h; sourceTree = "<group>"; };
 		9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSectionHeaderView.m; sourceTree = "<group>"; };
 		9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCSectionHeaderView.xib; sourceTree = "<group>"; };
+		9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCURL.h"; sourceTree = "<group>"; };
+		9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCURL.m"; sourceTree = "<group>"; };
+		9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCImageCacheManager.h; sourceTree = "<group>"; };
+		9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCImageCacheManager.m; sourceTree = "<group>"; };
 		9CFAC41A1EFDCA68006964F2 /* LCBookScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookScanViewController.h; sourceTree = "<group>"; };
 		9CFAC41B1EFDCA68006964F2 /* LCBookScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookScanViewController.m; sourceTree = "<group>"; };
 		9CFAC4611EFE8D55006964F2 /* LCBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookViewController.h; sourceTree = "<group>"; };
@@ -400,6 +406,10 @@
 				9C0365681C4CF9F900E04D7B /* UIImage+Color.m */,
 				5224634C1EFBDDBF00E90EB6 /* LCLihuxHelper.h */,
 				5224634D1EFBDDBF00E90EB6 /* LCLihuxHelper.m */,
+				9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */,
+				9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */,
+				9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */,
+				9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */,
 			);
 			path = LHHelpers;
 			sourceTree = "<group>";
@@ -689,6 +699,7 @@
 				5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */,
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
+				9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */,
 				52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */,
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
@@ -697,6 +708,7 @@
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
+				9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */,
 				9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
 			);

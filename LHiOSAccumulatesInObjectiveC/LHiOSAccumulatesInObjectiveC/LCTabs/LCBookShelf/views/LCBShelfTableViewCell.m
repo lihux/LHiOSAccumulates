@@ -10,6 +10,7 @@
 
 #import "LCLihuxHelper.h"
 #import "LCBookShelf+CoreDataModel.h"
+#import "UIImageView+LCURL.h"
 
 @interface LCBShelfTableViewCell ()
 
@@ -35,16 +36,7 @@
     self.authorLabel.text = [(LCBookAuthor *)[book.authors anyObject] name];
     self.publisherLabel.text = book.publisher;
     self.priceLabel.text = book.price;
-    __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:book.image]];
-        if (weakSelf) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                __strong typeof(self) strongSelf = weakSelf;
-                [strongSelf.bookImageView setImage:[UIImage imageWithData:imageData]];
-            });
-        }
-    });
+    [self.bookImageView lc_setImageWithURLString:book.image];
 }
 
 @end

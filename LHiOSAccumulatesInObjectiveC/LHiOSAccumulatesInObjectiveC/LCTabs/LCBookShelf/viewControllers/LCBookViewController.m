@@ -9,6 +9,7 @@
 #import "LCBookViewController.h"
 
 #import "LCBookShelf+CoreDataModel.h"
+#import "UIImageView+LCURL.h"
 
 @interface LCBookViewController ()
 
@@ -17,7 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *publisherLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *indroductionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *introductionLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *bookImageView;
 
 @end
 
@@ -36,7 +38,8 @@
         self.authorLabel.text = [[book.authors anyObject] name];
         self.publisherLabel.text = book.publisher;
         self.priceLabel.text = book.price;
-        self.indroductionLabel.text = book.catalog;
+        self.introductionLabel.text = book.catalog;
+        [self.bookImageView lc_setImageWithURLString:book.detailImage.large];
     }
 }
 
