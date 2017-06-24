@@ -108,8 +108,8 @@ didReceiveResponse:(NSURLResponse *)response
 
 #pragma mark - LCSectionHeaderViewDelegate
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
-    LCBookScanViewController *scanViewController = [LCBookScanViewController scanWithCompletionBlock:^(NSArray<NSString *> *result) {
-        [self log:[NSString stringWithFormat:@"扫描获取的图书ISBN码为：%@", result]];
+    LCBookScanViewController *scanViewController = [LCBookScanViewController scanWithCompletionBlock:^(NSString *ISBN) {
+        [self log:[NSString stringWithFormat:@"扫描获取的图书ISBN码为：%@", ISBN]];
     }];
     [self.navigationController pushViewController:scanViewController animated:YES];
     [self cleanLog];

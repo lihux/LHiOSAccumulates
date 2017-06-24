@@ -40,16 +40,16 @@
     self.results = [NSMutableSet set];
     [self makeLihuxStyleOfView:self.containerView];
 #if TARGET_OS_SIMULATOR
-    [self finishScanWithResults:@[@"9787111453833"]];
+    [self finishScanWithISBN:@"9787111453833"];
 #else
     [self startScan];
 #endif
 }
 
 #pragma mark -
-- (void)finishScanWithResults:(NSArray <NSString *> *)results{
+- (void)finishScanWithISBN:(NSString *)ISBN{
     if (self.completionBlock) {
-        self.completionBlock(results);
+        self.completionBlock(ISBN);
     }
 }
 
@@ -61,10 +61,12 @@
     if (self.scanModelSegmentControl.selectedSegmentIndex == 0) {
         [self.results removeAllObjects];
         [self.results addObject:ISBNString];
+        [self finishScanWithISBN:ISBNString];
         [self goBack];
         return;
     }
     if (![self.results containsObject:ISBNString]) {
+        [self finishScanWithISBN:ISBNString];
         [self.results addObject:ISBNString];
         NSString *count = [NSString stringWithFormat:@"%zd", self.results.count];
         self.flyingLabel.text = count;
@@ -85,9 +87,6 @@
 }
 
 - (void)goBack {
-    if (self.results.count > 0) {
-        [self finishScanWithResults:[self.results allObjects]];
-    }
     [self.navigationController popViewControllerAnimated:YES];
 }
 
