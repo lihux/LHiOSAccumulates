@@ -26,30 +26,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithHex:0x3b955e];
+    [LCLihuxHelper makeLihuxStyleOfView:[self lihuxStyleView]];
     NSString *rightText = [self rightItemText];
     LCSectionHeaderView *headerView = [LCSectionHeaderView sectionHeaderViewWithDelegate:self title:self.title leftText:@"返回" rightText:rightText];
     [self.view addSubview:headerView withLayoutInfo:LHLayoutInfoMake(0, 0, LHLayoutNone, 0, LHLayoutNone, 44)];
-    [self makeLihuxStyleOfView:[self logAnchorView]];
-}
-
-- (void)makeLihuxStyleOfView:(UIView *)view {
-    if (view && view.tag != -9999) {
-        view.backgroundColor = [UIColor clearColor];
-        UIColor *textColor = [UIColor whiteColor];
-        if ([view isKindOfClass:[UILabel class]]) {
-            [(UILabel *)view setTextColor:textColor];
-        } else if ([view isKindOfClass:[UIButton class]]) {
-            [(UIButton *)view setTitleColor:textColor forState:UIControlStateNormal];
-        } else if ([view isKindOfClass:[UITextField class]]) {
-            [(UITextField *)view setTextColor:textColor];
-        } else if ([view isKindOfClass:[UITextView class]]) {
-            [(UITextView *)view setTextColor:textColor];
-        }
-    }
-    
-    for (UIView *subView in view.subviews) {
-        [self makeLihuxStyleOfView:subView];
-    }
 }
 
 - (void)log:(NSString *)log {
@@ -92,6 +72,10 @@
 
 #pragma mark - 子类按需继承
 - (UIView *)logAnchorView {
+    return nil;
+}
+
+- (UIView *)lihuxStyleView {
     return nil;
 }
 
@@ -183,7 +167,7 @@
     if (!_logTextView) {
         _logTextView = [[UITextView alloc] init];
         _logTextView.font = [UIFont systemFontOfSize:14];
-        [self makeLihuxStyleOfView:_logTextView];
+        [LCLihuxHelper makeLihuxStyleOfView:_logTextView];
     }
     return _logTextView;
 }

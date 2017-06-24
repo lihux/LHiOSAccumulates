@@ -10,6 +10,8 @@
 
 #import <UIKit/UIKit.h>
 
+static const NSInteger kLCNonLihuxStyleViewTag = -9999;
+
 @interface LCLihuxHelper : NSObject
 
 + (void)makeLihuxStyleOfView:(UIView *)view;

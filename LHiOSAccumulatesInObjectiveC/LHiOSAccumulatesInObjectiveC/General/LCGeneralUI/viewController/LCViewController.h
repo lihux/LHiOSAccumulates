@@ -10,18 +10,16 @@
 
 #import "LCSectionHeaderView.h"
 
-static const NSInteger kLCSpecialViewTag = -9999;
-
 @interface LCViewController : UIViewController <LCSectionHeaderViewDelegate>
 
 /**
  让码农变得更懒散的便利方法：
  让页面保持和APP统一的风格，具体而言就是：对view及其所有的subViews（递归到所有叶节点），设置其背景色透明，（如果控件含有文字）设置字体颜色为白色
  
- NOTICE:如果view(及其subViews)中有你不想被修改为默认风格的view，请将其tag设置为`kLCSpecialViewTag`，这样这个view及其所有的子view都不会被修改背景色和字体颜色
+ NOTICE:如果view(及其subViews)中有你不想被修改为默认风格的view，请将其tag设置为`kLCNonLihuxStyleViewTag（-9999）`，这样这个view及其所有的子view都不会被修改背景色和字体颜色
  @param view 需要设置lihuxStyle的子view的父view
  */
-- (void)makeLihuxStyleOfView:(UIView *)view;
+- (UIView *)lihuxStyleView;
 
 /**
  如果子类想添加一个通用的显示log输出的textView，需要重写此方法，返回一个作为锚点的view供textView布局使用。

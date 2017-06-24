@@ -13,7 +13,7 @@
 @implementation LCLihuxHelper
 
 + (void)makeLihuxStyleOfView:(UIView *)view {
-    if (view && view.tag != -9999) {
+    if (view && view.tag != kLCNonLihuxStyleViewTag) {
         view.backgroundColor = [UIColor clearColor];
         UIColor *textColor = [UIColor whiteColor];
         if ([view isKindOfClass:[UILabel class]]) {

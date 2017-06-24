@@ -28,7 +28,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self makeLihuxStyleOfView:self.containerView];
     self.manager = [[LCBookCoreDataManager alloc] init];
     self.fetchBookController = [self.manager fetchBookController];
     self.fetchBookController.delegate = self;

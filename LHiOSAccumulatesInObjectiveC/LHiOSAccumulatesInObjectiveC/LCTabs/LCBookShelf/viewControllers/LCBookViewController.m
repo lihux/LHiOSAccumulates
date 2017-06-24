@@ -18,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [super makeLihuxStyleOfView:self.containerView];
 }
 
 - (void)didReceiveMemoryWarning {

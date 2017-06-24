@@ -37,7 +37,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.results = [NSMutableSet set];
-    [self makeLihuxStyleOfView:self.containerView];
 #if TARGET_OS_SIMULATOR
     [self finishScanWithISBN:@"9787111453833"];
 #else
