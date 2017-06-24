@@ -21,6 +21,7 @@
 
 @property (nonatomic, weak) id<LCBookCoreDataManagerDelegate> delegate;
 
+
 - (NSFetchedResultsController *)fetchBookController;
 - (NSInteger)numberOfBooksInSection:(NSInteger)section;
 - (LCBook *)bookForRowAtIndexPath:(NSIndexPath *)indexPath;

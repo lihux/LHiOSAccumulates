@@ -22,7 +22,6 @@
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *flyingViewStartConstraints;
 @property (weak, nonatomic) IBOutlet UIImageView *shoppingImageView;
 
-
 @property (nonatomic, strong) NSMutableSet <NSString *> * results;
 
 @end

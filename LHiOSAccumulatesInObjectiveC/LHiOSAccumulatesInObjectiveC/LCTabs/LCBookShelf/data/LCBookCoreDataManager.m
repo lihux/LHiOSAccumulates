@@ -15,7 +15,6 @@
 @interface LCBookCoreDataManager () <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSPersistentContainer *persistentContainer;
-@property (nonatomic, strong) NSFetchedResultsController *fetchBookController;
 @property (nonatomic, strong) LCBookCreater *bookCreater;
 
 @end
@@ -64,22 +63,29 @@
     }
 }
 
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(nullable NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(nullable NSIndexPath *)newIndexPath {
+    
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+    
+}
+
+
+
 #pragma mark - lazy load
 - (NSFetchedResultsController *)fetchBookController {
-    if (_fetchBookController) {
-        return _fetchBookController;
-    }
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"LCBook"];
     fetchRequest.fetchBatchSize = 20;
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:NO];
     [fetchRequest setSortDescriptors:@[sortDescriptor]];
-    _fetchBookController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.persistentContainer.viewContext sectionNameKeyPath:nil cacheName:@"LCBookCoreDataManager"];
+    NSFetchedResultsController *fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.persistentContainer.viewContext sectionNameKeyPath:nil cacheName:@"LCBookCoreDataManager"];
     NSError *error;
-    [_fetchBookController performFetch:&error];
+    [fetchedResultsController performFetch:&error];
     if (error) {
         NSLog(@"从数据库获取失败：%@", error);
     }
-    return _fetchBookController;
+    return fetchedResultsController;
 }
 
 - (NSPersistentContainer *)persistentContainer {

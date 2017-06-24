@@ -12,12 +12,15 @@
 #import "LCBShelfTableViewCell.h"
 #import "LCBookScanViewController.h"
 
-@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate, NSURLSessionDataDelegate, LCBookCoreDataManagerDelegate>
+#import <CoreData/CoreData.h>
+
+@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate, NSURLSessionDataDelegate, NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) LCBookCoreDataManager *manager;
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (nonatomic, strong) NSURLSession *urlSession;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSFetchedResultsController *fetchBookController;
 
 @end
 
@@ -27,7 +30,8 @@
     [super viewDidLoad];
     [self makeLihuxStyleOfView:self.containerView];
     self.manager = [[LCBookCoreDataManager alloc] init];
-    self.manager.delegate = self;
+    self.fetchBookController = [self.manager fetchBookController];
+    self.fetchBookController.delegate = self;
     [self.tableView reloadData];
 }
 
@@ -40,14 +44,35 @@
 }
 #pragma mark - UITableViewDelegate
 #pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [[self.fetchBookController sections] count];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.manager numberOfBooksInSection:section];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchBookController sections][section];
+    return [sectionInfo numberOfObjects];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LCBShelfTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LCBShelfTableViewCell class])];
     cell.book = [self.manager bookForRowAtIndexPath:indexPath];
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSManagedObjectContext *context = [self.fetchBookController managedObjectContext];
+        [context deleteObject:[self.fetchBookController objectAtIndexPath:indexPath]];
+        NSError *error = nil;
+        if (![context save:&error]) {
+            NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+            abort();
+        }
+    }
 }
 
 - (void)fetchBookInfoWithISBN:(NSString *)ISBNString {
@@ -110,16 +135,69 @@ didReceiveResponse:(NSURLResponse *)response
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
     LCBookScanViewController *scanViewController = [LCBookScanViewController scanWithCompletionBlock:^(NSString *ISBN) {
         [self log:[NSString stringWithFormat:@"扫描获取的图书ISBN码为：%@", ISBN]];
+        [self fetchBookInfoWithISBN:ISBN];
     }];
     [self.navigationController pushViewController:scanViewController animated:YES];
     [self cleanLog];
 }
 
 #pragma mark - LCBookCoreDataManagerDelegate
--(void)dataHasChanged {
-    [self.tableView reloadData];
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    [self log:@"controllerWillChangeContent"];
+    [self.tableView beginUpdates];
 }
 
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
+           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+    [self log:@"didChangeSection forChangeType"];
+    switch(type) {
+        case NSFetchedResultsChangeInsert:
+            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        default:
+            return;
+    }
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
+       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
+      newIndexPath:(NSIndexPath *)newIndexPath {
+    [self log:@"didChangeObject forChangeType"];
+    UITableView *tableView = self.tableView;
+    
+    switch(type) {
+        case NSFetchedResultsChangeInsert:
+            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeUpdate: {
+            LCBShelfTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            cell.book = anObject;
+        }
+            break;
+            
+        case NSFetchedResultsChangeMove: {
+            LCBShelfTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            cell.book = anObject;
+            [tableView moveRowAtIndexPath:indexPath toIndexPath:newIndexPath];
+        }
+            break;
+    }
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    [self log:@"controllerDidChangeContent forChangeType"];
+    [self.tableView endUpdates];
+}
 #pragma mark - lazy load
 - (NSURLSession *)urlSession {
     if (_urlSession) {
