@@ -146,6 +146,7 @@
 
 #pragma mark - LCSectionHeaderViewDelegate
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton {
+    [self goBack];
 }
 
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
