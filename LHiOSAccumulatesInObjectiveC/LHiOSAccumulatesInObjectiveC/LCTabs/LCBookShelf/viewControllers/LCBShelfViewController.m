@@ -33,6 +33,7 @@
     self.fetchBookController = [self.manager fetchBookController];
     self.fetchBookController.delegate = self;
     [self.tableView reloadData];
+    
 }
 
 - (UIView *)logAnchorView {
