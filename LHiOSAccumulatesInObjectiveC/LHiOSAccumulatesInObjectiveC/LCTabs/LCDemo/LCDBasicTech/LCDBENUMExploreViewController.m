@@ -70,12 +70,6 @@ typedef NSUInteger II;
 //OS_ENUM 同DISPATCH_ENUM
 DISPATCH_ENUM(JJ, NSUInteger, JJ1, JJ2);
 
-@interface LCDBENUMExploreViewController ()
-
-@property (weak, nonatomic) IBOutlet UIView *contentView;
-
-@end
-
 @implementation LCDBENUMExploreViewController
 
 - (void)viewDidLoad {
@@ -96,11 +90,6 @@ DISPATCH_ENUM(JJ, NSUInteger, JJ1, JJ2);
     II i = II1;//enum + typedef
     JJ_t j = JJ1;//DISPATCH_ENUM
 #pragma clang diagnostic pop
-}
-
-#pragma mrk - Debug
-- (UIView *)logAnchorView {
-    return self.contentView;
 }
 
 @end

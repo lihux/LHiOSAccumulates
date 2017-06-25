@@ -13,7 +13,6 @@
 
 @property (nonatomic, strong) NSMutableString *outputString;
 @property (weak, nonatomic) IBOutlet UIButton *trigglerButton;
-@property (weak, nonatomic) IBOutlet UIView *containerView;
 
 @end
 
@@ -32,11 +31,6 @@
     [button setTitle:[NSString stringWithFormat:@"点击触发dispatch_apply(%zd)次", tag + 1] forState:UIControlStateNormal];
 }
 
-#pragma mark - override
-- (UIView *)logAnchorView {
-    return self.containerView;
-}
-
 - (void)updateOutPutStringWithTag:(NSInteger)tag {
     [self.outputString appendString:[NSString stringWithFormat:@"\n点击触发dispatch_apply(%zd)次", tag]];
     [self log:self.outputString];
@@ -47,10 +41,6 @@
         [self.outputString appendString:content];//多线程同时写，可能会有问题
         NSLog(@"%@", content);
     });
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
 }
 
 - (void)dealloc {

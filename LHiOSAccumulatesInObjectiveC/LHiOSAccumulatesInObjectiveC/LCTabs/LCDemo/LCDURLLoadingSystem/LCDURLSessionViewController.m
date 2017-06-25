@@ -32,7 +32,6 @@ static NSString *const kDog = @"dog";
 
 @interface LCDURLSessionViewController () <NSURLSessionDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *contentContainerView;
 @property (nonatomic, strong) NSURLSession *defaultSeesion;
 
 @end
@@ -41,15 +40,6 @@ static NSString *const kDog = @"dog";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-#pragma mark - override
-- (UIView *)logAnchorView {
-    return self.contentContainerView;
-}
-
-- (UIView *)lihuxStyleView {
-    return self.contentContainerView;
 }
 
 #pragma mark - test cases

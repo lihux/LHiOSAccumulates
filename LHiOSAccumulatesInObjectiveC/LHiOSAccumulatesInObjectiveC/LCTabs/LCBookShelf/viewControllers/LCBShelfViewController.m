@@ -40,10 +40,6 @@
     return self.containerView;
 }
 
-- (UIView *)logAnchorView {
-    return self.containerView;
-}
-
 - (NSString *)rightItemText {
     return @"录入图书";
 }

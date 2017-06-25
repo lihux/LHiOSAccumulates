@@ -25,8 +25,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSAssert(self.view.subviews.count == 1, @"%@（以及所有其他继承自LCViewController)都必须要只设置一个container View，便于统一添加log 以及调整布局等默认设置", [self class]);
     self.view.backgroundColor = [UIColor colorWithHex:0x3b955e];
-    [LCLihuxHelper makeLihuxStyleOfView:[self lihuxStyleView]];
+    [LCLihuxHelper makeLihuxStyleOfView:[self.view.subviews objectAtIndex:0]];
     NSString *rightText = [self rightItemText];
     LCSectionHeaderView *headerView = [LCSectionHeaderView sectionHeaderViewWithDelegate:self title:self.title leftText:@"返回" rightText:rightText];
     [self.view addSubview:headerView withLayoutInfo:LHLayoutInfoMake(0, 0, LHLayoutNone, 0, LHLayoutNone, 44)];
@@ -72,15 +73,11 @@
 
 #pragma mark - 子类按需继承
 - (UIView *)logAnchorView {
+    UIView *containerView = [self.view.subviews objectAtIndex:0];
+    if (containerView.tag == kLCNeedShowDebugLogViewTag) {
+        return containerView;
+    }
     return nil;
-}
-
-- (UIView *)lihuxStyleView {
-    return nil;
-}
-
-- (BOOL)needReLayoutAnchorView {
-    return YES;
 }
 
 - (void)cleanLog {
@@ -104,11 +101,10 @@
     }
     [self relayoutAnchorView];
     [self relayoutLogTextView];
-//    NSLog(@"\n影响布局的环境发生了变化，变化前是酱紫的：\n%@\n\n变化后是酱紫的：%@\n\n\n", previousTraitCollection, self.traitCollection);
 }
 
 - (void)relayoutAnchorView {
-    if ([self needReLayoutAnchorView]) {
+    if ([self logAnchorView]) {
         BOOL isVerticalSizeCompact = self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact;//YES:横屏
         UIView *anchorView = [self logAnchorView];
         [anchorView removeFromSuperview];

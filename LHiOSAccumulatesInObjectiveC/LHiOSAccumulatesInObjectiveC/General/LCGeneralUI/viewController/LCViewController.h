@@ -10,30 +10,13 @@
 
 #import "LCSectionHeaderView.h"
 
-@interface LCViewController : UIViewController <LCSectionHeaderViewDelegate>
-
 /**
- 让码农变得更懒散的便利方法：
- 让页面保持和APP统一的风格，具体而言就是：对view及其所有的subViews（递归到所有叶节点），设置其背景色透明，（如果控件含有文字）设置字体颜色为白色
+ NOTE && IMPORTANT:继承自LCViewController的所有子类，都将遵从一下两个规则：
+ 1. 必须要将所有子View包含在一个container View中，也即VC的顶级View，
+ 只有一个(VC.view.subviews.count == 1)，如果不设置，在页面加载的时候，NSAssert会直接挂掉APP，如果需要添加日志系统，还必须要将这个View的tag设置成为`kLCNeedShowDebugLogViewTag（9999）`；
+ 2.LCViewController会对所有的子View进行lihux Style风格的样式调整，具体而言就是：让背景颜色透明，所有的字体设置为白色，如果你有子View不想采取这种风格设置，
+ 请将其tag设置为`kLCNonLihuxStyleViewTag（-9999）`
  
- NOTICE:如果view(及其subViews)中有你不想被修改为默认风格的view，请将其tag设置为`kLCNonLihuxStyleViewTag（-9999）`，这样这个view及其所有的子view都不会被修改背景色和字体颜色
- @param view 需要设置lihuxStyle的子view的父view
- */
-- (UIView *)lihuxStyleView;
-
-/**
- 如果子类想添加一个通用的显示log输出的textView，需要重写此方法，返回一个作为锚点的view供textView布局使用。
- 理想状态下，一个详情页，UI展示上可以分为工作区和log去，前者，是根据当前的技术要点，添加的定制化的、非通用的测试组件；后者
- 则是通用的可以用作输出log和其他提示信息的窗口view。所以，这里建议：最好将工作区内的所有控件提供一个统一的containerView。
-
- 同时，因为我们是支持横竖屏切换的，所以工作区的containerView最好还需提供定制化的横竖屏布局方案
-
- @return 返回一个座位布局通用log输出的锚点view，如果不想显示log输出的view，子类就不需重置此方法
- */
-- (UIView *)logAnchorView;
-
-
-/**
  因为logView的添加，会依赖于一个锚点view，通常这个anchor view会是工作区所有子内容的container view，（这样便于掌控全局），理想状态下的锚点view和log view
  的布局关系应该是各占一半空间，横屏时左右布局、竖屏时上下布局，如下所示：
  
@@ -53,14 +36,14 @@
  *                    *
  *                    *
  **********************
-
+ 
  通常你可以让基类来为你的anchor view添加适配横竖屏时候的布局信息，那么你就可以重写此方法，返回YES，来告知基类为你提供的anchor view重写设置相对于父view（通常是
  viewController的顶级view）的布局约束，当然如果你自己已经处理了横竖屏这种情况，那么就可以不重写此方法（默认返回NO）
  
  @return 是否对anchor view进行布局，默认为YES。
  */
-- (BOOL)needReLayoutAnchorView;
 
+@interface LCViewController : UIViewController <LCSectionHeaderViewDelegate>
 
 /**
  将新的log信息append到textView中显示出来
@@ -90,7 +73,6 @@
  @return YES 则表示逆序，NO表示要顺序展示，默认为NO
  */
 - (BOOL)isShowLogReverse;
-
 
 /**
  便利方法，从storyboard中加载当前VC，要求的条件是当前VC的Identifier必须和类名完全一致才行

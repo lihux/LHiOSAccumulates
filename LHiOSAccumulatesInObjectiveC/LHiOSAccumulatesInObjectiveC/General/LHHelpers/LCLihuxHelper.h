@@ -10,7 +10,11 @@
 
 #import <UIKit/UIKit.h>
 
+//如果不需要渲染lihux Style将View的tag设置为 -9999
 static const NSInteger kLCNonLihuxStyleViewTag = -9999;
+
+//LCViewController的子View，如何需要添加日志显示View，将其tag设置为 9999
+static const NSInteger kLCNeedShowDebugLogViewTag = 9999;
 
 @interface LCLihuxHelper : NSObject
 

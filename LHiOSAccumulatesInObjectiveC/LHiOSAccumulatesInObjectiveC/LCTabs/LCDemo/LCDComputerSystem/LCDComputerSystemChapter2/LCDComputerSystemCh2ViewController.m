@@ -10,12 +10,6 @@
 
 #import "LCDCSCh2ShowBytes.h"
 
-@interface LCDComputerSystemCh2ViewController ()
-
-@property (weak, nonatomic) IBOutlet UIView *containerView;
-
-@end
-
 @implementation LCDComputerSystemCh2ViewController
 
 - (void)viewDidLoad {
@@ -181,12 +175,4 @@
     }
 }
 
-#pragma mark - Override
--(UIView *)logAnchorView {
-    return self.containerView;
-}
-
--(UIView *)lihuxStyleView {
-    return self.containerView;
-}
 @end

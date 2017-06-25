@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-Hj-dMt">
+                            <view tag="9999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-Hj-dMt">
                                 <rect key="frame" x="16" y="13" width="343" height="221"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-7L-wFe">
@@ -105,9 +105,6 @@
                             <constraint firstItem="MAO-q1-gX8" firstAttribute="top" secondItem="0h5-Hj-dMt" secondAttribute="bottom" constant="433" id="s9n-Wu-Ubd"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="contentContainerView" destination="0h5-Hj-dMt" id="RF8-y1-dFa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1N-kg-wDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
