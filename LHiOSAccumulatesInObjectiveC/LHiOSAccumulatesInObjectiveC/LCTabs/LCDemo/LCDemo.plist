@@ -4,6 +4,16 @@
 <array>
 	<dict>
 		<key>plistName</key>
+		<string>LCDComputerSystem</string>
+		<key>title</key>
+		<string>《深入理解计算机系统（3）》练习题</string>
+		<key>viewControllerTitle</key>
+		<string>《深入理解计算机系统（3）》练习题</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+	</dict>
+	<dict>
+		<key>plistName</key>
 		<string>LCDBasicTech</string>
 		<key>title</key>
 		<string>探索一些基本的技术点</string>
@@ -88,16 +98,6 @@
 		<key>content</key>
 		<string> APP的性能优化包括对页面流畅性、内存使用率、CPU使用率以及抗奔溃能力的优化。
 </string>
-		<key>storyboardID</key>
-		<string></string>
-		<key>storyboardName</key>
-		<string>LCDemo</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>线上热修复技能get</string>
-		<key>content</key>
-		<string>APP上线以后发现有致命性的崩溃或者严重缺陷的时候，是不是有种想吃后悔药的感觉，很多开发者心里会想着，要是有后悔药可以吃就好了，那么好消息是，有，确实有后悔药的！^_^</string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Computer System Ch2 View Controller-->
+        <scene sceneID="xKQ-vB-WQQ">
+            <objects>
+                <viewController storyboardIdentifier="LCDComputerSystemCh2ViewController" id="N6U-77-wiF" customClass="LCDComputerSystemCh2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IVy-Md-rqx"/>
+                        <viewControllerLayoutGuide type="bottom" id="ebj-5z-ej2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tQC-3K-W0a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shQ-x6-R6c">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="shQ-x6-R6c" firstAttribute="top" secondItem="IVy-Md-rqx" secondAttribute="bottom" id="181-4T-y6n"/>
+                            <constraint firstItem="ebj-5z-ej2" firstAttribute="top" secondItem="shQ-x6-R6c" secondAttribute="bottom" id="AYd-3Q-w3R"/>
+                            <constraint firstItem="shQ-x6-R6c" firstAttribute="leading" secondItem="tQC-3K-W0a" secondAttribute="leading" id="GeN-c6-2CC"/>
+                            <constraint firstAttribute="trailing" secondItem="shQ-x6-R6c" secondAttribute="trailing" id="l8D-ts-R83"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="shQ-x6-R6c" id="XQl-9s-kvo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRR-0g-f9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="160"/>
+        </scene>
+    </scenes>
+</document>
