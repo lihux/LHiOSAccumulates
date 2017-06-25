@@ -20,10 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self testShowBytes];
 }
 
 /**
+ 源码or习题所在页码：《深入理解计算机系统3》Ch2-P39
  输出结果为：
  不同类型的数据的最大值、最小值系列:
  max_int:    ff ff ff 7f
@@ -154,18 +159,26 @@
     
     printf("today_negativeFloat: -20170625000000000000.0  ");
     lc_show_bytes(&today_negativeFloat, sizeof(float));
+    
+    printf("\n\n=======lihux.me=======\n\n");
+    printf("\ntestUnderstandTwosComplement:\n\n");
+    short x = 12345;
+    short mx = -x;
 #pragma clang diagnostic pop
     
+    //《深入理解计算机系统3》Ch2-P48 补码的理解（Two's Complement）
+    printf("short 12345's Two's Complement is \n");
+    lc_show_bytes((lc_byte_pointer)&x, sizeof(short));
+    printf("short -12345's Two's Complement is \n");
+    lc_show_bytes((lc_byte_pointer)&mx, sizeof(short));
+    
     fclose(logFile);
-    printf("结束printf定向到文件");
+    printf("结束printf定向到文件");//事实上并没有重定向到标准输出流，后面再fix这个bug.
     NSError *error;
     NSString *logString = [NSString stringWithContentsOfFile:logTempFile encoding:NSNonLossyASCIIStringEncoding error:&error];
     if (!error) {
         [self log:logString];
     }
-}
-
-- (void)redirectStdOutputToFile {
 }
 
 #pragma mark - Override
