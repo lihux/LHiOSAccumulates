@@ -18,6 +18,8 @@
 @property (nonatomic, strong) UITextView *logTextView;
 @property (nonatomic, strong) UIView *logBorderLineView;
 @property (nonatomic, strong) UIView *logContainerView;
+@property (nonatomic, strong) UIView *lcViewController_ContainerView;
+@property (nonatomic, strong) UIView *logAnchorView;
 
 @end
 
@@ -25,16 +27,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSAssert(self.view.subviews.count == 1, @"%@（以及所有其他继承自LCViewController)都必须要只设置一个container View，便于统一添加log 以及调整布局等默认设置", [self class]);
+    
     self.view.backgroundColor = [UIColor colorWithHex:0x3b955e];
-    [LCLihuxHelper makeLihuxStyleOfView:[self.view.subviews objectAtIndex:0]];
+    [LCLihuxHelper makeLihuxStyleOfView:self.lcViewController_ContainerView];
+    [self.lcViewController_ContainerView removeFromSuperview];
+    [self.view addSubview:self.lcViewController_ContainerView withLayoutInfo:LHLayoutInfoMake(44, 0, 0, 0, LHLayoutNone, LHLayoutNone)];
     NSString *rightText = [self rightItemText];
     LCSectionHeaderView *headerView = [LCSectionHeaderView sectionHeaderViewWithDelegate:self title:self.title leftText:@"返回" rightText:rightText];
     [self.view addSubview:headerView withLayoutInfo:LHLayoutInfoMake(0, 0, LHLayoutNone, 0, LHLayoutNone, 44)];
 }
 
 - (void)log:(NSString *)log {
-    if ([self logAnchorView]) {
+    if (self.logAnchorView) {
         if ([NSThread isMainThread]) {
             [self appendLogTextFieldWith:log];
         } else {
@@ -72,14 +76,6 @@
 }
 
 #pragma mark - 子类按需继承
-- (UIView *)logAnchorView {
-    UIView *containerView = [self.view.subviews objectAtIndex:0];
-    if (containerView.tag == kLCNeedShowDebugLogViewTag) {
-        return containerView;
-    }
-    return nil;
-}
-
 - (void)cleanLog {
     self.logTextView.text = @"";
 }
@@ -89,13 +85,13 @@
 }
 
 - (NSString *)rightItemText {
-    return [self logAnchorView] ? @"清理日志" : @"";
+    return self.logAnchorView ? @"清理日志" : @"";
 }
 
 #pragma mark - 高蛋白
 #pragma mark - UITraitEnvironment
 - (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
-    UIView *anchorView = [self logAnchorView];
+    UIView *anchorView = self.logAnchorView;
     if (!anchorView) {
         return;
     }
@@ -104,9 +100,9 @@
 }
 
 - (void)relayoutAnchorView {
-    if ([self logAnchorView]) {
+    UIView *anchorView = self.logAnchorView;
+    if (anchorView) {
         BOOL isVerticalSizeCompact = self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact;//YES:横屏
-        UIView *anchorView = [self logAnchorView];
         [anchorView removeFromSuperview];
         CGFloat defaultGap = 8;
         CGFloat headerHeight = 44;
@@ -126,7 +122,7 @@
 - (void)relayoutLogTextView {
     CGFloat defaultGap = 10;
     CGFloat headerHeight = 44;
-    UIView *anchorView = [self logAnchorView];
+    UIView *anchorView = self.logAnchorView;
     UIView *textView = self.logContainerView;
     [textView removeFromSuperview];
     BOOL isVerticalSizeCompact = self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact;
@@ -183,6 +179,22 @@
         [_logContainerView addSubviewUsingDefaultLayoutConstraints:self.logTextView];
     }
     return _logContainerView;
+}
+
+- (UIView *)lcViewController_ContainerView {
+    if (_lcViewController_ContainerView) {
+        return _lcViewController_ContainerView;
+    }
+    for (id object in self.view.subviews) {
+        if ([object isKindOfClass:[UIView class]]) {
+            if (![object isKindOfClass:[LCSectionHeaderView class]]) {
+                _lcViewController_ContainerView = (UIView *)object;
+                _logAnchorView = _lcViewController_ContainerView.tag == kLCNeedShowDebugLogViewTag ? _lcViewController_ContainerView : nil;
+                break;
+            }
+        }
+    }
+    return _lcViewController_ContainerView;
 }
 
 @end
