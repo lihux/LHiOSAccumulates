@@ -79,6 +79,8 @@
     long long max_llong = LLONG_MAX;//long long 是long long int的简写长整型
     long long min_llong = LLONG_MIN;
     
+    printf("log系统即将切入达到写文件");
+    //TODO: 现在只是将输出流重定向到临时文件里面去了，但是没有在重定向回到标准流中去，代码需要完善
     NSString *logTempFile = [NSTemporaryDirectory() stringByAppendingPathComponent:@"lc_logtempFile"];
     if ([[NSFileManager defaultManager] fileExistsAtPath:logTempFile]) {
         NSError *error;
@@ -155,6 +157,7 @@
 #pragma clang diagnostic pop
     
     fclose(logFile);
+    printf("结束printf定向到文件");
     NSError *error;
     NSString *logString = [NSString stringWithContentsOfFile:logTempFile encoding:NSNonLossyASCIIStringEncoding error:&error];
     if (!error) {
