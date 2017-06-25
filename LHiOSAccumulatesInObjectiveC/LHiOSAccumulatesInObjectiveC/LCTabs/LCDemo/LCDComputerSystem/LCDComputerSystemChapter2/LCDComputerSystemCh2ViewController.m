@@ -88,7 +88,7 @@
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wincompatible-pointer-types"
-    NSLog(@"不同类型的数据的最大值、最小值系列:");
+    printf("不同类型的数据的最大值、最小值系列:");
     printf("max_int:   ");
     lc_show_bytes(&max_int, sizeof(int));
     printf("min_int:   ");
@@ -118,10 +118,8 @@
     lc_show_bytes(&max_llong, sizeof(long long));
     printf("min_llong:   ");
     lc_show_bytes(&min_llong, sizeof(long long));
-    
-    
-    NSLog(@"\n\n不同类型的数据的具体值系列:\n\n");
-    
+        
+    printf("\n\n不同类型的数据的具体值系列:\n\n");
     printf("byte: A   ");
     lc_show_bytes(&byte, sizeof(byte));
     
