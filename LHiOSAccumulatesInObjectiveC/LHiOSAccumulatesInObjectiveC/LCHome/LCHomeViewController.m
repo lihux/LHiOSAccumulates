@@ -11,6 +11,7 @@
 #import "LCLightBorderButton.h"
 #import "UIColor+helper.h"
 #import "LCTableViewController.h"
+#import "LCConstantDefines.h"
 
 static const CGFloat kDefaultFlyingAnimationDuration = 0.6;
 static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
@@ -73,10 +74,19 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     [super viewDidAppear:animated];
     if (!self.firstLaunch) {
         self.firstLaunch = YES;
-        self.flyingViewIndex = 0;
-        [(UIButton *)self.homeButtons[0] setSelected:YES];
-        [self homeButtonAnimateWithButtonIndex:0 isFlyingAway:YES completion:^{
-            self.maskLabel.text = self.homeButtonTitles[0];
+        NSInteger selectedTab = 0;
+        NSNumber *cachedTabIndex = [[NSUserDefaults standardUserDefaults] objectForKey:kLCSSettingDefaultSelectTabKey];
+        if (cachedTabIndex) {
+            selectedTab = cachedTabIndex.integerValue;
+            if (selectedTab < 0 || selectedTab > 4) {
+                selectedTab = 0;
+            }
+            selectedTab = cachedTabIndex.integerValue;
+        }
+        self.flyingViewIndex = selectedTab;
+        [(UIButton *)self.homeButtons[selectedTab] setSelected:YES];
+        [self homeButtonAnimateWithButtonIndex:selectedTab isFlyingAway:YES completion:^{
+            self.maskLabel.text = self.homeButtonTitles[selectedTab];
             [self centerCircleAnimateWithIsZooming:YES completion:nil];
         }];
     }

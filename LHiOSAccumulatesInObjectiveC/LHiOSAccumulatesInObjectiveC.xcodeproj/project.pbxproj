@@ -26,6 +26,7 @@
 		5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */; };
 		52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */; };
 		52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */; };
+		52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7652D1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m */; };
 		52E4C8991EFA434A00CB8F4D /* LCBookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */; };
 		52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528FD9591EFA377E00DF92BA /* LCBookShelf.plist */; };
 		52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */; };
@@ -122,6 +123,9 @@
 		52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCoreDataManager.m; sourceTree = "<group>"; };
 		52CAEED11EFCF45D00A7EB16 /* LCBookCreater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCreater.h; sourceTree = "<group>"; };
 		52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCreater.m; sourceTree = "<group>"; };
+		52D7652C1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSDefaultOpenPageSettingViewController.h; sourceTree = "<group>"; };
+		52D7652D1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSDefaultOpenPageSettingViewController.m; sourceTree = "<group>"; };
+		52D765301F0117A000CF025F /* LCConstantDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCConstantDefines.h; sourceTree = "<group>"; };
 		52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = LCBookShelf.xcmappingmodel; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
 		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
@@ -279,6 +283,8 @@
 			children = (
 				5224850B1EE7BB60001A1429 /* LCSetting.storyboard */,
 				5224850C1EE7BB60001A1429 /* LCSetting.plist */,
+				52D7652C1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.h */,
+				52D7652D1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m */,
 			);
 			path = LCSetting;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 				522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */,
 				9C0365651C4CF9F900E04D7B /* UIColor+helper.h */,
 				9C0365661C4CF9F900E04D7B /* UIColor+helper.m */,
+				52D765301F0117A000CF025F /* LCConstantDefines.h */,
 				9C0365671C4CF9F900E04D7B /* UIImage+Color.h */,
 				9C0365681C4CF9F900E04D7B /* UIImage+Color.m */,
 				5224634C1EFBDDBF00E90EB6 /* LCLihuxHelper.h */,
@@ -737,6 +744,7 @@
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
 				9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */,
 				52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */,
+				52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */,
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,

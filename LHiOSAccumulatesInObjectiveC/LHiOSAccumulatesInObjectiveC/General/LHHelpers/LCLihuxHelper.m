@@ -27,7 +27,7 @@
     } else if ([view isKindOfClass:[UITextView class]]) {
         [(UITextView *)view setTextColor:textColor];
     }
-
+    
     for (UIView *subView in view.subviews) {
         [self makeLihuxStyleOfView:subView];
     }

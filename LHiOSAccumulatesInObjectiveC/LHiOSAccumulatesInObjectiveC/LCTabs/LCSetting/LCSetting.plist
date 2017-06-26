@@ -4,6 +4,16 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>设置默认打开页面</string>
+		<key>content</key>
+		<string>让用户越来越懒</string>
+		<key>storyboardID</key>
+		<string>LCSDefaultOpenPageSettingViewController</string>
+		<key>storyboardName</key>
+		<string>LCSetting</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>清除缓存</string>
 		<key>content</key>
 		<string>第三方输入法带来了新的麻烦</string>

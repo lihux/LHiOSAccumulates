@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cCJ-nY-gDN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cCJ-nY-gDN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="6Ie-aJ-W9d">
@@ -44,6 +50,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYQ-t2-rfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1916" y="251"/>
+        </scene>
+        <!--Default Open Page Setting View Controller-->
+        <scene sceneID="Vqd-J3-dpS">
+            <objects>
+                <viewController storyboardIdentifier="LCSDefaultOpenPageSettingViewController" id="X5X-fb-3eE" customClass="LCSDefaultOpenPageSettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9CO-eO-fd1"/>
+                        <viewControllerLayoutGuide type="bottom" id="wG8-qV-OG2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TNK-dK-Os2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sr-hO-5Yd" userLabel="container View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置APP启动后首次加载的页面：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHx-cZ-Ogg">
+                                        <rect key="frame" x="15" y="20" width="211" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="211" id="P7n-ES-DQh"/>
+                                            <constraint firstAttribute="height" constant="21" id="ifm-ay-dKa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cTq-hL-MAS">
+                                        <rect key="frame" x="67" y="53" width="240" height="29"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="2SV-7T-Ekj"/>
+                                            <constraint firstAttribute="width" constant="240" id="5A0-E4-Ac5"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="好玩"/>
+                                            <segment title="好看"/>
+                                            <segment title="书架"/>
+                                            <segment title="设置"/>
+                                        </segments>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="tabBarSelectValueChanged:" destination="X5X-fb-3eE" eventType="valueChanged" id="mMm-2V-lPc"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cTq-hL-MAS" firstAttribute="top" secondItem="DHx-cZ-Ogg" secondAttribute="bottom" constant="12" id="B4h-CJ-gei"/>
+                                    <constraint firstItem="DHx-cZ-Ogg" firstAttribute="top" secondItem="5sr-hO-5Yd" secondAttribute="top" constant="20" id="CAh-9Y-guZ"/>
+                                    <constraint firstItem="DHx-cZ-Ogg" firstAttribute="leading" secondItem="5sr-hO-5Yd" secondAttribute="leading" constant="15" id="LlZ-0c-DSl"/>
+                                    <constraint firstItem="cTq-hL-MAS" firstAttribute="centerX" secondItem="5sr-hO-5Yd" secondAttribute="centerX" id="uwg-Tf-oha"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5sr-hO-5Yd" secondAttribute="trailing" id="2P6-2I-hTH"/>
+                            <constraint firstItem="5sr-hO-5Yd" firstAttribute="leading" secondItem="TNK-dK-Os2" secondAttribute="leading" id="5vd-VX-sGV"/>
+                            <constraint firstItem="5sr-hO-5Yd" firstAttribute="top" secondItem="9CO-eO-fd1" secondAttribute="bottom" id="a6C-7O-hkQ"/>
+                            <constraint firstItem="wG8-qV-OG2" firstAttribute="top" secondItem="5sr-hO-5Yd" secondAttribute="bottom" id="eT1-sn-7UX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tabBarSelectSegmentedControl" destination="cTq-hL-MAS" id="Kvh-vn-onP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nk-Y7-69Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="250.52473763118442"/>
         </scene>
     </scenes>
 </document>
