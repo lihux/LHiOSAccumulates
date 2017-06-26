@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor colorWithHex:0x3b955e];
+    self.view.backgroundColor = LihuxContentBackgroundColor;
     [LCLihuxHelper makeLihuxStyleOfView:self.lcViewController_ContainerView];
     [self.lcViewController_ContainerView removeFromSuperview];
     [self.view addSubview:self.lcViewController_ContainerView withLayoutInfo:LHLayoutInfoMake(44, 0, 0, 0, LHLayoutNone, LHLayoutNone)];

@@ -13,6 +13,7 @@
 #import "LCTableViewCell.h"
 #import "UIColor+helper.h"
 #import "LCSectionHeaderView.h"
+#import "LCLihuxHelper.h"
 
 @interface LCTableViewController () <LCSectionHeaderViewDelegate, LCTableViewCellDelegate>
 
@@ -29,7 +30,7 @@
 - (void)configWithTitle:(NSString *)title plistFileName:(NSString *)plistName {
     self.title = title;
     self.plistFileName = plistName;
-    self.tableView.backgroundColor = [UIColor colorWithHex:0x3b955e];
+    self.tableView.backgroundColor = LihuxContentBackgroundColor;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     NSString *reuseID = [self tableViewCellResueIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:reuseID bundle:nil] forCellReuseIdentifier:reuseID];

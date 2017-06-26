@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *publisherLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UIView *bottomLineView;
 
 @end
 
@@ -33,6 +34,7 @@
 -(void)setBook:(LCBook *)book {
     _book = book;
     self.bookTitleLabel.text = book.title;
+    self.bottomLineView.backgroundColor = LihuxStyleColor;
     self.authorLabel.text = [(LCBookAuthor *)[book.authors anyObject] name];
     self.publisherLabel.text = book.publisher;
     self.priceLabel.text = book.price;
