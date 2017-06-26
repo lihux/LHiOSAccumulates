@@ -303,7 +303,7 @@
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lns-cM-Oac" userLabel="progress View">
                                                                             <rect key="frame" x="-2" y="24" width="54" height="3.9999999999999929"/>
-                                                                            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.87197666952054798" colorSpace="calibratedRGB"/>
+                                                                            <color key="backgroundColor" red="0.99607843139999996" green="0.27450980390000002" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="3" id="3nk-AZ-U3c"/>
                                                                             </constraints>
