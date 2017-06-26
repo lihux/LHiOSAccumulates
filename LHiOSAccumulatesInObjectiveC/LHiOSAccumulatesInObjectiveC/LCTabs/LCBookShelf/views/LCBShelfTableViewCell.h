@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class LCBook;
+@class LCBShelfTableViewCell;
 
 @interface LCBShelfTableViewCell : UITableViewCell
 

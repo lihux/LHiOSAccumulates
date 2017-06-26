@@ -21,6 +21,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UIView *bottomLineView;
 
+@property (weak, nonatomic) IBOutlet UIView *progressView;
+@property (weak, nonatomic) IBOutlet UIView *buttonContainerView;
+@property (weak, nonatomic) IBOutlet UIButton *planButton;
+@property (weak, nonatomic) IBOutlet UIView *progressBackgroundView;
+
 @end
 
 @implementation LCBShelfTableViewCell
@@ -39,6 +44,19 @@
     self.publisherLabel.text = book.publisher;
     self.priceLabel.text = book.price;
     [self.bookImageView lc_setImageWithURLString:book.image];
+    [self configPlanInfo:book.readingPlan];
 }
+
+- (void)configPlanInfo:(LCBookReadingPlan *)plan {
+    BOOL hasPlan = plan ? YES : YES;
+    self.progressView.hidden = !hasPlan;
+    self.progressBackgroundView.hidden = !hasPlan;
+    NSString *info = hasPlan ? @"在阅读中" : @"开始阅读";
+    [self.planButton setTitle:info forState:UIControlStateNormal];
+}
+
+- (IBAction)didTapOnPlanButton:(UIButton *)sender {
+}
+
 
 @end
