@@ -13,20 +13,21 @@
 @implementation LCLihuxHelper
 
 + (void)makeLihuxStyleOfView:(UIView *)view {
-    if (view && view.tag != kLCNonLihuxStyleViewTag) {
-        view.backgroundColor = [UIColor clearColor];
-        UIColor *textColor = [UIColor whiteColor];
-        if ([view isKindOfClass:[UILabel class]]) {
-            [(UILabel *)view setTextColor:textColor];
-        } else if ([view isKindOfClass:[UIButton class]]) {
-            [(UIButton *)view setTitleColor:textColor forState:UIControlStateNormal];
-        } else if ([view isKindOfClass:[UITextField class]]) {
-            [(UITextField *)view setTextColor:textColor];
-        } else if ([view isKindOfClass:[UITextView class]]) {
-            [(UITextView *)view setTextColor:textColor];
-        }
+    if ((!view) || view.tag == kLCNonLihuxStyleViewTag) {
+        return;
     }
-    
+    view.backgroundColor = [UIColor clearColor];
+    UIColor *textColor = [UIColor whiteColor];
+    if ([view isKindOfClass:[UILabel class]]) {
+        [(UILabel *)view setTextColor:textColor];
+    } else if ([view isKindOfClass:[UIButton class]]) {
+        [(UIButton *)view setTitleColor:textColor forState:UIControlStateNormal];
+    } else if ([view isKindOfClass:[UITextField class]]) {
+        [(UITextField *)view setTextColor:textColor];
+    } else if ([view isKindOfClass:[UITextView class]]) {
+        [(UITextView *)view setTextColor:textColor];
+    }
+
     for (UIView *subView in view.subviews) {
         [self makeLihuxStyleOfView:subView];
     }

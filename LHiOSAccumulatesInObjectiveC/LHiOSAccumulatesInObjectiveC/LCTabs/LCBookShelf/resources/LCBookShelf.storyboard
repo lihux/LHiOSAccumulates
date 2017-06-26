@@ -284,6 +284,24 @@
                                                                         <constraint firstAttribute="height" constant="1" id="Say-qv-ZZa"/>
                                                                     </constraints>
                                                                 </view>
+                                                                <view tag="-9999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgx-Gj-hey" userLabel="button container View">
+                                                                    <rect key="frame" x="324" y="35" width="80" height="30"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs8-PS-0kP">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                                                            <state key="normal" title="Button"/>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="Zs8-PS-0kP" secondAttribute="bottom" id="1i1-Rj-Jgc"/>
+                                                                        <constraint firstItem="Zs8-PS-0kP" firstAttribute="top" secondItem="mgx-Gj-hey" secondAttribute="top" id="8EW-g5-V3u"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="AHw-Nk-taP"/>
+                                                                        <constraint firstItem="Zs8-PS-0kP" firstAttribute="leading" secondItem="mgx-Gj-hey" secondAttribute="leading" id="aut-ge-nIQ"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Zs8-PS-0kP" secondAttribute="trailing" id="gaV-4v-JnU"/>
+                                                                        <constraint firstAttribute="width" constant="80" id="rwi-K5-hF2"/>
+                                                                    </constraints>
+                                                                </view>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
@@ -292,7 +310,9 @@
                                                                 <constraint firstItem="MlJ-gC-V7Z" firstAttribute="top" secondItem="OcW-zc-S3c" secondAttribute="bottom" constant="10" id="6RI-Sc-3Gp"/>
                                                                 <constraint firstItem="PJS-HE-jw3" firstAttribute="leading" secondItem="r0J-sw-o7M" secondAttribute="trailing" constant="12" id="88L-kx-ihv"/>
                                                                 <constraint firstItem="0Ly-j8-H36" firstAttribute="leading" secondItem="kJ7-T2-RTE" secondAttribute="leading" id="8Wh-TS-gRD"/>
+                                                                <constraint firstAttribute="trailing" secondItem="mgx-Gj-hey" secondAttribute="trailing" constant="10" id="CC8-KF-yhZ"/>
                                                                 <constraint firstAttribute="trailing" secondItem="PJS-HE-jw3" secondAttribute="trailing" constant="10" id="JM0-0n-LjQ"/>
+                                                                <constraint firstItem="mgx-Gj-hey" firstAttribute="centerY" secondItem="kJ7-T2-RTE" secondAttribute="centerY" id="P6A-OK-Kqy"/>
                                                                 <constraint firstItem="MlJ-gC-V7Z" firstAttribute="leading" secondItem="r0J-sw-o7M" secondAttribute="trailing" constant="12" id="UAb-cn-pGa"/>
                                                                 <constraint firstItem="fTl-qb-fGe" firstAttribute="leading" secondItem="r0J-sw-o7M" secondAttribute="trailing" constant="12" id="V4I-Ls-PRT"/>
                                                                 <constraint firstItem="r0J-sw-o7M" firstAttribute="leading" secondItem="kJ7-T2-RTE" secondAttribute="leading" constant="10" id="ZnU-Ch-vMk"/>
