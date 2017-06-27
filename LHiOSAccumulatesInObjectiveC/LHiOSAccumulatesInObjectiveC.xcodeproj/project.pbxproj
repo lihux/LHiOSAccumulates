@@ -189,6 +189,7 @@
 		9C9124331C4FA06E007AB00D /* LCSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSectionHeaderView.h; sourceTree = "<group>"; };
 		9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSectionHeaderView.m; sourceTree = "<group>"; };
 		9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCSectionHeaderView.xib; sourceTree = "<group>"; };
+		9CA6058A1F01D6A3000DB286 /* LCDCSLogHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDCSLogHelper.h; sourceTree = "<group>"; };
 		9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCURL.h"; sourceTree = "<group>"; };
 		9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCURL.m"; sourceTree = "<group>"; };
 		9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCImageCacheManager.h; sourceTree = "<group>"; };
@@ -559,6 +560,7 @@
 				9CD141CB1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.m */,
 				9CD141CD1EFF689500B25586 /* LCDCSCh2ShowBytes.c */,
 				9CD141CE1EFF689500B25586 /* LCDCSCh2ShowBytes.h */,
+				9CA6058A1F01D6A3000DB286 /* LCDCSLogHelper.h */,
 			);
 			path = LCDComputerSystemChapter2;
 			sourceTree = "<group>";

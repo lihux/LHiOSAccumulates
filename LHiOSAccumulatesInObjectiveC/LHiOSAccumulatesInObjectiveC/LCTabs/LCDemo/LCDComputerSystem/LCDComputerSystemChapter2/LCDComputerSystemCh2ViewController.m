@@ -9,6 +9,7 @@
 #import "LCDComputerSystemCh2ViewController.h"
 
 #import "LCDCSCh2ShowBytes.h"
+#import "LCDCSLogHelper.h"
 
 @implementation LCDComputerSystemCh2ViewController
 
@@ -78,14 +79,7 @@
     long long max_llong = LLONG_MAX;//long long 是long long int的简写长整型
     long long min_llong = LLONG_MIN;
     
-    printf("log系统即将切入达到写文件");
-    //TODO: 现在只是将输出流重定向到临时文件里面去了，但是没有在重定向回到标准流中去，代码需要完善
-    NSString *logTempFile = [NSTemporaryDirectory() stringByAppendingPathComponent:@"lc_logtempFile"];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:logTempFile]) {
-        NSError *error;
-        [[NSFileManager defaultManager] removeItemAtPath:logTempFile error:&error];
-    }
-    FILE *logFile = freopen([logTempFile cStringUsingEncoding:NSASCIIStringEncoding], "a+", stdout);
+    LCDCS_REDIRECT_LOG_TO_FILE
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wincompatible-pointer-types"
@@ -166,13 +160,7 @@
     printf("short -12345's Two's Complement is \n");
     lc_show_bytes((lc_byte_pointer)&mx, sizeof(short));
     
-    fclose(logFile);
-    printf("结束printf定向到文件");//事实上并没有重定向到标准输出流，后面再fix这个bug.
-    NSError *error;
-    NSString *logString = [NSString stringWithContentsOfFile:logTempFile encoding:NSNonLossyASCIIStringEncoding error:&error];
-    if (!error) {
-        [self log:logString];
-    }
+    LCDCS_FINISH_FILE_LOG_AND_PRINT
 }
 
 @end
