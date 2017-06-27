@@ -14,7 +14,6 @@
 
 @property (nonatomic, copy) LCBookScanCompletionBlock completionBlock;
 @property(nonatomic, strong)AVCaptureSession *session;//输入输出的中间桥梁
-@property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIView *scanLayerBackedView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *scanModelSegmentControl;
 @property (weak, nonatomic) IBOutlet UILabel *flyingLabel;
@@ -42,11 +41,6 @@
 #else
     [self startScan];
 #endif
-}
-
-#pragma mark - 子类继承设置
-- (UIView *)lihuxStyleView {
-    return self.containerView;
 }
 
 #pragma mark -

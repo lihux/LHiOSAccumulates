@@ -18,7 +18,6 @@
 @interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate, NSURLSessionDataDelegate, NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) LCBookCoreDataManager *manager;
-@property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (nonatomic, strong) NSURLSession *urlSession;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSFetchedResultsController *fetchBookController;
@@ -33,11 +32,6 @@
     self.fetchBookController = [self.manager fetchBookController];
     self.fetchBookController.delegate = self;
     [self.tableView reloadData];
-}
-
-#pragma mark - 子类继承设置
-- (UIView *)lihuxStyleView {
-    return self.containerView;
 }
 
 - (NSString *)rightItemText {

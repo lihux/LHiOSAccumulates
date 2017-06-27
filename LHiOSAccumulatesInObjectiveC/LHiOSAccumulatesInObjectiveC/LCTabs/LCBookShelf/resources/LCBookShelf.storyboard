@@ -190,7 +190,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="7YI-sf-0Mg" id="dgE-t5-Tnu"/>
                         <outlet property="countLabel" destination="DND-oS-CvQ" id="3oC-5a-480"/>
                         <outlet property="flyingLabel" destination="tkd-3j-yVh" id="AaT-ei-4ug"/>
                         <outlet property="scanLayerBackedView" destination="Bbo-Ke-Jy4" id="ugz-VG-QHv"/>
@@ -409,7 +408,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="KNI-t8-aSi" id="yRq-Wg-nGe"/>
                         <outlet property="tableView" destination="Kb6-Xg-ub6" id="tUg-hv-q5s"/>
                     </connections>
                 </viewController>
@@ -550,7 +548,6 @@
                     <connections>
                         <outlet property="authorLabel" destination="x9L-mj-3j2" id="jo4-Ne-bzB"/>
                         <outlet property="bookImageView" destination="fhb-68-1jC" id="FEp-Ca-IZT"/>
-                        <outlet property="containerView" destination="s3o-BX-nup" id="QCQ-G3-Egs"/>
                         <outlet property="introductionLabel" destination="qsa-Xj-HKe" id="ocn-Cp-umf"/>
                         <outlet property="priceLabel" destination="sfU-w8-Zr7" id="WNI-un-a3F"/>
                         <outlet property="publisherLabel" destination="vcO-Lx-tS0" id="109-Dh-YgW"/>

@@ -13,7 +13,7 @@
 
 @interface LCBookViewController ()
 
-@property (weak, nonatomic) IBOutlet UIView *containerView;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *publisherLabel;
@@ -50,11 +50,6 @@
 
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton {
     [super sectionHeaderView:sectionHeaderView tappedOnLeftButton:leftButton];
-}
-
-#pragma mark - 子类继承设置
-- (UIView *)lihuxStyleView {
-    return self.containerView;
 }
 
 @end
