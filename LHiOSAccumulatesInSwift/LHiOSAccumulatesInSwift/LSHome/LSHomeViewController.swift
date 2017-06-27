@@ -61,7 +61,7 @@ class LSHomeViewController: LSBasicViewController {
         }
     }
 
-    func homeButtonAnimateWithButtonIndex(index:Int, isFlyingAway:Bool, customCompletion:((Void) -> Void)?) {
+    func homeButtonAnimateWithButtonIndex(index:Int, isFlyingAway:Bool, customCompletion:(() -> Void)?) {
         let flyingView = self.flyingViews[index] as UIView
         flyingView.isHidden = false
         let stopHomeButtonFlyAwayConstraintActive = !isFlyingAway
@@ -82,7 +82,7 @@ class LSHomeViewController: LSBasicViewController {
         }
     }
     
-    func centerCircleAnimateWithIsZooming(isZooming:Bool, customCompletion: ((Void) -> Void)?) {
+    func centerCircleAnimateWithIsZooming(isZooming:Bool, customCompletion: (() -> Void)?) {
         self.maskLabel.isHidden = false
         self.maskView.isHidden = false
         self.maskLabel.text = self.homeButtonTitles[self.flyingViewIndex]
