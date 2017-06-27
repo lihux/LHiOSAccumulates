@@ -33,28 +33,9 @@
 		9C3734191C3E455D009391CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3734171C3E455D009391CD /* Main.storyboard */; };
 		9C37341B1C3E455D009391CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341A1C3E455D009391CD /* Assets.xcassets */; };
 		9C37341E1C3E455D009391CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341C1C3E455D009391CD /* LaunchScreen.storyboard */; };
-		9C3734291C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734281C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.swift */; };
-		9C3734341C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3734331C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift */; };
 		9C9648791E630490005620F7 /* LSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9648781E630490005620F7 /* LSUtils.swift */; };
 		9C96487B1E6323F6005620F7 /* LSDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96487A1E6323F6005620F7 /* LSDemoTableViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9C3734251C3E455D009391CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C3734061C3E455D009391CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9C37340D1C3E455D009391CD;
-			remoteInfo = LHiOSAccumulatesInSwift;
-		};
-		9C3734301C3E455D009391CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C3734061C3E455D009391CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9C37340D1C3E455D009391CD;
-			remoteInfo = LHiOSAccumulatesInSwift;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9C0C23A11C5468E000185C45 /* LSDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSDemo.storyboard; path = LSDemo/LSDemo.storyboard; sourceTree = "<group>"; };
@@ -86,10 +67,8 @@
 		9C37341A1C3E455D009391CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C37341D1C3E455D009391CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C37341F1C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C3734241C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHiOSAccumulatesInSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3734281C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHiOSAccumulatesInSwiftTests.swift; sourceTree = "<group>"; };
 		9C37342A1C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C37342F1C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHiOSAccumulatesInSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3734331C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHiOSAccumulatesInSwiftUITests.swift; sourceTree = "<group>"; };
 		9C3734351C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C9648781E630490005620F7 /* LSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUtils.swift; sourceTree = "<group>"; };
@@ -98,20 +77,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		9C37340B1C3E455D009391CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C3734211C3E455D009391CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C37342C1C3E455D009391CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,8 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				9C37340E1C3E455D009391CD /* LHiOSAccumulatesInSwift.app */,
-				9C3734241C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.xctest */,
-				9C37342F1C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,42 +268,6 @@
 			productReference = 9C37340E1C3E455D009391CD /* LHiOSAccumulatesInSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C3734231C3E455D009391CD /* LHiOSAccumulatesInSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C37343B1C3E455D009391CD /* Build configuration list for PBXNativeTarget "LHiOSAccumulatesInSwiftTests" */;
-			buildPhases = (
-				9C3734201C3E455D009391CD /* Sources */,
-				9C3734211C3E455D009391CD /* Frameworks */,
-				9C3734221C3E455D009391CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C3734261C3E455D009391CD /* PBXTargetDependency */,
-			);
-			name = LHiOSAccumulatesInSwiftTests;
-			productName = LHiOSAccumulatesInSwiftTests;
-			productReference = 9C3734241C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9C37342E1C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C37343E1C3E455D009391CD /* Build configuration list for PBXNativeTarget "LHiOSAccumulatesInSwiftUITests" */;
-			buildPhases = (
-				9C37342B1C3E455D009391CD /* Sources */,
-				9C37342C1C3E455D009391CD /* Frameworks */,
-				9C37342D1C3E455D009391CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C3734311C3E455D009391CD /* PBXTargetDependency */,
-			);
-			name = LHiOSAccumulatesInSwiftUITests;
-			productName = LHiOSAccumulatesInSwiftUITests;
-			productReference = 9C37342F1C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -354,16 +281,6 @@
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = V8MK9778M3;
 						LastSwiftMigration = 0900;
-					};
-					9C3734231C3E455D009391CD = {
-						CreatedOnToolsVersion = 7.0.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 9C37340D1C3E455D009391CD;
-					};
-					9C37342E1C3E455D009391CD = {
-						CreatedOnToolsVersion = 7.0.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 9C37340D1C3E455D009391CD;
 					};
 				};
 			};
@@ -381,8 +298,6 @@
 			projectRoot = "";
 			targets = (
 				9C37340D1C3E455D009391CD /* LHiOSAccumulatesInSwift */,
-				9C3734231C3E455D009391CD /* LHiOSAccumulatesInSwiftTests */,
-				9C37342E1C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -404,20 +319,6 @@
 				9C3734191C3E455D009391CD /* Main.storyboard in Resources */,
 				9C0C23C61C546F1100185C45 /* LSDemo.plist in Resources */,
 				9C0C23A41C54690D00185C45 /* LSDocument.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C3734221C3E455D009391CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C37342D1C3E455D009391CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,36 +348,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C3734201C3E455D009391CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C3734291C3E455D009391CD /* LHiOSAccumulatesInSwiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C37342B1C3E455D009391CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C3734341C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9C3734261C3E455D009391CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C37340D1C3E455D009391CD /* LHiOSAccumulatesInSwift */;
-			targetProxy = 9C3734251C3E455D009391CD /* PBXContainerItemProxy */;
-		};
-		9C3734311C3E455D009391CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C37340D1C3E455D009391CD /* LHiOSAccumulatesInSwift */;
-			targetProxy = 9C3734301C3E455D009391CD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9C3734171C3E455D009391CD /* Main.storyboard */ = {
@@ -630,62 +502,6 @@
 			};
 			name = Release;
 		};
-		9C37343C1C3E455D009391CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LHiOSAccumulatesInSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHiOSAccumulatesInSwift.app/LHiOSAccumulatesInSwift";
-			};
-			name = Debug;
-		};
-		9C37343D1C3E455D009391CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LHiOSAccumulatesInSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHiOSAccumulatesInSwift.app/LHiOSAccumulatesInSwift";
-			};
-			name = Release;
-		};
-		9C37343F1C3E455D009391CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LHiOSAccumulatesInSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = LHiOSAccumulatesInSwift;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		9C3734401C3E455D009391CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LHiOSAccumulatesInSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LHiOS.LHiOSAccumulatesInSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = LHiOSAccumulatesInSwift;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -703,24 +519,6 @@
 			buildConfigurations = (
 				9C3734391C3E455D009391CD /* Debug */,
 				9C37343A1C3E455D009391CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C37343B1C3E455D009391CD /* Build configuration list for PBXNativeTarget "LHiOSAccumulatesInSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C37343C1C3E455D009391CD /* Debug */,
-				9C37343D1C3E455D009391CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C37343E1C3E455D009391CD /* Build configuration list for PBXNativeTarget "LHiOSAccumulatesInSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C37343F1C3E455D009391CD /* Debug */,
-				9C3734401C3E455D009391CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
