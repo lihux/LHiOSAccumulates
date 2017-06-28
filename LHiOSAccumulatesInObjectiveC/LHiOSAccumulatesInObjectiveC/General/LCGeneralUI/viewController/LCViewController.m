@@ -36,8 +36,10 @@
 - (void)customUI {
     self.view.backgroundColor = LihuxContentBackgroundColor;
     [LCLihuxHelper makeLihuxStyleOfView:self.lcViewController_ContainerView];
-    [self.lcViewController_ContainerView removeFromSuperview];
-    [self.view addSubview:self.lcViewController_ContainerView withLayoutInfo:LHLayoutInfoMake(44, 0, 0, 0, LHLayoutNone, LHLayoutNone)];
+    if (self.lcViewController_ContainerView.tag != kLDontAdjustConstraintsTag) {
+        [self.lcViewController_ContainerView removeFromSuperview];
+        [self.view addSubview:self.lcViewController_ContainerView withLayoutInfo:LHLayoutInfoMake(44, 0, 0, 0, LHLayoutNone, LHLayoutNone)];
+    }
     NSString *rightText = [self rightItemText];
     LCSectionHeaderView *headerView = [LCSectionHeaderView sectionHeaderViewWithDelegate:self title:self.title leftText:@"返回" rightText:rightText];
     [self.view addSubview:headerView withLayoutInfo:LHLayoutInfoMake(0, 0, LHLayoutNone, 0, LHLayoutNone, 44)];
