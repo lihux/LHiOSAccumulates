@@ -42,7 +42,7 @@
 - (void)configUI {
     if (self.book) {
         LCBook *book = self.book;
-        self.book.title = [NSString stringWithFormat:@"阅读计划：%@", book.title];
+        self.title = [NSString stringWithFormat:@"阅读计划：%@", book.title];
         [self.bookImageView lc_setImageWithURLString:book.image];
         self.bookTitleLabel.text = book.title;
         self.bookPageCountLabel.text = [NSString stringWithFormat:@"页数：%zd", book.pages];

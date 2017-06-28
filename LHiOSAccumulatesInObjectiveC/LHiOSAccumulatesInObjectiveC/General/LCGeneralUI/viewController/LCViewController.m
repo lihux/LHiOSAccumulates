@@ -20,6 +20,7 @@
 @property (nonatomic, strong) UIView *logContainerView;
 @property (nonatomic, strong) UIView *lcViewController_ContainerView;
 @property (nonatomic, strong) UIView *logAnchorView;
+@property (nonatomic, strong) LCSectionHeaderView *headerView;
 
 @end
 
@@ -28,6 +29,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self customUI];
+    [self addKVOForTitle];
+}
+
+- (void)customUI {
     self.view.backgroundColor = LihuxContentBackgroundColor;
     [LCLihuxHelper makeLihuxStyleOfView:self.lcViewController_ContainerView];
     [self.lcViewController_ContainerView removeFromSuperview];
@@ -35,6 +41,11 @@
     NSString *rightText = [self rightItemText];
     LCSectionHeaderView *headerView = [LCSectionHeaderView sectionHeaderViewWithDelegate:self title:self.title leftText:@"返回" rightText:rightText];
     [self.view addSubview:headerView withLayoutInfo:LHLayoutInfoMake(0, 0, LHLayoutNone, 0, LHLayoutNone, 44)];
+    self.headerView = headerView;
+}
+
+- (void)addKVOForTitle {
+    [self addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)log:(NSString *)log {
@@ -73,6 +84,13 @@
     Class cls = [self class];
     LCViewController *vc = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass(cls)];
     return vc;
+}
+
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"title"]) {
+        [self.headerView updateTitle:self.title];
+    }
 }
 
 #pragma mark - 子类按需继承
@@ -195,6 +213,11 @@
         }
     }
     return _lcViewController_ContainerView;
+}
+
+#pragma mark -
+-(void)dealloc {
+    [self removeObserver:self forKeyPath:@"title"];
 }
 
 @end

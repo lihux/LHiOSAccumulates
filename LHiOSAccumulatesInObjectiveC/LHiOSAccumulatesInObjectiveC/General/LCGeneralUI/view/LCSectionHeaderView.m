@@ -38,6 +38,10 @@
     self.rightButton.hidden = rightText.length > 0 ? NO : YES;
 }
 
+- (void)updateTitle:(NSString *)title {
+    self.titleLabel.text = title;
+}
+
 #pragma mark - LCSectionHeaderViewDelegate
 - (IBAction)didTapOnLeftButton:(id)sender {
     if (self.delegate && [self.delegate respondsToSelector:@selector(sectionHeaderView:tappedOnLeftButton:)]) {

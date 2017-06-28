@@ -26,4 +26,6 @@
                                               leftText:(NSString *)leftText
                                              rightText:(NSString *)rightText;
 
+- (void)updateTitle:(NSString *)title;
+
 @end
