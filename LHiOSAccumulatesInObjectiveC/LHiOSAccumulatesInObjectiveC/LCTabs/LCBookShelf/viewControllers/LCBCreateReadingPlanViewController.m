@@ -46,7 +46,8 @@
         [self.bookImageView lc_setImageWithURLString:book.image];
         self.bookTitleLabel.text = book.title;
         self.bookPageCountLabel.text = [NSString stringWithFormat:@"页数：%zd", book.pages];
-        self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"从第%zd页开始阅读", book.pages];
+        self.totalCountLabel.text = [NSString stringWithFormat:@"%zd", book.pages];
+        self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"阅读起始页码：0"];
         self.pageCountSlider.minimumValue = 0;
         self.pageCountSlider.maximumValue = book.pages;
     }
@@ -54,7 +55,7 @@
 
 - (IBAction)pageCountSliderValueChanged:(UISlider *)sender {
     NSInteger startPage = (NSInteger)sender.value;
-    self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"从第%zd页开始阅读", startPage];
+    self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"阅读起始页码：%zd", startPage];
 }
 
 - (IBAction)readPagePerDaySliderValueChanged:(UISlider *)sender {

@@ -24,6 +24,7 @@
 		5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD9611EFA377E00DF92BA /* LCBReadingPlanViewController.m */; };
 		5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2B71EFBAAFF00A08022 /* LCBShelfViewController.m */; };
 		5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */; };
+		52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */; };
 		52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */; };
 		52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */; };
 		52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7652D1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m */; };
@@ -120,6 +121,8 @@
 		5296F2B71EFBAAFF00A08022 /* LCBShelfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBShelfViewController.m; sourceTree = "<group>"; };
 		5296F2BA1EFBAD8A00A08022 /* LCBShelfTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBShelfTableViewCell.h; sourceTree = "<group>"; };
 		5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBShelfTableViewCell.m; sourceTree = "<group>"; };
+		52B8D4401F03BCCA00A71B70 /* LCCalanderHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCalanderHelper.h; sourceTree = "<group>"; };
+		52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCalanderHelper.m; sourceTree = "<group>"; };
 		52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCoreDataManager.h; sourceTree = "<group>"; };
 		52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCoreDataManager.m; sourceTree = "<group>"; };
 		52CAEED11EFCF45D00A7EB16 /* LCBookCreater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCreater.h; sourceTree = "<group>"; };
@@ -296,6 +299,7 @@
 		5236A6501EF915D10011B09B /* LCBookShelf */ = {
 			isa = PBXGroup;
 			children = (
+				52B8D43F1F03BC9A00A71B70 /* helper */,
 				5296F2B91EFBAD6700A08022 /* views */,
 				528FD9571EFA377E00DF92BA /* data */,
 				528FD9581EFA377E00DF92BA /* resources */,
@@ -354,6 +358,15 @@
 				5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		52B8D43F1F03BC9A00A71B70 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				52B8D4401F03BCCA00A71B70 /* LCCalanderHelper.h */,
+				52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 		9C03654C1C4CF9F900E04D7B /* General */ = {
@@ -762,6 +775,7 @@
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
 				9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */,
 				9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */,
+				52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
