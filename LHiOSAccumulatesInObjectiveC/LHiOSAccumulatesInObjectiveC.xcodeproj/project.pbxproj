@@ -25,6 +25,7 @@
 		5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2B71EFBAAFF00A08022 /* LCBShelfViewController.m */; };
 		5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */; };
 		52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */; };
+		52B8D4451F03C1A400A71B70 /* LCDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4441F03C1A400A71B70 /* LCDatePickerView.m */; };
 		52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */; };
 		52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */; };
 		52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7652D1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m */; };
@@ -123,6 +124,8 @@
 		5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBShelfTableViewCell.m; sourceTree = "<group>"; };
 		52B8D4401F03BCCA00A71B70 /* LCCalanderHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCalanderHelper.h; sourceTree = "<group>"; };
 		52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCalanderHelper.m; sourceTree = "<group>"; };
+		52B8D4431F03C1A400A71B70 /* LCDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDatePickerView.h; sourceTree = "<group>"; };
+		52B8D4441F03C1A400A71B70 /* LCDatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDatePickerView.m; sourceTree = "<group>"; };
 		52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCoreDataManager.h; sourceTree = "<group>"; };
 		52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCoreDataManager.m; sourceTree = "<group>"; };
 		52CAEED11EFCF45D00A7EB16 /* LCBookCreater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCreater.h; sourceTree = "<group>"; };
@@ -416,6 +419,8 @@
 				9C9124331C4FA06E007AB00D /* LCSectionHeaderView.h */,
 				9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */,
 				9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */,
+				52B8D4431F03C1A400A71B70 /* LCDatePickerView.h */,
+				52B8D4441F03C1A400A71B70 /* LCDatePickerView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -735,6 +740,7 @@
 			files = (
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
 				9C476D901EF42DC1004AC758 /* LCDispatchApplyViewController.m in Sources */,
+				52B8D4451F03C1A400A71B70 /* LCDatePickerView.m in Sources */,
 				522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */,
 				5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,

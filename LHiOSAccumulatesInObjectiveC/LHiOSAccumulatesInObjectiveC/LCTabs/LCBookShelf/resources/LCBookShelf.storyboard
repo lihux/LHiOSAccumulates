@@ -660,7 +660,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-Lu-Wro">
+                                                    <label opaque="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-Lu-Wro">
                                                         <rect key="frame" x="139" y="117.66666666666666" width="265" height="35"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
@@ -673,7 +673,7 @@
                                                             <outletCollection property="gestureRecognizers" destination="UV5-Tz-odx" appends="YES" id="5un-vr-jfM"/>
                                                         </connections>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avg-qd-YXR">
+                                                    <label opaque="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avg-qd-YXR">
                                                         <rect key="frame" x="110" y="167.66666666666666" width="294" height="35"/>
                                                         <gestureRecognizers/>
                                                         <constraints>

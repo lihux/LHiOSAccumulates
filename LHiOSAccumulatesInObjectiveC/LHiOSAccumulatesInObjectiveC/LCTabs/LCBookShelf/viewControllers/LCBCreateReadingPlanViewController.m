@@ -10,6 +10,7 @@
 
 #import "LCBookShelf+CoreDataModel.h"
 #import "UIImageView+LCURL.h"
+#import "LCDatePickerView.h"
 
 @interface LCBCreateReadingPlanViewController ()
 
@@ -65,9 +66,15 @@
 }
 
 - (IBAction)selectStartTimeAction:(id)sender {
+    [LCDatePickerView showPickerViewWithCompletionBlock:^(NSDate *selectedDate) {
+        NSLog(@"选择计划开始的日期是：%@", selectedDate);
+    }];
 }
 
 - (IBAction)selectEndTimeAction:(id)sender {
+    [LCDatePickerView showPickerViewWithCompletionBlock:^(NSDate *selectedDate) {
+        NSLog(@"选择计划结束的日期是：%@", selectedDate);
+    }];
 }
 
 @end
