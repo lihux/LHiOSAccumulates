@@ -94,6 +94,7 @@
     }
     _persistentContainer = [NSPersistentContainer persistentContainerWithName:@"LCBookShelf"];
     [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription * _Nonnull storeDescription, NSError * _Nullable error) {
+        [NSString stringWithFormat:@"从CoreData中加载我的书架书籍失败，错误信息：\n%@", error];
         NSAssert(!error, ([NSString stringWithFormat:@"从CoreData中加载我的书架书籍失败，错误信息：\n%@", error]), nil);
     }];
     return _persistentContainer;

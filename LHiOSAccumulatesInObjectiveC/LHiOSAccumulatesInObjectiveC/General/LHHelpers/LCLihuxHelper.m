@@ -19,7 +19,11 @@
     view.backgroundColor = [UIColor clearColor];
     UIColor *textColor = [UIColor whiteColor];
     if ([view isKindOfClass:[UILabel class]]) {
-        [(UILabel *)view setTextColor:textColor];
+        UILabel *label = (UILabel *)view;
+        [label setTextColor:textColor];
+        if (label.tag >9 && label.tag < 20) {
+            label.font = [UIFont fontWithName:@"PingFangSC-Regular" size:label.tag];
+        }
     } else if ([view isKindOfClass:[UIButton class]]) {
         [(UIButton *)view setTitleColor:textColor forState:UIControlStateNormal];
     } else if ([view isKindOfClass:[UITextField class]]) {

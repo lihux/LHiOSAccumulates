@@ -11,8 +11,15 @@
 @class LCBook;
 @class LCBShelfTableViewCell;
 
+@protocol LCBShelfTableViewCellDelegate <NSObject>
+
+- (void)planButtonDidTappedOnCell:(LCBShelfTableViewCell *)cell;
+
+@end
+
 @interface LCBShelfTableViewCell : UITableViewCell
 
-@property (nonatomic, weak) LCBook *book;
+@property (nonatomic, strong) LCBook *book;
+@property (nonatomic, weak) id<LCBShelfTableViewCellDelegate> delegate;
 
 @end

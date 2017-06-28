@@ -618,15 +618,163 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIj-pT-RfX" userLabel="plan info View">
                                         <rect key="frame" x="0.0" y="114.66666666666669" width="414" height="601.33333333333326"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-od-d3S">
-                                                <rect key="frame" x="33" y="69" width="120" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阅读起始页数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-od-d3S">
+                                                <rect key="frame" x="15" y="15" width="389" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="CPE-Bt-exY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg9-gq-AZh">
+                                                <rect key="frame" x="10" y="151.00000000000003" width="119" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="5zQ-4f-yf0"/>
+                                                    <constraint firstAttribute="width" constant="119" id="Ulg-Gd-6jP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结束时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="462-gg-Afa">
+                                                <rect key="frame" x="10" y="206.33333333333334" width="90" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="LHd-Kv-MGV"/>
+                                                    <constraint firstAttribute="width" constant="90" id="nTx-Cc-Jhk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总阅读计划持续天数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJu-2A-AQI">
+                                                <rect key="frame" x="10" y="262.66666666666663" width="394" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="AkK-Qi-r49"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="Ext-qp-WlA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-Lu-Wro">
+                                                <rect key="frame" x="139" y="142.66666666666666" width="265" height="35"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="DVF-ke-orl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="UV5-Tz-odx" appends="YES" id="5un-vr-jfM"/>
+                                                </connections>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avg-qd-YXR">
+                                                <rect key="frame" x="110" y="197.66666666666666" width="294" height="35"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="d7Q-c3-Hy4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="TWi-L7-xaB" appends="YES" id="vac-iB-Ba7"/>
+                                                </connections>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtm-D7-rgF">
+                                                <rect key="frame" x="10" y="48" width="42" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="42" id="RFJ-ML-1SV"/>
+                                                    <constraint firstAttribute="height" constant="18" id="Y4y-pG-SuX"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QG-F0-oDF">
+                                                <rect key="frame" x="62" y="48" width="342" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="OJB-ht-a3d"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-5y-vLp">
+                                                <rect key="frame" x="8" y="86" width="398" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="sUn-EY-ql3"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="pageCountSliderValueChanged:" destination="muY-bx-JTx" eventType="valueChanged" id="40F-H5-fvs"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="0H1-zs-gPk">
+                                                <rect key="frame" x="8" y="325.66666666666663" width="398" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="DOD-Uc-0IZ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="timeDurationSliderValueChanged:" destination="muY-bx-JTx" eventType="valueChanged" id="rSG-6s-aj3"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平均每天阅读页数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZx-ck-9th">
+                                                <rect key="frame" x="10" y="395.66666666666674" width="394" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="Qb7-fY-ukW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="A5d-19-DAH">
+                                                <rect key="frame" x="8" y="458.66666666666674" width="398" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="1uv-PN-KUt"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="readPagePerDaySliderValueChanged:" destination="muY-bx-JTx" eventType="valueChanged" id="DpP-WR-BLa"/>
+                                                </connections>
+                                            </slider>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bxB-od-d3S" secondAttribute="trailing" constant="10" id="2ii-q6-NN8"/>
+                                            <constraint firstItem="A5d-19-DAH" firstAttribute="top" secondItem="NZx-ck-9th" secondAttribute="bottom" constant="45" id="3xT-MA-UrZ"/>
+                                            <constraint firstItem="8QG-F0-oDF" firstAttribute="leading" secondItem="Gtm-D7-rgF" secondAttribute="trailing" constant="10" id="4Dx-CE-47Z"/>
+                                            <constraint firstItem="bqp-Lu-Wro" firstAttribute="centerY" secondItem="Pg9-gq-AZh" secondAttribute="centerY" id="4bJ-4p-FKv"/>
+                                            <constraint firstItem="A5d-19-DAH" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="10" id="5BI-0N-bjJ"/>
+                                            <constraint firstItem="avg-qd-YXR" firstAttribute="leading" secondItem="462-gg-Afa" secondAttribute="trailing" constant="10" id="5Lh-Iw-6fa"/>
+                                            <constraint firstItem="NZx-ck-9th" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="10" id="5WU-eg-DkC"/>
+                                            <constraint firstItem="462-gg-Afa" firstAttribute="centerY" secondItem="avg-qd-YXR" secondAttribute="centerY" id="6LQ-Oo-SAf"/>
+                                            <constraint firstItem="Pg9-gq-AZh" firstAttribute="top" secondItem="Dkl-5y-vLp" secondAttribute="bottom" constant="35" id="99o-vM-igR"/>
+                                            <constraint firstItem="Gtm-D7-rgF" firstAttribute="top" secondItem="bxB-od-d3S" secondAttribute="bottom" constant="15" id="Fav-In-KwW"/>
+                                            <constraint firstItem="0H1-zs-gPk" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="10" id="G7F-lo-HCR"/>
+                                            <constraint firstItem="0H1-zs-gPk" firstAttribute="top" secondItem="LJu-2A-AQI" secondAttribute="bottom" constant="45" id="JTY-SJ-Qe3"/>
+                                            <constraint firstAttribute="trailing" secondItem="bqp-Lu-Wro" secondAttribute="trailing" constant="10" id="LIr-IW-9MN"/>
+                                            <constraint firstItem="8QG-F0-oDF" firstAttribute="top" secondItem="bxB-od-d3S" secondAttribute="bottom" constant="15" id="OXZ-qL-Y7P"/>
+                                            <constraint firstAttribute="trailing" secondItem="NZx-ck-9th" secondAttribute="trailing" constant="10" id="QcZ-Mk-bb0"/>
+                                            <constraint firstItem="NZx-ck-9th" firstAttribute="top" secondItem="0H1-zs-gPk" secondAttribute="bottom" constant="40" id="Sux-b8-Rf1"/>
+                                            <constraint firstItem="LJu-2A-AQI" firstAttribute="top" secondItem="avg-qd-YXR" secondAttribute="bottom" constant="30" id="Tci-lH-bFz"/>
+                                            <constraint firstAttribute="trailing" secondItem="Dkl-5y-vLp" secondAttribute="trailing" constant="10" id="V5s-3b-yfZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="A5d-19-DAH" secondAttribute="trailing" constant="10" id="VNK-aS-ZH9"/>
+                                            <constraint firstItem="bqp-Lu-Wro" firstAttribute="leading" secondItem="Pg9-gq-AZh" secondAttribute="trailing" constant="10" id="Zxm-F8-AJb"/>
+                                            <constraint firstItem="avg-qd-YXR" firstAttribute="top" secondItem="bqp-Lu-Wro" secondAttribute="bottom" constant="20" id="b1R-d3-VnG"/>
+                                            <constraint firstAttribute="trailing" secondItem="0H1-zs-gPk" secondAttribute="trailing" constant="10" id="ip6-hk-UxY"/>
+                                            <constraint firstAttribute="trailing" secondItem="avg-qd-YXR" secondAttribute="trailing" constant="10" id="n8f-aN-Uro"/>
+                                            <constraint firstAttribute="trailing" secondItem="LJu-2A-AQI" secondAttribute="trailing" constant="10" id="nwL-aE-eSq"/>
+                                            <constraint firstItem="462-gg-Afa" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="10" id="pAr-8S-KjZ"/>
+                                            <constraint firstItem="Dkl-5y-vLp" firstAttribute="top" secondItem="Gtm-D7-rgF" secondAttribute="bottom" constant="20" id="pKP-5p-uCM"/>
+                                            <constraint firstItem="bxB-od-d3S" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="15" id="pf2-9j-iY3"/>
+                                            <constraint firstItem="bxB-od-d3S" firstAttribute="top" secondItem="TIj-pT-RfX" secondAttribute="top" constant="15" id="qCr-N3-kWS"/>
+                                            <constraint firstItem="Pg9-gq-AZh" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="10" id="uGc-cA-upC"/>
+                                            <constraint firstAttribute="trailing" secondItem="8QG-F0-oDF" secondAttribute="trailing" constant="10" id="wEh-Pc-e8h"/>
+                                            <constraint firstItem="Dkl-5y-vLp" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="10" id="wRV-M7-cA9"/>
+                                            <constraint firstItem="LJu-2A-AQI" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="10" id="yI7-nc-WgJ"/>
+                                            <constraint firstItem="Gtm-D7-rgF" firstAttribute="leading" secondItem="TIj-pT-RfX" secondAttribute="leading" constant="10" id="z2U-UD-GGF"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -653,11 +801,26 @@
                         <outlet property="bookImageView" destination="hNs-fZ-qGY" id="94V-3k-e4e"/>
                         <outlet property="bookPageCountLabel" destination="U7n-lj-ZZw" id="5Lc-ia-Ikp"/>
                         <outlet property="bookTitleLabel" destination="KX1-3Z-H8T" id="YmY-Bx-FRa"/>
+                        <outlet property="pageCountSlider" destination="Dkl-5y-vLp" id="Qyo-MF-wYI"/>
+                        <outlet property="readPagePerDaySlider" destination="A5d-19-DAH" id="Dh5-NC-CGL"/>
+                        <outlet property="readingStartPageCountLabel" destination="bxB-od-d3S" id="t83-HM-rBB"/>
+                        <outlet property="timeDurationSlider" destination="0H1-zs-gPk" id="SGy-OD-iKd"/>
+                        <outlet property="totalCountLabel" destination="8QG-F0-oDF" id="aP0-g1-yUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0P-WG-qLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UV5-Tz-odx">
+                    <connections>
+                        <action selector="selectStartTimeAction:" destination="muY-bx-JTx" id="e1i-gr-SJZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="TWi-L7-xaB">
+                    <connections>
+                        <action selector="selectEndTimeAction:" destination="muY-bx-JTx" id="lhM-pJ-RbF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2617" y="898"/>
+            <point key="canvasLocation" x="2615.9420289855075" y="897.554347826087"/>
         </scene>
         <!--阅读计划-->
         <scene sceneID="g9y-L1-oxd">

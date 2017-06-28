@@ -12,10 +12,11 @@
 #import "LCBShelfTableViewCell.h"
 #import "LCBookScanViewController.h"
 #import "LCBookViewController.h"
+#import "LCBCreateReadingPlanViewController.h"
 
 #import <CoreData/CoreData.h>
 
-@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate, NSURLSessionDataDelegate, NSFetchedResultsControllerDelegate>
+@interface LCBShelfViewController () <UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate, NSURLSessionDataDelegate, NSFetchedResultsControllerDelegate, LCBShelfTableViewCellDelegate>
 
 @property (nonatomic, strong) LCBookCoreDataManager *manager;
 @property (nonatomic, strong) NSURLSession *urlSession;
@@ -51,6 +52,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LCBShelfTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LCBShelfTableViewCell class])];
     cell.book = [self.manager bookForRowAtIndexPath:indexPath];
+    cell.delegate = self;
     return cell;
 }
 
@@ -201,6 +203,12 @@ didReceiveResponse:(NSURLResponse *)response
         LCBookViewController *bookViewController = (LCBookViewController *)segue.destinationViewController;
         bookViewController.book = book;
     }
+}
+
+#pragma mark - LCBShelfTableViewCellDelegate
+- (void)planButtonDidTappedOnCell:(LCBShelfTableViewCell *)cell {
+    LCBook *book = cell.book;
+    [self.navigationController pushViewController:[LCBCreateReadingPlanViewController createReadingPlanViewControllerForBook:book] animated:YES];
 }
 
 #pragma mark - lazy load

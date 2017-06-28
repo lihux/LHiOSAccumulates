@@ -56,6 +56,9 @@
 }
 
 - (IBAction)didTapOnPlanButton:(UIButton *)sender {
+    if ([self.delegate respondsToSelector:@selector(planButtonDidTappedOnCell:)]) {
+        [self.delegate planButtonDidTappedOnCell:self];
+    }
 }
 
 
