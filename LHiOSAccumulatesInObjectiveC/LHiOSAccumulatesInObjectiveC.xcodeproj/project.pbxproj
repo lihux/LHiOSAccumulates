@@ -56,6 +56,8 @@
 		9C476D991EF51D8F004AC758 /* LCDBasicTech.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C476D931EF51A70004AC758 /* LCDBasicTech.plist */; };
 		9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C476D9B1EF51E57004AC758 /* LCDBENUMExploreViewController.m */; };
 		9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C476D9E1EF51E6C004AC758 /* LCDBBlockExploreViewController.m */; };
+		9C4BE4BD1F05494F001A1D06 /* LCDCSBitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4BC1F05494F001A1D06 /* LCDCSBitButton.m */; };
+		9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4BF1F0550F5001A1D06 /* LCDCSByteView.m */; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
 		9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4821C3E3E43003877BC /* Assets.xcassets */; };
@@ -183,6 +185,10 @@
 		9C476D9B1EF51E57004AC758 /* LCDBENUMExploreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBENUMExploreViewController.m; sourceTree = "<group>"; };
 		9C476D9D1EF51E6C004AC758 /* LCDBBlockExploreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBBlockExploreViewController.h; sourceTree = "<group>"; };
 		9C476D9E1EF51E6C004AC758 /* LCDBBlockExploreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBBlockExploreViewController.m; sourceTree = "<group>"; };
+		9C4BE4BB1F05494F001A1D06 /* LCDCSBitButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDCSBitButton.h; sourceTree = "<group>"; };
+		9C4BE4BC1F05494F001A1D06 /* LCDCSBitButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDCSBitButton.m; sourceTree = "<group>"; };
+		9C4BE4BE1F0550F5001A1D06 /* LCDCSByteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDCSByteView.h; sourceTree = "<group>"; };
+		9C4BE4BF1F0550F5001A1D06 /* LCDCSByteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDCSByteView.m; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4741C3E3E43003877BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C61C4801C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -590,6 +596,10 @@
 		9CD141C91EFF678000B25586 /* LCDComputerSystemChapter2 */ = {
 			isa = PBXGroup;
 			children = (
+				9C4BE4BB1F05494F001A1D06 /* LCDCSBitButton.h */,
+				9C4BE4BC1F05494F001A1D06 /* LCDCSBitButton.m */,
+				9C4BE4BE1F0550F5001A1D06 /* LCDCSByteView.h */,
+				9C4BE4BF1F0550F5001A1D06 /* LCDCSByteView.m */,
 				9CD141CA1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.h */,
 				9CD141CB1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.m */,
 				9CA605931F05406C000DB286 /* LCComputerSystemCh2IntRepresentViewController.h */,
@@ -773,6 +783,7 @@
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
 				5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */,
 				9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */,
+				9C4BE4BD1F05494F001A1D06 /* LCDCSBitButton.m in Sources */,
 				9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */,
 				9CA6059B1F05409B000DB286 /* LCComputerSystemCh2HomeWorkViewController.m in Sources */,
 				9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */,
@@ -798,6 +809,7 @@
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,
 				9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */,
+				9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
