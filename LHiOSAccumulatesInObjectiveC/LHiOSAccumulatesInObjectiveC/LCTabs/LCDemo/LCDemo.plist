@@ -6,9 +6,9 @@
 		<key>plistName</key>
 		<string>LCDComputerSystem</string>
 		<key>title</key>
-		<string>《深入理解计算机系统（3）》练习题</string>
+		<string>《深入理解计算机系统（3）》</string>
 		<key>viewControllerTitle</key>
-		<string>《深入理解计算机系统（3）》练习题</string>
+		<string>《深入理解计算机系统（3）》</string>
 		<key>content</key>
 		<string>精通细节是理解更深和更基本概念的先决条件。</string>
 	</dict>

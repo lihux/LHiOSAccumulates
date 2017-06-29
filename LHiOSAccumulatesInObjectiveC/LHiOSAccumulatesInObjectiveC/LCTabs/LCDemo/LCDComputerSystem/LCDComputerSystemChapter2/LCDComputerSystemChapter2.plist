@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>信息存储的基本概念</string>
+		<key>viewControllerTitle</key>
+		<string>信息存储的基本概念</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+		<key>storyboardID</key>
+		<string>LCDComputerSystemCh2ViewController</string>
+		<key>storyboardName</key>
+		<string>LCDComputerSystem</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>整数的位级表示</string>
+		<key>viewControllerTitle</key>
+		<string>整数的位级表示</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+		<key>storyboardID</key>
+		<string>LCComputerSystemCh2IntRepresentViewController</string>
+		<key>storyboardName</key>
+		<string>LCDComputerSystem</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>浮点数的位级表示</string>
+		<key>viewControllerTitle</key>
+		<string>浮点数的位级表示</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+		<key>storyboardID</key>
+		<string>LCComputerSystemCh2FloatRepresentViewController</string>
+		<key>storyboardName</key>
+		<string>LCDComputerSystem</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>家庭作业</string>
+		<key>viewControllerTitle</key>
+		<string>家庭作业</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+		<key>storyboardID</key>
+		<string>LCComputerSystemCh2HomeWorkViewController</string>
+		<key>storyboardName</key>
+		<string>LCDComputerSystem</string>
+	</dict>
+</array>
+</plist>

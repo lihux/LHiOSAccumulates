@@ -9,10 +9,8 @@
 		<string>第二章：信息的表示和处理</string>
 		<key>content</key>
 		<string>精通细节是理解更深和更基本概念的先决条件。</string>
-		<key>storyboardID</key>
-		<string>LCDComputerSystemCh2ViewController</string>
-		<key>storyboardName</key>
-		<string>LCDComputerSystem</string>
+		<key>plistName</key>
+		<string>LCDComputerSystemChapter2</string>
 	</dict>
 </array>
 </plist>
