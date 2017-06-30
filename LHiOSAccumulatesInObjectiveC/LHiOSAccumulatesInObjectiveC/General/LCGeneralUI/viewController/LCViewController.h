@@ -82,6 +82,8 @@
  */
 + (instancetype)loadViewControllerFromStoryboard:(NSString *)storyboardName;
 
+- (NSString *)leftItemText;
+
 - (NSString *)rightItemText;
 
 @end

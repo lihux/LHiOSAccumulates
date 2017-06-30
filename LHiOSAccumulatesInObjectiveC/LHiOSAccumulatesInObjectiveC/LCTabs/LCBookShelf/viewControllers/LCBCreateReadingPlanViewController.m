@@ -79,6 +79,24 @@
     }];
 }
 
+-(NSString *)leftItemText {
+    return @"取消";
+}
+
+-(NSString *)rightItemText {
+    return @"保存";
+}
+
+#pragma mark -
+#pragma mark - LCSectionHeaderViewDelegate
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - lazy loads
 - (NSCalendar *)calendar {
     if (_calendar) {
