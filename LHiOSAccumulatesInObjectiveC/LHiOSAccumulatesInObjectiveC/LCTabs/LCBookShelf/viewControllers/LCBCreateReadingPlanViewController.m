@@ -25,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *timeDurationSlider;
 @property (weak, nonatomic) IBOutlet UISlider *readPagePerDaySlider;
 
+@property (nonatomic, strong) NSCalendar *calendar;
+
 @end
 
 @implementation LCBCreateReadingPlanViewController
@@ -75,6 +77,15 @@
     [LCDatePickerView showPickerViewWithTitle:@"选择结束时间" completionBlock:^(NSDate *selectedDate) {
         NSLog(@"选择计划结束的日期是：%@", selectedDate);
     }];
+}
+
+#pragma mark - lazy loads
+- (NSCalendar *)calendar {
+    if (_calendar) {
+        return _calendar;
+    }
+    _calendar = [NSCalendar currentCalendar];
+    return _calendar;
 }
 
 @end

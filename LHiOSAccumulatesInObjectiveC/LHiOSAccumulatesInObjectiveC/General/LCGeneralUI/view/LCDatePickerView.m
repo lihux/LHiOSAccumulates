@@ -27,6 +27,7 @@
 
 + (void)showPickerViewWithTitle:(NSString *)title completionBlock:(LCDatePickerCompletionBlock) completionBlock {
     LCDatePickerView *pickerView = [[LCDatePickerView alloc] init];
+    pickerView.completionBlock = completionBlock;
     pickerView.titleLabel.text = title;
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     [window addSubviewUsingDefaultLayoutConstraints:pickerView];
