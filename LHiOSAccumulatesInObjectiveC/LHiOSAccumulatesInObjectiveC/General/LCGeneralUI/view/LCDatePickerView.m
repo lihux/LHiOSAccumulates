@@ -16,6 +16,9 @@
 
 @property (nonatomic, copy) LCDatePickerCompletionBlock completionBlock;
 @property (nonatomic, strong) UIDatePicker *datePicker;
+@property (nonatomic, strong) NSLayoutConstraint *datePickerBottomConstraint;
+@property (nonatomic, assign) CGFloat datePickerViewHeight;
+
 @end
 
 @implementation LCDatePickerView
@@ -24,8 +27,7 @@
     LCDatePickerView *pickerView = [[LCDatePickerView alloc] init];
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     [window addSubviewUsingDefaultLayoutConstraints:pickerView];
-    NSLayoutConstraint *heightConstraint = [pickerView.datePicker.constraints firstObject];
-    heightConstraint.constant = 200;
+    pickerView.datePickerBottomConstraint.constant = 0;
     [UIView animateWithDuration:0.35 animations:^{
         [pickerView setNeedsLayout];
         pickerView.backgroundColor = [UIColor colorWithHex:0xFFFFFF alpha:0.4];
@@ -44,7 +46,14 @@
     self.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cancelSelectDate)];
     [self addGestureRecognizer:tap];
-    [self addSubview:self.datePicker withLayoutInfo:LHLayoutInfoMake(LHLayoutNone, 0, 0, 0, LHLayoutNone, 0)];
+    self.datePickerViewHeight = 190;
+    [self addSubview:self.datePicker withLayoutInfo:LHLayoutInfoMake(LHLayoutNone, 0, -self.datePickerViewHeight, 0, LHLayoutNone, self.datePickerViewHeight)];
+    for (NSLayoutConstraint *constraint in self.constraints) {
+        if (constraint.constant == -self.datePickerViewHeight) {
+            self.datePickerBottomConstraint = constraint;
+            break;
+        }
+    }
 }
 
 #pragma mark - actions
@@ -66,8 +75,7 @@
 }
 
 - (void)dismiss {
-    NSLayoutConstraint *heightConstraint = self.datePicker.constraints.firstObject;
-    heightConstraint.constant = 0;
+    self.datePickerBottomConstraint.constant = -self.datePickerViewHeight;
     [UIView animateWithDuration:0.35 animations:^{
         [self setNeedsLayout];
         self.backgroundColor = [UIColor colorWithHex:0xFFFFFF alpha:0];
