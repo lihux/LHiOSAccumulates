@@ -12,6 +12,6 @@ typedef void(^LCDatePickerCompletionBlock)(NSDate *selectedDate);
 
 @interface LCDatePickerView : UIView
 
-+ (void)showPickerViewWithCompletionBlock:(LCDatePickerCompletionBlock) completionBlock;
-
++ (void)showPickerViewWithTitle:(NSString *)title completionBlock:(LCDatePickerCompletionBlock) completionBlock;
+    
 @end

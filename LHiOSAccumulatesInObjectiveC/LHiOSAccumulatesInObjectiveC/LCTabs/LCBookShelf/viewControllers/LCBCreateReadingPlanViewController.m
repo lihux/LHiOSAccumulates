@@ -66,13 +66,13 @@
 }
 
 - (IBAction)selectStartTimeAction:(id)sender {
-    [LCDatePickerView showPickerViewWithCompletionBlock:^(NSDate *selectedDate) {
+    [LCDatePickerView showPickerViewWithTitle:@"选择开始时间" completionBlock:^(NSDate *selectedDate) {
         NSLog(@"选择计划开始的日期是：%@", selectedDate);
     }];
 }
 
 - (IBAction)selectEndTimeAction:(id)sender {
-    [LCDatePickerView showPickerViewWithCompletionBlock:^(NSDate *selectedDate) {
+    [LCDatePickerView showPickerViewWithTitle:@"选择结束时间" completionBlock:^(NSDate *selectedDate) {
         NSLog(@"选择计划结束的日期是：%@", selectedDate);
     }];
 }
