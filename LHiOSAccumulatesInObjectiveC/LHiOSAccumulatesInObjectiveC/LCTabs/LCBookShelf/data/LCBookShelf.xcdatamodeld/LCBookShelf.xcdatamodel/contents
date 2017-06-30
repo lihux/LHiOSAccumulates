@@ -45,8 +45,8 @@
     </entity>
     <entity name="LCBookReadingPlan" representedClassName="LCBookReadingPlan" syncable="YES" codeGenerationType="class">
         <attribute name="currentReadingCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="endTime" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="startTime" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCBook" inverseName="readingPlan" inverseEntity="LCBook" syncable="YES"/>
         <relationship name="currentReadingRecord" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCBReadingRecord" syncable="YES"/>
         <relationship name="readingRecords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LCBReadingRecord" inverseName="bookPlan" inverseEntity="LCBReadingRecord" syncable="YES"/>
@@ -70,7 +70,7 @@
         <attribute name="diary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="finishedPageCount" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="planedPageCount" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="readingTime" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="readingTime" optional="YES" attributeType="Date" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="bookPlan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCBookReadingPlan" inverseName="readingRecords" inverseEntity="LCBookReadingPlan" syncable="YES"/>
     </entity>
     <entity name="LCShelf" representedClassName="LCShelf" syncable="YES" codeGenerationType="class">

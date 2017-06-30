@@ -11,6 +11,7 @@
 #import "LCBookShelf+CoreDataModel.h"
 #import "UIImageView+LCURL.h"
 #import "LCDatePickerView.h"
+#import "LCTimeHelper.h"
 
 @interface LCBCreateReadingPlanViewController ()
 
@@ -24,8 +25,10 @@
 @property (weak, nonatomic) IBOutlet UISlider *pageCountSlider;
 @property (weak, nonatomic) IBOutlet UISlider *timeDurationSlider;
 @property (weak, nonatomic) IBOutlet UISlider *readPagePerDaySlider;
-
 @property (nonatomic, strong) NSCalendar *calendar;
+
+@property (nonatomic, strong) NSDate *startDate;
+@property (nonatomic, strong) NSDate *endDate;
 
 @end
 
@@ -87,6 +90,13 @@
     return @"保存";
 }
 
+- (void)saveReadingPlan {
+    LCBookReadingPlan *plan = [[LCBookReadingPlan alloc] initWithContext:self.book.managedObjectContext];
+    plan.book = self.book;
+    plan.startTime = [LCTimeHelper timeIntervalFromDate:self.startDate];
+    plan.endTime = [LCTimeHelper timeIntervalFromDate:self.endDate];
+}
+
 #pragma mark -
 #pragma mark - LCSectionHeaderViewDelegate
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnLeftButton:(UIButton *)leftButton {
@@ -94,6 +104,7 @@
 }
 
 - (void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
+    [self saveReadingPlan];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

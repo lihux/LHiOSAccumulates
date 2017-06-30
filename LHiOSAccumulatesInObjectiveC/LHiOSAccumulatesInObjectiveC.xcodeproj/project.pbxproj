@@ -18,6 +18,7 @@
 		522485221EE7BB60001A1429 /* LCSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5224850B1EE7BB60001A1429 /* LCSetting.storyboard */; };
 		522485231EE7BB60001A1429 /* LCSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5224850C1EE7BB60001A1429 /* LCSetting.plist */; };
 		522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */; };
+		5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E1CF1F066B90005EF013 /* LCTimeHelper.m */; };
 		5296F2AE1EFB9EB600A08022 /* LCBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5237BE6F1EFB84C800180A04 /* LCBookShelf.xcdatamodeld */; };
 		5296F2AF1EFB9ED100A08022 /* LCBCurrentReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD95D1EFA377E00DF92BA /* LCBCurrentReadingViewController.m */; };
 		5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD95F1EFA377E00DF92BA /* LCBHowNBIamViewController.m */; };
@@ -117,6 +118,8 @@
 		5224852F1EE8EBD0001A1429 /* UIView+LHAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LHAutoLayout.h"; sourceTree = "<group>"; };
 		522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHAutoLayout.m"; sourceTree = "<group>"; };
 		5237BE701EFB84C800180A04 /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
+		5270E1CE1F066B90005EF013 /* LCTimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTimeHelper.h; sourceTree = "<group>"; };
+		5270E1CF1F066B90005EF013 /* LCTimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTimeHelper.m; sourceTree = "<group>"; };
 		528FD9591EFA377E00DF92BA /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
 		528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCBookShelf.storyboard; sourceTree = "<group>"; };
 		528FD95C1EFA377E00DF92BA /* LCBCurrentReadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBCurrentReadingViewController.h; sourceTree = "<group>"; };
@@ -474,6 +477,8 @@
 				9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */,
 				9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */,
 				9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */,
+				5270E1CE1F066B90005EF013 /* LCTimeHelper.h */,
+				5270E1CF1F066B90005EF013 /* LCTimeHelper.m */,
 			);
 			path = LHHelpers;
 			sourceTree = "<group>";
@@ -819,6 +824,7 @@
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
+				5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */,
 				9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */,
 				9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */,
 				52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */,
