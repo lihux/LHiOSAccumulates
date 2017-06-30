@@ -1,3 +1,4 @@
 To generate file a.out, I use command: 
 To generate file hello.gcc, I use command: 
 To generate file hello.llvm, I use command: 
+使用命令:llvm-gcc -O0 -S 114_mstore.c 生成汇编文件114_mstore.s
