@@ -30,10 +30,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *durationTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *averagePageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *maxDayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *maxAveragePageCountLabel;
 
-@property (nonatomic, strong) NSDate *startDate;
-@property (nonatomic, strong) NSDate *endDate;
-@property (nonatomic, assign) NSInteger startReadingPage;
+@property (nonatomic, strong) NSDate *startDate; //计划开始时间
+@property (nonatomic, strong) NSDate *endDate; //计划结束是假
+@property (nonatomic, assign) NSInteger startReadingPage;//从第几页开始阅读
+@property (nonatomic, assign) NSInteger durationDays;//计划持续时间
+@property (nonatomic, assign) NSInteger averageReadingPageCount;
 
 @end
 
@@ -58,11 +62,11 @@
         self.bookTitleLabel.text = book.title;
         self.bookPageCountLabel.text = [NSString stringWithFormat:@"页数：%zd", book.pages];
         self.totalCountLabel.text = [NSString stringWithFormat:@"%zd", book.pages];
-        self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"阅读起始页码：0"];
         self.pageCountSlider.minimumValue = 0;
         self.pageCountSlider.maximumValue = book.pages;
         self.startDate = [NSDate date];
         self.endDate = [LCTimeHelper tomorrow];
+        self.startReadingPage = 0;
     }
 }
 
@@ -71,9 +75,11 @@
 }
 
 - (IBAction)readPagePerDaySliderValueChanged:(UISlider *)sender {
+    self.averageReadingPageCount = (NSInteger)sender.value;
 }
 
 - (IBAction)timeDurationSliderValueChanged:(UISlider *)sender {
+    
 }
 
 - (IBAction)selectStartTimeAction:(id)sender {
@@ -141,8 +147,21 @@
 
 - (void)setStartReadingPage:(NSInteger)startReadingPage {
     _startReadingPage = startReadingPage;
-    self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"计划起始页%zd", startReadingPage];
+    self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"计划起始页：%zd", startReadingPage];
     self.readPagePerDaySlider.maximumValue = self.book.pages - startReadingPage;
+    NSInteger totoalReadingPages = self.book.pages - startReadingPage;
+    self.maxDayLabel.text = [NSString stringWithFormat:@"%zd", totoalReadingPages];
+    self.maxAveragePageCountLabel.text = [NSString stringWithFormat:@"%zd", totoalReadingPages];
+}
+
+- (void)setDurationDays:(NSInteger)durationDays {
+    _durationDays = durationDays;
+    self.durationTimeLabel.text = [NSString stringWithFormat:@"计划阅读持续天数: %zd", durationDays];
+}
+
+- (void)setAverageReadingPageCount:(NSInteger)averageReadingPageCount {
+    _averageReadingPageCount = averageReadingPageCount;
+    self.averagePageLabel.text = [NSString stringWithFormat:@"平均每天计划阅读页数：%zd", averageReadingPageCount];
 }
 
 @end
