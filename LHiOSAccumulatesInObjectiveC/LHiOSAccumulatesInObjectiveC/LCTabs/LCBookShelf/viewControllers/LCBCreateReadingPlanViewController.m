@@ -13,6 +13,8 @@
 #import "LCDatePickerView.h"
 #import "LCTimeHelper.h"
 
+static const NSInteger kMinPagePerDay = 3;
+
 @interface LCBCreateReadingPlanViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *bookImageView;
@@ -22,18 +24,20 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *readingStartPageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalPageLabel;
+
 @property (weak, nonatomic) IBOutlet UISlider *readingStartPageSlider;
+@property (weak, nonatomic) IBOutlet UISlider *durationTimeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *readPagePerDaySlider;
 
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *durationTimeLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *maxDayLabel;
-@property (weak, nonatomic) IBOutlet UISlider *durationTimeSlider;
 
+@property (weak, nonatomic) IBOutlet UILabel *minAveragePageCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *maxAveragePageCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *averageReadingPageLabel;
-@property (weak, nonatomic) IBOutlet UISlider *readPagePerDaySlider;
 
 @property (nonatomic, strong) NSDate *startDate; //计划开始时间
 @property (nonatomic, strong) NSDate *endDate; //计划结束是假
@@ -44,21 +48,6 @@
 
 @implementation LCBCreateReadingPlanViewController
 
-////阅读起始页数：0
-//- (void)updateReadingStartPageLabel:(NSInteger)page {
-//    self.readingStartPageLabel.text = [NSString stringWithFormat:@"计划阅读起始页：%zd", page];
-//}
-
-////2017-07-01
-//- (void)updateStartTimeLabel {
-//    self.startTimeLabel.text = [LCTimeHelper yyMMddFromDate:self.startDate];
-//}
-//
-////2017-07-02
-//- (void)updateEndTimeLabel {
-//    self.endTimeLabel.text = [LCTimeHelper yyMMddFromDate:self.endDate];
-//}
-//
 //计划持续天数：22
 - (void)updateDuratingTimeLabel {
     self.durationTimeLabel.text = [NSString stringWithFormat:@"计划持续天数：%zd", [self timeDuration]];
@@ -103,7 +92,9 @@
         self.totalPageLabel.text = [NSString stringWithFormat:@"%zd", book.pages];
         self.startDate = [NSDate date];
         self.endDate = [LCTimeHelper tomorrow];
-        self.readingStartPageSlider.maximumValue = self.book.pages;
+        self.readingStartPageSlider.maximumValue = self.book.pages - 3;
+        self.readPagePerDaySlider.minimumValue = kMinPagePerDay;
+        self.minAveragePageCountLabel.text = [NSString stringWithFormat:@"%zd", kMinPagePerDay];
         self.startReadingPage = 0;
     }
 }
@@ -112,6 +103,7 @@
     self.startReadingPage = (NSInteger)sender.value;
 }
 
+//计划阅读天数调整
 - (IBAction)durationTimeSliderValueChanged:(UISlider *)sender {
     NSInteger days = (NSInteger)sender.value;
     self.endDate = [LCTimeHelper dateFromOriginDate:self.startDate daysOffset:days];
@@ -121,12 +113,14 @@
     NSLog(@"总阅读持续天数：%zd", days);
 }
 
+//每天计划阅读页数调整
 - (IBAction)readPagePerDaySliderValueChanged:(UISlider *)sender {
     NSInteger pages = (NSInteger)sender.value;
     NSInteger days = [self pageDuration] / pages;
     self.endDate = [LCTimeHelper dateFromOriginDate:self.startDate daysOffset:days];
     [self updateDuratingTimeLabel];
     [self updateAverageReadingPageLabel];
+    self.durationTimeSlider.value = days;
     NSLog(@"平均每天阅读页数：%zd", pages);
 }
 
@@ -190,8 +184,9 @@
     self.readingStartPageLabel.text = [NSString stringWithFormat:@"计划阅读起始页：%zd", startReadingPage];
     NSInteger pageDuration = [self pageDuration];
     self.readPagePerDaySlider.maximumValue = pageDuration;
-    self.durationTimeSlider.maximumValue = pageDuration;
-    self.maxDayLabel.text = [NSString stringWithFormat:@"%zd", pageDuration];
+    NSInteger maxDays = pageDuration / kMinPagePerDay;
+    self.durationTimeSlider.maximumValue = maxDays;
+    self.maxDayLabel.text = [NSString stringWithFormat:@"%zd", maxDays];
     self.maxAveragePageCountLabel.text = [NSString stringWithFormat:@"%zd", pageDuration];
     if ([self timeDuration] > pageDuration) {
         self.endDate = [LCTimeHelper dateFromOriginDate:self.startDate daysOffset:pageDuration];

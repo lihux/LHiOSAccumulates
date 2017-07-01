@@ -776,7 +776,7 @@
                                                             <action selector="readPagePerDaySliderValueChanged:" destination="muY-bx-JTx" eventType="valueChanged" id="DpP-WR-BLa"/>
                                                         </connections>
                                                     </slider>
-                                                    <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-HY-Prf">
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-HY-Prf">
                                                         <rect key="frame" x="19" y="377" width="100" height="18"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="PgR-o8-hJP"/>
@@ -873,6 +873,7 @@
                         <outlet property="endTimeLabel" destination="avg-qd-YXR" id="IXB-nc-5qB"/>
                         <outlet property="maxAveragePageCountLabel" destination="W8y-8X-lM7" id="t8s-D3-78T"/>
                         <outlet property="maxDayLabel" destination="0kP-0k-F4F" id="Ocu-ZB-tgk"/>
+                        <outlet property="minAveragePageCountLabel" destination="ZUQ-HY-Prf" id="INp-Al-7sF"/>
                         <outlet property="readPagePerDaySlider" destination="A5d-19-DAH" id="Dh5-NC-CGL"/>
                         <outlet property="readingStartPageLabel" destination="bxB-od-d3S" id="r04-t0-IaE"/>
                         <outlet property="readingStartPageSlider" destination="Dkl-5y-vLp" id="yfG-Fm-u1L"/>
