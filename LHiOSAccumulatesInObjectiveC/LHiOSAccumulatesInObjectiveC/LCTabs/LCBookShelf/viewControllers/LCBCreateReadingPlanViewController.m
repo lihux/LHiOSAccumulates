@@ -26,9 +26,14 @@
 @property (weak, nonatomic) IBOutlet UISlider *timeDurationSlider;
 @property (weak, nonatomic) IBOutlet UISlider *readPagePerDaySlider;
 @property (nonatomic, strong) NSCalendar *calendar;
+@property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *endTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *durationTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *averagePageLabel;
 
 @property (nonatomic, strong) NSDate *startDate;
 @property (nonatomic, strong) NSDate *endDate;
+@property (nonatomic, assign) NSInteger startReadingPage;
 
 @end
 
@@ -56,12 +61,13 @@
         self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"阅读起始页码：0"];
         self.pageCountSlider.minimumValue = 0;
         self.pageCountSlider.maximumValue = book.pages;
+        self.startDate = [NSDate date];
+        self.endDate = [LCTimeHelper tomorrow];
     }
 }
 
 - (IBAction)pageCountSliderValueChanged:(UISlider *)sender {
-    NSInteger startPage = (NSInteger)sender.value;
-    self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"阅读起始页码：%zd", startPage];
+    self.startReadingPage = (NSInteger)sender.value;
 }
 
 - (IBAction)readPagePerDaySliderValueChanged:(UISlider *)sender {
@@ -72,13 +78,13 @@
 
 - (IBAction)selectStartTimeAction:(id)sender {
     [LCDatePickerView showPickerViewWithTitle:@"选择开始时间" completionBlock:^(NSDate *selectedDate) {
-        NSLog(@"选择计划开始的日期是：%@", selectedDate);
+        self.startDate = selectedDate;
     }];
 }
 
 - (IBAction)selectEndTimeAction:(id)sender {
     [LCDatePickerView showPickerViewWithTitle:@"选择结束时间" completionBlock:^(NSDate *selectedDate) {
-        NSLog(@"选择计划结束的日期是：%@", selectedDate);
+        self.endDate = selectedDate;
     }];
 }
 
@@ -95,6 +101,12 @@
     plan.book = self.book;
     plan.startTime = [LCTimeHelper timeIntervalFromDate:self.startDate];
     plan.endTime = [LCTimeHelper timeIntervalFromDate:self.endDate];
+    plan.startPage = (int64_t)self.pageCountSlider.value;
+    NSError *error;
+    [plan.managedObjectContext save:&error];
+    if (error) {
+        NSLog(@"保存图书阅读计划信息失败");
+    }
 }
 
 #pragma mark -
@@ -115,6 +127,22 @@
     }
     _calendar = [NSCalendar currentCalendar];
     return _calendar;
+}
+
+- (void)setStartDate:(NSDate *)startDate {
+    _startDate = startDate;
+    self.startTimeLabel.text = [LCTimeHelper yyMMddFromDate:startDate];
+}
+
+- (void)setEndDate:(NSDate *)endDate {
+    _endDate = endDate;
+    self.endTimeLabel.text = [LCTimeHelper yyMMddFromDate:endDate];
+}
+
+- (void)setStartReadingPage:(NSInteger)startReadingPage {
+    _startReadingPage = startReadingPage;
+    self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"计划起始页%zd", startReadingPage];
+    self.readPagePerDaySlider.maximumValue = self.book.pages - startReadingPage;
 }
 
 @end

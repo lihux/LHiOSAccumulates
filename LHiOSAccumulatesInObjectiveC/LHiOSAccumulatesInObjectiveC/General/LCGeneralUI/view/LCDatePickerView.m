@@ -131,6 +131,7 @@
     _datePicker.tag = kLCNonLihuxStyleViewTag;
     //tricky to do this: https://stackoverflow.com/questions/20875054/change-uidatepicker-font-color
     [_datePicker setValue:[UIColor whiteColor] forKey:@"textColor"];
+    _datePicker.timeZone = [NSTimeZone localTimeZone];
     if ([_datePicker respondsToSelector:sel_registerName("setHighlightsToday:")]) {
     }
     _datePicker.backgroundColor = LihuxContentBackgroundColor;

@@ -14,4 +14,10 @@
 
 + (NSDate *)dateFromTimeInterval:(NSTimeInterval)timeInterval;
 
++ (NSDate *)tomorrow;
+
++ (NSString *)yyMMddFromDate:(NSDate *)date;
+
++ (NSString *)yyMMddFromTimeInterval:(NSTimeInterval)timeInterval;
+
 @end

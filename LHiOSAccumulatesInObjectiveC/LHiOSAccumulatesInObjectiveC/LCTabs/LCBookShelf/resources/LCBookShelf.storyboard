@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -817,12 +817,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="averagePageLabel" destination="NZx-ck-9th" id="liW-b3-6Ok"/>
                         <outlet property="bookImageView" destination="hNs-fZ-qGY" id="94V-3k-e4e"/>
                         <outlet property="bookPageCountLabel" destination="U7n-lj-ZZw" id="5Lc-ia-Ikp"/>
                         <outlet property="bookTitleLabel" destination="KX1-3Z-H8T" id="YmY-Bx-FRa"/>
+                        <outlet property="durationTimeLabel" destination="LJu-2A-AQI" id="FoA-i7-BIR"/>
+                        <outlet property="endTimeLabel" destination="avg-qd-YXR" id="IXB-nc-5qB"/>
                         <outlet property="pageCountSlider" destination="Dkl-5y-vLp" id="Qyo-MF-wYI"/>
                         <outlet property="readPagePerDaySlider" destination="A5d-19-DAH" id="Dh5-NC-CGL"/>
                         <outlet property="readingStartPageCountLabel" destination="bxB-od-d3S" id="t83-HM-rBB"/>
+                        <outlet property="startTimeLabel" destination="bqp-Lu-Wro" id="d0e-Cd-3Wq"/>
                         <outlet property="timeDurationSlider" destination="0H1-zs-gPk" id="SGy-OD-iKd"/>
                         <outlet property="totalCountLabel" destination="8QG-F0-oDF" id="aP0-g1-yUM"/>
                     </connections>
