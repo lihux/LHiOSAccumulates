@@ -20,4 +20,8 @@
 
 + (NSString *)yyMMddFromTimeInterval:(NSTimeInterval)timeInterval;
 
++ (NSInteger)daysDuratinFromStartDate:(NSDate *)startDate endDate:(NSDate *)endDate;
+
++ (NSDate *)dateFromOriginDate:(NSDate *)originDate daysOffset:(NSTimeInterval)daysOffset;
+
 @end

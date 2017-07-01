@@ -61,6 +61,11 @@ static const NSInteger kWeek = 7 * kDay;
     return [self timeIntervalFromDate:[self dateFromyyMMdd:yyMMdd]];
 }
 
++ (NSDate *)dateFromOriginDate:(NSDate *)originDate daysOffset:(NSTimeInterval)daysOffset {
+    NSTimeInterval interval = [self timeIntervalFromDate:originDate] + (daysOffset * kDay);
+    return [self dateFromTimeInterval:interval];
+}
+
 + (NSInteger)daysDuratinFromStartDate:(NSDate *)startDate endDate:(NSDate *)endDate {
     int64_t start = (int64_t)[self timeIntervalFromDate:startDate];
     int64_t end = (int64_t)[self timeIntervalFromDate:endDate];

@@ -19,29 +19,67 @@
 @property (weak, nonatomic) IBOutlet UILabel *bookTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bookPageCountLabel;
 @property (nonatomic, strong) LCBook *book;
-@property (weak, nonatomic) IBOutlet UILabel *readingStartPageCountLabel;
-@property (weak, nonatomic) IBOutlet UILabel *totalCountLabel;
 
-@property (weak, nonatomic) IBOutlet UISlider *pageCountSlider;
-@property (weak, nonatomic) IBOutlet UISlider *timeDurationSlider;
-@property (weak, nonatomic) IBOutlet UISlider *readPagePerDaySlider;
-@property (nonatomic, strong) NSCalendar *calendar;
+@property (weak, nonatomic) IBOutlet UILabel *readingStartPageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalPageLabel;
+@property (weak, nonatomic) IBOutlet UISlider *readingStartPageSlider;
+
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *durationTimeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *averagePageLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *maxDayLabel;
+@property (weak, nonatomic) IBOutlet UISlider *durationTimeSlider;
+
 @property (weak, nonatomic) IBOutlet UILabel *maxAveragePageCountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *averageReadingPageLabel;
+@property (weak, nonatomic) IBOutlet UISlider *readPagePerDaySlider;
 
 @property (nonatomic, strong) NSDate *startDate; //计划开始时间
 @property (nonatomic, strong) NSDate *endDate; //计划结束是假
 @property (nonatomic, assign) NSInteger startReadingPage;//从第几页开始阅读
-@property (nonatomic, assign) NSInteger durationDays;//计划持续时间
-@property (nonatomic, assign) NSInteger averageReadingPageCount;
+@property (nonatomic, assign) NSInteger totalPage;
 
 @end
 
 @implementation LCBCreateReadingPlanViewController
+
+////阅读起始页数：0
+//- (void)updateReadingStartPageLabel:(NSInteger)page {
+//    self.readingStartPageLabel.text = [NSString stringWithFormat:@"计划阅读起始页：%zd", page];
+//}
+
+////2017-07-01
+//- (void)updateStartTimeLabel {
+//    self.startTimeLabel.text = [LCTimeHelper yyMMddFromDate:self.startDate];
+//}
+//
+////2017-07-02
+//- (void)updateEndTimeLabel {
+//    self.endTimeLabel.text = [LCTimeHelper yyMMddFromDate:self.endDate];
+//}
+//
+//计划持续天数：22
+- (void)updateDuratingTimeLabel {
+    self.durationTimeLabel.text = [NSString stringWithFormat:@"计划持续天数：%zd", [self timeDuration]];
+}
+
+//平均每天阅读页数：18
+- (void)updateAverageReadingPageLabel {
+    NSInteger needReadPage = self.totalPage - self.startReadingPage;
+    NSInteger average = (NSInteger)(needReadPage / [self timeDuration]);
+    self.averageReadingPageLabel.text = [NSString stringWithFormat:@"平均每天阅读页数：%zd", average];
+}
+
+//辅助方法，计算计划时间长度
+- (NSInteger)timeDuration {
+    return [LCTimeHelper daysDuratinFromStartDate:self.startDate endDate:self.endDate];
+}
+
+//辅助方法，计算本次计划要阅读的书页数
+- (NSInteger)pageDuration {
+    return self.book.pages - self.startReadingPage;
+}
 
 + (instancetype)createReadingPlanViewControllerForBook:(LCBook *)book {
     LCBCreateReadingPlanViewController *vc = [LCBCreateReadingPlanViewController loadViewControllerFromStoryboard:@"LCBookShelf"];
@@ -61,25 +99,35 @@
         [self.bookImageView lc_setImageWithURLString:book.image];
         self.bookTitleLabel.text = book.title;
         self.bookPageCountLabel.text = [NSString stringWithFormat:@"页数：%zd", book.pages];
-        self.totalCountLabel.text = [NSString stringWithFormat:@"%zd", book.pages];
-        self.pageCountSlider.minimumValue = 0;
-        self.pageCountSlider.maximumValue = book.pages;
+        self.totalPage = book.pages;
+        self.totalPageLabel.text = [NSString stringWithFormat:@"%zd", book.pages];
         self.startDate = [NSDate date];
         self.endDate = [LCTimeHelper tomorrow];
+        self.readingStartPageSlider.maximumValue = self.book.pages;
         self.startReadingPage = 0;
     }
 }
 
-- (IBAction)pageCountSliderValueChanged:(UISlider *)sender {
+- (IBAction)readingStartPageSliderValueChanged:(UISlider *)sender {
     self.startReadingPage = (NSInteger)sender.value;
 }
 
-- (IBAction)readPagePerDaySliderValueChanged:(UISlider *)sender {
-    self.averageReadingPageCount = (NSInteger)sender.value;
+- (IBAction)durationTimeSliderValueChanged:(UISlider *)sender {
+    NSInteger days = (NSInteger)sender.value;
+    self.endDate = [LCTimeHelper dateFromOriginDate:self.startDate daysOffset:days];
+    self.readPagePerDaySlider.value = [self pageDuration] / days;
+    [self updateDuratingTimeLabel];
+    [self updateAverageReadingPageLabel];
+    NSLog(@"总阅读持续天数：%zd", days);
 }
 
-- (IBAction)timeDurationSliderValueChanged:(UISlider *)sender {
-    
+- (IBAction)readPagePerDaySliderValueChanged:(UISlider *)sender {
+    NSInteger pages = (NSInteger)sender.value;
+    NSInteger days = [self pageDuration] / pages;
+    self.endDate = [LCTimeHelper dateFromOriginDate:self.startDate daysOffset:days];
+    [self updateDuratingTimeLabel];
+    [self updateAverageReadingPageLabel];
+    NSLog(@"平均每天阅读页数：%zd", pages);
 }
 
 - (IBAction)selectStartTimeAction:(id)sender {
@@ -107,7 +155,7 @@
     plan.book = self.book;
     plan.startTime = [LCTimeHelper timeIntervalFromDate:self.startDate];
     plan.endTime = [LCTimeHelper timeIntervalFromDate:self.endDate];
-    plan.startPage = (int64_t)self.pageCountSlider.value;
+    plan.startPage = (int64_t)self.readingStartPageSlider.value;
     NSError *error;
     [plan.managedObjectContext save:&error];
     if (error) {
@@ -127,14 +175,6 @@
 }
 
 #pragma mark - lazy loads
-- (NSCalendar *)calendar {
-    if (_calendar) {
-        return _calendar;
-    }
-    _calendar = [NSCalendar currentCalendar];
-    return _calendar;
-}
-
 - (void)setStartDate:(NSDate *)startDate {
     _startDate = startDate;
     self.startTimeLabel.text = [LCTimeHelper yyMMddFromDate:startDate];
@@ -147,21 +187,17 @@
 
 - (void)setStartReadingPage:(NSInteger)startReadingPage {
     _startReadingPage = startReadingPage;
-    self.readingStartPageCountLabel.text = [NSString stringWithFormat:@"计划起始页：%zd", startReadingPage];
-    self.readPagePerDaySlider.maximumValue = self.book.pages - startReadingPage;
-    NSInteger totoalReadingPages = self.book.pages - startReadingPage;
-    self.maxDayLabel.text = [NSString stringWithFormat:@"%zd", totoalReadingPages];
-    self.maxAveragePageCountLabel.text = [NSString stringWithFormat:@"%zd", totoalReadingPages];
-}
-
-- (void)setDurationDays:(NSInteger)durationDays {
-    _durationDays = durationDays;
-    self.durationTimeLabel.text = [NSString stringWithFormat:@"计划阅读持续天数: %zd", durationDays];
-}
-
-- (void)setAverageReadingPageCount:(NSInteger)averageReadingPageCount {
-    _averageReadingPageCount = averageReadingPageCount;
-    self.averagePageLabel.text = [NSString stringWithFormat:@"平均每天计划阅读页数：%zd", averageReadingPageCount];
+    self.readingStartPageLabel.text = [NSString stringWithFormat:@"计划阅读起始页：%zd", startReadingPage];
+    NSInteger pageDuration = [self pageDuration];
+    self.readPagePerDaySlider.maximumValue = pageDuration;
+    self.durationTimeSlider.maximumValue = pageDuration;
+    self.maxDayLabel.text = [NSString stringWithFormat:@"%zd", pageDuration];
+    self.maxAveragePageCountLabel.text = [NSString stringWithFormat:@"%zd", pageDuration];
+    if ([self timeDuration] > pageDuration) {
+        self.endDate = [LCTimeHelper dateFromOriginDate:self.startDate daysOffset:pageDuration];
+        self.durationTimeSlider.value = pageDuration;
+        self.readPagePerDaySlider.value = 1;
+    }
 }
 
 @end
