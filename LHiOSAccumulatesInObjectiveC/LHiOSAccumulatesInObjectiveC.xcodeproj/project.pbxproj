@@ -60,6 +60,7 @@
 		9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C476D9E1EF51E6C004AC758 /* LCDBBlockExploreViewController.m */; };
 		9C4BE4BD1F05494F001A1D06 /* LCDCSBitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4BC1F05494F001A1D06 /* LCDCSBitButton.m */; };
 		9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4BF1F0550F5001A1D06 /* LCDCSByteView.m */; };
+		9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4C21F093795001A1D06 /* LCBCreateRecordViewController.m */; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
 		9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C4821C3E3E43003877BC /* Assets.xcassets */; };
@@ -195,6 +196,8 @@
 		9C4BE4BC1F05494F001A1D06 /* LCDCSBitButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDCSBitButton.m; sourceTree = "<group>"; };
 		9C4BE4BE1F0550F5001A1D06 /* LCDCSByteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDCSByteView.h; sourceTree = "<group>"; };
 		9C4BE4BF1F0550F5001A1D06 /* LCDCSByteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDCSByteView.m; sourceTree = "<group>"; };
+		9C4BE4C11F093795001A1D06 /* LCBCreateRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBCreateRecordViewController.h; sourceTree = "<group>"; };
+		9C4BE4C21F093795001A1D06 /* LCBCreateRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBCreateRecordViewController.m; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C61C4741C3E3E43003877BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C61C4801C3E3E43003877BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -373,6 +376,8 @@
 				9CFAC4621EFE8D55006964F2 /* LCBookViewController.m */,
 				52E0191F1F02509B00B38546 /* LCBCreateReadingPlanViewController.h */,
 				52E019201F02509B00B38546 /* LCBCreateReadingPlanViewController.m */,
+				9C4BE4C11F093795001A1D06 /* LCBCreateRecordViewController.h */,
+				9C4BE4C21F093795001A1D06 /* LCBCreateRecordViewController.m */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -809,6 +814,7 @@
 				52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */,
 				9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */,
 				5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */,
+				9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */,
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
 				9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */,

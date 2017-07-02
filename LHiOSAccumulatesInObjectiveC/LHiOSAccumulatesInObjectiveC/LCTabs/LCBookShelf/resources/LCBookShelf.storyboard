@@ -896,6 +896,24 @@
             </objects>
             <point key="canvasLocation" x="2615.9420289855075" y="897.554347826087"/>
         </scene>
+        <!--Create Record View Controller-->
+        <scene sceneID="V5d-gI-PyI">
+            <objects>
+                <viewController storyboardIdentifier="LCBCreateRecordViewController" id="Zxv-mw-GH1" customClass="LCBCreateRecordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tKB-kQ-9je"/>
+                        <viewControllerLayoutGuide type="bottom" id="kez-Fn-3tj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N2D-8l-JeD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abh-DU-dgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3225" y="902"/>
+        </scene>
         <!--阅读计划-->
         <scene sceneID="g9y-L1-oxd">
             <objects>

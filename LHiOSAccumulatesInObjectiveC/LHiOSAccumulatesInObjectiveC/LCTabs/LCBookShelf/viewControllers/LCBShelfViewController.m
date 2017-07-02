@@ -14,6 +14,7 @@
 #import "LCBookViewController.h"
 #import "LCBCreateReadingPlanViewController.h"
 #import "LCBookShelf+CoreDataModel.h"
+#import "LCBCreateRecordViewController.h"
 
 #import <CoreData/CoreData.h>
 
@@ -209,10 +210,11 @@ didReceiveResponse:(NSURLResponse *)response
 #pragma mark - LCBShelfTableViewCellDelegate
 - (void)planButtonDidTappedOnCell:(LCBShelfTableViewCell *)cell {
     LCBook *book = cell.book;
-    if (book.readingPlan) {
-        return;
+    if (!book.readingPlan) {
+        [self.navigationController pushViewController:[LCBCreateReadingPlanViewController createReadingPlanViewControllerForBook:book] animated:YES];
+    } else {
+        [self.navigationController pushViewController:[LCBCreateRecordViewController createRecordViewControllerForReadingPlan:book.readingPlan] animated:YES];
     }
-    [self.navigationController pushViewController:[LCBCreateReadingPlanViewController createReadingPlanViewControllerForBook:book] animated:YES];
 }
 
 #pragma mark - lazy load
