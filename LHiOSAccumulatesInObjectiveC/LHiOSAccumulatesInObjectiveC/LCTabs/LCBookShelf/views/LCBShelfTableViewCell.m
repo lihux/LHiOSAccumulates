@@ -48,7 +48,7 @@
 }
 
 - (void)configPlanInfo:(LCBookReadingPlan *)plan {
-    BOOL hasPlan = plan ? YES : YES;
+    BOOL hasPlan = plan ? YES : NO;
     self.progressView.hidden = !hasPlan;
     self.progressBackgroundView.hidden = !hasPlan;
     NSString *info = hasPlan ? @"在阅读中" : @"开始阅读";
