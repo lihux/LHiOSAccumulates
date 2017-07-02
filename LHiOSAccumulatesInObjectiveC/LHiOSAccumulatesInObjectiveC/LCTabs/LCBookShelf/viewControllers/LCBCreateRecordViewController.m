@@ -18,12 +18,13 @@
 @implementation LCBCreateRecordViewController
 
 + (instancetype)createRecordViewControllerForReadingPlan:(LCBookReadingPlan *)plan {
-    LCBCreateRecordViewController *vc = [LCBCreateRecordViewController loadViewControllerFromStoryboard:@"  LCBookShelf"];
+    LCBCreateRecordViewController *vc = [LCBCreateRecordViewController loadViewControllerFromStoryboard:@"LCBookShelf"];
     vc.plan = plan;
     return vc;
 }
 
 - (void)viewDidLoad {
+    self.title = @"每天进步一点点";
     [super viewDidLoad];
 }
 
