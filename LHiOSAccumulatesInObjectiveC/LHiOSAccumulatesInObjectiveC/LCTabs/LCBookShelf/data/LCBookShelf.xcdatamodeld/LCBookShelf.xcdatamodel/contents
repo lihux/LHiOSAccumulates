@@ -70,7 +70,6 @@
     <entity name="LCBReadingRecord" representedClassName="LCBReadingRecord" syncable="YES" codeGenerationType="class">
         <attribute name="diary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="finishedPageCount" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="planedPageCount" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="readingTime" optional="YES" attributeType="Date" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="bookPlan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LCBookReadingPlan" inverseName="readingRecords" inverseEntity="LCBookReadingPlan" syncable="YES"/>
     </entity>
@@ -87,7 +86,7 @@
         <element name="LCBookSeries" positionX="-740" positionY="650" width="128" height="88"/>
         <element name="LCBookTag" positionX="-783" positionY="752" width="128" height="105"/>
         <element name="LCBookTranslator" positionX="-864" positionY="864" width="128" height="73"/>
-        <element name="LCBReadingRecord" positionX="-981" positionY="225" width="128" height="120"/>
+        <element name="LCBReadingRecord" positionX="-981" positionY="225" width="128" height="105"/>
         <element name="LCShelf" positionX="-767" positionY="170" width="128" height="73"/>
     </elements>
 </model>
