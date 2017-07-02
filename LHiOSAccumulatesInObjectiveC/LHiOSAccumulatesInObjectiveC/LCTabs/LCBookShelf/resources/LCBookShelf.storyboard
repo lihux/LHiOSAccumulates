@@ -379,6 +379,7 @@
                                                     <outlet property="priceLabel" destination="PJS-HE-jw3" id="2Ak-K9-aLC"/>
                                                     <outlet property="progressBackgroundView" destination="W2j-mI-Fs3" id="mhM-dx-URA"/>
                                                     <outlet property="progressView" destination="Lns-cM-Oac" id="MRz-sT-U0d"/>
+                                                    <outlet property="progressViewTailConstraints" destination="3fo-In-aEG" id="kva-Zm-YFc"/>
                                                     <outlet property="publisherLabel" destination="MlJ-gC-V7Z" id="SeJ-iO-8MV"/>
                                                     <segue destination="HDO-M6-Iy4" kind="show" identifier="showBookDetail" id="Ie3-1c-aXL"/>
                                                 </connections>

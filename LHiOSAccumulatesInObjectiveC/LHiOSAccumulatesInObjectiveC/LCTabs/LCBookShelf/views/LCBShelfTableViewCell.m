@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIView *buttonContainerView;
 @property (weak, nonatomic) IBOutlet UIButton *planButton;
 @property (weak, nonatomic) IBOutlet UIView *progressBackgroundView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *progressViewTailConstraints;
 
 @end
 
@@ -51,7 +52,11 @@
     BOOL hasPlan = plan ? YES : NO;
     self.progressView.hidden = !hasPlan;
     self.progressBackgroundView.hidden = !hasPlan;
+    self.progressViewTailConstraints.constant = self.progressBackgroundView.bounds.size.width - 0;
     NSString *info = hasPlan ? @"在阅读中" : @"开始阅读";
+    if (plan.currentReadingRecord) {
+        //TODO:需要调整
+    }
     [self.planButton setTitle:info forState:UIControlStateNormal];
 }
 

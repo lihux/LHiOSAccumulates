@@ -13,6 +13,7 @@
 #import "LCBookScanViewController.h"
 #import "LCBookViewController.h"
 #import "LCBCreateReadingPlanViewController.h"
+#import "LCBookShelf+CoreDataModel.h"
 
 #import <CoreData/CoreData.h>
 
@@ -208,6 +209,9 @@ didReceiveResponse:(NSURLResponse *)response
 #pragma mark - LCBShelfTableViewCellDelegate
 - (void)planButtonDidTappedOnCell:(LCBShelfTableViewCell *)cell {
     LCBook *book = cell.book;
+    if (book.readingPlan) {
+        return;
+    }
     [self.navigationController pushViewController:[LCBCreateReadingPlanViewController createReadingPlanViewControllerForBook:book] animated:YES];
 }
 
