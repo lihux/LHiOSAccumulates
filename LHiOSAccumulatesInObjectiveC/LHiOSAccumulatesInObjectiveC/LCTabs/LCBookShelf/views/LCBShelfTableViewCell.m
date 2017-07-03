@@ -54,7 +54,7 @@
     self.progressBackgroundView.hidden = !hasPlan;
     self.progressViewTailConstraints.constant = self.progressBackgroundView.bounds.size.width - 0;
     NSString *info = hasPlan ? @"在阅读中" : @"开始阅读";
-    if (plan.currentReadingRecord) {
+    if (plan.readingRecords.count > 0) {
         //TODO:需要调整
     }
     [self.planButton setTitle:info forState:UIControlStateNormal];
