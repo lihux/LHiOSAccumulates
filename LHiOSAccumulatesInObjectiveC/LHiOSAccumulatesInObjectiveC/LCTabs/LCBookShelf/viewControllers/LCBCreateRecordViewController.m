@@ -12,7 +12,10 @@
 
 @interface LCBCreateRecordViewController ()
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *progressViewWidthConstraint;
+@property (weak, nonatomic) IBOutlet UILabel *progressInfoLabel;
 @property (nonatomic, strong) LCBookReadingPlan *plan;
+
 @end
 
 @implementation LCBCreateRecordViewController
@@ -26,6 +29,11 @@
 - (void)viewDidLoad {
     self.title = @"每天进步一点点";
     [super viewDidLoad];
+    [self customUI];
+}
+
+- (void)customUI {
+    
 }
 
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -907,12 +908,74 @@
                     <view key="view" contentMode="scaleToFill" id="N2D-8l-JeD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9z-8V-gmP">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按照进度今天应该阅读" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUo-eq-GGs">
+                                        <rect key="frame" x="15" y="20" width="384" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="2YZ-a4-LJx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view tag="-9999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="InZ-W0-6xm">
+                                        <rect key="frame" x="15" y="58" width="384" height="8"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADL-ed-GcL" userLabel="plan progress View">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="8"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.61378959760273977" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAL-Qa-u2S" userLabel="actual progress View">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="8"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.85209760273972601" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="GdL-dX-Xui"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="AAL-Qa-u2S" firstAttribute="leading" secondItem="InZ-W0-6xm" secondAttribute="leading" id="0FH-tG-8G3"/>
+                                            <constraint firstItem="AAL-Qa-u2S" firstAttribute="top" secondItem="InZ-W0-6xm" secondAttribute="top" id="5J2-Va-9o5"/>
+                                            <constraint firstItem="ADL-ed-GcL" firstAttribute="top" secondItem="InZ-W0-6xm" secondAttribute="top" id="Oc5-Bg-MGW"/>
+                                            <constraint firstAttribute="bottom" secondItem="ADL-ed-GcL" secondAttribute="bottom" id="RBu-RK-P3n"/>
+                                            <constraint firstAttribute="height" constant="8" id="Szm-Z6-E9h"/>
+                                            <constraint firstItem="ADL-ed-GcL" firstAttribute="width" secondItem="InZ-W0-6xm" secondAttribute="width" multiplier="0.5" id="VCs-DZ-NRZ"/>
+                                            <constraint firstItem="ADL-ed-GcL" firstAttribute="leading" secondItem="InZ-W0-6xm" secondAttribute="leading" id="nmb-SG-Dog"/>
+                                            <constraint firstAttribute="bottom" secondItem="AAL-Qa-u2S" secondAttribute="bottom" id="nrh-n3-BbG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="InZ-W0-6xm" firstAttribute="top" secondItem="LUo-eq-GGs" secondAttribute="bottom" constant="20" id="4TO-ug-KT7"/>
+                                    <constraint firstItem="LUo-eq-GGs" firstAttribute="leading" secondItem="B9z-8V-gmP" secondAttribute="leading" constant="15" id="BMl-bA-nzd"/>
+                                    <constraint firstItem="LUo-eq-GGs" firstAttribute="top" secondItem="B9z-8V-gmP" secondAttribute="top" constant="20" id="YPH-HE-eSa"/>
+                                    <constraint firstItem="InZ-W0-6xm" firstAttribute="leading" secondItem="B9z-8V-gmP" secondAttribute="leading" constant="15" id="eG1-du-4Fn"/>
+                                    <constraint firstAttribute="trailing" secondItem="InZ-W0-6xm" secondAttribute="trailing" constant="15" id="pPg-m2-6Pj"/>
+                                    <constraint firstAttribute="trailing" secondItem="LUo-eq-GGs" secondAttribute="trailing" constant="15" id="wP7-lj-Vl3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B9z-8V-gmP" firstAttribute="top" secondItem="tKB-kQ-9je" secondAttribute="bottom" id="14O-kc-usD"/>
+                            <constraint firstItem="B9z-8V-gmP" firstAttribute="leading" secondItem="N2D-8l-JeD" secondAttribute="leading" id="A5Q-3S-WHC"/>
+                            <constraint firstItem="kez-Fn-3tj" firstAttribute="top" secondItem="B9z-8V-gmP" secondAttribute="bottom" id="epy-nW-sw7"/>
+                            <constraint firstAttribute="trailing" secondItem="B9z-8V-gmP" secondAttribute="trailing" id="oo2-PA-WcM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressInfoLabel" destination="LUo-eq-GGs" id="Ibz-Xh-XYZ"/>
+                        <outlet property="progressViewWidthConstraint" destination="GdL-dX-Xui" id="nSG-nO-zie"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Abh-DU-dgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3225" y="902"/>
+            <point key="canvasLocation" x="3224.6376811594205" y="901.63043478260875"/>
         </scene>
         <!--阅读计划-->
         <scene sceneID="g9y-L1-oxd">
