@@ -957,14 +957,14 @@
                                             <constraint firstAttribute="bottom" secondItem="AAL-Qa-u2S" secondAttribute="bottom" id="nrh-n3-BbG"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="看到了第几页" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3iY-sO-cRr">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="看到了第几页" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="3iY-sO-cRr">
                                         <rect key="frame" x="15" y="146" width="374" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1FV-Xw-B0q"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done" smartDashesType="no"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
