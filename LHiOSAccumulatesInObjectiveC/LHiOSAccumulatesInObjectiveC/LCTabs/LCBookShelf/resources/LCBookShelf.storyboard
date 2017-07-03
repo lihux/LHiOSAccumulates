@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tIW-OT-IEr">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -921,6 +921,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="18" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天实际看到了多少页呢？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpw-5l-9ac">
+                                        <rect key="frame" x="15" y="106" width="384" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ImM-q5-0fC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view tag="-9999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="InZ-W0-6xm">
                                         <rect key="frame" x="15" y="58" width="384" height="8"/>
                                         <subviews>
@@ -948,15 +957,30 @@
                                             <constraint firstAttribute="bottom" secondItem="AAL-Qa-u2S" secondAttribute="bottom" id="nrh-n3-BbG"/>
                                         </constraints>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="看到了第几页" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3iY-sO-cRr">
+                                        <rect key="frame" x="15" y="146" width="374" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1FV-Xw-B0q"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="InZ-W0-6xm" firstAttribute="top" secondItem="LUo-eq-GGs" secondAttribute="bottom" constant="20" id="4TO-ug-KT7"/>
+                                    <constraint firstItem="Gpw-5l-9ac" firstAttribute="leading" secondItem="B9z-8V-gmP" secondAttribute="leading" constant="15" id="64V-GR-mvn"/>
                                     <constraint firstItem="LUo-eq-GGs" firstAttribute="leading" secondItem="B9z-8V-gmP" secondAttribute="leading" constant="15" id="BMl-bA-nzd"/>
+                                    <constraint firstItem="3iY-sO-cRr" firstAttribute="leading" secondItem="B9z-8V-gmP" secondAttribute="leading" constant="15" id="EVu-En-F4L"/>
+                                    <constraint firstAttribute="trailing" secondItem="3iY-sO-cRr" secondAttribute="trailing" constant="25" id="I6c-vJ-deW"/>
                                     <constraint firstItem="LUo-eq-GGs" firstAttribute="top" secondItem="B9z-8V-gmP" secondAttribute="top" constant="20" id="YPH-HE-eSa"/>
                                     <constraint firstItem="InZ-W0-6xm" firstAttribute="leading" secondItem="B9z-8V-gmP" secondAttribute="leading" constant="15" id="eG1-du-4Fn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gpw-5l-9ac" secondAttribute="trailing" constant="15" id="oE3-8P-4at"/>
                                     <constraint firstAttribute="trailing" secondItem="InZ-W0-6xm" secondAttribute="trailing" constant="15" id="pPg-m2-6Pj"/>
+                                    <constraint firstItem="Gpw-5l-9ac" firstAttribute="top" secondItem="InZ-W0-6xm" secondAttribute="bottom" constant="40" id="uAD-s9-SN9"/>
                                     <constraint firstAttribute="trailing" secondItem="LUo-eq-GGs" secondAttribute="trailing" constant="15" id="wP7-lj-Vl3"/>
+                                    <constraint firstItem="3iY-sO-cRr" firstAttribute="top" secondItem="Gpw-5l-9ac" secondAttribute="bottom" constant="20" id="zgL-Jg-2TW"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -29,11 +29,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self customUI];
+    [self customLCViewControllerBaseUI];
     [self addKVOForTitle];
 }
 
-- (void)customUI {
+- (void)customLCViewControllerBaseUI {
     self.view.backgroundColor = LihuxContentBackgroundColor;
     [LCLihuxHelper makeLihuxStyleOfView:self.lcViewController_ContainerView];
     if (self.lcViewController_ContainerView.tag != kLDontAdjustConstraintsTag) {

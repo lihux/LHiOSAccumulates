@@ -27,8 +27,8 @@
 }
 
 - (void)viewDidLoad {
-    self.title = @"每天进步一点点";
     [super viewDidLoad];
+    self.title = @"每天进步一点点";
     [self customUI];
 }
 
