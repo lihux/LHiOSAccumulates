@@ -20,17 +20,11 @@ typedef void(^LCDBCompletionBlock)(BOOL);
     __block NSString *dd = [NSString stringWithFormat:@"%@", cc];
     NSArray *ee = @[@1, @2];
     NSMutableArray *ff = [NSMutableArray arrayWithArray:ee];
-    [self log:[NSString stringWithFormat:@"地址信息是：aa: %lld, bb: %lld, cc: %lld, dd: %lld, ee: %lld, ff: %lld", &aa, &bb, &cc, &dd, &ee, &ff]];
-    [self testBlock:^(BOOL finished) {
-        NSInteger aaa = aa;
-        NSInteger *bbb = bb;
-        NSInteger bbbb = *bb;
-        NSArray *eee = ee;
-        
+    [self log:[NSString stringWithFormat:@"地址信息是：aa: %ld, bb: %ld, cc: %ld, dd: %ld, ee: %ld, ff: %ld", (long)&aa, (long)&bb, (long)&cc, (long)&dd, (long)&ee, (long)&ff]];
+    [self testBlock:^(BOOL finished) {        
         NSString *ddd = dd;
         dd = @"周杰伦";
-        NSLog(@"ddd:%@,dd:%@,&ddd:%lld,&dd:%lld", ddd, dd , &ddd, &dd);
-        NSNumber *fff = [ff objectAtIndex:1];
+        NSLog(@"ddd:%@,dd:%@,&ddd:%ld,&dd:%ld", ddd, dd , (long)&ddd, (long)&dd);
         if (finished) {
             [self log:@"block被调用"];
         }
