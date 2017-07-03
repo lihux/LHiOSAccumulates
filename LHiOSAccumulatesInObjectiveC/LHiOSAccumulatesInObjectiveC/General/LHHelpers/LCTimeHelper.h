@@ -22,6 +22,8 @@
 
 + (NSInteger)daysDuratinFromStartDate:(NSDate *)startDate endDate:(NSDate *)endDate;
 
++ (NSInteger)daysDuratinFromStartTimeInterval:(NSTimeInterval)startTimeInterval endTimeInterval:(NSTimeInterval)endTimeInterval;
+
 + (NSDate *)dateFromOriginDate:(NSDate *)originDate daysOffset:(NSTimeInterval)daysOffset;
 
 @end

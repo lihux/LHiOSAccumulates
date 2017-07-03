@@ -10,6 +10,7 @@
 
 #import "LCBookShelf+CoreDataModel.h"
 #import "UIView+LHAutoLayout.h"
+#import "LCTimeHelper.h"
 
 @interface LCBCreateRecordViewController ()
 
@@ -41,6 +42,15 @@
 
 - (void)didTapOnInputMaskView {
     [self.finishPageTextField resignFirstResponder];
+    self.inputMaskView.hidden = YES;
+    NSInteger recordCount = [self.finishPageTextField.text integerValue];
+    LCBookReadingPlan *plan = self.plan;
+    NSInteger totalPage = plan.book.pages - plan.currentReadingCount;
+    if (recordCount > plan.currentReadingCount && recordCount <= totalPage) {
+        NSInteger standardedReadingPage = (NSInteger)totalPage / ([LCTimeHelper daysDuratinFromStartTimeInterval:plan.startTime endTimeInterval:plan.endTime]);
+        NSInteger todayIGet = recordCount - plan.currentReadingCount;
+        self.progressViewWidthConstraint.constant = self.progressInfoLabel.superview.bounds.size.width * 0.5 * (todayIGet / (CGFloat)standardedReadingPage);
+    }
 }
 
 - (IBAction)didTapOnPageTextField:(id)sender {

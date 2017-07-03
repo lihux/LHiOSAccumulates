@@ -81,4 +81,10 @@ static const NSInteger kWeek = 7 * kDay;
     return daysDuration;
 }
 
++ (NSInteger)daysDuratinFromStartTimeInterval:(NSTimeInterval)startTimeInterval endTimeInterval:(NSTimeInterval)endTimeInterval {
+    NSDate *startDate = [self dateFromTimeInterval:startTimeInterval];
+    NSDate *endDate = [self dateFromTimeInterval:endTimeInterval];
+    return [self daysDuratinFromStartDate:startDate endDate:endDate];
+}
+
 @end
