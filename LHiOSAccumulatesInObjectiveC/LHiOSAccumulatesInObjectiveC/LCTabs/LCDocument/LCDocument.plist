@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>初中的幼稚</string>
+		<string>lihux.me技术博客</string>
 		<key>storyboardID</key>
-		<string></string>
+		<string>LCLihuxMeViewController</string>
 		<key>storyboardName</key>
 		<string>LCDocument</string>
 	</dict>
