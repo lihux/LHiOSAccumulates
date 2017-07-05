@@ -31,7 +31,7 @@ static const CGFloat LHLayoutNone = CGFLOAT_MAX;
  
  @param view subview that will be added using default constraints:@"H:|-0-[_tableView]-0-|" @"V:|-0-[_tableView]-0-|"
  */
-- (void)addSubviewUsingDefaultLayoutConstraints:(UIView *)view;
+- (void)addSubviewUsingDefaultLayoutConstraints:(nonnull UIView *)view;
 
 
 /**
@@ -41,6 +41,21 @@ static const CGFloat LHLayoutNone = CGFLOAT_MAX;
  @param view 需要添加的subView
  @param info 布局信息，根据需要可以提供上、左、下、右、宽、高六种布局信息，如果不需要添加的约束，info相应的字段可以用`LHLayoutNone`设置
  */
-- (void)addSubview:(UIView *)view withLayoutInfo:(LHLayoutInfo)info;
+- (void)addSubview:(nonnull UIView *)view withLayoutInfo:(LHLayoutInfo)info;
+
+
+/**
+ 便利方法，如果对一个View添加了定宽的约束，则尝试找到这个约束并予以返回
+ 
+ @return 定宽的约束，不存在则返回nil
+ */
+- (nullable NSLayoutConstraint *)lh_widthConstraint;
+
+/**
+ 便利方法，如果对一个View添加了定高的约束，则尝试找到这个约束并予以返回
+ 
+ @return 定高的约束，不存在则返回nil
+ */
+- (nullable NSLayoutConstraint *)lh_heightConstraint;
 
 @end

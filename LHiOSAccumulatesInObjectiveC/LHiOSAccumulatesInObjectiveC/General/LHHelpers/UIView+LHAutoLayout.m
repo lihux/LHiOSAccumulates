@@ -11,9 +11,6 @@
 @implementation UIView (LHAutoLayout)
 
 - (void)addSubviewUsingDefaultLayoutConstraints:(UIView *)view {
-    if (!view) {
-        return;
-    }
     [self addSubview:view];
     view.translatesAutoresizingMaskIntoConstraints = NO;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(view)]];
@@ -62,6 +59,24 @@
             [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vfl options:0 metrics:metrics views:NSDictionaryOfVariableBindings(view)]];
         }
     }
+}
+
+- (NSLayoutConstraint *)lh_widthConstraint {
+    for (NSLayoutConstraint *constraint in self.constraints) {
+        if (constraint.firstItem == self && constraint.firstAttribute == NSLayoutAttributeWidth) {
+            return constraint;
+        }
+    }
+    return nil;
+}
+
+- (NSLayoutConstraint *)lh_heightConstraint {
+    for (NSLayoutConstraint *constraint in self.constraints) {
+        if (constraint.firstItem == self && constraint.firstAttribute == NSLayoutAttributeHeight) {
+            return constraint;
+        }
+    }
+    return nil;
 }
 
 @end
