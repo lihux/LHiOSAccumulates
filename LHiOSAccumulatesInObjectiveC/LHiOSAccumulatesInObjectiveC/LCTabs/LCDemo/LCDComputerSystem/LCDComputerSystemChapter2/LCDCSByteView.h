@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class LCDCSBitButton;
+
 typedef NS_ENUM(NSUInteger, LCDCSByteOffset) {
     LCDCSByteOffset0 = 0,
     LCDCSByteOffset1,
@@ -20,6 +22,8 @@ typedef NS_ENUM(NSUInteger, LCDCSByteOffset) {
 };
 
 @interface LCDCSByteView : UIView
+
+@property (nonatomic, copy) NSArray <LCDCSBitButton *> *bitButtons;
 
 - (void)fillByteWithShort:(short)shortValue Offset:(LCDCSByteOffset)offset;
 - (void)fillByteWithInt8:(int8_t)int8Value Offset:(LCDCSByteOffset)offset;

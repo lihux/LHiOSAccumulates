@@ -8,6 +8,9 @@
 
 #import "LCDCSByteView.h"
 
+#import "LCDCSBitButton.h"
+
+#define kLCDSByte 8
 @implementation LCDCSByteView
 
 - (void)fillByteWithShort:(short)shortValue Offset:(LCDCSByteOffset)offset {}
@@ -18,5 +21,19 @@
 - (void)fillByteWithfloat:(float)floatValue Offset:(LCDCSByteOffset)offset {}
 - (void)fillByteWithDouble:(double)doubleValue Offset:(LCDCSByteOffset)offset {}
 - (void)fillByteWithFloat96:(Float96)int8Value Offset:(LCDCSByteOffset)offset {} //Unimplement Righ Now
+
+- (NSArray<LCDCSBitButton *> *)bitButtons {
+    if (_bitButtons) {
+        return _bitButtons;
+    }
+    NSMutableArray *temp = [NSMutableArray arrayWithCapacity:kLCDSByte];
+    for (int i = 0; i < kLCDSByte; i ++ ) {
+        LCDCSBitButton *button = [[LCDCSBitButton alloc] init];
+        button.tag = i;
+        [temp addObject:button];
+    }
+    _bitButtons = temp;
+    return _bitButtons;
+}
 
 @end
