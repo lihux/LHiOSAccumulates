@@ -9,6 +9,7 @@
 #import "LCDCSByteView.h"
 
 #import "LCDCSBitButton.h"
+#import "UIView+LHAutoLayout.h"
 
 #define kLCDSByte 8
 @implementation LCDCSByteView
@@ -34,6 +35,15 @@
     }
     _bitButtons = temp;
     return _bitButtons;
+}
+
+-(void)layoutSubviews {
+    CGFloat buttonGap = 2;
+    CGFloat targetHeight = (self.frame.size.width - (buttonGap * 7)) / 8;
+    NSLayoutConstraint *heightConstraint = [self lh_heightConstraint];
+    if (heightConstraint) {
+        heightConstraint.constant = targetHeight;
+    }
 }
 
 @end
