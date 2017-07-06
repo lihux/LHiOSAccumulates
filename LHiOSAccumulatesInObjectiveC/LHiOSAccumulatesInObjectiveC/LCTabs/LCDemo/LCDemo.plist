@@ -13,6 +13,16 @@
 		<string>精通细节是理解更深和更基本概念的先决条件。</string>
 	</dict>
 	<dict>
+		<key>title</key>
+		<string>颜色探索</string>
+		<key>viewControllerTitle</key>
+		<string>颜色探索</string>
+		<key>storyboardName</key>
+		<string>LCDemo</string>
+		<key>storyboardID</key>
+		<string>LCColorViewController</string>
+	</dict>
+	<dict>
 		<key>plistName</key>
 		<string>LCDBasicTech</string>
 		<key>title</key>

@@ -77,6 +77,8 @@
 		9CA605981F054085000DB286 /* LCComputerSystemCh2FloatRepresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA605971F054085000DB286 /* LCComputerSystemCh2FloatRepresentViewController.m */; };
 		9CA6059B1F05409B000DB286 /* LCComputerSystemCh2HomeWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6059A1F05409B000DB286 /* LCComputerSystemCh2HomeWorkViewController.m */; };
 		9CA6059C1F0541BF000DB286 /* LCDComputerSystemChapter2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA605921F053EEB000DB286 /* LCDComputerSystemChapter2.plist */; };
+		9CB64ECC1F0E7F5800A4BC1C /* LCColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64ECB1F0E7F5800A4BC1C /* LCColorViewController.m */; };
+		9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */; };
 		9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */; };
 		9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */; };
 		9CD141C81EFF674900B25586 /* LCDComputerSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CD141C71EFF64D800B25586 /* LCDComputerSystem.plist */; };
@@ -228,6 +230,10 @@
 		9CA605971F054085000DB286 /* LCComputerSystemCh2FloatRepresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCComputerSystemCh2FloatRepresentViewController.m; sourceTree = "<group>"; };
 		9CA605991F05409B000DB286 /* LCComputerSystemCh2HomeWorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCComputerSystemCh2HomeWorkViewController.h; sourceTree = "<group>"; };
 		9CA6059A1F05409B000DB286 /* LCComputerSystemCh2HomeWorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCComputerSystemCh2HomeWorkViewController.m; sourceTree = "<group>"; };
+		9CB64ECA1F0E7F5800A4BC1C /* LCColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorViewController.h; sourceTree = "<group>"; };
+		9CB64ECB1F0E7F5800A4BC1C /* LCColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorViewController.m; sourceTree = "<group>"; };
+		9CB64ECD1F0E821D00A4BC1C /* LCColorCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorCollectionViewCell.h; sourceTree = "<group>"; };
+		9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCollectionViewCell.m; sourceTree = "<group>"; };
 		9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCURL.h"; sourceTree = "<group>"; };
 		9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCURL.m"; sourceTree = "<group>"; };
 		9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCImageCacheManager.h; sourceTree = "<group>"; };
@@ -283,6 +289,7 @@
 		522484F11EE7BB60001A1429 /* LCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9CB64EC91F0E7F3D00A4BC1C /* LCColor */,
 				9CD141C61EFF64AB00B25586 /* LCDComputerSystem */,
 				9C476D921EF51A4B004AC758 /* LCDBasicTech */,
 				9C1A04881EEB8B6E00161D69 /* LCDDispatch */,
@@ -611,6 +618,17 @@
 			path = LHiOSAccumulatesInObjectiveCUITests;
 			sourceTree = "<group>";
 		};
+		9CB64EC91F0E7F3D00A4BC1C /* LCColor */ = {
+			isa = PBXGroup;
+			children = (
+				9CB64ECA1F0E7F5800A4BC1C /* LCColorViewController.h */,
+				9CB64ECB1F0E7F5800A4BC1C /* LCColorViewController.m */,
+				9CB64ECD1F0E821D00A4BC1C /* LCColorCollectionViewCell.h */,
+				9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */,
+			);
+			path = LCColor;
+			sourceTree = "<group>";
+		};
 		9CD141C61EFF64AB00B25586 /* LCDComputerSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -811,6 +829,7 @@
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
 				5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */,
+				9CB64ECC1F0E7F5800A4BC1C /* LCColorViewController.m in Sources */,
 				9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */,
 				9C4BE4BD1F05494F001A1D06 /* LCDCSBitButton.m in Sources */,
 				9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */,
@@ -837,6 +856,7 @@
 				52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */,
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
+				9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */,
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,
 				9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */,
 				9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */,
