@@ -31,7 +31,7 @@
     self.colorView.backgroundColor = [UIColor colorWithHex:_colorIndex];
     self.textLabel.textColor = [UIColor colorWithHex:complementColorIndex];
     self.textLabel.font = [UIFont boldSystemFontOfSize:12];
-    NSString *firstPart = [NSString stringWithFormat:@"%03lx", (unsigned long)((_colorIndex >> 12) & 0xfff000)];
+    NSString *firstPart = [NSString stringWithFormat:@"%03lx", (unsigned long)((_colorIndex & 0xfff000) >> 12)];
     NSString *lastPart = [NSString stringWithFormat:@"%03lx", (unsigned long)(_colorIndex & 0x000fff)];
     self.textLabel.text = [NSString stringWithFormat:@"%@\n%@", firstPart, lastPart];
 }
