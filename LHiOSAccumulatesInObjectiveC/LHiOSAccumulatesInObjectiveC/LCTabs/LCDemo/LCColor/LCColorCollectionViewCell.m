@@ -19,6 +19,12 @@
 
 @implementation LCColorCollectionViewCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.colorView.layer.cornerRadius = 4;
+    self.colorView.clipsToBounds = YES;
+}
+
 - (void)setColorIndex:(NSUInteger)colorIndex {
     _colorIndex = colorIndex & 0xFFFFFF;
     NSUInteger complementColorIndex = 0xFFFFFF - _colorIndex;
@@ -28,8 +34,6 @@
     NSString *firstPart = [NSString stringWithFormat:@"%03lx", (unsigned long)((_colorIndex >> 12) & 0xfff000)];
     NSString *lastPart = [NSString stringWithFormat:@"%03lx", (unsigned long)(_colorIndex & 0x000fff)];
     self.textLabel.text = [NSString stringWithFormat:@"%@\n%@", firstPart, lastPart];
-    self.colorView.layer.cornerRadius = 4;
-    self.colorView.clipsToBounds = YES;
 }
 
 @end
