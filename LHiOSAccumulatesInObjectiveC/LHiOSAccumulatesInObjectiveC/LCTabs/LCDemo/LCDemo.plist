@@ -17,10 +17,8 @@
 		<string>颜色探索</string>
 		<key>viewControllerTitle</key>
 		<string>颜色探索</string>
-		<key>storyboardName</key>
-		<string>LCDemo</string>
-		<key>storyboardID</key>
-		<string>LCColorViewController</string>
+		<key>plistName</key>
+		<string>LCColor</string>
 	</dict>
 	<dict>
 		<key>plistName</key>

@@ -79,6 +79,8 @@
 		9CA6059C1F0541BF000DB286 /* LCDComputerSystemChapter2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA605921F053EEB000DB286 /* LCDComputerSystemChapter2.plist */; };
 		9CB64ECC1F0E7F5800A4BC1C /* LCColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64ECB1F0E7F5800A4BC1C /* LCColorViewController.m */; };
 		9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */; };
+		9CB64ED21F0EF98600A4BC1C /* LCCColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64ED11F0EF98600A4BC1C /* LCCColor.storyboard */; };
+		9CB64ED41F0EFB5700A4BC1C /* LCCColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64ED31F0EF9B800A4BC1C /* LCCColor.plist */; };
 		9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */; };
 		9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */; };
 		9CD141C81EFF674900B25586 /* LCDComputerSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CD141C71EFF64D800B25586 /* LCDComputerSystem.plist */; };
@@ -234,6 +236,8 @@
 		9CB64ECB1F0E7F5800A4BC1C /* LCColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorViewController.m; sourceTree = "<group>"; };
 		9CB64ECD1F0E821D00A4BC1C /* LCColorCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorCollectionViewCell.h; sourceTree = "<group>"; };
 		9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCollectionViewCell.m; sourceTree = "<group>"; };
+		9CB64ED11F0EF98600A4BC1C /* LCCColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCCColor.storyboard; sourceTree = "<group>"; };
+		9CB64ED31F0EF9B800A4BC1C /* LCCColor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCCColor.plist; sourceTree = "<group>"; };
 		9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCURL.h"; sourceTree = "<group>"; };
 		9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCURL.m"; sourceTree = "<group>"; };
 		9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCImageCacheManager.h; sourceTree = "<group>"; };
@@ -621,12 +625,22 @@
 		9CB64EC91F0E7F3D00A4BC1C /* LCColor */ = {
 			isa = PBXGroup;
 			children = (
+				9CB64ED01F0EF96600A4BC1C /* resource */,
 				9CB64ECA1F0E7F5800A4BC1C /* LCColorViewController.h */,
 				9CB64ECB1F0E7F5800A4BC1C /* LCColorViewController.m */,
 				9CB64ECD1F0E821D00A4BC1C /* LCColorCollectionViewCell.h */,
 				9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */,
 			);
 			path = LCColor;
+			sourceTree = "<group>";
+		};
+		9CB64ED01F0EF96600A4BC1C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				9CB64ED11F0EF98600A4BC1C /* LCCColor.storyboard */,
+				9CB64ED31F0EF9B800A4BC1C /* LCCColor.plist */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		9CD141C61EFF64AB00B25586 /* LCDComputerSystem */ = {
@@ -780,10 +794,12 @@
 				9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */,
 				9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */,
 				5224851D1EE7BB60001A1429 /* LCDURLLoadingSystem.storyboard in Resources */,
+				9CB64ED41F0EFB5700A4BC1C /* LCCColor.plist in Resources */,
 				9C476D981EF51BFA004AC758 /* LCDBasicTech.storyboard in Resources */,
 				9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */,
 				522485221EE7BB60001A1429 /* LCSetting.storyboard in Resources */,
 				5224851F1EE7BB60001A1429 /* LCDocument.storyboard in Resources */,
+				9CB64ED21F0EF98600A4BC1C /* LCCColor.storyboard in Resources */,
 				9C476D8F1EF42C1D004AC758 /* LCDispatch.storyboard in Resources */,
 				52E4C8991EFA434A00CB8F4D /* LCBookShelf.storyboard in Resources */,
 				5224851C1EE7BB60001A1429 /* LCDURLLoadingSystem.plist in Resources */,
