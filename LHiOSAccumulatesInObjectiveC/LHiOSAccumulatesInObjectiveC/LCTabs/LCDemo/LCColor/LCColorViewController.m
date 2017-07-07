@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, assign) BOOL isLoading;
+@property (nonatomic, assign) BOOL isRandomOn;
 
 @end
 
@@ -39,6 +40,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LCColorCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([LCColorCollectionViewCell class]) forIndexPath:indexPath];
+    cell.tag = self.isRandomOn;
     cell.colorIndex = indexPath.row + self.colorOffset;
     return cell;
 }
@@ -47,6 +49,14 @@
     self.colorOffset = (NSInteger)sender.value;
     self.infoLabel.text = [NSString stringWithFormat:@"色值偏移：%06lx", (long)self.colorOffset];
     [self.collectionView reloadData];
+}
+//官郑培-客服专员  郭晓慧 留置针 客服专员 关镇培 系统录入员 许金月。 刘倩。  产品经理。任光。 行政。郭肖慧。 数据分析。刘知真
+- (IBAction)switchBarValueChanged:(UISwitch *)sender {
+    BOOL randomOn = !sender.on;
+    if (self.isRandomOn != randomOn) {
+        self.isRandomOn = randomOn;
+        [self.collectionView reloadData];
+    }
 }
 
 - (void)reloadData {

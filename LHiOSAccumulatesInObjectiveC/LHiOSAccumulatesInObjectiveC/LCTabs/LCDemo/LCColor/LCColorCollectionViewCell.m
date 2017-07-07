@@ -26,7 +26,7 @@
 }
 
 - (void)setColorIndex:(NSUInteger)colorIndex {
-    _colorIndex = colorIndex & 0xFFFFFF;
+    _colorIndex = [self randomColorIndexFrom:colorIndex] & 0xFFFFFF;
     NSUInteger complementColorIndex = 0xFFFFFF - _colorIndex;
     self.colorView.backgroundColor = [UIColor colorWithHex:_colorIndex];
     self.textLabel.textColor = [UIColor colorWithHex:complementColorIndex];
@@ -34,6 +34,10 @@
     NSString *firstPart = [NSString stringWithFormat:@"%03lx", (unsigned long)((_colorIndex & 0xfff000) >> 12)];
     NSString *lastPart = [NSString stringWithFormat:@"%03lx", (unsigned long)(_colorIndex & 0x000fff)];
     self.textLabel.text = [NSString stringWithFormat:@"%@\n%@", firstPart, lastPart];
+}
+
+- (NSUInteger)randomColorIndexFrom:(NSUInteger)origin {
+    return self.tag ? arc4random() & 0xffffff : origin;
 }
 
 @end
