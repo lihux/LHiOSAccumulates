@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "100ColorCombinations85.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "100ColorCombinations85@2x.png",
       "scale" : "2x"
     },
     {

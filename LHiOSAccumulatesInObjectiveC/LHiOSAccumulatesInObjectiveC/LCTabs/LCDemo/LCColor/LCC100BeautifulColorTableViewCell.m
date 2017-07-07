@@ -8,6 +8,8 @@
 
 #import "LCC100BeautifulColorTableViewCell.h"
 
+#import "LCLihuxHelper.h"
+
 @interface LCC100BeautifulColorTableViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *colorImageView;
@@ -18,6 +20,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [LCLihuxHelper makeLihuxStyleOfView:self];
 }
 
 -(void)setPhotoIndex:(NSInteger)photoIndex {
