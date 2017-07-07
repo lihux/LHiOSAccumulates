@@ -82,6 +82,8 @@
 		9CB64ED21F0EF98600A4BC1C /* LCColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64ED11F0EF98600A4BC1C /* LCColor.storyboard */; };
 		9CB64ED41F0EFB5700A4BC1C /* LCColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64ED31F0EF9B800A4BC1C /* LCColor.plist */; };
 		9CB64ED61F0FDA5900A4BC1C /* LCC100CombinationColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64ED51F0FDA5900A4BC1C /* LCC100CombinationColor.xcassets */; };
+		9CB64ED91F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64ED81F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m */; };
+		9CB64EDC1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64EDB1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m */; };
 		9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */; };
 		9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */; };
 		9CD141C81EFF674900B25586 /* LCDComputerSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CD141C71EFF64D800B25586 /* LCDComputerSystem.plist */; };
@@ -240,6 +242,10 @@
 		9CB64ED11F0EF98600A4BC1C /* LCColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCColor.storyboard; sourceTree = "<group>"; };
 		9CB64ED31F0EF9B800A4BC1C /* LCColor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCColor.plist; sourceTree = "<group>"; };
 		9CB64ED51F0FDA5900A4BC1C /* LCC100CombinationColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LCC100CombinationColor.xcassets; sourceTree = "<group>"; };
+		9CB64ED71F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCC100BeautifulColorViewController.h; sourceTree = "<group>"; };
+		9CB64ED81F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCC100BeautifulColorViewController.m; sourceTree = "<group>"; };
+		9CB64EDA1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCC100BeautifulColorTableViewCell.h; sourceTree = "<group>"; };
+		9CB64EDB1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCC100BeautifulColorTableViewCell.m; sourceTree = "<group>"; };
 		9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCURL.h"; sourceTree = "<group>"; };
 		9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCURL.m"; sourceTree = "<group>"; };
 		9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCImageCacheManager.h; sourceTree = "<group>"; };
@@ -632,6 +638,10 @@
 				9CB64ECB1F0E7F5800A4BC1C /* LCColorViewController.m */,
 				9CB64ECD1F0E821D00A4BC1C /* LCColorCollectionViewCell.h */,
 				9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */,
+				9CB64ED71F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.h */,
+				9CB64ED81F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m */,
+				9CB64EDA1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.h */,
+				9CB64EDB1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m */,
 			);
 			path = LCColor;
 			sourceTree = "<group>";
@@ -867,11 +877,13 @@
 				9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */,
 				5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */,
 				9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */,
+				9CB64ED91F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m in Sources */,
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
 				9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */,
 				52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */,
 				52E019211F02509B00B38546 /* LCBCreateReadingPlanViewController.m in Sources */,
+				9CB64EDC1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m in Sources */,
 				9CA605981F054085000DB286 /* LCComputerSystemCh2FloatRepresentViewController.m in Sources */,
 				52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */,
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
