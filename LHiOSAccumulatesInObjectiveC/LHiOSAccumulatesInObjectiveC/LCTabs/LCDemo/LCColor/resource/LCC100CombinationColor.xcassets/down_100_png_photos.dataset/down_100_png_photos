@@ -1,0 +1,15 @@
+#!/bin/bash
+
+urlPart1="https://designschool.canva.com/wp-content/uploads/sites/2/2015/06/color-combo-"
+urlPart2="-tb-662x0.png"
+
+echo "下载开始下载100张大美图片"
+echo "from: https://designschool.canva.com/blog/100-color-combinations/"
+
+for (( i = 1; i < 101; i++ )); do
+	imageURL=${urlPart1}${i}${urlPart2}
+	echo "开始下载第"${i}"张图片："
+	echo ${imageURL}
+	curl ${imageURL} -o "100ColorCombinations"${i}".png"
+done
+
