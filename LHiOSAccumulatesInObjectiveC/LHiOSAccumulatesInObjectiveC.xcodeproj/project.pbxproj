@@ -81,6 +81,7 @@
 		9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */; };
 		9CB64ED21F0EF98600A4BC1C /* LCColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64ED11F0EF98600A4BC1C /* LCColor.storyboard */; };
 		9CB64ED41F0EFB5700A4BC1C /* LCColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64ED31F0EF9B800A4BC1C /* LCColor.plist */; };
+		9CB64ED61F0FDA5900A4BC1C /* LCC100CombinationColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64ED51F0FDA5900A4BC1C /* LCC100CombinationColor.xcassets */; };
 		9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */; };
 		9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */; };
 		9CD141C81EFF674900B25586 /* LCDComputerSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CD141C71EFF64D800B25586 /* LCDComputerSystem.plist */; };
@@ -238,6 +239,7 @@
 		9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCollectionViewCell.m; sourceTree = "<group>"; };
 		9CB64ED11F0EF98600A4BC1C /* LCColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCColor.storyboard; sourceTree = "<group>"; };
 		9CB64ED31F0EF9B800A4BC1C /* LCColor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCColor.plist; sourceTree = "<group>"; };
+		9CB64ED51F0FDA5900A4BC1C /* LCC100CombinationColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LCC100CombinationColor.xcassets; sourceTree = "<group>"; };
 		9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCURL.h"; sourceTree = "<group>"; };
 		9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCURL.m"; sourceTree = "<group>"; };
 		9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCImageCacheManager.h; sourceTree = "<group>"; };
@@ -639,6 +641,7 @@
 			children = (
 				9CB64ED11F0EF98600A4BC1C /* LCColor.storyboard */,
 				9CB64ED31F0EF9B800A4BC1C /* LCColor.plist */,
+				9CB64ED51F0FDA5900A4BC1C /* LCC100CombinationColor.xcassets */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 			files = (
 				522485141EE7BB60001A1429 /* LCDemo.storyboard in Resources */,
 				9C476D911EF430C6004AC758 /* LCDDispatch.plist in Resources */,
+				9CB64ED61F0FDA5900A4BC1C /* LCC100CombinationColor.xcassets in Resources */,
 				522485231EE7BB60001A1429 /* LCSetting.plist in Resources */,
 				52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */,
 				9C476D991EF51D8F004AC758 /* LCDBasicTech.plist in Resources */,
