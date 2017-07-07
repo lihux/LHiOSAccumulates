@@ -9,7 +9,7 @@ echo "from: https://designschool.canva.com/blog/100-color-combinations/"
 for (( i = 1; i < 101; i++ )); do
 	imageURL=${urlPart1}${i}${urlPart2}
 	echo "开始下载第"${i}"张图片："
-	echo imageURL
-	curl imageURL -o "100ColorCombinations"${i}".png"
+	echo ${imageURL}
+	curl ${imageURL} -o "100ColorCombinations"${i}".png"
 done
 
