@@ -12,6 +12,7 @@
 #import "UIColor+helper.h"
 #import "LCTableViewController.h"
 #import "LCConstantDefines.h"
+#import "LCLihuxHelper.h"
 
 static const CGFloat kDefaultFlyingAnimationDuration = 0.6;
 static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
@@ -48,6 +49,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = LihuxStyleColor;
     [self adjustLayoutConstraints];
     [self prepareDatas];
 }

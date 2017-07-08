@@ -8,6 +8,8 @@
 
 #import "LCSectionHeaderView.h"
 
+#import "LCLihuxHelper.h"
+
 @interface LCSectionHeaderView ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -26,6 +28,7 @@
     LCSectionHeaderView *sectionHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"LCSectionHeaderView" owner:nil options:nil] objectAtIndex:0];
     sectionHeaderView.delegate = delegate;
     [sectionHeaderView configSectionHeaderViewWithTitle:title leftText:leftText rightText:rightText];
+    sectionHeaderView.backgroundColor = LihuxStyleColor;
     return sectionHeaderView;
 }
 
