@@ -51,6 +51,7 @@
 		9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365901C4CFBED00E04D7B /* AppDelegate.m */; };
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
+		9C3669BC1F106DB3009F856C /* 100CombinationColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C3669BB1F106DB3009F856C /* 100CombinationColors.plist */; };
 		9C476D8F1EF42C1D004AC758 /* LCDispatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */; };
 		9C476D901EF42DC1004AC758 /* LCDispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A048C1EEB8B6E00161D69 /* LCDispatchApplyViewController.m */; };
 		9C476D911EF430C6004AC758 /* LCDDispatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */; };
@@ -194,6 +195,7 @@
 		9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDURLSessionViewController.m; sourceTree = "<group>"; };
 		9C26C5011EEC0A0B00CE608A /* LCDURLHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDURLHelper.h; sourceTree = "<group>"; };
 		9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDURLHelper.m; sourceTree = "<group>"; };
+		9C3669BB1F106DB3009F856C /* 100CombinationColors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = 100CombinationColors.plist; sourceTree = "<group>"; };
 		9C476D931EF51A70004AC758 /* LCDBasicTech.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDBasicTech.plist; sourceTree = "<group>"; };
 		9C476D971EF51BFA004AC758 /* LCDBasicTech.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDBasicTech.storyboard; sourceTree = "<group>"; };
 		9C476D9A1EF51E57004AC758 /* LCDBENUMExploreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBENUMExploreViewController.h; sourceTree = "<group>"; };
@@ -651,6 +653,7 @@
 			children = (
 				9CB64ED11F0EF98600A4BC1C /* LCColor.storyboard */,
 				9CB64ED31F0EF9B800A4BC1C /* LCColor.plist */,
+				9C3669BB1F106DB3009F856C /* 100CombinationColors.plist */,
 				9CB64EDD1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets */,
 			);
 			path = resource;
@@ -798,6 +801,7 @@
 				9C476D911EF430C6004AC758 /* LCDDispatch.plist in Resources */,
 				9CB64EDE1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets in Resources */,
 				522485231EE7BB60001A1429 /* LCSetting.plist in Resources */,
+				9C3669BC1F106DB3009F856C /* 100CombinationColors.plist in Resources */,
 				52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */,
 				9C476D991EF51D8F004AC758 /* LCDBasicTech.plist in Resources */,
 				522485201EE7BB60001A1429 /* LCDocument.plist in Resources */,

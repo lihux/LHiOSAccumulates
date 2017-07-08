@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.colorCount = 0x1000000;
+//    NSString
     [self.collectionView reloadData];
 }
 
