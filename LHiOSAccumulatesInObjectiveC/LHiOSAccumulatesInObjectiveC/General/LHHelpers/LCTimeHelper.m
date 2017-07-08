@@ -17,7 +17,6 @@
 static const NSInteger kMinute = 60;
 static const NSInteger kHour = 60 * kMinute;
 static const NSInteger kDay = 24 * kHour;
-static const NSInteger kWeek = 7 * kDay;
 
 @implementation LCTimeHelper
 
