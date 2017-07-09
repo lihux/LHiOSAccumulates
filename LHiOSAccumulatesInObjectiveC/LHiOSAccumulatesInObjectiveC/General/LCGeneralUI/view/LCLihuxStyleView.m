@@ -8,7 +8,18 @@
 
 #import "LCLihuxStyleView.h"
 
+#import "LCConstantDefines.h"
+
 @implementation LCLihuxStyleView
+
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+    [super willMoveToSuperview:newSuperview];
+    if (newSuperview) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(application:didReceiveLocalNotification:) name:kLCLihuxStyleViewChangeColorNotification object:nil];
+    } else {
+        [[NSNotificationCenter defaultCenter] removeObserver:self];
+    }
+}
 
 - (void)setColorType:(LCLihuxStyleColorType)colorType {
     switch (colorType) {
@@ -23,6 +34,13 @@
             break;
         default:
             break;
+    }
+}
+
+- (void)didReceiveChangeColorNotification:(NSNotification *)notification {
+    if ([notification.object isKindOfClass:[NSNumber class]]) {
+        NSNumber *temp = (NSNumber *)notification.object;
+        self.colorType = temp.integerValue;
     }
 }
 

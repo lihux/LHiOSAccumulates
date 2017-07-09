@@ -22,7 +22,7 @@
                         <viewControllerLayoutGuide type="top" id="o6L-dn-vAg"/>
                         <viewControllerLayoutGuide type="bottom" id="F8B-cN-7pQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DhY-Dd-k9n">
+                    <view key="view" contentMode="scaleToFill" id="DhY-Dd-k9n" customClass="LCLihuxStyleView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -536,6 +536,11 @@
                             <constraint firstItem="F8B-cN-7pQ" firstAttribute="top" secondItem="vfZ-64-UJQ" secondAttribute="bottom" constant="10" id="zkf-8f-6VH"/>
                             <constraint firstItem="LNA-wE-lgF" firstAttribute="centerX" secondItem="B3X-su-qkm" secondAttribute="centerX" priority="750" id="zsx-pX-AWT"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="colorType">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="2Cb-dq-O4c"/>

@@ -11,4 +11,6 @@
 
 #define kLCSSettingDefaultSelectTabKey @"kLCSSettingDefaultSelectTabKey"
 
+#define kLCLihuxStyleViewChangeColorNotification @"kLCLihuxStyleViewChangeColorNotification"
+
 #endif /* LCConstantDefines_h */
