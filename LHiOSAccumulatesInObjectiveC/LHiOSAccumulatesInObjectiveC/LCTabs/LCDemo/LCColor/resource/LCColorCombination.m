@@ -31,7 +31,7 @@
 @implementation LCColorCombination
 
 + (NSArray *)colorCombinations {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"LCColor" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"100CombinationColors" ofType:@"plist"];
     NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
     NSMutableArray *combinations = [NSMutableArray array];
     for (NSString *combinationName in dic.allKeys) {
