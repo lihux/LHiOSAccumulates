@@ -9,32 +9,21 @@
 #import "LCLihuxStyleView.h"
 
 #import "LCConstantDefines.h"
+#import "LCLihuxHelper.h"
 
 @implementation LCLihuxStyleView
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];
     if (newSuperview) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(application:didReceiveLocalNotification:) name:kLCLihuxStyleViewChangeColorNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveChangeColorNotification:) name:kLCLihuxStyleViewChangeColorNotification object:nil];
     } else {
         [[NSNotificationCenter defaultCenter] removeObserver:self];
     }
 }
 
 - (void)setColorType:(LCLihuxStyleColorType)colorType {
-    switch (colorType) {
-        case LCLihuxStyleColorTypeBackground:
-            self.backgroundColor = [UIColor redColor];
-            break;
-        case LCLihuxStyleColorTypeContent:
-            self.backgroundColor = [UIColor yellowColor];
-            break;
-        case LCLihuxStyleColorTypeHighlight:
-            self.backgroundColor = [UIColor blueColor];
-            break;
-        default:
-            break;
-    }
+    self.backgroundColor = [LCLihuxHelper colorOfType:colorType];
 }
 
 - (void)didReceiveChangeColorNotification:(NSNotification *)notification {

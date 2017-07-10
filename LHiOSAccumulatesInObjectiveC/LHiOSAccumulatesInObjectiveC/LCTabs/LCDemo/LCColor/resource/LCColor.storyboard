@@ -208,36 +208,32 @@
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2x-bm-60T" userLabel="Button1">
                                                             <rect key="frame" x="299.33333333333331" y="9" width="71" height="49"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="71" id="28p-BV-rCC"/>
                                                                 <constraint firstAttribute="height" constant="49" id="HEP-jP-n27"/>
                                                             </constraints>
-                                                            <state key="normal" title="1"/>
                                                             <connections>
                                                                 <action selector="didTapOnButton:" destination="48N-AN-Cbm" eventType="touchUpInside" id="Wxh-rQ-E1T"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lq6-81-BW7" userLabel="Button2">
                                                             <rect key="frame" x="299.33333333333331" y="61" width="71" height="49"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <state key="normal" title="2"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <connections>
                                                                 <action selector="didTapOnButton:" destination="48N-AN-Cbm" eventType="touchUpInside" id="o7I-Jb-HK0"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-Hl-k1E" userLabel="Button2">
                                                             <rect key="frame" x="299" y="112" width="71" height="49"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <state key="normal" title="3"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <connections>
                                                                 <action selector="didTapOnButton:" destination="48N-AN-Cbm" eventType="touchUpInside" id="yq0-SQ-85a"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPo-7M-joD" userLabel="Button2">
                                                             <rect key="frame" x="299" y="163" width="71" height="49"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <state key="normal" title="4"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <connections>
                                                                 <action selector="didTapOnButton:" destination="48N-AN-Cbm" eventType="touchUpInside" id="0Va-xT-Bid"/>
                                                             </connections>

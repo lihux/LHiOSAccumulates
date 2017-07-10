@@ -37,4 +37,36 @@
     }
 }
 
++ (UIColor *)colorOfType:(LCLihuxStyleColorType)type {
+    UIColor *color = [UIColor clearColor];
+    switch (type) {
+        case LCLihuxStyleColorTypeBackground:
+            color = LihuxContentBackgroundColor;
+            break;
+        case LCLihuxStyleColorTypeContent:
+            color = LihuxStyleColor;
+        default:
+            break;
+    }
+    NSString *key = [self lihuxStyleColorStoreKeyFromType:type];
+    NSNumber *colorValue = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+    if (colorValue) {
+        color = [UIColor colorWithHex:colorValue.integerValue];
+    }
+    return color;
+}
+
++ (void)resetColorByValue:(NSInteger)colorValue ofType:(LCLihuxStyleColorType)type {
+    NSString *key = [self lihuxStyleColorStoreKeyFromType:type];
+    if (colorValue > 0) {
+        [[NSUserDefaults standardUserDefaults] setObject:@(colorValue) forKey:key];
+    } else {
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
+    }
+}
+
++ (NSString *)lihuxStyleColorStoreKeyFromType:(LCLihuxStyleColorType)type {
+    return [NSString stringWithFormat:@"LCLihuxStyleColorType_%zd", type];
+}
+
 @end

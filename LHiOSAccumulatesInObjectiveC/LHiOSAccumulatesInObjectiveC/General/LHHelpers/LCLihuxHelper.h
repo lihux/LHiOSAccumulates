@@ -13,7 +13,7 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, LCLihuxStyleColorType) {
-    LCLihuxStyleColorTypeBackground,
+    LCLihuxStyleColorTypeBackground = 0,
     LCLihuxStyleColorTypeContent,
     LCLihuxStyleColorTypeHighlight,
 };
@@ -31,5 +31,8 @@ static const NSInteger kLDontAdjustConstraintsTag = 9998;
 @interface LCLihuxHelper : NSObject
 
 + (void)makeLihuxStyleOfView:(UIView *)view;
-    
+
++ (UIColor *)colorOfType:(LCLihuxStyleColorType)type;
++ (void)resetColorByValue:(NSInteger)colorValue ofType:(LCLihuxStyleColorType)type;
+
 @end
