@@ -48,15 +48,22 @@
     [self customUI];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
 - (void)customUI {
     self.tableView.tableFooterView = [UIView new];
-    self.view.backgroundColor = [UIColor clearColor];
-    LCLihuxStyleView *styleView = [LCLihuxStyleView styleViewWithCOlorType:LCLihuxStyleColorTypeBackground];
-    [self.view addSubviewUsingDefaultLayoutConstraints:styleView];
+    UIView *backgroundView = [LCLihuxStyleView styleViewWithCOlorType:LCLihuxStyleColorTypeBackground];
+    self.tableView.backgroundView = backgroundView;
+    backgroundView.backgroundColor = [UIColor redColor];
     UIView *maskView = [[UIView alloc] init];
-    maskView.backgroundColor = [UIColor colorWithHex:0x000000 alpha:0.1];
-    [self.view addSubviewUsingDefaultLayoutConstraints:maskView];
-    [self.view bringSubviewToFront:self.tableView];
+    maskView.backgroundColor = [UIColor colorWithHex:0x000000 alpha:1];
+    [backgroundView addSubviewUsingDefaultLayoutConstraints:maskView];
+//    LCLihuxStyleView *styleView = [LCLihuxStyleView styleViewWithCOlorType:LCLihuxStyleColorTypeBackground];
+//    styleView.tag = -9999;
+//    [self.view insertSubviewUsingDefaultLayoutConstraints:styleView belowSubview:self.tableView];
+//    [self.view insertSubviewUsingDefaultLayoutConstraints:maskView belowSubview:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {

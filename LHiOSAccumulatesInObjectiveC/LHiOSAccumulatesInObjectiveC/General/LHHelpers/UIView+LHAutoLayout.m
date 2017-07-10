@@ -10,8 +10,27 @@
 
 @implementation UIView (LHAutoLayout)
 
+- (void)insertSubviewUsingDefaultLayoutConstraints:(UIView *)view atIndex:(NSInteger)index {
+    [self insertSubview:view atIndex:index];
+    [self addDefaultConstraintsForSubView:view];
+}
+
+- (void)insertSubviewUsingDefaultLayoutConstraints:(UIView *)view aboveSubview:(UIView *)siblingSubview {
+    [self insertSubview:view aboveSubview:siblingSubview];
+    [self addDefaultConstraintsForSubView:view];
+}
+
+- (void)insertSubviewUsingDefaultLayoutConstraints:(UIView *)view belowSubview:(UIView *)siblingSubview {
+    [self insertSubview:view belowSubview:siblingSubview];
+    [self addDefaultConstraintsForSubView:view];
+}
+
 - (void)addSubviewUsingDefaultLayoutConstraints:(UIView *)view {
     [self addSubview:view];
+    [self addDefaultConstraintsForSubView:view];
+}
+
+- (void)addDefaultConstraintsForSubView:(UIView *)view {
     view.translatesAutoresizingMaskIntoConstraints = NO;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(view)]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[view]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(view)]];
