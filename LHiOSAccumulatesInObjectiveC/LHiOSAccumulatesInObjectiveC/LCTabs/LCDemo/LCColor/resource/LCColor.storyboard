@@ -248,7 +248,6 @@
                                                         <constraint firstItem="oyy-Hl-k1E" firstAttribute="centerX" secondItem="lq6-81-BW7" secondAttribute="centerX" id="H37-29-xjV"/>
                                                         <constraint firstItem="W1W-ZA-ROV" firstAttribute="centerY" secondItem="ePi-qW-5pj" secondAttribute="centerY" id="HAV-PI-RrM"/>
                                                         <constraint firstItem="W1W-ZA-ROV" firstAttribute="centerX" secondItem="ePi-qW-5pj" secondAttribute="centerX" id="JhA-RF-lxI"/>
-                                                        <constraint firstItem="W1W-ZA-ROV" firstAttribute="top" secondItem="ePi-qW-5pj" secondAttribute="top" constant="2" id="MPJ-oW-TVm"/>
                                                         <constraint firstItem="lq6-81-BW7" firstAttribute="height" secondItem="Z2x-bm-60T" secondAttribute="height" id="Nrx-Y5-AGp"/>
                                                         <constraint firstItem="oyy-Hl-k1E" firstAttribute="height" secondItem="Z2x-bm-60T" secondAttribute="height" id="SN7-dL-HbZ"/>
                                                         <constraint firstItem="Z2x-bm-60T" firstAttribute="centerX" secondItem="ePi-qW-5pj" secondAttribute="centerX" constant="127" id="ToT-IW-pIc"/>
@@ -261,7 +260,6 @@
                                                         <constraint firstItem="lq6-81-BW7" firstAttribute="centerX" secondItem="Z2x-bm-60T" secondAttribute="centerX" id="qqc-XK-mBc"/>
                                                         <constraint firstItem="oyy-Hl-k1E" firstAttribute="width" secondItem="Z2x-bm-60T" secondAttribute="width" id="sDw-V4-6rs"/>
                                                         <constraint firstItem="oyy-Hl-k1E" firstAttribute="top" secondItem="lq6-81-BW7" secondAttribute="bottom" constant="2" id="sK5-yN-79i"/>
-                                                        <constraint firstAttribute="bottom" secondItem="W1W-ZA-ROV" secondAttribute="bottom" constant="2" id="xfG-QQ-iYP"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
