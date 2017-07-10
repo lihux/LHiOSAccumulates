@@ -22,6 +22,12 @@
     }
 }
 
++ (instancetype)styleViewWithCOlorType:(LCLihuxStyleColorType)colorType {
+    LCLihuxStyleView *view = [[LCLihuxStyleView alloc] init];
+    view.colorType = colorType;
+    return view;
+}
+
 - (void)setColorType:(LCLihuxStyleColorType)colorType {
     self.backgroundColor = [LCLihuxHelper colorOfType:colorType];
 }

@@ -15,6 +15,7 @@
 #import "LCSectionHeaderView.h"
 #import "LCLihuxHelper.h"
 #import "UIView+LHAutoLayout.h"
+#import "LCLihuxStyleView.h"
 
 @interface LCTableViewController () <LCSectionHeaderViewDelegate, LCTableViewCellDelegate>
 
@@ -44,10 +45,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self customUI];
+}
+
+- (void)customUI {
     self.tableView.tableFooterView = [UIView new];
-    self.view.backgroundColor = LihuxStyleColor;
-    self.tableView.backgroundColor = [UIColor blackColor];
-    self.view.backgroundColor = [UIColor colorWithHex:0x000000 alpha:0.1];
+    self.view.backgroundColor = [UIColor clearColor];
+    LCLihuxStyleView *styleView = [LCLihuxStyleView styleViewWithCOlorType:LCLihuxStyleColorTypeBackground];
+    [self.view addSubviewUsingDefaultLayoutConstraints:styleView];
+    UIView *maskView = [[UIView alloc] init];
+    maskView.backgroundColor = [UIColor colorWithHex:0x000000 alpha:0.1];
+    [self.view addSubviewUsingDefaultLayoutConstraints:maskView];
+    [self.view bringSubviewToFront:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {

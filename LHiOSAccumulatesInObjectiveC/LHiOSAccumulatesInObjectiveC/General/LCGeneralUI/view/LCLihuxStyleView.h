@@ -14,4 +14,6 @@
 
 @property (nonatomic, assign) LCLihuxStyleColorType colorType;
 
++ (instancetype)styleViewWithCOlorType:(LCLihuxStyleColorType)colorType;
+
 @end
