@@ -9,6 +9,7 @@
 #import "LCC100BeautifulColorTableViewCell.h"
 
 #import "LCLihuxHelper.h"
+#import "LCColorCombinationManger.h"
 
 @interface LCC100BeautifulColorTableViewCell ()
 
@@ -21,6 +22,13 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     [LCLihuxHelper makeLihuxStyleOfView:self];
+}
+- (IBAction)didTapOnButton:(UIButton *)sender {
+    NSInteger namedColorIndex = self.photoIndex * 4 + sender.tag;
+    NSArray *colors = [LCColorCombinationManger sharedInstance].namedColors;
+    if (colors.count > namedColorIndex) {
+        [self.delegate colorTableViewCell:self didChoseNamedColor:colors[namedColorIndex]];
+    }
 }
 
 -(void)setPhotoIndex:(NSInteger)photoIndex {

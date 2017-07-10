@@ -9,8 +9,9 @@
 #import "LCC100BeautifulColorViewController.h"
 
 #import "LCC100BeautifulColorTableViewCell.h"
+#import "LCColorCombinationManger.h"
 
-@interface LCC100BeautifulColorViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface LCC100BeautifulColorViewController () <UITableViewDataSource, UITableViewDelegate, LCC100BeautifulColorTableViewCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, assign) CGFloat cellHeight;
@@ -30,7 +31,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LCC100BeautifulColorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LCC100BeautifulColorTableViewCell class])];
     cell.photoIndex = indexPath.row;
+    cell.delegate = self;
     return cell;
+}
+
+#pragma mark - LCC100BeautifulColorTableViewCellDelegate
+-(void)colorTableViewCell:(LCC100BeautifulColorTableViewCell *)cell didChoseNamedColor:(LCNamedColor *)namedColor {
+    NSLog(@"点击色彩：%@：%zd", namedColor.name, namedColor.rgb);
 }
 
 @end

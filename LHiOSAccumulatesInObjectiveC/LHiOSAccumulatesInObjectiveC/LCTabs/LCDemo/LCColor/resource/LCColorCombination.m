@@ -45,7 +45,11 @@
         combination.colors = colors;
         [combinations addObject:combination];
     }
-    return [combinations copy];
+    return [combinations sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        LCColorCombination *temp1 = (LCColorCombination *)obj1;
+        LCColorCombination *temp2 = (LCColorCombination *)obj2;
+        return [temp1.name compare:temp2.name];
+    }];
 }
 
 @end
