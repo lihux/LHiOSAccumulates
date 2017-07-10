@@ -21,12 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CGFloat imageHeightWidthRatio = 0.631;
-    self.cellHeight = ([UIScreen mainScreen].bounds.size.width - 24) * imageHeightWidthRatio;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return self.cellHeight;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
