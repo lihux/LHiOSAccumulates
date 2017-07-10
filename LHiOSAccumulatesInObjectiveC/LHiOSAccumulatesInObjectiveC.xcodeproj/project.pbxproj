@@ -18,6 +18,7 @@
 		522485221EE7BB60001A1429 /* LCSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5224850B1EE7BB60001A1429 /* LCSetting.storyboard */; };
 		522485231EE7BB60001A1429 /* LCSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5224850C1EE7BB60001A1429 /* LCSetting.plist */; };
 		522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */; };
+		5256DE731F1357A80043B066 /* xx.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5256DE721F1357A80043B066 /* xx.plist */; };
 		5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E1CF1F066B90005EF013 /* LCTimeHelper.m */; };
 		5296F2AE1EFB9EB600A08022 /* LCBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5237BE6F1EFB84C800180A04 /* LCBookShelf.xcdatamodeld */; };
 		5296F2AF1EFB9ED100A08022 /* LCBCurrentReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD95D1EFA377E00DF92BA /* LCBCurrentReadingViewController.m */; };
@@ -131,6 +132,7 @@
 		5224852F1EE8EBD0001A1429 /* UIView+LHAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LHAutoLayout.h"; sourceTree = "<group>"; };
 		522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LHAutoLayout.m"; sourceTree = "<group>"; };
 		5237BE701EFB84C800180A04 /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
+		5256DE721F1357A80043B066 /* xx.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = xx.plist; sourceTree = "<group>"; };
 		5270E1CE1F066B90005EF013 /* LCTimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTimeHelper.h; sourceTree = "<group>"; };
 		5270E1CF1F066B90005EF013 /* LCTimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTimeHelper.m; sourceTree = "<group>"; };
 		528FD9591EFA377E00DF92BA /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
@@ -665,6 +667,7 @@
 				9CB64ED11F0EF98600A4BC1C /* LCColor.storyboard */,
 				9CB64ED31F0EF9B800A4BC1C /* LCColor.plist */,
 				9C3669BB1F106DB3009F856C /* 100CombinationColors.plist */,
+				5256DE721F1357A80043B066 /* xx.plist */,
 				9C7612331F1197650063107B /* LCColorCombination.h */,
 				9C7612341F1197650063107B /* LCColorCombination.m */,
 				9C7612361F1264E70063107B /* LCColorCombinationManger.h */,
@@ -818,6 +821,7 @@
 				522485231EE7BB60001A1429 /* LCSetting.plist in Resources */,
 				9C3669BC1F106DB3009F856C /* 100CombinationColors.plist in Resources */,
 				52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */,
+				5256DE731F1357A80043B066 /* xx.plist in Resources */,
 				9C476D991EF51D8F004AC758 /* LCDBasicTech.plist in Resources */,
 				522485201EE7BB60001A1429 /* LCDocument.plist in Resources */,
 				9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */,
