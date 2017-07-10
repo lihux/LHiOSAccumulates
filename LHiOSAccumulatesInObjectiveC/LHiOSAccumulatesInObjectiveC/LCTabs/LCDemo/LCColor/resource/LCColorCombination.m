@@ -12,6 +12,14 @@
 
 @implementation LCNamedColor
 
++ (NSArray <LCNamedColor *>*)colorsFromArray:(NSArray *)array {
+    NSMutableArray *temp = [NSMutableArray array];
+    for (NSDictionary *dic in array) {
+        [temp addObject:[[LCNamedColor alloc] initWithName:dic[@"name"] rgb:dic[@"rgb"]]];
+    }
+    return [temp copy];
+}
+
 - (instancetype)initWithName:(NSString *)name rgb:(NSString *)rgb {
     if (self = [super init]) {
         self.name = name;
@@ -26,30 +34,30 @@
     return [UIColor colorWithHex:self.rgb];
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"LCNamedColor:%@, %zd", self.name, self.rgb];
+}
+
 @end
 
 @implementation LCColorCombination
 
 + (NSArray *)colorCombinations {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"100CombinationColors" ofType:@"plist"];
-    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSArray *temp = [NSArray arrayWithContentsOfFile:path];
     NSMutableArray *combinations = [NSMutableArray array];
-    for (NSString *combinationName in dic.allKeys) {
-        LCColorCombination *combination = [[LCColorCombination alloc] init];
-        combination.name = combinationName;
-        NSMutableArray *colors = [NSMutableArray array];
-        NSDictionary *colorDic = dic[combinationName];
-        for (NSString *colorName in colorDic.allKeys) {
-            [colors addObject:[[LCNamedColor alloc] initWithName:colorName rgb:colorDic[colorName]]];
-        }
-        combination.colors = colors;
-        [combinations addObject:combination];
+    for (int i = 0; i < temp.count; i ++) {
+        [combinations addObject:[[LCColorCombination alloc]initWithDic:temp[i] index:i]];
     }
-    return [combinations sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
-        LCColorCombination *temp1 = (LCColorCombination *)obj1;
-        LCColorCombination *temp2 = (LCColorCombination *)obj2;
-        return [temp1.name compare:temp2.name];
-    }];
+    return [combinations copy];
 }
 
+- (instancetype)initWithDic:(NSDictionary *)dic index:(NSInteger)index {
+    if (self = [super init]) {
+        self.name = dic[@"name"];
+        self.imageName = [NSString stringWithFormat:@"100ColorCombinations%zd", index];
+        self.colors = [LCNamedColor colorsFromArray:dic[@"namedColors"]];
+    }
+    return self;
+}
 @end
