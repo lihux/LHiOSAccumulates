@@ -14,16 +14,6 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>清除缓存</string>
-		<key>content</key>
-		<string>第三方输入法带来了新的麻烦</string>
-		<key>storyboardID</key>
-		<string></string>
-		<key>storyboardName</key>
-		<string>LCSetting</string>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>设置APP主题色调</string>
 		<key>content</key>
 		<string>从100中颜色组合的400种颜色中选取你喜欢的颜色作为整个APP的背景色</string>
