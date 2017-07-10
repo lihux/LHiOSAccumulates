@@ -26,7 +26,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.colorCount = 0x1000000;
-//    NSString
     [self.collectionView reloadData];
 }
 
@@ -51,7 +50,7 @@
     self.infoLabel.text = [NSString stringWithFormat:@"色值偏移：%06lx", (long)self.colorOffset];
     [self.collectionView reloadData];
 }
-//官郑培-客服专员  郭晓慧 留置针 客服专员 关镇培 系统录入员 许金月。 刘倩。  产品经理。任光。 行政。郭肖慧。 数据分析。刘知真
+
 - (IBAction)switchBarValueChanged:(UISwitch *)sender {
     BOOL randomOn = !sender.on;
     if (self.isRandomOn != randomOn) {
