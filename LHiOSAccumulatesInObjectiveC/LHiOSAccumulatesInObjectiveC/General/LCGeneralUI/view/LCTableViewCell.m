@@ -38,8 +38,7 @@
     [button setBackgroundColor:[UIColor clearColor] forState:UIControlStateNormal];
     [button setBackgroundColor:[UIColor colorWithHex:0x188242] forState:UIControlStateHighlighted];
     [button addTarget:self action:@selector(didTapOnButton:) forControlEvents:UIControlEventTouchUpInside];
-    [self.contentView addSubview:button];
-    [self.contentView sendSubviewToBack:button];
+    [self.contentView insertSubview:button atIndex:2];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[button]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(button)]];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[button]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(button)]];
 }

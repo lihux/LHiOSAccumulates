@@ -18,8 +18,7 @@ typedef NS_ENUM(NSUInteger, LCLihuxStyleColorType) {
     LCLihuxStyleColorTypeHighlight,
 };
 
-#define LihuxStyleColor [UIColor colorWithHex:0x188242]
-#define LihuxContentBackgroundColor [UIColor colorWithHex:0x3b955e]
+#define LihuxStyleColor [LCLihuxHelper colorOfType:LCLihuxStyleColorTypeBackground]
 
 //如果不需要渲染lihux Style将View的tag设置为 -9999
 static const NSInteger kLCNonLihuxStyleViewTag = -9999;

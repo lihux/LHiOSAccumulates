@@ -59,7 +59,7 @@
     
     UIView *containerView= [[UIView alloc] init];
     [LCLihuxHelper makeLihuxStyleOfView:containerView];
-    containerView.backgroundColor = LihuxContentBackgroundColor;
+    containerView.backgroundColor = LihuxStyleColor;
     [self addSubview:containerView withLayoutInfo:LHLayoutInfoMake(LHLayoutNone, 0, -self.datePickerViewHeight, 0, LHLayoutNone, self.datePickerViewHeight)];
     
     [containerView addSubview:self.datePicker withLayoutInfo:LHLayoutInfoMake(LHLayoutNone, 0, 0, 0, LHLayoutNone, self.datePickerViewHeight - 44)];
@@ -134,7 +134,7 @@
     _datePicker.timeZone = [NSTimeZone localTimeZone];
     if ([_datePicker respondsToSelector:sel_registerName("setHighlightsToday:")]) {
     }
-    _datePicker.backgroundColor = LihuxContentBackgroundColor;
+    _datePicker.backgroundColor = LihuxStyleColor;
     return _datePicker;
 }
 

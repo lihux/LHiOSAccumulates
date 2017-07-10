@@ -37,10 +37,23 @@
     return cell;
 }
 
+- (void)updateColor:(NSInteger)colorValue type:(LCLihuxStyleColorType)type {
+    [LCLihuxHelper resetColorByValue:colorValue ofType:LCLihuxStyleColorTypeBackground];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLCLihuxStyleViewChangeColorNotification object:@(type)];
+}
+
+#pragma mark - override
+-(NSString *)rightItemText {
+    return @"默认颜色";
+}
+
+-(void)sectionHeaderView:(LCSectionHeaderView *)sectionHeaderView tappedOnRightButton:(UIButton *)rightButton {
+    [self updateColor:0x188242 type:LCLihuxStyleColorTypeBackground];
+}
+
 #pragma mark - LCC100BeautifulColorTableViewCellDelegate
 -(void)colorTableViewCell:(LCC100BeautifulColorTableViewCell *)cell didChoseNamedColor:(LCNamedColor *)namedColor {
-    [LCLihuxHelper resetColorByValue:namedColor.rgb ofType:LCLihuxStyleColorTypeBackground];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kLCLihuxStyleViewChangeColorNotification object:@(LCLihuxStyleColorTypeBackground)];
+    [self updateColor:namedColor.rgb type:LCLihuxStyleColorTypeBackground];
     NSLog(@"点击色彩：%@：%zd", namedColor.name, namedColor.rgb);
 }
 

@@ -41,10 +41,8 @@
     UIColor *color = [UIColor clearColor];
     switch (type) {
         case LCLihuxStyleColorTypeBackground:
-            color = LihuxContentBackgroundColor;
-            break;
         case LCLihuxStyleColorTypeContent:
-            color = LihuxStyleColor;
+            color = [UIColor colorWithHex:0x188242 alpha:1.0];
         default:
             break;
     }

@@ -34,7 +34,7 @@
 }
 
 - (void)customLCViewControllerBaseUI {
-    self.view.backgroundColor = LihuxContentBackgroundColor;
+    self.view.backgroundColor = [UIColor colorWithHex:0x000000 alpha:0.1];
     [LCLihuxHelper makeLihuxStyleOfView:self.lcViewController_ContainerView];
     if (self.lcViewController_ContainerView.tag != kLDontAdjustConstraintsTag) {
         [self.lcViewController_ContainerView removeFromSuperview];

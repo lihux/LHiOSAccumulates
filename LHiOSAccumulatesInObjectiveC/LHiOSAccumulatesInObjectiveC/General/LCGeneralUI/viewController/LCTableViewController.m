@@ -14,6 +14,7 @@
 #import "UIColor+helper.h"
 #import "LCSectionHeaderView.h"
 #import "LCLihuxHelper.h"
+#import "UIView+LHAutoLayout.h"
 
 @interface LCTableViewController () <LCSectionHeaderViewDelegate, LCTableViewCellDelegate>
 
@@ -30,15 +31,13 @@
 - (void)configWithTitle:(NSString *)title plistFileName:(NSString *)plistName {
     self.title = title;
     self.plistFileName = plistName;
-    self.tableView.backgroundColor = LihuxContentBackgroundColor;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     NSString *reuseID = [self tableViewCellResueIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:reuseID bundle:nil] forCellReuseIdentifier:reuseID];
     [self loadAccumulatesFromPlist];
 }
 
-- (void)loadAccumulatesFromPlist
-{
+- (void)loadAccumulatesFromPlist {
     self.accumulatesManager = [[LCAccumulateManager alloc] initWithPlistFileName:self.plistFileName];
     [self.tableView reloadData];
 }
@@ -46,6 +45,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.tableFooterView = [UIView new];
+    self.view.backgroundColor = LihuxStyleColor;
+    self.tableView.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor colorWithHex:0x000000 alpha:0.1];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,8 +77,7 @@
     return 44;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *headerView = [[UIView alloc] init];
     if (section == 0) {
         NSString *leftText = [self leftNavigatorItemText];
@@ -86,8 +87,7 @@
     return headerView;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 44;
 }
 
