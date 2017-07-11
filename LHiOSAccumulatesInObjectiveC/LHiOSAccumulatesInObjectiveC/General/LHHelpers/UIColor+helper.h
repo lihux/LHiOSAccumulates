@@ -14,5 +14,6 @@
 + (UIColor *) r:(CGFloat)r g:(CGFloat)g b:(CGFloat)b a:(CGFloat)a;
 + (UIColor *) colorWithHex:(NSInteger)value;
 + (UIColor *) colorWithHex:(NSInteger)value alpha:(CGFloat)alpha;
+- (UIColor*)blendWithColor:(UIColor*)color2 alpha:(CGFloat)alpha2;
 
 @end
