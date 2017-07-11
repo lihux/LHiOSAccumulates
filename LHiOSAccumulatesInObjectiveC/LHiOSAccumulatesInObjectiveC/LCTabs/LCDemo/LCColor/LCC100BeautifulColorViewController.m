@@ -39,7 +39,7 @@
 
 - (void)updateColor:(NSInteger)colorValue type:(LCLihuxStyleColorType)type {
     [LCLihuxHelper resetColorByValue:colorValue ofType:LCLihuxStyleColorTypeBackground];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kLCLihuxStyleViewChangeColorNotification object:@(type)];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLCLihuxStyleViewChangeColorNotification object:nil];
 }
 
 #pragma mark - override

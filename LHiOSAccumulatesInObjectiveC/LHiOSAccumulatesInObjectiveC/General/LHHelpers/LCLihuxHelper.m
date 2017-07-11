@@ -46,7 +46,8 @@
         default:
             break;
     }
-    NSString *key = [self lihuxStyleColorStoreKeyFromType:type];
+    //目前其他类型的颜色是从背景色衍生出来的，所以不需要储存
+    NSString *key = [self lihuxStyleColorStoreKeyFromType:LCLihuxStyleColorTypeBackground];
     NSNumber *colorValue = [[NSUserDefaults standardUserDefaults] objectForKey:key];
     if (colorValue) {
         color = [UIColor colorWithHex:colorValue.integerValue];

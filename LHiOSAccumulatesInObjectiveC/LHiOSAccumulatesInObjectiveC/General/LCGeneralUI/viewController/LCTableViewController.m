@@ -54,7 +54,7 @@
 
 - (void)customUI {
     self.tableView.tableFooterView = [UIView new];
-    UIView *backgroundView = [LCLihuxStyleView styleViewWithCOlorType:LCLihuxStyleColorTypeContent];
+    LCLihuxStyleView *backgroundView = [LCLihuxStyleView styleViewWithColorType:LCLihuxStyleColorTypeContent];
     self.tableView.backgroundView = backgroundView;
 }
 

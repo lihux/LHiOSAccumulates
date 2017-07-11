@@ -22,21 +22,19 @@
     }
 }
 
-+ (instancetype)styleViewWithCOlorType:(LCLihuxStyleColorType)colorType {
++ (instancetype)styleViewWithColorType:(LCLihuxStyleColorType)colorType {
     LCLihuxStyleView *view = [[LCLihuxStyleView alloc] init];
     view.colorType = colorType;
     return view;
 }
 
 - (void)setColorType:(LCLihuxStyleColorType)colorType {
+    _colorType = colorType;
     self.backgroundColor = [LCLihuxHelper colorOfType:colorType];
 }
 
 - (void)didReceiveChangeColorNotification:(NSNotification *)notification {
-    if ([notification.object isKindOfClass:[NSNumber class]]) {
-        NSNumber *temp = (NSNumber *)notification.object;
-        self.colorType = temp.integerValue;
-    }
+    self.backgroundColor = [LCLihuxHelper colorOfType:self.colorType];
 }
 
 @end
