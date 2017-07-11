@@ -20,7 +20,7 @@ class LSTableViewController: UITableViewController {
     func plistFileName() -> String? {
         return nil
     }
-    
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

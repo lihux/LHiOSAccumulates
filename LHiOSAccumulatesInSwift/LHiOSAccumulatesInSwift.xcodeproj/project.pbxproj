@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52ECB4B41F14C15B00E2E268 /* UIView+LSAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4B31F14C15B00E2E268 /* UIView+LSAutoLayout.swift */; };
 		9C0C23A21C5468E000185C45 /* LSDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A11C5468E000185C45 /* LSDemo.storyboard */; };
 		9C0C23A41C54690D00185C45 /* LSDocument.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A31C54690D00185C45 /* LSDocument.storyboard */; };
 		9C0C23A81C54695400185C45 /* LSSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C23A71C54695400185C45 /* LSSuprise.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52ECB4B31F14C15B00E2E268 /* UIView+LSAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+LSAutoLayout.swift"; path = "LSGenreal/LSView/UIView+LSAutoLayout.swift"; sourceTree = "<group>"; };
 		9C0C23A11C5468E000185C45 /* LSDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSDemo.storyboard; path = LSDemo/LSDemo.storyboard; sourceTree = "<group>"; };
 		9C0C23A31C54690D00185C45 /* LSDocument.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSDocument.storyboard; path = LSDocument/LSDocument.storyboard; sourceTree = "<group>"; };
 		9C0C23A71C54695400185C45 /* LSSuprise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSSuprise.storyboard; path = LSSuprise/LSSuprise.storyboard; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				9C0C23B51C546D6100185C45 /* LSTableViewCell.swift */,
 				9C0C23B91C546DE400185C45 /* LSButton.swift */,
 				9C23110A1E62B30100629270 /* LSLightBorderButton.swift */,
+				52ECB4B31F14C15B00E2E268 /* UIView+LSAutoLayout.swift */,
 			);
 			name = LSView;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				9C0C23CB1C54774A00185C45 /* UIColor+Utilities.swift in Sources */,
 				9C0C23BA1C546DE400185C45 /* LSButton.swift in Sources */,
 				9C0C23B61C546D6100185C45 /* LSTableViewCell.swift in Sources */,
+				52ECB4B41F14C15B00E2E268 /* UIView+LSAutoLayout.swift in Sources */,
 				9C2311091E62B0C500629270 /* LSHomeViewController.swift in Sources */,
 				9C23110B1E62B30100629270 /* LSLightBorderButton.swift in Sources */,
 				9C23110E1E62C4E400629270 /* LSFlyingView.swift in Sources */,
