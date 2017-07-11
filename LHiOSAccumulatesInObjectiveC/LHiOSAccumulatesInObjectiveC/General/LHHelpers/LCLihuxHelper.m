@@ -51,6 +51,9 @@
     if (colorValue) {
         color = [UIColor colorWithHex:colorValue.integerValue];
     }
+    if (type == LCLihuxStyleColorTypeContent) {
+        color = [color blendWithColor:[UIColor whiteColor] alpha:0.1];
+    }
     return color;
 }
 
