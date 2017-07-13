@@ -196,6 +196,53 @@
 			name = LSSetting;
 			sourceTree = "<group>";
 		};
+		9C1D94C31F17C4BB003CCD7A /* LSTabs */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D94C41F17C4DA003CCD7A /* LSBookShelf */,
+			);
+			path = LSTabs;
+			sourceTree = "<group>";
+		};
+		9C1D94C41F17C4DA003CCD7A /* LSBookShelf */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D94C91F17C52A003CCD7A /* viewControllers */,
+				9C1D94C81F17C520003CCD7A /* resources */,
+				9C1D94C71F17C516003CCD7A /* views */,
+				9C1D94C51F17C500003CCD7A /* data */,
+			);
+			path = LSBookShelf;
+			sourceTree = "<group>";
+		};
+		9C1D94C51F17C500003CCD7A /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		9C1D94C71F17C516003CCD7A /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		9C1D94C81F17C520003CCD7A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		9C1D94C91F17C52A003CCD7A /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
 		9C23110C1E62C4C700629270 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				52ECB4B81F14EE3D00E2E268 /* LSGenreal */,
+				9C1D94C31F17C4BB003CCD7A /* LSTabs */,
 				9C0C23981C54672100185C45 /* LSHome */,
 				9C0C239D1C54677400185C45 /* LSSetting */,
 				9C0C239C1C54676A00185C45 /* LSSuprise */,
