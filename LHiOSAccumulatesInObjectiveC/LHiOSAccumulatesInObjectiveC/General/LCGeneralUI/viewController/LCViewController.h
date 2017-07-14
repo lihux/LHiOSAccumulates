@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #import "LCSectionHeaderView.h"
+#import "UIColor+helper.h"
+#import "LCLihuxHelper.h"
 
 /**
  NOTE && IMPORTANT:继承自LCViewController的所有子类，都将遵从一下两个规则：
