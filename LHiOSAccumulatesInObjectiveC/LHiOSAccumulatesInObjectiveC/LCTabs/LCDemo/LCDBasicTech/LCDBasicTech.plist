@@ -26,5 +26,17 @@
 		<key>storyboardName</key>
 		<string>LCDBasicTech</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>运行时深入探索</string>
+		<key>viewControllerTitle</key>
+		<string>运行时深入探索</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+		<key>storyboardID</key>
+		<string>LCDBRuntimeViewController</string>
+		<key>storyboardName</key>
+		<string>LCDBasicTech</string>
+	</dict>
 </array>
 </plist>

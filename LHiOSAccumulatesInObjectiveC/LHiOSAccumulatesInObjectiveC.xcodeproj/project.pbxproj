@@ -20,6 +20,7 @@
 		522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */; };
 		5256DE731F1357A80043B066 /* 100CombinationColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5256DE721F1357A80043B066 /* 100CombinationColors.plist */; };
 		5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E1CF1F066B90005EF013 /* LCTimeHelper.m */; };
+		52815D221F185A0200E04BCF /* LCDBRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52815D211F185A0200E04BCF /* LCDBRuntimeViewController.m */; };
 		5296F2AE1EFB9EB600A08022 /* LCBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5237BE6F1EFB84C800180A04 /* LCBookShelf.xcdatamodeld */; };
 		5296F2AF1EFB9ED100A08022 /* LCBCurrentReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD95D1EFA377E00DF92BA /* LCBCurrentReadingViewController.m */; };
 		5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD95F1EFA377E00DF92BA /* LCBHowNBIamViewController.m */; };
@@ -134,6 +135,8 @@
 		5256DE721F1357A80043B066 /* 100CombinationColors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = 100CombinationColors.plist; sourceTree = "<group>"; };
 		5270E1CE1F066B90005EF013 /* LCTimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTimeHelper.h; sourceTree = "<group>"; };
 		5270E1CF1F066B90005EF013 /* LCTimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTimeHelper.m; sourceTree = "<group>"; };
+		52815D201F185A0200E04BCF /* LCDBRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBRuntimeViewController.h; sourceTree = "<group>"; };
+		52815D211F185A0200E04BCF /* LCDBRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBRuntimeViewController.m; sourceTree = "<group>"; };
 		528FD9591EFA377E00DF92BA /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
 		528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCBookShelf.storyboard; sourceTree = "<group>"; };
 		528FD95C1EFA377E00DF92BA /* LCBCurrentReadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBCurrentReadingViewController.h; sourceTree = "<group>"; };
@@ -566,6 +569,8 @@
 				9C476D9B1EF51E57004AC758 /* LCDBENUMExploreViewController.m */,
 				9C476D9D1EF51E6C004AC758 /* LCDBBlockExploreViewController.h */,
 				9C476D9E1EF51E6C004AC758 /* LCDBBlockExploreViewController.m */,
+				52815D201F185A0200E04BCF /* LCDBRuntimeViewController.h */,
+				52815D211F185A0200E04BCF /* LCDBRuntimeViewController.m */,
 				9C476D971EF51BFA004AC758 /* LCDBasicTech.storyboard */,
 			);
 			path = LCDBasicTech;
@@ -890,6 +895,7 @@
 				9CA605951F05406C000DB286 /* LCComputerSystemCh2IntRepresentViewController.m in Sources */,
 				9CD141CC1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.m in Sources */,
 				9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */,
+				52815D221F185A0200E04BCF /* LCDBRuntimeViewController.m in Sources */,
 				5224851E1EE7BB60001A1429 /* LCDURLMetricsViewController.m in Sources */,
 				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
 				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,
