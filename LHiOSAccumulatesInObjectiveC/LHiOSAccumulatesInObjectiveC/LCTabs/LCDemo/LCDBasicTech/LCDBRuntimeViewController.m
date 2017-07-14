@@ -47,7 +47,12 @@
 
 #pragma mark - test cases
 - (void)testTaggedPointer {
-    [self log:@"现在开始测试tagged pointer:苹果在OC2 & 64位CPU系统中引入了 tagged Poniter的概念，目的是为了缩减加载小尺寸类（NSNumber...)的加载速度和存储空间"];
+    [self log:@"现在开始测试tagged pointer:苹果在OC2 & 64位CPU系统中引入了 tagged Poniter的概念，目的是为了缩减加载小尺寸类（NSNumber/NSData...)的加载速度和存储空间"];
+    NSNumber *a = @1, *b = @2, *c = @3, *d = @(0xffff), *e = @(0xEFFFFFFFFFFFFFFF);
+    NSString *output = [NSString stringWithFormat:@"NSNumber对象\na=%@  address =%p\nb=%@  address =%p\nc=%@  address =%p\nd=%@  address =%p,\ne=%@  address =%p", a, a, b, b, c, c, d, d, e, e];
+    [self log:output];
+    [self log:@"可以看出当数比较小的时候，都将作为tagged pointer来存储的，也就是将值整合到地址中去"];
+//    NSString *isa = [NSString stringWithFormat:@"%@", a->isa];
 }
 
 #pragma mark - getter & setters
