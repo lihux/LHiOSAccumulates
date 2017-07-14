@@ -52,6 +52,7 @@
     NSString *output = [NSString stringWithFormat:@"NSNumber对象\na=%@  address =%p\nb=%@  address =%p\nc=%@  address =%p\nd=%@  address =%p,\ne=%@  address =%p", a, a, b, b, c, c, d, d, e, e];
     [self log:output];
     [self log:@"可以看出当数比较小的时候，都将作为tagged pointer来存储的，也就是将值整合到地址中去"];
+    [self log:[NSString stringWithFormat:@"再来看看他们的尺寸：sizeof a = %zd, sizeof e = %zd", sizeof(a), sizeof(e)]];
 //    NSString *isa = [NSString stringWithFormat:@"%@", a->isa];
 }
 
