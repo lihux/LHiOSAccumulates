@@ -17,6 +17,11 @@
 
 @property (nonatomic, strong) NSDictionary *testDic;
 @property (nonatomic, strong) NSArray *keys;
+//test case 2
+@property (nonatomic, assign) NSString *assignedString;
+@property (nonatomic, strong) NSString *strongedString;
+@property (nonatomic, assign) NSNumber *assignedNumber;
+@property (nonatomic, strong) NSNumber *strongedNumber;
 
 @end
 
@@ -26,6 +31,11 @@
     [super viewDidLoad];
     [self log:[NSString stringWithFormat:@"%@", self.testDic]];
     NSLog(@"%@", self.testDic);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self customTestCase2];
 }
 
 #pragma mark - UITableViewDelegate
@@ -51,6 +61,7 @@
 }
 
 #pragma mark - test cases
+//1.测试taggedPointer
 - (void)testTaggedPointer {
     [self log:@"现在开始测试tagged pointer:苹果在OC2 & 64位CPU系统中引入了 tagged Poniter的概念，目的是为了缩减加载小尺寸类（NSNumber/NSData...)的加载速度和存储空间"];
     NSNumber *a = @1, *b = @2, *c = @3, *d = @(0xffff), *e = @(0xEFFFFFFFFFFFFFFF);
@@ -82,12 +93,39 @@
     NSLog(@"1=%d, 2=%d, 3=%d, 4=%d, 5=%d, 6=%d, 7=%d", r21, r22, r23, r24, r25, r26, r27);
 }
 
+//2.测试assign的持有NSNumber & NSString，会不会crash，以及为什么
+- (void) testAssignNSNumberAndNSString {
+    [self log:@"下面开始测试assign的持有NSNumber & NSString，会不会crash，以及为什么"];
+    self.assignedNumber = @21;
+    self.assignedString = [NSString stringWithFormat:@"xxooxx:%@", self.strongedString];
+    [self log:[NSString stringWithFormat:@"assignedString:%@, 地址：%p,\nstrongedString:%@,地址：%p,\nassignedNumber:%@, 地址：%p,\nstrongedNumber:%@,地址：%p", self.assignedString, self.assignedString, self.strongedString, self.strongedString, self.assignedNumber, self.assignedNumber, self.strongedNumber, self.strongedNumber]];
+}
+
+-(void)customTestCase2 {
+    self.assignedNumber = @1;
+    self.strongedNumber = @23;
+    self.assignedString = @"helo, I'm assigned";
+    self.strongedString = @"hello, I'm stronged";
+    [self log:[NSString stringWithFormat:@"assignedString:%@, 地址：%p,\nstrongedString:%@,地址：%p,\nassignedNumber:%@, 地址：%p,\nstrongedNumber:%@,地址：%p", self.assignedString, self.assignedString, self.strongedString, self.strongedString, self.assignedNumber, self.assignedNumber, self.strongedNumber, self.strongedNumber]];
+}
+
+- (void)testSelf {
+    [self log:@"下面开始测试到底什么是self"];
+    BOOL b1 = [NSObject class] == [NSObject self];
+    [self log:[NSString stringWithFormat:@"[NSObject class]:%@ ==? [NSObject self]:%@，答案是：%zd", [NSObject class], [NSObject self], b1]];
+    BOOL b2 = [NSObject class] == [[NSObject new] class];
+    [self log:[NSString stringWithFormat:@"[NSObject class]:%@ ==? [[NSObject new] class]:%@，答案是：%zd", [NSObject class], [[NSObject new] class], b2]];
+}
+
 #pragma mark - getter & setters
 - (NSDictionary *)testDic {
     if (_testDic) {
         return _testDic;
     }
-    _testDic = @{@"1.测试taggedPointer": @"testTaggedPointer"};
+    _testDic = @{@"1.测试taggedPointer": @"testTaggedPointer",
+                 @"2.测试assign的持有NSNumber & NSString，会不会crash，以及为什么": @"testAssignNSNumberAndNSString",
+                 @"3.测试self类方法和对象方法的不同之处": @"testSelf",
+                 };
     self.keys = [_testDic.allKeys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         return [(NSString *)obj1 compare:(NSString *)obj2];
     }];
