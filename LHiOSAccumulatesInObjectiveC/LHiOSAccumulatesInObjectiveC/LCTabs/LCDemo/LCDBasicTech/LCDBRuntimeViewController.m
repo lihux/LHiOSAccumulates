@@ -9,6 +9,7 @@
 #import "LCDBRuntimeViewController.h"
 
 #import <objc/objc.h>
+#import <objc/runtime.h>
 
 #define ADDRESS_OF(object) [NSString stringWithFormat:@"%p", object]
 
@@ -58,12 +59,27 @@
     [self log:output];
     [self log:@"可以看出当数比较小的时候，都将作为tagged pointer来存储的，也就是将值整合到地址中去"];
     [self log:[NSString stringWithFormat:@"再来看看他们的尺寸：sizeof a = %zd, sizeof e = %zd", sizeof(a), sizeof(e)]];
+    BOOL r11 = [NSObject isKindOfClass:[NSObject class]];
+    BOOL r12 = [[NSObject class] isKindOfClass:[NSObject class]];
+    BOOL r13 = [[NSObject new] isKindOfClass:[NSObject class]];
+    BOOL r14 = [[[NSObject new] class] isKindOfClass:[NSObject class]];
+    BOOL r15 = [[NSObject class] isKindOfClass:[[NSObject new] class]];
+    BOOL r16 = [object_getClass([NSObject class]) isKindOfClass:[NSObject class]];
+    NSLog(@"1=%d, 2=%d, 3=%d, 4=%d, 5=%d, 6=%d", r11, r12, r13, r14, r15, r16);
 //    a.objCType
 //    NSString *isa = [NSString stringWithFormat:@"%@", a->ISA()];
+    [self addressOf:nil];
 }
 
-- (NSString *)addressOf:(id)object {
-    return [NSString stringWithFormat:@"%p", object];
+- (void)addressOf:(id)object {
+    BOOL r21 = [NSObject isMemberOfClass:[NSObject class]];
+    BOOL r22 = [[NSObject class] isMemberOfClass:[NSObject class]];
+    BOOL r23 = [[NSObject new] isMemberOfClass:[NSObject class]];
+    BOOL r24 = [[[NSObject new] class] isMemberOfClass:[NSObject class]];
+    BOOL r25 = [[NSObject class] isMemberOfClass:[[NSObject new] class]];
+    BOOL r26 = [object_getClass([NSObject class]) isMemberOfClass:[NSObject class]];
+    BOOL r27 = [[NSObject class] isMemberOfClass:object_getClass([NSObject class])];
+    NSLog(@"1=%d, 2=%d, 3=%d, 4=%d, 5=%d, 6=%d, 7=%d", r21, r22, r23, r24, r25, r26, r27);
 }
 
 #pragma mark - getter & setters
