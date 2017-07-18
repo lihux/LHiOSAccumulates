@@ -25,6 +25,14 @@
 
 @end
 
+static void setExpressionFormula(id self, SEL cmd, id value) {
+    NSLog(@"LCDBRuntimeDog: call setExpressionFormula");
+}
+
+static void getExpressionFormula(id self, SEL cmd) {
+    NSLog(@"LCDBRuntimeDog: call getExpressionFormula");
+}
+
 @implementation LCDBRuntimeViewController
 
 - (void)viewDidLoad {
@@ -63,6 +71,7 @@
 #pragma mark - test cases
 //1.测试taggedPointer
 - (void)testTaggedPointer {
+    [self cleanLog];
     [self log:@"现在开始测试tagged pointer:苹果在OC2 & 64位CPU系统中引入了 tagged Poniter的概念，目的是为了缩减加载小尺寸类（NSNumber/NSData...)的加载速度和存储空间"];
     NSNumber *a = @1, *b = @2, *c = @3, *d = @(0xffff), *e = @(0xEFFFFFFFFFFFFFFF);
     NSNumber *f = [[NSNumber alloc] initWithInt:4];
@@ -95,6 +104,7 @@
 
 //2.测试assign的持有NSNumber & NSString，会不会crash，以及为什么
 - (void) testAssignNSNumberAndNSString {
+    [self cleanLog];
     [self log:@"下面开始测试assign的持有NSNumber & NSString，会不会crash，以及为什么"];
     self.assignedNumber = @21;
     self.assignedString = [NSString stringWithFormat:@"xxooxx:%@", self.strongedString];
@@ -109,12 +119,43 @@
     [self log:[NSString stringWithFormat:@"assignedString:%@, 地址：%p,\nstrongedString:%@,地址：%p,\nassignedNumber:%@, 地址：%p,\nstrongedNumber:%@,地址：%p", self.assignedString, self.assignedString, self.strongedString, self.strongedString, self.assignedNumber, self.assignedNumber, self.strongedNumber, self.strongedNumber]];
 }
 
+//3.测试self类方法和对象方法的不同之处
 - (void)testSelf {
+    [self cleanLog];
     [self log:@"下面开始测试到底什么是self"];
     BOOL b1 = [NSObject class] == [NSObject self];
     [self log:[NSString stringWithFormat:@"[NSObject class]:%@ ==? [NSObject self]:%@，答案是：%zd", [NSObject class], [NSObject self], b1]];
     BOOL b2 = [NSObject class] == [[NSObject new] class];
     [self log:[NSString stringWithFormat:@"[NSObject class]:%@ ==? [[NSObject new] class]:%@，答案是：%zd", [NSObject class], [[NSObject new] class], b2]];
+}
+
+//4.测试运行时动态创建类、添加成员变量和方法、以及调用
+- (void)testCreateClassAtRuntime {
+    [self cleanLog];
+    [self log:@"下面开始动态创建一个类：LCDBRuntimeDog"];
+    const char *className = "LCDBRuntimeDog";
+    Class cls = objc_getClass(className);
+    if (!cls) {
+        [self log:@"类LCDBRuntimeDog在运行时环境中不存在"];
+        Class superClass = [NSObject class];
+        cls = objc_allocateClassPair(superClass, className, 0);
+    }
+    NSUInteger size;
+    NSUInteger alignment;
+    NSGetSizeAndAlignment("*", &size, &alignment);
+    class_addIvar(cls, "expression", size, alignment, "*");
+    
+    class_addMethod(cls, @selector(setExpressionFormula:), (IMP)setExpressionFormula, "v@:@");
+    class_addMethod(cls, @selector(getExpressionFormula), (IMP)getExpressionFormula, "@@:");
+    
+    objc_registerClassPair(cls);
+    
+    [self log:@"类LCDBRuntimeDog运行时创建并注册完成，下面开始创建一个他的实例："];
+    id aRuntimeDog = [[cls alloc] init];
+//    object_setInstanceVariable(aRuntimeDog, "expression", "1+1"); //BAD in ARC
+    Ivar var = class_getInstanceVariable(cls, "expression");
+    object_setIvar(aRuntimeDog, var, @"1+1");
+    [aRuntimeDog performSelector:@selector(getExpressionFormula)];
 }
 
 #pragma mark - getter & setters
@@ -125,6 +166,7 @@
     _testDic = @{@"1.测试taggedPointer": @"testTaggedPointer",
                  @"2.测试assign的持有NSNumber & NSString，会不会crash，以及为什么": @"testAssignNSNumberAndNSString",
                  @"3.测试self类方法和对象方法的不同之处": @"testSelf",
+                 @"4.测试运行时动态创建类、添加成员变量和方法、以及调用": @"testCreateClassAtRuntime",
                  };
     self.keys = [_testDic.allKeys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         return [(NSString *)obj1 compare:(NSString *)obj2];
