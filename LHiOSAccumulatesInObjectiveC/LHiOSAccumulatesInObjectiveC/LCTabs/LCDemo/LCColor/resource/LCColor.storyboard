@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -193,10 +192,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCC100BeautifulColorTableViewCell" id="48N-AN-Cbm" customClass="LCC100BeautifulColorTableViewCell">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="221.5"/>
+                                                <rect key="frame" x="0.0" y="28" width="414" height="222"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="48N-AN-Cbm" id="ePi-qW-5pj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="221.16666666666666"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="221"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100ColorCombinations1" translatesAutoresizingMaskIntoConstraints="NO" id="W1W-ZA-ROV">
@@ -293,6 +292,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWP-SO-0BI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2472.8000000000002" y="-394.45277361319341"/>
+        </scene>
+        <!--Gradient Color View Controller-->
+        <scene sceneID="k21-ZE-SiH">
+            <objects>
+                <viewController storyboardIdentifier="LCCGradientColorViewController" id="Yeq-wJ-ms5" customClass="LCCGradientColorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="24D-lw-ZsQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="YbN-ZJ-Arv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b2R-Pa-qeD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixN-bj-s5u">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvt-O5-wng" customClass="LCGradientButton">
+                                        <rect key="frame" x="12" y="10" width="390" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="eKY-3Z-XEq"/>
+                                        </constraints>
+                                        <state key="normal" title="我是渐变的button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Nvt-O5-wng" firstAttribute="leading" secondItem="ixN-bj-s5u" secondAttribute="leading" constant="12" id="1KI-Ur-O89"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nvt-O5-wng" secondAttribute="trailing" constant="12" id="FqP-aB-gAx"/>
+                                    <constraint firstItem="Nvt-O5-wng" firstAttribute="top" secondItem="ixN-bj-s5u" secondAttribute="top" constant="10" id="y0e-SV-bDR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ixN-bj-s5u" firstAttribute="top" secondItem="24D-lw-ZsQ" secondAttribute="bottom" id="VKQ-SI-vOv"/>
+                            <constraint firstItem="ixN-bj-s5u" firstAttribute="leading" secondItem="b2R-Pa-qeD" secondAttribute="leading" id="cVk-Dc-TWV"/>
+                            <constraint firstAttribute="trailing" secondItem="ixN-bj-s5u" secondAttribute="trailing" id="hCP-70-pES"/>
+                            <constraint firstItem="YbN-ZJ-Arv" firstAttribute="top" secondItem="ixN-bj-s5u" secondAttribute="bottom" id="pkB-Qu-GhM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xjg-FG-JjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3113" y="-395"/>
         </scene>
     </scenes>
     <resources>

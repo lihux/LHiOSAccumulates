@@ -37,6 +37,8 @@
 		52E4C8991EFA434A00CB8F4D /* LCBookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */; };
 		52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528FD9591EFA377E00DF92BA /* LCBookShelf.plist */; };
 		52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */; };
+		52E916291F1F112A0036E995 /* LCGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E916281F1F112A0036E995 /* LCGradientButton.m */; };
+		52E9162C1F1F150B0036E995 /* LCCGradientColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9162B1F1F150B0036E995 /* LCCGradientColorViewController.m */; };
 		9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365531C4CF9F900E04D7B /* LCAccumulate.m */; };
 		9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365551C4CF9F900E04D7B /* LCAccumulateManager.m */; };
 		9C03656D1C4CF9F900E04D7B /* LCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365571C4CF9F900E04D7B /* LCUtilities.m */; };
@@ -165,6 +167,10 @@
 		52E0191F1F02509B00B38546 /* LCBCreateReadingPlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBCreateReadingPlanViewController.h; sourceTree = "<group>"; };
 		52E019201F02509B00B38546 /* LCBCreateReadingPlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBCreateReadingPlanViewController.m; sourceTree = "<group>"; };
 		52E4C8981EFA42D100CB8F4D /* LCBookShelf.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = LCBookShelf.xcmappingmodel; sourceTree = "<group>"; };
+		52E916271F1F112A0036E995 /* LCGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCGradientButton.h; sourceTree = "<group>"; };
+		52E916281F1F112A0036E995 /* LCGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCGradientButton.m; sourceTree = "<group>"; };
+		52E9162A1F1F150B0036E995 /* LCCGradientColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCGradientColorViewController.h; sourceTree = "<group>"; };
+		52E9162B1F1F150B0036E995 /* LCCGradientColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCGradientColorViewController.m; sourceTree = "<group>"; };
 		9C0365521C4CF9F900E04D7B /* LCAccumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulate.h; sourceTree = "<group>"; };
 		9C0365531C4CF9F900E04D7B /* LCAccumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccumulate.m; sourceTree = "<group>"; };
 		9C0365541C4CF9F900E04D7B /* LCAccumulateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccumulateManager.h; sourceTree = "<group>"; };
@@ -490,6 +496,8 @@
 				9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */,
 				52B8D4431F03C1A400A71B70 /* LCDatePickerView.h */,
 				52B8D4441F03C1A400A71B70 /* LCDatePickerView.m */,
+				52E916271F1F112A0036E995 /* LCGradientButton.h */,
+				52E916281F1F112A0036E995 /* LCGradientButton.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -654,6 +662,8 @@
 				9CB64ED01F0EF96600A4BC1C /* resource */,
 				9CB64ECA1F0E7F5800A4BC1C /* LCColorViewController.h */,
 				9CB64ECB1F0E7F5800A4BC1C /* LCColorViewController.m */,
+				52E9162A1F1F150B0036E995 /* LCCGradientColorViewController.h */,
+				52E9162B1F1F150B0036E995 /* LCCGradientColorViewController.m */,
 				9CB64ECD1F0E821D00A4BC1C /* LCColorCollectionViewCell.h */,
 				9CB64ECE1F0E821D00A4BC1C /* LCColorCollectionViewCell.m */,
 				9CB64ED71F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.h */,
@@ -867,6 +877,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E916291F1F112A0036E995 /* LCGradientButton.m in Sources */,
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
 				9C476D901EF42DC1004AC758 /* LCDispatchApplyViewController.m in Sources */,
 				52B8D4451F03C1A400A71B70 /* LCDatePickerView.m in Sources */,
@@ -916,6 +927,7 @@
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */,
+				52E9162C1F1F150B0036E995 /* LCCGradientColorViewController.m in Sources */,
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,
 				9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */,
 				9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */,

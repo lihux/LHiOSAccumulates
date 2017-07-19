@@ -22,5 +22,15 @@
 		<key>storyboardID</key>
 		<string>LCC100BeautifulColorViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>探索渐变颜色</string>
+		<key>viewControllerTitle</key>
+		<string>探索渐变颜色</string>
+		<key>storyboardName</key>
+		<string>LCColor</string>
+		<key>storyboardID</key>
+		<string>LCCGradientColorViewController</string>
+	</dict>
 </array>
 </plist>
