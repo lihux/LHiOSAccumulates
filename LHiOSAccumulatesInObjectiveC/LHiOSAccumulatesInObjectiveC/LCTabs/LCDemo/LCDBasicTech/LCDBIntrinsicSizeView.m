@@ -11,7 +11,7 @@
 @implementation LCDBIntrinsicSizeView
 
 - (CGSize)intrinsicContentSize {
-    return CGSizeMake(200, 200);
+    return CGSizeMake(200, 200 * self.buttonCount);
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface LCDBIntrinsicSizeView : UIView
 
+@property (nonatomic, assign) NSInteger buttonCount;
+
 @end
