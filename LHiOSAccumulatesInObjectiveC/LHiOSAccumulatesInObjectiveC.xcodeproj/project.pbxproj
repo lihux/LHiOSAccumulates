@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52052F781F20542E0065072B /* LCDBAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52052F771F20542E0065072B /* LCDBAutoLayoutViewController.m */; };
+		52052F7E1F2055100065072B /* LCDBIntrinsicSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52052F7D1F2055100065072B /* LCDBIntrinsicSizeView.m */; };
 		5224634E1EFBDDBF00E90EB6 /* LCLihuxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5224634D1EFBDDBF00E90EB6 /* LCLihuxHelper.m */; };
 		522485141EE7BB60001A1429 /* LCDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522484F21EE7BB60001A1429 /* LCDemo.storyboard */; };
 		522485191EE7BB60001A1429 /* LCDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522484FB1EE7BB60001A1429 /* LCDemo.plist */; };
@@ -119,6 +121,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52052F761F20542E0065072B /* LCDBAutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBAutoLayoutViewController.h; sourceTree = "<group>"; };
+		52052F771F20542E0065072B /* LCDBAutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBAutoLayoutViewController.m; sourceTree = "<group>"; };
+		52052F7C1F2055100065072B /* LCDBIntrinsicSizeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBIntrinsicSizeView.h; sourceTree = "<group>"; };
+		52052F7D1F2055100065072B /* LCDBIntrinsicSizeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBIntrinsicSizeView.m; sourceTree = "<group>"; };
 		5224634C1EFBDDBF00E90EB6 /* LCLihuxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLihuxHelper.h; sourceTree = "<group>"; };
 		5224634D1EFBDDBF00E90EB6 /* LCLihuxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLihuxHelper.m; sourceTree = "<group>"; };
 		522484F21EE7BB60001A1429 /* LCDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCDemo.storyboard; sourceTree = "<group>"; };
@@ -577,8 +583,12 @@
 				9C476D9B1EF51E57004AC758 /* LCDBENUMExploreViewController.m */,
 				9C476D9D1EF51E6C004AC758 /* LCDBBlockExploreViewController.h */,
 				9C476D9E1EF51E6C004AC758 /* LCDBBlockExploreViewController.m */,
+				52052F761F20542E0065072B /* LCDBAutoLayoutViewController.h */,
+				52052F771F20542E0065072B /* LCDBAutoLayoutViewController.m */,
 				52815D201F185A0200E04BCF /* LCDBRuntimeViewController.h */,
 				52815D211F185A0200E04BCF /* LCDBRuntimeViewController.m */,
+				52052F7C1F2055100065072B /* LCDBIntrinsicSizeView.h */,
+				52052F7D1F2055100065072B /* LCDBIntrinsicSizeView.m */,
 				9C476D971EF51BFA004AC758 /* LCDBasicTech.storyboard */,
 			);
 			path = LCDBasicTech;
@@ -916,6 +926,7 @@
 				9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */,
 				9CB64ED91F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m in Sources */,
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
+				52052F781F20542E0065072B /* LCDBAutoLayoutViewController.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
 				9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */,
 				52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */,
@@ -928,6 +939,7 @@
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */,
 				52E9162C1F1F150B0036E995 /* LCCGradientColorViewController.m in Sources */,
+				52052F7E1F2055100065072B /* LCDBIntrinsicSizeView.m in Sources */,
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,
 				9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */,
 				9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */,
