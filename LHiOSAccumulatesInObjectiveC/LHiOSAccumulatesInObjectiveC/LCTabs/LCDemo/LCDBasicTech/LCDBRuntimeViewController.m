@@ -11,6 +11,8 @@
 #import <objc/objc.h>
 #import <objc/runtime.h>
 
+#import <StoreKit/SKStoreReviewController.h>
+
 #define ADDRESS_OF(object) [NSString stringWithFormat:@"%p", object]
 
 @interface LCDBRuntimeViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -43,6 +45,8 @@ static void getExpressionFormula(id self, SEL cmd) {
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    //请求应用内评分APP
+//    [SKStoreReviewController requestReview];
     [self customTestCase2];
 }
 
