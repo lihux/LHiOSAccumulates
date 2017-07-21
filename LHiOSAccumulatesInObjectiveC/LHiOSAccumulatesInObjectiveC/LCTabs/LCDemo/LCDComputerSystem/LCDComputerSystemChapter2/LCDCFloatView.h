@@ -10,4 +10,6 @@
 
 @interface LCDCFloatView : UIView
 
+@property (nonatomic, assign) NSInteger bitCount;
+
 @end

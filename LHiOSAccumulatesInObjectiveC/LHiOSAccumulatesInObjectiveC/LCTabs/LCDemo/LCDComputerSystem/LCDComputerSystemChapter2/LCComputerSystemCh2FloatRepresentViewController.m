@@ -15,38 +15,35 @@
 
 @interface LCComputerSystemCh2FloatRepresentViewController ()
 
-@property (weak, nonatomic) IBOutlet UIView *xAxisLineView;
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
+@property (weak, nonatomic) IBOutlet LCDCFloatView *xAxisLineView;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (nonatomic, assign) NSInteger oldValue;
 
 @end
-
-static NSInteger kBitCount = 8;
 
 @implementation LCComputerSystemCh2FloatRepresentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self updateUI];
 }
 
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    [self addDots];
+- (void)updateUI {
+    self.xAxisLineView.bitCount = (NSInteger)self.slider.value;
+    self.infoLabel.text = [NSString stringWithFormat:@"选择的基数是：%zd", (NSInteger)self.slider.value];
 }
 
-- (void)addDots {
-    NSInteger leftPart = kBitCount / 2;
-//    NSInteger rightPart = kBitCount - leftPart;
-    NSInteger maxInteger = powf(2, leftPart - 1) - 1;
-    NSInteger minInteger = - maxInteger - 1;
-    CGFloat axisLength = maxInteger - minInteger;
-    CGFloat lineWidth = self.xAxisLineView.bounds.size.width;
-    for (NSInteger i = minInteger; i <= maxInteger; i ++) {
-        
-        CGFloat ratio = (axisLength - maxInteger + i) / axisLength;
-        UIView *dotView = [[UIView alloc] init];
-        dotView.backgroundColor = [UIColor whiteColor];
-        LHLayoutInfo info = LHLayoutInfoMake(0, lineWidth * ratio, 0, LHLayoutNone, 2, LHLayoutNone);
-        [self.xAxisLineView addSubview:dotView withLayoutInfo:info];
+- (IBAction)sliderValueChanged:(UISlider *)sender {
+    NSInteger current = (NSInteger)sender.value;
+    if (current != self.oldValue) {
+        [self updateUI];
+        self.oldValue = current;
     }
+}
+
+-(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [self updateUI];
 }
 
 @end
