@@ -77,6 +77,7 @@
 		9C61C49C1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C49B1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests.m */; };
 		9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C678A401EE6F49000746CEF /* LCTableViewCell.m */; };
 		9C678A431EE6F49000746CEF /* LCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C678A411EE6F49000746CEF /* LCTableViewCell.xib */; };
+		9C67EDDD1F22459900FE690D /* LCDCFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C67EDDC1F22459900FE690D /* LCDCFloatView.m */; };
 		9C7612351F1197650063107B /* LCColorCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612341F1197650063107B /* LCColorCombination.m */; };
 		9C7612381F1264E70063107B /* LCColorCombinationManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612371F1264E70063107B /* LCColorCombinationManger.m */; };
 		9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */; };
@@ -244,6 +245,8 @@
 		9C678A3F1EE6F49000746CEF /* LCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewCell.h; sourceTree = "<group>"; };
 		9C678A401EE6F49000746CEF /* LCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewCell.m; sourceTree = "<group>"; };
 		9C678A411EE6F49000746CEF /* LCTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCTableViewCell.xib; sourceTree = "<group>"; };
+		9C67EDDB1F22459900FE690D /* LCDCFloatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDCFloatView.h; sourceTree = "<group>"; };
+		9C67EDDC1F22459900FE690D /* LCDCFloatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDCFloatView.m; sourceTree = "<group>"; };
 		9C7612331F1197650063107B /* LCColorCombination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorCombination.h; sourceTree = "<group>"; };
 		9C7612341F1197650063107B /* LCColorCombination.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCombination.m; sourceTree = "<group>"; };
 		9C7612361F1264E70063107B /* LCColorCombinationManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorCombinationManger.h; sourceTree = "<group>"; };
@@ -716,6 +719,8 @@
 				9C4BE4BC1F05494F001A1D06 /* LCDCSBitButton.m */,
 				9C4BE4BE1F0550F5001A1D06 /* LCDCSByteView.h */,
 				9C4BE4BF1F0550F5001A1D06 /* LCDCSByteView.m */,
+				9C67EDDB1F22459900FE690D /* LCDCFloatView.h */,
+				9C67EDDC1F22459900FE690D /* LCDCFloatView.m */,
 				9CD141CA1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.h */,
 				9CD141CB1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.m */,
 				9CA605931F05406C000DB286 /* LCComputerSystemCh2IntRepresentViewController.h */,
@@ -926,6 +931,7 @@
 				9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */,
 				9CB64ED91F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m in Sources */,
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
+				9C67EDDD1F22459900FE690D /* LCDCFloatView.m in Sources */,
 				52052F781F20542E0065072B /* LCDBAutoLayoutViewController.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
 				9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */,
