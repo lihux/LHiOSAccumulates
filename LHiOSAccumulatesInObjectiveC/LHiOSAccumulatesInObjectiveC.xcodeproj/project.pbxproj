@@ -78,6 +78,7 @@
 		9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C678A401EE6F49000746CEF /* LCTableViewCell.m */; };
 		9C678A431EE6F49000746CEF /* LCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C678A411EE6F49000746CEF /* LCTableViewCell.xib */; };
 		9C67EDDD1F22459900FE690D /* LCDCFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C67EDDC1F22459900FE690D /* LCDCFloatView.m */; };
+		9C67EDE21F2303AA00FE690D /* LCSDefaultOpenSaveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C67EDE11F2303AA00FE690D /* LCSDefaultOpenSaveManager.m */; };
 		9C7612351F1197650063107B /* LCColorCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612341F1197650063107B /* LCColorCombination.m */; };
 		9C7612381F1264E70063107B /* LCColorCombinationManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612371F1264E70063107B /* LCColorCombinationManger.m */; };
 		9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */; };
@@ -247,6 +248,8 @@
 		9C678A411EE6F49000746CEF /* LCTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCTableViewCell.xib; sourceTree = "<group>"; };
 		9C67EDDB1F22459900FE690D /* LCDCFloatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDCFloatView.h; sourceTree = "<group>"; };
 		9C67EDDC1F22459900FE690D /* LCDCFloatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDCFloatView.m; sourceTree = "<group>"; };
+		9C67EDE01F2303A900FE690D /* LCSDefaultOpenSaveManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSDefaultOpenSaveManager.h; sourceTree = "<group>"; };
+		9C67EDE11F2303AA00FE690D /* LCSDefaultOpenSaveManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSDefaultOpenSaveManager.m; sourceTree = "<group>"; };
 		9C7612331F1197650063107B /* LCColorCombination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorCombination.h; sourceTree = "<group>"; };
 		9C7612341F1197650063107B /* LCColorCombination.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCombination.m; sourceTree = "<group>"; };
 		9C7612361F1264E70063107B /* LCColorCombinationManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorCombinationManger.h; sourceTree = "<group>"; };
@@ -373,6 +376,8 @@
 				5224850C1EE7BB60001A1429 /* LCSetting.plist */,
 				52D7652C1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.h */,
 				52D7652D1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m */,
+				9C67EDE01F2303A900FE690D /* LCSDefaultOpenSaveManager.h */,
+				9C67EDE11F2303AA00FE690D /* LCSDefaultOpenSaveManager.m */,
 			);
 			path = LCSetting;
 			sourceTree = "<group>";
@@ -901,6 +906,7 @@
 				5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
 				9CD141CF1EFF689500B25586 /* LCDCSCh2ShowBytes.c in Sources */,
+				9C67EDE21F2303AA00FE690D /* LCSDefaultOpenSaveManager.m in Sources */,
 				5224634E1EFBDDBF00E90EB6 /* LCLihuxHelper.m in Sources */,
 				9C7612381F1264E70063107B /* LCColorCombinationManger.m in Sources */,
 				9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */,

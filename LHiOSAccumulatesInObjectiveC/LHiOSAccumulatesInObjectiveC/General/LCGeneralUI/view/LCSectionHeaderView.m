@@ -9,6 +9,7 @@
 #import "LCSectionHeaderView.h"
 
 #import "LCLihuxHelper.h"
+#import "LCSDefaultOpenSaveManager.h"
 
 @interface LCSectionHeaderView ()
 
@@ -47,6 +48,7 @@
 #pragma mark - LCSectionHeaderViewDelegate
 - (IBAction)didTapOnLeftButton:(id)sender {
     if (self.delegate && [self.delegate respondsToSelector:@selector(sectionHeaderView:tappedOnLeftButton:)]) {
+        [[LCSDefaultOpenSaveManager sharedInstance] popRecord];
         [self.delegate sectionHeaderView:self tappedOnLeftButton:self.leftButton];
     }
 }

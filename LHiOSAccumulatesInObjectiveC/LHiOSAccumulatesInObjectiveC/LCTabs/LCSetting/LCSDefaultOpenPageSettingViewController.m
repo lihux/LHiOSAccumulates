@@ -9,9 +9,13 @@
 #import "LCSDefaultOpenPageSettingViewController.h"
 
 #import "LCConstantDefines.h"
+#import "UIView+LHAutoLayout.h"
+#import "LCLihuxHelper.h"
+#import "LCSDefaultOpenSaveManager.h"
 
 @interface LCSDefaultOpenPageSettingViewController ()
 
+@property (weak, nonatomic) IBOutlet UISwitch *floatRecordButtonSwith;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tabBarSelectSegmentedControl;
 
 @end
@@ -20,6 +24,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self customUI];
+}
+
+- (void)customUI {
     NSNumber *selectedTab = [[NSUserDefaults standardUserDefaults] objectForKey:kLCSSettingDefaultSelectTabKey];
     if (selectedTab) {
         NSInteger temp = selectedTab.integerValue;
@@ -27,10 +35,18 @@
             self.tabBarSelectSegmentedControl.selectedSegmentIndex = temp;
         }
     }
+
+    self.floatRecordButtonSwith.on = [[LCSDefaultOpenSaveManager sharedInstance] hasRecords];
 }
 
 - (IBAction)tabBarSelectValueChanged:(UISegmentedControl *)sender {
     [[NSUserDefaults standardUserDefaults] setObject:@(sender.selectedSegmentIndex) forKey:kLCSSettingDefaultSelectTabKey];
+}
+- (IBAction)floatRecordButtonSwithValueChanged:(UISwitch *)sender {
+    if (sender.on) {
+        [[LCSDefaultOpenSaveManager sharedInstance] resetRoot:3];
+        [[LCSDefaultOpenSaveManager sharedInstance] pushRecord:0];
+    }
 }
 
 @end

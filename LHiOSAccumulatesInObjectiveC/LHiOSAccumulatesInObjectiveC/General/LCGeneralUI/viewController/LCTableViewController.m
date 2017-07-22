@@ -16,6 +16,7 @@
 #import "LCLihuxHelper.h"
 #import "UIView+LHAutoLayout.h"
 #import "LCLihuxStyleView.h"
+#import "LCSDefaultOpenSaveManager.h"
 
 @interface LCTableViewController () <LCSectionHeaderViewDelegate, LCTableViewCellDelegate>
 
@@ -50,6 +51,15 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    if ([[LCSDefaultOpenSaveManager sharedInstance] isRestoring]) {
+        NSInteger record = [[LCSDefaultOpenSaveManager sharedInstance] restoreARecord];
+        if (record >= self.accumulatesManager.accumulates.count) {
+            [[LCSDefaultOpenSaveManager sharedInstance] finishRestore];
+            [[LCSDefaultOpenSaveManager sharedInstance] clean];
+        } else {
+            [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:record inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+        }
+    }
 }
 
 - (void)customUI {
@@ -100,8 +110,7 @@
 }
 
 #pragma mark - LCTableViewCellDelegate
-- (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath
-{
+- (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath {
     LCAccumulate *accumulate = cell.accumulate;
     UIViewController *detailViewController = [LCUtilities viewControllerForAccumulate:accumulate];
     if (!detailViewController) {
@@ -117,6 +126,7 @@
         if (accumulate.viewControllerTitle && accumulate.viewControllerTitle.length > 0) {
             detailViewController.title = accumulate.viewControllerTitle;
         }
+        [[LCSDefaultOpenSaveManager sharedInstance] pushRecord:indexPath.row];
         [self.navigationController pushViewController:detailViewController animated:YES];
     }
 }
