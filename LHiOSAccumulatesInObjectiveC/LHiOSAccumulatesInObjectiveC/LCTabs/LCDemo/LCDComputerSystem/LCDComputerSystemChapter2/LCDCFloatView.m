@@ -19,7 +19,7 @@
     CGPoint start = CGPointMake(0, axisY), end = CGPointMake(width, axisY);
     CGContextRef context = UIGraphicsGetCurrentContext();
     //设置画布的基本属性
-    CGContextSetLineWidth(context, 2);
+    CGContextSetLineWidth(context, 1);
     CGContextSetStrokeColorWithColor(context, [UIColor yellowColor].CGColor);
     
     //画x轴
@@ -32,21 +32,25 @@
     CGContextAddLineToPoint(context, end.x - anchorSize, end.y + anchorSize);
     
     //画dot线
-    NSInteger leftPart = self.bitCount / 2;
+    NSInteger leftPart = self.bitCount / 2; //定点表述实数，取二进制序列的左半个作为整数部分，补码表示；有半个作为小数部分，小数点在中间1111.1001
     NSInteger rightPart = self.bitCount - leftPart;
     NSInteger maxInteger = powf(2, leftPart - 1) - 1;
     NSInteger maxDot = pow(2, rightPart) - 1;
     NSInteger minInteger = - maxInteger - 1;
     CGFloat axisLength = maxInteger - minInteger;
-    CGFloat dotHeight = 4, usedWidth = width - 15;
+    CGFloat dotHeight = 4, leftGap = 5, rightGap = 15, usedWidth = width - leftGap - rightGap;
+    CGFloat oldTextOffset = -50;
     for (NSInteger i = minInteger; i <= maxInteger; i ++) {
         for (NSInteger j = 0; j < maxDot; j ++) {
             CGFloat dotValue = j / (CGFloat)maxDot;
             CGFloat value = i + dotValue;
             CGFloat ratio = (axisLength - maxInteger + value) / axisLength;
-            CGContextMoveToPoint(context, usedWidth * ratio, axisY);
-            CGFloat x = usedWidth *ratio, y = axisY - dotHeight * (j == 0 ? 2 : 1);
-            if (j == 0) {
+            CGFloat x = leftGap + usedWidth *ratio, y = axisY - dotHeight * (j == 0 ? 2 : 1);
+            CGContextMoveToPoint(context, x, axisY);
+            CGPoint textPoint = CGPointMake(x - 3, y - 10);
+            CGFloat textMinGap = 18;
+            if (j == 0 && textPoint.x - oldTextOffset > textMinGap) {
+                oldTextOffset = textPoint.x;
                 NSString *text = [NSString stringWithFormat:@"%zd", i];
                 [text drawAtPoint:CGPointMake(x - 3, y - 10) withAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:9], NSForegroundColorAttributeName: [UIColor whiteColor]}];
             }
