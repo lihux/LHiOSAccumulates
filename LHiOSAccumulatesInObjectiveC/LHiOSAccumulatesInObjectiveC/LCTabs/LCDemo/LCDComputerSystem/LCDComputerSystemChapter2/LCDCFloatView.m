@@ -35,13 +35,23 @@
     NSInteger leftPart = self.bitCount / 2;
     NSInteger rightPart = self.bitCount - leftPart;
     NSInteger maxInteger = powf(2, leftPart - 1) - 1;
+    NSInteger maxDot = pow(2, rightPart) - 1;
     NSInteger minInteger = - maxInteger - 1;
     CGFloat axisLength = maxInteger - minInteger;
     CGFloat dotHeight = 4, usedWidth = width - 15;
     for (NSInteger i = minInteger; i <= maxInteger; i ++) {
-        CGFloat ratio = (axisLength - maxInteger + i) / axisLength;
-        CGContextMoveToPoint(context, usedWidth * ratio, axisY);
-        CGContextAddLineToPoint(context, usedWidth * ratio, axisY - dotHeight);
+        for (NSInteger j = 0; j < maxDot; j ++) {
+            CGFloat dotValue = j / (CGFloat)maxDot;
+            CGFloat value = i + dotValue;
+            CGFloat ratio = (axisLength - maxInteger + value) / axisLength;
+            CGContextMoveToPoint(context, usedWidth * ratio, axisY);
+            CGFloat x = usedWidth *ratio, y = axisY - dotHeight * (j == 0 ? 2 : 1);
+            if (j == 0) {
+                NSString *text = [NSString stringWithFormat:@"%zd", i];
+                [text drawAtPoint:CGPointMake(x - 3, y - 10) withAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:9], NSForegroundColorAttributeName: [UIColor whiteColor]}];
+            }
+            CGContextAddLineToPoint(context, x, y);
+        }
     }
     
     CGContextStrokePath(context);
