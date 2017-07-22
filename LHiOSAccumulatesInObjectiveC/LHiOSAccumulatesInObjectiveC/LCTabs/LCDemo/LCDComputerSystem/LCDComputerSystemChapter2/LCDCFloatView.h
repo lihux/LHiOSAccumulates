@@ -10,6 +10,7 @@
 
 @interface LCDCFloatView : UIView
 
+@property (nonatomic, assign) BOOL isFloatDot;
 @property (nonatomic, assign) NSInteger bitCount;
 
 @end

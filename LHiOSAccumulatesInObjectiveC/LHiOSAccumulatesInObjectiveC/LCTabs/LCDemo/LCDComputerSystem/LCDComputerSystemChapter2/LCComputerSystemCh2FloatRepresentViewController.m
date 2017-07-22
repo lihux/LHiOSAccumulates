@@ -16,7 +16,9 @@
 @interface LCComputerSystemCh2FloatRepresentViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
-@property (weak, nonatomic) IBOutlet LCDCFloatView *xAxisLineView;
+@property (weak, nonatomic) IBOutlet LCDCFloatView *fixedDotView;
+@property (weak, nonatomic) IBOutlet LCDCFloatView *floatDotView;
+
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (nonatomic, assign) NSInteger oldValue;
 
@@ -26,13 +28,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.floatDotView.isFloatDot = YES;
+    self.fixedDotView.isFloatDot = NO;
     [self updateUI];
 }
 
 - (void)updateUI {
-    self.xAxisLineView.bitCount = (NSInteger)self.slider.value;
+    self.fixedDotView.bitCount = (NSInteger)self.slider.value;
     NSInteger bits = (NSInteger)self.slider.value;
-    self.infoLabel.text = [NSString stringWithFormat:@"选择的基数是：%zd,整数部分%zd位，小数部分%zd位", bits, bits / 2, bits - (NSInteger)(bits / 2)];
+    self.infoLabel.text = [NSString stringWithFormat:@"定点表示实数：%zd位,其中整数部分%zd位，小数部分%zd位", bits, bits / 2, bits - (NSInteger)(bits / 2)];
 }
 
 - (IBAction)sliderValueChanged:(UISlider *)sender {

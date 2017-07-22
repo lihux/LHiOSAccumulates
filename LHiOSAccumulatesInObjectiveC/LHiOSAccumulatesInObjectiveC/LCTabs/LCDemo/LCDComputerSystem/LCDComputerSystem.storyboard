@@ -98,14 +98,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udq-Pb-ejF">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uG-Bt-Cg1" userLabel="lineView" customClass="LCDCFloatView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uG-Bt-Cg1" userLabel="floatView1" customClass="LCDCFloatView">
                                         <rect key="frame" x="4" y="303.5" width="367" height="40"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.60392156860000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Z45-oS-EIU"/>
                                         </constraints>
                                     </view>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-Z0-5p7">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7X-TN-olY" userLabel="floatView2" customClass="LCDCFloatView">
+                                        <rect key="frame" x="4" y="420.5" width="367" height="40"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.60392156860000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8pg-2p-OhL"/>
+                                        </constraints>
+                                    </view>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="3" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-Z0-5p7">
                                         <rect key="frame" x="2" y="243.5" width="371" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ciN-OK-IaJ"/>
@@ -115,8 +122,14 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="滑动选择基数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zl3-7u-xBn">
-                                        <rect key="frame" x="4" y="192.5" width="104" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="4" y="196.5" width="86" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="滑动选择基数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8g2-Fx-Q6E">
+                                        <rect key="frame" x="10" y="373.5" width="355" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -125,10 +138,16 @@
                                 <constraints>
                                     <constraint firstItem="7uG-Bt-Cg1" firstAttribute="top" secondItem="B0C-Z0-5p7" secondAttribute="bottom" constant="30" id="0RF-fg-Odu"/>
                                     <constraint firstAttribute="trailing" secondItem="7uG-Bt-Cg1" secondAttribute="trailing" constant="4" id="9Eb-be-7c5"/>
+                                    <constraint firstAttribute="trailing" secondItem="P7X-TN-olY" secondAttribute="trailing" constant="4" id="9pz-13-ufV"/>
                                     <constraint firstItem="B0C-Z0-5p7" firstAttribute="leading" secondItem="udq-Pb-ejF" secondAttribute="leading" constant="4" id="AcH-wT-VEh"/>
+                                    <constraint firstItem="P7X-TN-olY" firstAttribute="top" secondItem="8g2-Fx-Q6E" secondAttribute="bottom" constant="30" id="IRh-lI-UoX"/>
                                     <constraint firstAttribute="trailing" secondItem="B0C-Z0-5p7" secondAttribute="trailing" constant="4" id="QTN-Sc-DJ8"/>
                                     <constraint firstItem="7uG-Bt-Cg1" firstAttribute="leading" secondItem="udq-Pb-ejF" secondAttribute="leading" constant="4" id="dm2-2B-f9h"/>
                                     <constraint firstItem="7uG-Bt-Cg1" firstAttribute="centerY" secondItem="udq-Pb-ejF" secondAttribute="centerY" id="eIK-qh-h4U"/>
+                                    <constraint firstAttribute="trailing" secondItem="8g2-Fx-Q6E" secondAttribute="trailing" constant="10" id="jr1-En-Gb9"/>
+                                    <constraint firstItem="8g2-Fx-Q6E" firstAttribute="top" secondItem="7uG-Bt-Cg1" secondAttribute="bottom" constant="30" id="jy7-1g-CPe"/>
+                                    <constraint firstItem="8g2-Fx-Q6E" firstAttribute="leading" secondItem="udq-Pb-ejF" secondAttribute="leading" constant="10" id="jyl-5C-tjF"/>
+                                    <constraint firstItem="P7X-TN-olY" firstAttribute="leading" secondItem="udq-Pb-ejF" secondAttribute="leading" constant="4" id="lWw-Ud-bjc"/>
                                     <constraint firstItem="Zl3-7u-xBn" firstAttribute="leading" secondItem="udq-Pb-ejF" secondAttribute="leading" constant="4" id="nqi-bh-ZA7"/>
                                     <constraint firstItem="B0C-Z0-5p7" firstAttribute="top" secondItem="Zl3-7u-xBn" secondAttribute="bottom" constant="30" id="zDe-AT-DYP"/>
                                 </constraints>
@@ -143,9 +162,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fixedDotView" destination="7uG-Bt-Cg1" id="aEv-uq-tGm"/>
+                        <outlet property="floatDotView" destination="P7X-TN-olY" id="Eo7-yI-Fzh"/>
                         <outlet property="infoLabel" destination="Zl3-7u-xBn" id="yaM-mW-c6Q"/>
                         <outlet property="slider" destination="B0C-Z0-5p7" id="XEm-f2-ScG"/>
-                        <outlet property="xAxisLineView" destination="7uG-Bt-Cg1" id="dTj-Dk-Fbg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHB-mV-JZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
