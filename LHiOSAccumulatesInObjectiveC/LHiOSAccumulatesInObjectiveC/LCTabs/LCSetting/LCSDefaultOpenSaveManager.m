@@ -39,36 +39,37 @@ static NSString *kCurrentRootKey = @"kCurrentRootKey_LCSDefaultOpenSaveManager";
 
 #pragma mark - load and save records
 - (void)loadRecords {
-    for (NSInteger i = 0; i < kRootCount; i ++) {
-        NSString *record = [[NSUserDefaults standardUserDefaults] objectForKey:[self storeKeyForRoot:i]];
-        if (record) {
-            [self.roots replaceObjectAtIndex:i withObject:record];
-        }
-    }
     NSNumber *currentRoot = [[NSUserDefaults standardUserDefaults] objectForKey:kCurrentRootKey];
     if (currentRoot) {
         self.currtentRoot = currentRoot.integerValue;
     }
+    NSString *record = [[NSUserDefaults standardUserDefaults] objectForKey:[self storeKeyForRoot:self.currtentRoot]];
+    NSLog(@"读取出来的记录是：%@", record);
+    if (record) {
+        [self.roots replaceObjectAtIndex:self.currtentRoot withObject:record];
+    }
 }
 
 - (void)saveRecords {
+    NSLog(@"保存了");
     for (NSInteger i = 0; i < kRootCount; i ++) {
-        [[NSUserDefaults standardUserDefaults] setObject:self.roots[i] forKey:[self storeKeyForRoot:i]];
+        [[NSUserDefaults standardUserDefaults] setObject:[self currtentRecord] forKey:[self storeKeyForRoot:self.currtentRoot]];
     }
     [[NSUserDefaults standardUserDefaults] setObject:@(self.currtentRoot) forKey:kCurrentRootKey];
 }
 
 #pragma mark - convenient methods
 - (NSString *)currtentRecord {
-    return [[self.roots objectAtIndex:self.currtentRoot] copy];
-}
-
-- (BOOL)hasRecords {
-    return [self currtentRecord].length > 0;
+    NSString *temp = [[self.roots objectAtIndex:self.currtentRoot] copy];
+    return temp.length > 0 ? temp : nil;
 }
 
 - (void)startRestore {
+    if (self.isRestoring) {
+        return;
+    }
     self.isRestoring = YES;
+    NSLog(@"开始恢复：%@", [self currtentRecord]);
     self.records = [NSMutableArray arrayWithArray:[[self currtentRecord] componentsSeparatedByString:@"-"]];
 }
 
@@ -82,10 +83,15 @@ static NSString *kCurrentRootKey = @"kCurrentRootKey_LCSDefaultOpenSaveManager";
 }
 
 - (void)finishRestore {
-    self.isRestoring = NO;
+    if (self.records.count == 0) {
+        self.isRestoring = NO;
+    }
 }
 
 - (void)pushRecord:(NSInteger)record {
+    if (self.isRestoring) {
+        return;
+    }
     NSString *temp = [NSString stringWithFormat:@"%zd", record];
     NSString *current = [self currtentRecord];
     if (current.length > 0) {
@@ -93,6 +99,7 @@ static NSString *kCurrentRootKey = @"kCurrentRootKey_LCSDefaultOpenSaveManager";
     }
     [self.roots replaceObjectAtIndex:self.currtentRoot withObject:temp];
     NSLog(@"新增一条记录，全部记录是：%@", temp);
+    [self saveRecords];
 }
 
 - (NSInteger)popRecord {
@@ -111,6 +118,7 @@ static NSString *kCurrentRootKey = @"kCurrentRootKey_LCSDefaultOpenSaveManager";
     if (record >= 0) {
         NSLog(@"pop出一条记录，全部记录是：%@", [self currtentRecord]);
     }
+    [self saveRecords];
     return record;
 }
 

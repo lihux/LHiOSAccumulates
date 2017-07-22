@@ -78,14 +78,8 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
     if (!self.firstLaunch) {
         self.firstLaunch = YES;
         NSInteger selectedTab = 0;
-        NSNumber *cachedTabIndex = [[NSUserDefaults standardUserDefaults] objectForKey:kLCSSettingDefaultSelectTabKey];
-        if (cachedTabIndex) {
-            selectedTab = cachedTabIndex.integerValue;
-            if (selectedTab < 0 || selectedTab > 4) {
-                selectedTab = 0;
-            }
-            selectedTab = cachedTabIndex.integerValue;
-        }
+//        NSNumber *cachedTabIndex = [[NSUserDefaults standardUserDefaults] objectForKey:kLCSSettingDefaultSelectTabKey];
+     selectedTab = [LCSDefaultOpenSaveManager sharedInstance].currtentRoot;
         self.flyingViewIndex = selectedTab;
         [(UIButton *)self.homeButtons[selectedTab] setSelected:YES];
         [self homeButtonAnimateWithButtonIndex:selectedTab isFlyingAway:YES completion:^{
@@ -195,6 +189,8 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
 
 #pragma mark - handle segues
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [[LCSDefaultOpenSaveManager sharedInstance] startRestore];
+    NSInteger root = [[LCSDefaultOpenSaveManager sharedInstance] currtentRoot];
     NSInteger tag = [segue.identifier integerValue];
     NSString *title = [self.homeButtonTitles objectAtIndex:tag];
     NSString *plistName;
@@ -224,6 +220,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
             break;
     }
     LCTableViewController *vc = (LCTableViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+    vc.dontRestoring = tag != root;
     [vc configWithTitle:title plistFileName:plistName];
 }
 

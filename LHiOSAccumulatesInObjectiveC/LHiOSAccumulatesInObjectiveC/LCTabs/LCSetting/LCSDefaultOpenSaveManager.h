@@ -15,8 +15,6 @@
 
 + (instancetype)sharedInstance;
 
-- (BOOL)hasRecords;
-
 //恢复记录按照队列的顺序进行（先进先出）
 - (void)startRestore;
 - (NSInteger)restoreARecord;
@@ -26,5 +24,8 @@
 //记录按照栈的顺序进行（后进先出）
 - (void)pushRecord:(NSInteger)record;
 - (NSInteger)popRecord;
+
+//程序退出前保存入栈记录
+- (void)saveRecords;
 
 @end

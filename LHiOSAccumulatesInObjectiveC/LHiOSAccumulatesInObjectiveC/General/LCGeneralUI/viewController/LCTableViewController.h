@@ -13,6 +13,8 @@
 
 @interface LCTableViewController : UITableViewController
 
+@property (nonatomic, assign) BOOL dontRestoring;
+
 - (void)configWithTitle:(NSString *)title plistFileName:(NSString *)plistName;
 
 @end

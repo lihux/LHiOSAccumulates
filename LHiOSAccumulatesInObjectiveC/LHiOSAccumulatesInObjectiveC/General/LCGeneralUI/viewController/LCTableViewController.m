@@ -51,15 +51,18 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-//    if ([[LCSDefaultOpenSaveManager sharedInstance] isRestoring]) {
-//        NSInteger record = [[LCSDefaultOpenSaveManager sharedInstance] restoreARecord];
-//        if (record >= self.accumulatesManager.accumulates.count) {
-//            [[LCSDefaultOpenSaveManager sharedInstance] finishRestore];
-//            [[LCSDefaultOpenSaveManager sharedInstance] clean];
-//        } else {
-//            [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:record inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-//        }
-//    }
+    if (self.dontRestoring) {
+        return;
+    }
+    if ([[LCSDefaultOpenSaveManager sharedInstance] isRestoring]) {
+        NSInteger record = [[LCSDefaultOpenSaveManager sharedInstance] restoreARecord];
+        if (record >= self.accumulatesManager.accumulates.count) {
+            [[LCSDefaultOpenSaveManager sharedInstance] finishRestore];
+        } else {
+            [self jumpToDetailViewControllerAtIndex:record];
+            [[LCSDefaultOpenSaveManager sharedInstance] finishRestore];
+        }
+    }
 }
 
 - (void)customUI {
@@ -111,7 +114,11 @@
 
 #pragma mark - LCTableViewCellDelegate
 - (void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath {
-    LCAccumulate *accumulate = cell.accumulate;
+    [self jumpToDetailViewControllerAtIndex:indexPath.row];
+}
+
+- (void)jumpToDetailViewControllerAtIndex:(NSInteger)index {
+    LCAccumulate *accumulate = [self.accumulatesManager.accumulates objectAtIndex:index];
     UIViewController *detailViewController = [LCUtilities viewControllerForAccumulate:accumulate];
     if (!detailViewController) {
         NSString *message = [NSString stringWithFormat:@"%@ \n暂时还未开发完成，稍安勿躁，静候佳音", accumulate.title];
@@ -126,7 +133,7 @@
         if (accumulate.viewControllerTitle && accumulate.viewControllerTitle.length > 0) {
             detailViewController.title = accumulate.viewControllerTitle;
         }
-        [[LCSDefaultOpenSaveManager sharedInstance] pushRecord:indexPath.row];
+        [[LCSDefaultOpenSaveManager sharedInstance] pushRecord:index];
         [self.navigationController pushViewController:detailViewController animated:YES];
     }
 }

@@ -35,8 +35,6 @@
             self.tabBarSelectSegmentedControl.selectedSegmentIndex = temp;
         }
     }
-
-    self.floatRecordButtonSwith.on = [[LCSDefaultOpenSaveManager sharedInstance] hasRecords];
 }
 
 - (IBAction)tabBarSelectValueChanged:(UISegmentedControl *)sender {
@@ -45,8 +43,6 @@
 
 - (IBAction)floatRecordButtonSwithValueChanged:(UISwitch *)sender {
     if (sender.on) {
-//        [[LCSDefaultOpenSaveManager sharedInstance] resetRoot:3];
-//        [[LCSDefaultOpenSaveManager sharedInstance] pushRecord:0];
     }
 }
 
