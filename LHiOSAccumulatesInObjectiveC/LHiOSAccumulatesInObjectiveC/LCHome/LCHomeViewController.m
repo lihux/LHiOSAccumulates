@@ -13,6 +13,7 @@
 #import "LCTableViewController.h"
 #import "LCConstantDefines.h"
 #import "LCLihuxHelper.h"
+#import "LCSDefaultOpenSaveManager.h"
 
 static const CGFloat kDefaultFlyingAnimationDuration = 0.6;
 static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
@@ -95,6 +96,7 @@ static const CGFloat kDefaultZoomingAnimationDuration = 0.4;
 }
 
 - (void)setFlyingViewIndex:(NSInteger)flyingViewIndex {
+    [LCSDefaultOpenSaveManager sharedInstance].currtentRoot = flyingViewIndex;
     if (flyingViewIndex >= 0) {
         for (UIView *view in self.subViewControllerContainerViews) {
             view.hidden = flyingViewIndex == view.tag ? NO : YES;

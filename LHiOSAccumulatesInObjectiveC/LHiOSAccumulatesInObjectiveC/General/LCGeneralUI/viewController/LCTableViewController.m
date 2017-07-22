@@ -51,15 +51,15 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if ([[LCSDefaultOpenSaveManager sharedInstance] isRestoring]) {
-        NSInteger record = [[LCSDefaultOpenSaveManager sharedInstance] restoreARecord];
-        if (record >= self.accumulatesManager.accumulates.count) {
-            [[LCSDefaultOpenSaveManager sharedInstance] finishRestore];
-            [[LCSDefaultOpenSaveManager sharedInstance] clean];
-        } else {
-            [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:record inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-        }
-    }
+//    if ([[LCSDefaultOpenSaveManager sharedInstance] isRestoring]) {
+//        NSInteger record = [[LCSDefaultOpenSaveManager sharedInstance] restoreARecord];
+//        if (record >= self.accumulatesManager.accumulates.count) {
+//            [[LCSDefaultOpenSaveManager sharedInstance] finishRestore];
+//            [[LCSDefaultOpenSaveManager sharedInstance] clean];
+//        } else {
+//            [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:record inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+//        }
+//    }
 }
 
 - (void)customUI {

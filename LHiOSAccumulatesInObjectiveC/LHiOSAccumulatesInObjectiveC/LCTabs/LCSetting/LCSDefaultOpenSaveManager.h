@@ -10,9 +10,10 @@
 
 @interface LCSDefaultOpenSaveManager : NSObject
 
-+ (instancetype)sharedInstance;
-
 @property (nonatomic, assign) BOOL recordEnable;
+@property (nonatomic, assign) NSInteger currtentRoot;
+
++ (instancetype)sharedInstance;
 
 - (BOOL)hasRecords;
 
@@ -25,7 +26,5 @@
 //记录按照栈的顺序进行（后进先出）
 - (void)pushRecord:(NSInteger)record;
 - (NSInteger)popRecord;
-- (void)resetRoot:(NSInteger)root;
-- (void)clean;
 
 @end

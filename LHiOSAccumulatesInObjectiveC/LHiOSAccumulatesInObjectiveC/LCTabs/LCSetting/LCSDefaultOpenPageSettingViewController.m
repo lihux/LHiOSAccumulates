@@ -42,10 +42,11 @@
 - (IBAction)tabBarSelectValueChanged:(UISegmentedControl *)sender {
     [[NSUserDefaults standardUserDefaults] setObject:@(sender.selectedSegmentIndex) forKey:kLCSSettingDefaultSelectTabKey];
 }
+
 - (IBAction)floatRecordButtonSwithValueChanged:(UISwitch *)sender {
     if (sender.on) {
-        [[LCSDefaultOpenSaveManager sharedInstance] resetRoot:3];
-        [[LCSDefaultOpenSaveManager sharedInstance] pushRecord:0];
+//        [[LCSDefaultOpenSaveManager sharedInstance] resetRoot:3];
+//        [[LCSDefaultOpenSaveManager sharedInstance] pushRecord:0];
     }
 }
 
