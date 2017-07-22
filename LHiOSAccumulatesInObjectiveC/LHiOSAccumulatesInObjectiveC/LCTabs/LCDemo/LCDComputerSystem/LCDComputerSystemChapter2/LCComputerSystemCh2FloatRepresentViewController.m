@@ -43,7 +43,7 @@
     }
 }
 
--(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
     [self updateUI];
 }
 
