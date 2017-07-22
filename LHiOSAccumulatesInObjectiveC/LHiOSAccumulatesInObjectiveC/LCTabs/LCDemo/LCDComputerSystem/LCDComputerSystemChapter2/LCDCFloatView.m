@@ -52,7 +52,7 @@
             if (j == 0 && textPoint.x - oldTextOffset > textMinGap) {
                 oldTextOffset = textPoint.x;
                 NSString *text = [NSString stringWithFormat:@"%zd", i];
-                [text drawAtPoint:CGPointMake(x - 3, y - 10) withAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:9], NSForegroundColorAttributeName: [UIColor whiteColor]}];
+                [text drawAtPoint:CGPointMake(x - 3, y - 12) withAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:9], NSForegroundColorAttributeName: [UIColor whiteColor]}];
             }
             CGContextAddLineToPoint(context, x, y);
         }

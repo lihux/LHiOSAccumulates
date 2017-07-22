@@ -31,7 +31,8 @@
 
 - (void)updateUI {
     self.xAxisLineView.bitCount = (NSInteger)self.slider.value;
-    self.infoLabel.text = [NSString stringWithFormat:@"选择的基数是：%zd", (NSInteger)self.slider.value];
+    NSInteger bits = (NSInteger)self.slider.value;
+    self.infoLabel.text = [NSString stringWithFormat:@"选择的基数是：%zd,整数部分%zd位，小数部分%zd位", bits, bits / 2, bits - (NSInteger)(bits / 2)];
 }
 
 - (IBAction)sliderValueChanged:(UISlider *)sender {
