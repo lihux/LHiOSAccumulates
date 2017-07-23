@@ -163,8 +163,9 @@
                     </view>
                     <connections>
                         <outlet property="fixedDotView" destination="7uG-Bt-Cg1" id="aEv-uq-tGm"/>
+                        <outlet property="fixedInfoLabel" destination="Zl3-7u-xBn" id="8cx-xY-Rog"/>
                         <outlet property="floatDotView" destination="P7X-TN-olY" id="Eo7-yI-Fzh"/>
-                        <outlet property="infoLabel" destination="Zl3-7u-xBn" id="yaM-mW-c6Q"/>
+                        <outlet property="floatInfoLabel" destination="8g2-Fx-Q6E" id="umw-sd-bYr"/>
                         <outlet property="slider" destination="B0C-Z0-5p7" id="XEm-f2-ScG"/>
                     </connections>
                 </viewController>

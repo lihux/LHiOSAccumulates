@@ -13,4 +13,7 @@
 @property (nonatomic, assign) BOOL isFloatDot;
 @property (nonatomic, assign) NSInteger bitCount;
 
+@property (nonatomic, assign) NSInteger ePart;
+@property (nonatomic, assign) NSInteger mPart;
+
 @end
