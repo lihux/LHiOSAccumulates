@@ -11,3 +11,4 @@ To generate file hello.llvm, I use command:
 使用命令llvm-gcc -S 126_exchange.c 生成文件126_exchange.s``
 使用llvm-gcc -S -O1 126_exchange_main.c 编程生成带main 函数的exchange汇编文件
 使用llvm-gcc -c 114_mstore.c命令编译出输出114_mstore.o目标文件
+使用命令llvm-gcc -o 116_prog 116_main.c 114_mstore.c生成一个完整的可执行文件
