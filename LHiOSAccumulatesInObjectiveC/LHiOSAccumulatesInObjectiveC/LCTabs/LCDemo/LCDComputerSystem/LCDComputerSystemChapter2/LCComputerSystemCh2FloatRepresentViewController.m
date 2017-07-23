@@ -38,9 +38,9 @@
     NSInteger bits = (NSInteger)self.slider.value;
     self.fixedDotView.bitCount = bits;
     self.floatDotView.bitCount = bits;
-    self.fixedInfoLabel.text = [NSString stringWithFormat:@"一、定点表示实数：%zd位,其中整数部分%zd位，小数部分%zd位", bits, bits / 2, bits - (NSInteger)(bits / 2)];
+    self.fixedInfoLabel.text = [NSString stringWithFormat:@"一、使用%zd位定点表示实数：其中整数部分%zd位，小数部分%zd位", bits, bits / 2, bits - (NSInteger)(bits / 2)];
     if (bits > 3) {
-        self.floatInfoLabel.text = [NSString stringWithFormat:@"二、浮点表示实数：%zd位阶码，%zd位尾数(黄色区域为非规格化部分)", self.floatDotView.ePart, self.floatDotView.mPart];
+        self.floatInfoLabel.text = [NSString stringWithFormat:@"二、使用%zd位浮点表示实数：其中1位符号位，%zd位阶码，%zd位尾数(黄色表示非规格化区域)", bits, self.floatDotView.ePart, self.floatDotView.mPart];
     } else {
         self.floatInfoLabel.text = @"二、位数不足4位，浮点数无法表示，无法绘制坐标轴！！";
     }
