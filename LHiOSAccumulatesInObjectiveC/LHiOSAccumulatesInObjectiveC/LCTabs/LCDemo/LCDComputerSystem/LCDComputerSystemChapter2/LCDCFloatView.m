@@ -40,7 +40,6 @@
             return;
         }
         //画dot线
-        NSInteger valuePart = self.bitCount - 1;
         //float = (-1)^s * (2^e - bias) * M
         NSInteger ePart = self.ePart, mPart = self.mPart;
         NSInteger baseE = pow(2, ePart), baseM = pow(2, mPart);
@@ -56,7 +55,7 @@
             CGFloat unRegularEValue = pow(2, unRegularE);
             for (NSInteger i = 0; i < baseM; i ++) {
                 CGFloat value = (i / (baseM - 1.0)) * unRegularEValue;
-                NSLog(@"非规格化的浮点数：%lf", value);
+//                NSLog(@"非规格化的浮点数：%lf", value);
                 //draw +value
                 CGFloat ratio = (axisLength - maxRegularValue + value) / axisLength;
                 CGFloat x = leftGap + usedWidth * ratio, y = axisY - dotHeight * (i == 0 ? 2 : 1);
@@ -78,7 +77,7 @@
                 for (NSInteger m = 0; m < baseM; m ++) {
                     CGFloat mValue = 1 + (CGFloat)m / (baseM - 1);
                     CGFloat value = mValue * pow(2, e);
-                    NSLog(@"规格化的浮点数：%lf", value);
+//                    NSLog(@"规格化的浮点数：%lf", value);
                     CGFloat ratio = (axisLength - maxRegularValue + value) / axisLength;
                     BOOL isVIPPoint = NO;
                     if (m == 0 && e >= 0) {//逢整数值BMW5系加长
