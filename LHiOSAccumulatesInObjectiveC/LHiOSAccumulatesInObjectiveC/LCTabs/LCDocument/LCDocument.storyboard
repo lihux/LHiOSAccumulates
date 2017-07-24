@@ -76,6 +76,36 @@
             </objects>
             <point key="canvasLocation" x="2636" y="-393"/>
         </scene>
+        <!--Github View Controller-->
+        <scene sceneID="LMW-6W-qqU">
+            <objects>
+                <viewController storyboardIdentifier="LCDGithubViewController" id="U7O-Cn-uA1" customClass="LCDGithubViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rJX-t6-SR1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sho-6e-Jmr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eqd-Bq-A9S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Oa-Ou-AcH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Oa-Ou-AcH" firstAttribute="top" secondItem="rJX-t6-SR1" secondAttribute="bottom" id="EHY-Uo-7xz"/>
+                            <constraint firstAttribute="trailing" secondItem="4Oa-Ou-AcH" secondAttribute="trailing" id="bw2-KC-FVb"/>
+                            <constraint firstItem="Sho-6e-Jmr" firstAttribute="top" secondItem="4Oa-Ou-AcH" secondAttribute="bottom" id="mMv-gl-vr3"/>
+                            <constraint firstItem="4Oa-Ou-AcH" firstAttribute="leading" secondItem="Eqd-Bq-A9S" secondAttribute="leading" id="rBE-2f-Afw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRu-cj-37f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3255" y="-394"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="AnZ-35-q09">
             <objects>

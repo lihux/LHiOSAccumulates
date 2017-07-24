@@ -12,9 +12,9 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>高中的懵懂</string>
+		<string>lihux github</string>
 		<key>storyboardID</key>
-		<string></string>
+		<string>LCDGithubViewController</string>
 		<key>storyboardName</key>
 		<string>LCDocument</string>
 	</dict>

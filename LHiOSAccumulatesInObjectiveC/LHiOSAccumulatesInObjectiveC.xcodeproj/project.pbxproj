@@ -33,6 +33,7 @@
 		52B8D4451F03C1A400A71B70 /* LCDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4441F03C1A400A71B70 /* LCDatePickerView.m */; };
 		52B8D4481F0600EE00A71B70 /* UILabel+lihuxStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4471F0600EE00A71B70 /* UILabel+lihuxStyle.m */; };
 		52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */; };
+		52CA14E61F26117E00C08630 /* LCDGithubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA14E51F26117E00C08630 /* LCDGithubViewController.m */; };
 		52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */; };
 		52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7652D1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m */; };
 		52E019211F02509B00B38546 /* LCBCreateReadingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E019201F02509B00B38546 /* LCBCreateReadingPlanViewController.m */; };
@@ -167,6 +168,8 @@
 		52B8D4471F0600EE00A71B70 /* UILabel+lihuxStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+lihuxStyle.m"; sourceTree = "<group>"; };
 		52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCoreDataManager.h; sourceTree = "<group>"; };
 		52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCoreDataManager.m; sourceTree = "<group>"; };
+		52CA14E41F26117E00C08630 /* LCDGithubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDGithubViewController.h; sourceTree = "<group>"; };
+		52CA14E51F26117E00C08630 /* LCDGithubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDGithubViewController.m; sourceTree = "<group>"; };
 		52CAEED11EFCF45D00A7EB16 /* LCBookCreater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCreater.h; sourceTree = "<group>"; };
 		52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCreater.m; sourceTree = "<group>"; };
 		52D7652C1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSDefaultOpenPageSettingViewController.h; sourceTree = "<group>"; };
@@ -362,6 +365,7 @@
 		522485051EE7BB60001A1429 /* LCDocument */ = {
 			isa = PBXGroup;
 			children = (
+				52CA14E31F26116000C08630 /* lihuxGithub */,
 				9C4BE4C41F0BE59B001A1D06 /* lihuxMe */,
 				522485061EE7BB60001A1429 /* LCDocument.storyboard */,
 				522485071EE7BB60001A1429 /* LCDocument.plist */,
@@ -455,6 +459,15 @@
 				52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */,
 			);
 			path = helper;
+			sourceTree = "<group>";
+		};
+		52CA14E31F26116000C08630 /* lihuxGithub */ = {
+			isa = PBXGroup;
+			children = (
+				52CA14E41F26117E00C08630 /* LCDGithubViewController.h */,
+				52CA14E51F26117E00C08630 /* LCDGithubViewController.m */,
+			);
+			path = lihuxGithub;
 			sourceTree = "<group>";
 		};
 		9C03654C1C4CF9F900E04D7B /* General */ = {
@@ -965,6 +978,7 @@
 				52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */,
 				9C4BE4C71F0BE5B7001A1D06 /* LCLihuxMeViewController.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
+				52CA14E61F26117E00C08630 /* LCDGithubViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
