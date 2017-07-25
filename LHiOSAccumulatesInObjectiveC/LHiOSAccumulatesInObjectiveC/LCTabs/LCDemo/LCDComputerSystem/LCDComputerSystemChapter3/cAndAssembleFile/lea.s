@@ -13,20 +13,20 @@ Ltmp1:
 	movq	%rsp, %rbp
 Ltmp2:
 	.cfi_def_cfa_register %rbp
-	movl	$1, -4(%rbp)
+	movl	%edi, -4(%rbp)
 	movl	$2, -8(%rbp)
-	movl	-4(%rbp), %eax
-	addl	-8(%rbp), %eax
-	movl	%eax, -12(%rbp)
-	movl	-4(%rbp), %eax
-	movl	-8(%rbp), %ecx
-	shll	$1, %ecx
-	addl	%ecx, %eax
-	movl	%eax, -16(%rbp)
+	movl	-4(%rbp), %edi
+	addl	-8(%rbp), %edi
+	movl	%edi, -12(%rbp)
+	movl	-4(%rbp), %edi
+	movl	-8(%rbp), %eax
+	shll	$1, %eax
+	addl	%eax, %edi
+	movl	%edi, -16(%rbp)
 	movl	-16(%rbp), %eax
-	movl	%eax, %ecx
-	addl	$1, %ecx
-	movl	%ecx, -16(%rbp)
+	movl	%eax, %edi
+	addl	$1, %edi
+	movl	%edi, -16(%rbp)
 	popq	%rbp
 	retq
 	.cfi_endproc
