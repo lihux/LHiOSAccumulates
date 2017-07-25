@@ -13,7 +13,8 @@ Ltmp1:
 	movq	%rsp, %rbp
 Ltmp2:
 	.cfi_def_cfa_register %rbp
-	movl	$5, %eax
+                                        ## kill: %EDI<def> %EDI<kill> %RDI<def>
+	leal	4(%rdi), %eax
 	popq	%rbp
 	retq
 	.cfi_endproc

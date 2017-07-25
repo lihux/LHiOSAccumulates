@@ -15,3 +15,4 @@ To generate file hello.llvm, I use command:
 使用命令objdump -d 116_prog > 116_prog_objcdump.s生成反汇编代码
 llvm-gcc -S -o lea.s lea.c 命令生成没有优化过的代码
 llvm-gcc -O1 -S -o lea.s lea.c 命令生成没有优化过的代码
+llvm-gcc -O1 -S -o leaO1.s lea.c
