@@ -13,3 +13,5 @@ To generate file hello.llvm, I use command:
 使用llvm-gcc -c 114_mstore.c命令编译出输出114_mstore.o目标文件
 使用命令llvm-gcc -o 116_prog 116_main.c 114_mstore.c生成一个完整的可执行文件
 使用命令objdump -d 116_prog > 116_prog_objcdump.s生成反汇编代码
+llvm-gcc -S -o lea.s lea.c 命令生成没有优化过的代码
+llvm-gcc -O1 -S -o lea.s lea.c 命令生成没有优化过的代码
