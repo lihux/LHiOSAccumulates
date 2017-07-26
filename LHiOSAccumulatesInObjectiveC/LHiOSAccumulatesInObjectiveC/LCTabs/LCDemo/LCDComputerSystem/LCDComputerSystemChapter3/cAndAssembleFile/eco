@@ -1,0 +1,5 @@
+#!/bin/bash
+
+time=`date`
+output=$1"   @ "$time
+`echo $output >> README`
