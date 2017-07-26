@@ -1,6 +1,4 @@
-int add (int a) {
-    int b = 2;
-    int c = a + b;
-    int d = a + 2 * b;
-    return d++;
+long scale (long x, long y, long z) {
+    long t = x + 4 * y + 12 * z;
+    return t;
 }
