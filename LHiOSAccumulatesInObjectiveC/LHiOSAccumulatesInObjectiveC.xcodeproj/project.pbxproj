@@ -32,6 +32,9 @@
 		52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */; };
 		52B8D4451F03C1A400A71B70 /* LCDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4441F03C1A400A71B70 /* LCDatePickerView.m */; };
 		52B8D4481F0600EE00A71B70 /* UILabel+lihuxStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4471F0600EE00A71B70 /* UILabel+lihuxStyle.m */; };
+		52BF61B91F2993F0004ADC6B /* LCAKeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF61B81F2993F0004ADC6B /* LCAKeyFrameViewController.m */; };
+		52BF61BC1F2994BA004ADC6B /* LCAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BF61BB1F2994BA004ADC6B /* LCAnimation.storyboard */; };
+		52BF61BD1F299526004ADC6B /* LCAnimation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52BF61BA1F29943D004ADC6B /* LCAnimation.plist */; };
 		52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */; };
 		52CA14E61F26117E00C08630 /* LCDGithubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA14E51F26117E00C08630 /* LCDGithubViewController.m */; };
 		52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAEED21EFCF45D00A7EB16 /* LCBookCreater.m */; };
@@ -166,6 +169,10 @@
 		52B8D4441F03C1A400A71B70 /* LCDatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDatePickerView.m; sourceTree = "<group>"; };
 		52B8D4461F0600EE00A71B70 /* UILabel+lihuxStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+lihuxStyle.h"; sourceTree = "<group>"; };
 		52B8D4471F0600EE00A71B70 /* UILabel+lihuxStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+lihuxStyle.m"; sourceTree = "<group>"; };
+		52BF61B71F2993F0004ADC6B /* LCAKeyFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAKeyFrameViewController.h; sourceTree = "<group>"; };
+		52BF61B81F2993F0004ADC6B /* LCAKeyFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAKeyFrameViewController.m; sourceTree = "<group>"; };
+		52BF61BA1F29943D004ADC6B /* LCAnimation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCAnimation.plist; sourceTree = "<group>"; };
+		52BF61BB1F2994BA004ADC6B /* LCAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCAnimation.storyboard; sourceTree = "<group>"; };
 		52C3E6901EFA49CA00A17A3D /* LCBookCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBookCoreDataManager.h; sourceTree = "<group>"; };
 		52C3E6911EFA49CA00A17A3D /* LCBookCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBookCoreDataManager.m; sourceTree = "<group>"; };
 		52CA14E41F26117E00C08630 /* LCDGithubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDGithubViewController.h; sourceTree = "<group>"; };
@@ -336,6 +343,7 @@
 		522484F11EE7BB60001A1429 /* LCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				52BF61B61F2993C6004ADC6B /* LCAnimation */,
 				9CB64EC91F0E7F3D00A4BC1C /* LCColor */,
 				9CD141C61EFF64AB00B25586 /* LCDComputerSystem */,
 				9C476D921EF51A4B004AC758 /* LCDBasicTech */,
@@ -459,6 +467,17 @@
 				52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */,
 			);
 			path = helper;
+			sourceTree = "<group>";
+		};
+		52BF61B61F2993C6004ADC6B /* LCAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				52BF61B71F2993F0004ADC6B /* LCAKeyFrameViewController.h */,
+				52BF61B81F2993F0004ADC6B /* LCAKeyFrameViewController.m */,
+				52BF61BA1F29943D004ADC6B /* LCAnimation.plist */,
+				52BF61BB1F2994BA004ADC6B /* LCAnimation.storyboard */,
+			);
+			path = LCAnimation;
 			sourceTree = "<group>";
 		};
 		52CA14E31F26116000C08630 /* lihuxGithub */ = {
@@ -874,11 +893,13 @@
 				9CD141C81EFF674900B25586 /* LCDComputerSystem.plist in Resources */,
 				9C61C4861C3E3E43003877BC /* LaunchScreen.storyboard in Resources */,
 				9C61C4831C3E3E43003877BC /* Assets.xcassets in Resources */,
+				52BF61BD1F299526004ADC6B /* LCAnimation.plist in Resources */,
 				5224851D1EE7BB60001A1429 /* LCDURLLoadingSystem.storyboard in Resources */,
 				9CB64ED41F0EFB5700A4BC1C /* LCColor.plist in Resources */,
 				9C476D981EF51BFA004AC758 /* LCDBasicTech.storyboard in Resources */,
 				9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */,
 				522485221EE7BB60001A1429 /* LCSetting.storyboard in Resources */,
+				52BF61BC1F2994BA004ADC6B /* LCAnimation.storyboard in Resources */,
 				5224851F1EE7BB60001A1429 /* LCDocument.storyboard in Resources */,
 				9CB64ED21F0EF98600A4BC1C /* LCColor.storyboard in Resources */,
 				9C476D8F1EF42C1D004AC758 /* LCDispatch.storyboard in Resources */,
@@ -961,6 +982,7 @@
 				9C7612351F1197650063107B /* LCColorCombination.m in Sources */,
 				52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */,
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
+				52BF61B91F2993F0004ADC6B /* LCAKeyFrameViewController.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */,
 				52E9162C1F1F150B0036E995 /* LCCGradientColorViewController.m in Sources */,

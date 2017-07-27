@@ -57,8 +57,10 @@
 		<string>动画，是一个APP变得更灵巧、可人的魔法棒，适量、适当的使用动画，有时能够带给你的APP画龙点睛的妙效（但也不可滥用，滥用很容易成为用户的累赘）；使用动画技术的原则是尽可能使用简单的技术去实现动画，只有当简单的技术不能满足的时候，才会考虑更高阶的技术</string>
 		<key>storyboardID</key>
 		<string></string>
-		<key>storyboardName</key>
-		<string>LCDemo</string>
+		<key>viewControllerTitle</key>
+		<string>动画：让你的APP动起来</string>
+		<key>plistName</key>
+		<string>LCAnimation</string>
 	</dict>
 	<dict>
 		<key>title</key>
