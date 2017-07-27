@@ -13,4 +13,6 @@
 
 #define kLCLihuxStyleViewChangeColorNotification @"kLCLihuxStyleViewChangeColorNotification"
 
+#define KLCSettingShowUnfinishedPageKey @"KLCSettingShowUnfinishedPageKey"
+
 #endif /* LCConstantDefines_h */

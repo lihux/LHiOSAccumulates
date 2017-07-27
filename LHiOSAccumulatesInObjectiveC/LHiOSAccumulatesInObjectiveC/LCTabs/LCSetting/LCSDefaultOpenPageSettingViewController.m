@@ -46,4 +46,8 @@
     }
 }
 
+- (IBAction)showUnfinishedButtonSwithValueChanged:(UISwitch *)sender {
+    [[NSUserDefaults standardUserDefaults] setObject:@(sender.on) forKey:kLCSSettingDefaultSelectTabKey];
+}
+
 @end
