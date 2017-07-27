@@ -10,6 +10,7 @@
 
 #import "UIColor+helper.h"
 #import "UIView+LHAutoLayout.h"
+#import "LCConstantDefines.h"
 
 @interface LCViewController ()
 
@@ -31,8 +32,16 @@
     [self addKVOForTitle];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveChangeColorNotification:) name:kLCLihuxStyleViewChangeColorNotification object:nil];
+}
+
+- (void)didReceiveChangeColorNotification:(NSNotification *)notification {
+    self.view.backgroundColor = [LCLihuxHelper colorOfType:LCLihuxStyleColorTypeContent];
+}
 - (void)customLCViewControllerBaseUI {
-    self.view.backgroundColor = [UIColor colorWithHex:0x000000 alpha:0.1];
+    self.view.backgroundColor = [LCLihuxHelper colorOfType:LCLihuxStyleColorTypeContent];
     [LCLihuxHelper makeLihuxStyleOfView:self.lcViewController_ContainerView];
     if (self.lcViewController_ContainerView.tag != kLDontAdjustConstraintsTag) {
         [self.lcViewController_ContainerView removeFromSuperview];
