@@ -8,13 +8,17 @@
 
 #import "LCAKeyFrameViewController.h"
 
+#import "LCAnimationKeyPathPathView.h"
+
 #define LCA_Point_Value(x, y) ([NSValue valueWithCGPoint:CGPointMake(x, y)])
 
-@interface LCAKeyFrameViewController ()
+@interface LCAKeyFrameViewController () <LCAnimationKeyPathPathViewDelegate>
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerXConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerYConstraint;
 @property (nonatomic, assign) NSTimeInterval animationTime;
+@property (nonatomic, assign) BOOL hasDrawPath;
+@property (weak, nonatomic) IBOutlet LCAnimationKeyPathPathView *containerView;
 
 @end
 
@@ -23,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.animationTime = 4;
+    self.containerView.delegate = self;
 }
 
 - (IBAction)segmentValueChanged:(UISegmentedControl *)sender {
@@ -52,6 +57,17 @@
         }];
     }];
 }
+
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [self.containerView setNeedsDisplay];
+}
+
+#pragma mark - LCAnimationKeyPathPathViewDelegate
+- (NSArray *)pointsForCount:(NSInteger)count {
+    return [self pointArrayForCount:count];
+}
+
+#pragma mark -
 
 - (NSArray <NSValue *>*) pointArrayForCount:(NSInteger)count {
     switch (count) {
