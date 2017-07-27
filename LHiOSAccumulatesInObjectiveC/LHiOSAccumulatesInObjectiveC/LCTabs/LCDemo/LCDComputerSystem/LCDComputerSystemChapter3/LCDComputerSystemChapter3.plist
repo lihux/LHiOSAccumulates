@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>常用寄存器</string>
+		<key>viewControllerTitle</key>
+		<string>寄存器是汇编的命门，了解寄存器十分必要</string>
+		<key>content</key>
+		<string>精通细节是理解更深和更基本概念的先决条件。</string>
+		<key>storyboardID</key>
+		<string>LCDComputerSystemCh2ViewController</string>
+		<key>storyboardName</key>
+		<string>LCDComputerSystem</string>
+	</dict>
+</array>
+</plist>

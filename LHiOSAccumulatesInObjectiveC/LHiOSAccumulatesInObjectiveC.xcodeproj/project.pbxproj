@@ -86,6 +86,8 @@
 		9C67EDE21F2303AA00FE690D /* LCSDefaultOpenSaveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C67EDE11F2303AA00FE690D /* LCSDefaultOpenSaveManager.m */; };
 		9C7612351F1197650063107B /* LCColorCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612341F1197650063107B /* LCColorCombination.m */; };
 		9C7612381F1264E70063107B /* LCColorCombinationManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612371F1264E70063107B /* LCColorCombinationManger.m */; };
+		9C7EEB021F2A9DAD006B43C7 /* LCDComputerSystemChapter3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C7EEB011F2A9DA1006B43C7 /* LCDComputerSystemChapter3.plist */; };
+		9C7EEB051F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7EEB041F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m */; };
 		9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */; };
 		9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9124341C4FA06E007AB00D /* LCSectionHeaderView.m */; };
 		9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9124361C4FA0B6007AB00D /* LCSectionHeaderView.xib */; };
@@ -267,6 +269,38 @@
 		9C7612341F1197650063107B /* LCColorCombination.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCombination.m; sourceTree = "<group>"; };
 		9C7612361F1264E70063107B /* LCColorCombinationManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorCombinationManger.h; sourceTree = "<group>"; };
 		9C7612371F1264E70063107B /* LCColorCombinationManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCombinationManger.m; sourceTree = "<group>"; };
+		9C7EEAE41F2A9C30006B43C7 /* 114_mstore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 114_mstore.c; sourceTree = "<group>"; };
+		9C7EEAE51F2A9C30006B43C7 /* 114_mstore.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = 114_mstore.o; sourceTree = "<group>"; };
+		9C7EEAE61F2A9C30006B43C7 /* 114_mstore.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 114_mstore.s; sourceTree = "<group>"; };
+		9C7EEAE71F2A9C30006B43C7 /* 114_mstore_objcdump.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 114_mstore_objcdump.s; sourceTree = "<group>"; };
+		9C7EEAE81F2A9C30006B43C7 /* 116_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 116_main.c; sourceTree = "<group>"; };
+		9C7EEAE91F2A9C30006B43C7 /* 116_prog */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = 116_prog; sourceTree = "<group>"; };
+		9C7EEAEA1F2A9C30006B43C7 /* 116_prog_objcdump.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 116_prog_objcdump.s; sourceTree = "<group>"; };
+		9C7EEAEB1F2A9C30006B43C7 /* 116_prog_objcdump.s生成反汇编代码 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "116_prog_objcdump.s生成反汇编代码"; sourceTree = "<group>"; };
+		9C7EEAEC1F2A9C30006B43C7 /* 126_3.4_movMM.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 126_3.4_movMM.c; sourceTree = "<group>"; };
+		9C7EEAED1F2A9C30006B43C7 /* 126_3.4_movMM.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 126_3.4_movMM.s; sourceTree = "<group>"; };
+		9C7EEAEE1F2A9C30006B43C7 /* 126_3.4_movMM_O1.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 126_3.4_movMM_O1.s; sourceTree = "<group>"; };
+		9C7EEAEF1F2A9C30006B43C7 /* 126_exchange.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 126_exchange.c; sourceTree = "<group>"; };
+		9C7EEAF01F2A9C30006B43C7 /* 126_exchange.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 126_exchange.s; sourceTree = "<group>"; };
+		9C7EEAF11F2A9C30006B43C7 /* 126_exchange_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 126_exchange_main.c; sourceTree = "<group>"; };
+		9C7EEAF21F2A9C30006B43C7 /* 126_exchange_main.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 126_exchange_main.s; sourceTree = "<group>"; };
+		9C7EEAF31F2A9C30006B43C7 /* 126_exchangeO0.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 126_exchangeO0.s; sourceTree = "<group>"; };
+		9C7EEAF41F2A9C30006B43C7 /* 126_exchangeO1.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 126_exchangeO1.s; sourceTree = "<group>"; };
+		9C7EEAF51F2A9C30006B43C7 /* 126_exchangeO2.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 126_exchangeO2.s; sourceTree = "<group>"; };
+		9C7EEAF61F2A9C30006B43C7 /* 129_lea.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 129_lea.c; sourceTree = "<group>"; };
+		9C7EEAF71F2A9C30006B43C7 /* 129_lea.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 129_lea.s; sourceTree = "<group>"; };
+		9C7EEAF81F2A9C30006B43C7 /* 129_lea_O1.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 129_lea_O1.s; sourceTree = "<group>"; };
+		9C7EEAF91F2A9C30006B43C7 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
+		9C7EEAFA1F2A9C30006B43C7 /* eco */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = eco; sourceTree = "<group>"; };
+		9C7EEAFB1F2A9C30006B43C7 /* hello.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hello.c; sourceTree = "<group>"; };
+		9C7EEAFC1F2A9C30006B43C7 /* hello.gcc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hello.gcc; sourceTree = "<group>"; };
+		9C7EEAFD1F2A9C30006B43C7 /* hello.llvm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hello.llvm; sourceTree = "<group>"; };
+		9C7EEAFE1F2A9C30006B43C7 /* lea.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = lea.s; sourceTree = "<group>"; };
+		9C7EEAFF1F2A9C30006B43C7 /* leaO1.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = leaO1.s; sourceTree = "<group>"; };
+		9C7EEB001F2A9C30006B43C7 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		9C7EEB011F2A9DA1006B43C7 /* LCDComputerSystemChapter3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDComputerSystemChapter3.plist; sourceTree = "<group>"; };
+		9C7EEB031F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCComputerSystemCh3RegistersViewController.h; sourceTree = "<group>"; };
+		9C7EEB041F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCComputerSystemCh3RegistersViewController.m; sourceTree = "<group>"; };
 		9C7FDF6C1EB0E39C00609D65 /* LCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCViewController.h; sourceTree = "<group>"; };
 		9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCViewController.m; sourceTree = "<group>"; };
 		9C9124331C4FA06E007AB00D /* LCSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSectionHeaderView.h; sourceTree = "<group>"; };
@@ -711,6 +745,53 @@
 			path = LHiOSAccumulatesInObjectiveCUITests;
 			sourceTree = "<group>";
 		};
+		9C7EEAE21F2A9C30006B43C7 /* LCDComputerSystemChapter3 */ = {
+			isa = PBXGroup;
+			children = (
+				9C7EEB011F2A9DA1006B43C7 /* LCDComputerSystemChapter3.plist */,
+				9C7EEB031F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.h */,
+				9C7EEB041F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m */,
+				9C7EEAE31F2A9C30006B43C7 /* cAndAssembleFile */,
+			);
+			path = LCDComputerSystemChapter3;
+			sourceTree = "<group>";
+		};
+		9C7EEAE31F2A9C30006B43C7 /* cAndAssembleFile */ = {
+			isa = PBXGroup;
+			children = (
+				9C7EEAE41F2A9C30006B43C7 /* 114_mstore.c */,
+				9C7EEAE51F2A9C30006B43C7 /* 114_mstore.o */,
+				9C7EEAE61F2A9C30006B43C7 /* 114_mstore.s */,
+				9C7EEAE71F2A9C30006B43C7 /* 114_mstore_objcdump.s */,
+				9C7EEAE81F2A9C30006B43C7 /* 116_main.c */,
+				9C7EEAE91F2A9C30006B43C7 /* 116_prog */,
+				9C7EEAEA1F2A9C30006B43C7 /* 116_prog_objcdump.s */,
+				9C7EEAEB1F2A9C30006B43C7 /* 116_prog_objcdump.s生成反汇编代码 */,
+				9C7EEAEC1F2A9C30006B43C7 /* 126_3.4_movMM.c */,
+				9C7EEAED1F2A9C30006B43C7 /* 126_3.4_movMM.s */,
+				9C7EEAEE1F2A9C30006B43C7 /* 126_3.4_movMM_O1.s */,
+				9C7EEAEF1F2A9C30006B43C7 /* 126_exchange.c */,
+				9C7EEAF01F2A9C30006B43C7 /* 126_exchange.s */,
+				9C7EEAF11F2A9C30006B43C7 /* 126_exchange_main.c */,
+				9C7EEAF21F2A9C30006B43C7 /* 126_exchange_main.s */,
+				9C7EEAF31F2A9C30006B43C7 /* 126_exchangeO0.s */,
+				9C7EEAF41F2A9C30006B43C7 /* 126_exchangeO1.s */,
+				9C7EEAF51F2A9C30006B43C7 /* 126_exchangeO2.s */,
+				9C7EEAF61F2A9C30006B43C7 /* 129_lea.c */,
+				9C7EEAF71F2A9C30006B43C7 /* 129_lea.s */,
+				9C7EEAF81F2A9C30006B43C7 /* 129_lea_O1.s */,
+				9C7EEAF91F2A9C30006B43C7 /* a.out */,
+				9C7EEAFA1F2A9C30006B43C7 /* eco */,
+				9C7EEAFB1F2A9C30006B43C7 /* hello.c */,
+				9C7EEAFC1F2A9C30006B43C7 /* hello.gcc */,
+				9C7EEAFD1F2A9C30006B43C7 /* hello.llvm */,
+				9C7EEAFE1F2A9C30006B43C7 /* lea.s */,
+				9C7EEAFF1F2A9C30006B43C7 /* leaO1.s */,
+				9C7EEB001F2A9C30006B43C7 /* README */,
+			);
+			path = cAndAssembleFile;
+			sourceTree = "<group>";
+		};
 		9CB64EC91F0E7F3D00A4BC1C /* LCColor */ = {
 			isa = PBXGroup;
 			children = (
@@ -747,6 +828,7 @@
 		9CD141C61EFF64AB00B25586 /* LCDComputerSystem */ = {
 			isa = PBXGroup;
 			children = (
+				9C7EEAE21F2A9C30006B43C7 /* LCDComputerSystemChapter3 */,
 				9CD141C91EFF678000B25586 /* LCDComputerSystemChapter2 */,
 				9CD141C71EFF64D800B25586 /* LCDComputerSystem.plist */,
 				9CD141D01EFF696900B25586 /* LCDComputerSystem.storyboard */,
@@ -886,6 +968,7 @@
 			files = (
 				522485141EE7BB60001A1429 /* LCDemo.storyboard in Resources */,
 				9C476D911EF430C6004AC758 /* LCDDispatch.plist in Resources */,
+				9C7EEB021F2A9DAD006B43C7 /* LCDComputerSystemChapter3.plist in Resources */,
 				9CB64EDE1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets in Resources */,
 				522485231EE7BB60001A1429 /* LCSetting.plist in Resources */,
 				52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */,
@@ -951,6 +1034,7 @@
 				9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				5296F2AF1EFB9ED100A08022 /* LCBCurrentReadingViewController.m in Sources */,
+				9C7EEB051F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
