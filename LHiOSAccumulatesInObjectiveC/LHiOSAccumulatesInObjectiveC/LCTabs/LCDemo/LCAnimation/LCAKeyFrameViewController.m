@@ -17,8 +17,10 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerXConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerYConstraint;
 @property (nonatomic, assign) NSTimeInterval animationTime;
-@property (nonatomic, assign) BOOL hasDrawPath;
+@property (nonatomic, assign) BOOL hasDoneFirstAnimation;
 @property (weak, nonatomic) IBOutlet LCAnimationKeyPathPathView *containerView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
+
 
 @end
 
@@ -30,6 +32,13 @@
     self.containerView.delegate = self;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (!self.hasDoneFirstAnimation) {
+        [self segmentValueChanged:self.segment];
+    }
+}
+
 - (IBAction)segmentValueChanged:(UISegmentedControl *)sender {
     NSInteger count = sender.selectedSegmentIndex + 3;
     NSArray *pointValues = [self pointArrayForCount:count];
@@ -38,7 +47,7 @@
     self.centerXConstraint.constant = startPoint.x;
     self.centerYConstraint.constant = startPoint.y;
     NSInteger animationCounts = count + 1;
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
         [UIView animateKeyframesWithDuration:self.animationTime delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
@@ -70,24 +79,25 @@
 #pragma mark -
 
 - (NSArray <NSValue *>*) pointArrayForCount:(NSInteger)count {
+    NSArray *points = [self trianglePoints];
     switch (count) {
         case 3:
-            return [self trianglePoints];
+            points = [self trianglePoints];
             break;
         case 4:
-            return [self squarePoints];
+            points = [self squarePoints];
             break;
         case 5:
-            return [self pentagon];
+            points = [self pentagon];
             break;
         case 6:
-            return [self hexagon];
+            points = [self hexagon];
             break;
             
         default:
             break;
     }
-    return [self trianglePoints];
+    return points;
 }
 
 - (NSArray <NSValue *>*)trianglePoints {

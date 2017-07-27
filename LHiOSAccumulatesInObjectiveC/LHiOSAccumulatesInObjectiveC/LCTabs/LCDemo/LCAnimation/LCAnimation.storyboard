@@ -73,6 +73,7 @@
                         <outlet property="centerXConstraint" destination="ujU-tc-HWp" id="ANm-ec-NCj"/>
                         <outlet property="centerYConstraint" destination="Bqb-AL-Hvg" id="2BK-2f-xqR"/>
                         <outlet property="containerView" destination="JlL-n7-Ij6" id="ZXX-Lb-eUl"/>
+                        <outlet property="segment" destination="XUx-T2-7fU" id="obJ-IP-hyl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Pl-Ql-Ifk" userLabel="First Responder" sceneMemberID="firstResponder"/>

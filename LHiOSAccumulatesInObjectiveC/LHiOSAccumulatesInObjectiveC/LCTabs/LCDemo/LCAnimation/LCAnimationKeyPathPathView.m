@@ -34,7 +34,7 @@
             [path addLineToPoint:[self transferedPoint:[points[ j % count] CGPointValue]]];
         }
         [path stroke];
-//        CGContextStrokePath(context);
+        CGContextStrokePath(context);
     }
     CGContextRestoreGState(context);
 }
