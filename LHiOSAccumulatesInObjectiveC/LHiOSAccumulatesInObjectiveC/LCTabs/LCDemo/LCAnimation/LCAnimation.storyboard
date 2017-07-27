@@ -23,7 +23,42 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlL-n7-Ij6">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view tag="-9999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a84-YA-xTd">
+                                        <rect key="frame" x="167.5" y="303.5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.85209760270000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="BPu-K0-xxV"/>
+                                            <constraint firstAttribute="width" constant="40" id="Z3c-cS-Xdg"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XUx-T2-7fU">
+                                        <rect key="frame" x="5" y="8" width="365" height="29"/>
+                                        <segments>
+                                            <segment title="三角"/>
+                                            <segment title="四角"/>
+                                            <segment title="五角"/>
+                                            <segment title="六角"/>
+                                            <segment title="圆"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentValueChanged:" destination="iMg-ku-rRz" eventType="valueChanged" id="INb-4J-Xha"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XUx-T2-7fU" firstAttribute="top" secondItem="JlL-n7-Ij6" secondAttribute="top" constant="8" id="629-yS-eZC"/>
+                                    <constraint firstAttribute="trailing" secondItem="XUx-T2-7fU" secondAttribute="trailing" constant="5" id="A5V-lt-YEZ"/>
+                                    <constraint firstItem="a84-YA-xTd" firstAttribute="centerY" secondItem="JlL-n7-Ij6" secondAttribute="centerY" id="Bqb-AL-Hvg"/>
+                                    <constraint firstItem="XUx-T2-7fU" firstAttribute="leading" secondItem="JlL-n7-Ij6" secondAttribute="leading" constant="5" id="KAq-b5-NOW"/>
+                                    <constraint firstItem="a84-YA-xTd" firstAttribute="centerX" secondItem="JlL-n7-Ij6" secondAttribute="centerX" id="ujU-tc-HWp"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,6 +69,10 @@
                             <constraint firstAttribute="trailing" secondItem="JlL-n7-Ij6" secondAttribute="trailing" id="kF4-bA-y6U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="centerXConstraint" destination="ujU-tc-HWp" id="ANm-ec-NCj"/>
+                        <outlet property="centerYConstraint" destination="Bqb-AL-Hvg" id="2BK-2f-xqR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Pl-Ql-Ifk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
