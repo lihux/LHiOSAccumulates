@@ -85,7 +85,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【高级】记录下次进入页面的浮动按钮：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZJ-H5-EcG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【高级】是否展示未完成项：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZJ-H5-EcG">
                                         <rect key="frame" x="12" y="237" width="351" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Fbd-bJ-ICC"/>
@@ -162,6 +162,7 @@
                     </view>
                     <connections>
                         <outlet property="floatRecordButtonSwith" destination="gYe-7M-ruk" id="3hr-DO-ZXK"/>
+                        <outlet property="showUnfinishedSwitch" destination="ZFy-du-rjC" id="sTq-0F-Bg4"/>
                         <outlet property="tabBarSelectSegmentedControl" destination="cTq-hL-MAS" id="Kvh-vn-onP"/>
                     </connections>
                 </viewController>

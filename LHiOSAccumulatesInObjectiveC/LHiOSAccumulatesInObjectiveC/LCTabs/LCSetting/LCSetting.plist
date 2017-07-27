@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>设置默认打开页面</string>
+		<string>APP启动配置</string>
 		<key>content</key>
 		<string>让用户越来越懒</string>
 		<key>storyboardID</key>

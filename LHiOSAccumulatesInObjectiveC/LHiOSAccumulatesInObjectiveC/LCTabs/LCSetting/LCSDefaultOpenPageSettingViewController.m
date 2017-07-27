@@ -17,6 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *floatRecordButtonSwith;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tabBarSelectSegmentedControl;
+@property (weak, nonatomic) IBOutlet UISwitch *showUnfinishedSwitch;
 
 @end
 
@@ -35,6 +36,8 @@
             self.tabBarSelectSegmentedControl.selectedSegmentIndex = temp;
         }
     }
+    NSNumber *unfinishedTag = [[NSUserDefaults standardUserDefaults] objectForKey:KLCSettingShowUnfinishedPageKey];
+    self.showUnfinishedSwitch.on = unfinishedTag ? unfinishedTag.boolValue : NO;
 }
 
 - (IBAction)tabBarSelectValueChanged:(UISegmentedControl *)sender {
@@ -47,7 +50,7 @@
 }
 
 - (IBAction)showUnfinishedButtonSwithValueChanged:(UISwitch *)sender {
-    [[NSUserDefaults standardUserDefaults] setObject:@(sender.on) forKey:kLCSSettingDefaultSelectTabKey];
+    [[NSUserDefaults standardUserDefaults] setObject:@(sender.on) forKey:KLCSettingShowUnfinishedPageKey];
 }
 
 @end
