@@ -1,0 +1,33 @@
+[0;1;32mTranslationUnitDecl[0m[0;33m 0x7ff5d0023cd0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7ff5d0024258[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __int128_t[0m [0;32m'__int128'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7ff5d0023f40[0m [0;32m'__int128'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7ff5d00242b8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __uint128_t[0m [0;32m'unsigned __int128'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7ff5d0023f60[0m [0;32m'unsigned __int128'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7ff5d00245f8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __NSConstantString[0m [0;32m'struct __NSConstantString_tag'[0m
+[0;34m| `-[0m[0;32mRecordType[0m[0;33m 0x7ff5d00243a0[0m [0;32m'struct __NSConstantString_tag'[0m
+[0;34m|   `-[0m[0;1;32mCXXRecord[0m[0;33m 0x7ff5d0024308[0m[0;1;36m '__NSConstantString_tag'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7ff5d0024688[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __builtin_ms_va_list[0m [0;32m'char *'[0m
+[0;34m| `-[0m[0;32mPointerType[0m[0;33m 0x7ff5d0024650[0m [0;32m'char *'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7ff5d0023d60[0m [0;32m'char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7ff5d0059800[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __builtin_va_list[0m [0;32m'struct __va_list_tag [1]'[0m
+[0;34m| `-[0m[0;32mConstantArrayType[0m[0;33m 0x7ff5d0024960[0m [0;32m'struct __va_list_tag [1]'[0m 1 
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7ff5d0024770[0m [0;32m'struct __va_list_tag'[0m
+[0;34m|     `-[0m[0;1;32mCXXRecord[0m[0;33m 0x7ff5d00246d8[0m[0;1;36m '__va_list_tag'[0m
+[0;34m`-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7ff5d0059920[0m <[0;33mexample.cpp:1:1[0m, [0;33mline:7:1[0m> [0;33mline:1:5[0m[0;1;36m f[0m [0;32m'int (int)'[0m
+[0;34m  |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7ff5d0059860[0m <[0;33mcol:7[0m, [0;33mcol:11[0m> [0;33mcol:11[0m used[0;1;36m i[0m [0;32m'int'[0m
+[0;34m  `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x7ff5d0059ba0[0m <[0;33mcol:14[0m, [0;33mline:7:1[0m>
+[0;34m    `-[0m[0;1;35mIfStmt[0m[0;33m 0x7ff5d0059b68[0m <[0;33mline:2:5[0m, [0;33mline:6:5[0m>
+[0;34m      |-[0m[0;34m<<<NULL>>>[0m
+[0;34m      |-[0m[0;34m<<<NULL>>>[0m
+[0;34m      |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x7ff5d0059a70[0m <[0;33mline:2:9[0m, [0;33mcol:13[0m> [0;32m'_Bool'[0m[0;36m[0m[0;36m[0m '>'
+[0;34m      | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7ff5d0059a58[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m      | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7ff5d0059a10[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7ff5d0059860[0m[0;1;36m 'i'[0m [0;32m'int'[0m
+[0;34m      | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x7ff5d0059a38[0m <[0;33mcol:13[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m      |-[0m[0;1;35mCompoundStmt[0m[0;33m 0x7ff5d0059ae0[0m <[0;33mcol:16[0m, [0;33mline:4:5[0m>
+[0;34m      | `-[0m[0;1;35mReturnStmt[0m[0;33m 0x7ff5d0059ac8[0m <[0;33mline:3:9[0m, [0;33mcol:16[0m>
+[0;34m      |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7ff5d0059ab0[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m      |     `-[0m[0;1;35mCXXBoolLiteralExpr[0m[0;33m 0x7ff5d0059a98[0m <[0;33mcol:16[0m> [0;32m'_Bool'[0m[0;36m[0m[0;36m[0m true
+[0;34m      `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x7ff5d0059b48[0m <[0;33mline:4:12[0m, [0;33mline:6:5[0m>
+[0;34m        `-[0m[0;1;35mReturnStmt[0m[0;33m 0x7ff5d0059b30[0m <[0;33mline:5:9[0m, [0;33mcol:16[0m>
+[0;34m          `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7ff5d0059b18[0m <[0;33mcol:16[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m            `-[0m[0;1;35mCXXBoolLiteralExpr[0m[0;33m 0x7ff5d0059b00[0m <[0;33mcol:16[0m> [0;32m'_Bool'[0m[0;36m[0m[0;36m[0m false
