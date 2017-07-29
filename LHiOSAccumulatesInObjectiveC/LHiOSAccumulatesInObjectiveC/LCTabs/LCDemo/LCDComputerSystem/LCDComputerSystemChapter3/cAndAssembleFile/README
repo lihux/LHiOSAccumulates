@@ -21,3 +21,4 @@ llvm-gcc -O1 -S -o 129_lea.s 129_lea.c 发现编译优化代码的时候果然�
 llvm-gcc -S -o 126_3.4_movMM.s 126_3.4_movMM.c 学习mov的各种指令的用法，发现很多世界 @ 2017年 7月26日 星期三 20时03分12秒 CST
 llvm-gcc -O1 -S -o 126_3.4_movMM_O1.s 126_3.4_movMM.c 继续学习mov指令 @ 2017年 7月26日 星期三 20时05分43秒 CST
 llvm-gcc -O1 -S -o 145_absdiff_O1.s 145_absdiff.c命令学习编译器使用条件传送指令优化控制跳转 @ 2017年 7月29日 星期六 20时54分41秒 CST
+llvm-gcc -O0 -S -o 145_absdiff_O0.s 145_absdiff.c命令学习编译器对于代码不采取优化的时候控制流跳转 @ 2017年 7月29日 星期六 20时56分36秒 CST
