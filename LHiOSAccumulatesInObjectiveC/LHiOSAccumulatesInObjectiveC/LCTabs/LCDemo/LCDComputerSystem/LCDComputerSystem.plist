@@ -14,9 +14,9 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>第三章：信息的表示和处理</string>
+		<string>第三章：程序的机器级表示</string>
 		<key>viewControllerTitle</key>
-		<string>第二章：信息的表示和处理</string>
+		<string>第三章：程序的机器级表示</string>
 		<key>content</key>
 		<string>精通细节是理解更深和更基本概念的先决条件。</string>
 		<key>plistName</key>
