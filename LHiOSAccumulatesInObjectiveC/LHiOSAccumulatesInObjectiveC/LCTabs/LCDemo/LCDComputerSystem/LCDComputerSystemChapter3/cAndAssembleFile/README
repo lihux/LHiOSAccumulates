@@ -27,3 +27,4 @@ llvm-gcc -O0/O1 -S -o 157_fact_for_while_O0/1.s 157_fact_for_while.c 探索汇�
 llvm-gcc -O0/O1 -S -o 160_if_eg_O0/1.s 160_if_eg.c 使用if分支判断替换实现switch实现，看看汇编代码有什么不同 @ 2017年 7月30日 星期日 15时22分41秒 CST
 llvm-gcc -O0/O1 -S -o 160_switch_eg_O0/1.s 160_switch_eg.c 修改代码笔误 @ 2017年 7月30日 星期日 15时26分36秒 CST
 llvm-gcc -O0/O1 -S -o 169_procs_O0/1.s 169_procs.c 学习参数传递之子方法定义 @ 2017年 7月31日 星期一 06时49分53秒 CST
+llvm-gcc -O0/O1 -S -o 169_main_O0/1.s 169_main.c 学习参数传递之main函数定义 @ 2017年 7月31日 星期一 06时52分53秒 CST

@@ -28,6 +28,6 @@ int main () {
     b += proc6(p1, p2, p3, p4, p5, p6);
     b += proc7(p1, p2, p3, p4, p5, p6, p7);
     b += proc8(p1, p2, p3, p4, p5, p6, p7, p8);
-    b -= proc9(p1, p2, p3, p4, p5, p6, p7, p8, p9);
+    proc9(p1, p2, p3, p4, p5, p6, p7, p8, p9);
     return b;
 }
