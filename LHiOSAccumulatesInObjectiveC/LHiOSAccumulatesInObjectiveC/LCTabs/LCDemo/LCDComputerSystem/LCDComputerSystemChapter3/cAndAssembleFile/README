@@ -28,3 +28,4 @@ llvm-gcc -O0/O1 -S -o 160_if_eg_O0/1.s 160_if_eg.c 使用if分支判断替换实
 llvm-gcc -O0/O1 -S -o 160_switch_eg_O0/1.s 160_switch_eg.c 修改代码笔误 @ 2017年 7月30日 星期日 15时26分36秒 CST
 llvm-gcc -O0/O1 -S -o 169_procs_O0/1.s 169_procs.c 学习参数传递之子方法定义 @ 2017年 7月31日 星期一 06时49分53秒 CST
 llvm-gcc -O0/O1 -S -o 169_main_O0/1.s 169_main.c 学习参数传递之main函数定义 @ 2017年 7月31日 星期一 06时52分53秒 CST
+使用命令llvm-gcc -o 169_main_procs 169_main.c 169_procs.c 生成二进制可执行文件，并使用objcdump反汇编该文件，查看其参数的传递方式是否和书上写的一致（确实一致%rdi-%rsi-%rdx-%rcx-%r8-%r9-stack的优先级顺序传参） @ 2017年 7月31日 星期一 07时05分52秒 CST
