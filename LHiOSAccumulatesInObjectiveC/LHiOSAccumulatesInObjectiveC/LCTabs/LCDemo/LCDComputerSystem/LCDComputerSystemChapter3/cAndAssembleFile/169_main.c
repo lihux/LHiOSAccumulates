@@ -1,0 +1,33 @@
+int proc0();
+long proc1(long p1);
+long proc2(long p1, int p2);
+long proc3(long p1, int p2, short p3);
+long proc4(long p1, int p2, short p3, char p4);
+void proc5(long p1, int p2, short p3, char p4, long *p5);
+long proc6(long p1, int p2, short p3, char p4, long *p5, long p6);
+long proc7(long p1, int p2, short p3, char p4, long *p5, long p6, long p7);
+long proc8(long p1, int p2, short p3, char p4, long *p5, long p6, long p7, long p8);
+void proc9(long p1, int p2, short p3, char p4, long *p5, long p6, long p7, long p8, long *p9);
+
+int main () {
+    long p1 = 1;
+    int p2 = 2;
+    short p3 = 3;
+    char p4 = 4;
+    long *p5 = 5;
+    long p6 = 6, p7 = 7, p8 = 8;
+    long *p9 = 9;
+    int a = 0;
+    a += proc0();
+    long b = 2;
+    b *= proc1(p1);
+    b *= proc2(p1, p2);
+    b *= proc3(p1, p2, p3);
+    b *= proc4(p1, p2, p3, p4);
+    proc5(p1, p2, p3, p4, p5);
+    b += proc6(p1, p2, p3, p4, p5, p6);
+    b += proc7(p1, p2, p3, p4, p5, p6, p7);
+    b += proc8(p1, p2, p3, p4, p5, p6, p7, p8);
+    b -= proc9(p1, p2, p3, p4, p5, p6, p7, p8, p9);
+    return b;
+}
