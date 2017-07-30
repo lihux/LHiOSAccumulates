@@ -9,9 +9,13 @@ long proc7(long p1, int p2, short p3, char p4, long *p5, long p6, long p7);
 long proc8(long p1, int p2, short p3, char p4, long *p5, long p6, long p7, long p8);
 void proc9(long p1, int p2, short p3, char p4, long *p5, long p6, long p7, long p8, long *p9);
 
-//在x86-64机器上:
+//在x86-64机器上:约定（和协议类似）传参细节
 //p1~p6 共6个参数会依次存入寄存器：%rdi, %rsi, %rdx, %rcx, %r8, %r9
 //p7~p9 等大于六个以外的参数会直接push入栈中存储和传递
+
+//在x86-64机器上:约定（和协议类似）被调用者proc*()必须要保存调用者main()的寄存器值：
+//%rbx, %rbp, %r12~%r15,
+//要么你不使用，要么你使用前要入栈，使用后要pop恢复
 
 int main () {
     long p1 = 1;
