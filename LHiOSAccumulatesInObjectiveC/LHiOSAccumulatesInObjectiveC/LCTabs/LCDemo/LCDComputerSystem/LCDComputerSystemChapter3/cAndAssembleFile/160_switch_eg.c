@@ -5,8 +5,9 @@ void switch_eg(long x, long n, long *dest) {
             val *=13;
             break;
         case 102:
-            val += 11;
+            val += 10;
         case 103:
+            val += 11;
             break;
         case 104:
         case 106:

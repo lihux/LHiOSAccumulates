@@ -25,3 +25,4 @@ llvm-gcc -O0 -S -o 145_absdiff_O0.s 145_absdiff.c命令学习编译器对于代�
 llvm-gcc -O0 -S -o 160_switch_eg_O0.s 160_switch_eg.c 命令查看未经优化的switch命令式如何生成汇编代码的 @ 2017年 7月30日 星期日 10时52分34秒 CST
 llvm-gcc -O0/O1 -S -o 157_fact_for_while_O0/1.s 157_fact_for_while.c 探索汇编实现以及优化for循环 @ 2017年 7月30日 星期日 12时11分19秒 CST
 llvm-gcc -O0/O1 -S -o 160_if_eg_O0/1.s 160_if_eg.c 使用if分支判断替换实现switch实现，看看汇编代码有什么不同 @ 2017年 7月30日 星期日 15时22分41秒 CST
+llvm-gcc -O0/O1 -S -o 160_switch_eg_O0/1.s 160_switch_eg.c 修改代码笔误 @ 2017年 7月30日 星期日 15时26分36秒 CST

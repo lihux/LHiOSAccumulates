@@ -37,9 +37,12 @@ LBB0_1:
 	jmp	LBB0_6
 LBB0_2:
 	movq	-32(%rbp), %rax
-	addq	$11, %rax
+	addq	$10, %rax
 	movq	%rax, -32(%rbp)
 LBB0_3:
+	movq	-32(%rbp), %rax
+	addq	$11, %rax
+	movq	%rax, -32(%rbp)
 	jmp	LBB0_6
 LBB0_4:
 	movq	-32(%rbp), %rax
