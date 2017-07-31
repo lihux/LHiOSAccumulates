@@ -34,3 +34,4 @@ llvm-gcc -O0/O1 -S -o 173_P_O0/1.s 173_P.c 学习除了%rbx %rpb %r12~%r15 之�
 llvm-gcc -O0/O1 -S -o 175_rfact_O0/1.s 175_rfact.c 学习汇编对递归调用的实现，其实和调用其他方法并无二致 @ 2017年 8月 1日 星期二 06时10分11秒 CST
 llvm-gcc -O0/O1 -S -o 180_fix_prod_ele_O0/1.s 180_fix_prod_ele.c 汇编对于嵌套数组的优化 @ 2017年 8月 1日 星期二 06时51分56秒 CST
 llvm-gcc -O0/O1 -S -o 181_var_ele_O0/1.s 181_var_ele.c 探索编译器对边长数组的支持（C99新增) @ 2017年 8月 1日 星期二 07时06分52秒 CST
+llvm-gcc -O0/O1 -S -o 182_var_prod_ele_O0/1.s 182_var_prod_ele.c 使用边长数组实现矩阵内积乘法，编译器的实现细节体会 @ 2017年 8月 1日 星期二 07时10分10秒 CST
