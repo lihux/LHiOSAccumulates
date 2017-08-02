@@ -37,3 +37,4 @@ llvm-gcc -O0/O1 -S -o 181_var_ele_O0/1.s 181_var_ele.c 探索编译器对边长�
 llvm-gcc -O0/O1 -S -o 182_var_prod_ele_O0/1.s 182_var_prod_ele.c 使用边长数组实现矩阵内积乘法，编译器的实现细节体会 @ 2017年 8月 1日 星期二 07时10分10秒 CST
 llvm-gcc -O0/O1 -S -o 195_stack_overflow_O0/1.s 195_stack_overflow.c 缓冲区溢出测试 @ 2017年 8月 2日 星期三 07时21分13秒 CST
 llvm-gcc -O0/O1 -S -o 202_vframe_O0/1.s 202_vframe.c 探查对边长数组的p[n]的堆栈分配情况 @ 2017年 8月 2日 星期三 07时41分37秒 CST
+llvm-gcc -O0/O1 -S -o 206_float_mov_O0/1.s 206_float_mov.c 探查浮点数的赋值移位操作（MR/RM/RR) @ 2017年 8月 3日 星期四 07时07分00秒 CST
