@@ -316,10 +316,20 @@
                                         </constraints>
                                         <state key="normal" title="我是渐变的button"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作为LLVM提供的编译器前端，clang可将用户的源代码(C/C++/Objective-C)编译成语言/目标设备无关的IR(Intermediate Representation)实现。其可提供良好的插件支持，容许用户在编译时，运行额外的自定义动作。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a54-PK-biO">
-                                        <rect key="frame" x="10" y="74" width="394" height="57.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学员通过教练分享的链接购买保险后即可获得学员支付价格的30%作为分成，分成的人民币会存到教练账户的钱包里" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a54-PK-biO" customClass="LCLabel">
+                                        <rect key="frame" x="10" y="74" width="394" height="33.666666666666671"/>
                                         <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustLineHeight" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学员通过教练分享的链接购买保险后即可获得学员支付价格的30%作为分成，分成的人民币会存到教练账户的钱包里" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT6-A1-49V" customClass="LCLabel">
+                                        <rect key="frame" x="10" y="127.66666666666666" width="394" height="33.666666666666686"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
@@ -332,8 +342,11 @@
                                     <constraint firstItem="Nvt-O5-wng" firstAttribute="leading" secondItem="ixN-bj-s5u" secondAttribute="leading" constant="12" id="1KI-Ur-O89"/>
                                     <constraint firstAttribute="trailing" secondItem="Nvt-O5-wng" secondAttribute="trailing" constant="12" id="FqP-aB-gAx"/>
                                     <constraint firstAttribute="trailing" secondItem="a54-PK-biO" secondAttribute="trailing" constant="10" id="JKy-il-cRL"/>
+                                    <constraint firstItem="VT6-A1-49V" firstAttribute="leading" secondItem="ixN-bj-s5u" secondAttribute="leading" constant="10" id="OXf-oL-uto"/>
                                     <constraint firstItem="a54-PK-biO" firstAttribute="leading" secondItem="ixN-bj-s5u" secondAttribute="leading" constant="10" id="P2m-Tw-ofF"/>
+                                    <constraint firstAttribute="trailing" secondItem="VT6-A1-49V" secondAttribute="trailing" constant="10" id="fZa-2L-DXt"/>
                                     <constraint firstItem="a54-PK-biO" firstAttribute="top" secondItem="Nvt-O5-wng" secondAttribute="bottom" constant="20" id="sLw-D7-g6v"/>
+                                    <constraint firstItem="VT6-A1-49V" firstAttribute="top" secondItem="a54-PK-biO" secondAttribute="bottom" constant="20" id="ska-fD-LVT"/>
                                     <constraint firstItem="Nvt-O5-wng" firstAttribute="top" secondItem="ixN-bj-s5u" secondAttribute="top" constant="10" id="y0e-SV-bDR"/>
                                 </constraints>
                             </view>

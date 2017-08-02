@@ -20,9 +20,9 @@
         [super setText:text];
     } else {
         UIColor *textColor = self.textColor ? self.textColor : [UIColor blackColor];
-        UIFont *font = self.font ? self.font : [UIFont systemFontOfSize:14];
+        UIFont *font = self.tag == 0 ? self.font : [UIFont systemFontOfSize:14];
         NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
-        style.lineSpacing = font.pointSize * .875;
+        style.lineSpacing = font.pointSize * (self.tag == 0 ? .875 : .5);
         NSDictionary *dic = @{NSForegroundColorAttributeName : textColor,
                               NSFontAttributeName: font,
                               NSParagraphStyleAttributeName: style};
