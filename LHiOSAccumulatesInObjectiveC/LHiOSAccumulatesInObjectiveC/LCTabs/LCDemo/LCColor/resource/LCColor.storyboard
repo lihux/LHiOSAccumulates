@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -192,10 +193,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCC100BeautifulColorTableViewCell" id="48N-AN-Cbm" customClass="LCC100BeautifulColorTableViewCell">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="222"/>
+                                                <rect key="frame" x="0.0" y="28" width="414" height="221.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="48N-AN-Cbm" id="ePi-qW-5pj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="221"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="221.16666666666666"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100ColorCombinations1" translatesAutoresizingMaskIntoConstraints="NO" id="W1W-ZA-ROV">
@@ -315,11 +316,20 @@
                                         </constraints>
                                         <state key="normal" title="我是渐变的button"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作为LLVM提供的编译器前端，clang可将用户的源代码(C/C++/Objective-C)编译成语言/目标设备无关的IR(Intermediate Representation)实现。其可提供良好的插件支持，容许用户在编译时，运行额外的自定义动作。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a54-PK-biO" customClass="LCLabel">
+                                        <rect key="frame" x="10" y="74" width="394" height="57.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Nvt-O5-wng" firstAttribute="leading" secondItem="ixN-bj-s5u" secondAttribute="leading" constant="12" id="1KI-Ur-O89"/>
                                     <constraint firstAttribute="trailing" secondItem="Nvt-O5-wng" secondAttribute="trailing" constant="12" id="FqP-aB-gAx"/>
+                                    <constraint firstAttribute="trailing" secondItem="a54-PK-biO" secondAttribute="trailing" constant="10" id="JKy-il-cRL"/>
+                                    <constraint firstItem="a54-PK-biO" firstAttribute="leading" secondItem="ixN-bj-s5u" secondAttribute="leading" constant="10" id="P2m-Tw-ofF"/>
+                                    <constraint firstItem="a54-PK-biO" firstAttribute="top" secondItem="Nvt-O5-wng" secondAttribute="bottom" constant="20" id="sLw-D7-g6v"/>
                                     <constraint firstItem="Nvt-O5-wng" firstAttribute="top" secondItem="ixN-bj-s5u" secondAttribute="top" constant="10" id="y0e-SV-bDR"/>
                                 </constraints>
                             </view>

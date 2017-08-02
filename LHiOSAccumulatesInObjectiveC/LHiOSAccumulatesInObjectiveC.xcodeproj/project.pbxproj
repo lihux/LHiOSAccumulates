@@ -30,6 +30,7 @@
 		5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD9611EFA377E00DF92BA /* LCBReadingPlanViewController.m */; };
 		5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2B71EFBAAFF00A08022 /* LCBShelfViewController.m */; };
 		5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */; };
+		52B6C0431F31A78A00ED3859 /* LCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B6C0421F31A78A00ED3859 /* LCLabel.m */; };
 		52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */; };
 		52B8D4451F03C1A400A71B70 /* LCDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4441F03C1A400A71B70 /* LCDatePickerView.m */; };
 		52B8D4481F0600EE00A71B70 /* UILabel+lihuxStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8D4471F0600EE00A71B70 /* UILabel+lihuxStyle.m */; };
@@ -168,6 +169,8 @@
 		5296F2B71EFBAAFF00A08022 /* LCBShelfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBShelfViewController.m; sourceTree = "<group>"; };
 		5296F2BA1EFBAD8A00A08022 /* LCBShelfTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBShelfTableViewCell.h; sourceTree = "<group>"; };
 		5296F2BB1EFBAD8A00A08022 /* LCBShelfTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBShelfTableViewCell.m; sourceTree = "<group>"; };
+		52B6C0411F31A78A00ED3859 /* LCLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLabel.h; sourceTree = "<group>"; };
+		52B6C0421F31A78A00ED3859 /* LCLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLabel.m; sourceTree = "<group>"; };
 		52B8D4401F03BCCA00A71B70 /* LCCalanderHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCalanderHelper.h; sourceTree = "<group>"; };
 		52B8D4411F03BCCA00A71B70 /* LCCalanderHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCalanderHelper.m; sourceTree = "<group>"; };
 		52B8D4431F03C1A400A71B70 /* LCDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDatePickerView.h; sourceTree = "<group>"; };
@@ -565,6 +568,8 @@
 			children = (
 				9C0365591C4CF9F900E04D7B /* LCButton.h */,
 				9C03655A1C4CF9F900E04D7B /* LCButton.m */,
+				52B6C0411F31A78A00ED3859 /* LCLabel.h */,
+				52B6C0421F31A78A00ED3859 /* LCLabel.m */,
 				9C3669BD1F10C3D5009F856C /* LCLihuxStyleView.h */,
 				9C3669BE1F10C3D5009F856C /* LCLihuxStyleView.m */,
 				52B8D4461F0600EE00A71B70 /* UILabel+lihuxStyle.h */,
@@ -1083,6 +1088,7 @@
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
+				52B6C0431F31A78A00ED3859 /* LCLabel.m in Sources */,
 				5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */,
 				9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */,
 				9C3669BF1F10C3D5009F856C /* LCLihuxStyleView.m in Sources */,
