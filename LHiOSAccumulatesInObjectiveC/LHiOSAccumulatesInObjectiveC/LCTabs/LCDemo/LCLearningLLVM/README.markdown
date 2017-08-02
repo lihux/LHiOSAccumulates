@@ -4,3 +4,4 @@ http://clang.llvm.org/get_started.html
 $ clang t.c
 
 使用命令clang ~/t.c -S -emit-llvm -o - 生成IR
+使用clang -fomit-frame-pointer -O3 -S -o - t.c >> t_asm_x86.s生成x86机器上的汇编代码
