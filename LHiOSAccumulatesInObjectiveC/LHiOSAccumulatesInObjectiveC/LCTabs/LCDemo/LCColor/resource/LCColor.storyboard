@@ -316,11 +316,15 @@
                                         </constraints>
                                         <state key="normal" title="我是渐变的button"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作为LLVM提供的编译器前端，clang可将用户的源代码(C/C++/Objective-C)编译成语言/目标设备无关的IR(Intermediate Representation)实现。其可提供良好的插件支持，容许用户在编译时，运行额外的自定义动作。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a54-PK-biO" customClass="LCLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作为LLVM提供的编译器前端，clang可将用户的源代码(C/C++/Objective-C)编译成语言/目标设备无关的IR(Intermediate Representation)实现。其可提供良好的插件支持，容许用户在编译时，运行额外的自定义动作。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a54-PK-biO">
                                         <rect key="frame" x="10" y="74" width="394" height="57.333333333333343"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustLineHeight" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
