@@ -41,3 +41,4 @@ llvm-gcc -O0/O1 -S -o 206_float_mov_O0/1.s 206_float_mov.c 探查浮点数的赋
 llvm-gcc -O0/O1 -S -o 208_fcvt_O0/1.s 208_fcvt.c 探查浮点数整数以及不同精度的浮点数之间的转换所使用的汇编指令 @ 2017年 8月 3日 星期四 07时19分45秒 CST
 llvm-gcc -O0/O1 -S -o 209_params_O0/1.s 209_params.c 猜测参数传递时浮点数并不占用其他参数使用寄存器的名额 @ 2017年 8月 3日 星期四 07时27分26秒 CST
 llvm-gcc -O0/O1 -S -o 210_funct_O0/1.s 210_funct.c 学习浮点数的运算操作 @ 2017年 8月 4日 星期五 05时42分20秒 CST
+llvm-gcc -O0/O1 -S -o 212_cel2fahr_O0/1.s 212_cel2fahr.c 验证浮点数操作不能以立即数值为操作数 @ 2017年 8月 4日 星期五 05时58分29秒 CST
