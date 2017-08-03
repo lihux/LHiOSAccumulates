@@ -13,9 +13,8 @@ Ltmp1:
 	movq	%rsp, %rbp
 Ltmp2:
 	.cfi_def_cfa_register %rbp
-	movslq	%esi, %rcx
-	movslq	%edx, %rax
-	imulq	%rcx
+	movq	%rdx, %rax
+	imulq	%rsi
 	movq	%rdx, 8(%rdi)
 	movq	%rax, (%rdi)
 	popq	%rbp

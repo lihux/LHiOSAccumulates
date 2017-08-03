@@ -14,14 +14,13 @@ Ltmp1:
 Ltmp2:
 	.cfi_def_cfa_register %rbp
 	movq	%rdi, -8(%rbp)
-	movl	%esi, -12(%rbp)
-	movl	%edx, -16(%rbp)
-	movslq	-12(%rbp), %rax
-	movslq	-16(%rbp), %rdi
-	imulq	%rdi
-	movq	-8(%rbp), %rdi
-	movq	%rdx, 8(%rdi)
-	movq	%rax, (%rdi)
+	movq	%rsi, -16(%rbp)
+	movq	%rdx, -24(%rbp)
+	movq	-16(%rbp), %rax
+	imulq	%rdx
+	movq	-8(%rbp), %rsi
+	movq	%rdx, 8(%rsi)
+	movq	%rax, (%rsi)
 	popq	%rbp
 	retq
 	.cfi_endproc
