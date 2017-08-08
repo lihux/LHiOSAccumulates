@@ -12,7 +12,6 @@
 		52ECB4D21F14EEFF00E2E268 /* LSAccumulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4BA1F14EE3D00E2E268 /* LSAccumulate.swift */; };
 		52ECB4D31F14EEFF00E2E268 /* LSAccumulateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4BB1F14EE3D00E2E268 /* LSAccumulateManager.swift */; };
 		52ECB4D41F14EF0200E2E268 /* LSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4BD1F14EE3D00E2E268 /* LSUtils.swift */; };
-		52ECB4D51F14EF0C00E2E268 /* LSBorderLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4C11F14EE3D00E2E268 /* LSBorderLineView.swift */; };
 		52ECB4D61F14EF0C00E2E268 /* LSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4C21F14EE3D00E2E268 /* LSButton.swift */; };
 		52ECB4D71F14EF0C00E2E268 /* LSLightBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4C31F14EE3D00E2E268 /* LSLightBorderButton.swift */; };
 		52ECB4D81F14EF0C00E2E268 /* LSSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4C41F14EE3D00E2E268 /* LSSectionHeaderView.swift */; };
@@ -43,7 +42,6 @@
 		52ECB4BB1F14EE3D00E2E268 /* LSAccumulateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAccumulateManager.swift; sourceTree = "<group>"; };
 		52ECB4BD1F14EE3D00E2E268 /* LSUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSUtils.swift; sourceTree = "<group>"; };
 		52ECB4BF1F14EE3D00E2E268 /* LSSwiftBasicLearning.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LSSwiftBasicLearning.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		52ECB4C11F14EE3D00E2E268 /* LSBorderLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBorderLineView.swift; sourceTree = "<group>"; };
 		52ECB4C21F14EE3D00E2E268 /* LSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSButton.swift; sourceTree = "<group>"; };
 		52ECB4C31F14EE3D00E2E268 /* LSLightBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSLightBorderButton.swift; sourceTree = "<group>"; };
 		52ECB4C41F14EE3D00E2E268 /* LSSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSSectionHeaderView.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		52ECB4C01F14EE3D00E2E268 /* LSView */ = {
 			isa = PBXGroup;
 			children = (
-				52ECB4C11F14EE3D00E2E268 /* LSBorderLineView.swift */,
 				52ECB4C21F14EE3D00E2E268 /* LSButton.swift */,
 				52ECB4C31F14EE3D00E2E268 /* LSLightBorderButton.swift */,
 				52ECB4C41F14EE3D00E2E268 /* LSSectionHeaderView.swift */,
@@ -402,7 +399,6 @@
 				52ECB4D11F14EEF700E2E268 /* UIView+LSAutoLayout.swift in Sources */,
 				9C23110E1E62C4E400629270 /* LSFlyingView.swift in Sources */,
 				52ECB4DB1F14EF1300E2E268 /* LSBasicViewController.swift in Sources */,
-				52ECB4D51F14EF0C00E2E268 /* LSBorderLineView.swift in Sources */,
 				52ECB4DC1F14EF1300E2E268 /* LSDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

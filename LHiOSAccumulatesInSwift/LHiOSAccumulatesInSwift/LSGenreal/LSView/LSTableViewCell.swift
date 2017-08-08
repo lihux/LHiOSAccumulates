@@ -14,8 +14,8 @@ class LSTableViewCell: UITableViewCell {
     @IBOutlet var headImageView:UIImageView!
     func configCell(accumulate: LSAccumulate) {
         self.titleLabel.text = accumulate.title
-//        self.contentLabel.text = accumulate.content
     }
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
