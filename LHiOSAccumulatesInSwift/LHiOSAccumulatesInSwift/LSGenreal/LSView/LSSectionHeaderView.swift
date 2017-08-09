@@ -9,13 +9,8 @@
 import UIKit
 
 class LSSectionHeaderView: UIView {
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    static func sectionHeaderView(title: String, leftText:String?, rightText:String? ) -> LSSectionHeaderView {
+        let view = Bundle.main.loadNibNamed("LSSectionHeaderView", owner: nil, options: nil)!.first
+        return view as! LSSectionHeaderView
     }
-    */
-
 }

@@ -14,6 +14,7 @@ class LSTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "lihux"
         self.accumulatesManager = LSAccumulateManager(plistFileName: self.plistFileName()!)
     }
 
@@ -39,6 +40,14 @@ class LSTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.tableViewCellResueIdentifier(), for: indexPath) as! LSTableViewCell
         cell.configCell(accumulate: self.accumulatesManager.accumulates[indexPath.row])
                 return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return LSSectionHeaderView.sectionHeaderView(title: self.title!, leftText: self.leftNavigatorItemText(), rightText: self.rightNavigatorItemText())
     }
 
     // MARK: - 子类需继承
