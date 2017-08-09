@@ -11,17 +11,19 @@ import UIKit
 class LSTableViewController: UITableViewController {
 
     var accumulatesManager :LSAccumulateManager!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "lihux"
-        self.accumulatesManager = LSAccumulateManager(plistFileName: self.plistFileName()!)
     }
-
-    func plistFileName() -> String? {
-        return nil
+    
+    func configWithTitle(_ title:String?, plistName: String) -> Void {
+        self.title = title
+        self.tableView.separatorStyle = .none
+        let reuseID = self.tableViewCellResueIdentifier()!
+        self.tableView.register(UINib.init(nibName: reuseID, bundle: nil), forCellReuseIdentifier: reuseID)
+        self.accumulatesManager = LSAccumulateManager(plistFileName: plistName)
+        self.tableView.reloadData()
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,8 +40,10 @@ class LSTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.tableViewCellResueIdentifier(), for: indexPath) as! LSTableViewCell
-        cell.configCell(accumulate: self.accumulatesManager.accumulates[indexPath.row])
-                return cell
+        cell.tag = indexPath.row
+        let accumulate = self.accumulatesManager.accumulates[indexPath.row]
+        cell.titleLabel.text = accumulate.title
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -52,7 +56,7 @@ class LSTableViewController: UITableViewController {
 
     // MARK: - 子类需继承
     func tableViewCellResueIdentifier() -> String! {
-        return "LSTableViewCellSmallSize"
+        return "LSTableViewCell"
     }
     
     func leftNavigatorItemText() -> String! {

@@ -26,6 +26,8 @@ class LSHomeViewController: LSBasicViewController {
     var flyingViewIndex = -1
     var firstLaunch = true
     let homeButtonTitles = ["好玩", "好看", "你猜", "设置"]
+    let tabStoryboardNames = ["LSDemo", "LSDocument", "LSSuprise", "LSSetting"]
+    
     var isFlying = false
     var controllerContainerViewZoomingMin:CGFloat {
         get {
@@ -158,9 +160,11 @@ class LSHomeViewController: LSBasicViewController {
             })
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tag = Int(segue.identifier!)!
+        let navigationController = segue.destination as! UINavigationController
+        let vc = navigationController.topViewController as! LSTableViewController
+        vc.configWithTitle(self.homeButtonTitles[tag], plistName: self.tabStoryboardNames[tag])
+    }
 }
