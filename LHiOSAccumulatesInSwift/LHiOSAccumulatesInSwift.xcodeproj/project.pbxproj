@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52ECB4D01F14EEF400E2E268 /* UIColor+LHUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4CF1F14EEC200E2E268 /* UIColor+LHUtilities.swift */; };
+		52ECB4D01F14EEF400E2E268 /* UIColor+LHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4CF1F14EEC200E2E268 /* UIColor+LHHelper.swift */; };
 		52ECB4D11F14EEF700E2E268 /* UIView+LHAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4CE1F14EEC200E2E268 /* UIView+LHAutoLayout.swift */; };
 		52ECB4D21F14EEFF00E2E268 /* LSAccumulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4BA1F14EE3D00E2E268 /* LSAccumulate.swift */; };
 		52ECB4D31F14EEFF00E2E268 /* LSAccumulateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4BB1F14EE3D00E2E268 /* LSAccumulateManager.swift */; };
@@ -51,7 +51,7 @@
 		52ECB4C91F14EE3D00E2E268 /* LSDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDetailTableViewController.swift; sourceTree = "<group>"; };
 		52ECB4CA1F14EE3D00E2E268 /* LSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTableViewController.swift; sourceTree = "<group>"; };
 		52ECB4CE1F14EEC200E2E268 /* UIView+LHAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LHAutoLayout.swift"; sourceTree = "<group>"; };
-		52ECB4CF1F14EEC200E2E268 /* UIColor+LHUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LHUtilities.swift"; sourceTree = "<group>"; };
+		52ECB4CF1F14EEC200E2E268 /* UIColor+LHHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LHHelper.swift"; sourceTree = "<group>"; };
 		9C0C23A11C5468E000185C45 /* LSDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSDemo.storyboard; path = LSDemo/LSDemo.storyboard; sourceTree = "<group>"; };
 		9C0C23A31C54690D00185C45 /* LSDocument.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSDocument.storyboard; path = LSDocument/LSDocument.storyboard; sourceTree = "<group>"; };
 		9C0C23A71C54695400185C45 /* LSSuprise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LSSuprise.storyboard; path = LSSuprise/LSSuprise.storyboard; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		527E90691F3AAA72000070FD /* LHExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				52ECB4CF1F14EEC200E2E268 /* UIColor+LHUtilities.swift */,
+				52ECB4CF1F14EEC200E2E268 /* UIColor+LHHelper.swift */,
 				52ECB4CE1F14EEC200E2E268 /* UIView+LHAutoLayout.swift */,
 			);
 			path = LHExtensions;
@@ -353,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52ECB4D61F14EF0C00E2E268 /* LSButton.swift in Sources */,
-				52ECB4D01F14EEF400E2E268 /* UIColor+LHUtilities.swift in Sources */,
+				52ECB4D01F14EEF400E2E268 /* UIColor+LHHelper.swift in Sources */,
 				9C3734121C3E455D009391CD /* AppDelegate.swift in Sources */,
 				52ECB4D31F14EEFF00E2E268 /* LSAccumulateManager.swift in Sources */,
 				52ECB4DA1F14EF0C00E2E268 /* LSTableViewCell.swift in Sources */,

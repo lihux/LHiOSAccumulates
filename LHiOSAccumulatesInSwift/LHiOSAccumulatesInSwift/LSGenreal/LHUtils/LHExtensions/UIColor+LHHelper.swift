@@ -1,5 +1,5 @@
 //
-//  UIColor+LHUtilities.swift
+//  UIColor+LHHelper.swift
 //  LHiOSAccumulatesInSwift
 //
 //  Created by lihui on 16/1/24.
