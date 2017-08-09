@@ -1,5 +1,5 @@
 //
-//  UIColor+Utilities.swift
+//  UIColor+LHUtilities.swift
 //  LHiOSAccumulatesInSwift
 //
 //  Created by lihui on 16/1/24.
@@ -10,8 +10,7 @@ import Foundation
 
 import UIKit
 
-extension UIColor
-{
+extension UIColor {
     class func colorWith(_ red:Int, green:Int, blue:Int, alpha:CGFloat) -> UIColor {
         return UIColor(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: alpha)
     }

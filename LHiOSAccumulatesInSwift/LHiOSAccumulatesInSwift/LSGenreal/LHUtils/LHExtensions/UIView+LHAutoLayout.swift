@@ -1,5 +1,5 @@
 //
-//  UIView+LSAutoLayout.swift
+//  UIView+LHAutoLayout.swift
 //  LHiOSAccumulatesInSwift
 //
 //  Created by 李辉 on 2017/7/11.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct LSLayoutInfo {
+struct LHLayoutInfo {
     init(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat, width: CGFloat, height: CGFloat) {
         self.top = top
         self.left = left
@@ -32,7 +32,7 @@ extension UIView {
         self.addDefaultConstraintsForSubView(view)
     }
     
-    func addSubView(_ view: UIView, layoutInfo:LSLayoutInfo) -> Void {
+    func addSubView(_ view: UIView, layoutInfo:LHLayoutInfo) -> Void {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         self.layoutView(view, constant: layoutInfo.top, attributeName: .top)
