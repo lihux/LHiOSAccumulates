@@ -17,7 +17,7 @@
 		5238A5E21F3B151C009913A7 /* LSSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5238A5DC1F3B14C4009913A7 /* LSSuprise.storyboard */; };
 		5238A5E31F3B1521009913A7 /* LSDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5238A5D11F3B14C4009913A7 /* LSDemo.plist */; };
 		5238A5E41F3B1521009913A7 /* LSDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5238A5D21F3B14C4009913A7 /* LSDemo.storyboard */; };
-		5238A5E51F3B1521009913A7 /* LSDemo1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5238A5D31F3B14C4009913A7 /* LSDemo1.plist */; };
+		52C6246E1F3C746800CD7045 /* LSCodableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6246D1F3C746800CD7045 /* LSCodableViewController.swift */; };
 		52ECB4D01F14EEF400E2E268 /* UIColor+LHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4CF1F14EEC200E2E268 /* UIColor+LHHelper.swift */; };
 		52ECB4D11F14EEF700E2E268 /* UIView+LHAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4CE1F14EEC200E2E268 /* UIView+LHAutoLayout.swift */; };
 		52ECB4D21F14EEFF00E2E268 /* LSAccumulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4BA1F14EE3D00E2E268 /* LSAccumulate.swift */; };
@@ -43,13 +43,13 @@
 		5238A5B41F3B0AC6009913A7 /* LSTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LSTableViewCell.xib; sourceTree = "<group>"; };
 		5238A5D11F3B14C4009913A7 /* LSDemo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LSDemo.plist; sourceTree = "<group>"; };
 		5238A5D21F3B14C4009913A7 /* LSDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LSDemo.storyboard; sourceTree = "<group>"; };
-		5238A5D31F3B14C4009913A7 /* LSDemo1.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LSDemo1.plist; sourceTree = "<group>"; };
 		5238A5D51F3B14C4009913A7 /* LSDocument.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LSDocument.plist; sourceTree = "<group>"; };
 		5238A5D61F3B14C4009913A7 /* LSDocument.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LSDocument.storyboard; sourceTree = "<group>"; };
 		5238A5D81F3B14C4009913A7 /* LSSetting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LSSetting.plist; sourceTree = "<group>"; };
 		5238A5D91F3B14C4009913A7 /* LSSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LSSetting.storyboard; sourceTree = "<group>"; };
 		5238A5DB1F3B14C4009913A7 /* LSSuprise.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LSSuprise.plist; sourceTree = "<group>"; };
 		5238A5DC1F3B14C4009913A7 /* LSSuprise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LSSuprise.storyboard; sourceTree = "<group>"; };
+		52C6246D1F3C746800CD7045 /* LSCodableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSCodableViewController.swift; sourceTree = "<group>"; };
 		52ECB4BA1F14EE3D00E2E268 /* LSAccumulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAccumulate.swift; sourceTree = "<group>"; };
 		52ECB4BB1F14EE3D00E2E268 /* LSAccumulateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAccumulateManager.swift; sourceTree = "<group>"; };
 		52ECB4BD1F14EE3D00E2E268 /* LSUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSUtils.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			children = (
 				5238A5D11F3B14C4009913A7 /* LSDemo.plist */,
 				5238A5D21F3B14C4009913A7 /* LSDemo.storyboard */,
-				5238A5D31F3B14C4009913A7 /* LSDemo1.plist */,
+				52C6246D1F3C746800CD7045 /* LSCodableViewController.swift */,
 			);
 			path = LSDemo;
 			sourceTree = "<group>";
@@ -343,7 +343,6 @@
 			files = (
 				52ECB4D91F14EF0C00E2E268 /* LSSectionHeaderView.xib in Resources */,
 				5238A5B61F3B0AC6009913A7 /* LSTableViewCell.xib in Resources */,
-				5238A5E51F3B1521009913A7 /* LSDemo1.plist in Resources */,
 				9C37341E1C3E455D009391CD /* LaunchScreen.storyboard in Resources */,
 				5238A5E41F3B1521009913A7 /* LSDemo.storyboard in Resources */,
 				5238A5E11F3B151C009913A7 /* LSSuprise.plist in Resources */,
@@ -365,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C6246E1F3C746800CD7045 /* LSCodableViewController.swift in Sources */,
 				52ECB4D61F14EF0C00E2E268 /* LSButton.swift in Sources */,
 				52ECB4D01F14EEF400E2E268 /* UIColor+LHHelper.swift in Sources */,
 				5238A5B51F3B0AC6009913A7 /* LSTableViewCell.swift in Sources */,

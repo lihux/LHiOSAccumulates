@@ -53,7 +53,16 @@ class LSTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return LSSectionHeaderView.sectionHeaderView(title: self.title!, leftText: self.leftNavigatorItemText(), rightText: self.rightNavigatorItemText())
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("选中了第\(indexPath.row)行")
+        let accumulate = self.accumulatesManager.accumulates[indexPath.row]
+        let viewController = LSUtils.viewControllerForAccumulate(accumulate: accumulate)
+        if let vc = viewController {
+            vc.title = accumulate.title
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     // MARK: - 子类需继承
     func tableViewCellResueIdentifier() -> String! {
         return "LSTableViewCell"
