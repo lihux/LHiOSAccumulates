@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LSCodableViewController: UIViewController {
+class LSCodableViewController: LSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
