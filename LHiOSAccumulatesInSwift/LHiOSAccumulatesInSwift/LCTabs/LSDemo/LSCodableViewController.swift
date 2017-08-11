@@ -8,28 +8,35 @@
 
 import UIKit
 
-class LSCodableViewController: LSViewController {
-
+//9787111453833
+class LSCodableViewController: LSViewController, URLSessionDelegate, URLSessionDataDelegate {
+    var session: URLSession!
+    let isbn = "9787111453833"
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapOnFetchButton(_ sender: Any) {
+        fetchBookInfo(isbn: isbn)
     }
-    */
-
+    func fetchBookInfo(isbn:String) -> Void {
+        session.dataTask(with: URL(string: "https://api.douban.com/v2/book/isbn/\(isbn)")!).resume()
+    }
+    
+    // MARK: URLSessionDelegate
+    func urlSession(_ session: URLSession, didBecomeInvalidWithError error: Error?) {
+        print(error!.localizedDescription)
+    }
+    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        print(challenge)
+        if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
+            let credential = URLCredential(trust:challenge.protectionSpace.serverTrust!)
+            completionHandler(.useCredential, credential)
+        }
+    }
+    
+    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
+        print(data)
+    }
 }

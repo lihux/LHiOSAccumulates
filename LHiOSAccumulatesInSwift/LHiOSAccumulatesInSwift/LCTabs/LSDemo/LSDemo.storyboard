@@ -159,7 +159,24 @@
                     <view key="view" contentMode="scaleToFill" id="pFA-6M-Bji">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqy-jn-J32">
+                                <rect key="frame" x="112.5" y="311.5" width="150" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BSZ-HF-1j3"/>
+                                    <constraint firstAttribute="width" constant="150" id="Z6f-3f-dPH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapOnFetchButton:" destination="O3h-3Q-wUj" eventType="touchUpInside" id="ljN-bL-HZa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nqy-jn-J32" firstAttribute="centerX" secondItem="pFA-6M-Bji" secondAttribute="centerX" id="Lhk-gn-9wj"/>
+                            <constraint firstItem="Nqy-jn-J32" firstAttribute="centerY" secondItem="pFA-6M-Bji" secondAttribute="centerY" id="jhE-1h-14x"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZa-tZ-S8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
