@@ -47,3 +47,4 @@ llvm-gcc -O0/O1 -S -o 217_store_prod_O0/1.s 217_store_prod.c GCC实现128位整�
 llvm-gcc -O0/O1 -S -o 217_store_prod_O0/1.s 217_store_prod.c GCC实现128位整形的乘法细节:入参改为long类型 @ 2017年 8月 4日 星期五 06时39分02秒 CST
 llvm-gcc -O0/O1 -S -o 344_call_f_O0/1.s 344_call_f.c 第五章程序优化：对于多次调用函数未使用内联时候的优化情况 @ 2017年 8月12日 星期六 06时54分02秒 CST
 可见无论如何优化，都会调用四次f方法
+llvm-gcc -O0/O1 -S -o 344_inline_call_f_O0/1.s 344_inline_call_f.c 对被调用方法f()使用inline标识，明确告知编译器，这个时候编译器就能够将其优化为直接的四行代码（此时func1依然没法直接优化为func2的形式）,另外，由于内联，f()处就无法断点了，这一点需要引起注意 @ 2017年 8月12日 星期六 07时01分57秒 CST
