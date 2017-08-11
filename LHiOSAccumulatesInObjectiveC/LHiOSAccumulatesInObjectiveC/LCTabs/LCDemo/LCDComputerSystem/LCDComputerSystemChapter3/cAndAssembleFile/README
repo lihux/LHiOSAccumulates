@@ -46,3 +46,4 @@ llvm-gcc -O0/O1 -S -o 214_find_range_O0/1.s 214_find_range.c 探索浮点数的�
 llvm-gcc -O0/O1 -S -o 217_store_prod_O0/1.s 217_store_prod.c GCC实现128位整形的乘法细节 @ 2017年 8月 4日 星期五 06时38分00秒 CST
 llvm-gcc -O0/O1 -S -o 217_store_prod_O0/1.s 217_store_prod.c GCC实现128位整形的乘法细节:入参改为long类型 @ 2017年 8月 4日 星期五 06时39分02秒 CST
 llvm-gcc -O0/O1 -S -o 344_call_f_O0/1.s 344_call_f.c 第五章程序优化：对于多次调用函数未使用内联时候的优化情况 @ 2017年 8月12日 星期六 06时54分02秒 CST
+可见无论如何优化，都会调用四次f方法
