@@ -12,6 +12,6 @@ long func2() {
 }
 
 long counter  = 0;
-inline long f() {
+long f() {
     return counter ++;
 }
