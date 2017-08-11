@@ -42,26 +42,6 @@ Ltmp5:
 	retq
 	.cfi_endproc
 
-	.globl	_f
-	.p2align	4, 0x90
-_f:                                     ## @f
-	.cfi_startproc
-## BB#0:
-	pushq	%rbp
-Ltmp6:
-	.cfi_def_cfa_offset 16
-Ltmp7:
-	.cfi_offset %rbp, -16
-	movq	%rsp, %rbp
-Ltmp8:
-	.cfi_def_cfa_register %rbp
-	movq	_counter(%rip), %rax
-	leaq	1(%rax), %rcx
-	movq	%rcx, _counter(%rip)
-	popq	%rbp
-	retq
-	.cfi_endproc
-
 	.globl	_counter                ## @counter
 .zerofill __DATA,__common,_counter,8,3
 
