@@ -17,6 +17,7 @@ class LSSectionHeaderView: UIView {
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     weak var delegate: LSSectionHeaderViewDelegate?
+    
     static func sectionHeaderView(delegate:LSSectionHeaderViewDelegate, title: String?, leftText:String?, rightText:String? ) -> LSSectionHeaderView {
         let view = Bundle.main.loadNibNamed("LSSectionHeaderView", owner: nil, options: nil)!.first as! LSSectionHeaderView
         view.delegate = delegate
@@ -30,5 +31,9 @@ class LSSectionHeaderView: UIView {
             view.rightButton.titleLabel?.text = temp
         }
         return view
+    }
+    
+    @IBAction func didTapOnLeftButton(_ sender: UIButton) {
+        self.delegate?.sectionHeaderView(self, tappedOnLeftButton: sender)
     }
 }

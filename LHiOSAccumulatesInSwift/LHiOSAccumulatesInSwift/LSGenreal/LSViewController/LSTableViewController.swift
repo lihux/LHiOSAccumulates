@@ -57,7 +57,6 @@ class LSTableViewController: UITableViewController, LSSectionHeaderViewDelegate 
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("选中了第\(indexPath.row)行")
         let accumulate = self.accumulatesManager.accumulates[indexPath.row]
         let viewController = LSUtils.viewControllerForAccumulate(accumulate: accumulate)
         if let vc = viewController {

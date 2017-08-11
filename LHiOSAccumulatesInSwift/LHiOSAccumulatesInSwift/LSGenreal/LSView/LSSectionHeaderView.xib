@@ -21,6 +21,9 @@
                         <constraint firstAttribute="width" constant="70" id="6mD-Pt-JTa"/>
                     </constraints>
                     <state key="normal" image="LS_go_back_icon"/>
+                    <connections>
+                        <action selector="didTapOnLeftButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="sDL-mz-F6r"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6p-UM-9w9">
                     <rect key="frame" x="305" y="0.0" width="70" height="44"/>
