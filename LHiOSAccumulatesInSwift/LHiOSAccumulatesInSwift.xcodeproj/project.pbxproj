@@ -17,6 +17,7 @@
 		5238A5E21F3B151C009913A7 /* LSSuprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5238A5DC1F3B14C4009913A7 /* LSSuprise.storyboard */; };
 		5238A5E31F3B1521009913A7 /* LSDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5238A5D11F3B14C4009913A7 /* LSDemo.plist */; };
 		5238A5E41F3B1521009913A7 /* LSDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5238A5D21F3B14C4009913A7 /* LSDemo.storyboard */; };
+		527D4F741F3DBA58005C3285 /* LSBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D4F731F3DBA58005C3285 /* LSBook.swift */; };
 		52C6246E1F3C746800CD7045 /* LSCodableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6246D1F3C746800CD7045 /* LSCodableViewController.swift */; };
 		52C624701F3C757500CD7045 /* LSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6246F1F3C757500CD7045 /* LSViewController.swift */; };
 		52ECB4D01F14EEF400E2E268 /* UIColor+LHHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECB4CF1F14EEC200E2E268 /* UIColor+LHHelper.swift */; };
@@ -50,6 +51,7 @@
 		5238A5D91F3B14C4009913A7 /* LSSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LSSetting.storyboard; sourceTree = "<group>"; };
 		5238A5DB1F3B14C4009913A7 /* LSSuprise.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LSSuprise.plist; sourceTree = "<group>"; };
 		5238A5DC1F3B14C4009913A7 /* LSSuprise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LSSuprise.storyboard; sourceTree = "<group>"; };
+		527D4F731F3DBA58005C3285 /* LSBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBook.swift; sourceTree = "<group>"; };
 		52C6246D1F3C746800CD7045 /* LSCodableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSCodableViewController.swift; sourceTree = "<group>"; };
 		52C6246F1F3C757500CD7045 /* LSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSViewController.swift; sourceTree = "<group>"; };
 		52ECB4BA1F14EE3D00E2E268 /* LSAccumulate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAccumulate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				5238A5D11F3B14C4009913A7 /* LSDemo.plist */,
 				5238A5D21F3B14C4009913A7 /* LSDemo.storyboard */,
 				52C6246D1F3C746800CD7045 /* LSCodableViewController.swift */,
+				527D4F731F3DBA58005C3285 /* LSBook.swift */,
 			);
 			path = LSDemo;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				9C2311091E62B0C500629270 /* LSHomeViewController.swift in Sources */,
 				52ECB4D81F14EF0C00E2E268 /* LSSectionHeaderView.swift in Sources */,
 				52ECB4D21F14EEFF00E2E268 /* LSAccumulate.swift in Sources */,
+				527D4F741F3DBA58005C3285 /* LSBook.swift in Sources */,
 				52ECB4D11F14EEF700E2E268 /* UIView+LHAutoLayout.swift in Sources */,
 				9C23110E1E62C4E400629270 /* LSFlyingView.swift in Sources */,
 				52ECB4DB1F14EF1300E2E268 /* LSBasicViewController.swift in Sources */,
