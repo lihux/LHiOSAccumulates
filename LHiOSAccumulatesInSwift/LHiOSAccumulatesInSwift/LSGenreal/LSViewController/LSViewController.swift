@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LSViewController: UIViewController {
+class LSViewController: UIViewController, LSSectionHeaderViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +16,13 @@ class LSViewController: UIViewController {
     }
     
     func customLCViewControllerBaseUI() -> Void {
-        let headerView = LSSectionHeaderView.sectionHeaderView(title: self.title, leftText: self.leftItemText(), rightText: self.rightItemText())
+        let headerView = LSSectionHeaderView.sectionHeaderView(delegate: self, title: self.title, leftText: self.leftItemText(), rightText: self.rightItemText())
         self.view.addSubView(headerView, layoutInfo: LHLayoutInfo.init(top: 0, left: 0, bottom: LHLayoutInfo.layoutNone, right: 0, width: LHLayoutInfo.layoutNone, height: 44))
+    }
+    
+    //MARK: LSSectionHeaderViewDelegate
+    func sectionHeaderView(_ sectionHeaderView: LSSectionHeaderView, tappedOnLeftButton leftButton: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     //MARK: 子类按需继承
     func rightItemText() -> String! {

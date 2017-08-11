@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol LSSectionHeaderViewDelegate: class {
+    func sectionHeaderView(_ sectionHeaderView:LSSectionHeaderView, tappedOnLeftButton leftButton:UIButton) -> Void;
+}
+
 class LSSectionHeaderView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
-    static func sectionHeaderView(title: String?, leftText:String?, rightText:String? ) -> LSSectionHeaderView {
+    weak var delegate: LSSectionHeaderViewDelegate?
+    static func sectionHeaderView(delegate:LSSectionHeaderViewDelegate, title: String?, leftText:String?, rightText:String? ) -> LSSectionHeaderView {
         let view = Bundle.main.loadNibNamed("LSSectionHeaderView", owner: nil, options: nil)!.first as! LSSectionHeaderView
+        view.delegate = delegate
         if let temp = title {
             view.titleLabel.text = temp;
         }

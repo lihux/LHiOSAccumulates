@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LSTableViewController: UITableViewController {
+class LSTableViewController: UITableViewController, LSSectionHeaderViewDelegate {
 
     var accumulatesManager :LSAccumulateManager!
     override func viewDidLoad() {
@@ -51,7 +51,9 @@ class LSTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return LSSectionHeaderView.sectionHeaderView(title: self.title!, leftText: self.leftNavigatorItemText(), rightText: self.rightNavigatorItemText())
+        let leftText = self.leftNavigatorItemText()
+        let rightText = self.rightNavigatorItemText()
+        return LSSectionHeaderView.sectionHeaderView(delegate: self, title: self.title!, leftText: leftText, rightText: rightText)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -63,7 +65,12 @@ class LSTableViewController: UITableViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    // MARK: - 子类需继承
+    
+    // MARK: LSSectionHeaderViewDelegate
+    func sectionHeaderView(_ sectionHeaderView: LSSectionHeaderView, tappedOnLeftButton leftButton: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    // MARK: 子类需继承
     func tableViewCellResueIdentifier() -> String! {
         return "LSTableViewCell"
     }
@@ -74,5 +81,5 @@ class LSTableViewController: UITableViewController {
     func rightNavigatorItemText() -> String! {
         return ""
     }
-    
+
 }
