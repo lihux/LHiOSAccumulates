@@ -13,4 +13,10 @@ struct LSBook: Codable {
     let title: String
     let price: String
     let image: String
+    struct Image: Codable {
+        let small: String
+        let large: String
+        let medium: String
+    }
+    let images: Image
 }
