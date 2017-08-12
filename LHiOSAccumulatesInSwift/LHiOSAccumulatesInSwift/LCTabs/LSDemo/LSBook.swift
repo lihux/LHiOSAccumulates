@@ -10,7 +10,7 @@ import Foundation
 
 struct LSBook: Codable {
     let rating: Rating
-    let subtitle: String
+    let subTitle: String
     let publisher: String
     let title: String
     let price: String
@@ -34,5 +34,13 @@ extension LSBook {
 }
 
 extension LSBook {
-    
+    enum CodingKeys: String, CodingKey {
+        case rating
+        case subTitle = "subtitle"
+        case publisher
+        case title
+        case price
+        case image
+        case images
+    }
 }
