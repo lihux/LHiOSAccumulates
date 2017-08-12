@@ -172,6 +172,17 @@
                                     <action selector="didTapOnFetchButton:" destination="O3h-3Q-wUj" eventType="touchUpInside" id="ljN-bL-HZa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nn-YK-dci">
+                                <rect key="frame" x="112" y="60" width="150" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qgZ-V7-b00"/>
+                                    <constraint firstAttribute="width" constant="150" id="qgp-yt-eio"/>
+                                </constraints>
+                                <state key="normal" title="去扫描书籍"/>
+                                <connections>
+                                    <segue destination="kdh-Ck-V3k" kind="show" id="blb-yc-TXG"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-6r-LO2">
                                 <rect key="frame" x="31" y="194" width="313" height="463"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -183,9 +194,11 @@
                         <constraints>
                             <constraint firstItem="Nqy-jn-J32" firstAttribute="top" secondItem="j6F-U6-1pl" secondAttribute="bottom" constant="100" id="1GD-88-fff"/>
                             <constraint firstItem="RcF-6r-LO2" firstAttribute="leading" secondItem="pFA-6M-Bji" secondAttribute="leadingMargin" constant="15" id="3dD-Lt-zIC"/>
+                            <constraint firstItem="1nn-YK-dci" firstAttribute="centerX" secondItem="pFA-6M-Bji" secondAttribute="centerX" id="3hl-7K-gq8"/>
                             <constraint firstItem="Nqy-jn-J32" firstAttribute="centerX" secondItem="pFA-6M-Bji" secondAttribute="centerX" id="Lhk-gn-9wj"/>
                             <constraint firstItem="RcF-6r-LO2" firstAttribute="top" secondItem="Nqy-jn-J32" secondAttribute="bottom" constant="30" id="R1V-WE-Ow6"/>
                             <constraint firstItem="LMW-c1-eoD" firstAttribute="top" secondItem="RcF-6r-LO2" secondAttribute="bottom" constant="10" id="epL-0c-Kbi"/>
+                            <constraint firstItem="Nqy-jn-J32" firstAttribute="top" secondItem="1nn-YK-dci" secondAttribute="bottom" constant="16" id="hRc-jE-Tbn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RcF-6r-LO2" secondAttribute="trailing" constant="15" id="vid-Uh-doq"/>
                         </constraints>
                     </view>
@@ -196,6 +209,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZa-tZ-S8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1874" y="-394"/>
+        </scene>
+        <!--Book Scan View Controller-->
+        <scene sceneID="b5f-5S-PYx">
+            <objects>
+                <viewController storyboardIdentifier="LSBookScanViewController" id="kdh-Ck-V3k" customClass="LSBookScanViewController" customModule="LHiOSAccumulatesInSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WJ7-mb-Kw1"/>
+                        <viewControllerLayoutGuide type="bottom" id="IuU-zf-4dk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="640-aM-E8e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZq-sw-cjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502" y="-397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A89-Z2-eua">
