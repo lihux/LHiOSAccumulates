@@ -16,8 +16,42 @@ struct LSBook: Codable {
     let price: String
     let image: String
     let images: Image
+    let authors: [String]
+    let publishDate: String
+    let tags: [Tag]
+    let originTitle: String
+    let binding: String
+    let translator: [String]
+    let catalog: String
+    let pages: String
+    let isbn: String
+    let authorIntroduction: String
+    let summary: String
 }
 
+// MARK: CodingKey
+extension LSBook {
+    enum CodingKeys: String, CodingKey {
+        case rating
+        case subTitle = "subtitle"
+        case publisher
+        case title
+        case price
+        case image
+        case images
+        case authors = "author"
+        case publishDate = "pubdate"
+        case tags
+        case originTitle = "origin_title"
+        case binding
+        case translator
+        case catalog
+        case pages
+        case isbn = "isbn13"
+        case authorIntroduction = "author_intro"
+        case summary
+    }
+}
 // MARK: Inner Struct Defines
 extension LSBook {
     struct Rating: Codable {
@@ -31,16 +65,12 @@ extension LSBook {
         let large: String
         let medium: String
     }
+    
+    struct Tag: Codable {
+        let count: Int
+        let name: String
+        let title: String
+    }
+    
 }
 
-extension LSBook {
-    enum CodingKeys: String, CodingKey {
-        case rating
-        case subTitle = "subtitle"
-        case publisher
-        case title
-        case price
-        case image
-        case images
-    }
-}
