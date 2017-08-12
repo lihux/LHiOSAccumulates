@@ -9,5 +9,8 @@
 import Foundation
 
 struct LSBook: Codable {
-    //
+    let publisher: String
+    let title: String
+    let price: String
+    let image: String
 }

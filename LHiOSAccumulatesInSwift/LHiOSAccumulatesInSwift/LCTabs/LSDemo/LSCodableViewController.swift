@@ -8,10 +8,10 @@
 
 import UIKit
 
-//9787111453833
 class LSCodableViewController: LSViewController, URLSessionDelegate, URLSessionDataDelegate {
     var session: URLSession!
-    let isbn = "9787111453833"
+    let isbn = "9787511228192"
+//    let isbn = "9787111453833"
     override func viewDidLoad() {
         super.viewDidLoad()
         session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
@@ -38,5 +38,12 @@ class LSCodableViewController: LSViewController, URLSessionDelegate, URLSessionD
     
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         print(data)
+        let jsonDecoder = JSONDecoder()
+        do {
+            let book = try jsonDecoder.decode(LSBook.self, from: data)
+            print(book)
+        } catch let error as NSError {
+            print("\(error.localizedDescription):\n\(error.userInfo)")
+        }
     }
 }
