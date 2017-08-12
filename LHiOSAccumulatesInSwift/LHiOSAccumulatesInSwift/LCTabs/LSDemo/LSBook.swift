@@ -27,6 +27,7 @@ struct LSBook: Codable {
     let isbn: String
     let authorIntroduction: String
     let summary: String
+    var series: Series?
 }
 
 // MARK: CodingKey
@@ -50,6 +51,7 @@ extension LSBook {
         case isbn = "isbn13"
         case authorIntroduction = "author_intro"
         case summary
+        case series
     }
 }
 // MARK: Inner Struct Defines
@@ -72,5 +74,13 @@ extension LSBook {
         let title: String
     }
     
+    struct Series: Codable {
+        let seriesID: String
+        let title: String
+        enum CodingKeys: String, CodingKey {
+            case seriesID = "id"
+            case title
+        }
+    }
 }
 
