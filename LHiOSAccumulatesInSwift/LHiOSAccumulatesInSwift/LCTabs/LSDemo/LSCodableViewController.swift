@@ -12,7 +12,7 @@ class LSCodableViewController: LSViewController, URLSessionDelegate, URLSessionD
     var session: URLSession!
     @IBOutlet weak var textView: UITextView!
     let isbn = "9787511228192"
-//    let isbn = "9787111453833"
+//    let isbn = "9787111453833" 这个数据解析不出来，有问题，稍后看看为什么
     override func viewDidLoad() {
         super.viewDidLoad()
         session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)

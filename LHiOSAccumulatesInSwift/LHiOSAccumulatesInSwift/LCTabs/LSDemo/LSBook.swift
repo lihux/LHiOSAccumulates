@@ -6,6 +6,13 @@
 //  Copyright © 2017年 Lihux. All rights reserved.
 //
 
+/*
+ Codable 使用注意：
+ 1. 如果添加了CodingKeys，那么就必须要将所有的key值都列出来，感觉好费劲；
+ 2. 映射的时候要保证所有的子结构体都要有遵从Codable协议；
+ 3. 可以嵌套无缝定义完美贴合json返回值的子、孙结构体，但条件是子孙结构体都要遵循规则1和2
+ */
+
 import Foundation
 
 struct LSBook: Codable {
