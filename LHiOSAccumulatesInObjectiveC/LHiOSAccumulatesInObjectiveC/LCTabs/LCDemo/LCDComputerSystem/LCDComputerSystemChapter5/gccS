@@ -1,0 +1,35 @@
+#!/bin/bash
+echo "这是一个便利脚本用来编译生成未优化和O1级优化的汇编代码"
+
+if [ $# != 2 ]
+then
+    echo "参数必须要包含文件名和当前文件的描述"
+    echo
+    echo "比如：./ecc hello.c 这是一个测试hello的小程序"
+    exit 1
+fi
+original=$1
+file="${original%.*}"
+echo '要编译的c源码是:'
+echo $original
+
+echo "==========第1步：编译======="
+echo "========首先生成未优化的汇编源码（以后缀_O0）标识："
+llvm-gcc -O0 -S -o "${file}_O0.s" $original
+llvm-gcc -O1 -S -o "${file}_O1.s" $original
+llvm-gcc -O2 -S -o "${file}_O1.s" $original
+llvm-gcc -O3 -S -o "${file}_O1.s" $original
+
+compileCount=`ls -l | grep $file | wc -l`
+
+if [ $compileCount -eq 3 ]
+then
+    command="llvm-gcc -O0/1/2/3 -S -o ${file}_O0/1/2/3.s $original"
+    echo "编译完成，现在开始记录文档README @ $compileCount"
+    desc="${command} $2"
+    echo "==========第2步：添加README======="
+    ./eco "$desc"
+    echo $desc
+    echo "==========第3步：推送到远端========"
+    benz "<OC>$desc"
+fi
