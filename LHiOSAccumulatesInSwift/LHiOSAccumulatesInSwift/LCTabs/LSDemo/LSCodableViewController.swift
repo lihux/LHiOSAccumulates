@@ -10,6 +10,7 @@ import UIKit
 
 class LSCodableViewController: LSViewController, URLSessionDelegate, URLSessionDataDelegate {
     var session: URLSession!
+    @IBOutlet weak var textView: UITextView!
     let isbn = "9787511228192"
 //    let isbn = "9787111453833"
     override func viewDidLoad() {
@@ -42,6 +43,14 @@ class LSCodableViewController: LSViewController, URLSessionDelegate, URLSessionD
         do {
             let book = try jsonDecoder.decode(LSBook.self, from: data)
             print(book)
+            if Thread.isMainThread {
+                print("在主线程执行，更新UI:")
+                self.textView.text = "\(book)"
+            } else {
+                DispatchQueue.main.async {
+                    self.textView.text = "\(book)"
+                }
+            }
         } catch let error as NSError {
             print("\(error.localizedDescription):\n\(error.userInfo)")
         }
