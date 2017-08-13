@@ -1,0 +1,42 @@
+#!/bin/bash
+echo "这是一个便利脚本用来编译生成O0/1/2/3优化级别的可执行代码，以探查性能优化"
+
+if [ $# != 2 ]
+then
+    echo "参数必须要包含文件名和当前文件的描述"
+    echo
+    echo "比如：./ecc combine1.c 这是一个测试hello的小程序"
+    exit 1
+fi
+original=$1
+main="main.c"
+
+file="${original%.*}"
+echo '要编译的c源码是:'
+echo $original
+
+echo "==========第1步：编译${original}成汇编代码，以便查看编译器的优化情况======="
+llvm-gcc -O0 -S -o "${file}_O0.s" $original
+llvm-gcc -O1 -S -o "${file}_O1.s" $original
+llvm-gcc -O2 -S -o "${file}_O2.s" $original
+llvm-gcc -O3 -S -o "${file}_O3.s" $original
+
+    echo "==========第2步：编译main 和 ${original}成可执行代码查看实际运行实现======="
+    llvm-gcc -O0 -o "${file}_O0" $original $main
+    llvm-gcc -O1 -o "${file}_O1" $original $main
+    llvm-gcc -O2 -o "${file}_O2" $original $main
+    llvm-gcc -O3 -o "${file}_O3" $original $main
+
+compileCount=`ls -l | grep $file | wc -l`
+
+if [ $compileCount -eq 9 ]
+then
+    command="llvm-gcc -O0/1/2/3 -S -o ${file}_O0/1/2/3.s $original"
+    echo "编译完成，现在开始记录文档README @ $compileCount"
+    desc="${command} $2"
+    echo "==========第2步：添加README======="
+    ./eco "$desc"
+    echo $desc
+    echo "==========第4步：推送到远端========"
+    benz "<OC>$desc"
+fi

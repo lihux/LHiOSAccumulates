@@ -1,0 +1,1 @@
+llvm-gcc -O3 -o main main.c | ./main 尝试使用clock()统计执行时间
