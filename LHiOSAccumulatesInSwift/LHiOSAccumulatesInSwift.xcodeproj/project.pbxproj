@@ -39,6 +39,7 @@
 		9C37341B1C3E455D009391CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341A1C3E455D009391CD /* Assets.xcassets */; };
 		9C37341E1C3E455D009391CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C37341C1C3E455D009391CD /* LaunchScreen.storyboard */; };
 		9C81C63A1F3F3D8A00B5A443 /* LSBookScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C81C6391F3F3D8A00B5A443 /* LSBookScanViewController.swift */; };
+		9C81C63C1F3FE84B00B5A443 /* LSGeneralDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C81C63B1F3FE84B00B5A443 /* LSGeneralDefines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		9C3734331C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHiOSAccumulatesInSwiftUITests.swift; sourceTree = "<group>"; };
 		9C3734351C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C81C6391F3F3D8A00B5A443 /* LSBookScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBookScanViewController.swift; sourceTree = "<group>"; };
+		9C81C63B1F3FE84B00B5A443 /* LSGeneralDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSGeneralDefines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				52C6246D1F3C746800CD7045 /* LSCodableViewController.swift */,
 				9C81C6391F3F3D8A00B5A443 /* LSBookScanViewController.swift */,
 				527D4F731F3DBA58005C3285 /* LSBook.swift */,
+				9C81C63B1F3FE84B00B5A443 /* LSGeneralDefines.swift */,
 			);
 			path = LSDemo;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				9C81C63A1F3F3D8A00B5A443 /* LSBookScanViewController.swift in Sources */,
 				527D4F741F3DBA58005C3285 /* LSBook.swift in Sources */,
 				52ECB4D11F14EEF700E2E268 /* UIView+LHAutoLayout.swift in Sources */,
+				9C81C63C1F3FE84B00B5A443 /* LSGeneralDefines.swift in Sources */,
 				9C23110E1E62C4E400629270 /* LSFlyingView.swift in Sources */,
 				52ECB4DB1F14EF1300E2E268 /* LSBasicViewController.swift in Sources */,
 				52ECB4DC1F14EF1300E2E268 /* LSDetailTableViewController.swift in Sources */,

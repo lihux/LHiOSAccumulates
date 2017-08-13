@@ -14,7 +14,11 @@ class LSBookScanViewController: LSViewController, AVCaptureMetadataOutputObjects
     var session: AVCaptureSession?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.startScan()
+        if DEVICE_IS_SIMULATOR {
+            //TODO:直接返回
+        } else {
+            self.startScan()
+        }
     }
     
     func startScan() -> Void {
