@@ -4,7 +4,7 @@
 
 #include <stdlib.h>
 
-//Create vector of specified length
+//新建一个长度为len的向量集合
 vec_ptr new_vec(long len) {
     vec_ptr result = (vec_ptr)malloc(sizeof(vec_rec));
     data_t *data = NULL;
@@ -20,4 +20,18 @@ vec_ptr new_vec(long len) {
     }
     result->data = data;
     return result;
+}
+
+//获取一个vector element,存入dest
+int get_vec_element(vec_ptr v, long index, data_t *dest) {
+    if (index < 0 || index >= v->len) {
+        return 0;
+    }
+    *dest = v->data[index];
+    return 1;
+}
+
+//返回向量长度
+long vec_length(vec_ptr v) {
+    return v->len;
 }
