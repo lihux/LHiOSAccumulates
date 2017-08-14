@@ -15,7 +15,7 @@ class LSBookScanViewController: LSViewController, AVCaptureMetadataOutputObjects
     override func viewDidLoad() {
         super.viewDidLoad()
         if DEVICE_IS_SIMULATOR {
-            //TODO:直接返回
+            //TODO:直接返回，甩出去一个常量值即可
         } else {
             self.startScan()
         }
