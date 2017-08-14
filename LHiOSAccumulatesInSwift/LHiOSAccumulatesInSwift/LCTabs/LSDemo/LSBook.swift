@@ -61,6 +61,7 @@ extension LSBook {
         case series
     }
 }
+
 // MARK: Inner Struct Defines
 extension LSBook {
     struct Rating: Codable {
