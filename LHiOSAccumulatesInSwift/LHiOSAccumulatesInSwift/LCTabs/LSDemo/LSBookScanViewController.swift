@@ -12,6 +12,7 @@ import AVFoundation
 class LSBookScanViewController: LSViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     var session: AVCaptureSession?
+    var completionBlock: ((String) ->() )?
     override func viewDidLoad() {
         super.viewDidLoad()
         if DEVICE_IS_SIMULATOR {
@@ -46,7 +47,11 @@ class LSBookScanViewController: LSViewController, AVCaptureMetadataOutputObjects
         if metadataObjects.count > 0 {
             session!.stopRunning()
             let metaDataObject = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
-            print("扫描成功，条形码信息为：\(metaDataObject.stringValue!)")
+            let isbn = metaDataObject.stringValue!
+            print("扫描成功，条形码信息为：\(isbn)")
+            if let block = completionBlock {
+                block(isbn)
+            }
         }
     }
     

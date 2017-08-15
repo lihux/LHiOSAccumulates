@@ -55,4 +55,12 @@ class LSCodableViewController: LSViewController, URLSessionDelegate, URLSessionD
             print("\(error.localizedDescription):\n\(error.userInfo)")
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? LSBookScanViewController {
+            vc.completionBlock = { result in
+                self.fetchBookInfo(isbn: result)
+            }
+        }
+    }
 }
