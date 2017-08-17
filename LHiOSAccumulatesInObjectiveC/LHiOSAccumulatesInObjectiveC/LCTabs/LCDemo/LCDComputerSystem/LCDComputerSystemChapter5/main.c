@@ -3,7 +3,7 @@
 
 #include "combine1.h"
 
-static const long kLENGTH = 12345;
+static const long kLENGTH = 1234;
 
 void calculate();
 
