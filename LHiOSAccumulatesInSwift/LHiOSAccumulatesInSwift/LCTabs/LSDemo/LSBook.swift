@@ -17,23 +17,23 @@ import Foundation
 
 struct LSBook: Codable {
     let rating: Rating
-    let subTitle: String
-    let publisher: String
+    var subTitle: String?
+    var publisher: String?
     let title: String
     let price: String
     let image: String
     let images: Image
     let authors: [String]
     let publishDate: String
-    let tags: [Tag]
-    let originTitle: String
-    let binding: String
+    var tags: [Tag]?
+    var originTitle: String?
+    var binding: String?
     let translator: [String]
-    let catalog: String
+    var catalog: String?
     let pages: String
     let isbn: String
-    let authorIntroduction: String
-    let summary: String
+    var authorIntroduction: String?
+    var summary: String?
     var series: Series?
 }
 
