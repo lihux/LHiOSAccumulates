@@ -1,7 +1,6 @@
 #include <time.h>
 #include <stdio.h>
 
-#include "vec.h"
 #include "combine1.h"
 
 static const long kLENGTH = 1234;
@@ -22,5 +21,5 @@ void calculate() {
     vec_ptr vector = new_vec(kLENGTH);
     data_t dest;
     combine1(vector, &dest);
-    printf("%lf", dest);
+    printf("%ld", dest);
 }

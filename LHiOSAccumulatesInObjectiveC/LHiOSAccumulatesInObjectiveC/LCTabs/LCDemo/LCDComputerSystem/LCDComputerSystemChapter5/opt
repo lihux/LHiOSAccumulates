@@ -10,7 +10,7 @@ then
 fi
 original=$1
 main="main.c"
-
+vec="vec.c"
 file="${original%.*}"
 echo '要编译的c源码是:'
 echo $original
@@ -22,14 +22,14 @@ llvm-gcc -O2 -S -o "${file}_O2.s" $original
 llvm-gcc -O3 -S -o "${file}_O3.s" $original
 
     echo "==========第2步：编译main 和 ${original}成可执行代码查看实际运行实现======="
-    llvm-gcc -O0 -o "${file}_O0" $original $main
-    llvm-gcc -O1 -o "${file}_O1" $original $main
-    llvm-gcc -O2 -o "${file}_O2" $original $main
-    llvm-gcc -O3 -o "${file}_O3" $original $main
+    llvm-gcc -O0 -o "${file}_O0" $original $main $vec
+    llvm-gcc -O1 -o "${file}_O1" $original $main $vec
+    llvm-gcc -O2 -o "${file}_O2" $original $main $vec
+    llvm-gcc -O3 -o "${file}_O3" $original $main $vec
 
 compileCount=`ls -l | grep $file | wc -l`
 
-if [ $compileCount -eq 9 ]
+if [ $compileCount -eq 10 ]
 then
     command="llvm-gcc -O0/1/2/3 -S -o ${file}_O0/1/2/3.s $original"
     echo "编译完成，现在开始记录文档README @ $compileCount"
@@ -39,4 +39,5 @@ then
     echo $desc
     echo "==========第4步：推送到远端========"
     benz "<OC>$desc"
+else echo "编译出现错误，stop!"
 fi

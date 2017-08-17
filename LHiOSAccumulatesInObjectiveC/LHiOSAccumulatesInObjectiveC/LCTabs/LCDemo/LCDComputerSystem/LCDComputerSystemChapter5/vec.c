@@ -3,9 +3,11 @@
 #include "vec.h"
 
 #include <stdlib.h>
+#include <stdio.h>
 
 //新建一个长度为len的向量集合
 vec_ptr new_vec(long len) {
+    static int i = 0;
     vec_ptr result = (vec_ptr)malloc(sizeof(vec_rec));
     data_t *data = NULL;
     if (result == NULL) {
@@ -16,6 +18,10 @@ vec_ptr new_vec(long len) {
         if (!data) {
             free((void *)result);
             return NULL;
+        }
+        for (int j = 0; j < len; j++) {
+            data[j] = i++ % 2;
+            printf("%ld", data[j]);
         }
     }
     result->data = data;

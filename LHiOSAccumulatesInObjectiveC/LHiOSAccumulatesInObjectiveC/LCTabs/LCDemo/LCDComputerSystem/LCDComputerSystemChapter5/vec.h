@@ -4,12 +4,12 @@
 typedef long data_t;
 
 #ifdef CSAPP_CH5_ADD
-    #define INDENT 0
+    #define IDENT 0
     #define OP +
 #else
-    #define INDENT 1
+    #define IDENT 1
     #define OP *
-#fi
+#endif
 
 typedef struct{
     long len;

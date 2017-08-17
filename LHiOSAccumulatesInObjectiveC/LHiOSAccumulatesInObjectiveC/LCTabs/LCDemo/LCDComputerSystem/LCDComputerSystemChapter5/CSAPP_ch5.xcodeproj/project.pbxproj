@@ -10,9 +10,7 @@
 		9C9D715E1F464A2D00380729 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		9C9D715F1F464A2D00380729 /* vec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
 		9C9D71601F464A2D00380729 /* vec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec.c; sourceTree = "<group>"; };
-		9C9D71611F464A2D00380729 /* vec.h.gch */ = {isa = PBXFileReference; lastKnownFileType = file; path = vec.h.gch; sourceTree = "<group>"; };
 		9C9D71621F464A3700380729 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		9C9D71631F464A5300380729 /* gccS */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = gccS; sourceTree = "<group>"; };
 		9C9D71641F464A7700380729 /* eco */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = eco; sourceTree = "<group>"; };
 		9C9D71651F464A9900380729 /* opt */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = opt; sourceTree = "<group>"; };
 		9C9D71661F464C0900380729 /* combine1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = combine1.c; sourceTree = "<group>"; };
@@ -26,13 +24,11 @@
 				9C9D71621F464A3700380729 /* main.c */,
 				9C9D71661F464C0900380729 /* combine1.c */,
 				9C9D71671F464C0900380729 /* combine1.h */,
-				9C9D71631F464A5300380729 /* gccS */,
 				9C9D71651F464A9900380729 /* opt */,
 				9C9D71641F464A7700380729 /* eco */,
 				9C9D715E1F464A2D00380729 /* README */,
 				9C9D71601F464A2D00380729 /* vec.c */,
 				9C9D715F1F464A2D00380729 /* vec.h */,
-				9C9D71611F464A2D00380729 /* vec.h.gch */,
 			);
 			sourceTree = "<group>";
 		};
