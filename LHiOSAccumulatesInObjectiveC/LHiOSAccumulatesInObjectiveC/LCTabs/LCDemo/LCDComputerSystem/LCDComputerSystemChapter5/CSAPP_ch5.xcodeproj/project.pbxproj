@@ -15,6 +15,8 @@
 		9C9D71631F464A5300380729 /* gccS */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = gccS; sourceTree = "<group>"; };
 		9C9D71641F464A7700380729 /* eco */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = eco; sourceTree = "<group>"; };
 		9C9D71651F464A9900380729 /* opt */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = opt; sourceTree = "<group>"; };
+		9C9D71661F464C0900380729 /* combine1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = combine1.c; sourceTree = "<group>"; };
+		9C9D71671F464C0900380729 /* combine1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = combine1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -22,6 +24,8 @@
 			isa = PBXGroup;
 			children = (
 				9C9D71621F464A3700380729 /* main.c */,
+				9C9D71661F464C0900380729 /* combine1.c */,
+				9C9D71671F464C0900380729 /* combine1.h */,
 				9C9D71631F464A5300380729 /* gccS */,
 				9C9D71651F464A9900380729 /* opt */,
 				9C9D71641F464A7700380729 /* eco */,
