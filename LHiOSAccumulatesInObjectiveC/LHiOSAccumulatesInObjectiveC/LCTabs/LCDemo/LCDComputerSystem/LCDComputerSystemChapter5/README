@@ -2,3 +2,4 @@ llvm-gcc -O3 -o main main.c | ./main 尝试使用clock()统计执行时间
 llvm-gcc  main.c vec.c vec.h 编译生成可执行文件a.out
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 测试整体是否好使 @ 2017年 8月18日 星期五 06时45分51秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 修改数组值大小 @ 2017年 8月18日 星期五 06时49分06秒 CST
+llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 优化printf打印信息，生成可执行文件 @ 2017年 8月18日 星期五 06时53分48秒 CST

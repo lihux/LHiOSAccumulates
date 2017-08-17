@@ -20,8 +20,8 @@ vec_ptr new_vec(long len) {
             return NULL;
         }
         for (int j = 0; j < len; j++) {
-            data[j] = i++ % 2;
-            printf("%ld", data[j]);
+            data[j] = (i++ % 2) + 1;
+            printf("%ld ", data[j]);
         }
     }
     result->data = data;
