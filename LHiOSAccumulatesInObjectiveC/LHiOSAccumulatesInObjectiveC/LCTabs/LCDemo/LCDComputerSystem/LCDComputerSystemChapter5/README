@@ -5,3 +5,16 @@ llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 修改数组值大小 @ 
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 优化printf打印信息，生成可执行文件 @ 2017年 8月18日 星期五 06时53分48秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 缩小数组长度 @ 2017年 8月18日 星期五 06时56分05秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 继续优化脚本执行 @ 2017年 8月18日 星期五 06时59分38秒 CST
+
+现在编译出来的combine1_O123运行的时候都有大概率的segment fault即段错误的情况，现在主要解决这个问题：
+1.首先临时打开系统对coredump的大小的限制：
+# ulimit -c unlimited
+2. 运行程序，直到出现段错误，程序crash，生成的文件会在~/cores/core.PID 中，其中PID是当时运行的进程号（process ID），我屮艸芔茻，吓尿了，700多兆，吓得我调试完成之后感赶紧删掉了
+3. 对生成的coredump进行调试，分析：注意，在Mac中`gdb`被替换成了`lldb`,所以就是：
+#lldb combine1_O3 /cores/core.456
+or:
+#lldb test /cores/core.685
+
+参考链接：
+http://blog.csdn.net/cjsycyl/article/details/19198427
+https://support.asperasoft.com/hc/en-us/articles/216128238-How-to-generate-core-dump-files

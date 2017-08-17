@@ -21,19 +21,37 @@ llvm-gcc -O1 -S -o "${file}_O1.s" $original
 llvm-gcc -O2 -S -o "${file}_O2.s" $original
 llvm-gcc -O3 -S -o "${file}_O3.s" $original
 
-    echo "==========第2步：编译main 和 ${original}成可执行代码查看实际运行实现======="
-    llvm-gcc -O0 -o "${file}_O0" $original $main $vec
-    llvm-gcc -O1 -o "${file}_O1" $original $main $vec
-    llvm-gcc -O2 -o "${file}_O2" $original $main $vec
-    llvm-gcc -O3 -o "${file}_O3" $original $main $vec
+echo "==========第2步：编译main 和 ${original}成可执行代码查看实际运行实现======="
+
+result0="${file}_O0"
+result1="${file}_O1"
+result2="${file}_O2"
+result3="${file}_O3"
+
+llvm-gcc -O0 -o "$result0" $original $main $vec
+llvm-gcc -O1 -o "$result1" $original $main $vec
+llvm-gcc -O2 -o "$result2" $original $main $vec
+llvm-gcc -O3 -o "$result3" $original $main $vec
+
+chmod +x $result0
+./$result0
+
+chmod +x $result1
+./$result1
+
+chmod +x $result2
+./$result2
+
+chmod +x $result3
+./$result3
 
 compileCount=`ls -l | grep $file | wc -l`
 
 if [ $compileCount -eq 10 ]
 then
 
-    `./${file}_O0`
-
+    `source ${file}_O0`
+exit 0
     command="llvm-gcc -O0/1/2/3 -S -o ${file}_O0/1/2/3.s $original"
     echo "编译完成，现在开始记录文档README @ $compileCount"
     desc="${command} $2"
