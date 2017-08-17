@@ -3,7 +3,7 @@
 
 #include "combine1.h"
 
-static const long kLENGTH = 1234;
+static const long kLENGTH = 12345;
 
 void calculate();
 
@@ -14,7 +14,7 @@ int main () {
     calculate();
     end = clock();
     cost = end - start;
-    printf("%f", cost);
+    printf("%lf", cost);
 }
 
 void calculate() {
