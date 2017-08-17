@@ -31,6 +31,9 @@ compileCount=`ls -l | grep $file | wc -l`
 
 if [ $compileCount -eq 10 ]
 then
+
+    `./${file}_O0`
+
     command="llvm-gcc -O0/1/2/3 -S -o ${file}_O0/1/2/3.s $original"
     echo "编译完成，现在开始记录文档README @ $compileCount"
     desc="${command} $2"
