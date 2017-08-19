@@ -34,15 +34,19 @@ llvm-gcc -O2 -o "$result2" $original $main $vec
 llvm-gcc -O3 -o "$result3" $original $main $vec
 
 chmod +x $result0
+echo "$result0"
 ./$result0
 
 chmod +x $result1
+echo "$result1"
 ./$result1
 
 chmod +x $result2
+echo "$result2"
 ./$result2
 
 chmod +x $result3
+echo "$result3"
 ./$result3
 
 compileCount=`ls -l | grep $file | wc -l`
@@ -51,7 +55,7 @@ if [ $compileCount -eq 10 ]
 then
 
     `source ${file}_O0`
-exit 0
+#exit 0
     command="llvm-gcc -O0/1/2/3 -S -o ${file}_O0/1/2/3.s $original"
     echo "编译完成，现在开始记录文档README @ $compileCount"
     desc="${command} $2"

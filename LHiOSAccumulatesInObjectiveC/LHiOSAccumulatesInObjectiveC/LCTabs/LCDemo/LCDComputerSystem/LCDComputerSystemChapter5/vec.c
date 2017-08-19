@@ -19,6 +19,7 @@ vec_ptr new_vec(long len) {
             free((void *)result);
             return NULL;
         }
+        result->len = len;
         for (int j = 0; j < len; j++) {
             data[j] = (i++ % 2) + 1;
         }
