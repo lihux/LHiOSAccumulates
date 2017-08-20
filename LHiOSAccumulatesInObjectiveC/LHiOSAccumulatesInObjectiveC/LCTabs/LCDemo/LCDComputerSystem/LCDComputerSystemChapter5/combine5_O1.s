@@ -30,38 +30,38 @@ Ltmp5:
 	movq	%r15, %rdi
 	callq	_get_vec_start
 	cmpq	$2, %rbx
-	jl	LBB0_3
-## BB#1:
+	jl	LBB0_1
+## BB#7:
 	leaq	-1(%rbx), %rdx
-	leaq	8(%rax), %rsi
 	movl	$1, %ecx
-	movq	%rdx, %rdi
+	xorl	%esi, %esi
 	.p2align	4, 0x90
-LBB0_2:                                 ## =>This Inner Loop Header: Depth=1
-	imulq	-8(%rsi), %rcx
-	imulq	(%rsi), %rcx
-	addq	$8, %rsi
-	decq	%rdi
-	jne	LBB0_2
-	jmp	LBB0_5
-LBB0_3:
-	movl	$1, %ecx
-	cmpq	$1, %rbx
-	jne	LBB0_7
-## BB#4:
+LBB0_8:                                 ## =>This Inner Loop Header: Depth=1
+	imulq	(%rax,%rsi,8), %rcx
+	imulq	8(%rax,%rsi,8), %rcx
+	addq	$2, %rsi
+	cmpq	%rdx, %rsi
+	jl	LBB0_8
+## BB#2:
+	movq	%rbx, %rdx
+	andq	$-2, %rdx
+	jmp	LBB0_3
+LBB0_1:
 	xorl	%edx, %edx
-LBB0_5:
+	movl	$1, %ecx
+LBB0_3:
+	cmpq	%rbx, %rdx
+	jge	LBB0_6
+## BB#4:
 	leaq	(%rax,%rdx,8), %rax
-	incq	%rbx
-	incq	%rdx
 	subq	%rdx, %rbx
 	.p2align	4, 0x90
-LBB0_6:                                 ## =>This Inner Loop Header: Depth=1
+LBB0_5:                                 ## =>This Inner Loop Header: Depth=1
 	imulq	(%rax), %rcx
 	addq	$8, %rax
 	decq	%rbx
-	jne	LBB0_6
-LBB0_7:
+	jne	LBB0_5
+LBB0_6:
 	movq	%rcx, (%r14)
 	addq	$8, %rsp
 	popq	%rbx

@@ -42,7 +42,7 @@ LBB0_1:                                 ## =>This Inner Loop Header: Depth=1
 	movq	%rax, -32(%rbp)
 ## BB#3:                                ##   in Loop: Header=BB0_1 Depth=1
 	movq	-24(%rbp), %rax
-	addq	$1, %rax
+	addq	$2, %rax
 	movq	%rax, -24(%rbp)
 	jmp	LBB0_1
 LBB0_4:

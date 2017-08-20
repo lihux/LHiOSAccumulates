@@ -31,3 +31,4 @@ llvm-gcc -O0/1/2/3 -S -o combine2_O0/1/2/3.s combine2.c 优化代码，不再每
 llvm-gcc -O0/1/2/3 -S -o combine3_O0/1/2/3.s combine3.c 优化for循环内部的函数调用 @ 2017年 8月21日 星期一 07时23分27秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine4_O0/1/2/3.s combine4.c 通过优化for循环中不必要的内存引用优化性能 @ 2017年 8月21日 星期一 07时30分23秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine5_O0/1/2/3.s combine5.c 2次循环展开优化性能' @ 2017年 8月21日 星期一 07时34分01秒 CST
+llvm-gcc -O0/1/2/3 -S -o combine5_O0/1/2/3.s combine5.c 2次循环展开优化性能:bug修复' @ 2017年 8月21日 星期一 07时35分06秒 CST
