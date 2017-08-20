@@ -9,6 +9,8 @@
 /* Begin PBXFileReference section */
 		9C0460AC1F4A4FB800E4E102 /* combine2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = combine2.h; sourceTree = "<group>"; };
 		9C0460AD1F4A4FB800E4E102 /* combine2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = combine2.c; sourceTree = "<group>"; };
+		9C0460AE1F4A50AA00E4E102 /* combine3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = combine3.c; sourceTree = "<group>"; };
+		9C0460AF1F4A50AA00E4E102 /* combine3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = combine3.h; sourceTree = "<group>"; };
 		9C9D715E1F464A2D00380729 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		9C9D715F1F464A2D00380729 /* vec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
 		9C9D71601F464A2D00380729 /* vec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec.c; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 				9C9D71621F464A3700380729 /* main.c */,
 				9C0460AC1F4A4FB800E4E102 /* combine2.h */,
 				9C0460AD1F4A4FB800E4E102 /* combine2.c */,
+				9C0460AE1F4A50AA00E4E102 /* combine3.c */,
+				9C0460AF1F4A50AA00E4E102 /* combine3.h */,
 				9C9D71661F464C0900380729 /* combine1.c */,
 				9C9D71671F464C0900380729 /* combine1.h */,
 				9C9D71651F464A9900380729 /* opt */,
