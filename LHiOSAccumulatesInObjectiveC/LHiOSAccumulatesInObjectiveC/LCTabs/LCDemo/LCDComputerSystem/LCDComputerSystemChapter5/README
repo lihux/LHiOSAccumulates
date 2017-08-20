@@ -33,3 +33,4 @@ llvm-gcc -O0/1/2/3 -S -o combine4_O0/1/2/3.s combine4.c 通过优化for循环中
 llvm-gcc -O0/1/2/3 -S -o combine5_O0/1/2/3.s combine5.c 2次循环展开优化性能' @ 2017年 8月21日 星期一 07时34分01秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine5_O0/1/2/3.s combine5.c 2次循环展开优化性能:bug修复' @ 2017年 8月21日 星期一 07时35分06秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine6_O0/1/2/3.s combine6.c 使用两个变量累记循环展开的值，解除数据依赖' @ 2017年 8月21日 星期一 07时37分44秒 CST
+llvm-gcc -O0/1/2/3 -S -o combine7_O0/1/2/3.s combine7.c 在6的基础上，通过添加括号改变求值顺序进一步优化数据依赖的情况 @ 2017年 8月21日 星期一 07时40分00秒 CST
