@@ -17,7 +17,7 @@ Ltmp2:
 	movq	%rdi, -8(%rbp)
 	movq	%rsi, -16(%rbp)
 	movq	-16(%rbp), %rsi
-	movq	$1, (%rsi)
+	movq	$0, (%rsi)
 	movq	$0, -24(%rbp)
 LBB0_1:                                 ## =>This Inner Loop Header: Depth=1
 	movq	-24(%rbp), %rax
@@ -34,7 +34,7 @@ LBB0_1:                                 ## =>This Inner Loop Header: Depth=1
 	callq	_get_vec_element
 	movq	-16(%rbp), %rdx
 	movq	(%rdx), %rdx
-	imulq	-32(%rbp), %rdx
+	addq	-32(%rbp), %rdx
 	movq	-16(%rbp), %rsi
 	movq	%rdx, (%rsi)
 	movl	%eax, -44(%rbp)         ## 4-byte Spill
