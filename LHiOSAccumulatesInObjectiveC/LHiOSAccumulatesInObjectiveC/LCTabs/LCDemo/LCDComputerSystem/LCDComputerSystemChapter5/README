@@ -20,3 +20,4 @@ http://blog.csdn.net/cjsycyl/article/details/19198427
 https://support.asperasoft.com/hc/en-us/articles/216128238-How-to-generate-core-dump-files
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 解决总是出现段错误的问题： 结构体中len字段没有赋值导致的 @ 2017年 8月20日 星期日 07时24分12秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 继续调试问题' @ 2017年 8月21日 星期一 06时37分50秒 CST
+llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 继续调试问题:赋值出错的原因找到了 @ 2017年 8月21日 星期一 06时38分59秒 CST
