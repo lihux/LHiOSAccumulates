@@ -22,6 +22,7 @@ vec_ptr new_vec(long len) {
         result->len = len;
         for (int j = 0; j < len; j++) {
             data[j] = (i++ % 2) + 1;
+            printf("赋值：%lf", data[j]);
         }
     }
     result->data = data;
