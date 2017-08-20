@@ -5,7 +5,7 @@
 //  Created by lihui on 2017/8/18.
 //
 
-#include "combine2.h"
+#include "combine1.h"
 
 void combine1(vec_ptr v, data_t *dest) {
     long i;
