@@ -21,7 +21,7 @@ vec_ptr new_vec(long len) {
         }
         result->len = len;
         for (int j = 0; j < len; j++) {
-            data[j] = (j % 2) + 1;
+            data[j] = (j % 3) + 1;
         }
     }
     result->data = data;
