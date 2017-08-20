@@ -19,7 +19,7 @@ int main () {
 
 void calculate() {
     vec_ptr vector = new_vec(kLENGTH);
-    data_t *dest = 0;
-    combine1(vector, dest);
-    printf("\n执行计算结果是%ld\n\n", *dest);
+    data_t dest;
+    combine1(vector, &dest);
+    printf("\n执行计算结果是%ld\n\n", dest);
 }

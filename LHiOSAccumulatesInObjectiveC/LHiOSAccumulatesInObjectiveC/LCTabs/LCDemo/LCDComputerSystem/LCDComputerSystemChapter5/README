@@ -23,3 +23,4 @@ llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 继续调试问题' @ 20
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 继续调试问题:赋值出错的原因找到了 @ 2017年 8月21日 星期一 06时38分59秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 调整赋值 @ 2017年 8月21日 星期一 06时42分08秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 去掉注释 @ 2017年 8月21日 星期一 06时43分16秒 CST
+llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 解决新的段错误的问题：将一个指向0地址的指针作为参数传入了导致的问题 @ 2017年 8月21日 星期一 06时50分39秒 CST
