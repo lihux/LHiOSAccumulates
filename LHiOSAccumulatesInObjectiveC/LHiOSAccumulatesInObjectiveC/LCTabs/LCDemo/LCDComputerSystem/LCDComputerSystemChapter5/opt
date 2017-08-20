@@ -51,7 +51,7 @@ echo "$result3"
 
 compileCount=`ls -l | grep $file | wc -l`
 
-if [ $compileCount -eq 10 ]
+if [ $compileCount -eq 10 ] || [ $compileCount -eq 9 ]
 then
 
     `source ${file}_O0`
