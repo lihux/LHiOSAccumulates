@@ -25,3 +25,4 @@ llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 调整赋值 @ 2017年 8
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 去掉注释 @ 2017年 8月21日 星期一 06时43分16秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 解决新的段错误的问题：将一个指向0地址的指针作为参数传入了导致的问题 @ 2017年 8月21日 星期一 06时50分39秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 乘法溢出了，所以要使用加法 @ 2017年 8月21日 星期一 07时04分49秒 CST
+llvm-gcc -O0/1/2/3 -S -o combine1_O0/1/2/3.s combine1.c 测试乘法， 缩小计算值 @ 2017年 8月21日 星期一 07时09分13秒 CST

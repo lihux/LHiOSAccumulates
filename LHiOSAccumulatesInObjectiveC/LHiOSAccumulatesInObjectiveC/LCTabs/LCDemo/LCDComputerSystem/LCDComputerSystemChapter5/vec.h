@@ -3,16 +3,13 @@
 
 typedef long data_t;
 
-#define IDENT 0
-#define OP +
-
-//#ifdef CSAPP_CH5_ADD
-//    #define IDENT 0
-//    #define OP +
-//#else
-//    #define IDENT 1
-//    #define OP *
-//#endif
+#ifdef CSAPP_CH5_ADD
+    #define IDENT 0
+    #define OP +
+#else
+    #define IDENT 1
+    #define OP *
+#endif
 
 typedef struct{
     long len;

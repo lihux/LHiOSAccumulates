@@ -28,7 +28,7 @@ Ltmp6:
 	.cfi_offset %r15, -24
 	movq	%rsi, %r14
 	movq	%rdi, %r15
-	movq	$0, (%r14)
+	movq	$1, (%r14)
 	callq	_vec_length
 	testq	%rax, %rax
 	jle	LBB0_3
@@ -42,7 +42,8 @@ LBB0_2:                                 ## =>This Inner Loop Header: Depth=1
 	movq	%r12, %rdx
 	callq	_get_vec_element
 	movq	-40(%rbp), %rax
-	addq	%rax, (%r14)
+	imulq	(%r14), %rax
+	movq	%rax, (%r14)
 	incq	%rbx
 	movq	%r15, %rdi
 	callq	_vec_length
