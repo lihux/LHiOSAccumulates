@@ -14,6 +14,7 @@
 		9C0460B11F4A536800E4E102 /* combine5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = combine5.c; sourceTree = "<group>"; };
 		9C0460B21F4A545200E4E102 /* combine6.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = combine6.c; sourceTree = "<group>"; };
 		9C0460B31F4A550400E4E102 /* combine7.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = combine7.c; sourceTree = "<group>"; };
+		9C0460B41F4CE6BF00E4E102 /* runMe */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = runMe; sourceTree = "<group>"; };
 		9C9D715E1F464A2D00380729 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		9C9D715F1F464A2D00380729 /* vec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
 		9C9D71601F464A2D00380729 /* vec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec.c; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 				9C9D71671F464C0900380729 /* combine1.h */,
 				9C0460B01F4A51F500E4E102 /* combine4.c */,
 				9C9D71651F464A9900380729 /* opt */,
+				9C0460B41F4CE6BF00E4E102 /* runMe */,
 				9C0460B11F4A536800E4E102 /* combine5.c */,
 				9C0460B31F4A550400E4E102 /* combine7.c */,
 				9C0460B21F4A545200E4E102 /* combine6.c */,

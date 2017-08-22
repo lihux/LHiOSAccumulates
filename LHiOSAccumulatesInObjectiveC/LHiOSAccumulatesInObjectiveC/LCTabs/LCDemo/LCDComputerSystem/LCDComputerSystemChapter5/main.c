@@ -22,14 +22,19 @@ void calculate();
  
  @return 0
  */
-int main () {
+int main (int argc, char *argv[]) {
     double start, end, cost;
     time_t t_start, t_end;
     start = clock();
     calculate();
     end = clock();
     cost = end - start;
-    printf("\n程序执行时间为：%lf\n\n", cost);
+    freopen("result.txt", "w", stdout);//输出重定向，输出数据将保存在result.txt文件中
+    if (argc > 1) {
+        printf("输入参数个数：%d, 参数内容%s", argc - 1, argv[0]);
+    }
+    printf("    程序执行时间为：%lf\n", cost);
+    fclose(stdout);
     return 0;
 }
 

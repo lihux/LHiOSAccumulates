@@ -39,15 +39,15 @@ echo "$result0"
 
 chmod +x $result1
 echo "$result1"
-./$result1
+./$result1 $result1
 
 chmod +x $result2
 echo "$result2"
-./$result2
+./$result2 $result2
 
 chmod +x $result3
 echo "$result3"
-./$result3
+./$result3 $result3
 
 compileCount=`ls -l | grep $file | wc -l`
 
