@@ -7,7 +7,7 @@
 
 static const long kLENGTH = 100;
 
-void calculate();
+char* calculate();
 
 /**
  小结：本代码来自《CSAPP》第五章：优化程序性能，通过以下若干步骤，逐步优化：
