@@ -32,29 +32,33 @@ Ltmp5:
 	cmpq	$2, %rbx
 	jl	LBB0_1
 ## BB#7:
-	leaq	-1(%rbx), %rdx
+	leaq	-1(%rbx), %r8
 	movl	$1, %ecx
-	xorl	%esi, %esi
+	xorl	%edi, %edi
+	movl	$1, %edx
 	.p2align	4, 0x90
 LBB0_8:                                 ## =>This Inner Loop Header: Depth=1
-	imulq	(%rax,%rsi,8), %rcx
-	imulq	8(%rax,%rsi,8), %rcx
-	addq	$2, %rsi
-	cmpq	%rdx, %rsi
+	movq	8(%rax,%rdi,8), %rsi
+	imulq	(%rax,%rdi,8), %rsi
+	imulq	%rsi, %rcx
+	imulq	%rsi, %rdx
+	addq	$2, %rdi
+	cmpq	%r8, %rdi
 	jl	LBB0_8
 ## BB#2:
-	movq	%rbx, %rdx
-	andq	$-2, %rdx
+	movq	%rbx, %rsi
+	andq	$-2, %rsi
 	jmp	LBB0_3
 LBB0_1:
-	xorl	%edx, %edx
+	xorl	%esi, %esi
+	movl	$1, %edx
 	movl	$1, %ecx
 LBB0_3:
-	cmpq	%rbx, %rdx
+	cmpq	%rbx, %rsi
 	jge	LBB0_6
 ## BB#4:
-	leaq	(%rax,%rdx,8), %rax
-	subq	%rdx, %rbx
+	leaq	(%rax,%rsi,8), %rax
+	subq	%rsi, %rbx
 	.p2align	4, 0x90
 LBB0_5:                                 ## =>This Inner Loop Header: Depth=1
 	imulq	(%rax), %rcx
@@ -62,7 +66,9 @@ LBB0_5:                                 ## =>This Inner Loop Header: Depth=1
 	decq	%rbx
 	jne	LBB0_5
 LBB0_6:
+	imulq	%rdx, %rcx
 	movq	%rcx, (%r14)
+	leaq	L_.str(%rip), %rax
 	addq	$8, %rsp
 	popq	%rbx
 	popq	%r14
@@ -70,6 +76,10 @@ LBB0_6:
 	popq	%rbp
 	retq
 	.cfi_endproc
+
+	.section	__TEXT,__cstring,cstring_literals
+L_.str:                                 ## @.str
+	.asciz	"\344\272\214\346\254\241\345\276\252\347\216\257\345\261\225\345\274\200\357\274\232combine5"
 
 
 .subsections_via_symbols
