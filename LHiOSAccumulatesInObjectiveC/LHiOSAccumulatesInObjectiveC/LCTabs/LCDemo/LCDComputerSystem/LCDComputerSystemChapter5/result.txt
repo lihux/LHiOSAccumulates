@@ -1,32 +1,4 @@
-   运行时间为：23.0
-combine1_O1      未经任何优化的combine1   运行时间为：14.0
-combine1_O2      未经任何优化的combine1   运行时间为：17.0
-combine1_O3      未经任何优化的combine1   运行时间为：14.0
-   运行时间为：23.0
-combine2_O1      combine2优化了for循环中使用的length,循环外计算出来   运行时间为：42.0
-combine2_O2      combine2优化了for循环中使用的length,循环外计算出来   运行时间为：16.0
-combine2_O3      combine2优化了for循环中使用的length,循环外计算出来   运行时间为：14.0
-   运行时间为：23.0
-combine3_O1      消除for循环中通过使用方法调用获取指针:combine3   运行时间为：14.0
-combine3_O2      消除for循环中通过使用方法调用获取指针:combine3   运行时间为：14.0
-combine3_O3      消除for循环中通过使用方法调用获取指针:combine3   运行时间为：16.0
-   运行时间为：17.0
-combine4_O1      通过累计变量优化循环中每次都要往内存中写数据：combine4   运行时间为：14.0
-combine4_O2      通过累计变量优化循环中每次都要往内存中写数据：combine4   运行时间为：16.0
-combine4_O3      通过累计变量优化循环中每次都要往内存中写数据：combine4   运行时间为：16.0
-   运行时间为：26.0
-combine5_O1      二次循环展开：combine5   运行时间为：14.0
-combine5_O2      二次循环展开：combine5   运行时间为：15.0
-combine5_O3      二次循环展开：combine5   运行时间为：17.0
-   运行时间为：18.0
-combine6_O1      二次循环展开中降低依赖,提高并行性   运行时间为：16.0
-combine6_O2      二次循环展开中降低依赖,提高并行性   运行时间为：15.0
-combine6_O3      二次循环展开中降低依赖,提高并行性   运行时间为：14.0
-   运行时间为：24.0
-combine7_O1      重新结合变换，优化流水线效率：combine7   运行时间为：15.0
-combine7_O2      重新结合变换，优化流水线效率：combine7   运行时间为：15.0
-combine7_O3      重新结合变换，优化流水线效率：combine7   运行时间为：16.0
-combine1_O0      未经任何优化的combine1   运行时间为：24.0
-combine1_O1      未经任何优化的combine1   运行时间为：14.0
+combine1_O0      未经任何优化的combine1   运行时间为：17.0
+combine1_O1      未经任何优化的combine1   运行时间为：16.0
 combine1_O2      未经任何优化的combine1   运行时间为：14.0
-combine1_O3      未经任何优化的combine1   运行时间为：14.0
+combine1_O3      未经任何优化的combine1   运行时间为：16.0
