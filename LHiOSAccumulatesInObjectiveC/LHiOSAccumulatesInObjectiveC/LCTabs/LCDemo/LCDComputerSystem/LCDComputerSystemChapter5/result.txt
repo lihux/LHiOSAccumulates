@@ -1,1 +1,5 @@
 combine1_O3      未经任何优化的combine1   运行时间为：14.0
+   运行时间为：16.0
+combine1_O1      未经任何优化的combine1   运行时间为：17.0
+combine1_O2      未经任何优化的combine1   运行时间为：25.0
+combine1_O3      未经任何优化的combine1   运行时间为：15.0
