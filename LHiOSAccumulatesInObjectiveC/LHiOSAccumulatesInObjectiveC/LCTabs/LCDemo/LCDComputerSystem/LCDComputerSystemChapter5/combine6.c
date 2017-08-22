@@ -22,5 +22,6 @@ void combine1(vec_ptr v, data_t *dest) {
         acc = acc OP data[i];
     }
     *dest = acc;
+    return "二次循环展开中降低依赖,提高并行性";
 }
 

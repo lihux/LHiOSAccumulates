@@ -24,5 +24,6 @@ void combine1(vec_ptr v, data_t *dest) {
         acc0 = acc0 OP data[i];
     }
     *dest = acc0 OP acc1;
+    return "二次循环展开：combine5";
 }
 

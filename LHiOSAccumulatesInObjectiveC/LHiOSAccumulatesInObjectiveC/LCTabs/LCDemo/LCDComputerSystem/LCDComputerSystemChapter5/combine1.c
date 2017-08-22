@@ -7,7 +7,7 @@
 
 #include "combine1.h"
 
-void combine1(vec_ptr v, data_t *dest) {
+char* combine1(vec_ptr v, data_t *dest) {
     long i;
     
     *dest = IDENT;
@@ -16,4 +16,5 @@ void combine1(vec_ptr v, data_t *dest) {
         get_vec_element(v, i, &val);
         *dest = *dest OP val;
     }
+    return "未经任何优化的combine1";
 }

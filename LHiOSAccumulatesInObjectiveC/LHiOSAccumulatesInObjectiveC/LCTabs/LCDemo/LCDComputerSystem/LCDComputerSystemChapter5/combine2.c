@@ -7,7 +7,7 @@
 
 #include "combine1.h"
 
-void combine1(vec_ptr v, data_t *dest) {
+char* combine1(vec_ptr v, data_t *dest) {
     long i;
     
     *dest = IDENT;
@@ -17,5 +17,6 @@ void combine1(vec_ptr v, data_t *dest) {
         get_vec_element(v, i, &val);
         *dest = *dest OP val;
     }
+    return "combine2优化了for循环中使用的length,循环外计算出来";
 }
 

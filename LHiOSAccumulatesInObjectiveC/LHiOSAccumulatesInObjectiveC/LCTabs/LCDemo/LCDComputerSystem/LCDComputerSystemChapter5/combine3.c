@@ -7,7 +7,7 @@
 
 #include "combine1.h"
 
-void combine1(vec_ptr v, data_t *dest) {
+char* combine1(vec_ptr v, data_t *dest) {
     long i;
     
     *dest = IDENT;
@@ -18,5 +18,6 @@ void combine1(vec_ptr v, data_t *dest) {
         data_t val;
         *dest = *dest OP data[i];
     }
+    return "消除for循环中通过使用方法调用获取指针:combine3";
 }
 

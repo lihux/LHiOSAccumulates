@@ -26,21 +26,21 @@ int main (int argc, char *argv[]) {
     double start, end, cost;
     time_t t_start, t_end;
     start = clock();
-    calculate();
+    char* info = calculate();
     end = clock();
     cost = end - start;
     freopen("result.txt", "w", stdout);//输出重定向，输出数据将保存在result.txt文件中
     if (argc > 1) {
-        printf("输入参数个数：%d, 参数内容%s", argc - 1, argv[0]);
+        printf("%s      %s", argv[1], info);
     }
-    printf("    程序执行时间为：%lf\n", cost);
+    printf("   运行时间为：%.1lf\n", cost);
     fclose(stdout);
     return 0;
 }
 
-void calculate() {
+char* calculate() {
     vec_ptr vector = new_vec(kLENGTH);
     data_t dest;
-    combine1(vector, &dest);
-    printf("\n执行计算结果是%ld\n\n", dest);
+    return combine1(vector, &dest);
+//    printf("\n执行计算结果是%ld\n\n", dest);
 }

@@ -7,7 +7,7 @@
 
 #include "combine1.h"
 
-void combine1(vec_ptr v, data_t *dest) {
+char* combine1(vec_ptr v, data_t *dest) {
     long i;
     
     data_t acc = IDENT;
@@ -19,5 +19,6 @@ void combine1(vec_ptr v, data_t *dest) {
         acc = acc OP data[i];
     }
     *dest = acc;
+    return "通过累计变量优化循环中每次都要往内存中写数据：combine4";
 }
 
