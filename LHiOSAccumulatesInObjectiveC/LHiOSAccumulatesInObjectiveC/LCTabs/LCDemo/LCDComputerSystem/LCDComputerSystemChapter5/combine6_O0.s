@@ -63,13 +63,18 @@ LBB0_5:                                 ## =>This Inner Loop Header: Depth=1
 	movq	%rax, -24(%rbp)
 	jmp	LBB0_5
 LBB0_8:
-	movq	-32(%rbp), %rax
-	movq	-16(%rbp), %rcx
-	movq	%rax, (%rcx)
+	leaq	L_.str(%rip), %rax
+	movq	-32(%rbp), %rcx
+	movq	-16(%rbp), %rdx
+	movq	%rcx, (%rdx)
 	addq	$64, %rsp
 	popq	%rbp
 	retq
 	.cfi_endproc
+
+	.section	__TEXT,__cstring,cstring_literals
+L_.str:                                 ## @.str
+	.asciz	"\344\272\214\346\254\241\345\276\252\347\216\257\345\261\225\345\274\200\344\270\255\351\231\215\344\275\216\344\276\235\350\265\226,\346\217\220\351\253\230\345\271\266\350\241\214\346\200\247"
 
 
 .subsections_via_symbols

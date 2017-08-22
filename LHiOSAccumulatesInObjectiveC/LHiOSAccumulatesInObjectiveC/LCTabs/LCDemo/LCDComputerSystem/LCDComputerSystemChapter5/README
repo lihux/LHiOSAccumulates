@@ -46,3 +46,4 @@ llvm-gcc -O0/1/2/3 -S -o combine2_O0/1/2/3.s combine2.c 自动化脚本重新编
 llvm-gcc -O0/1/2/3 -S -o combine3_O0/1/2/3.s combine3.c 自动化脚本重新编译combine3并输出到result.txt中 @ 2017年 8月23日 星期三 06时55分31秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine4_O0/1/2/3.s combine4.c 自动化脚本重新编译combine4并输出到result.txt中 @ 2017年 8月23日 星期三 06时55分44秒 CST
 llvm-gcc -O0/1/2/3 -S -o combine5_O0/1/2/3.s combine5.c 自动化脚本重新编译combine5并输出到result.txt中 @ 2017年 8月23日 星期三 06时55分57秒 CST
+llvm-gcc -O0/1/2/3 -S -o combine6_O0/1/2/3.s combine6.c 自动化脚本重新编译combine6并输出到result.txt中 @ 2017年 8月23日 星期三 06时56分09秒 CST
