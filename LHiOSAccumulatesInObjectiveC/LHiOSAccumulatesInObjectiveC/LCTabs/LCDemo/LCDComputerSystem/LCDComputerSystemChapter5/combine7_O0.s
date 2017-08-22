@@ -35,10 +35,11 @@ LBB0_1:                                 ## =>This Inner Loop Header: Depth=1
 	movq	-32(%rbp), %rax
 	movq	-24(%rbp), %rcx
 	movq	-56(%rbp), %rdx
-	imulq	(%rdx,%rcx,8), %rax
-	movq	-24(%rbp), %rcx
-	movq	-56(%rbp), %rdx
-	imulq	8(%rdx,%rcx,8), %rax
+	movq	(%rdx,%rcx,8), %rcx
+	movq	-24(%rbp), %rdx
+	movq	-56(%rbp), %rsi
+	imulq	8(%rsi,%rdx,8), %rcx
+	imulq	%rcx, %rax
 	movq	%rax, -32(%rbp)
 ## BB#3:                                ##   in Loop: Header=BB0_1 Depth=1
 	movq	-24(%rbp), %rax
@@ -63,13 +64,18 @@ LBB0_5:                                 ## =>This Inner Loop Header: Depth=1
 	movq	%rax, -24(%rbp)
 	jmp	LBB0_5
 LBB0_8:
-	movq	-32(%rbp), %rax
-	movq	-16(%rbp), %rcx
-	movq	%rax, (%rcx)
+	leaq	L_.str(%rip), %rax
+	movq	-32(%rbp), %rcx
+	movq	-16(%rbp), %rdx
+	movq	%rcx, (%rdx)
 	addq	$64, %rsp
 	popq	%rbp
 	retq
 	.cfi_endproc
+
+	.section	__TEXT,__cstring,cstring_literals
+L_.str:                                 ## @.str
+	.asciz	"\351\207\215\346\226\260\347\273\223\345\220\210\345\217\230\346\215\242\357\274\214\344\274\230\345\214\226\346\265\201\346\260\264\347\272\277\346\225\210\347\216\207\357\274\232combine7"
 
 
 .subsections_via_symbols
