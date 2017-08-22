@@ -1,4 +1,9 @@
 #!/bin/bash
-./opt combine1.c "自动化脚本重新编译combine1尝试"
-#./opt combine2.c "自动化脚本重新编译combine2尝试"
+./opt combine1.c "自动化脚本重新编译combine1并输出到result.txt中"
+./opt combine2.c "自动化脚本重新编译combine2并输出到result.txt中"
+./opt combine3.c "自动化脚本重新编译combine3并输出到result.txt中"
+./opt combine4.c "自动化脚本重新编译combine4并输出到result.txt中"
+./opt combine5.c "自动化脚本重新编译combine5并输出到result.txt中"
+./opt combine6.c "自动化脚本重新编译combine6并输出到result.txt中"
+./opt combine7.c "自动化脚本重新编译combine7并输出到result.txt中"
 
