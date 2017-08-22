@@ -29,7 +29,7 @@ int main (int argc, char *argv[]) {
     char* info = calculate();
     end = clock();
     cost = end - start;
-    freopen("result.txt", "w", stdout);//输出重定向，输出数据将保存在result.txt文件中
+    freopen("result.txt", "at", stdout);//输出重定向，输出数据将保存在result.txt文件中
     if (argc > 1) {
         printf("%s      %s", argv[1], info);
     }
