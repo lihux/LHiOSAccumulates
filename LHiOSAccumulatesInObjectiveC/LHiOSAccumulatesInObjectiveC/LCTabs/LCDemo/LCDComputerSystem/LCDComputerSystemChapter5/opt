@@ -35,7 +35,7 @@ llvm-gcc -O3 -o "$result3" $original $main $vec
 
 chmod +x $result0
 echo "$result0"
-./$result0
+./$result0 "$result0"
 
 chmod +x $result1
 echo "$result1"
