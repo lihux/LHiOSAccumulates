@@ -14,3 +14,7 @@ combine4_O0      通过累计变量优化循环中每次都要往内存中写数
 combine4_O1      通过累计变量优化循环中每次都要往内存中写数据：combine4   运行时间为：14.0
 combine4_O2      通过累计变量优化循环中每次都要往内存中写数据：combine4   运行时间为：15.0
 combine4_O3      通过累计变量优化循环中每次都要往内存中写数据：combine4   运行时间为：15.0
+combine5_O0      二次循环展开：combine5   运行时间为：23.0
+combine5_O1      二次循环展开：combine5   运行时间为：14.0
+combine5_O2      二次循环展开：combine5   运行时间为：16.0
+combine5_O3      二次循环展开：combine5   运行时间为：16.0
