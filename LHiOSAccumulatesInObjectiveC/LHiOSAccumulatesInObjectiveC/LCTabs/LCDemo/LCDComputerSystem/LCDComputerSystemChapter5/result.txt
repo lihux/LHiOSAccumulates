@@ -6,3 +6,7 @@ combine2_O0      combine2优化了for循环中使用的length,循环外计算出
 combine2_O1      combine2优化了for循环中使用的length,循环外计算出来   运行时间为：20.0
 combine2_O2      combine2优化了for循环中使用的length,循环外计算出来   运行时间为：21.0
 combine2_O3      combine2优化了for循环中使用的length,循环外计算出来   运行时间为：15.0
+combine3_O0      消除for循环中通过使用方法调用获取指针:combine3   运行时间为：16.0
+combine3_O1      消除for循环中通过使用方法调用获取指针:combine3   运行时间为：15.0
+combine3_O2      消除for循环中通过使用方法调用获取指针:combine3   运行时间为：14.0
+combine3_O3      消除for循环中通过使用方法调用获取指针:combine3   运行时间为：15.0
