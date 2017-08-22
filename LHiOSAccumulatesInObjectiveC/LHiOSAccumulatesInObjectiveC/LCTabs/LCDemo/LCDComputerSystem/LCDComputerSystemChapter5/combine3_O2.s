@@ -66,6 +66,7 @@ LBB0_5:                                 ## =>This Inner Loop Header: Depth=1
 	addq	$-4, %rbx
 	jne	LBB0_5
 LBB0_6:
+	leaq	L_.str(%rip), %rax
 	addq	$8, %rsp
 	popq	%rbx
 	popq	%r14
@@ -73,6 +74,10 @@ LBB0_6:
 	popq	%rbp
 	retq
 	.cfi_endproc
+
+	.section	__TEXT,__cstring,cstring_literals
+L_.str:                                 ## @.str
+	.asciz	"\346\266\210\351\231\244for\345\276\252\347\216\257\344\270\255\351\200\232\350\277\207\344\275\277\347\224\250\346\226\271\346\263\225\350\260\203\347\224\250\350\216\267\345\217\226\346\214\207\351\222\210:combine3"
 
 
 .subsections_via_symbols
