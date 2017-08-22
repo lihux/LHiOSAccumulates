@@ -13,4 +13,4 @@
 
 #endif /* combine1_h */
 
-void combine1(vec_ptr v, data_t *dest);
+char* combine1(vec_ptr v, data_t *dest);

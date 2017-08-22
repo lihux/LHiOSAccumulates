@@ -7,7 +7,7 @@
 
 #include "combine1.h"
 
-void combine1(vec_ptr v, data_t *dest) {
+char* combine1(vec_ptr v, data_t *dest) {
     long i;
     
     data_t acc = IDENT;

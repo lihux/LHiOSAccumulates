@@ -1,3 +1,4 @@
 #!/bin/bash
 ./opt combine1.c "自动化脚本重新编译combine1尝试"
-./opt combine2.c "自动化脚本重新编译combine2尝试"
+#./opt combine2.c "自动化脚本重新编译combine2尝试"
+
