@@ -1,0 +1,7 @@
+An Example Using the LLVM Tool Chain
+
+http://llvm.org/docs/GettingStarted.html\#getting-started-quickly-a-summary
+
+ 
+clang hello.c -o hello
+clang -O3 -emit-llvm hello.c -c -o hello.bc
