@@ -81,6 +81,7 @@
 		9C37342A1C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C3734331C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHiOSAccumulatesInSwiftUITests.swift; sourceTree = "<group>"; };
 		9C3734351C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C75DF831F5169A50094C450 /* NSDate+LHUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+LHUtils.swift"; sourceTree = "<group>"; };
 		9C81C6391F3F3D8A00B5A443 /* LSBookScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBookScanViewController.swift; sourceTree = "<group>"; };
 		9C81C63B1F3FE84B00B5A443 /* LSGeneralDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSGeneralDefines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,8 +168,8 @@
 		52ECB4B81F14EE3D00E2E268 /* LSGenreal */ = {
 			isa = PBXGroup;
 			children = (
+				9C75DF821F5169880094C450 /* LSExtensions */,
 				527E90681F3AA7DC000070FD /* LHUtils */,
-				52ECB4CD1F14EE9000E2E268 /* LSExtensions */,
 				52ECB4B91F14EE3D00E2E268 /* LSData */,
 				52ECB4BC1F14EE3D00E2E268 /* LSHelper */,
 				52ECB4BF1F14EE3D00E2E268 /* LSSwiftBasicLearning.playground */,
@@ -217,13 +218,6 @@
 				52C6246F1F3C757500CD7045 /* LSViewController.swift */,
 			);
 			path = LSViewController;
-			sourceTree = "<group>";
-		};
-		52ECB4CD1F14EE9000E2E268 /* LSExtensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LSExtensions;
 			sourceTree = "<group>";
 		};
 		9C0C23981C54672100185C45 /* LSHome */ = {
@@ -292,6 +286,14 @@
 				9C3734351C3E455D009391CD /* Info.plist */,
 			);
 			path = LHiOSAccumulatesInSwiftUITests;
+			sourceTree = "<group>";
+		};
+		9C75DF821F5169880094C450 /* LSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C75DF831F5169A50094C450 /* NSDate+LHUtils.swift */,
+			);
+			path = LSExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
