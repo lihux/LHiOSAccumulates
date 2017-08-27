@@ -82,7 +82,7 @@
 		9C37342A1C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C3734331C3E455D009391CD /* LHiOSAccumulatesInSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHiOSAccumulatesInSwiftUITests.swift; sourceTree = "<group>"; };
 		9C3734351C3E455D009391CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C75DF831F5169A50094C450 /* NSDate+LHUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+LHUtils.swift"; sourceTree = "<group>"; };
+		9C75DF831F5169A50094C450 /* Date+LHUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+LHUtils.swift"; sourceTree = "<group>"; };
 		9C81C6391F3F3D8A00B5A443 /* LSBookScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBookScanViewController.swift; sourceTree = "<group>"; };
 		9C81C63B1F3FE84B00B5A443 /* LSGeneralDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSGeneralDefines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -293,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1D26541F52BC60001EAEC8 /* Notification+Name.swift */,
-				9C75DF831F5169A50094C450 /* NSDate+LHUtils.swift */,
+				9C75DF831F5169A50094C450 /* Date+LHUtils.swift */,
 			);
 			path = LSExtensions;
 			sourceTree = "<group>";
