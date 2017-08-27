@@ -1,0 +1,20 @@
+//
+//  Data+LHConvert.swift
+//  LHReadingPlan
+//
+//  Created by lihui on 2017/8/27.
+//  Copyright © 2017年 Lihux. All rights reserved.
+//
+
+import Foundation
+
+extension Data {
+    func toDictionary() -> Dictionary<String, Any>? {
+        do {
+            return try JSONSerialization.jsonObject(with: self, options: []) as? [String: Any]
+        } catch let error as NSError {
+            print(error)
+        }
+        return nil
+    }
+}
