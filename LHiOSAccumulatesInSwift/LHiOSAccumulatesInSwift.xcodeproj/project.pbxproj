@@ -69,6 +69,7 @@
 		52ECB4CA1F14EE3D00E2E268 /* LSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTableViewController.swift; sourceTree = "<group>"; };
 		52ECB4CE1F14EEC200E2E268 /* UIView+LHAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LHAutoLayout.swift"; sourceTree = "<group>"; };
 		52ECB4CF1F14EEC200E2E268 /* UIColor+LHHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LHHelper.swift"; sourceTree = "<group>"; };
+		9C1D26541F52BC60001EAEC8 /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
 		9C2311081E62B0C500629270 /* LSHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSHomeViewController.swift; path = LSHome/LSHomeViewController.swift; sourceTree = "<group>"; };
 		9C23110D1E62C4E400629270 /* LSFlyingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSFlyingView.swift; path = LSHome/view/LSFlyingView.swift; sourceTree = "<group>"; };
 		9C37340E1C3E455D009391CD /* LHiOSAccumulatesInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +292,7 @@
 		9C75DF821F5169880094C450 /* LSExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				9C1D26541F52BC60001EAEC8 /* Notification+Name.swift */,
 				9C75DF831F5169A50094C450 /* NSDate+LHUtils.swift */,
 			);
 			path = LSExtensions;
