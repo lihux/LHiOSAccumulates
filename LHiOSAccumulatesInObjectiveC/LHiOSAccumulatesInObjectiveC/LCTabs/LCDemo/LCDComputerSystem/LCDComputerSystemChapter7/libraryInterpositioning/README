@@ -1,0 +1,2 @@
+ clang -DCOMPILETIME -c mymalloc.c 生成.o文件
+clang -I . -o intc int.c mymalloc.o 生成编译时打桩的可执行文件intc
