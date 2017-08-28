@@ -25,7 +25,7 @@ static char *nameKey = "UIImageView+LCURL";
 - (void)lc_setImageWithURLString:(NSString *)urlString {
     [self setlc_URLString:urlString];
     __weak typeof(self) weakSelf = self;
-    .(dispatch_get_global_queue(0, 0), ^{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
         NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
         if (weakSelf) {
             dispatch_async(dispatch_get_main_queue(), ^{
