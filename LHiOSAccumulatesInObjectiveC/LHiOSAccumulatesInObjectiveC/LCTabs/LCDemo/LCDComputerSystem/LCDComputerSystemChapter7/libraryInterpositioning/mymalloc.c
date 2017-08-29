@@ -30,6 +30,17 @@ void myfree(void *ptr) {
 
 #include <stdio.h>
 
+/*
+ Link time lib interpositioning
+ #Compile:
+ gcc -DLINKTIME -c mymalloc.c
+ gcc -c int.c
+ gcc -Wl,--warp,malloc -Wl,--warp,free -o intl int.o mymalloc.o
+ 
+ #Run:
+ ./intc
+ */
+
 /*malloc wrapper function*/
 void *__real_malloc(size_t size);
 void *__real_free(void *ptr);
