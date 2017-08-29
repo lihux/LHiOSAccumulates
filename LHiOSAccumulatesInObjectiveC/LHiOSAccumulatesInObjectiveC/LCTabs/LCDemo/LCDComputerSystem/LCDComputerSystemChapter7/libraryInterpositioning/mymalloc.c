@@ -3,6 +3,15 @@
 #include <stdio.h>
 #include "malloc.h"
 
+/*
+ Compile time lib interpositioning
+ #Compile:
+ gcc -DCOMPILETIME -c mymalloc.c
+ gcc -I . -o intc int.c mymalloc.o
+ #Run:
+ ./intc
+ */
+
 /*malloc wrapper function*/
 void *mymalloc(size_t size) {
     void *ptr = malloc(size);
