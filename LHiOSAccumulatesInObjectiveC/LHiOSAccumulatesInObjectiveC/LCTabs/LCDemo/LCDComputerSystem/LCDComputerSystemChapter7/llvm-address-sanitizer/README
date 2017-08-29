@@ -2,3 +2,4 @@ llvm-g++ example_UseAfterFree.cc 能编译过
 但是clang example_UseAfterFree.cc 不能编译过
 clang++ -O1 -g -fsanitize=address -fno-omit-frame-pointer example_UseAfterFree.cc >> 编译通过，然后生成可执行文件，运行的时候可以发现内容使用的问题
 https://clang.llvm.org/docs/AddressSanitizer.html
+ASAN_SYMBOLIZER_PATH=/usr/local/bin/llvm-symbolizer ./a.out 符号化输出
