@@ -5,7 +5,7 @@ if [ $# != 2 ]
 then
     echo "参数必须要包含文件名和当前文件的描述"
     echo
-    echo "比如：./ecc hello.c 这是一个测试hello的小程序"
+    echo "比如：./gccS hello.c 这是一个测试hello的小程序"
     exit 1
 fi
 original=$1
