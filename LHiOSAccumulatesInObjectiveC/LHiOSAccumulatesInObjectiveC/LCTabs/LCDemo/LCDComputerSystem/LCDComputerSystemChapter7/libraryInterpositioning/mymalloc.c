@@ -57,3 +57,52 @@ void __wrap_free(void *ptr) {
 }
 
 #endif
+
+#ifdef RUNTIME
+
+#define _GNU_SOURCE
+#include <stdio.h>
+#include <stdlib.h>
+#include <dlfcn.h>
+
+/*
+ Runtime time lib interpositioning
+ #Compile:
+ gcc -DRUNTIME shared -fpic -o mymalloc.so mymalloc.c -ldl
+ gcc -o intr int.c
+ 
+ #Run:
+ LD_PREOLAD="./MYMALLOC.SO" ./intc
+ */
+
+/*malloc wrapper function*/
+void *mymalloc(size_t size) {
+    void *(*mallocp)(size_t size);
+    char *error;
+    mallocp = dlsym(RTLD_NEXT, "malloc");/* Get address of libc malloc */
+    if ((error = dlerror()) != NULL) {
+        fputs(error, stderr);
+        exit(1);
+    }
+    char *ptr = mallocp(size);
+    printf("lihux添加的打桩方法mymalloc中调用：malloc(%d) = %p\n", (int)size, ptr);
+    return ptr;
+}
+
+void myfree(void *ptr) {
+    void (*freep)(void *) = NULL;
+    char *error;
+    if (!ptr) {
+        return;
+    }
+    freep = dlsym(RTLD_NEXT, "free");/* Get address of libc free */
+    if ((error = dlerror()) != NULL) {
+        fputs(error, stderr);
+        exit(1);
+    }
+    free(ptr);
+    printf("lihux添加的打桩方法myfree中调用：free (%p)\n", ptr);
+}
+
+#endif
+
