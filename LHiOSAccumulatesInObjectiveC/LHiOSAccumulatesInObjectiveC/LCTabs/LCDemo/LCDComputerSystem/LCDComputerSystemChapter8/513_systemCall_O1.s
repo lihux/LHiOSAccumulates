@@ -19,6 +19,12 @@ Ltmp2:
 	xorl	%eax, %eax
 	movl	%ecx, %esi
 	callq	_printf
+	callq	_getppid
+	movl	%eax, %ecx
+	leaq	L_.str.1(%rip), %rdi
+	xorl	%eax, %eax
+	movl	%ecx, %esi
+	callq	_printf
 	xorl	%eax, %eax
 	popq	%rbp
 	retq
@@ -26,7 +32,10 @@ Ltmp2:
 
 	.section	__TEXT,__cstring,cstring_literals
 L_.str:                                 ## @.str
-	.asciz	"%d\n"
+	.asciz	"\345\275\223\345\211\215\350\277\233\347\250\213ID\357\274\232%d\n"
+
+L_.str.1:                               ## @.str.1
+	.asciz	"\345\275\223\345\211\215\350\277\233\347\250\213\347\232\204\347\210\266\350\277\233\347\250\213ID\357\274\232%d\n"
 
 
 .subsections_via_symbols
