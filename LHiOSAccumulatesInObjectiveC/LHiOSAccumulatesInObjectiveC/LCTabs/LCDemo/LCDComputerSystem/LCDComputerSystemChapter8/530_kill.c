@@ -9,6 +9,6 @@ int main() {
         exit(0);
     }
     printf("子线程ID 为：%d\n", pid);
-//    kill(pid, SIGKILL);
+    kill(pid, SIGKILL);
     exit(0);
 }
