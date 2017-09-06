@@ -1,0 +1,6 @@
+拷贝 测试  http://blog.csdn.net/taolinke/article/details/6763795
+
+mmap比write拷贝快的原因：前者少了用户态、内核态的内存拷贝
+
+但是这个demo的比较不具有完整的相同的条件，所以不够严格
+
