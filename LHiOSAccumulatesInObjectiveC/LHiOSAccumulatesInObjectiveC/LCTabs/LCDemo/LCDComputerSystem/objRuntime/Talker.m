@@ -2,7 +2,7 @@
 
 @implementation Talker
 
-- (void) say: (STR) phrase {
+- (void) say: (char *) phrase {
     printf("%s\n", phrase);
 }
 

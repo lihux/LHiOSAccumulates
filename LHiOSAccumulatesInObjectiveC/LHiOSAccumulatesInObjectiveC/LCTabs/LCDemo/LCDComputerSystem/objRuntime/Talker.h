@@ -2,6 +2,6 @@
 
 @interface Talker : NSObject
 
-- (void) say: (STR) phrase;
+- (void) say: (char *) phrase;
 
 @end
