@@ -1,0 +1,12 @@
+这里记录一下本次objc runtime练习的一些用过的命令及说明：
+
+lldb a.out
+r #运行一次
+di -n main #打印出main方法的反汇编代码
+b main #在main处添加断点
+r #加完断点之后运行，直到在断点出停止
+b objc_msgSend #断点看objc运行时库的地方,添加断点的时候tab键有自动补全功能，通过巧妙的能看打包进来的所有以xx开头的方法（可用来窥探库方法）
+c #继续运行，已到达断点处
+si #setp into, 进入方法中继续断点单步执行
+register read #读取寄存器的信息值
+x/s $rsi #x是read memary的缩写，help x,可以查看详细的信息，这里是读取$rsi寄存器的信息
