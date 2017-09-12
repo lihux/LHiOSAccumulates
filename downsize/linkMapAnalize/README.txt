@@ -1,0 +1,3 @@
+文件夹from 存放有待分析的linkMap文件
+文件夹to存放有linkMap分析后的结果输出
+tesla 分析脚本
