@@ -3,3 +3,4 @@
 tesla 分析脚本
 node linkmap.js from/appstore_kcuf-linkMap-normal-arm.txt -lh > to/appstore.txt
  node linkmap.js from/debug_kcuf-linkMap-normal-x86_64.txt -lh > to/debug.txt
+https://gist.github.com/bang590/8f3e9704f1c2661836cd 网址
