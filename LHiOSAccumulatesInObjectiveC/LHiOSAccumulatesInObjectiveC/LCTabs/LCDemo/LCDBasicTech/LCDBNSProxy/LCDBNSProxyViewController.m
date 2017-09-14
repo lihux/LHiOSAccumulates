@@ -10,6 +10,10 @@
 
 #import "LCDBDealerProxy.h"
 
+
+/**
+ 个人理解：其实没必要非要继承自NSProxy，继承普通的NSObject也是可以的，这里的关键其实是利用了runtime的消息发射机制 by lihux
+ */
 @interface LCDBNSProxyViewController ()
 
 @property (nonatomic, strong) LCDBDealerProxy *dealer;
