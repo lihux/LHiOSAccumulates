@@ -23,7 +23,10 @@
 		523A41EE1F29E5B2004485A7 /* LCAnimationKeyPathPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A41ED1F29E5B1004485A7 /* LCAnimationKeyPathPathView.m */; };
 		5256DE731F1357A80043B066 /* 100CombinationColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5256DE721F1357A80043B066 /* 100CombinationColors.plist */; };
 		5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E1CF1F066B90005EF013 /* LCTimeHelper.m */; };
-		52815D221F185A0200E04BCF /* LCDBRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52815D211F185A0200E04BCF /* LCDBRuntimeViewController.m */; };
+		5289FB451F6A8FFF00413192 /* LCDBNSProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289FB441F6A8FFF00413192 /* LCDBNSProxyViewController.m */; };
+		5289FB491F6A912D00413192 /* LCDBBookProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289FB481F6A912D00413192 /* LCDBBookProvider.m */; };
+		5289FB4C1F6A91C600413192 /* LCDBClothesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289FB4B1F6A91C600413192 /* LCDBClothesProvider.m */; };
+		5289FB4F1F6A930900413192 /* LCDBDealerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289FB4E1F6A930900413192 /* LCDBDealerProxy.m */; };
 		5296F2AE1EFB9EB600A08022 /* LCBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5237BE6F1EFB84C800180A04 /* LCBookShelf.xcdatamodeld */; };
 		5296F2AF1EFB9ED100A08022 /* LCBCurrentReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD95D1EFA377E00DF92BA /* LCBCurrentReadingViewController.m */; };
 		5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528FD95F1EFA377E00DF92BA /* LCBHowNBIamViewController.m */; };
@@ -157,8 +160,14 @@
 		5256DE721F1357A80043B066 /* 100CombinationColors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = 100CombinationColors.plist; sourceTree = "<group>"; };
 		5270E1CE1F066B90005EF013 /* LCTimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTimeHelper.h; sourceTree = "<group>"; };
 		5270E1CF1F066B90005EF013 /* LCTimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTimeHelper.m; sourceTree = "<group>"; };
-		52815D201F185A0200E04BCF /* LCDBRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBRuntimeViewController.h; sourceTree = "<group>"; };
-		52815D211F185A0200E04BCF /* LCDBRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBRuntimeViewController.m; sourceTree = "<group>"; };
+		5289FB431F6A8FFF00413192 /* LCDBNSProxyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBNSProxyViewController.h; sourceTree = "<group>"; };
+		5289FB441F6A8FFF00413192 /* LCDBNSProxyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBNSProxyViewController.m; sourceTree = "<group>"; };
+		5289FB471F6A912D00413192 /* LCDBBookProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBBookProvider.h; sourceTree = "<group>"; };
+		5289FB481F6A912D00413192 /* LCDBBookProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBBookProvider.m; sourceTree = "<group>"; };
+		5289FB4A1F6A91C600413192 /* LCDBClothesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBClothesProvider.h; sourceTree = "<group>"; };
+		5289FB4B1F6A91C600413192 /* LCDBClothesProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBClothesProvider.m; sourceTree = "<group>"; };
+		5289FB4D1F6A930900413192 /* LCDBDealerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBDealerProxy.h; sourceTree = "<group>"; };
+		5289FB4E1F6A930900413192 /* LCDBDealerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBDealerProxy.m; sourceTree = "<group>"; };
 		528FD9591EFA377E00DF92BA /* LCBookShelf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCBookShelf.plist; sourceTree = "<group>"; };
 		528FD95A1EFA377E00DF92BA /* LCBookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCBookShelf.storyboard; sourceTree = "<group>"; };
 		528FD95C1EFA377E00DF92BA /* LCBCurrentReadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBCurrentReadingViewController.h; sourceTree = "<group>"; };
@@ -452,6 +461,21 @@
 			path = LCBookShelf;
 			sourceTree = "<group>";
 		};
+		5289FB461F6A90DC00413192 /* LCDBNSProxy */ = {
+			isa = PBXGroup;
+			children = (
+				5289FB431F6A8FFF00413192 /* LCDBNSProxyViewController.h */,
+				5289FB441F6A8FFF00413192 /* LCDBNSProxyViewController.m */,
+				5289FB471F6A912D00413192 /* LCDBBookProvider.h */,
+				5289FB481F6A912D00413192 /* LCDBBookProvider.m */,
+				5289FB4A1F6A91C600413192 /* LCDBClothesProvider.h */,
+				5289FB4B1F6A91C600413192 /* LCDBClothesProvider.m */,
+				5289FB4D1F6A930900413192 /* LCDBDealerProxy.h */,
+				5289FB4E1F6A930900413192 /* LCDBDealerProxy.m */,
+			);
+			path = LCDBNSProxy;
+			sourceTree = "<group>";
+		};
 		528FD9571EFA377E00DF92BA /* data */ = {
 			isa = PBXGroup;
 			children = (
@@ -672,6 +696,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				5289FB461F6A90DC00413192 /* LCDBNSProxy */,
 				9C476D931EF51A70004AC758 /* LCDBasicTech.plist */,
 				9C476D9A1EF51E57004AC758 /* LCDBENUMExploreViewController.h */,
 				9C476D9B1EF51E57004AC758 /* LCDBENUMExploreViewController.m */,
@@ -679,8 +704,6 @@
 				9C476D9E1EF51E6C004AC758 /* LCDBBlockExploreViewController.m */,
 				52052F761F20542E0065072B /* LCDBAutoLayoutViewController.h */,
 				52052F771F20542E0065072B /* LCDBAutoLayoutViewController.m */,
-				52815D201F185A0200E04BCF /* LCDBRuntimeViewController.h */,
-				52815D211F185A0200E04BCF /* LCDBRuntimeViewController.m */,
 				52052F7C1F2055100065072B /* LCDBIntrinsicSizeView.h */,
 				52052F7D1F2055100065072B /* LCDBIntrinsicSizeView.m */,
 				9C476D971EF51BFA004AC758 /* LCDBasicTech.storyboard */,
@@ -1052,6 +1075,7 @@
 				9C7EEB051F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
+				5289FB4C1F6A91C600413192 /* LCDBClothesProvider.m in Sources */,
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
 				5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */,
 				9CB64ECC1F0E7F5800A4BC1C /* LCColorViewController.m in Sources */,
@@ -1065,8 +1089,9 @@
 				9CA605951F05406C000DB286 /* LCComputerSystemCh2IntRepresentViewController.m in Sources */,
 				9CD141CC1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.m in Sources */,
 				9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */,
-				52815D221F185A0200E04BCF /* LCDBRuntimeViewController.m in Sources */,
 				5224851E1EE7BB60001A1429 /* LCDURLMetricsViewController.m in Sources */,
+				5289FB4F1F6A930900413192 /* LCDBDealerProxy.m in Sources */,
+				5289FB451F6A8FFF00413192 /* LCDBNSProxyViewController.m in Sources */,
 				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
 				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,
 				52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */,
@@ -1074,6 +1099,7 @@
 				5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */,
 				9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */,
 				9CB64ED91F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m in Sources */,
+				5289FB491F6A912D00413192 /* LCDBBookProvider.m in Sources */,
 				52B6C0461F31BFD500ED3859 /* UILabel+LCLihuxStyle.m in Sources */,
 				9C03656F1C4CF9F900E04D7B /* LCLightBorderButton.m in Sources */,
 				9C67EDDD1F22459900FE690D /* LCDCFloatView.m in Sources */,
