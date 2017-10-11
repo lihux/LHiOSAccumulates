@@ -62,5 +62,17 @@
 		<key>storyboardName</key>
 		<string>LCDBasicTech</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>can&apos;t add subview崩溃测试</string>
+		<key>content</key>
+		<string>can&apos;t add subview崩溃测试</string>
+		<key>storyboardID</key>
+		<string>LCDPushTestViewController</string>
+		<key>viewControllerTitle</key>
+		<string>can&apos;t add subview崩溃测试</string>
+		<key>storyboardName</key>
+		<string>LCDBasicTech</string>
+	</dict>
 </array>
 </plist>

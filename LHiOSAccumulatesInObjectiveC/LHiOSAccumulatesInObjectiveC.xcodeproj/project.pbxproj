@@ -21,6 +21,7 @@
 		522485231EE7BB60001A1429 /* LCSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5224850C1EE7BB60001A1429 /* LCSetting.plist */; };
 		522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 522485301EE8EBD0001A1429 /* UIView+LHAutoLayout.m */; };
 		523A41EE1F29E5B2004485A7 /* LCAnimationKeyPathPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A41ED1F29E5B1004485A7 /* LCAnimationKeyPathPathView.m */; };
+		5241ADF01F8DAC5E009F3A4D /* LCDPushTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241ADEF1F8DAC5E009F3A4D /* LCDPushTestViewController.m */; };
 		5256DE731F1357A80043B066 /* 100CombinationColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5256DE721F1357A80043B066 /* 100CombinationColors.plist */; };
 		5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E1CF1F066B90005EF013 /* LCTimeHelper.m */; };
 		5289FB451F6A8FFF00413192 /* LCDBNSProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289FB441F6A8FFF00413192 /* LCDBNSProxyViewController.m */; };
@@ -158,6 +159,8 @@
 		5237BE701EFB84C800180A04 /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
 		523A41EC1F29E5B1004485A7 /* LCAnimationKeyPathPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAnimationKeyPathPathView.h; sourceTree = "<group>"; };
 		523A41ED1F29E5B1004485A7 /* LCAnimationKeyPathPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAnimationKeyPathPathView.m; sourceTree = "<group>"; };
+		5241ADEE1F8DAC5E009F3A4D /* LCDPushTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDPushTestViewController.h; sourceTree = "<group>"; };
+		5241ADEF1F8DAC5E009F3A4D /* LCDPushTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDPushTestViewController.m; sourceTree = "<group>"; };
 		5256DE721F1357A80043B066 /* 100CombinationColors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = 100CombinationColors.plist; sourceTree = "<group>"; };
 		5270E1CE1F066B90005EF013 /* LCTimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTimeHelper.h; sourceTree = "<group>"; };
 		5270E1CF1F066B90005EF013 /* LCTimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTimeHelper.m; sourceTree = "<group>"; };
@@ -464,6 +467,15 @@
 			path = LCBookShelf;
 			sourceTree = "<group>";
 		};
+		5241ADED1F8DABD2009F3A4D /* LCDPushCrashTest */ = {
+			isa = PBXGroup;
+			children = (
+				5241ADEE1F8DAC5E009F3A4D /* LCDPushTestViewController.h */,
+				5241ADEF1F8DAC5E009F3A4D /* LCDPushTestViewController.m */,
+			);
+			path = LCDPushCrashTest;
+			sourceTree = "<group>";
+		};
 		5289FB461F6A90DC00413192 /* LCDBNSProxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -701,6 +713,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				5241ADED1F8DABD2009F3A4D /* LCDPushCrashTest */,
 				5289FB461F6A90DC00413192 /* LCDBNSProxy */,
 				9C476D931EF51A70004AC758 /* LCDBasicTech.plist */,
 				9C476D9A1EF51E57004AC758 /* LCDBENUMExploreViewController.h */,
@@ -1134,6 +1147,7 @@
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
 				52B6C0431F31A78A00ED3859 /* LCLabel.m in Sources */,
 				5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */,
+				5241ADF01F8DAC5E009F3A4D /* LCDPushTestViewController.m in Sources */,
 				9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */,
 				9C3669BF1F10C3D5009F856C /* LCLihuxStyleView.m in Sources */,
 				9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */,
