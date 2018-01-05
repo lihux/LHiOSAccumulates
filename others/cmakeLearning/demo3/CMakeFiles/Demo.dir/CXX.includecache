@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/test/mucang/LHiOSAccumulates/others/cmakeLearning/demo3/main.cc
+stdio.h
+-
+stdlib.h
+-
+math/MathFunctions.h
+/Users/test/mucang/LHiOSAccumulates/others/cmakeLearning/demo3/math/MathFunctions.h
+
+/Users/test/mucang/LHiOSAccumulates/others/cmakeLearning/demo3/math/MathFunctions.h
+
