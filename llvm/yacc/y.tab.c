@@ -1313,7 +1313,7 @@ yyreduce:
 
   case 7:
 #line 16 "translate.y"
-    { (yyval) = (yyvsp[(2) - (3)]) }
+    { (yyval) = (yyvsp[(2) - (3)]); }
     break;
 
 
@@ -1539,7 +1539,7 @@ yylex() {
 	int c;
 	c = getchar();
 	if(isdigit(c)) {
-		yylval = c-'0'
+		yylval = c-'0';
 		return DIGIT;
 	}
 	return c;

@@ -13,7 +13,7 @@ expr	: expr '+' term { $$ = $1 + $3; }
 term	: term '*' factor { $$ = $1 *$3; }
 	| factor
 	;
-factor	: '(' expr ')'	{ $$ = $2 }
+factor	: '(' expr ')'	{ $$ = $2; }
 	| DIGIT
 	;
 %%
@@ -22,7 +22,7 @@ yylex() {
 	int c;
 	c = getchar();
 	if(isdigit(c)) {
-		yylval = c-'0'
+		yylval = c-'0';
 		return DIGIT;
 	}
 	return c;
