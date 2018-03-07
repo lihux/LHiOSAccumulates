@@ -1,0 +1,96 @@
+hello2:
+Contents of (__DATA,__objc_classlist) section
+0000000100001070 0x1000012e8
+           isa 0x1000012c0
+    superclass 0x0
+         cache 0x0
+        vtable 0x0
+          data 0x100001230 (struct class_ro_t *)
+                    flags 0x184 RO_HAS_CXX_STRUCTORS
+            instanceStart 8
+             instanceSize 48
+                 reserved 0x0
+               ivarLayout 0x100000f73
+                layout map: 0x01 0x11 0x11 
+                     name 0x100000f6c Talker
+              baseMethods 0x1000010c8 (struct method_list_t *)
+		   entsize 24
+		     count 6
+		      name 0x100000eaf say:
+		     types 0x100000f79 v24@0:8@16
+		       imp 
+		      name 0x100000eb4 .cxx_destruct
+		     types 0x100000f84 v16@0:8
+		       imp 
+		      name 0x100000ec2 weakMan
+		     types 0x100000f8c @16@0:8
+		       imp 
+		      name 0x100000eca setWeakMan:
+		     types 0x100000f79 v24@0:8@16
+		       imp 
+		      name 0x100000ed6 strongFish
+		     types 0x100000f8c @16@0:8
+		       imp 
+		      name 0x100000ee1 setStrongFish:
+		     types 0x100000f79 v24@0:8@16
+		       imp 
+            baseProtocols 0x0
+                    ivars 0x100001160
+                    entsize 32
+                      count 5
+			   offset 0x1000012b0 8
+			     name 0x100000ef0 lihux
+			     type 0x100000f94 @"NSString"
+			alignment 3
+			     size 8
+			   offset 0x1000012b8 16
+			     name 0x100000ef6 dog
+			     type 0x100000fa0 q
+			alignment 3
+			     size 8
+			   offset 0x1000012a8 24
+			     name 0x100000efa people
+			     type 0x100000fa2 @"NSNumber"
+			alignment 3
+			     size 8
+			   offset 0x100001298 32
+			     name 0x100000f01 _weakMan
+			     type 0x100000f94 @"NSString"
+			alignment 3
+			     size 8
+			   offset 0x1000012a0 40
+			     name 0x100000f0a _strongFish
+			     type 0x100000fa2 @"NSNumber"
+			alignment 3
+			     size 8
+           weakIvarLayout 0x100000f77
+                layout map: 0x31 
+           baseProperties 0x100001208
+                    entsize 16
+                      count 2
+			     name 0x100000f24 weakMan
+			attributes 0x100000f2c T@"NSString",W,V_weakMan
+			     name 0x100000f45 strongFish
+			attributes 0x100000f50 T@"NSNumber",&,V_strongFish
+Meta Class
+           isa 0x0
+    superclass 0x0
+         cache 0x0
+        vtable 0x0
+          data 0x100001080 (struct class_ro_t *)
+                    flags 0x185 RO_META RO_HAS_CXX_STRUCTORS
+            instanceStart 40
+             instanceSize 40
+                 reserved 0x0
+               ivarLayout 0x0
+                     name 0x100000f6c Talker
+              baseMethods 0x0 (struct method_list_t *)
+            baseProtocols 0x0
+                    ivars 0x0
+           weakIvarLayout 0x0
+           baseProperties 0x0
+Contents of (__DATA,__objc_classrefs) section
+0000000100001290 0x1000012e8
+Contents of (__DATA,__objc_imageinfo) section
+  version 0
+    flags 0x40
