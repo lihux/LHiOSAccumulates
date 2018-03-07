@@ -6,6 +6,9 @@
 	NSNumber *people;
 }
 
+@property(weak) NSString *weakMan;
+@property(strong) NSNumber *strongFish;
+
 - (void) say: (NSString *) phrase;
 
 @end
