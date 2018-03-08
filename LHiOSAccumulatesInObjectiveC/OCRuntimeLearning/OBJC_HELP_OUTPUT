@@ -1,0 +1,39 @@
+objc[34429]: Objective-C runtime debugging. Set variable=YES to enable.
+objc[34429]: OBJC_HELP: describe available environment variables
+objc[34429]: OBJC_PRINT_OPTIONS: list which options are set
+objc[34429]: OBJC_PRINT_IMAGES: log image and library names as they are loaded
+objc[34429]: OBJC_PRINT_IMAGE_TIMES: measure duration of image loading steps
+objc[34429]: OBJC_PRINT_LOAD_METHODS: log calls to class and category +load methods
+objc[34429]: OBJC_PRINT_INITIALIZE_METHODS: log calls to class +initialize methods
+objc[34429]: OBJC_PRINT_RESOLVED_METHODS: log methods created by +resolveClassMethod: and +resolveInstanceMethod:
+objc[34429]: OBJC_PRINT_CLASS_SETUP: log progress of class and category setup
+objc[34429]: OBJC_PRINT_PROTOCOL_SETUP: log progress of protocol setup
+objc[34429]: OBJC_PRINT_IVAR_SETUP: log processing of non-fragile ivars
+objc[34429]: OBJC_PRINT_VTABLE_SETUP: log processing of class vtables
+objc[34429]: OBJC_PRINT_VTABLE_IMAGES: print vtable images showing overridden methods
+objc[34429]: OBJC_PRINT_CACHE_SETUP: log processing of method caches
+objc[34429]: OBJC_PRINT_FUTURE_CLASSES: log use of future classes for toll-free bridging
+objc[34429]: OBJC_PRINT_PREOPTIMIZATION: log preoptimization courtesy of dyld shared cache
+objc[34429]: OBJC_PRINT_CXX_CTORS: log calls to C++ ctors and dtors for instance variables
+objc[34429]: OBJC_PRINT_EXCEPTIONS: log exception handling
+objc[34429]: OBJC_PRINT_EXCEPTION_THROW: log backtrace of every objc_exception_throw()
+objc[34429]: OBJC_PRINT_ALT_HANDLERS: log processing of exception alt handlers
+objc[34429]: OBJC_PRINT_REPLACED_METHODS: log methods replaced by category implementations
+objc[34429]: OBJC_PRINT_DEPRECATION_WARNINGS: warn about calls to deprecated runtime functions
+objc[34429]: OBJC_PRINT_POOL_HIGHWATER: log high-water marks for autorelease pools
+objc[34429]: OBJC_PRINT_CUSTOM_RR: log classes with un-optimized custom retain/release methods
+objc[34429]: OBJC_PRINT_CUSTOM_AWZ: log classes with un-optimized custom allocWithZone methods
+objc[34429]: OBJC_PRINT_RAW_ISA: log classes that require raw pointer isa fields
+objc[34429]: OBJC_DEBUG_UNLOAD: warn about poorly-behaving bundles when unloaded
+objc[34429]: OBJC_DEBUG_FRAGILE_SUPERCLASSES: warn about subclasses that may have been broken by subsequent changes to superclasses
+objc[34429]: OBJC_DEBUG_NIL_SYNC: warn about @synchronized(nil), which does no synchronization
+objc[34429]: OBJC_DEBUG_NONFRAGILE_IVARS: capriciously rearrange non-fragile ivars
+objc[34429]: OBJC_DEBUG_ALT_HANDLERS: record more info about bad alt handler use
+objc[34429]: OBJC_DEBUG_MISSING_POOLS: warn about autorelease with no pool in place, which may be a leak
+objc[34429]: OBJC_DEBUG_POOL_ALLOCATION: halt when autorelease pools are popped out of order, and allow heap debuggers to track autorelease pools
+objc[34429]: OBJC_DEBUG_DUPLICATE_CLASSES: halt when multiple classes with the same name are present
+objc[34429]: OBJC_DEBUG_DONT_CRASH: halt the process by exiting instead of crashing
+objc[34429]: OBJC_DISABLE_VTABLES: disable vtable dispatch
+objc[34429]: OBJC_DISABLE_PREOPTIMIZATION: disable preoptimization courtesy of dyld shared cache
+objc[34429]: OBJC_DISABLE_TAGGED_POINTERS: disable tagged pointer optimization of NSNumber et al.
+objc[34429]: OBJC_DISABLE_NONPOINTER_ISA: disable non-pointer isa fields
