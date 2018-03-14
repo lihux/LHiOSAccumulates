@@ -18,11 +18,35 @@
 
 @implementation LCDispatchApplyViewController
 
+//定义的__weak_lihux是为了学习autoreleasepool的实现原理而新增的，参考文章：
+//http://www.cocoachina.com/ios/20150610/12093.html
+__weak NSString *__weak_lihux = nil;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.outputString = [NSMutableString string];
+    [self sceen1];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear:%@", __weak_lihux);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"viewDidAppear:%@", __weak_lihux);
+}
+
+#pragma mark -
+- (void)sceen1 {
+    NSString *lihux = [NSString stringWithFormat:@"大王派我来巡山"];
+    __weak_lihux = lihux;
+    //运行的时候在此处设置lldb的断点：watchpoint set variable __weak_lihux 观察__weak_lihux的值的变化情况
+    NSLog(@"sceen1:%@", __weak_lihux);
+}
+
+#pragma -
 - (IBAction)didTapOnButton:(id)sender {
     UIButton *button = (UIButton *)sender;
     NSInteger tag = button.tag;
