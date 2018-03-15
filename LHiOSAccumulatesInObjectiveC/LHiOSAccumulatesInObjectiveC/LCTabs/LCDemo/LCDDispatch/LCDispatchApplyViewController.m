@@ -27,7 +27,8 @@ __weak NSString *__weak_lihux = nil;
     self.outputString = [NSMutableString string];
 //    [self sceen1];
 //    [self sceen1b];
-    [self sceen2];
+//    [self sceen2];
+    [self sceen3];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -57,6 +58,15 @@ __weak NSString *__weak_lihux = nil;
 - (void)sceen2 {
     @autoreleasepool {
         NSString *lihux = [NSString stringWithFormat:@"大王派我来巡山"];
+        __weak_lihux = lihux;
+    }
+    NSLog(@"%@:%@", NSStringFromSelector(_cmd), __weak_lihux);
+}
+
+- (void)sceen3 {
+    NSString *lihux;
+    @autoreleasepool {
+         lihux = [NSString stringWithFormat:@"大王派我来巡山"];
         __weak_lihux = lihux;
     }
     NSLog(@"%@:%@", NSStringFromSelector(_cmd), __weak_lihux);
