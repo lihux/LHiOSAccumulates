@@ -26,7 +26,8 @@ __weak NSString *__weak_lihux = nil;
     [super viewDidLoad];
     self.outputString = [NSMutableString string];
 //    [self sceen1];
-    [self sceen1b];
+//    [self sceen1b];
+    [self sceen2];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -44,13 +45,21 @@ __weak NSString *__weak_lihux = nil;
     NSString *lihux = [NSString stringWithFormat:@"大王派我来巡山"];
     __weak_lihux = lihux;
     //运行的时候在此处设置lldb的断点：watchpoint set variable __weak_lihux 观察__weak_lihux的值的变化情况
-    NSLog(@"sceen1:%@", __weak_lihux);
+    NSLog(@"%@:%@", NSStringFromSelector(_cmd), __weak_lihux);
 }
 
 - (void)sceen1b {
     NSString *lihux = @"大王派我来巡山";
     __weak_lihux = lihux;
-    NSLog(@"sceen1b:%@", __weak_lihux);
+    NSLog(@"%@:%@", NSStringFromSelector(_cmd), __weak_lihux);
+}
+
+- (void)sceen2 {
+    @autoreleasepool {
+        NSString *lihux = [NSString stringWithFormat:@"大王派我来巡山"];
+        __weak_lihux = lihux;
+    }
+    NSLog(@"%@:%@", NSStringFromSelector(_cmd), __weak_lihux);
 }
 
 #pragma -
