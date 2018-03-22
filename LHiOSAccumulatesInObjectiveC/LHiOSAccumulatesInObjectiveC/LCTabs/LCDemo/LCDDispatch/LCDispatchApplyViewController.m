@@ -9,6 +9,8 @@
 #import "LCDispatchApplyViewController.h"
 #import "LCUtilities.h"
 
+#import <objc/runtime.h>
+
 @interface LCDispatchApplyViewController ()
 
 @property (nonatomic, strong) NSMutableString *outputString;
@@ -39,6 +41,7 @@ __weak NSString *__weak_lihux = nil;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     NSLog(@"viewDidAppear:%@", __weak_lihux);
+    [self printAllClass];
 }
 
 #pragma mark -
@@ -91,6 +94,18 @@ __weak NSString *__weak_lihux = nil;
         [self.outputString appendString:content];//多线程同时写，可能会有问题
         NSLog(@"%@", content);
     });
+}
+
+#pragma mark - 打印出所有的类
+- (void)printAllClass {
+    @autoreleasepool {
+        unsigned int count;
+        Class *cls = objc_copyClassList(&count);
+        for (NSUInteger i = 0; i < count; i ++) {
+            Class currentClass = cls[i];
+            NSLog(@"打印第%zd个类address%p：%@", i+1, currentClass, NSStringFromClass(currentClass));
+        }
+    }
 }
 
 - (void)dealloc {
