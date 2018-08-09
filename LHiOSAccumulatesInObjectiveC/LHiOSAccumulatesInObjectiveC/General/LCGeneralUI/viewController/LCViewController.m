@@ -40,6 +40,7 @@
 - (void)didReceiveChangeColorNotification:(NSNotification *)notification {
     self.view.backgroundColor = [LCLihuxHelper colorOfType:LCLihuxStyleColorTypeContent];
 }
+
 - (void)customLCViewControllerBaseUI {
     self.view.backgroundColor = [LCLihuxHelper colorOfType:LCLihuxStyleColorTypeContent];
     [LCLihuxHelper makeLihuxStyleOfView:self.lcViewController_ContainerView];

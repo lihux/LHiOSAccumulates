@@ -18,6 +18,8 @@
 
 @interface LCTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @property (nonatomic, weak) id<LCTableViewCellDelegate> delegate;
 @property (nonatomic, strong) LCAccumulate *accumulate;
 

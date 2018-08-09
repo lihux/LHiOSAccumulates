@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Lihux. All rights reserved.
 //
 
-#import "LCViewController.h"
+#import "LCSimpleTableViewController.h"
 
-@interface LCDKVCViewController : LCViewController
+@interface LCDKVCViewController : LCSimpleTableViewController
 
 @end

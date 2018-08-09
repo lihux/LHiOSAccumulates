@@ -14,7 +14,6 @@
 
 @interface LCTableViewCell ()
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 @property (nonatomic, strong) NSIndexPath *indexPath;
 

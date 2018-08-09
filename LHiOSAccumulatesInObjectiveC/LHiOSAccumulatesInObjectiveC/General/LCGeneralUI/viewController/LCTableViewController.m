@@ -26,6 +26,11 @@
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) LCAccumulateManager *accumulatesManager;
 
+/**
+ 支持直接传入数据源，简化使用一般适用于具体的主题下的全量调用
+ */
+@property (nonatomic, assign) BOOL isSimpleData;
+
 @end
 
 @implementation LCTableViewController
@@ -37,6 +42,11 @@
     NSString *reuseID = [self tableViewCellResueIdentifier];
     [self.tableView registerNib:[UINib nibWithNibName:reuseID bundle:nil] forCellReuseIdentifier:reuseID];
     [self loadAccumulatesFromPlist];
+}
+
+- (void)configWithTitle:(NSString *)title dataDictionary:(NSDictionary *)dataDic {
+    self.title = title;
+
 }
 
 - (void)loadAccumulatesFromPlist {

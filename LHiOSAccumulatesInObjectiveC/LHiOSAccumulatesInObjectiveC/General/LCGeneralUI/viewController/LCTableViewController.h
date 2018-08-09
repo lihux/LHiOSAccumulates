@@ -17,4 +17,6 @@
 
 - (void)configWithTitle:(NSString *)title plistFileName:(NSString *)plistName;
 
+- (void)configWithTitle:(NSString *)title dataDictionary:(NSDictionary *)dataDic;
+
 @end

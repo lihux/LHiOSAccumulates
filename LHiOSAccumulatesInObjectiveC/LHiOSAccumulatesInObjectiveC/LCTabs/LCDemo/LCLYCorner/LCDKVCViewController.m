@@ -31,4 +31,14 @@
     [super viewDidLoad];
 }
 
+#pragma mark override
+- (NSDictionary *)buildData {
+    return @{@"KVC🐂啊": @"testKVCSearchPath:"};
+}
+
+#pragma mark - test functions
+- (void)testKVCSearchPath:(NSNumber *)row {
+    [self log:@"啊哈哈哈，看到希望了"];
+}
+
 @end

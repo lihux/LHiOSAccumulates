@@ -25,6 +25,7 @@
 		524747A1211BDDFB00B1C4C7 /* LCDLYCorner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 524747A0211BDDFB00B1C4C7 /* LCDLYCorner.plist */; };
 		524747A3211BDE6300B1C4C7 /* LCDLYCorner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524747A2211BDE6300B1C4C7 /* LCDLYCorner.storyboard */; };
 		524747A6211BE03700B1C4C7 /* LCDKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524747A5211BE03700B1C4C7 /* LCDKVCViewController.m */; };
+		524747A9211BE7CD00B1C4C7 /* LCSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524747A8211BE7CD00B1C4C7 /* LCSimpleTableViewController.m */; };
 		5256DE731F1357A80043B066 /* 100CombinationColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5256DE721F1357A80043B066 /* 100CombinationColors.plist */; };
 		5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E1CF1F066B90005EF013 /* LCTimeHelper.m */; };
 		5289FB451F6A8FFF00413192 /* LCDBNSProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289FB441F6A8FFF00413192 /* LCDBNSProxyViewController.m */; };
@@ -168,6 +169,8 @@
 		524747A2211BDE6300B1C4C7 /* LCDLYCorner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDLYCorner.storyboard; sourceTree = "<group>"; };
 		524747A4211BE03700B1C4C7 /* LCDKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDKVCViewController.h; sourceTree = "<group>"; };
 		524747A5211BE03700B1C4C7 /* LCDKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDKVCViewController.m; sourceTree = "<group>"; };
+		524747A7211BE7CD00B1C4C7 /* LCSimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSimpleTableViewController.h; sourceTree = "<group>"; };
+		524747A8211BE7CD00B1C4C7 /* LCSimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSimpleTableViewController.m; sourceTree = "<group>"; };
 		5256DE721F1357A80043B066 /* 100CombinationColors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = 100CombinationColors.plist; sourceTree = "<group>"; };
 		5270E1CE1F066B90005EF013 /* LCTimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTimeHelper.h; sourceTree = "<group>"; };
 		5270E1CF1F066B90005EF013 /* LCTimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTimeHelper.m; sourceTree = "<group>"; };
@@ -663,6 +666,8 @@
 			children = (
 				9C0365621C4CF9F900E04D7B /* LCTableViewController.h */,
 				9C0365631C4CF9F900E04D7B /* LCTableViewController.m */,
+				524747A7211BE7CD00B1C4C7 /* LCSimpleTableViewController.h */,
+				524747A8211BE7CD00B1C4C7 /* LCSimpleTableViewController.m */,
 				9C7FDF6C1EB0E39C00609D65 /* LCViewController.h */,
 				9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */,
 			);
@@ -1170,6 +1175,7 @@
 				52B6C0431F31A78A00ED3859 /* LCLabel.m in Sources */,
 				5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */,
 				5241ADF01F8DAC5E009F3A4D /* LCDPushTestViewController.m in Sources */,
+				524747A9211BE7CD00B1C4C7 /* LCSimpleTableViewController.m in Sources */,
 				9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */,
 				9C3669BF1F10C3D5009F856C /* LCLihuxStyleView.m in Sources */,
 				9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */,
