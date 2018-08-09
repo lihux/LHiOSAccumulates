@@ -64,6 +64,18 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>六十一道发卡弯系列</string>
+		<key>content</key>
+		<string>学习，永不止步，从2018-08-08到2018-10-08，六十一天，六十一道发卡弯，记录点击的成长</string>
+		<key>storyboardID</key>
+		<string></string>
+		<key>viewControllerTitle</key>
+		<string>六十一道发卡弯系列</string>
+		<key>plistName</key>
+		<string>LCDLYCorner</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string> 多线程技术的应用</string>
 		<key>content</key>
 		<string>多线程的应用，在iOS的开发中并不是多么罕见的一件事情，事实上，对于一个稍微复杂一点的APP，有网络请求、较为费时的数据加工、图像处理等功能的时候，往往直接或者间接的应用到了多线程技术了</string>
