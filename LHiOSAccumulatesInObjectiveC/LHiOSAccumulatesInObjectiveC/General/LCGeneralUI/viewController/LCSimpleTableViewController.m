@@ -10,7 +10,7 @@
 
 #import "LCTableViewCell.h"
 
-@interface LCSimpleTableViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface LCSimpleTableViewController () <UITableViewDelegate, UITableViewDataSource, LCTableViewCellDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSDictionary *dataDic;
@@ -46,11 +46,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LCTableViewCell class]) forIndexPath:indexPath];
     cell.tag = indexPath.row + 1;
+    cell.delegate = self;
     cell.titleLabel.text = self.keys[indexPath.row];
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+#pragma mark - LCTableViewCellDelegate
+-(void)tableViewCell:(LCTableViewCell *)cell tappedWithIndex:(NSIndexPath *)indexPath {
     NSString *key = [self.keys objectAtIndex:indexPath.row];
     NSString *value = [self.dataDic objectForKey:key];
     SEL action = NSSelectorFromString(value);
@@ -59,7 +61,7 @@
         #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         [self performSelector:action withObject:@(indexPath.row)];
         #pragma clang diagnostic pop
-}
+    }
 }
 
 #pragma mark - lazy load

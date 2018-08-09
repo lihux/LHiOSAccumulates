@@ -33,7 +33,17 @@
 
 #pragma mark override
 - (NSDictionary *)buildData {
-    return @{@"KVC🐂啊": @"testKVCSearchPath:"};
+    return @{@"KVC🐂啊": @"testKVCSearchPath:",
+             @"KVC🐂啊s": @"testKVCSearchPath:",
+             @"KVC🐂啊f": @"testKVCSearchPath:",
+             @"KVC🐂啊e": @"testKVCSearchPath:",
+             @"KVC🐂啊d": @"testKVCSearchPath:",
+             @"KVC🐂啊ds": @"testKVCSearchPath:",
+             @"KVC🐂啊dsada": @"testKVCSearchPath:",
+             @"KVC🐂啊fff": @"testKVCSearchPath:",
+             @"KVC🐂啊fd": @"testKVCSearchPath:",
+             @"KVC🐂啊fdsfds": @"testKVCSearchPath:",
+             };
 }
 
 #pragma mark - test functions
