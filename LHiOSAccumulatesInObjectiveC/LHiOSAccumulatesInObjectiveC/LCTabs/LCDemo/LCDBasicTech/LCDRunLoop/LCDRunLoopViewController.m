@@ -1,0 +1,57 @@
+//
+//  LCDRunLoopViewController.m
+//  LHiOSAccumulatesInObjectiveC
+//
+//  Created by 李辉 on 2018/9/7.
+//  Copyright © 2018年 Lihux. All rights reserved.
+//
+
+#import "LCDRunLoopViewController.h"
+
+@interface LCDRunLoopViewController ()
+
+@end
+
+@implementation LCDRunLoopViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+- (IBAction)didTapOnNoToleranceTimerButton:(id)sender {
+    NSLog(@"没有设置tolerance,直接使用mk_timer");
+    CFAbsoluteTime refTime = CFAbsoluteTimeGetCurrent();
+    NSTimer *timer = [NSTimer timerWithTimeInterval:3.0 repeats:NO block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"timer fire %f",CFAbsoluteTimeGetCurrent() - refTime);
+    }];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+- (IBAction)didTapOnToleranceTimerButton:(id)sender {
+    NSLog(@"设置了tolerance，使用dispatch timer");
+    CFAbsoluteTime refTime = CFAbsoluteTimeGetCurrent();
+    NSLog(@"start time 0.000000");
+    NSTimer *timer = [NSTimer timerWithTimeInterval:7.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"timer fire %f",CFAbsoluteTimeGetCurrent() - refTime);
+    }];
+    timer.tolerance = 0.5;
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+//    NSTimer *timer2 = [NSTimer timerWithTimeInterval:53.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+//        NSLog(@"timer fire %f",CFAbsoluteTimeGetCurrent() - refTime);
+//    }];
+//    [[NSRunLoop mainRunLoop] addTimer:timer2 forMode:NSRunLoopCommonModes];
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSLog(@"before busy %f", CFAbsoluteTimeGetCurrent() - refTime);
+//        NSInteger j;
+//        for (long  i = 0; i< 1000000000; i++) {
+//            j = i*3;
+//        }
+//        NSLog(@"after busy %f", CFAbsoluteTimeGetCurrent() - refTime);
+//    });
+    
+}
+
+
+@end

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -141,6 +141,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqX-EV-f9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-188" y="851"/>
+        </scene>
+        <!--Run Loop View Controller-->
+        <scene sceneID="SEd-zm-cIZ">
+            <objects>
+                <viewController storyboardIdentifier="LCDRunLoopViewController" id="SCx-48-yOj" customClass="LCDRunLoopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2pq-8f-kka"/>
+                        <viewControllerLayoutGuide type="bottom" id="tkC-K8-ODH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ugQ-Bp-eew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmi-28-OvV">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVI-Az-sYS">
+                                        <rect key="frame" x="40" y="132" width="263" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="LXy-kG-J2Q"/>
+                                        </constraints>
+                                        <state key="normal" title="触发一个有设置tolerance的NSTimer"/>
+                                        <connections>
+                                            <action selector="didTapOnToleranceTimerButton:" destination="SCx-48-yOj" eventType="touchUpInside" id="9Wx-9e-PoJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtL-zW-LXB">
+                                        <rect key="frame" x="36" y="44" width="271" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Smc-9O-gOw"/>
+                                        </constraints>
+                                        <state key="normal" title="触发一个没有设置tolerance的NSTimer"/>
+                                        <connections>
+                                            <action selector="didTapOnNoToleranceTimerButton:" destination="SCx-48-yOj" eventType="touchUpInside" id="bNv-X1-nrU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WtL-zW-LXB" secondAttribute="trailing" constant="36" id="1cr-RD-TrY"/>
+                                    <constraint firstItem="WtL-zW-LXB" firstAttribute="leading" secondItem="Xmi-28-OvV" secondAttribute="leading" constant="36" id="ExB-Ze-44H"/>
+                                    <constraint firstItem="WtL-zW-LXB" firstAttribute="top" secondItem="Xmi-28-OvV" secondAttribute="top" constant="44" id="Pfs-DW-TJe"/>
+                                    <constraint firstAttribute="trailing" secondItem="oVI-Az-sYS" secondAttribute="trailing" constant="40" id="Wtz-Tt-q9u"/>
+                                    <constraint firstItem="oVI-Az-sYS" firstAttribute="top" secondItem="WtL-zW-LXB" secondAttribute="bottom" constant="44" id="Zqo-ZI-HmE"/>
+                                    <constraint firstItem="oVI-Az-sYS" firstAttribute="leading" secondItem="Xmi-28-OvV" secondAttribute="leading" constant="40" id="kKl-CW-bzj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xmi-28-OvV" firstAttribute="leading" secondItem="ugQ-Bp-eew" secondAttribute="leadingMargin" id="SKE-qg-a5a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xmi-28-OvV" secondAttribute="trailing" id="UOP-5B-DmW"/>
+                            <constraint firstItem="tkC-K8-ODH" firstAttribute="top" secondItem="Xmi-28-OvV" secondAttribute="bottom" id="X1a-EJ-gDR"/>
+                            <constraint firstItem="Xmi-28-OvV" firstAttribute="top" secondItem="2pq-8f-kka" secondAttribute="bottom" id="gez-qa-ala"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Uv-Ua-R0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445.60000000000002" y="846.9265367316342"/>
         </scene>
         <!--Block Explore View Controller-->
         <scene sceneID="1tH-Ew-aDH">

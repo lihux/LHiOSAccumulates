@@ -74,5 +74,17 @@
 		<key>storyboardName</key>
 		<string>LCDBasicTech</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>runloop学习</string>
+		<key>content</key>
+		<string>runloop学习</string>
+		<key>storyboardID</key>
+		<string>LCDRunLoopViewController</string>
+		<key>viewControllerTitle</key>
+		<string>runloop学习</string>
+		<key>storyboardName</key>
+		<string>LCDBasicTech</string>
+	</dict>
 </array>
 </plist>
