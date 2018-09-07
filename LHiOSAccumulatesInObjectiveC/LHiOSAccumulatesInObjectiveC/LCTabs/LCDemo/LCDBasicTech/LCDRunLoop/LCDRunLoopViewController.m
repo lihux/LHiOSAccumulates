@@ -19,6 +19,8 @@
 }
 
 - (IBAction)didTapOnNoToleranceTimerButton:(id)sender {
+    //添加断点来测试：
+    //(lldb) breakpoint set -r dispatch_source_set_timer
     NSLog(@"没有设置tolerance,直接使用mk_timer");
     CFAbsoluteTime refTime = CFAbsoluteTimeGetCurrent();
     NSTimer *timer = [NSTimer timerWithTimeInterval:3.0 repeats:NO block:^(NSTimer * _Nonnull timer) {
