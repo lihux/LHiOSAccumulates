@@ -56,6 +56,8 @@
     LCDSon *son = [LCDSon new];//老子干不动了，让儿子来干，😁
     if ([son respondsToSelector:aSelector]) {
         [anInvocation invokeWithTarget:son];
+        anInvocation.selector = NSSelectorFromString(@"sleep");
+        [anInvocation invokeWithTarget:son];
     } else {
         [super forwardInvocation:anInvocation];
     }
