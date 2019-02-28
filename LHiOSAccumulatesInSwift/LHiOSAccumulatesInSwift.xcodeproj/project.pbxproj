@@ -53,6 +53,7 @@
 		5238A5D91F3B14C4009913A7 /* LSSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LSSetting.storyboard; sourceTree = "<group>"; };
 		5238A5DB1F3B14C4009913A7 /* LSSuprise.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LSSuprise.plist; sourceTree = "<group>"; };
 		5238A5DC1F3B14C4009913A7 /* LSSuprise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LSSuprise.storyboard; sourceTree = "<group>"; };
+		526652A52227935000855ADD /* leetCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = leetCode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		527D4F731F3DBA58005C3285 /* LSBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBook.swift; sourceTree = "<group>"; };
 		52C6246D1F3C746800CD7045 /* LSCodableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSCodableViewController.swift; sourceTree = "<group>"; };
 		52C6246F1F3C757500CD7045 /* LSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 			children = (
 				9C23110C1E62C4C700629270 /* view */,
 				9C2311081E62B0C500629270 /* LSHomeViewController.swift */,
+				526652A52227935000855ADD /* leetCode.playground */,
 			);
 			name = LSHome;
 			sourceTree = "<group>";
