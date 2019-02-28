@@ -106,10 +106,10 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_806061_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"%@",2};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_806061_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"MyClass",7};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_806061_mi_2 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"%@",2};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_806061_mi_3 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"MyAddition",10};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_71114e_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"%@",2};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_71114e_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"MyClass",7};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_71114e_mi_2 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"%@",2};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_71114e_mi_3 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"MyAddition",10};
 
 
 
@@ -97774,12 +97774,16 @@ typedef struct objc_object MyClass;
 typedef struct {} _objc_exc_MyClass;
 #endif
 
+extern "C" unsigned long OBJC_IVAR_$_MyClass$_lihux;
 struct MyClass_IMPL {
 	struct NSObject_IMPL NSObject_IVARS;
+	NSString *_lihux;
 };
 
 
 // - (void)printName;
+
+// @property(nonatomic, copy) NSString *lihux;
 
 /* @end */
 
@@ -97797,16 +97801,21 @@ struct MyClass_IMPL {
 
 
 static void _I_MyClass_printName(MyClass * self, SEL _cmd) {
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_806061_mi_0,(NSString *)&__NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_806061_mi_1);
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_71114e_mi_0,(NSString *)&__NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_71114e_mi_1);
 }
 
+
+static NSString * _I_MyClass_lihux(MyClass * self, SEL _cmd) { return (*(NSString **)((char *)self + OBJC_IVAR_$_MyClass$_lihux)); }
+extern "C" __declspec(dllimport) void objc_setProperty (id, SEL, long, id, bool, bool);
+
+static void _I_MyClass_setLihux_(MyClass * self, SEL _cmd, NSString *lihux) { objc_setProperty (self, _cmd, __OFFSETOFIVAR__(struct MyClass, _lihux), (id)lihux, 0, 1); }
 // @end
 
 // @implementation MyClass(MyAddition)
 
 
 static void _I_MyClass_MyAddition_printName(MyClass * self, SEL _cmd) {
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_806061_mi_2,(NSString *)&__NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_806061_mi_3);
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_71114e_mi_2,(NSString *)&__NSConstantStringImpl__var_folders_fy_xl66xtjj2gz3_4dcmg6t_9n40000gn_T_MyClass_71114e_mi_3);
 }
 
 // @end
@@ -97879,14 +97888,38 @@ struct _category_t {
 extern "C" __declspec(dllimport) struct objc_cache _objc_empty_cache;
 #pragma warning(disable:4273)
 
+extern "C" unsigned long int OBJC_IVAR_$_MyClass$_lihux __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct MyClass, _lihux);
+
+static struct /*_ivar_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _prop_t)
+	unsigned int count;
+	struct _ivar_t ivar_list[1];
+} _OBJC_$_INSTANCE_VARIABLES_MyClass __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_ivar_t),
+	1,
+	{{(unsigned long int *)&OBJC_IVAR_$_MyClass$_lihux, "_lihux", "@\"NSString\"", 3, 8}}
+};
+
 static struct /*_method_list_t*/ {
 	unsigned int entsize;  // sizeof(struct _objc_method)
 	unsigned int method_count;
-	struct _objc_method method_list[1];
+	struct _objc_method method_list[3];
 } _OBJC_$_INSTANCE_METHODS_MyClass __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_objc_method),
+	3,
+	{{(struct objc_selector *)"printName", "v16@0:8", (void *)_I_MyClass_printName},
+	{(struct objc_selector *)"lihux", "@16@0:8", (void *)_I_MyClass_lihux},
+	{(struct objc_selector *)"setLihux:", "v24@0:8@16", (void *)_I_MyClass_setLihux_}}
+};
+
+static struct /*_prop_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _prop_t)
+	unsigned int count_of_properties;
+	struct _prop_t prop_list[1];
+} _OBJC_$_PROP_LIST_MyClass __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_prop_t),
 	1,
-	{{(struct objc_selector *)"printName", "v16@0:8", (void *)_I_MyClass_printName}}
+	{{"lihux","T@\"NSString\",C,N,V_lihux"}}
 };
 
 static struct _class_ro_t _OBJC_METACLASS_RO_$_MyClass __attribute__ ((used, section ("__DATA,__objc_const"))) = {
@@ -97902,15 +97935,15 @@ static struct _class_ro_t _OBJC_METACLASS_RO_$_MyClass __attribute__ ((used, sec
 };
 
 static struct _class_ro_t _OBJC_CLASS_RO_$_MyClass __attribute__ ((used, section ("__DATA,__objc_const"))) = {
-	0, sizeof(struct MyClass_IMPL), sizeof(struct MyClass_IMPL), 
+	0, __OFFSETOFIVAR__(struct MyClass, _lihux), sizeof(struct MyClass_IMPL), 
 	(unsigned int)0, 
 	0, 
 	"MyClass",
 	(const struct _method_list_t *)&_OBJC_$_INSTANCE_METHODS_MyClass,
 	0, 
+	(const struct _ivar_list_t *)&_OBJC_$_INSTANCE_VARIABLES_MyClass,
 	0, 
-	0, 
-	0, 
+	(const struct _prop_list_t *)&_OBJC_$_PROP_LIST_MyClass,
 };
 
 extern "C" __declspec(dllimport) struct _class_t OBJC_METACLASS_$_NSObject;

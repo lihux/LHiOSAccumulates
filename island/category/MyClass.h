@@ -4,6 +4,8 @@
 
 - (void)printName;
 
+@property(nonatomic, copy) NSString *lihux;
+
 @end
 
 @interface MyClass(MyAddition)
