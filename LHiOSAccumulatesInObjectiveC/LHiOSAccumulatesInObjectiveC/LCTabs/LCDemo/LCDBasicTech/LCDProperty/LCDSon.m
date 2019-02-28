@@ -10,4 +10,8 @@
 
 @implementation LCDSon
 
+- (void)eatFood {
+    NSLog(@"我是一只鱼，我要吃东西！");
+}
+
 @end
