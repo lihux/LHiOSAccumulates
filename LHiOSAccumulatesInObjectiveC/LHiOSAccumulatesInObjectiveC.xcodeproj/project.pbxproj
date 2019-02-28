@@ -28,6 +28,8 @@
 		524747A6211BE03700B1C4C7 /* LCDKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524747A5211BE03700B1C4C7 /* LCDKVCViewController.m */; };
 		524747A9211BE7CD00B1C4C7 /* LCSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524747A8211BE7CD00B1C4C7 /* LCSimpleTableViewController.m */; };
 		5256DE731F1357A80043B066 /* 100CombinationColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5256DE721F1357A80043B066 /* 100CombinationColors.plist */; };
+		526652A122276F0C00855ADD /* LCDParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 526652A022276F0C00855ADD /* LCDParent.m */; };
+		526652A422276F3000855ADD /* LCDSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 526652A322276F3000855ADD /* LCDSon.m */; };
 		5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E1CF1F066B90005EF013 /* LCTimeHelper.m */; };
 		5289FB451F6A8FFF00413192 /* LCDBNSProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289FB441F6A8FFF00413192 /* LCDBNSProxyViewController.m */; };
 		5289FB491F6A912D00413192 /* LCDBBookProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289FB481F6A912D00413192 /* LCDBBookProvider.m */; };
@@ -175,6 +177,10 @@
 		524747A7211BE7CD00B1C4C7 /* LCSimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSimpleTableViewController.h; sourceTree = "<group>"; };
 		524747A8211BE7CD00B1C4C7 /* LCSimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSimpleTableViewController.m; sourceTree = "<group>"; };
 		5256DE721F1357A80043B066 /* 100CombinationColors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = 100CombinationColors.plist; sourceTree = "<group>"; };
+		5266529F22276F0C00855ADD /* LCDParent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDParent.h; sourceTree = "<group>"; };
+		526652A022276F0C00855ADD /* LCDParent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDParent.m; sourceTree = "<group>"; };
+		526652A222276F3000855ADD /* LCDSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDSon.h; sourceTree = "<group>"; };
+		526652A322276F3000855ADD /* LCDSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDSon.m; sourceTree = "<group>"; };
 		5270E1CE1F066B90005EF013 /* LCTimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTimeHelper.h; sourceTree = "<group>"; };
 		5270E1CF1F066B90005EF013 /* LCTimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTimeHelper.m; sourceTree = "<group>"; };
 		5289FB431F6A8FFF00413192 /* LCDBNSProxyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBNSProxyViewController.h; sourceTree = "<group>"; };
@@ -510,6 +516,17 @@
 			path = LCLYCorner;
 			sourceTree = "<group>";
 		};
+		5266529E22276EEC00855ADD /* LCDProperty */ = {
+			isa = PBXGroup;
+			children = (
+				5266529F22276F0C00855ADD /* LCDParent.h */,
+				526652A022276F0C00855ADD /* LCDParent.m */,
+				526652A222276F3000855ADD /* LCDSon.h */,
+				526652A322276F3000855ADD /* LCDSon.m */,
+			);
+			path = LCDProperty;
+			sourceTree = "<group>";
+		};
 		5289FB461F6A90DC00413192 /* LCDBNSProxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,6 +766,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				5266529E22276EEC00855ADD /* LCDProperty */,
 				523691DC21420A930000F9F0 /* LCDRunLoop */,
 				5241ADED1F8DABD2009F3A4D /* LCDPushCrashTest */,
 				5289FB461F6A90DC00413192 /* LCDBNSProxy */,
@@ -1181,6 +1199,7 @@
 				52052F7E1F2055100065072B /* LCDBIntrinsicSizeView.m in Sources */,
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,
 				9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */,
+				526652A422276F3000855ADD /* LCDSon.m in Sources */,
 				9C4A0F441F67531A0046E722 /* LCFileHelper.m in Sources */,
 				9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
@@ -1193,6 +1212,7 @@
 				9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */,
 				9C3669BF1F10C3D5009F856C /* LCLihuxStyleView.m in Sources */,
 				9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */,
+				526652A122276F0C00855ADD /* LCDParent.m in Sources */,
 				52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */,
 				9C4BE4C71F0BE5B7001A1D06 /* LCLihuxMeViewController.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
