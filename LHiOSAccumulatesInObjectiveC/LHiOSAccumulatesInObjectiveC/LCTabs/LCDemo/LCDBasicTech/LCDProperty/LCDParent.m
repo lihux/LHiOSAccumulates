@@ -10,6 +10,47 @@
 
 #import "LCDSon.h"
 
+int myAtoi(char* str) {
+    int length = strlen(str), index = 0;
+    
+    if (length == 0) return 0;
+    
+    if (length == 1) return (str[0]-'0' >= 0 && str[0]-'0' <= 9 ) ? str[0] - '0' : 0;
+    
+    while (str[index] == ' ' && index < length - 1) {
+        index++;
+    }
+    
+    bool isnegative = false;
+    if (str[index] == '-') {
+        index++;
+        isnegative = true;
+    } else if (str[index] == '+') {
+        index ++;
+    }
+    
+    unsigned int result = 0;
+    unsigned int max = (unsigned int)(0x100000000 / 2);
+    unsigned int a = max / 10, b = max % 10;
+    max = isnegative ? max : max-1;
+    
+    while (index < length && result < max) {
+        int value = str[index++] - '0';
+        if (value < 0 || value > 9) {
+            return result * (isnegative ? -1 : 1);
+        }
+        
+        if (result < a || (result == a && value <= b)) {
+            result = (result * 10) + value;
+        } else {
+            return isnegative ? -max : max;
+        }
+    }
+    
+    result = result < max ? result : max;
+    return result * (isnegative ? -1 : 1);
+}
+
 @implementation LCDParent {
 //    NSString *_city;//和synthesize二选一
 }
@@ -19,6 +60,13 @@
 - (instancetype)initWithCity:(NSString *)city {
     if (self = [super init]) {
         _city = city;
+    }
+    return self;
+}
+
+- (instancetype)init {
+    if (self = [super init]) {
+        myAtoi("4193 with words");
     }
     return self;
 }

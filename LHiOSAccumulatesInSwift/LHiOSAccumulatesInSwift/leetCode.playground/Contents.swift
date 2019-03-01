@@ -12,6 +12,16 @@ class ListNode {
 
 class Solution {
     
+    //8.atoi 字符串转整数
+    func myAtoi(_ str: String) -> Int {
+        var result = 0
+        
+        
+        
+        return result
+        
+    }
+
     //7.整数反转：120->21, 321->123
     func reverse(_ x: Int) -> Int {
         var y = x > 0 ? x : -x
@@ -62,4 +72,3 @@ class Solution {
 }
 
 let s = Solution()
-s.reverse(-2147483412)
