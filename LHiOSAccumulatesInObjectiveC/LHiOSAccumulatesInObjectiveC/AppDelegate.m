@@ -18,7 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    LCDParent *p = [LCDParent new];
+    LCDParent *p = [[LCDParent alloc] initWithCity:@"Beijing"];
     [p performSelector:NSSelectorFromString(@"eatFood")];
     return YES;
 }

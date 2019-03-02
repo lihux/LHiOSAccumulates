@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *city;
 
+- (instancetype)initWithCity:(NSString *)city;
 @end
 
 NS_ASSUME_NONNULL_END

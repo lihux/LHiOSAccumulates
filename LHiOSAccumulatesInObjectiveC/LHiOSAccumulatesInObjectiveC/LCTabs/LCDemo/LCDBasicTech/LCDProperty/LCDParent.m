@@ -60,6 +60,8 @@ int myAtoi(char* str) {
 - (instancetype)initWithCity:(NSString *)city {
     if (self = [super init]) {
         _city = city;
+        NSLog(@"%@:%p", NSStringFromClass([self class]), self);
+        NSLog(@"%@", NSStringFromClass([super class]));
     }
     return self;
 }
