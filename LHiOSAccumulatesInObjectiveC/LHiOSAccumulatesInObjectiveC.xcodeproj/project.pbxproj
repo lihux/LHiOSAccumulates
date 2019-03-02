@@ -1039,6 +1039,7 @@
 				TargetAttributes = {
 					9C61C46F1C3E3E43003877BC = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 6Z988AT8PK;
 						ProvisioningStyle = Automatic;
 					};
 					9C61C48B1C3E3E43003877BC = {
@@ -1373,7 +1374,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6Z988AT8PK;
 				INFOPLIST_FILE = LHiOSAccumulatesInObjectiveC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1391,7 +1392,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6Z988AT8PK;
 				INFOPLIST_FILE = LHiOSAccumulatesInObjectiveC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

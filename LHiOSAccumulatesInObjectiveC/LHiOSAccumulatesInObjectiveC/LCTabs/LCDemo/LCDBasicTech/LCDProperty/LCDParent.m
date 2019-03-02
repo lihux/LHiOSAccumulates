@@ -68,9 +68,22 @@ int myAtoi(char* str) {
 
 - (instancetype)init {
     if (self = [super init]) {
-        myAtoi("4193 with words");
+        [self testTagPointer];
     }
     return self;
+}
+
+- (void)testTagPointer {
+    NSNumber *number1 = @(0x1);
+    NSNumber *number2 = @(0x20);
+    NSNumber *number3 = @(0x3F);
+    NSNumber *numberFFFF = @(0xFFFFFFFFFFEFE);
+    NSNumber *maxNum = @(MAXFLOAT);
+    NSLog(@"number1 pointer is %p class is %@", number1, number1.class);
+    NSLog(@"number2 pointer is %p class is %@", number2, number2.class);
+    NSLog(@"number3 pointer is %p class is %@", number3, number3.class);
+    NSLog(@"numberffff pointer is %p class is %@", numberFFFF, numberFFFF.class);
+    NSLog(@"maxNum pointer is %p class is %@", maxNum, maxNum.class);
 }
 
 - (NSString *)city {
