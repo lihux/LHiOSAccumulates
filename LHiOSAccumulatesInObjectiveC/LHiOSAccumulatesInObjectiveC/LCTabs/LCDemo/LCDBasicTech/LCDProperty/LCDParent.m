@@ -10,6 +10,8 @@
 
 #import "LCDSon.h"
 
+int global_a = 1234;
+
 int myAtoi(char* str) {
     int length = strlen(str), index = 0;
     
@@ -68,9 +70,29 @@ int myAtoi(char* str) {
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self testTagPointer];
+//        [self testTagPointer];
+        [self testBlock];
     }
     return self;
+}
+
+- (void)testBlock {
+    NSLog(@"下面开始测试学习block");
+    [self testStackBlock];
+}
+
+- (void)testStackBlock {
+    int stack_a = 0;
+    const int const_a = 1;
+    static int static_a = 2;
+    NSLog(@"没有引用任何外部变量的block的类型是：%@", NSStringFromClass([^{NSLog(@"");} class]));
+    NSLog(@"引用全局变量的block的类型是：%@", NSStringFromClass([^{NSLog(@"%d", global_a);} class]));
+    NSLog(@"引用const变量的block的类型是：%@", NSStringFromClass([^{NSLog(@"%d", const_a);} class]));
+    NSLog(@"引用static变量的block的类型是：%@", NSStringFromClass([^{NSLog(@"%d", static_a);} class]));
+    NSLog(@"引用局部变量的block的类型是：%@", NSStringFromClass([^{NSLog(@"%d", stack_a);} class]));
+    typedef void(^MyVoidBlock)(void);
+    MyVoidBlock voidBlock = ^{NSLog(@"%d", stack_a);};
+    NSLog(@"copy的block的类型是：%@", NSStringFromClass([voidBlock class]));
 }
 
 - (void)testTagPointer {
