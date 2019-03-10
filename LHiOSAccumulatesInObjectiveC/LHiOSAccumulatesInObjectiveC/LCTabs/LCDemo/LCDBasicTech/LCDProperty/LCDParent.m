@@ -93,6 +93,15 @@ int myAtoi(char* str) {
     typedef void(^MyVoidBlock)(void);
     MyVoidBlock voidBlock = ^{NSLog(@"%d", stack_a);};
     NSLog(@"copy的block的类型是：%@", NSStringFromClass([voidBlock class]));
+    
+    __block int b = 13;
+    NSLog(@"Outside Block, address of __block int b is %p, b = %d", &b, b);
+    MyVoidBlock blk = ^{
+        b++;
+        NSLog(@"Inside Block, address of __block int b is %p, b = %d", &b, b);
+    };
+    blk();//地址的变化和是否指执行这个block没有关系
+    NSLog(@"After Block, address of __block int b is %p, b = %d", &b, b);
 }
 
 - (void)testTagPointer {
