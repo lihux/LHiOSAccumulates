@@ -88,6 +88,7 @@
 		9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4BF1F0550F5001A1D06 /* LCDCSByteView.m */; };
 		9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4C21F093795001A1D06 /* LCBCreateRecordViewController.m */; };
 		9C4BE4C71F0BE5B7001A1D06 /* LCLihuxMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4C61F0BE5B7001A1D06 /* LCLihuxMeViewController.m */; };
+		9C4C57572271E8C700F76D86 /* LCDAddressSanitizerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C57562271E8C700F76D86 /* LCDAddressSanitizerTest.m */; };
 		9C5E75161F700A7C007C7AE1 /* UIFont+LHSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E75151F700A7C007C7AE1 /* UIFont+LHSafe.m */; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
@@ -288,6 +289,8 @@
 		9C4BE4C21F093795001A1D06 /* LCBCreateRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBCreateRecordViewController.m; sourceTree = "<group>"; };
 		9C4BE4C51F0BE5B7001A1D06 /* LCLihuxMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLihuxMeViewController.h; sourceTree = "<group>"; };
 		9C4BE4C61F0BE5B7001A1D06 /* LCLihuxMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLihuxMeViewController.m; sourceTree = "<group>"; };
+		9C4C57552271E8C700F76D86 /* LCDAddressSanitizerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDAddressSanitizerTest.h; sourceTree = "<group>"; };
+		9C4C57562271E8C700F76D86 /* LCDAddressSanitizerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDAddressSanitizerTest.m; sourceTree = "<group>"; };
 		9C5E75141F700A7C007C7AE1 /* UIFont+LHSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+LHSafe.h"; sourceTree = "<group>"; };
 		9C5E75151F700A7C007C7AE1 /* UIFont+LHSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+LHSafe.m"; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -766,6 +769,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				9C4C57542271E88A00F76D86 /* virtualMemory */,
 				5266529E22276EEC00855ADD /* LCDProperty */,
 				523691DC21420A930000F9F0 /* LCDRunLoop */,
 				5241ADED1F8DABD2009F3A4D /* LCDPushCrashTest */,
@@ -791,6 +795,15 @@
 				9C4BE4C61F0BE5B7001A1D06 /* LCLihuxMeViewController.m */,
 			);
 			path = lihuxMe;
+			sourceTree = "<group>";
+		};
+		9C4C57542271E88A00F76D86 /* virtualMemory */ = {
+			isa = PBXGroup;
+			children = (
+				9C4C57552271E8C700F76D86 /* LCDAddressSanitizerTest.h */,
+				9C4C57562271E8C700F76D86 /* LCDAddressSanitizerTest.m */,
+			);
+			path = virtualMemory;
 			sourceTree = "<group>";
 		};
 		9C61C4671C3E3E43003877BC = {
@@ -1057,6 +1070,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1162,6 +1176,7 @@
 				9CA6059B1F05409B000DB286 /* LCComputerSystemCh2HomeWorkViewController.m in Sources */,
 				9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */,
 				5296F2AE1EFB9EB600A08022 /* LCBookShelf.xcdatamodeld in Sources */,
+				9C4C57572271E8C700F76D86 /* LCDAddressSanitizerTest.m in Sources */,
 				9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */,
 				9CA605951F05406C000DB286 /* LCComputerSystemCh2IntRepresentViewController.m in Sources */,
 				9CD141CC1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.m in Sources */,
