@@ -1,0 +1,163 @@
+Process:         a.out [15363]
+Path:            /Users/USER/*/a.out
+Load Address:    0x10d677000
+Identifier:      a.out
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [9521]
+
+Date/Time:       2019-04-28 21:48:34.798 +0800
+Launch Time:     2019-04-28 21:45:16.912 +0800
+OS Version:      Mac OS X 10.14.4 (18E226)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/vmmap
+Analysis Tool Version:  Xcode 10.2.1 (10E1001)
+
+Physical footprint:         292K
+Physical footprint (peak):  292K
+----
+
+Virtual Memory Map of process 15363 (a.out)
+Output report format:  2.4  -- 64-bit process
+VM page size:  4096 bytes
+
+==== Non-writable regions for process 15363
+REGION TYPE                      START - END             [ VSIZE  RSDNT  DIRTY   SWAP] PRT/MAX SHRMOD PURGE    REGION DETAIL
+__TEXT                 000000010d677000-000000010d678000 [    4K     4K     0K     0K] r-x/rwx SM=COW          ...ect/mucang/LHiOSAccumulates/others/virtualMemearyLearning/virtualMemearyLearning/a.out
+__LINKEDIT             000000010d679000-000000010d67a000 [    4K     4K     0K     0K] r--/rwx SM=COW          ...ect/mucang/LHiOSAccumulates/others/virtualMemearyLearning/virtualMemearyLearning/a.out
+MALLOC metadata        000000010d67c000-000000010d67d000 [    4K     4K     4K     0K] r--/rwx SM=COW          DefaultMallocZone_0x10d67c000 zone structure
+MALLOC guard page      000000010d67e000-000000010d67f000 [    4K     0K     0K     0K] ---/rwx SM=ZER          
+MALLOC guard page      000000010d683000-000000010d684000 [    4K     0K     0K     0K] ---/rwx SM=ZER          
+MALLOC guard page      000000010d684000-000000010d685000 [    4K     0K     0K     0K] ---/rwx SM=NUL          
+MALLOC guard page      000000010d689000-000000010d68a000 [    4K     0K     0K     0K] ---/rwx SM=NUL          
+MALLOC metadata        000000010d68a000-000000010d68b000 [    4K     4K     4K     0K] r--/rwx SM=PRV          
+__TEXT                 000000010e972000-000000010e9dd000 [  428K   300K     0K     0K] r-x/rwx SM=COW          /usr/lib/dyld
+__LINKEDIT             000000010ea16000-000000010ea3d000 [  156K    44K     0K     0K] r--/rwx SM=COW          /usr/lib/dyld
+STACK GUARD            00007ffede589000-00007ffee1d89000 [ 56.0M     0K     0K     0K] ---/rwx SM=NUL          stack guard for thread 0
+__TEXT                 00007fff5ef58000-00007fff5ef5a000 [    8K     8K     0K     0K] r-x/r-x SM=COW          /usr/lib/libSystem.B.dylib
+__TEXT                 00007fff5f19b000-00007fff5f1ef000 [  336K   176K     0K     0K] r-x/r-x SM=COW          /usr/lib/libc++.1.dylib
+__TEXT                 00007fff5f1ef000-00007fff5f205000 [   88K    68K     0K     0K] r-x/r-x SM=COW          /usr/lib/libc++abi.dylib
+__TEXT                 00007fff60952000-00007fff610d8000 [ 7704K  3944K     0K     0K] r-x/r-x SM=COW          /usr/lib/libobjc.A.dylib
+__TEXT                 00007fff62017000-00007fff6201c000 [   20K    16K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libcache.dylib
+__TEXT                 00007fff6201c000-00007fff62027000 [   44K    44K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libcommonCrypto.dylib
+__TEXT                 00007fff62027000-00007fff6202f000 [   32K    16K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libcompiler_rt.dylib
+__TEXT                 00007fff6202f000-00007fff62039000 [   40K    32K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libcopyfile.dylib
+__TEXT                 00007fff62039000-00007fff620be000 [  532K   292K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libcorecrypto.dylib
+__TEXT                 00007fff62144000-00007fff6217e000 [  232K   216K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libdispatch.dylib
+__TEXT                 00007fff6217e000-00007fff621ab000 [  180K   180K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libdyld.dylib
+__TEXT                 00007fff621ab000-00007fff621ac000 [    4K     4K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libkeymgr.dylib
+__TEXT                 00007fff621b9000-00007fff621ba000 [    4K     4K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/liblaunch.dylib
+__TEXT                 00007fff621ba000-00007fff621c0000 [   24K    16K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libmacho.dylib
+__TEXT                 00007fff621c0000-00007fff621c3000 [   12K    12K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libquarantine.dylib
+__TEXT                 00007fff621c3000-00007fff621c5000 [    8K     8K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libremovefile.dylib
+__TEXT                 00007fff621c5000-00007fff621dd000 [   96K    96K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_asl.dylib
+__TEXT                 00007fff621dd000-00007fff621de000 [    4K     4K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_blocks.dylib
+__TEXT                 00007fff621de000-00007fff62266000 [  544K   468K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_c.dylib
+__TEXT                 00007fff62266000-00007fff6226a000 [   16K    16K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_configuration.dylib
+__TEXT                 00007fff6226a000-00007fff6226e000 [   16K    16K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_coreservices.dylib
+__TEXT                 00007fff6226e000-00007fff62275000 [   28K    20K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_darwin.dylib
+__TEXT                 00007fff62275000-00007fff6227c000 [   28K    28K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_dnssd.dylib
+__TEXT                 00007fff6227c000-00007fff622c8000 [  304K   216K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_info.dylib
+__TEXT                 00007fff622c8000-00007fff622f1000 [  164K   112K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_kernel.dylib
+__TEXT                 00007fff622f1000-00007fff6233d000 [  304K   164K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_m.dylib
+__TEXT                 00007fff6233d000-00007fff62362000 [  148K   112K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_malloc.dylib
+__TEXT                 00007fff62362000-00007fff6236d000 [   44K    32K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_networkextension.dylib
+__TEXT                 00007fff6236d000-00007fff62375000 [   32K    32K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_notify.dylib
+__TEXT                 00007fff62375000-00007fff6237f000 [   40K    36K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_platform.dylib
+__TEXT                 00007fff6237f000-00007fff6238a000 [   44K    40K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_pthread.dylib
+__TEXT                 00007fff6238a000-00007fff6238e000 [   16K    16K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_sandbox.dylib
+__TEXT                 00007fff6238e000-00007fff62391000 [   12K    12K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_secinit.dylib
+__TEXT                 00007fff62391000-00007fff62399000 [   32K    32K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_symptoms.dylib
+__TEXT                 00007fff62399000-00007fff623af000 [   88K    84K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libsystem_trace.dylib
+__TEXT                 00007fff623b0000-00007fff623b6000 [   24K    16K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libunwind.dylib
+__TEXT                 00007fff623b6000-00007fff623e6000 [  192K   172K     0K     0K] r-x/r-x SM=COW          /usr/lib/system/libxpc.dylib
+__LINKEDIT             00007fffcaca9000-00007fffd8a09000 [221.4M  15.6M     0K     0K] r--/r-- SM=COW          dyld shared cache combined __LINKEDIT
+shared memory          00007fffffe00000-00007fffffe01000 [    4K     4K     4K     0K] r--/r-- SM=SHM          
+shared memory          00007fffffe1f000-00007fffffe20000 [    4K     4K     4K     0K] r-x/r-x SM=SHM          
+
+==== Writable regions for process 15363
+REGION TYPE                      START - END             [ VSIZE  RSDNT  DIRTY   SWAP] PRT/MAX SHRMOD PURGE    REGION DETAIL
+__DATA                 000000010d678000-000000010d679000 [    4K     4K     4K     0K] rw-/rwx SM=COW          ...ect/mucang/LHiOSAccumulates/others/virtualMemearyLearning/virtualMemearyLearning/a.out
+Kernel Alloc Once      000000010d67a000-000000010d67c000 [    8K     4K     4K     0K] rw-/rwx SM=PRV          
+MALLOC metadata        000000010d67d000-000000010d67e000 [    4K     4K     4K     0K] rw-/rwx SM=COW          
+MALLOC metadata        000000010d67f000-000000010d683000 [   16K    16K    16K     0K] rw-/rwx SM=COW          
+MALLOC metadata        000000010d685000-000000010d689000 [   16K    16K    16K     0K] rw-/rwx SM=COW          
+MALLOC_LARGE           000000010d68b000-000000010d78b000 [ 1024K     8K     8K     0K] rw-/rwx SM=PRV          DefaultMallocZone_0x10d67c000
+MALLOC_LARGE metadata  000000010d78b000-000000010d78c000 [    4K     4K     4K     0K] rw-/rwx SM=PRV          DefaultMallocZone_0x10d67c000
+__DATA                 000000010e9dd000-000000010e9e2000 [   20K    20K    20K     0K] rw-/rwx SM=COW          /usr/lib/dyld
+__DATA                 000000010e9e2000-000000010ea16000 [  208K    32K    32K     0K] rw-/rwx SM=PRV          /usr/lib/dyld
+MALLOC_TINY            00007fc1d6400000-00007fc1d6500000 [ 1024K    20K    20K     0K] rw-/rwx SM=COW          DefaultMallocZone_0x10d67c000
+MALLOC_SMALL           00007fc1d6800000-00007fc1d7000000 [ 8192K    12K    12K     0K] rw-/rwx SM=COW          DefaultMallocZone_0x10d67c000
+Stack                  00007ffee1d89000-00007ffee2589000 [ 8192K    20K    20K     0K] rw-/rwx SM=PRV          thread 0
+__DATA                 00007fff948a8000-00007fff948a9000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/libSystem.B.dylib
+__DATA                 00007fff948d4000-00007fff948dc000 [   32K    32K    12K     0K] rw-/rwx SM=COW          /usr/lib/libc++.1.dylib
+__DATA                 00007fff948dc000-00007fff948e0000 [   16K    16K     4K     0K] rw-/rwx SM=COW          /usr/lib/libc++abi.dylib
+__DATA                 00007fff94d50000-00007fff94edd000 [ 1588K   720K    20K     0K] rw-/rwx SM=COW          /usr/lib/libobjc.A.dylib
+__DATA                 00007fff9514c000-00007fff9514d000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libcache.dylib
+__DATA                 00007fff9514d000-00007fff9514f000 [    8K     8K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libcommonCrypto.dylib
+__DATA                 00007fff9514f000-00007fff95151000 [    8K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libcompiler_rt.dylib
+__DATA                 00007fff95151000-00007fff95152000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libcopyfile.dylib
+__DATA                 00007fff95152000-00007fff9515b000 [   36K    16K     4K     0K] rw-/rwx SM=COW          /usr/lib/system/libcorecrypto.dylib
+__DATA                 00007fff95165000-00007fff9517e000 [  100K    52K    12K     0K] rw-/rwx SM=COW          /usr/lib/system/libdispatch.dylib
+__DATA                 00007fff9517e000-00007fff95182000 [   16K    16K     8K     0K] rw-/rwx SM=COW          /usr/lib/system/libdyld.dylib
+__DATA                 00007fff95182000-00007fff95183000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libkeymgr.dylib
+__DATA                 00007fff95184000-00007fff95185000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libmacho.dylib
+__DATA                 00007fff95185000-00007fff95186000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libquarantine.dylib
+__DATA                 00007fff95186000-00007fff95187000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libremovefile.dylib
+__DATA                 00007fff95187000-00007fff95189000 [    8K     8K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_asl.dylib
+__DATA                 00007fff95189000-00007fff9518a000 [    4K     4K     4K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_blocks.dylib
+__DATA                 00007fff9518a000-00007fff95193000 [   36K    36K    20K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_c.dylib
+__DATA                 00007fff95193000-00007fff95194000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_configuration.dylib
+__DATA                 00007fff95194000-00007fff95195000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_coreservices.dylib
+__DATA                 00007fff95195000-00007fff95198000 [   12K     8K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_darwin.dylib
+__DATA                 00007fff95198000-00007fff95199000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_dnssd.dylib
+__DATA                 00007fff95199000-00007fff9519c000 [   12K    12K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_info.dylib
+__DATA                 00007fff9519c000-00007fff9519f000 [   12K    12K     4K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_kernel.dylib
+__DATA                 00007fff9519f000-00007fff951a0000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_m.dylib
+__DATA                 00007fff951a0000-00007fff951a3000 [   12K    12K     8K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_malloc.dylib
+__DATA                 00007fff951a3000-00007fff951a5000 [    8K     8K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_networkextension.dylib
+__DATA                 00007fff951a5000-00007fff951a6000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_notify.dylib
+__DATA                 00007fff951a6000-00007fff951a7000 [    4K     4K     4K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_platform.dylib
+__DATA                 00007fff951a7000-00007fff951a9000 [    8K     4K     4K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_pthread.dylib
+__DATA                 00007fff951a9000-00007fff951aa000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_sandbox.dylib
+__DATA                 00007fff951aa000-00007fff951ab000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_secinit.dylib
+__DATA                 00007fff951ab000-00007fff951ac000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_symptoms.dylib
+__DATA                 00007fff951ac000-00007fff951ae000 [    8K     8K     4K     0K] rw-/rwx SM=COW          /usr/lib/system/libsystem_trace.dylib
+__DATA                 00007fff951ae000-00007fff951af000 [    4K     4K     0K     0K] rw-/rwx SM=COW          /usr/lib/system/libunwind.dylib
+__DATA                 00007fff951af000-00007fff951b6000 [   28K    28K    12K     0K] rw-/rwx SM=COW          /usr/lib/system/libxpc.dylib
+
+==== Legend
+SM=sharing mode:  
+	COW=copy_on_write PRV=private NUL=empty ALI=aliased 
+	SHM=shared ZER=zero_filled S/A=shared_alias
+PURGE=purgeable mode:  
+	V=volatile N=nonvolatile E=empty   otherwise is unpurgeable
+
+==== Summary for process 15363
+ReadOnly portion of Libraries: Total=233.1M resident=22.6M(10%) swapped_out_or_unallocated=210.6M(90%)
+Writable regions: Total=18.2M written=68K(0%) resident=136K(1%) swapped_out=0K(0%) unallocated=18.1M(99%)
+
+                                VIRTUAL RESIDENT    DIRTY  SWAPPED VOLATILE   NONVOL    EMPTY   REGION 
+REGION TYPE                        SIZE     SIZE     SIZE     SIZE     SIZE     SIZE     SIZE    COUNT (non-coalesced) 
+===========                     ======= ========    =====  ======= ========   ======    =====  ======= 
+Kernel Alloc Once                    8K       4K       4K       0K       0K       0K       0K        1 
+MALLOC guard page                   16K       0K       0K       0K       0K       0K       0K        4 
+MALLOC metadata                     44K      44K      44K       0K       0K       0K       0K        5 
+MALLOC_LARGE                      1024K       8K       8K       0K       0K       0K       0K        1         see MALLOC ZONE table below
+MALLOC_LARGE metadata                4K       4K       4K       0K       0K       0K       0K        1         see MALLOC ZONE table below
+MALLOC_SMALL                      8192K      12K      12K       0K       0K       0K       0K        1         see MALLOC ZONE table below
+MALLOC_TINY                       1024K      20K      20K       0K       0K       0K       0K        1         see MALLOC ZONE table below
+STACK GUARD                       56.0M       0K       0K       0K       0K       0K       0K        1 
+Stack                             8192K      20K      20K       0K       0K       0K       0K        1 
+__DATA                            2252K    1128K     176K       0K       0K       0K       0K       39 
+__LINKEDIT                       221.5M    15.7M       0K       0K       0K       0K       0K        3 
+__TEXT                            11.6M    7064K       0K       0K       0K       0K       0K       39 
+shared memory                        8K       8K       8K       0K       0K       0K       0K        2 
+===========                     ======= ========    =====  ======= ========   ======    =====  ======= 
+TOTAL                            309.4M    23.8M     296K       0K       0K       0K       0K       99 
+
+                                 VIRTUAL   RESIDENT      DIRTY    SWAPPED ALLOCATION      BYTES DIRTY+SWAP          REGION
+MALLOC ZONE                         SIZE       SIZE       SIZE       SIZE      COUNT  ALLOCATED  FRAG SIZE  % FRAG   COUNT
+===========                      =======  =========  =========  =========  =========  =========  =========  ======  ======
+DefaultMallocZone_0x10d67c000      10.0M        44K        44K         0K        165      1043K         0K      0%       4
+
