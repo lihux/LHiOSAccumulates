@@ -10,6 +10,11 @@ void main ( int argc, char **argv) {
 	char *small = malloc(2 * 1024);//分配2K字节
 	char *large = malloc (1 * 1024 * 1024);//分配1M字节
 
+	//added by lihux: dirty large block:
+	large[0] = 'h';
+	large[1 * 1024 * 1024 - 1] = 'z';
+	//end of lihux
+
 	printf("Text is %p\n", main);
 	printf("Global data is %p\n", &global_j);
 	printf("local (stack) is  %p\n", &local_stack);
