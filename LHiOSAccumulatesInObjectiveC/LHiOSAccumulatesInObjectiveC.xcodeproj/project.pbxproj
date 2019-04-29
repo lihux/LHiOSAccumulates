@@ -89,6 +89,7 @@
 		9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4C21F093795001A1D06 /* LCBCreateRecordViewController.m */; };
 		9C4BE4C71F0BE5B7001A1D06 /* LCLihuxMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BE4C61F0BE5B7001A1D06 /* LCLihuxMeViewController.m */; };
 		9C4C57572271E8C700F76D86 /* LCDAddressSanitizerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C57562271E8C700F76D86 /* LCDAddressSanitizerTest.m */; };
+		9C4C575A2277343600F76D86 /* LCDGKMN2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C57592277343600F76D86 /* LCDGKMN2ViewController.m */; };
 		9C5E75161F700A7C007C7AE1 /* UIFont+LHSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E75151F700A7C007C7AE1 /* UIFont+LHSafe.m */; };
 		9C61C4751C3E3E43003877BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C61C4741C3E3E43003877BC /* main.m */; };
 		9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61C47F1C3E3E43003877BC /* Main.storyboard */; };
@@ -291,6 +292,8 @@
 		9C4BE4C61F0BE5B7001A1D06 /* LCLihuxMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLihuxMeViewController.m; sourceTree = "<group>"; };
 		9C4C57552271E8C700F76D86 /* LCDAddressSanitizerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDAddressSanitizerTest.h; sourceTree = "<group>"; };
 		9C4C57562271E8C700F76D86 /* LCDAddressSanitizerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDAddressSanitizerTest.m; sourceTree = "<group>"; };
+		9C4C57582277343600F76D86 /* LCDGKMN2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDGKMN2ViewController.h; sourceTree = "<group>"; };
+		9C4C57592277343600F76D86 /* LCDGKMN2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDGKMN2ViewController.m; sourceTree = "<group>"; };
 		9C5E75141F700A7C007C7AE1 /* UIFont+LHSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+LHSafe.h"; sourceTree = "<group>"; };
 		9C5E75151F700A7C007C7AE1 /* UIFont+LHSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+LHSafe.m"; sourceTree = "<group>"; };
 		9C61C4701C3E3E43003877BC /* LHiOSAccumulatesInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHiOSAccumulatesInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -426,7 +429,7 @@
 		522484F11EE7BB60001A1429 /* LCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5247479F211BDDC600B1C4C7 /* LCLYCorner */,
+				5247479F211BDDC600B1C4C7 /* LCGaoKao */,
 				52BF61B61F2993C6004ADC6B /* LCAnimation */,
 				9CB64EC91F0E7F3D00A4BC1C /* LCColor */,
 				9CD141C61EFF64AB00B25586 /* LCDComputerSystem */,
@@ -508,15 +511,17 @@
 			path = LCDPushCrashTest;
 			sourceTree = "<group>";
 		};
-		5247479F211BDDC600B1C4C7 /* LCLYCorner */ = {
+		5247479F211BDDC600B1C4C7 /* LCGaoKao */ = {
 			isa = PBXGroup;
 			children = (
 				524747A0211BDDFB00B1C4C7 /* LCDLYCorner.plist */,
 				524747A2211BDE6300B1C4C7 /* LCDLYCorner.storyboard */,
 				524747A4211BE03700B1C4C7 /* LCDKVCViewController.h */,
 				524747A5211BE03700B1C4C7 /* LCDKVCViewController.m */,
+				9C4C57582277343600F76D86 /* LCDGKMN2ViewController.h */,
+				9C4C57592277343600F76D86 /* LCDGKMN2ViewController.m */,
 			);
-			path = LCLYCorner;
+			path = LCGaoKao;
 			sourceTree = "<group>";
 		};
 		5266529E22276EEC00855ADD /* LCDProperty */ = {
@@ -1230,6 +1235,7 @@
 				526652A122276F0C00855ADD /* LCDParent.m in Sources */,
 				52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */,
 				9C4BE4C71F0BE5B7001A1D06 /* LCLihuxMeViewController.m in Sources */,
+				9C4C575A2277343600F76D86 /* LCDGKMN2ViewController.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,
 				52CA14E61F26117E00C08630 /* LCDGithubViewController.m in Sources */,
 			);
