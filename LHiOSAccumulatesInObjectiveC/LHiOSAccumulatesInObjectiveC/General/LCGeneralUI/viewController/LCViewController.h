@@ -72,9 +72,17 @@
  old log
  old old log
  old old old log
- @return YES 则表示逆序，NO表示要顺序展示，默认为NO
+ @return YES 则表示逆序，NO表示要顺序展示，默认为YES
  */
 - (BOOL)isShowLogReverse;
+
+
+/**
+ 子类重载用于log输出是否自动填充分段标识“*********lihux.me*********”
+
+ @return YES表示自动填充，NO表示不自动填充，默认是YES
+ */
+- (BOOL)isShowSegment;
 
 /**
  便利方法，从storyboard中加载当前VC，要求的条件是当前VC的Identifier必须和类名完全一致才行

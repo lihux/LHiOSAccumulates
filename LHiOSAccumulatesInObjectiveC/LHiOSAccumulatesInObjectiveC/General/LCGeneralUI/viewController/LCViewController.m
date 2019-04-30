@@ -76,8 +76,8 @@
 
 - (void)appendLogTextFieldWith:(NSString *)log {
     NSString *oldLog = self.logTextView.text;
-    
-    NSString *gapString = (oldLog.length > 0 && log.length > 0) ? @"\n==========lihux.me==========\n" : @"";
+    NSString *segment = [self isShowSegment] ? @"\n==========lihux.me==========\n" : @"\n";
+    NSString *gapString = (oldLog.length > 0 && log.length > 0) ? segment : @"";
     if ([self isShowLogReverse]) {
         self.logTextView.text = [NSString stringWithFormat:@"%@\n%@\n%@", log, gapString, oldLog];
         [self.logTextView scrollsToTop];
@@ -110,6 +110,10 @@
 
 - (BOOL)isShowLogReverse {
     return NO;
+}
+
+- (BOOL)isShowSegment {
+    return YES;
 }
 
 - (NSString *)leftItemText {
