@@ -8,13 +8,15 @@
 
 #import "LCDGKMN2ViewController.h"
 
+//#import <libdi>
 @implementation LCDGKMN2ViewController
 
 #pragma mark - override
 - (NSDictionary *)buildDictionaryData {
     return @{@"检查GCD主-子-主线程切换的执行顺序": @"checkGCDFlow1",
              @"检查GCD子-主-子线程切换的执行顺序": @"checkGCDFlow2",
-             @"检查当前系统C指针类型": @"checkPointerType"
+             @"检查当前系统C指针类型": @"checkPointerType",
+             @"发现GCD源码中一个故意导致crash的函数，调用一下": @"crashNow",
              };
 }
 
@@ -25,8 +27,35 @@
 - (BOOL)isShowSegment {
     return NO;
 }
+//struct dispatch_queue_s {
+//    const struct dispatch_queue_vtable_s *do_vtable;
+//    struct dispatch_queue_s *volatile do_next;
+//    unsigned int do_ref_cnt;
+//    unsigned int do_xref_cnt;
+//    unsigned int do_suspend_cnt;
+//    struct dispatch_queue_s *do_targetq;
+//    void *do_ctxt;
+//    void *do_finalizer;
+//    uint32_t volatile dq_running;
+//    uint32_t dq_width;
+//    struct dispatch_object_s *volatile dq_items_tail;
+//    struct dispatch_object_s *volatile dq_items_head;
+//    unsigned long dq_serialnum;
+//    dispatch_queue_t dq_specific_q;
+//    char dq_label[64];
+//    char _dq_pad[32];
+//}
+//struct dispatch_queue_vtable_s {
+//    unsigned long const do_type;
+//    const char const do_kind;
+//    size_t (*const do_debug)(struct dispatch_queue_s , char , size_t);
+//    struct dispatch_queue_s (const do_invoke)(struct dispatch_queue_s );
+//    bool (const do_probe)(struct dispatch_queue_s );
+//    void (const do_dispose)(struct dispatch_queue_s )
+//};
 
 #pragma mark - 具体调用
+#define DISPATCH_DEBUG 1
 - (void)checkGCDFlow1 {
     [self cleanLog];
     printf("1");
@@ -49,6 +78,13 @@
     });
     printf("5");
     [self log:@"主(1)-子(2)-主(3)的执行顺序一定是：15243，原因是：dispatch_async(global)，子线程的执行是在...的时候才进行"];
+}
+
+- (void)crashNow {
+    dispatch_atfork_child();//这个函数故意让它crash的，因为它把里面的链表指针都指向了0x100
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"这段代码不会执行就crash了");
+    });
 }
 
 - (void)checkPointerType {

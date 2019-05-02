@@ -8,6 +8,8 @@
 
 #import "LCSimpleTableViewController.h"
 
+void dispatch_atfork_child(void);
+
 @interface LCDGKMN2ViewController : LCSimpleTableViewController
 
 @end
