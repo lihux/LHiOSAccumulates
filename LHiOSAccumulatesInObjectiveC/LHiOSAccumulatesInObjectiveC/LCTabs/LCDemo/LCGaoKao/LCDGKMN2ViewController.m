@@ -8,7 +8,15 @@
 
 #import "LCDGKMN2ViewController.h"
 
-//#import <libdi>
+#import "fishhook.h"
+
+id _Nullable origin_objc_msgSend(id _Nullable self, SEL _Nonnull op, ...);
+
+id _Nullable lihux_objc_msgSend(id _Nullable self, SEL _Nonnull op, ...) {
+    NSLog(@"我是hook的objc_msgSend方法里面的调用:[%@ %@]", self, NSStringFromSelector(op));
+    return self;
+}
+
 @implementation LCDGKMN2ViewController
 
 #pragma mark - override
@@ -17,6 +25,7 @@
              @"检查GCD子-主-子线程切换的执行顺序": @"checkGCDFlow2",
              @"检查当前系统C指针类型": @"checkPointerType",
              @"发现GCD源码中一个故意导致crash的函数，调用一下": @"crashNow",
+             @"hook住objc_msgSend()": @"hookMsgSend",
              };
 }
 
@@ -96,6 +105,10 @@
     size_t charSize = sizeof(char), shortSize = sizeof(short), intSize = sizeof(int);
     size_t longSize = sizeof(long), llongSize = sizeof(long long), pointerSize = sizeof(int *);
     [self log:[NSString stringWithFormat:@"char:%zd\nshort:%zd\nint:%zd\nlong:%zd\nlong long:%zd\n pointer::%zd\n", charSize, shortSize, intSize, longSize, llongSize, pointerSize]];
+}
+
+- (void)hookMsgSend {
+    
 }
 
 @end
