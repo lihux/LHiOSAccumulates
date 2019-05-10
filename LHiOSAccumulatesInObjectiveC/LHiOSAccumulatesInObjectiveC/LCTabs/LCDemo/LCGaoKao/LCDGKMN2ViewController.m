@@ -10,6 +10,8 @@
 
 #import "fishhook.h"
 
+#import <sys/unistd.h>
+
 id _Nullable origin_objc_msgSend(id _Nullable self, SEL _Nonnull op, ...);
 
 id _Nullable lihux_objc_msgSend(id _Nullable self, SEL _Nonnull op, ...) {
@@ -26,6 +28,7 @@ id _Nullable lihux_objc_msgSend(id _Nullable self, SEL _Nonnull op, ...) {
              @"检查当前系统C指针类型": @"checkPointerType",
              @"发现GCD源码中一个故意导致crash的函数，调用一下": @"crashNow",
              @"hook住objc_msgSend()": @"hookMsgSend",
+             @"使用系统提供的getpagesize方法获取page size": @"getPageSize",
              };
 }
 
@@ -109,6 +112,11 @@ id _Nullable lihux_objc_msgSend(id _Nullable self, SEL _Nonnull op, ...) {
 
 - (void)hookMsgSend {
     
+}
+
+- (void)getPageSize {
+    int pageSize = getpagesize();
+    [self log:[NSString stringWithFormat:@"获取到当前的pageSize为：%d bytes，也即 %dKB", pageSize, pageSize / 1024]];
 }
 
 @end
