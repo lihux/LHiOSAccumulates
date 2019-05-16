@@ -71,9 +71,16 @@ int myAtoi(char* str) {
 - (instancetype)init {
     if (self = [super init]) {
 //        [self testTagPointer];
-        [self testBlock];
+//        [self testBlock];
+        [self testMetaClassSuperClass];
     }
     return self;
+}
+
+- (void)testMetaClassSuperClass {
+    id god = [self class];
+    NSLog(@"我的老天爷：%@ %@",[self class],  [super class]);
+    [god performSelector:@selector(model3) withObject:nil];
 }
 
 - (void)testBlock {
