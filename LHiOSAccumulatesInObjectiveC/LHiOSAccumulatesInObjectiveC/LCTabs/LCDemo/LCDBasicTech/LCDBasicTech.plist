@@ -86,5 +86,17 @@
 		<key>storyboardName</key>
 		<string>LCDBasicTech</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>load方法和initialize探索</string>
+		<key>content</key>
+		<string>load方法和initialize探索</string>
+		<key>storyboardID</key>
+		<string>LCDBLoadInitializeLearningViewController</string>
+		<key>viewControllerTitle</key>
+		<string>load方法和initialize探索</string>
+		<key>storyboardName</key>
+		<string>LCDBasicTech</string>
+	</dict>
 </array>
 </plist>
