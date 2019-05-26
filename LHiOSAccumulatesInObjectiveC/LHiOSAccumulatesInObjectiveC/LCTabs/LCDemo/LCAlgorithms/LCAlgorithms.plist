@@ -4,13 +4,11 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>关键帧动画</string>
-		<key>viewControllerTitle</key>
-		<string>关键帧动画</string>
+		<string>两数之和</string>
 		<key>storyboardName</key>
-		<string>LCAnimation</string>
+		<string>LCAlgorithms</string>
 		<key>storyboardID</key>
-		<string>LCAKeyFrameViewController</string>
+		<string>LCAlgorithmViewController</string>
 	</dict>
 </array>
 </plist>
