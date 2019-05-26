@@ -76,13 +76,15 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string> 多线程技术的应用</string>
+		<string>leetCode刷题</string>
 		<key>content</key>
-		<string>多线程的应用，在iOS的开发中并不是多么罕见的一件事情，事实上，对于一个稍微复杂一点的APP，有网络请求、较为费时的数据加工、图像处理等功能的时候，往往直接或者间接的应用到了多线程技术了</string>
+		<string>算法内功，每日必练，不可荒废</string>
 		<key>storyboardID</key>
 		<string></string>
 		<key>storyboardName</key>
-		<string>LCDemo</string>
+		<string></string>
+		<key>plistName</key>
+		<string>LCAlgorithms</string>
 	</dict>
 	<dict>
 		<key>title</key>

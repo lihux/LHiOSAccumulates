@@ -79,6 +79,9 @@
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
 		9C3669BF1F10C3D5009F856C /* LCLihuxStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3669BE1F10C3D5009F856C /* LCLihuxStyleView.m */; };
+		9C41ADB7229B4D9300C58500 /* LCAlgorithms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */; };
+		9C41ADB9229B4DA000C58500 /* LCAlgorithms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */; };
+		9C41ADC1229B518800C58500 /* LCAlgorithmsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41ADC0229B518800C58500 /* LCAlgorithmsTableViewController.m */; };
 		9C476D8F1EF42C1D004AC758 /* LCDispatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */; };
 		9C476D901EF42DC1004AC758 /* LCDispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A048C1EEB8B6E00161D69 /* LCDispatchApplyViewController.m */; };
 		9C476D911EF430C6004AC758 /* LCDDispatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */; };
@@ -283,6 +286,10 @@
 		9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDURLHelper.m; sourceTree = "<group>"; };
 		9C3669BD1F10C3D5009F856C /* LCLihuxStyleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLihuxStyleView.h; sourceTree = "<group>"; };
 		9C3669BE1F10C3D5009F856C /* LCLihuxStyleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLihuxStyleView.m; sourceTree = "<group>"; };
+		9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCAlgorithms.plist; sourceTree = "<group>"; };
+		9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCAlgorithms.storyboard; sourceTree = "<group>"; };
+		9C41ADBF229B518800C58500 /* LCAlgorithmsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmsTableViewController.h; sourceTree = "<group>"; };
+		9C41ADC0229B518800C58500 /* LCAlgorithmsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAlgorithmsTableViewController.m; sourceTree = "<group>"; };
 		9C476D931EF51A70004AC758 /* LCDBasicTech.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDBasicTech.plist; sourceTree = "<group>"; };
 		9C476D971EF51BFA004AC758 /* LCDBasicTech.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDBasicTech.storyboard; sourceTree = "<group>"; };
 		9C476D9A1EF51E57004AC758 /* LCDBENUMExploreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBENUMExploreViewController.h; sourceTree = "<group>"; };
@@ -447,6 +454,7 @@
 		522484F11EE7BB60001A1429 /* LCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9C41ADB5229B4D6400C58500 /* LCAlgorithms */,
 				5247479F211BDDC600B1C4C7 /* LCGaoKao */,
 				52BF61B61F2993C6004ADC6B /* LCAnimation */,
 				9CB64EC91F0E7F3D00A4BC1C /* LCColor */,
@@ -799,6 +807,33 @@
 			path = LCDDispatch;
 			sourceTree = "<group>";
 		};
+		9C41ADB5229B4D6400C58500 /* LCAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				9C41ADBB229B4DCD00C58500 /* commons */,
+				9C41ADBA229B4DB200C58500 /* algorithms */,
+				9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */,
+				9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */,
+				9C41ADBF229B518800C58500 /* LCAlgorithmsTableViewController.h */,
+				9C41ADC0229B518800C58500 /* LCAlgorithmsTableViewController.m */,
+			);
+			path = LCAlgorithms;
+			sourceTree = "<group>";
+		};
+		9C41ADBA229B4DB200C58500 /* algorithms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = algorithms;
+			sourceTree = "<group>";
+		};
+		9C41ADBB229B4DCD00C58500 /* commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = commons;
+			sourceTree = "<group>";
+		};
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
@@ -1143,6 +1178,7 @@
 				52E4C89A1EFA434E00CB8F4D /* LCBookShelf.plist in Resources */,
 				5256DE731F1357A80043B066 /* 100CombinationColors.plist in Resources */,
 				9C476D991EF51D8F004AC758 /* LCDBasicTech.plist in Resources */,
+				9C41ADB9229B4DA000C58500 /* LCAlgorithms.storyboard in Resources */,
 				522485201EE7BB60001A1429 /* LCDocument.plist in Resources */,
 				9C9124371C4FA0B6007AB00D /* LCSectionHeaderView.xib in Resources */,
 				9CA6059C1F0541BF000DB286 /* LCDComputerSystemChapter2.plist in Resources */,
@@ -1156,6 +1192,7 @@
 				9C476D981EF51BFA004AC758 /* LCDBasicTech.storyboard in Resources */,
 				9C61C4811C3E3E43003877BC /* Main.storyboard in Resources */,
 				522485221EE7BB60001A1429 /* LCSetting.storyboard in Resources */,
+				9C41ADB7229B4D9300C58500 /* LCAlgorithms.plist in Resources */,
 				52BF61BC1F2994BA004ADC6B /* LCAnimation.storyboard in Resources */,
 				524747A1211BDDFB00B1C4C7 /* LCDLYCorner.plist in Resources */,
 				524747A3211BDE6300B1C4C7 /* LCDLYCorner.storyboard in Resources */,
@@ -1262,6 +1299,7 @@
 				9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */,
 				526652A422276F3000855ADD /* LCDSon.m in Sources */,
 				9C4A0F441F67531A0046E722 /* LCFileHelper.m in Sources */,
+				9C41ADC1229B518800C58500 /* LCAlgorithmsTableViewController.m in Sources */,
 				9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
