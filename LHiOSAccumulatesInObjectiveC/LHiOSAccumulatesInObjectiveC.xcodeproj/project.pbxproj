@@ -76,6 +76,7 @@
 		9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365831C4CFA3700E04D7B /* LCAnimationView.m */; };
 		9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365851C4CFA3700E04D7B /* LCFlyingView.m */; };
 		9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365901C4CFBED00E04D7B /* AppDelegate.m */; };
+		9C21D3EA229C9AF5000C8911 /* LCAlgorithmData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */; };
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
 		9C3669BF1F10C3D5009F856C /* LCLihuxStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3669BE1F10C3D5009F856C /* LCLihuxStyleView.m */; };
@@ -280,6 +281,8 @@
 		9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
 		9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
 		9C1A048C1EEB8B6E00161D69 /* LCDispatchApplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDispatchApplyViewController.m; sourceTree = "<group>"; };
+		9C21D3E8229C9AF5000C8911 /* LCAlgorithmData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmData.h; sourceTree = "<group>"; };
+		9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAlgorithmData.m; sourceTree = "<group>"; };
 		9C26C4FE1EEBE1F800CE608A /* LCDURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDURLSessionViewController.h; sourceTree = "<group>"; };
 		9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDURLSessionViewController.m; sourceTree = "<group>"; };
 		9C26C5011EEC0A0B00CE608A /* LCDURLHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDURLHelper.h; sourceTree = "<group>"; };
@@ -830,6 +833,8 @@
 			children = (
 				9C41ADC2229B5DEB00C58500 /* LCAlgorithmViewController.h */,
 				9C41ADC3229B5DEB00C58500 /* LCAlgorithmViewController.m */,
+				9C21D3E8229C9AF5000C8911 /* LCAlgorithmData.h */,
+				9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */,
 			);
 			path = commons;
 			sourceTree = "<group>";
@@ -1227,6 +1232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C21D3EA229C9AF5000C8911 /* LCAlgorithmData.m in Sources */,
 				52E916291F1F112A0036E995 /* LCGradientButton.m in Sources */,
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
 				521BA5A62239FE64009556FB /* NSObject+LH_AddMethods.m in Sources */,

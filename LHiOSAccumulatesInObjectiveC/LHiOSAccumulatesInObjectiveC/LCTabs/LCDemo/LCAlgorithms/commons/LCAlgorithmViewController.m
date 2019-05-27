@@ -10,23 +10,20 @@
 
 @interface LCAlgorithmViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *infoTextView;
+
 @end
 
 @implementation LCAlgorithmViewController
 
 - (void)viewDidLoad {
+    self.infoTextView.tag = kLCNeedShowDebugLogViewTag;//一定要在调用super之前调用
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.infoTextView.text = self.accumulate.content;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 }
-*/
 
 @end
