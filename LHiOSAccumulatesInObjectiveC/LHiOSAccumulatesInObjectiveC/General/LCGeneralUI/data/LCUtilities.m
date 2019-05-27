@@ -53,13 +53,16 @@
  */
 + (UIViewController *)viewControllerForAccumulate:(LCAccumulate *)accumulate
 {
+    NSString *title = accumulate.viewControllerTitle ? accumulate.viewControllerTitle : accumulate.title;
     if (accumulate.plistName.length > 0) {
         LCTableViewController *vc = [[LCTableViewController alloc] init];
-        [vc configWithTitle:accumulate.viewControllerTitle plistFileName:accumulate.plistName];
+        [vc configWithTitle:title plistFileName:accumulate.plistName];
         return vc;
     } else if (accumulate.storyboardID.length > 0) {
         if (accumulate.storyboardName.length > 0) {
-            return [[UIStoryboard storyboardWithName:accumulate.storyboardName bundle:nil] instantiateViewControllerWithIdentifier:accumulate.storyboardID];
+            UIViewController *vc = [[UIStoryboard storyboardWithName:accumulate.storyboardName bundle:nil] instantiateViewControllerWithIdentifier:accumulate.storyboardID];
+            vc.title = title;
+            return vc;
         }
         
         Class cls = NSClassFromString(accumulate.storyboardID);
