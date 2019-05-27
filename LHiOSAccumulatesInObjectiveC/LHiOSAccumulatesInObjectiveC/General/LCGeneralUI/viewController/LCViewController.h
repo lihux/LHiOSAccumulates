@@ -11,6 +11,7 @@
 #import "LCSectionHeaderView.h"
 #import "UIColor+helper.h"
 #import "LCLihuxHelper.h"
+#import "LCAccumulate.h"
 
 /**
  NOTE && IMPORTANT:继承自LCViewController的所有子类，都将遵从一下两个规则：
@@ -95,5 +96,7 @@
 - (NSString *)leftItemText;
 
 - (NSString *)rightItemText;
+
+@property (nonatomic, strong) LCAccumulate *accumulate;
 
 @end

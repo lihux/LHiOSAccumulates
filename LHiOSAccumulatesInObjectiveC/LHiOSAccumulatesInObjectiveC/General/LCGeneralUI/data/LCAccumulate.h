@@ -24,6 +24,7 @@
 @property (nonatomic, strong) NSString* plistName;
 @property (nonatomic, strong) NSString* storyboardID;
 @property (nonatomic, strong) NSString* storyboardName;
+@property (nonatomic, strong) NSString* extraInfo;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dic;
 

@@ -19,12 +19,13 @@
         self.content = dic[@"content"];
         self.storyboardID = dic[@"storyboardID"];
         self.storyboardName = dic[@"storyboardName"];
+        self.extraInfo = dic[@"extraInfo"];
     }
     return self;
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"LCAccumulate:\ntitle = %@\nviewControllerTitle = %@\ncontent = %@\nplistName = %@\nstoryboardID = %@\nstoryboardName = %@", self.title, self.viewControllerTitle, self.content, self.plistName, self.storyboardID, self.storyboardName];
+    return [NSString stringWithFormat:@"LCAccumulate:\ntitle = %@\nviewControllerTitle = %@\ncontent = %@\nplistName = %@\nstoryboardID = %@\nstoryboardName = %@, extraInfo = %@", self.title, self.viewControllerTitle, self.content, self.plistName, self.storyboardID, self.storyboardName, self.extraInfo];
 }
 
 @end

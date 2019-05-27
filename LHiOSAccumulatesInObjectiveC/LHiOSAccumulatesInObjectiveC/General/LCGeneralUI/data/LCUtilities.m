@@ -11,6 +11,7 @@
 #import "LCAccumulate.h"
 #import "LCTableViewController.h"
 #import "LCConstantDefines.h"
+#import "LCViewController.h"
 
 #import <UIKit/UIKit.h>
 
@@ -61,6 +62,9 @@
     } else if (accumulate.storyboardID.length > 0) {
         if (accumulate.storyboardName.length > 0) {
             UIViewController *vc = [[UIStoryboard storyboardWithName:accumulate.storyboardName bundle:nil] instantiateViewControllerWithIdentifier:accumulate.storyboardID];
+            if ([vc isKindOfClass:[LCViewController class]]) {
+                ((LCViewController *)vc).accumulate = accumulate;
+            }
             vc.title = title;
             return vc;
         }
