@@ -14,6 +14,8 @@
 
 @end
 
+void testStructSize();
+
 @implementation LCAlgorithmViewController
 
 - (void)viewDidLoad {
@@ -24,6 +26,19 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    testStructSize();
 }
 
 @end
+
+void testStructSize() {
+    struct House {
+        char c;
+        int i;
+    };
+    struct House arr[10];
+    for (int i = 0; i < 10; i ++) {
+        printf("\nstruct House arr[%d] address = %p\n", i, &arr[i]);
+    }
+    printf("House的长度是：%lu, 数组的长度是：%lu", sizeof(struct House), sizeof(arr));
+}
