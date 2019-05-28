@@ -14,7 +14,7 @@
 
 @end
 
-void testStructSize();
+void testStructSize(void);
 
 @implementation LCAlgorithmViewController
 
@@ -31,7 +31,7 @@ void testStructSize();
 
 @end
 
-void testStructSize() {
+void testStructSize(void) {
     struct House {
         char c;
         int i;
