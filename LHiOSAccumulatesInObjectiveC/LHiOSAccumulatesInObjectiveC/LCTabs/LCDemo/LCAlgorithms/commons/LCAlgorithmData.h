@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSDictionary *inputsAndOutputDic;
 
+- (instancetype)initWithString:(NSString *)string;
+
+- (int *_Nullable *_Nullable)intInputs;
+
+- (char *_Nullable *_Nullable)charInputs;
+
 @end
 
 NS_ASSUME_NONNULL_END
