@@ -670,7 +670,6 @@
 		5247479F211BDDC600B1C4C7 /* LCGaoKao */ = {
 			isa = PBXGroup;
 			children = (
-				9C8A3D61227FAD5500009D4B /* fishhook */,
 				524747A0211BDDFB00B1C4C7 /* LCDLYCorner.plist */,
 				524747A2211BDE6300B1C4C7 /* LCDLYCorner.storyboard */,
 				524747A4211BE03700B1C4C7 /* LCDKVCViewController.h */,

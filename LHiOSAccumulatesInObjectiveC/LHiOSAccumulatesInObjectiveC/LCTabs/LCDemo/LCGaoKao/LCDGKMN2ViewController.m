@@ -8,8 +8,6 @@
 
 #import "LCDGKMN2ViewController.h"
 
-#import "fishhook.h"
-
 #import <sys/unistd.h>
 
 id _Nullable origin_objc_msgSend(id _Nullable self, SEL _Nonnull op, ...);
