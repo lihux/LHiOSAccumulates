@@ -10,8 +10,8 @@
 
 @implementation LHMan
 
-+ (void)initialize {
-    printf("\n男人:在初始化initialize");
-}
+//+ (void)initialize {
+//    printf("\n男人:在初始化initialize");
+//}
 
 @end
