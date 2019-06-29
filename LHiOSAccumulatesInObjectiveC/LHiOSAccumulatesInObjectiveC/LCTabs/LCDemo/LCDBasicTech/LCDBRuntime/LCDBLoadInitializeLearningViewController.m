@@ -8,6 +8,18 @@
 
 #import "LCDBLoadInitializeLearningViewController.h"
 
+#import "LHFather.h"
+
 @implementation LCDBLoadInitializeLearningViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self testInitalize];
+    
+}
+
+- (void)testInitalize {
+    LHFather *father = [LHFather new];//会导致父类的initialize被调用了两次！！！
+}
 
 @end

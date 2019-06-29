@@ -127,6 +127,10 @@
 		9CB64EDC1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64EDB1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m */; };
 		9CB64EDE1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64EDD1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets */; };
 		9CC1F2D122C77631007BCFE5 /* LCLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F2D022C77631007BCFE5 /* LCLockViewController.m */; };
+		9CC1F2D522C7C1CC007BCFE5 /* LCOCRuntimeTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F2D422C7C1CC007BCFE5 /* LCOCRuntimeTipsViewController.m */; };
+		9CC1F2D822C7C238007BCFE5 /* LHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F2D722C7C238007BCFE5 /* LHPerson.m */; };
+		9CC1F2DB22C7C243007BCFE5 /* LHMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F2DA22C7C243007BCFE5 /* LHMan.m */; };
+		9CC1F2DE22C7C257007BCFE5 /* LHFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F2DD22C7C257007BCFE5 /* LHFather.m */; };
 		9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */; };
 		9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */; };
 		9CD141C81EFF674900B25586 /* LCDComputerSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CD141C71EFF64D800B25586 /* LCDComputerSystem.plist */; };
@@ -396,6 +400,14 @@
 		9CB64EDD1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LCC100CombinationColor.xcassets; sourceTree = "<group>"; };
 		9CC1F2CF22C77631007BCFE5 /* LCLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLockViewController.h; sourceTree = "<group>"; };
 		9CC1F2D022C77631007BCFE5 /* LCLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLockViewController.m; sourceTree = "<group>"; };
+		9CC1F2D322C7C1CC007BCFE5 /* LCOCRuntimeTipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCOCRuntimeTipsViewController.h; sourceTree = "<group>"; };
+		9CC1F2D422C7C1CC007BCFE5 /* LCOCRuntimeTipsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCOCRuntimeTipsViewController.m; sourceTree = "<group>"; };
+		9CC1F2D622C7C238007BCFE5 /* LHPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHPerson.h; sourceTree = "<group>"; };
+		9CC1F2D722C7C238007BCFE5 /* LHPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHPerson.m; sourceTree = "<group>"; };
+		9CC1F2D922C7C243007BCFE5 /* LHMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHMan.h; sourceTree = "<group>"; };
+		9CC1F2DA22C7C243007BCFE5 /* LHMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHMan.m; sourceTree = "<group>"; };
+		9CC1F2DC22C7C257007BCFE5 /* LHFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHFather.h; sourceTree = "<group>"; };
+		9CC1F2DD22C7C257007BCFE5 /* LHFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHFather.m; sourceTree = "<group>"; };
 		9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCURL.h"; sourceTree = "<group>"; };
 		9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCURL.m"; sourceTree = "<group>"; };
 		9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCImageCacheManager.h; sourceTree = "<group>"; };
@@ -518,6 +530,12 @@
 			children = (
 				52316BBB228D254100B4FD5C /* LCDBLoadInitializeLearningViewController.h */,
 				52316BBC228D254100B4FD5C /* LCDBLoadInitializeLearningViewController.m */,
+				9CC1F2D622C7C238007BCFE5 /* LHPerson.h */,
+				9CC1F2D722C7C238007BCFE5 /* LHPerson.m */,
+				9CC1F2D922C7C243007BCFE5 /* LHMan.h */,
+				9CC1F2DA22C7C243007BCFE5 /* LHMan.m */,
+				9CC1F2DC22C7C257007BCFE5 /* LHFather.h */,
+				9CC1F2DD22C7C257007BCFE5 /* LHFather.m */,
 			);
 			path = LCDBRuntime;
 			sourceTree = "<group>";
@@ -845,6 +863,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				9CC1F2D222C7C19F007BCFE5 /* LCRuntimesTips */,
 				9CC1F2CE22C77607007BCFE5 /* LCLocks */,
 				52316BBA228D23C000B4FD5C /* LCDBRuntime */,
 				9C4C57542271E88A00F76D86 /* virtualMemory */,
@@ -1044,6 +1063,15 @@
 				9CC1F2D022C77631007BCFE5 /* LCLockViewController.m */,
 			);
 			path = LCLocks;
+			sourceTree = "<group>";
+		};
+		9CC1F2D222C7C19F007BCFE5 /* LCRuntimesTips */ = {
+			isa = PBXGroup;
+			children = (
+				9CC1F2D322C7C1CC007BCFE5 /* LCOCRuntimeTipsViewController.h */,
+				9CC1F2D422C7C1CC007BCFE5 /* LCOCRuntimeTipsViewController.m */,
+			);
+			path = LCRuntimesTips;
 			sourceTree = "<group>";
 		};
 		9CD141C61EFF64AB00B25586 /* LCDComputerSystem */ = {
@@ -1256,12 +1284,14 @@
 				52B8D4481F0600EE00A71B70 /* UILabel+lihuxStyle.m in Sources */,
 				5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
+				9CC1F2D822C7C238007BCFE5 /* LHPerson.m in Sources */,
 				9CD141CF1EFF689500B25586 /* LCDCSCh2ShowBytes.c in Sources */,
 				9C67EDE21F2303AA00FE690D /* LCSDefaultOpenSaveManager.m in Sources */,
 				5224634E1EFBDDBF00E90EB6 /* LCLihuxHelper.m in Sources */,
 				9C7612381F1264E70063107B /* LCColorCombinationManger.m in Sources */,
 				9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */,
 				9C5E75161F700A7C007C7AE1 /* UIFont+LHSafe.m in Sources */,
+				9CC1F2DB22C7C243007BCFE5 /* LHMan.m in Sources */,
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				5296F2AF1EFB9ED100A08022 /* LCBCurrentReadingViewController.m in Sources */,
 				9C7EEB051F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m in Sources */,
@@ -1293,6 +1323,7 @@
 				5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */,
 				9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */,
 				9CB64ED91F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m in Sources */,
+				9CC1F2D522C7C1CC007BCFE5 /* LCOCRuntimeTipsViewController.m in Sources */,
 				5289FB491F6A912D00413192 /* LCDBBookProvider.m in Sources */,
 				52316BBD228D254100B4FD5C /* LCDBLoadInitializeLearningViewController.m in Sources */,
 				52B6C0461F31BFD500ED3859 /* UILabel+LCLihuxStyle.m in Sources */,
@@ -1301,6 +1332,7 @@
 				52052F781F20542E0065072B /* LCDBAutoLayoutViewController.m in Sources */,
 				9C03658B1C4CFA3700E04D7B /* LCHomeViewController.m in Sources */,
 				9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */,
+				9CC1F2DE22C7C257007BCFE5 /* LHFather.m in Sources */,
 				523691DF21420AAC0000F9F0 /* LCDRunLoopViewController.m in Sources */,
 				52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */,
 				52E019211F02509B00B38546 /* LCBCreateReadingPlanViewController.m in Sources */,

@@ -25,7 +25,7 @@
     [self testUnfairLock];
     [self testNSLock];
 //    [self testNSCondition];
-    [self testNSConditionLock];
+//    [self testNSConditionLock];
 }
 
 - (void)testUnfairLock {
