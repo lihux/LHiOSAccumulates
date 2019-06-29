@@ -60,17 +60,18 @@
         [vc configWithTitle:title plistFileName:accumulate.plistName];
         return vc;
     } else if (accumulate.storyboardID.length > 0) {
+        id vc;
         if (accumulate.storyboardName.length > 0) {
-            UIViewController *vc = [[UIStoryboard storyboardWithName:accumulate.storyboardName bundle:nil] instantiateViewControllerWithIdentifier:accumulate.storyboardID];
-            if ([vc isKindOfClass:[LCViewController class]]) {
-                ((LCViewController *)vc).accumulate = accumulate;
-            }
-            vc.title = title;
-            return vc;
+            vc = [[UIStoryboard storyboardWithName:accumulate.storyboardName bundle:nil] instantiateViewControllerWithIdentifier:accumulate.storyboardID];
+        } else {
+            Class cls = NSClassFromString(accumulate.storyboardID);
+            vc = [cls new];
         }
-        
-        Class cls = NSClassFromString(accumulate.storyboardID);
-        return [cls new];//这里假设storyboardID是你要初始化的viewController的类的名字
+        if ([vc isKindOfClass:[LCViewController class]]) {
+            ((LCViewController *)vc).accumulate = accumulate;
+        }
+        ((UIViewController *)vc).title = title;
+        return vc; //这里假设storyboardID是你要初始化的viewController的类的名字
     }
     return nil;
 }

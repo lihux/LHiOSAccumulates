@@ -126,6 +126,7 @@
 		9CB64ED91F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64ED81F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m */; };
 		9CB64EDC1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB64EDB1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m */; };
 		9CB64EDE1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB64EDD1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets */; };
+		9CC1F2D122C77631007BCFE5 /* LCLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F2D022C77631007BCFE5 /* LCLockViewController.m */; };
 		9CC6CE851EFEAFCF00BBAB1F /* UIImageView+LCURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */; };
 		9CC6CE881EFEB15C00BBAB1F /* LCImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6CE871EFEB15C00BBAB1F /* LCImageCacheManager.m */; };
 		9CD141C81EFF674900B25586 /* LCDComputerSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CD141C71EFF64D800B25586 /* LCDComputerSystem.plist */; };
@@ -393,6 +394,8 @@
 		9CB64EDA1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCC100BeautifulColorTableViewCell.h; sourceTree = "<group>"; };
 		9CB64EDB1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCC100BeautifulColorTableViewCell.m; sourceTree = "<group>"; };
 		9CB64EDD1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LCC100CombinationColor.xcassets; sourceTree = "<group>"; };
+		9CC1F2CF22C77631007BCFE5 /* LCLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLockViewController.h; sourceTree = "<group>"; };
+		9CC1F2D022C77631007BCFE5 /* LCLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLockViewController.m; sourceTree = "<group>"; };
 		9CC6CE831EFEAFCF00BBAB1F /* UIImageView+LCURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LCURL.h"; sourceTree = "<group>"; };
 		9CC6CE841EFEAFCF00BBAB1F /* UIImageView+LCURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LCURL.m"; sourceTree = "<group>"; };
 		9CC6CE861EFEB15C00BBAB1F /* LCImageCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCImageCacheManager.h; sourceTree = "<group>"; };
@@ -842,6 +845,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				9CC1F2CE22C77607007BCFE5 /* LCLocks */,
 				52316BBA228D23C000B4FD5C /* LCDBRuntime */,
 				9C4C57542271E88A00F76D86 /* virtualMemory */,
 				521BA5A32239FE38009556FB /* LCDBObjcMessage */,
@@ -1031,6 +1035,15 @@
 				9CB64EDD1F0FE67700A4BC1C /* LCC100CombinationColor.xcassets */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		9CC1F2CE22C77607007BCFE5 /* LCLocks */ = {
+			isa = PBXGroup;
+			children = (
+				9CC1F2CF22C77631007BCFE5 /* LCLockViewController.h */,
+				9CC1F2D022C77631007BCFE5 /* LCLockViewController.m */,
+			);
+			path = LCLocks;
 			sourceTree = "<group>";
 		};
 		9CD141C61EFF64AB00B25586 /* LCDComputerSystem */ = {
@@ -1252,6 +1265,7 @@
 				9C0365721C4CF9F900E04D7B /* LCTableViewController.m in Sources */,
 				5296F2AF1EFB9ED100A08022 /* LCBCurrentReadingViewController.m in Sources */,
 				9C7EEB051F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m in Sources */,
+				9CC1F2D122C77631007BCFE5 /* LCLockViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
 				5289FB4C1F6A91C600413192 /* LCDBClothesProvider.m in Sources */,

@@ -37,6 +37,9 @@
 }
 
 - (void)addSubview:(UIView *)view withLayoutInfo:(LHLayoutInfo)info {
+    if (!view) {
+        return;
+    }
     [self addSubview:view];
     view.translatesAutoresizingMaskIntoConstraints = NO;
     [self layoutView:view constant:info.top name:NSLayoutAttributeTop];

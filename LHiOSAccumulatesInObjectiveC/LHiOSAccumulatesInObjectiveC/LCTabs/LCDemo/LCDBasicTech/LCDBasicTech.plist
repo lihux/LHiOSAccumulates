@@ -88,6 +88,14 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>iOS中各种锁的学习</string>
+		<key>content</key>
+		<string></string>
+		<key>storyboardID</key>
+		<string>LCLockViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>load方法和initialize探索</string>
 		<key>content</key>
 		<string>load方法和initialize探索</string>
