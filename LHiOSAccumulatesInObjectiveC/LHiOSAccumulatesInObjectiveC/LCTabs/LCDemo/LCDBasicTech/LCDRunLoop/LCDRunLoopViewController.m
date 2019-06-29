@@ -8,6 +8,8 @@
 
 #import "LCDRunLoopViewController.h"
 
+#import <os/lock.h>
+
 @interface LCDRunLoopViewController ()
 
 @end
@@ -16,6 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self testLock];
+}
+
+- (void)testLock {
+    int i;
+    os_unfair_lock_t lock = &OS_UNFAIR_LOCK_INIT;
+    os_unfair_lock_lock(lock);
+    i = 10;
+    os_unfair_lock_unlock(lock);
+    //如果在异步线程unlock这把锁，它会crash！
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        os_unfair_lock_unlock(lock);
+//    });
 }
 
 - (IBAction)didTapOnNoToleranceTimerButton:(id)sender {
