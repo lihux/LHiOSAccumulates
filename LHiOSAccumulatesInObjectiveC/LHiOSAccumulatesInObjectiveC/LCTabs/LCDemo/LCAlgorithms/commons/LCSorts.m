@@ -42,11 +42,25 @@ void bubbleSort(int *nums, int n) {
     printArray(nums, n, "\n排序之后结果是：\n");
 }
 
+//2. 选择排序，算法时间复杂度O(n^2),空间复杂度：O(1), 属于比较排序，稳定排序算法
+void selectSort(int *nums, int n) {
+    printArray(nums, n, "\n开始选择排序：\n");
 
+    for (int i = 0; i < n; i++) {
+        int idx = i;
+        for (int j = i+1; j < n; j++) {
+            idx = nums[idx] > nums[j] ? j : idx;
+        }
+        swap(nums+i, nums+idx);
+    }
+    
+    printArray(nums, n, "\n排序之后结果是：\n");
+}
 
 void testBubbleSort() {
     int a[] = {8,9,7,6,5,4,3,2,1};
-    bubbleSort(a, 9);
+//    bubbleSort(a, 9);
+    selectSort(a, 9);
 }
 
 @implementation LCSorts
