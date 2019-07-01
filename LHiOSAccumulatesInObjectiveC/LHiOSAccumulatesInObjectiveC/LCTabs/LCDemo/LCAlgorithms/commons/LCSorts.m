@@ -8,24 +8,7 @@
 
 #import "LCSorts.h"
 
-void swap(int *a, int *b) {
-    if (*a > *b) {
-        int temp = *a;
-        *a = *b;
-        *b = temp;
-    }
-}
-
-void printArray(int *nums, int n, const char *s) {
-    if (s) {
-        printf("%s", s);
-    }
-    printf("\n[ ");
-    for (int i = 0; i < n; i ++) {
-        printf("%d ", nums[i]);
-    }
-    printf("]\n");
-}
+#include "LCAlgorithmTools.h"
 
 /********************************************************************/
 //1. 冒泡排序，算法时间复杂度O(n^2),空间复杂度：O(1), 属于比较排序，稳定排序算法
@@ -84,15 +67,6 @@ void testBubbleSort() {
 }
 
 @implementation LCSorts
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self beginTests];
-    }
-    return self;
-}
 
 - (void)beginTests {
     testBubbleSort();

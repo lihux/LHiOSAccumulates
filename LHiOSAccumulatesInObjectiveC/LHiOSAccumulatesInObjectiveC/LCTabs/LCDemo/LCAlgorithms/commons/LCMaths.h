@@ -1,8 +1,8 @@
 //
-//  LCSorts.h
+//  LCMaths.h
 //  LHiOSAccumulatesInObjectiveC
 //
-//  Created by 李辉 on 2019/7/1.
+//  Created by lihui on 2019/7/1.
 //  Copyright © 2019 Lihux. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LCSorts : LCAlgorithmBaseModel
+@interface LCMaths : LCAlgorithmBaseModel
 
 @end
 

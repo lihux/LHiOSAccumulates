@@ -33,15 +33,3 @@ void testStructSize(void);
 }
 
 @end
-
-void testStructSize(void) {
-    struct House {
-        char c;
-        int i;
-    };
-    struct House arr[10];
-    for (int i = 0; i < 10; i ++) {
-        printf("\nstruct House arr[%d] address = %p, arr[%d].i address = %p\n", i, &arr[i], i, &arr[i].i);
-    }
-    printf("House的长度是：%lu, 数组的长度是：%lu", sizeof(struct House), sizeof(arr));
-}

@@ -78,6 +78,9 @@
 		9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365831C4CFA3700E04D7B /* LCAnimationView.m */; };
 		9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365851C4CFA3700E04D7B /* LCFlyingView.m */; };
 		9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0365901C4CFBED00E04D7B /* AppDelegate.m */; };
+		9C18B4B322CA40BA0032B65B /* LCAlgorithmTools.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4B222CA40BA0032B65B /* LCAlgorithmTools.c */; };
+		9C18B4B622CA41100032B65B /* LCMaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4B522CA41100032B65B /* LCMaths.m */; };
+		9C18B4B922CA413E0032B65B /* LCAlgorithmBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4B822CA413E0032B65B /* LCAlgorithmBaseModel.m */; };
 		9C21D3EA229C9AF5000C8911 /* LCAlgorithmData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */; };
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
@@ -287,6 +290,12 @@
 		9C03658F1C4CFBED00E04D7B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C0365901C4CFBED00E04D7B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C0365921C4CFBFD00E04D7B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C18B4B122CA40BA0032B65B /* LCAlgorithmTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmTools.h; sourceTree = "<group>"; };
+		9C18B4B222CA40BA0032B65B /* LCAlgorithmTools.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LCAlgorithmTools.c; sourceTree = "<group>"; };
+		9C18B4B422CA41100032B65B /* LCMaths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMaths.h; sourceTree = "<group>"; };
+		9C18B4B522CA41100032B65B /* LCMaths.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMaths.m; sourceTree = "<group>"; };
+		9C18B4B722CA413E0032B65B /* LCAlgorithmBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmBaseModel.h; sourceTree = "<group>"; };
+		9C18B4B822CA413E0032B65B /* LCAlgorithmBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAlgorithmBaseModel.m; sourceTree = "<group>"; };
 		9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDDispatch.plist; sourceTree = "<group>"; };
 		9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
 		9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
@@ -869,6 +878,12 @@
 				9C41ADC3229B5DEB00C58500 /* LCAlgorithmViewController.m */,
 				521950E022CA06AE00131BBC /* LCSorts.h */,
 				521950E122CA06AE00131BBC /* LCSorts.m */,
+				9C18B4B422CA41100032B65B /* LCMaths.h */,
+				9C18B4B522CA41100032B65B /* LCMaths.m */,
+				9C18B4B722CA413E0032B65B /* LCAlgorithmBaseModel.h */,
+				9C18B4B822CA413E0032B65B /* LCAlgorithmBaseModel.m */,
+				9C18B4B122CA40BA0032B65B /* LCAlgorithmTools.h */,
+				9C18B4B222CA40BA0032B65B /* LCAlgorithmTools.c */,
 				9C21D3E8229C9AF5000C8911 /* LCAlgorithmData.h */,
 				9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */,
 			);
@@ -1315,6 +1330,7 @@
 				9CC1F2D122C77631007BCFE5 /* LCLockViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
+				9C18B4B322CA40BA0032B65B /* LCAlgorithmTools.c in Sources */,
 				5231F4F122C9F4E300F5078C /* malloc.c in Sources */,
 				5289FB4C1F6A91C600413192 /* LCDBClothesProvider.m in Sources */,
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
@@ -1333,6 +1349,7 @@
 				9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */,
 				5224851E1EE7BB60001A1429 /* LCDURLMetricsViewController.m in Sources */,
 				5289FB4F1F6A930900413192 /* LCDBDealerProxy.m in Sources */,
+				9C18B4B922CA413E0032B65B /* LCAlgorithmBaseModel.m in Sources */,
 				5289FB451F6A8FFF00413192 /* LCDBNSProxyViewController.m in Sources */,
 				9C03658D1C4CFA3700E04D7B /* LCAnimationView.m in Sources */,
 				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,
@@ -1368,6 +1385,7 @@
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,
 				9CFAC41C1EFDCA68006964F2 /* LCBookScanViewController.m in Sources */,
 				526652A422276F3000855ADD /* LCDSon.m in Sources */,
+				9C18B4B622CA41100032B65B /* LCMaths.m in Sources */,
 				9C4A0F441F67531A0046E722 /* LCFileHelper.m in Sources */,
 				9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,

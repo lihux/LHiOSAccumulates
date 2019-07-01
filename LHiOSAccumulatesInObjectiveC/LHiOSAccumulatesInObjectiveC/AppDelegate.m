@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "LCDParent.h"
-
 @interface AppDelegate ()
 
 @end
@@ -18,8 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    LCDParent *p = [[LCDParent alloc] initWithCity:@"Beijing"];
-    [p performSelector:NSSelectorFromString(@"eatFood")];
     return YES;
 }
 
