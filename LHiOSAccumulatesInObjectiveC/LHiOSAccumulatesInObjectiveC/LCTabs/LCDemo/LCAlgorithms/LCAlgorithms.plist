@@ -22,5 +22,17 @@
 		<key>storyboardID</key>
 		<string>LCAlgorithmViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>各种排序算法的实现</string>
+		<key>content</key>
+		<string>冒泡</string>
+		<key>storyboardName</key>
+		<string>LCAlgorithms</string>
+		<key>storyboardID</key>
+		<string>LCAlgorithmViewController</string>
+		<key>extraInfo</key>
+		<string>LCSorts</string>
+	</dict>
 </array>
 </plist>

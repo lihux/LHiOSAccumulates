@@ -10,6 +10,7 @@
 		52052F781F20542E0065072B /* LCDBAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52052F771F20542E0065072B /* LCDBAutoLayoutViewController.m */; };
 		52052F7E1F2055100065072B /* LCDBIntrinsicSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52052F7D1F2055100065072B /* LCDBIntrinsicSizeView.m */; };
 		5216F5C9228CFD6B00C3527F /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 5216F5C7228CFD6B00C3527F /* fishhook.c */; };
+		521950E222CA06AE00131BBC /* LCSorts.m in Sources */ = {isa = PBXBuildFile; fileRef = 521950E122CA06AE00131BBC /* LCSorts.m */; };
 		521BA5A62239FE64009556FB /* NSObject+LH_AddMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 521BA5A52239FE64009556FB /* NSObject+LH_AddMethods.m */; };
 		5224634E1EFBDDBF00E90EB6 /* LCLihuxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5224634D1EFBDDBF00E90EB6 /* LCLihuxHelper.m */; };
 		522485141EE7BB60001A1429 /* LCDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522484F21EE7BB60001A1429 /* LCDemo.storyboard */; };
@@ -166,6 +167,8 @@
 		52052F7D1F2055100065072B /* LCDBIntrinsicSizeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBIntrinsicSizeView.m; sourceTree = "<group>"; };
 		5216F5C7228CFD6B00C3527F /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		5216F5C8228CFD6B00C3527F /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		521950E022CA06AE00131BBC /* LCSorts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSorts.h; sourceTree = "<group>"; };
+		521950E122CA06AE00131BBC /* LCSorts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSorts.m; sourceTree = "<group>"; };
 		521BA5A42239FE64009556FB /* NSObject+LH_AddMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LH_AddMethods.h"; sourceTree = "<group>"; };
 		521BA5A52239FE64009556FB /* NSObject+LH_AddMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LH_AddMethods.m"; sourceTree = "<group>"; };
 		5224634C1EFBDDBF00E90EB6 /* LCLihuxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLihuxHelper.h; sourceTree = "<group>"; };
@@ -864,6 +867,8 @@
 			children = (
 				9C41ADC2229B5DEB00C58500 /* LCAlgorithmViewController.h */,
 				9C41ADC3229B5DEB00C58500 /* LCAlgorithmViewController.m */,
+				521950E022CA06AE00131BBC /* LCSorts.h */,
+				521950E122CA06AE00131BBC /* LCSorts.m */,
 				9C21D3E8229C9AF5000C8911 /* LCAlgorithmData.h */,
 				9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */,
 			);
@@ -1286,6 +1291,7 @@
 			files = (
 				9C21D3EA229C9AF5000C8911 /* LCAlgorithmData.m in Sources */,
 				52E916291F1F112A0036E995 /* LCGradientButton.m in Sources */,
+				521950E222CA06AE00131BBC /* LCSorts.m in Sources */,
 				9C0365731C4CF9F900E04D7B /* UIColor+helper.m in Sources */,
 				521BA5A62239FE64009556FB /* NSObject+LH_AddMethods.m in Sources */,
 				9C476D901EF42DC1004AC758 /* LCDispatchApplyViewController.m in Sources */,

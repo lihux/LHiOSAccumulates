@@ -26,7 +26,10 @@ void testStructSize(void);
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    testStructSize();
+    Class cls = NSClassFromString(self.accumulate.extraInfo);
+    if (cls) {
+        [cls new];
+    }
 }
 
 @end
