@@ -27,6 +27,7 @@ void printArray(int *nums, int n, const char *s) {
     printf("]\n");
 }
 
+//1. 冒泡排序，算法时间复杂度O(n^2),空间复杂度：O(1), 属于比较排序，稳定排序算法
 void bubbleSort(int *nums, int n) {
     printArray(nums, n, "\n开始冒泡排序：\n");
     
