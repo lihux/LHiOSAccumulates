@@ -92,6 +92,7 @@
 		9C18B4BC22CA46D30032B65B /* LCKMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4BB22CA46D30032B65B /* LCKMP.m */; };
 		9C18B4CB22CB87FF0032B65B /* LCBSDSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4CA22CB87FF0032B65B /* LCBSDSocket.m */; };
 		9C18B4CE22CB8DD50032B65B /* LCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4CD22CB8DD50032B65B /* LCNetwork.m */; };
+		9C18B4D122CB97CD0032B65B /* LCCFSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4D022CB97CD0032B65B /* LCCFSocket.m */; };
 		9C21D3EA229C9AF5000C8911 /* LCAlgorithmData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */; };
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
@@ -329,6 +330,8 @@
 		9C18B4CA22CB87FF0032B65B /* LCBSDSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBSDSocket.m; sourceTree = "<group>"; };
 		9C18B4CC22CB8DD50032B65B /* LCNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNetwork.h; sourceTree = "<group>"; };
 		9C18B4CD22CB8DD50032B65B /* LCNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNetwork.m; sourceTree = "<group>"; };
+		9C18B4CF22CB97CD0032B65B /* LCCFSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCFSocket.h; sourceTree = "<group>"; };
+		9C18B4D022CB97CD0032B65B /* LCCFSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCFSocket.m; sourceTree = "<group>"; };
 		9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDDispatch.plist; sourceTree = "<group>"; };
 		9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
 		9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
@@ -669,6 +672,8 @@
 				9C18B4CD22CB8DD50032B65B /* LCNetwork.m */,
 				9C18B4C922CB87FF0032B65B /* LCBSDSocket.h */,
 				9C18B4CA22CB87FF0032B65B /* LCBSDSocket.m */,
+				9C18B4CF22CB97CD0032B65B /* LCCFSocket.h */,
+				9C18B4D022CB97CD0032B65B /* LCCFSocket.m */,
 			);
 			path = LCNetworkBasics;
 			sourceTree = "<group>";
@@ -1433,6 +1438,7 @@
 				9C03656E1C4CF9F900E04D7B /* LCButton.m in Sources */,
 				5259131922CB3D8600433828 /* LC2View.m in Sources */,
 				52CAEED31EFCF45D00A7EB16 /* LCBookCreater.m in Sources */,
+				9C18B4D122CB97CD0032B65B /* LCCFSocket.m in Sources */,
 				9C03658E1C4CFA3700E04D7B /* LCFlyingView.m in Sources */,
 				5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */,
 				9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */,

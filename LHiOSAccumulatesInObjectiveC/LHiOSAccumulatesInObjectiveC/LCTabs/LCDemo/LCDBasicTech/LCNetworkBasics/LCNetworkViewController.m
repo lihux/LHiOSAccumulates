@@ -13,10 +13,12 @@
 #import "LCNetworkViewController.h"
 
 #import "LCBSDSocket.h"
+#import "LCCFSocket.h"
 
 @interface LCNetworkViewController ()
 
 @property (nonatomic, strong) LCBSDSocket *bsdSocket;
+@property (nonatomic, strong) LCCFSocket *cfSocket;
 
 @end
 
@@ -29,6 +31,7 @@
     [self.bsdSocket connect];
 }
 - (IBAction)didTapOnCFSocketButton:(id)sender {
+    [self.cfSocket connect];
 }
 
 - (IBAction)didTapOnCFNetworkButton:(id)sender {
@@ -46,4 +49,13 @@
     _bsdSocket = [LCBSDSocket new];
     return _bsdSocket;
 }
+
+- (LCCFSocket *)cfSocket {
+    if (_cfSocket) {
+        return _cfSocket;
+    }
+    _cfSocket = [LCCFSocket new];
+    return _cfSocket;
+}
+
 @end

@@ -51,7 +51,7 @@
 }
 
 - (void)sendData {
-    char *str = "\nThis message was send from Lihux's Personal APP!\n";
+    char *str = "\nThis message was send from Lihux's Personal APP Using Socket!\n";
     ssize_t sendLen = send(self.clientSocket, str, strlen(str), 0);
     if (sendLen == -1) {
         NSLog(@"发送失败");
