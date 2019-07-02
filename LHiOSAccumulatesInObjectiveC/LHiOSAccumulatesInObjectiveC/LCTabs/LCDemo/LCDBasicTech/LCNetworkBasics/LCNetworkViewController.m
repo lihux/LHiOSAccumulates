@@ -6,6 +6,10 @@
 //  Copyright © 2019 Lihux. All rights reserved.
 //
 
+//NOTE:
+//服务端使用node.js简单写了个，直接运行当前文件夹下的 `node tcp_server.js`即可
+//参考blog：https://blog.csdn.net/lockey23/article/details/76408891
+
 #import "LCNetworkViewController.h"
 
 #import "LCBSDSocket.h"
