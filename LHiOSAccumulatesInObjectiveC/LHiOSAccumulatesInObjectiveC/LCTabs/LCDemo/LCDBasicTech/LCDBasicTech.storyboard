@@ -392,8 +392,12 @@
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="FPi-Bo-8SM" appends="YES" id="M4O-Gz-FLv"/>
+                                                </connections>
                                             </view>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60n-tt-mHe" customClass="LCTouchButton">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60n-tt-mHe" customClass="LCTouchButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
@@ -404,6 +408,11 @@
                                             <constraint firstAttribute="width" constant="300" id="e3k-jv-KRy"/>
                                             <constraint firstAttribute="height" constant="300" id="emr-aT-8uH"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="60n-tt-mHe"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -417,6 +426,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1l-AI-dzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FPi-Bo-8SM"/>
             </objects>
             <point key="canvasLocation" x="-26.399999999999999" y="-966.56671664167925"/>
         </scene>
