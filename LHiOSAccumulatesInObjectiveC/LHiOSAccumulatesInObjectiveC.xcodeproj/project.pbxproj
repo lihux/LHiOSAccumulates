@@ -89,6 +89,7 @@
 		9C18B4B322CA40BA0032B65B /* LCAlgorithmTools.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4B222CA40BA0032B65B /* LCAlgorithmTools.c */; };
 		9C18B4B622CA41100032B65B /* LCMaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4B522CA41100032B65B /* LCMaths.m */; };
 		9C18B4B922CA413E0032B65B /* LCAlgorithmBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4B822CA413E0032B65B /* LCAlgorithmBaseModel.m */; };
+		9C18B4BC22CA46D30032B65B /* LCKMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4BB22CA46D30032B65B /* LCKMP.m */; };
 		9C21D3EA229C9AF5000C8911 /* LCAlgorithmData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */; };
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
@@ -320,6 +321,8 @@
 		9C18B4B522CA41100032B65B /* LCMaths.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMaths.m; sourceTree = "<group>"; };
 		9C18B4B722CA413E0032B65B /* LCAlgorithmBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmBaseModel.h; sourceTree = "<group>"; };
 		9C18B4B822CA413E0032B65B /* LCAlgorithmBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAlgorithmBaseModel.m; sourceTree = "<group>"; };
+		9C18B4BA22CA46D30032B65B /* LCKMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCKMP.h; sourceTree = "<group>"; };
+		9C18B4BB22CA46D30032B65B /* LCKMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCKMP.m; sourceTree = "<group>"; };
 		9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDDispatch.plist; sourceTree = "<group>"; };
 		9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
 		9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
@@ -921,6 +924,12 @@
 		9C41ADBA229B4DB200C58500 /* algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				521950E022CA06AE00131BBC /* LCSorts.h */,
+				521950E122CA06AE00131BBC /* LCSorts.m */,
+				9C18B4B422CA41100032B65B /* LCMaths.h */,
+				9C18B4B522CA41100032B65B /* LCMaths.m */,
+				9C18B4BA22CA46D30032B65B /* LCKMP.h */,
+				9C18B4BB22CA46D30032B65B /* LCKMP.m */,
 			);
 			path = algorithms;
 			sourceTree = "<group>";
@@ -930,10 +939,6 @@
 			children = (
 				9C41ADC2229B5DEB00C58500 /* LCAlgorithmViewController.h */,
 				9C41ADC3229B5DEB00C58500 /* LCAlgorithmViewController.m */,
-				521950E022CA06AE00131BBC /* LCSorts.h */,
-				521950E122CA06AE00131BBC /* LCSorts.m */,
-				9C18B4B422CA41100032B65B /* LCMaths.h */,
-				9C18B4B522CA41100032B65B /* LCMaths.m */,
 				9C18B4B722CA413E0032B65B /* LCAlgorithmBaseModel.h */,
 				9C18B4B822CA413E0032B65B /* LCAlgorithmBaseModel.m */,
 				9C18B4B122CA40BA0032B65B /* LCAlgorithmTools.h */,
@@ -1439,6 +1444,7 @@
 				9C7612351F1197650063107B /* LCColorCombination.m in Sources */,
 				52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */,
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
+				9C18B4BC22CA46D30032B65B /* LCKMP.m in Sources */,
 				52BF61B91F2993F0004ADC6B /* LCAKeyFrameViewController.m in Sources */,
 				9C476D9C1EF51E57004AC758 /* LCDBENUMExploreViewController.m in Sources */,
 				9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */,
