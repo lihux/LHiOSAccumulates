@@ -106,5 +106,15 @@
 		<key>storyboardName</key>
 		<string>LCDBasicTech</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>点击事件响应链探索</string>
+		<key>content</key>
+		<string>点击的传递和最佳响应者的查找</string>
+		<key>storyboardID</key>
+		<string>LCResponderViewController</string>
+		<key>storyboardName</key>
+		<string>LCDBasicTech</string>
+	</dict>
 </array>
 </plist>

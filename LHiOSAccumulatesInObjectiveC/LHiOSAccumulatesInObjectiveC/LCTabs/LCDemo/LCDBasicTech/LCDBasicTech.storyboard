@@ -356,5 +356,69 @@
             </objects>
             <point key="canvasLocation" x="1154" y="181"/>
         </scene>
+        <!--Responder View Controller-->
+        <scene sceneID="j4W-PU-kxi">
+            <objects>
+                <viewController storyboardIdentifier="LCResponderViewController" id="oUv-zX-Elg" customClass="LCResponderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vex-kv-XRX"/>
+                        <viewControllerLayoutGuide type="bottom" id="aOy-QK-f1R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gsT-GT-Wiu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="-9999" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LwW-Z9-bRu" customClass="LCBottomParentView">
+                                <rect key="frame" x="52" y="156" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7dv-rf-ncc" customClass="LC3View">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlT-oV-g9H" customClass="LC2View">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFM-Sm-BcM" customClass="LCTopView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1QN-AL-VmB" customClass="LCTopView">
+                                                                <rect key="frame" x="30" y="30" width="300" height="300"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60n-tt-mHe" customClass="LCTouchButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.14901960780000001" green="0.58823529409999997" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="e3k-jv-KRy"/>
+                                            <constraint firstAttribute="height" constant="300" id="emr-aT-8uH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7dv-rf-ncc" firstAttribute="centerY" secondItem="LwW-Z9-bRu" secondAttribute="centerY" id="Bdv-Yk-SqO"/>
+                                    <constraint firstItem="7dv-rf-ncc" firstAttribute="centerX" secondItem="LwW-Z9-bRu" secondAttribute="centerX" id="YSa-en-Ila"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1l-AI-dzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.399999999999999" y="-966.56671664167925"/>
+        </scene>
     </scenes>
 </document>
