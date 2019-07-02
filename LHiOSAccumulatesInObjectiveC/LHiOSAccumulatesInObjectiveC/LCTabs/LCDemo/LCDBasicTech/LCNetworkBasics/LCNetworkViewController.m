@@ -8,7 +8,11 @@
 
 #import "LCNetworkViewController.h"
 
+#import "LCBSDSocket.h"
+
 @interface LCNetworkViewController ()
+
+@property (nonatomic, strong) LCBSDSocket *bsdSocket;
 
 @end
 
@@ -18,6 +22,7 @@
     [super viewDidLoad];
 }
 - (IBAction)didTapOnBSDSocketButton:(id)sender {
+    [self.bsdSocket connect];
 }
 - (IBAction)didTapOnCFSocketButton:(id)sender {
 }
@@ -27,5 +32,14 @@
 - (IBAction)didTapOnNSURLConnectionButton:(id)sender {
 }
 - (IBAction)didTapOnNSURLSessionButton:(id)sender {
+}
+
+#pragma mark - lazy loads
+-(LCBSDSocket *)bsdSocket {
+    if (_bsdSocket) {
+        return _bsdSocket;
+    }
+    _bsdSocket = [LCBSDSocket new];
+    return _bsdSocket;
 }
 @end

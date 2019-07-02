@@ -90,6 +90,8 @@
 		9C18B4B622CA41100032B65B /* LCMaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4B522CA41100032B65B /* LCMaths.m */; };
 		9C18B4B922CA413E0032B65B /* LCAlgorithmBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4B822CA413E0032B65B /* LCAlgorithmBaseModel.m */; };
 		9C18B4BC22CA46D30032B65B /* LCKMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4BB22CA46D30032B65B /* LCKMP.m */; };
+		9C18B4CB22CB87FF0032B65B /* LCBSDSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4CA22CB87FF0032B65B /* LCBSDSocket.m */; };
+		9C18B4CE22CB8DD50032B65B /* LCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4CD22CB8DD50032B65B /* LCNetwork.m */; };
 		9C21D3EA229C9AF5000C8911 /* LCAlgorithmData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */; };
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
@@ -323,6 +325,10 @@
 		9C18B4B822CA413E0032B65B /* LCAlgorithmBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAlgorithmBaseModel.m; sourceTree = "<group>"; };
 		9C18B4BA22CA46D30032B65B /* LCKMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCKMP.h; sourceTree = "<group>"; };
 		9C18B4BB22CA46D30032B65B /* LCKMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCKMP.m; sourceTree = "<group>"; };
+		9C18B4C922CB87FF0032B65B /* LCBSDSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBSDSocket.h; sourceTree = "<group>"; };
+		9C18B4CA22CB87FF0032B65B /* LCBSDSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBSDSocket.m; sourceTree = "<group>"; };
+		9C18B4CC22CB8DD50032B65B /* LCNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNetwork.h; sourceTree = "<group>"; };
+		9C18B4CD22CB8DD50032B65B /* LCNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNetwork.m; sourceTree = "<group>"; };
 		9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDDispatch.plist; sourceTree = "<group>"; };
 		9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
 		9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
@@ -659,6 +665,10 @@
 			children = (
 				5259132022CB6E4B00433828 /* LCNetworkViewController.h */,
 				5259132122CB6E4B00433828 /* LCNetworkViewController.m */,
+				9C18B4CC22CB8DD50032B65B /* LCNetwork.h */,
+				9C18B4CD22CB8DD50032B65B /* LCNetwork.m */,
+				9C18B4C922CB87FF0032B65B /* LCBSDSocket.h */,
+				9C18B4CA22CB87FF0032B65B /* LCBSDSocket.m */,
 			);
 			path = LCNetworkBasics;
 			sourceTree = "<group>";
@@ -1406,6 +1416,7 @@
 				9CA6059B1F05409B000DB286 /* LCComputerSystemCh2HomeWorkViewController.m in Sources */,
 				9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */,
 				5296F2AE1EFB9EB600A08022 /* LCBookShelf.xcdatamodeld in Sources */,
+				9C18B4CB22CB87FF0032B65B /* LCBSDSocket.m in Sources */,
 				9C4C57572271E8C700F76D86 /* LCDAddressSanitizerTest.m in Sources */,
 				525912EF22CAEAB800433828 /* LCToutchImageView.m in Sources */,
 				9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */,
@@ -1440,6 +1451,7 @@
 				52E4C89C1EFA435600CB8F4D /* LCBookShelf.xcmappingmodel in Sources */,
 				52E019211F02509B00B38546 /* LCBCreateReadingPlanViewController.m in Sources */,
 				9CB64EDC1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m in Sources */,
+				9C18B4CE22CB8DD50032B65B /* LCNetwork.m in Sources */,
 				9CA605981F054085000DB286 /* LCComputerSystemCh2FloatRepresentViewController.m in Sources */,
 				9C7612351F1197650063107B /* LCColorCombination.m in Sources */,
 				52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */,
