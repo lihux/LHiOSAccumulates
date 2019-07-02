@@ -32,6 +32,7 @@ void readStream(CFReadStreamRef iStream, CFStreamEventType eventType, void * cli
         if (dex > 0) {
             printf("s服务器收到数据：%s", buf);
         }
+        sleep(1);
         
     } while (strcmp(buf, "exit") != 0);
 }
