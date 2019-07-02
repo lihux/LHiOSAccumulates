@@ -116,5 +116,15 @@
 		<key>storyboardName</key>
 		<string>LCDBasicTech</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>探索不同层级的网络代码库</string>
+		<key>content</key>
+		<string>探索不同层级的网络代码库</string>
+		<key>storyboardID</key>
+		<string>LCNetworkViewController</string>
+		<key>storyboardName</key>
+		<string>LCDBasicTech</string>
+	</dict>
 </array>
 </plist>

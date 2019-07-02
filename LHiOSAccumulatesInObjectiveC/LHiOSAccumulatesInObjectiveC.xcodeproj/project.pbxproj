@@ -40,6 +40,7 @@
 		5259131922CB3D8600433828 /* LC2View.m in Sources */ = {isa = PBXBuildFile; fileRef = 5259131822CB3D8600433828 /* LC2View.m */; };
 		5259131C22CB3D9300433828 /* LC3View.m in Sources */ = {isa = PBXBuildFile; fileRef = 5259131B22CB3D9300433828 /* LC3View.m */; };
 		5259131E22CB3EC300433828 /* LCTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5259131D22CB3EC300433828 /* LCTopView.m */; };
+		5259132222CB6E4B00433828 /* LCNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5259132122CB6E4B00433828 /* LCNetworkViewController.m */; };
 		526652A122276F0C00855ADD /* LCDParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 526652A022276F0C00855ADD /* LCDParent.m */; };
 		526652A422276F3000855ADD /* LCDSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 526652A322276F3000855ADD /* LCDSon.m */; };
 		5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5270E1CF1F066B90005EF013 /* LCTimeHelper.m */; };
@@ -226,6 +227,8 @@
 		5259131A22CB3D9300433828 /* LC3View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LC3View.h; sourceTree = "<group>"; };
 		5259131B22CB3D9300433828 /* LC3View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LC3View.m; sourceTree = "<group>"; };
 		5259131D22CB3EC300433828 /* LCTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTopView.m; sourceTree = "<group>"; };
+		5259132022CB6E4B00433828 /* LCNetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNetworkViewController.h; sourceTree = "<group>"; };
+		5259132122CB6E4B00433828 /* LCNetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNetworkViewController.m; sourceTree = "<group>"; };
 		5266529F22276F0C00855ADD /* LCDParent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDParent.h; sourceTree = "<group>"; };
 		526652A022276F0C00855ADD /* LCDParent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDParent.m; sourceTree = "<group>"; };
 		526652A222276F3000855ADD /* LCDSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDSon.h; sourceTree = "<group>"; };
@@ -648,6 +651,15 @@
 			path = LCGaoKao;
 			sourceTree = "<group>";
 		};
+		5259131F22CB6E2300433828 /* LCNetworkBasics */ = {
+			isa = PBXGroup;
+			children = (
+				5259132022CB6E4B00433828 /* LCNetworkViewController.h */,
+				5259132122CB6E4B00433828 /* LCNetworkViewController.m */,
+			);
+			path = LCNetworkBasics;
+			sourceTree = "<group>";
+		};
 		5266529E22276EEC00855ADD /* LCDProperty */ = {
 			isa = PBXGroup;
 			children = (
@@ -935,6 +947,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				5259131F22CB6E2300433828 /* LCNetworkBasics */,
 				521950E322CAE55500131BBC /* LCUIResponder */,
 				9CC1F2D222C7C19F007BCFE5 /* LCRuntimesTips */,
 				9CC1F2CE22C77607007BCFE5 /* LCLocks */,
@@ -1375,6 +1388,7 @@
 				9CC1F2D122C77631007BCFE5 /* LCLockViewController.m in Sources */,
 				9C03656B1C4CF9F900E04D7B /* LCAccumulate.m in Sources */,
 				9C678A421EE6F49000746CEF /* LCTableViewCell.m in Sources */,
+				5259132222CB6E4B00433828 /* LCNetworkViewController.m in Sources */,
 				9C18B4B322CA40BA0032B65B /* LCAlgorithmTools.c in Sources */,
 				5231F4F122C9F4E300F5078C /* malloc.c in Sources */,
 				5289FB4C1F6A91C600413192 /* LCDBClothesProvider.m in Sources */,
