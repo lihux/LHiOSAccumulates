@@ -16,6 +16,7 @@
 #import "LCCFSocket.h"
 #import "LCCFNetwork.h"
 #import "LCNSURLConnection.h"
+#import "LCNSURLSession.h"
 
 @interface LCNetworkViewController ()
 
@@ -23,6 +24,7 @@
 @property (nonatomic, strong) LCCFSocket *cfSocket;
 @property (nonatomic, strong) LCCFNetwork *cfnetwork;
 @property (nonatomic, strong) LCNSURLConnection *connection;
+@property (nonatomic, strong) LCNSURLSession *session;
 
 @end
 
@@ -46,6 +48,7 @@
 }
 
 - (IBAction)didTapOnNSURLSessionButton:(id)sender {
+    [self.session connect];
 }
 
 #pragma mark - lazy loads
@@ -79,6 +82,14 @@
     }
     _connection = [LCNSURLConnection new];
     return _connection;
+}
+
+- (LCNSURLSession *)session {
+    if (_session) {
+        return _session;
+    }
+    _session = [LCNSURLSession new];
+    return _session;
 }
 
 @end
