@@ -17,7 +17,7 @@
 @implementation LCNSURLConnection
 
 - (void)connect {
-    [self connect:@"https://www.baidu.com"];
+    [self connect:@"https://www.github.com"];
 }
 
 - (void)connect:(NSString *)urlStr {
@@ -39,9 +39,18 @@
 
 //- (BOOL)connectionShouldUseCredentialStorage:(NSURLConnection *)connection;
 //- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge;
-//- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace API_DEPRECATED("Use -connection:willSendRequestForAuthenticationChallenge: instead.", macos(10.6,10.10), ios(3.0,8.0), watchos(2.0,2.0), tvos(9.0,9.0));
-//- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge API_DEPRECATED("Use -connection:willSendRequestForAuthenticationChallenge: instead.", macos(10.2,10.10), ios(2.0,8.0), watchos(2.0,2.0), tvos(9.0,9.0));
-//- (void)connection:(NSURLConnection *)connection didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge API_DEPRECATED("Use -connection:willSendRequestForAuthenticationChallenge: instead.", macos(10.2,10.10), ios(2.0,8.0), watchos(2.0,2.0), tvos(9.0,9.0));
+- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
+    NSLog(@"是否认证：%@", protectionSpace);
+    return YES;
+}
+
+//- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+//    NSLog(@"服务端来问我的身份了，挑战一把：%@", challenge);
+//}
+
+//- (void)connection:(NSURLConnection *)connection didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+//    NSLog(@"挑战发生了改变了%@", challenge);
+//}
 
 #pragma mark - NSURLConnectionDataDelegate
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
