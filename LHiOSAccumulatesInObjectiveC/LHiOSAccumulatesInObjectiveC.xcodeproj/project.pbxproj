@@ -93,6 +93,7 @@
 		9C18B4CB22CB87FF0032B65B /* LCBSDSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4CA22CB87FF0032B65B /* LCBSDSocket.m */; };
 		9C18B4CE22CB8DD50032B65B /* LCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4CD22CB8DD50032B65B /* LCNetwork.m */; };
 		9C18B4D122CB97CD0032B65B /* LCCFSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4D022CB97CD0032B65B /* LCCFSocket.m */; };
+		9C18B4D722CC1A1B0032B65B /* LCCFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18B4D622CC1A1B0032B65B /* LCCFNetwork.m */; };
 		9C21D3EA229C9AF5000C8911 /* LCAlgorithmData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C21D3E9229C9AF5000C8911 /* LCAlgorithmData.m */; };
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
@@ -127,6 +128,7 @@
 		9C67EDE21F2303AA00FE690D /* LCSDefaultOpenSaveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C67EDE11F2303AA00FE690D /* LCSDefaultOpenSaveManager.m */; };
 		9C7612351F1197650063107B /* LCColorCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612341F1197650063107B /* LCColorCombination.m */; };
 		9C7612381F1264E70063107B /* LCColorCombinationManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612371F1264E70063107B /* LCColorCombinationManger.m */; };
+		9C7A8FD122CC74CF00DDA593 /* LCNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A8FD022CC74CE00DDA593 /* LCNSURLConnection.m */; };
 		9C7EEB021F2A9DAD006B43C7 /* LCDComputerSystemChapter3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C7EEB011F2A9DA1006B43C7 /* LCDComputerSystemChapter3.plist */; };
 		9C7EEB051F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7EEB041F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m */; };
 		9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */; };
@@ -332,6 +334,8 @@
 		9C18B4CD22CB8DD50032B65B /* LCNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNetwork.m; sourceTree = "<group>"; };
 		9C18B4CF22CB97CD0032B65B /* LCCFSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCFSocket.h; sourceTree = "<group>"; };
 		9C18B4D022CB97CD0032B65B /* LCCFSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCFSocket.m; sourceTree = "<group>"; };
+		9C18B4D522CC1A1B0032B65B /* LCCFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCFNetwork.h; sourceTree = "<group>"; };
+		9C18B4D622CC1A1B0032B65B /* LCCFNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCFNetwork.m; sourceTree = "<group>"; };
 		9C1A04891EEB8B6E00161D69 /* LCDDispatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCDDispatch.plist; sourceTree = "<group>"; };
 		9C1A048A1EEB8B6E00161D69 /* LCDispatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCDispatch.storyboard; sourceTree = "<group>"; };
 		9C1A048B1EEB8B6E00161D69 /* LCDispatchApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDispatchApplyViewController.h; sourceTree = "<group>"; };
@@ -392,6 +396,8 @@
 		9C7612341F1197650063107B /* LCColorCombination.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCombination.m; sourceTree = "<group>"; };
 		9C7612361F1264E70063107B /* LCColorCombinationManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCColorCombinationManger.h; sourceTree = "<group>"; };
 		9C7612371F1264E70063107B /* LCColorCombinationManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCColorCombinationManger.m; sourceTree = "<group>"; };
+		9C7A8FCF22CC74CE00DDA593 /* LCNSURLConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNSURLConnection.h; sourceTree = "<group>"; };
+		9C7A8FD022CC74CE00DDA593 /* LCNSURLConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNSURLConnection.m; sourceTree = "<group>"; };
 		9C7EEAE41F2A9C30006B43C7 /* 114_mstore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 114_mstore.c; sourceTree = "<group>"; };
 		9C7EEAE51F2A9C30006B43C7 /* 114_mstore.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = 114_mstore.o; sourceTree = "<group>"; };
 		9C7EEAE61F2A9C30006B43C7 /* 114_mstore.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 114_mstore.s; sourceTree = "<group>"; };
@@ -674,6 +680,10 @@
 				9C18B4CA22CB87FF0032B65B /* LCBSDSocket.m */,
 				9C18B4CF22CB97CD0032B65B /* LCCFSocket.h */,
 				9C18B4D022CB97CD0032B65B /* LCCFSocket.m */,
+				9C18B4D522CC1A1B0032B65B /* LCCFNetwork.h */,
+				9C18B4D622CC1A1B0032B65B /* LCCFNetwork.m */,
+				9C7A8FCF22CC74CE00DDA593 /* LCNSURLConnection.h */,
+				9C7A8FD022CC74CE00DDA593 /* LCNSURLConnection.m */,
 			);
 			path = LCNetworkBasics;
 			sourceTree = "<group>";
@@ -1413,6 +1423,7 @@
 				5231F4F122C9F4E300F5078C /* malloc.c in Sources */,
 				5289FB4C1F6A91C600413192 /* LCDBClothesProvider.m in Sources */,
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
+				9C18B4D722CC1A1B0032B65B /* LCCFNetwork.m in Sources */,
 				5296F2BC1EFBAD8A00A08022 /* LCBShelfTableViewCell.m in Sources */,
 				9CB64ECC1F0E7F5800A4BC1C /* LCColorViewController.m in Sources */,
 				9C03656C1C4CF9F900E04D7B /* LCAccumulateManager.m in Sources */,
@@ -1428,6 +1439,7 @@
 				9CA605951F05406C000DB286 /* LCComputerSystemCh2IntRepresentViewController.m in Sources */,
 				9CD141CC1EFF67F300B25586 /* LCDComputerSystemCh2ViewController.m in Sources */,
 				9C03658C1C4CFA3700E04D7B /* LCAnimationLayer.m in Sources */,
+				9C7A8FD122CC74CF00DDA593 /* LCNSURLConnection.m in Sources */,
 				5224851E1EE7BB60001A1429 /* LCDURLMetricsViewController.m in Sources */,
 				5289FB4F1F6A930900413192 /* LCDBDealerProxy.m in Sources */,
 				9C18B4B922CA413E0032B65B /* LCAlgorithmBaseModel.m in Sources */,

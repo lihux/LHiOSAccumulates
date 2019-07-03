@@ -14,11 +14,15 @@
 
 #import "LCBSDSocket.h"
 #import "LCCFSocket.h"
+#import "LCCFNetwork.h"
+#import "LCNSURLConnection.h"
 
 @interface LCNetworkViewController ()
 
 @property (nonatomic, strong) LCBSDSocket *bsdSocket;
 @property (nonatomic, strong) LCCFSocket *cfSocket;
+@property (nonatomic, strong) LCCFNetwork *cfnetwork;
+@property (nonatomic, strong) LCNSURLConnection *connection;
 
 @end
 
@@ -35,9 +39,12 @@
 }
 
 - (IBAction)didTapOnCFNetworkButton:(id)sender {
+    [self.cfnetwork connect];
 }
 - (IBAction)didTapOnNSURLConnectionButton:(id)sender {
+    [self.connection connect];
 }
+
 - (IBAction)didTapOnNSURLSessionButton:(id)sender {
 }
 
@@ -56,6 +63,22 @@
     }
     _cfSocket = [LCCFSocket new];
     return _cfSocket;
+}
+
+- (LCCFNetwork *)cfnetwork {
+    if (_cfnetwork) {
+        return _cfnetwork;
+    }
+    _cfnetwork = [LCCFNetwork new];
+    return _cfnetwork;
+}
+
+- (LCNSURLConnection *)connection {
+    if (_connection) {
+        return _connection;
+    }
+    _connection = [LCNSURLConnection new];
+    return _connection;
 }
 
 @end
