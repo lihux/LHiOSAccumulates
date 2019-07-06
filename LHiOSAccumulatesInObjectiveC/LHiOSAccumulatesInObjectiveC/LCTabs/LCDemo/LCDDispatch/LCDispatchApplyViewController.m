@@ -30,7 +30,8 @@ __weak NSString *__weak_lihux = nil;
 //    [self sceen1];
 //    [self sceen1b];
 //    [self sceen2];
-    [self sceen3];
+//    [self sceen3];
+    [self testDeayLock];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -41,7 +42,7 @@ __weak NSString *__weak_lihux = nil;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     NSLog(@"viewDidAppear:%@", __weak_lihux);
-    [self printAllClass];
+//    [self printAllClass];
 }
 
 #pragma mark -
@@ -94,6 +95,20 @@ __weak NSString *__weak_lihux = nil;
         [self.outputString appendString:content];//多线程同时写，可能会有问题
         NSLog(@"%@", content);
     });
+}
+
+#pragma mark -
+- (void)testDeayLock {
+    NSLog(@"测试GCD是否会死锁1");
+    dispatch_queue_t queue1 = dispatch_queue_create(NULL, DISPATCH_QUEUE_CONCURRENT);//这样不会产生死锁
+//    dispatch_queue_t queue1 = dispatch_queue_create(NULL, DISPATCH_QUEUE_SERIAL); //这样会产生死锁
+    dispatch_async(queue1, ^{
+        NSLog(@"测试GCD是否会死锁2");
+        dispatch_sync(queue1, ^{
+            NSLog(@"测试GCD是否会死锁3");
+        });
+    });
+    NSLog(@"测试GCD是否会死锁4");
 }
 
 #pragma mark - 打印出所有的类
