@@ -48,6 +48,8 @@
 
 @interface LCViewController : UIViewController <LCSectionHeaderViewDelegate>
 
+@property (nonatomic, strong) LCAccumulate *accumulate;
+
 /**
  将新的log信息append到textView中显示出来
 
@@ -97,6 +99,12 @@
 
 - (NSString *)rightItemText;
 
-@property (nonatomic, strong) LCAccumulate *accumulate;
+
+/**
+ logView占整个屏幕的比例（见上图)，默认是0.5，子类可以继承传入0~1之间的数字
+
+ @return 用于布局logView的占比
+ */
+- (CGFloat)logViewProportion;
 
 @end

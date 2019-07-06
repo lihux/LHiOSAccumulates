@@ -124,6 +124,10 @@
     return self.logAnchorView ? @"清理日志" : @"";
 }
 
+- (CGFloat)logViewProportion {
+    return 0.5;
+}
+
 #pragma mark - 高蛋白
 #pragma mark - UITraitEnvironment
 - (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
@@ -150,7 +154,7 @@
                                       relatedBy:NSLayoutRelationEqual
                                          toItem:self.view
                                       attribute:attribute
-                                     multiplier:0.5
+                                     multiplier:1 - [self logViewProportion]
                                        constant:0] setActive:YES];
     }
 }

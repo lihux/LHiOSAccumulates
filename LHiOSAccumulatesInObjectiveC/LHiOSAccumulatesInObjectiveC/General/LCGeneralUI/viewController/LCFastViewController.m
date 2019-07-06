@@ -21,4 +21,8 @@
     [self.view addSubview:anchorView];
 }
 
+- (CGFloat)logViewProportion {
+    return 1;
+}
+
 @end
