@@ -126,5 +126,11 @@
 		<key>storyboardName</key>
 		<string>LCDBasicTech</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>学习iOS的基本内存管理</string>
+		<key>storyboardID</key>
+		<string>LCMemoryManageViewController</string>
+	</dict>
 </array>
 </plist>

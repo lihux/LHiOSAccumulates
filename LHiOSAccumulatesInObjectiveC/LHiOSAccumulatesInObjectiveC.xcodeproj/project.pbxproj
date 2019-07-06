@@ -130,6 +130,8 @@
 		9C7612381F1264E70063107B /* LCColorCombinationManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7612371F1264E70063107B /* LCColorCombinationManger.m */; };
 		9C7A8FD122CC74CF00DDA593 /* LCNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A8FD022CC74CE00DDA593 /* LCNSURLConnection.m */; };
 		9C7A8FD422CC9A7200DDA593 /* LCNSURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A8FD322CC9A7200DDA593 /* LCNSURLSession.m */; };
+		9C7A911C22D087A700DDA593 /* LCMemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A911B22D087A700DDA593 /* LCMemoryManageViewController.m */; };
+		9C7A911F22D08E9200DDA593 /* LCFastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A911E22D08E9200DDA593 /* LCFastViewController.m */; };
 		9C7EEB021F2A9DAD006B43C7 /* LCDComputerSystemChapter3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C7EEB011F2A9DA1006B43C7 /* LCDComputerSystemChapter3.plist */; };
 		9C7EEB051F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7EEB041F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m */; };
 		9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */; };
@@ -401,6 +403,10 @@
 		9C7A8FD022CC74CE00DDA593 /* LCNSURLConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNSURLConnection.m; sourceTree = "<group>"; };
 		9C7A8FD222CC9A7200DDA593 /* LCNSURLSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNSURLSession.h; sourceTree = "<group>"; };
 		9C7A8FD322CC9A7200DDA593 /* LCNSURLSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNSURLSession.m; sourceTree = "<group>"; };
+		9C7A911A22D087A700DDA593 /* LCMemoryManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMemoryManageViewController.h; sourceTree = "<group>"; };
+		9C7A911B22D087A700DDA593 /* LCMemoryManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMemoryManageViewController.m; sourceTree = "<group>"; };
+		9C7A911D22D08E9200DDA593 /* LCFastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCFastViewController.h; sourceTree = "<group>"; };
+		9C7A911E22D08E9200DDA593 /* LCFastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCFastViewController.m; sourceTree = "<group>"; };
 		9C7EEAE41F2A9C30006B43C7 /* 114_mstore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 114_mstore.c; sourceTree = "<group>"; };
 		9C7EEAE51F2A9C30006B43C7 /* 114_mstore.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = 114_mstore.o; sourceTree = "<group>"; };
 		9C7EEAE61F2A9C30006B43C7 /* 114_mstore.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 114_mstore.s; sourceTree = "<group>"; };
@@ -876,6 +882,8 @@
 				524747A8211BE7CD00B1C4C7 /* LCSimpleTableViewController.m */,
 				9C7FDF6C1EB0E39C00609D65 /* LCViewController.h */,
 				9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */,
+				9C7A911D22D08E9200DDA593 /* LCFastViewController.h */,
+				9C7A911E22D08E9200DDA593 /* LCFastViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -982,6 +990,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				9C7A911922D0877C00DDA593 /* LCMemoryManage */,
 				5259131F22CB6E2300433828 /* LCNetworkBasics */,
 				521950E322CAE55500131BBC /* LCUIResponder */,
 				9CC1F2D222C7C19F007BCFE5 /* LCRuntimesTips */,
@@ -1087,6 +1096,15 @@
 				9C61C49D1C3E3E43003877BC /* Info.plist */,
 			);
 			path = LHiOSAccumulatesInObjectiveCUITests;
+			sourceTree = "<group>";
+		};
+		9C7A911922D0877C00DDA593 /* LCMemoryManage */ = {
+			isa = PBXGroup;
+			children = (
+				9C7A911A22D087A700DDA593 /* LCMemoryManageViewController.h */,
+				9C7A911B22D087A700DDA593 /* LCMemoryManageViewController.m */,
+			);
+			path = LCMemoryManage;
 			sourceTree = "<group>";
 		};
 		9C7EEAE21F2A9C30006B43C7 /* LCDComputerSystemChapter3 */ = {
@@ -1476,6 +1494,7 @@
 				9CB64EDC1F0FDD3300A4BC1C /* LCC100BeautifulColorTableViewCell.m in Sources */,
 				9C18B4CE22CB8DD50032B65B /* LCNetwork.m in Sources */,
 				9CA605981F054085000DB286 /* LCComputerSystemCh2FloatRepresentViewController.m in Sources */,
+				9C7A911C22D087A700DDA593 /* LCMemoryManageViewController.m in Sources */,
 				9C7612351F1197650063107B /* LCColorCombination.m in Sources */,
 				52D7652E1F01144400CF025F /* LCSDefaultOpenPageSettingViewController.m in Sources */,
 				52C3E6921EFA49CA00A17A3D /* LCBookCoreDataManager.m in Sources */,
@@ -1492,6 +1511,7 @@
 				526652A422276F3000855ADD /* LCDSon.m in Sources */,
 				9C18B4B622CA41100032B65B /* LCMaths.m in Sources */,
 				9C4A0F441F67531A0046E722 /* LCFileHelper.m in Sources */,
+				9C7A911F22D08E9200DDA593 /* LCFastViewController.m in Sources */,
 				9C4BE4C01F0550F5001A1D06 /* LCDCSByteView.m in Sources */,
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
