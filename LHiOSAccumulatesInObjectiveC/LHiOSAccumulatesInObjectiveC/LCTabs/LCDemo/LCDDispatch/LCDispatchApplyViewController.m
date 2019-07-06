@@ -101,7 +101,8 @@ __weak NSString *__weak_lihux = nil;
 - (void)testDeayLock {
     NSLog(@"测试GCD是否会死锁1");
     dispatch_queue_t queue1 = dispatch_queue_create(NULL, DISPATCH_QUEUE_CONCURRENT);//这样不会产生死锁
-//    dispatch_queue_t queue1 = dispatch_queue_create(NULL, DISPATCH_QUEUE_SERIAL); //这样会产生死锁
+    //https://blog.csdn.net/u013378438/article/details/81076116
+//    dispatch_queue_t queue1 = dispatch_queue_create(NULL, DISPATCH_QUEUE_SERIAL); //这样会产生死锁（最新的已经能检测出死锁直接挂掉)
     dispatch_async(queue1, ^{
         NSLog(@"测试GCD是否会死锁2");
         dispatch_sync(queue1, ^{
