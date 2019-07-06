@@ -132,6 +132,7 @@
 		9C7A8FD422CC9A7200DDA593 /* LCNSURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A8FD322CC9A7200DDA593 /* LCNSURLSession.m */; };
 		9C7A911C22D087A700DDA593 /* LCMemoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A911B22D087A700DDA593 /* LCMemoryManageViewController.m */; };
 		9C7A911F22D08E9200DDA593 /* LCFastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A911E22D08E9200DDA593 /* LCFastViewController.m */; };
+		9C7A912222D0988A00DDA593 /* DummyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A912122D0988A00DDA593 /* DummyObject.m */; };
 		9C7EEB021F2A9DAD006B43C7 /* LCDComputerSystemChapter3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C7EEB011F2A9DA1006B43C7 /* LCDComputerSystemChapter3.plist */; };
 		9C7EEB051F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7EEB041F2A9E45006B43C7 /* LCComputerSystemCh3RegistersViewController.m */; };
 		9C7FDF6E1EB0E39C00609D65 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FDF6D1EB0E39C00609D65 /* LCViewController.m */; };
@@ -407,6 +408,8 @@
 		9C7A911B22D087A700DDA593 /* LCMemoryManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMemoryManageViewController.m; sourceTree = "<group>"; };
 		9C7A911D22D08E9200DDA593 /* LCFastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCFastViewController.h; sourceTree = "<group>"; };
 		9C7A911E22D08E9200DDA593 /* LCFastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCFastViewController.m; sourceTree = "<group>"; };
+		9C7A912022D0988A00DDA593 /* DummyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummyObject.h; sourceTree = "<group>"; };
+		9C7A912122D0988A00DDA593 /* DummyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DummyObject.m; sourceTree = "<group>"; };
 		9C7EEAE41F2A9C30006B43C7 /* 114_mstore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 114_mstore.c; sourceTree = "<group>"; };
 		9C7EEAE51F2A9C30006B43C7 /* 114_mstore.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = 114_mstore.o; sourceTree = "<group>"; };
 		9C7EEAE61F2A9C30006B43C7 /* 114_mstore.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = 114_mstore.s; sourceTree = "<group>"; };
@@ -1103,6 +1106,8 @@
 			children = (
 				9C7A911A22D087A700DDA593 /* LCMemoryManageViewController.h */,
 				9C7A911B22D087A700DDA593 /* LCMemoryManageViewController.m */,
+				9C7A912022D0988A00DDA593 /* DummyObject.h */,
+				9C7A912122D0988A00DDA593 /* DummyObject.m */,
 			);
 			path = LCMemoryManage;
 			sourceTree = "<group>";
@@ -1424,6 +1429,7 @@
 				524747A6211BE03700B1C4C7 /* LCDKVCViewController.m in Sources */,
 				521950E622CAE59500131BBC /* LCResponderViewController.m in Sources */,
 				522485311EE8EBD0001A1429 /* UIView+LHAutoLayout.m in Sources */,
+				9C7A912222D0988A00DDA593 /* DummyObject.m in Sources */,
 				52B8D4481F0600EE00A71B70 /* UILabel+lihuxStyle.m in Sources */,
 				5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
