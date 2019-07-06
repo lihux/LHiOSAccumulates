@@ -12,14 +12,13 @@
 @end
 @implementation Dummy15BObject
 @end
-
-@implementation Dummy520BObject
+@implementation Dummy23BObject
 @end
 
-@implementation Dummy1111BObject
+@implementation Dummy513BObject
 @end
 
-@implementation DummyStrIntBObject
+@implementation Dummy1025BObject
 @end
 
 @implementation DummyObject
@@ -27,10 +26,10 @@
 + (NSArray *)testClasses {
     return @[[NSObject class],
              [Dummy9BObject class],
-             [DummyStrIntBObject class],
              [Dummy15BObject class],
-             [Dummy520BObject class],
-             [Dummy1111BObject class]];
+             [Dummy23BObject class],
+             [Dummy513BObject class],
+             [Dummy1025BObject class]];
 }
 
 @end
