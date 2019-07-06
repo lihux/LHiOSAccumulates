@@ -22,26 +22,13 @@ struct Dummy513B {
     char a[DummySize(513)];
 };
 
+struct Dummy1111B {
+    char a[DummySize(1111)];
+};
+
 @interface Dummy9BObject : NSObject
+@property (nonatomic, strong) NSString *str;
 @property (nonatomic, assign) char a;
-@end
-
-@interface Dummy10BObject : NSObject
-@property (nonatomic, assign) char a;
-@property (nonatomic, assign) char b;
-@end
-
-@interface Dummy11BObject : NSObject
-@property (nonatomic, assign) char a;
-@property (nonatomic, assign) char b;
-@property (nonatomic, assign) char c;
-@end
-
-@interface Dummy12BObject : NSObject
-@property (nonatomic, assign) char a;
-@property (nonatomic, assign) char b;
-@property (nonatomic, assign) char c;
-@property (nonatomic, assign) char d;
 @end
 
 @interface Dummy15BObject : NSObject
@@ -54,8 +41,17 @@ struct Dummy513B {
 @property (nonatomic, assign) char c3;
 @end
 
+@interface DummyStrIntBObject : NSObject
+@property (nonatomic, strong) NSString *str;
+@property (nonatomic, assign) int a;
+@end
+
 @interface Dummy520BObject : NSObject
 @property (nonatomic, assign) struct Dummy513B s;
+@end
+
+@interface Dummy1111BObject : NSObject
+@property (nonatomic, assign) struct Dummy1111B s;
 @end
 
 @interface DummyObject : NSObject
