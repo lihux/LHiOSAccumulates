@@ -16,16 +16,50 @@
 
 @implementation LCLockViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self testLock];
 }
-
 - (void)testLock {
-    [self testUnfairLock];
-    [self testNSLock];
+//    [self testUnfairLock];
+//    [self testNSLock];
 //    [self testNSCondition];
 //    [self testNSConditionLock];
+    [self testUnderstandNSCondition];
+}
+
+- (void)testUnderstandNSCondition {
+    __block int produtions = 0;
+    NSCondition *condition = [NSCondition new];
+    NSLog(@"测试条件锁NSCondition-1");
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"测试条件锁NSCondition-2");
+        [condition lock];
+        NSLog(@"测试条件锁NSCondition-3");
+        while (produtions == 0) {
+            NSLog(@"测试条件锁NSCondition-4");
+            [condition wait];
+            NSLog(@"测试条件锁NSCondition-5");
+        }
+        NSLog(@"测试条件锁NSCondition-6");
+        produtions = 0;
+        [condition unlock];
+        NSLog(@"测试条件锁NSCondition-7");
+    });
+    
+    NSLog(@"测试条件锁NSCondition-8");
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"测试条件锁NSCondition-9");
+        [condition lock];
+        NSLog(@"测试条件锁NSCondition-10");
+        produtions = 1;
+        [condition signal];
+        NSLog(@"测试条件锁NSCondition-11");
+        [condition unlock];
+        NSLog(@"测试条件锁NSCondition-12");
+    });
+    NSLog(@"测试条件锁NSCondition-13");
+
 }
 
 - (void)testUnfairLock {

@@ -6,11 +6,11 @@
 //  Copyright © 2019 Lihux. All rights reserved.
 //
 
-#import "LCViewController.h"
+#import "LCFastViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LCLockViewController : LCViewController
+@interface LCLockViewController : LCFastViewController
 
 @end
 
