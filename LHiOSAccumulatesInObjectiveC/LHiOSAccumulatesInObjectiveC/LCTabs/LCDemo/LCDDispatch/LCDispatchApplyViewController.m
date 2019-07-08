@@ -31,7 +31,8 @@ __weak NSString *__weak_lihux = nil;
 //    [self sceen1b];
 //    [self sceen2];
 //    [self sceen3];
-    [self testDeayLock];
+//    [self testDeayLock];
+    [self testSemaphore];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -82,7 +83,7 @@ __weak NSString *__weak_lihux = nil;
     NSInteger tag = button.tag;
     button.tag = tag + 1;
     [self updateOutPutStringWithTag:tag];
-    [button setTitle:[NSString stringWithFormat:@"点击触发dispatch_apply(%zd)次", tag + 1] forState:UIControlStateNormal];
+    [button setTitle:[NSString stringWithFormat:@"点击触发dispatch_apply(%d)次", tag + 1] forState:UIControlStateNormal];
 }
 
 - (void)updateOutPutStringWithTag:(NSInteger)tag {
@@ -110,6 +111,24 @@ __weak NSString *__weak_lihux = nil;
         });
     });
     NSLog(@"测试GCD是否会死锁4");
+}
+
+#pragma mark - Test Semphore
+- (void)testSemaphore {
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    if (!semaphore) {
+        NSLog(@"怎么回事！！！！！");
+    }
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"爷爷来解救你！");
+        dispatch_semaphore_signal(semaphore);
+//        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//            NSLog(@"爸爸来解救你！");
+//            dispatch_semaphore_signal(semaphore);
+//        });
+    });
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    NSLog(@"终于等到你！");
 }
 
 #pragma mark - 打印出所有的类
