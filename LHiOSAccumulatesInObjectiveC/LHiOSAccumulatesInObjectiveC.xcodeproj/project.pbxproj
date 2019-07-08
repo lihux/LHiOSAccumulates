@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		52052F781F20542E0065072B /* LCDBAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52052F771F20542E0065072B /* LCDBAutoLayoutViewController.m */; };
 		52052F7E1F2055100065072B /* LCDBIntrinsicSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52052F7D1F2055100065072B /* LCDBIntrinsicSizeView.m */; };
-		5216F5C9228CFD6B00C3527F /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 5216F5C7228CFD6B00C3527F /* fishhook.c */; };
 		521950E222CA06AE00131BBC /* LCSorts.m in Sources */ = {isa = PBXBuildFile; fileRef = 521950E122CA06AE00131BBC /* LCSorts.m */; };
 		521950E622CAE59500131BBC /* LCResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521950E522CAE59500131BBC /* LCResponderViewController.m */; };
 		521BA5A62239FE64009556FB /* NSObject+LH_AddMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 521BA5A52239FE64009556FB /* NSObject+LH_AddMethods.m */; };
@@ -187,7 +186,6 @@
 		52052F7C1F2055100065072B /* LCDBIntrinsicSizeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDBIntrinsicSizeView.h; sourceTree = "<group>"; };
 		52052F7D1F2055100065072B /* LCDBIntrinsicSizeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDBIntrinsicSizeView.m; sourceTree = "<group>"; };
 		5216F5C7228CFD6B00C3527F /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
-		5216F5C8228CFD6B00C3527F /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		521950E022CA06AE00131BBC /* LCSorts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSorts.h; sourceTree = "<group>"; };
 		521950E122CA06AE00131BBC /* LCSorts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSorts.m; sourceTree = "<group>"; };
 		521950E422CAE59500131BBC /* LCResponderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCResponderViewController.h; sourceTree = "<group>"; };
@@ -701,6 +699,14 @@
 			path = LCNetworkBasics;
 			sourceTree = "<group>";
 		};
+		5259C38B22D32581001C7DB9 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5216F5C7228CFD6B00C3527F /* fishhook.c */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		5266529E22276EEC00855ADD /* LCDProperty */ = {
 			isa = PBXGroup;
 			children = (
@@ -1043,6 +1049,7 @@
 				9C61C48F1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCTests */,
 				9C61C49A1C3E3E43003877BC /* LHiOSAccumulatesInObjectiveCUITests */,
 				9C61C4711C3E3E43003877BC /* Products */,
+				5259C38B22D32581001C7DB9 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1156,15 +1163,6 @@
 				9C7EEB001F2A9C30006B43C7 /* README */,
 			);
 			path = cAndAssembleFile;
-			sourceTree = "<group>";
-		};
-		9C8A3D61227FAD5500009D4B /* fishhook */ = {
-			isa = PBXGroup;
-			children = (
-				5216F5C7228CFD6B00C3527F /* fishhook.c */,
-				5216F5C8228CFD6B00C3527F /* fishhook.h */,
-			);
-			path = fishhook;
 			sourceTree = "<group>";
 		};
 		9CB64EC91F0E7F3D00A4BC1C /* LCColor */ = {
@@ -1521,7 +1519,6 @@
 				9C0365711C4CF9F900E04D7B /* LHBorderLineView.m in Sources */,
 				9C9124351C4FA06E007AB00D /* LCSectionHeaderView.m in Sources */,
 				9C476D9F1EF51E6C004AC758 /* LCDBBlockExploreViewController.m in Sources */,
-				5216F5C9228CFD6B00C3527F /* fishhook.c in Sources */,
 				52B6C0431F31A78A00ED3859 /* LCLabel.m in Sources */,
 				5270E1D01F066B90005EF013 /* LCTimeHelper.m in Sources */,
 				9C7A8FD422CC9A7200DDA593 /* LCNSURLSession.m in Sources */,
