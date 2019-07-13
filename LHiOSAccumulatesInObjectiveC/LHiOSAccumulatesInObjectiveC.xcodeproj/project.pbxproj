@@ -97,6 +97,7 @@
 		9C26C5001EEBE1F800CE608A /* LCDURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C4FF1EEBE1F800CE608A /* LCDURLSessionViewController.m */; };
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
 		9C3669BF1F10C3D5009F856C /* LCLihuxStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3669BE1F10C3D5009F856C /* LCLihuxStyleView.m */; };
+		9C3967B822D95BAF00D18E9C /* LCJSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967B722D95BAF00D18E9C /* LCJSCViewController.m */; };
 		9C41ADB7229B4D9300C58500 /* LCAlgorithms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */; };
 		9C41ADB9229B4DA000C58500 /* LCAlgorithms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */; };
 		9C41ADC4229B5DEB00C58500 /* LCAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41ADC3229B5DEB00C58500 /* LCAlgorithmViewController.m */; };
@@ -350,6 +351,8 @@
 		9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDURLHelper.m; sourceTree = "<group>"; };
 		9C3669BD1F10C3D5009F856C /* LCLihuxStyleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLihuxStyleView.h; sourceTree = "<group>"; };
 		9C3669BE1F10C3D5009F856C /* LCLihuxStyleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLihuxStyleView.m; sourceTree = "<group>"; };
+		9C3967B622D95BAF00D18E9C /* LCJSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCJSCViewController.h; sourceTree = "<group>"; };
+		9C3967B722D95BAF00D18E9C /* LCJSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCJSCViewController.m; sourceTree = "<group>"; };
 		9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCAlgorithms.plist; sourceTree = "<group>"; };
 		9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCAlgorithms.storyboard; sourceTree = "<group>"; };
 		9C41ADC2229B5DEB00C58500 /* LCAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmViewController.h; sourceTree = "<group>"; };
@@ -956,6 +959,15 @@
 			path = LCDDispatch;
 			sourceTree = "<group>";
 		};
+		9C3967B522D95B8800D18E9C /* LCJavaScriptCore */ = {
+			isa = PBXGroup;
+			children = (
+				9C3967B622D95BAF00D18E9C /* LCJSCViewController.h */,
+				9C3967B722D95BAF00D18E9C /* LCJSCViewController.m */,
+			);
+			path = LCJavaScriptCore;
+			sourceTree = "<group>";
+		};
 		9C41ADB5229B4D6400C58500 /* LCAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
@@ -998,6 +1010,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				9C3967B522D95B8800D18E9C /* LCJavaScriptCore */,
 				9C7A911922D0877C00DDA593 /* LCMemoryManage */,
 				5259131F22CB6E2300433828 /* LCNetworkBasics */,
 				521950E322CAE55500131BBC /* LCUIResponder */,
@@ -1429,6 +1442,7 @@
 				9C7A912222D0988A00DDA593 /* DummyObject.m in Sources */,
 				52B8D4481F0600EE00A71B70 /* UILabel+lihuxStyle.m in Sources */,
 				5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */,
+				9C3967B822D95BAF00D18E9C /* LCJSCViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
 				9CC1F2D822C7C238007BCFE5 /* LHPerson.m in Sources */,
 				9CD141CF1EFF689500B25586 /* LCDCSCh2ShowBytes.c in Sources */,

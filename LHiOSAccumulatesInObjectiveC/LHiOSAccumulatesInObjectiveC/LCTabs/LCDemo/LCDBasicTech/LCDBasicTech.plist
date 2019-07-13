@@ -132,5 +132,11 @@
 		<key>storyboardID</key>
 		<string>LCMemoryManageViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>JavaScriptCore学习</string>
+		<key>storyboardID</key>
+		<string>LCJSCViewController</string>
+	</dict>
 </array>
 </plist>
