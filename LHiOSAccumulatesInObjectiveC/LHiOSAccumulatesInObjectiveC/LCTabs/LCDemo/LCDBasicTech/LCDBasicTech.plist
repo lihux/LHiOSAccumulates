@@ -138,5 +138,11 @@
 		<key>storyboardID</key>
 		<string>LCJSCViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>oc消息转发机制复习</string>
+		<key>storyboardID</key>
+		<string>LCMethodFordingViewController</string>
+	</dict>
 </array>
 </plist>

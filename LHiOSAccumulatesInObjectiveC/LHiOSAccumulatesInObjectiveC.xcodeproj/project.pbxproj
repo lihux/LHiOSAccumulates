@@ -98,6 +98,8 @@
 		9C26C5031EEC0A0B00CE608A /* LCDURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C5021EEC0A0B00CE608A /* LCDURLHelper.m */; };
 		9C3669BF1F10C3D5009F856C /* LCLihuxStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3669BE1F10C3D5009F856C /* LCLihuxStyleView.m */; };
 		9C3967B822D95BAF00D18E9C /* LCJSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967B722D95BAF00D18E9C /* LCJSCViewController.m */; };
+		9C3967BC22D9A25600D18E9C /* LCMethodFordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967BB22D9A25600D18E9C /* LCMethodFordingViewController.m */; };
+		9C3967BF22D9A27300D18E9C /* LCMethodForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967BE22D9A27300D18E9C /* LCMethodForward.m */; };
 		9C41ADB7229B4D9300C58500 /* LCAlgorithms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */; };
 		9C41ADB9229B4DA000C58500 /* LCAlgorithms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */; };
 		9C41ADC4229B5DEB00C58500 /* LCAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41ADC3229B5DEB00C58500 /* LCAlgorithmViewController.m */; };
@@ -353,6 +355,10 @@
 		9C3669BE1F10C3D5009F856C /* LCLihuxStyleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLihuxStyleView.m; sourceTree = "<group>"; };
 		9C3967B622D95BAF00D18E9C /* LCJSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCJSCViewController.h; sourceTree = "<group>"; };
 		9C3967B722D95BAF00D18E9C /* LCJSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCJSCViewController.m; sourceTree = "<group>"; };
+		9C3967BA22D9A25600D18E9C /* LCMethodFordingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMethodFordingViewController.h; sourceTree = "<group>"; };
+		9C3967BB22D9A25600D18E9C /* LCMethodFordingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMethodFordingViewController.m; sourceTree = "<group>"; };
+		9C3967BD22D9A27300D18E9C /* LCMethodForward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMethodForward.h; sourceTree = "<group>"; };
+		9C3967BE22D9A27300D18E9C /* LCMethodForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMethodForward.m; sourceTree = "<group>"; };
 		9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCAlgorithms.plist; sourceTree = "<group>"; };
 		9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCAlgorithms.storyboard; sourceTree = "<group>"; };
 		9C41ADC2229B5DEB00C58500 /* LCAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmViewController.h; sourceTree = "<group>"; };
@@ -962,10 +968,22 @@
 		9C3967B522D95B8800D18E9C /* LCJavaScriptCore */ = {
 			isa = PBXGroup;
 			children = (
+				9C3967B922D9A23000D18E9C /* LCMethodForwarding */,
 				9C3967B622D95BAF00D18E9C /* LCJSCViewController.h */,
 				9C3967B722D95BAF00D18E9C /* LCJSCViewController.m */,
 			);
 			path = LCJavaScriptCore;
+			sourceTree = "<group>";
+		};
+		9C3967B922D9A23000D18E9C /* LCMethodForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				9C3967BA22D9A25600D18E9C /* LCMethodFordingViewController.h */,
+				9C3967BB22D9A25600D18E9C /* LCMethodFordingViewController.m */,
+				9C3967BD22D9A27300D18E9C /* LCMethodForward.h */,
+				9C3967BE22D9A27300D18E9C /* LCMethodForward.m */,
+			);
+			path = LCMethodForwarding;
 			sourceTree = "<group>";
 		};
 		9C41ADB5229B4D6400C58500 /* LCAlgorithms */ = {
@@ -1461,6 +1479,7 @@
 				5259132222CB6E4B00433828 /* LCNetworkViewController.m in Sources */,
 				9C18B4B322CA40BA0032B65B /* LCAlgorithmTools.c in Sources */,
 				5231F4F122C9F4E300F5078C /* malloc.c in Sources */,
+				9C3967BF22D9A27300D18E9C /* LCMethodForward.m in Sources */,
 				5289FB4C1F6A91C600413192 /* LCDBClothesProvider.m in Sources */,
 				9C0365741C4CF9F900E04D7B /* UIImage+Color.m in Sources */,
 				9C18B4D722CC1A1B0032B65B /* LCCFNetwork.m in Sources */,
@@ -1521,6 +1540,7 @@
 				9CB64ECF1F0E821D00A4BC1C /* LCColorCollectionViewCell.m in Sources */,
 				52E9162C1F1F150B0036E995 /* LCCGradientColorViewController.m in Sources */,
 				523A41EE1F29E5B2004485A7 /* LCAnimationKeyPathPathView.m in Sources */,
+				9C3967BC22D9A25600D18E9C /* LCMethodFordingViewController.m in Sources */,
 				52052F7E1F2055100065072B /* LCDBIntrinsicSizeView.m in Sources */,
 				525912EC22CAEA9C00433828 /* LCTouchButton.m in Sources */,
 				5296F2B11EFB9EE300A08022 /* LCBReadingPlanViewController.m in Sources */,
