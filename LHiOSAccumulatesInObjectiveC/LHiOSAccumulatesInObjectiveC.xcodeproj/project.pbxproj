@@ -101,6 +101,7 @@
 		9C3967BC22D9A25600D18E9C /* LCMethodFordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967BB22D9A25600D18E9C /* LCMethodFordingViewController.m */; };
 		9C3967BF22D9A27300D18E9C /* LCMethodForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967BE22D9A27300D18E9C /* LCMethodForward.m */; };
 		9C3967C622D9F9DE00D18E9C /* LCMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967C522D9F9DE00D18E9C /* LCMultiThreadViewController.m */; };
+		9C3967C922D9FF7700D18E9C /* LCMyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967C822D9FF7700D18E9C /* LCMyOperation.m */; };
 		9C41ADB7229B4D9300C58500 /* LCAlgorithms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */; };
 		9C41ADB9229B4DA000C58500 /* LCAlgorithms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */; };
 		9C41ADC4229B5DEB00C58500 /* LCAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41ADC3229B5DEB00C58500 /* LCAlgorithmViewController.m */; };
@@ -362,6 +363,8 @@
 		9C3967BE22D9A27300D18E9C /* LCMethodForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMethodForward.m; sourceTree = "<group>"; };
 		9C3967C422D9F9DE00D18E9C /* LCMultiThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMultiThreadViewController.h; sourceTree = "<group>"; };
 		9C3967C522D9F9DE00D18E9C /* LCMultiThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMultiThreadViewController.m; sourceTree = "<group>"; };
+		9C3967C722D9FF7700D18E9C /* LCMyOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMyOperation.h; sourceTree = "<group>"; };
+		9C3967C822D9FF7700D18E9C /* LCMyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMyOperation.m; sourceTree = "<group>"; };
 		9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCAlgorithms.plist; sourceTree = "<group>"; };
 		9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCAlgorithms.storyboard; sourceTree = "<group>"; };
 		9C41ADC2229B5DEB00C58500 /* LCAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmViewController.h; sourceTree = "<group>"; };
@@ -993,6 +996,8 @@
 			children = (
 				9C3967C422D9F9DE00D18E9C /* LCMultiThreadViewController.h */,
 				9C3967C522D9F9DE00D18E9C /* LCMultiThreadViewController.m */,
+				9C3967C722D9FF7700D18E9C /* LCMyOperation.h */,
+				9C3967C822D9FF7700D18E9C /* LCMyOperation.m */,
 			);
 			path = LCMultithread;
 			sourceTree = "<group>";
@@ -1475,6 +1480,7 @@
 				5296F2B01EFB9EDA00A08022 /* LCBHowNBIamViewController.m in Sources */,
 				9C3967B822D95BAF00D18E9C /* LCJSCViewController.m in Sources */,
 				9C0365911C4CFBED00E04D7B /* AppDelegate.m in Sources */,
+				9C3967C922D9FF7700D18E9C /* LCMyOperation.m in Sources */,
 				9CC1F2D822C7C238007BCFE5 /* LHPerson.m in Sources */,
 				9CD141CF1EFF689500B25586 /* LCDCSCh2ShowBytes.c in Sources */,
 				9C67EDE21F2303AA00FE690D /* LCSDefaultOpenSaveManager.m in Sources */,

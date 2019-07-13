@@ -8,6 +8,8 @@
 
 #import "LCMultiThreadViewController.h"
 
+#import "LCMyOperation.h"
+
 @interface LCMultiThreadViewController ()
 
 @property (nonatomic, strong) NSOperationQueue *queue;
@@ -25,6 +27,8 @@
         NSLog(@"我在那条线程里面干活呢？");
     }];
     [self.queue addOperation:operation];
+    LCMyOperation *myOperation = [LCMyOperation new];
+    [self.queue addOperation:myOperation];
 }
 
 #pragma mark -
@@ -33,7 +37,7 @@
         return _queue;
     }
     _queue = [[NSOperationQueue alloc] init];
-    _queue.maxConcurrentOperationCount = 2;
+    _queue.maxConcurrentOperationCount = 1;
     return _queue;
 }
 
