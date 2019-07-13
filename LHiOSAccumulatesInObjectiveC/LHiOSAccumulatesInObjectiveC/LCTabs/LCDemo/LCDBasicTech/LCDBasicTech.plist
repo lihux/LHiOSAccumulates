@@ -144,5 +144,11 @@
 		<key>storyboardID</key>
 		<string>LCMethodFordingViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>iOS多线程学习</string>
+		<key>storyboardID</key>
+		<string>LCMultiThreadViewController</string>
+	</dict>
 </array>
 </plist>

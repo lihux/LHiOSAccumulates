@@ -100,6 +100,7 @@
 		9C3967B822D95BAF00D18E9C /* LCJSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967B722D95BAF00D18E9C /* LCJSCViewController.m */; };
 		9C3967BC22D9A25600D18E9C /* LCMethodFordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967BB22D9A25600D18E9C /* LCMethodFordingViewController.m */; };
 		9C3967BF22D9A27300D18E9C /* LCMethodForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967BE22D9A27300D18E9C /* LCMethodForward.m */; };
+		9C3967C622D9F9DE00D18E9C /* LCMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3967C522D9F9DE00D18E9C /* LCMultiThreadViewController.m */; };
 		9C41ADB7229B4D9300C58500 /* LCAlgorithms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */; };
 		9C41ADB9229B4DA000C58500 /* LCAlgorithms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */; };
 		9C41ADC4229B5DEB00C58500 /* LCAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41ADC3229B5DEB00C58500 /* LCAlgorithmViewController.m */; };
@@ -359,6 +360,8 @@
 		9C3967BB22D9A25600D18E9C /* LCMethodFordingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMethodFordingViewController.m; sourceTree = "<group>"; };
 		9C3967BD22D9A27300D18E9C /* LCMethodForward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMethodForward.h; sourceTree = "<group>"; };
 		9C3967BE22D9A27300D18E9C /* LCMethodForward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMethodForward.m; sourceTree = "<group>"; };
+		9C3967C422D9F9DE00D18E9C /* LCMultiThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMultiThreadViewController.h; sourceTree = "<group>"; };
+		9C3967C522D9F9DE00D18E9C /* LCMultiThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMultiThreadViewController.m; sourceTree = "<group>"; };
 		9C41ADB6229B4D9300C58500 /* LCAlgorithms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LCAlgorithms.plist; sourceTree = "<group>"; };
 		9C41ADB8229B4DA000C58500 /* LCAlgorithms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LCAlgorithms.storyboard; sourceTree = "<group>"; };
 		9C41ADC2229B5DEB00C58500 /* LCAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlgorithmViewController.h; sourceTree = "<group>"; };
@@ -968,7 +971,6 @@
 		9C3967B522D95B8800D18E9C /* LCJavaScriptCore */ = {
 			isa = PBXGroup;
 			children = (
-				9C3967B922D9A23000D18E9C /* LCMethodForwarding */,
 				9C3967B622D95BAF00D18E9C /* LCJSCViewController.h */,
 				9C3967B722D95BAF00D18E9C /* LCJSCViewController.m */,
 			);
@@ -984,6 +986,15 @@
 				9C3967BE22D9A27300D18E9C /* LCMethodForward.m */,
 			);
 			path = LCMethodForwarding;
+			sourceTree = "<group>";
+		};
+		9C3967C322D9F98E00D18E9C /* LCMultithread */ = {
+			isa = PBXGroup;
+			children = (
+				9C3967C422D9F9DE00D18E9C /* LCMultiThreadViewController.h */,
+				9C3967C522D9F9DE00D18E9C /* LCMultiThreadViewController.m */,
+			);
+			path = LCMultithread;
 			sourceTree = "<group>";
 		};
 		9C41ADB5229B4D6400C58500 /* LCAlgorithms */ = {
@@ -1028,6 +1039,8 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				9C3967C322D9F98E00D18E9C /* LCMultithread */,
+				9C3967B922D9A23000D18E9C /* LCMethodForwarding */,
 				9C3967B522D95B8800D18E9C /* LCJavaScriptCore */,
 				9C7A911922D0877C00DDA593 /* LCMemoryManage */,
 				5259131F22CB6E2300433828 /* LCNetworkBasics */,
@@ -1514,6 +1527,7 @@
 				5296F2B81EFBAAFF00A08022 /* LCBShelfViewController.m in Sources */,
 				9C4BE4C31F093795001A1D06 /* LCBCreateRecordViewController.m in Sources */,
 				9CB64ED91F0FDCAB00A4BC1C /* LCC100BeautifulColorViewController.m in Sources */,
+				9C3967C622D9F9DE00D18E9C /* LCMultiThreadViewController.m in Sources */,
 				9CC1F2D522C7C1CC007BCFE5 /* LCOCRuntimeTipsViewController.m in Sources */,
 				5289FB491F6A912D00413192 /* LCDBBookProvider.m in Sources */,
 				52316BBD228D254100B4FD5C /* LCDBLoadInitializeLearningViewController.m in Sources */,
