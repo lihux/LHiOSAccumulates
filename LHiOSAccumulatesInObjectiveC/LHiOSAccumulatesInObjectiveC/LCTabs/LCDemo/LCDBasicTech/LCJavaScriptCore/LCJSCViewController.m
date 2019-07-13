@@ -10,7 +10,16 @@
 
 #import <JavaScriptCore/JavaScriptCore.h>
 
-@interface LCJSObject : NSObject <JSExport>
+@protocol LCJSExpoer <JSExport>
+
+- (NSInteger)add:(NSInteger)a to:(NSInteger)b;
+
+@end
+
+@interface LCJSObject : NSObject <LCJSExpoer>
+
+@property (nonatomic, assign) NSInteger result;
+
 @end
 
 @implementation LCJSObject
@@ -24,6 +33,7 @@
 @interface LCJSCViewController ()
 
 @property (nonatomic, strong) JSContext *context;
+@property (nonatomic, strong) LCJSObject *bridgeObject;
 
 @end
 
@@ -38,7 +48,8 @@
     [self.context evaluateScript:@"f(2, 3)"];//f没有定义，所以抛出异常
     JSValue *addValue = [self.context evaluateScript:@"add(2, 3)"];//js执行的是oc添加的js函数
     JSValue *subValue = [self.context evaluateScript:@"sub(4, 1)"];//js执行的是oc 添加的oc函数
-    NSString *str = [NSString stringWithFormat:@"哈哈哈哈哈哈哈哈哈哈：加法：%@, 减法：%@", [addValue toString], subValue];
+    JSValue *anotherAddValue = [self.context evaluateScript:@"ocobj.result = ocobj.addTo(43, 2)"];
+    NSString *str = [NSString stringWithFormat:@"哈哈哈哈哈哈哈哈哈哈：加法：%@, 减法：%@, i调用另外一个加法：%@", [addValue toString], subValue, anotherAddValue];
     [self log:str];
 }
 
@@ -56,7 +67,17 @@
     _context.exceptionHandler = ^(JSContext *context, JSValue *value) {
         NSLog(@"JS执行发生了异常，快来看看有什么问题：%@, %@", context, value);
     };
+    
+    _context[@"ocobj"] = self.bridgeObject;
     return _context;
+}
+
+- (LCJSObject *)bridgeObject {
+    if (_bridgeObject) {
+        return _bridgeObject;
+    }
+    _bridgeObject = [LCJSObject new];
+    return _bridgeObject;
 }
 
 @end
