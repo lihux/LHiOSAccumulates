@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LCFastViewController : LCViewController
 
+- (void)test;
+
 @end
 
 NS_ASSUME_NONNULL_END

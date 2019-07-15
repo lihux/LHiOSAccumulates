@@ -150,5 +150,11 @@
 		<key>storyboardID</key>
 		<string>LCMultiThreadViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Invocation探索</string>
+		<key>storyboardID</key>
+		<string>LCInvocationViewController</string>
+	</dict>
 </array>
 </plist>

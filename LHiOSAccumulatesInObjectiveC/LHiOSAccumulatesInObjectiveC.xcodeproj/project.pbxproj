@@ -27,6 +27,7 @@
 		5231F4F122C9F4E300F5078C /* malloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5231F4F022C9F4E300F5078C /* malloc.c */; };
 		523691DF21420AAC0000F9F0 /* LCDRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523691DE21420AAC0000F9F0 /* LCDRunLoopViewController.m */; };
 		523A41EE1F29E5B2004485A7 /* LCAnimationKeyPathPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A41ED1F29E5B1004485A7 /* LCAnimationKeyPathPathView.m */; };
+		523B398B22DC175D00225A7F /* LCInvocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523B398A22DC175D00225A7F /* LCInvocationViewController.m */; };
 		5241ADF01F8DAC5E009F3A4D /* LCDPushTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241ADEF1F8DAC5E009F3A4D /* LCDPushTestViewController.m */; };
 		524747A1211BDDFB00B1C4C7 /* LCDLYCorner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 524747A0211BDDFB00B1C4C7 /* LCDLYCorner.plist */; };
 		524747A3211BDE6300B1C4C7 /* LCDLYCorner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524747A2211BDE6300B1C4C7 /* LCDLYCorner.storyboard */; };
@@ -219,6 +220,8 @@
 		5237BE701EFB84C800180A04 /* LCBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCBookShelf.xcdatamodel; sourceTree = "<group>"; };
 		523A41EC1F29E5B1004485A7 /* LCAnimationKeyPathPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAnimationKeyPathPathView.h; sourceTree = "<group>"; };
 		523A41ED1F29E5B1004485A7 /* LCAnimationKeyPathPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAnimationKeyPathPathView.m; sourceTree = "<group>"; };
+		523B398922DC175D00225A7F /* LCInvocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCInvocationViewController.h; sourceTree = "<group>"; };
+		523B398A22DC175D00225A7F /* LCInvocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCInvocationViewController.m; sourceTree = "<group>"; };
 		5241ADEE1F8DAC5E009F3A4D /* LCDPushTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDPushTestViewController.h; sourceTree = "<group>"; };
 		5241ADEF1F8DAC5E009F3A4D /* LCDPushTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDPushTestViewController.m; sourceTree = "<group>"; };
 		524747A0211BDDFB00B1C4C7 /* LCDLYCorner.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LCDLYCorner.plist; sourceTree = "<group>"; };
@@ -671,6 +674,15 @@
 			path = LCBookShelf;
 			sourceTree = "<group>";
 		};
+		523B398822DC174300225A7F /* LCInvocation */ = {
+			isa = PBXGroup;
+			children = (
+				523B398922DC175D00225A7F /* LCInvocationViewController.h */,
+				523B398A22DC175D00225A7F /* LCInvocationViewController.m */,
+			);
+			path = LCInvocation;
+			sourceTree = "<group>";
+		};
 		5241ADED1F8DABD2009F3A4D /* LCDPushCrashTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -1044,6 +1056,7 @@
 		9C476D921EF51A4B004AC758 /* LCDBasicTech */ = {
 			isa = PBXGroup;
 			children = (
+				523B398822DC174300225A7F /* LCInvocation */,
 				9C3967C322D9F98E00D18E9C /* LCMultithread */,
 				9C3967B922D9A23000D18E9C /* LCMethodForwarding */,
 				9C3967B522D95B8800D18E9C /* LCJavaScriptCore */,
@@ -1584,6 +1597,7 @@
 				9CFAC4631EFE8D55006964F2 /* LCBookViewController.m in Sources */,
 				526652A122276F0C00855ADD /* LCDParent.m in Sources */,
 				52B8D4421F03BCCA00A71B70 /* LCCalanderHelper.m in Sources */,
+				523B398B22DC175D00225A7F /* LCInvocationViewController.m in Sources */,
 				9C4BE4C71F0BE5B7001A1D06 /* LCLihuxMeViewController.m in Sources */,
 				9C4C575A2277343600F76D86 /* LCDGKMN2ViewController.m in Sources */,
 				9C61C4751C3E3E43003877BC /* main.m in Sources */,

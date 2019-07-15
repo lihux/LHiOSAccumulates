@@ -19,10 +19,16 @@
     UIView *anchorView = [UIView new];
     anchorView.tag = kLCNeedShowDebugLogViewTag;
     [self.view addSubview:anchorView];
+    [self test];
 }
 
 - (CGFloat)logViewProportion {
     return 1;
+}
+
+#pragma mark - 子类可以继承做一些启动就测试的事情。
+- (void)test {
+    //void
 }
 
 @end
